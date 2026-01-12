@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="计算机的诞生">
+<meta name="keywords" content="Java"><title>Day 02笔记--入门</title>
+
+<link rel='canonical' href='https://jenboy.github.io/p/1524/'>
+
+<link rel="stylesheet" href="/scss/style.min.833d6eed45de56f48306bf57268d5b8cdfc8a60e8e7bdc99810464fcd033f7c6.css"><meta property='og:title' content="Day 02笔记--入门">
+<meta property='og:description' content="计算机的诞生">
+<meta property='og:url' content='https://jenboy.github.io/p/1524/'>
+<meta property='og:site_name' content='Xaoの小屋'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2026-01-12T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-01-12T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Day 02笔记--入门">
+<meta name="twitter:description" content="计算机的诞生">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_8e904100b37f7870.png" width="300"
+                            height="304" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">💭</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Xaoの小屋</a></h1>
+            <h2 class="site-description">情绪垃圾桶</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页 | home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E-about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于 | about</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档 | Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索 | Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E9%93%BE-links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链 | Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#一计算机诞生和发展了解">一、计算机诞生和发展【了解】</a>
+      <ol>
+        <li><a href="#11-诞生">1.1 诞生</a></li>
+        <li><a href="#12-计算机发展史重要的人">1.2 计算机发展史重要的人</a></li>
+        <li><a href="#13-计算机发展阶段">1.3 计算机发展阶段</a></li>
+        <li><a href="#14-中国的超算">1.4 中国的超算</a></li>
+        <li><a href="#15-计算机发展方向">1.5 计算机发展方向</a></li>
+        <li><a href="#16-计算机的组成">1.6 计算机的组成</a></li>
+        <li><a href="#17-计算机之父">1.7 计算机之父</a></li>
+        <li><a href="#18-人工智能之父">1.8 人工智能之父</a></li>
+      </ol>
+    </li>
+    <li><a href="#二计算机组成熟悉">二、计算机组成【熟悉】</a>
+      <ol>
+        <li><a href="#21-硬件">2.1 硬件</a></li>
+        <li><a href="#22-软件">2.2 软件</a>
+          <ol>
+            <li><a href="#221-系统软件">2.2.1 系统软件</a></li>
+            <li><a href="#移动端">移动端</a></li>
+            <li><a href="#222-应用软件">2.2.2 应用软件</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#三dos命令掌握">三、DOS命令【掌握】</a>
+      <ol>
+        <li><a href="#31-概述">3.1 概述</a></li>
+        <li><a href="#32-常用命令">3.2 常用命令</a></li>
+      </ol>
+    </li>
+    <li><a href="#三jdk重点掌握">三、JDK【重点】【掌握】</a>
+      <ol>
+        <li><a href="#31-概述-1">3.1 概述</a></li>
+        <li><a href="#32-下载">3.2 下载</a></li>
+        <li><a href="#33-卸载">3.3 卸载</a></li>
+        <li><a href="#34-安装">3.4 安装</a></li>
+        <li><a href="#35-配置">3.5 配置</a></li>
+      </ol>
+    </li>
+    <li><a href="#四我的第一个案例helloworld重点掌握">四、我的第一个案例HelloWorld【重点】【掌握】</a>
+      <ol>
+        <li><a href="#41-创建java文件">4.1 创建Java文件</a></li>
+        <li><a href="#42-编写helloworld代码">4.2 编写HelloWorld代码</a></li>
+        <li><a href="#43-运行java代码">4.3 运行Java代码</a>
+          <ol>
+            <li><a href="#编译">编译</a></li>
+            <li><a href="#运行">运行</a></li>
+          </ol>
+        </li>
+        <li><a href="#44-java代码运行原理">4.4 Java代码运行原理</a>
+          <ol>
+            <li><a href="#java运行原理">Java运行原理</a></li>
+            <li><a href="#java跨平台运行原理">Java跨平台运行原理</a></li>
+          </ol>
+        </li>
+        <li><a href="#45-名词解释自行补全">4.5 名词解释（自行补全）</a>
+          <ol>
+            <li><a href="#jdk">JDK</a></li>
+            <li><a href="#jre">JRE</a></li>
+            <li><a href="#jvm">JVM</a></li>
+          </ol>
+        </li>
+        <li><a href="#46-helloworld案例细节">4.6 HelloWorld案例细节</a>
+          <ol>
+            <li><a href="#类名和文件名字">类名和文件名字</a></li>
+            <li><a href="#main方法">main方法</a></li>
+            <li><a href="#java语言严格区分大小写">Java语言严格区分大小写</a></li>
+            <li><a href="#一个java文件中可以书写多个class">一个Java文件中可以书写多个class</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#五代码规范掌握严格执行">五、代码规范【掌握】【严格执行】</a>
+      <ol>
+        <li><a href="#51-缩进和换行">5.1 缩进和换行</a>
+          <ol>
+            <li><a href="#缩进">缩进</a></li>
+            <li><a href="#换行">换行</a></li>
+          </ol>
+        </li>
+        <li><a href="#52-注释">5.2 注释</a>
+          <ol>
+            <li><a href="#单行注释">单行注释</a></li>
+            <li><a href="#多行注释">多行注释</a></li>
+            <li><a href="#文档注释">文档注释</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/java/" >
+                Java
+            </a>
+        
+            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" >
+                计算机
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/1524/">Day 02笔记--入门</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            计算机的诞生
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-01-12T00:00:00Z'>2026-01-12</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="day-01笔记入门">Day 01笔记&ndash;入门
+</h1><h2 id="一计算机诞生和发展了解">一、计算机诞生和发展【了解】
+</h2><h3 id="11-诞生">1.1 诞生
+</h3><ul>
+<li>
+<p>时间</p>
+<ul>
+<li>1946年2月14日</li>
+</ul>
+</li>
+<li>
+<p>地点</p>
+<ul>
+<li>美国</li>
+</ul>
+</li>
+<li>
+<p>目的</p>
+<ul>
+<li>战争</li>
+</ul>
+</li>
+</ul>
+<h3 id="12-计算机发展史重要的人">1.2 计算机发展史重要的人
+</h3><ul>
+<li>
+<p>艾伦*图灵</p>
+</li>
+<li>
+<p>冯*诺依曼</p>
+</li>
+</ul>
+<h3 id="13-计算机发展阶段">1.3 计算机发展阶段
+</h3><ul>
+<li>
+<p>电子管计算机</p>
+</li>
+<li>
+<p>晶体管计算机</p>
+</li>
+<li>
+<p>集成电路计算机</p>
+</li>
+<li>
+<p>大规模和超大规模集成电路计算机</p>
+</li>
+</ul>
+<h3 id="14-中国的超算">1.4 中国的超算
+</h3><ul>
+<li>
+<p>天河二号</p>
+</li>
+<li>
+<p>神威*太湖之光</p>
+</li>
+</ul>
+<h3 id="15-计算机发展方向">1.5 计算机发展方向
+</h3><ul>
+<li>
+<p>速度更快</p>
+</li>
+<li>
+<p>体积更小</p>
+</li>
+<li>
+<p>性能更强</p>
+</li>
+</ul>
+<h3 id="16-计算机的组成">1.6 计算机的组成
+</h3><ul>
+<li>
+<p>输入设备</p>
+</li>
+<li>
+<p>输出设备</p>
+</li>
+<li>
+<p>存储设备</p>
+</li>
+<li>
+<p>计算器</p>
+</li>
+<li>
+<p>控制器</p>
+</li>
+</ul>
+<h3 id="17-计算机之父">1.7 计算机之父
+</h3><h3 id="18-人工智能之父">1.8 人工智能之父
+</h3><h2 id="二计算机组成熟悉">二、计算机组成【熟悉】
+</h2><h3 id="21-硬件">2.1 硬件
+</h3><ul>
+<li>
+<p>物理设备</p>
+<ul>
+<li>
+<p>CPU</p>
+</li>
+<li>
+<p>硬盘</p>
+</li>
+<li>
+<p>内存</p>
+</li>
+<li>
+<p>键盘</p>
+</li>
+<li>
+<p>音响</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="22-软件">2.2 软件
+</h3><ul>
+<li>软件是一系列按照特定顺序组织的<a class="link" href="https://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA/140338?fromModule=lemma_inlink"  target="_blank" rel="noopener"
+    >计算机</a>数据和<a class="link" href="https://baike.baidu.com/item/%E6%8C%87%E4%BB%A4/3225201?fromModule=lemma_inlink"  target="_blank" rel="noopener"
+    >指令</a>的集合。</li>
+</ul>
+<h4 id="221-系统软件">2.2.1 系统软件
+</h4><ul>
+<li>
+<p>系统软件是指控制和协调计算机及<a class="link" href="https://baike.baidu.com/item/%E5%A4%96%E9%83%A8%E8%AE%BE%E5%A4%87?fromModule=lemma_inlink"  target="_blank" rel="noopener"
+    >外部设备</a>,支持<a class="link" href="https://baike.baidu.com/item/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91?fromModule=lemma_inlink"  target="_blank" rel="noopener"
+    >应用软件开发</a>和运行的系统，是无需用户干预的各种程序的集合，主要功能是调度，监控和维护<a class="link" href="https://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/7210959?fromModule=lemma_inlink"  target="_blank" rel="noopener"
+    >计算机系统</a>；</p>
+</li>
+<li>
+<p>负责管理计算机系统中各种独立的硬件，使得它们可以协调工作。</p>
+</li>
+</ul>
+<h5 id="pc端">PC端
+</h5><ul>
+<li>
+<p>Windows</p>
+</li>
+<li>
+<p>MacOS</p>
+</li>
+<li>
+<p>Linux</p>
+</li>
+<li>
+<p>深度OS</p>
+</li>
+<li>
+<p>鸿蒙OS</p>
+</li>
+</ul>
+<h4 id="移动端">移动端
+</h4><ul>
+<li>
+<p>Android</p>
+</li>
+<li>
+<p>IOS</p>
+</li>
+<li>
+<p>鸿蒙</p>
+</li>
+<li>
+<p>黑莓</p>
+</li>
+<li>
+<p>塞班</p>
+</li>
+<li>
+<p>WPhone</p>
+</li>
+<li>
+<p>阿里云</p>
+</li>
+</ul>
+<h4 id="222-应用软件">2.2.2 应用软件
+</h4><h2 id="三dos命令掌握">三、DOS命令【掌握】
+</h2><h3 id="31-概述">3.1 概述
+</h3><ul>
+<li>
+<p>DOS操作系统中使用的一些命令</p>
+</li>
+<li>
+<p>命令类型</p>
+<ul>
+<li>
+<p>目录操作类命令</p>
+</li>
+<li>
+<p>磁盘操作类命令</p>
+</li>
+<li>
+<p>文件操作类命令</p>
+</li>
+<li>
+<p>其它命令</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="32-常用命令">3.2 常用命令
+</h3><ul>
+<li>
+<p>查看IP</p>
+<p>ipconfig</p>
+</li>
+<li>
+<p>测试IP是否连通</p>
+<p>ping 域名/IP</p>
+</li>
+<li>
+<p>切换盘符</p>
+<p>盘符:</p>
+</li>
+<li>
+<p>切换目录</p>
+<p>cd 目录名字</p>
+</li>
+<li>
+<p>创建目录</p>
+<p>mkdir  目录名<br>
+md  目录名</p>
+</li>
+<li>
+<p>删除目录</p>
+<p>rmdir 目录名<br>
+rd 目录名</p>
+</li>
+<li>
+<p>查看所有目录和文件</p>
+<p>dir</p>
+</li>
+<li>
+<p>清屏</p>
+<p>cls</p>
+</li>
+<li>
+<p>退出</p>
+<p>exit</p>
+</li>
+<li>
+<p>服务启动/停止</p>
+<p>netstart 服务名<br>
+netstop 服务名</p>
+</li>
+</ul>
+<h2 id="三jdk重点掌握">三、JDK【重点】【掌握】
+</h2><h3 id="31-概述-1">3.1 概述
+</h3><ul>
+<li>
+<p>Java开发工具包</p>
+</li>
+<li>
+<p>Java Development Kit</p>
+</li>
+<li>
+<p>学习Java必须安装的一个软件</p>
+<ul>
+<li>
+<p>包含java运行环境</p>
+</li>
+<li>
+<p>Java工具</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="32-下载">3.2 下载
+</h3><ul>
+<li>下载地址</li>
+</ul>
+<blockquote>
+<p><a class="link" href="https://www.oracle.com/java/technologies/downloads/#java8-windows"  target="_blank" rel="noopener"
+    >https://www.oracle.com/java/technologies/downloads/#java8-windows</a></p>
+</blockquote>
+<h3 id="33-卸载">3.3 卸载
+</h3><ul>
+<li>
+<p>清除配置信息</p>
+</li>
+<li>
+<p>卸载软件</p>
+</li>
+</ul>
+<h3 id="34-安装">3.4 安装
+</h3><ul>
+<li>
+<p>双击软件执行安装</p>
+</li>
+<li>
+<p>选择合适的位置</p>
+</li>
+<li>
+<p>不需要安装JRE</p>
+</li>
+</ul>
+<h3 id="35-配置">3.5 配置
+</h3><ul>
+<li>把JDK中bin目录配置到系统Path</li>
+</ul>
+<p><img src="/p/1524/%E6%89%93%E5%BC%80%E5%B1%9E%E6%80%A7.png"
+	width="532"
+	height="336"
+	srcset="/p/1524/%E6%89%93%E5%BC%80%E5%B1%9E%E6%80%A7_hu_4b8ea683b706f7a5.png 480w, /p/1524/%E6%89%93%E5%BC%80%E5%B1%9E%E6%80%A7_hu_64b23e9e883a2737.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="158"
+		data-flex-basis="380px"
+	
+></p>
+<p><img src="/p/1524/JAVA_HOME.png"
+	width="1611"
+	height="854"
+	srcset="/p/1524/JAVA_HOME_hu_1f295722bdce595c.png 480w, /p/1524/JAVA_HOME_hu_4bf648d01511821a.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="188"
+		data-flex-basis="452px"
+	
+></p>
+<p><img src="/p/1524/%E9%85%8D%E7%BD%AEpath.png"
+	width="1693"
+	height="1070"
+	srcset="/p/1524/%E9%85%8D%E7%BD%AEpath_hu_2a020f58438637f.png 480w, /p/1524/%E9%85%8D%E7%BD%AEpath_hu_58bdb0055a58545f.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="158"
+		data-flex-basis="379px"
+	
+></p>
+<h2 id="四我的第一个案例helloworld重点掌握">四、我的第一个案例HelloWorld【重点】【掌握】
+</h2><h3 id="41-创建java文件">4.1 创建Java文件
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">.txt结尾的是文本文件  
+</span></span><span class="line"><span class="cl">.mp3结尾是音频文件  
+</span></span><span class="line"><span class="cl">.doc结尾的是word文档  
+</span></span><span class="line"><span class="cl">... ...  
+</span></span><span class="line"><span class="cl">.java结尾的是java文件  
+</span></span><span class="line"><span class="cl">创建任意文件,修改文件的后缀名即可
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="42-编写helloworld代码">4.2 编写HelloWorld代码
+</h3><ul>
+<li>
+<p>固定的写法</p>
+<ul>
+<li>目前不要修改，照着抄写</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HelloWorld</span><span class="p">{</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">){</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;HelloWorld!!!&#34;</span><span class="p">);</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="43-运行java代码">4.3 运行Java代码
+</h3><h4 id="编译">编译
+</h4><blockquote>
+<p>javac 文件的全名称(HelloWorld.java)</p>
+</blockquote>
+<h4 id="运行">运行
+</h4><blockquote>
+<p>java 字节码文件名字(不要.class)</p>
+</blockquote>
+<p><img src="/p/1524/%E7%BC%96%E8%AF%91%E5%92%8C%E8%BF%90%E8%A1%8C.png"
+	width="878"
+	height="348"
+	srcset="/p/1524/%E7%BC%96%E8%AF%91%E5%92%8C%E8%BF%90%E8%A1%8C_hu_67b091cdc43bb9d7.png 480w, /p/1524/%E7%BC%96%E8%AF%91%E5%92%8C%E8%BF%90%E8%A1%8C_hu_995b311f8dc31da2.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="252"
+		data-flex-basis="605px"
+	
+></p>
+<h3 id="44-java代码运行原理">4.4 Java代码运行原理
+</h3><h4 id="java运行原理">Java运行原理
+</h4><ul>
+<li>
+<p>先编译</p>
+<ul>
+<li>
+<p>把我们书写的代码编译成计算机能识别的内容&ndash;字节码文件</p>
+</li>
+<li>
+<p>我们能认识英文、字符等，计算机只认识二进制的内容</p>
+</li>
+</ul>
+</li>
+<li>
+<p>再解释执行</p>
+<ul>
+<li>java的虚拟机可以解释执行源文件编译产生的字节码文件</li>
+</ul>
+</li>
+</ul>
+<h4 id="java跨平台运行原理">Java跨平台运行原理
+</h4><ul>
+<li>
+<p>跨平台==跨系统</p>
+</li>
+<li>
+<p>因为java的代码最终是运行在java虚拟机中的</p>
+</li>
+<li>
+<p>只要当前的这台机器安装了虚拟机，就能运行java程序，和操作系统无关</p>
+</li>
+<li>
+<p>不管是什么操作系统，只要安装了java虚拟机就能运行java程序</p>
+</li>
+</ul>
+<p><img src="/p/1524/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png"
+	width="1763"
+	height="970"
+	srcset="/p/1524/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_2f5e69c1072c9296.png 480w, /p/1524/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_50bc6c47ab900ecd.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="181"
+		data-flex-basis="436px"
+	
+></p>
+<h3 id="45-名词解释自行补全">4.5 名词解释（自行补全）
+</h3><h4 id="jdk">JDK
+</h4><h4 id="jre">JRE
+</h4><h4 id="jvm">JVM
+</h4><h3 id="46-helloworld案例细节">4.6 HelloWorld案例细节
+</h3><h4 id="类名和文件名字">类名和文件名字
+</h4><ul>
+<li>
+<p>最好类名和文件名保持一致</p>
+</li>
+<li>
+<p>源文件编译之后会产生一个和类名相同的字节码文件</p>
+</li>
+</ul>
+<h4 id="main方法">main方法
+</h4><ul>
+<li>
+<p>main方法也称为主方法</p>
+</li>
+<li>
+<p>程序的入口，一个类中最多只能存在一个</p>
+</li>
+<li>
+<p>不能写错</p>
+</li>
+</ul>
+<h4 id="java语言严格区分大小写">Java语言严格区分大小写
+</h4><ul>
+<li>
+<p>String != string</p>
+</li>
+<li>
+<p>System != system</p>
+</li>
+</ul>
+<h4 id="一个java文件中可以书写多个class">一个Java文件中可以书写多个class
+</h4><ul>
+<li>
+<p>一个文件中可以定义多个class</p>
+</li>
+<li>
+<p>只有一个能使用public修饰</p>
+</li>
+</ul>
+<h2 id="五代码规范掌握严格执行">五、代码规范【掌握】【严格执行】
+</h2><h3 id="51-缩进和换行">5.1 缩进和换行
+</h3><h4 id="缩进">缩进
+</h4><ul>
+<li>
+<p>代码层级之间需要有缩进</p>
+</li>
+<li>
+<p>保持代码的整洁</p>
+</li>
+</ul>
+<h4 id="换行">换行
+</h4><ul>
+<li>
+<p>一行只书写一句代码</p>
+</li>
+<li>
+<p>}也需要占用一行代码</p>
+</li>
+</ul>
+<h3 id="52-注释">5.2 注释
+</h3><ul>
+<li>标注、解释、暂时使得代码失效</li>
+</ul>
+<h4 id="单行注释">单行注释
+</h4><h4 id="多行注释">多行注释
+</h4><h4 id="文档注释">文档注释
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="cm">/**  
+</span></span></span><span class="line"><span class="cl"><span class="cm">	文档注释  
+</span></span></span><span class="line"><span class="cl"><span class="cm">		能注释多行代码  
+</span></span></span><span class="line"><span class="cl"><span class="cm">		能生成文档  
+</span></span></span><span class="line"><span class="cl"><span class="cm">*/</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Demo01</span><span class="w"> </span><span class="p">{</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// 单行注释,可以进行简单的描述  </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Hello World!&#34;</span><span class="p">);</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="cm">/*  
+</span></span></span><span class="line"><span class="cl"><span class="cm">			多行注释  
+</span></span></span><span class="line"><span class="cl"><span class="cm">			能注释多行代码  
+</span></span></span><span class="line"><span class="cl"><span class="cm">			单行不能搞定的时候或者不想生成文档的时候  
+</span></span></span><span class="line"><span class="cl"><span class="cm">		*/</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Xao
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
