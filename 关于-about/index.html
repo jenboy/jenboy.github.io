@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="This is a test page for i18n support.\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" 记录生活\n记录自己\n">
 <title>关于 | about</title>
 
 <link rel='canonical' href='https://jenboy.github.io/%E5%85%B3%E4%BA%8E-about/'>
 
 <link rel="stylesheet" href="/scss/style.min.833d6eed45de56f48306bf57268d5b8cdfc8a60e8e7bdc99810464fcd033f7c6.css"><meta property='og:title' content="关于 | about">
-<meta property='og:description' content="This is a test page for i18n support.\n">
+<meta property='og:description' content=" 记录生活\n记录自己\n">
 <meta property='og:url' content='https://jenboy.github.io/%E5%85%B3%E4%BA%8E-about/'>
 <meta property='og:site_name' content='Xaoの小屋'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' />
 <meta name="twitter:title" content="关于 | about">
-<meta name="twitter:description" content="This is a test page for i18n support.\n">
+<meta name="twitter:description" content=" 记录生活\n记录自己\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -78,7 +78,7 @@
             
                 <li>
                     <a 
-                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        href='https://github.com/jenboy'
                         target="_blank"
                         title="GitHub"
                         rel="me"
@@ -275,7 +275,12 @@
     <section class="article-content">
     
     
-    <p>This is a test page for i18n support.</p>
+    <blockquote>
+<p>记录生活</p>
+</blockquote>
+<blockquote>
+<p>记录自己</p>
+</blockquote>
 
 </section>
 
@@ -408,6 +413,51 @@
 
         document.head.appendChild(customFont);
     }());
+</script>
+
+<script>
+    
+    const cssPath = "https://jenboy.github.io/waifu/waifu.css"
+    const tipsJsonPath = "https://jenboy.github.io/waifu/waifu-tips.json"
+    
+    const live2d_path = "https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/";
+
+    
+    function loadExternalResource(url, type) {
+        return new Promise((resolve, reject) => {
+            let tag;
+            if (type === "css") {
+                tag = document.createElement("link");
+                tag.rel = "stylesheet";
+                tag.href = url;
+            }
+            else if (type === "js") {
+                tag = document.createElement("script");
+                tag.src = url;
+            }
+            if (tag) {
+                tag.onload = () => resolve(url);
+                tag.onerror = () => reject(url);
+                document.head.appendChild(tag);
+            }
+        });
+    }
+
+    
+    if (screen.width >= 768) {
+        Promise.all([
+            loadExternalResource(cssPath, "css"),
+            loadExternalResource(live2d_path + "live2d.min.js", "js"),
+            loadExternalResource(live2d_path + "waifu-tips.js", "js")
+        ]).then(() => {
+            
+            initWidget({
+                waifuPath: tipsJsonPath,
+                cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
+                tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
+            });
+        });
+    }
 </script>
 
     </body>
