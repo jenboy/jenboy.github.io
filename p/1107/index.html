@@ -1755,10 +1755,10 @@
     
     const live2d_path = "https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/";
     
-    const cssPath = "https://jenboy.github.io/waifu/waifu.css";
-    const tipsJsonPath = "https://jenboy.github.io/waifu/waifu-tips.json";
-    const live2dMinJsPath = "https://jenboy.github.io/waifu/live2d.min.js";
-    const waifuTipsJsPath = "https://jenboy.github.io/waifu/waifu-tips.js";
+    const cssPath = "https://jenboy.github.io/waifu/waifu.css"
+    const tipsJsonPath = "https://jenboy.github.io/waifu/waifu-tips.json"
+    const live2dMinJsPath = "https://jenboy.github.io/waifu/live2d.min.js"
+    const tipsJsPath = "https://jenboy.github.io/waifu/waifu-tips.js"
 
     
     function loadExternalResource(url, type) {
@@ -1786,7 +1786,7 @@
         Promise.all([
             loadExternalResource(cssPath, "css"),
             loadExternalResource(live2dMinJsPath, "js"),
-            loadExternalResource(waifuTipsJsPath, "js")
+            loadExternalResource(tipsJsPath, "js")
         ]).then(() => {
             
             initWidget({
