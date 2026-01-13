@@ -24,22 +24,22 @@
     "selector": "./",
     "text": ["回首页看看吧。"]
   }, {
-    "selector": ".about",
+    "selector": "a[href^='/%E5%85%B3%E4%BA%8E-about/']",
     "text": ["你想知道我家主人是谁吗？"]
   }, {
-    "selector": ".widget-title section-title",
+    "selector": "a[href^='/tags/']",
     "text": ["点击来查看所有标签哦。"]
   }, {
     "selector": ".menu a",
     "text": ["点击来查看文章分类哦。"]
   }, {
-    "selector": ".archives .widget-title section-title",
-    "text": ["翻页比较麻烦吗，那就来看看文章归档吧。", "文章目录都整理在这里啦！"]
+    "selector": "a[href^='/archives/']",
+    "text": ["翻页比较麻烦吗，那就来看看文章归档吧。"]
   }, {
-    "selector": ".links",
+    "selector": "a[href^='/%E5%8F%8B%E9%93%BE-links/']",
     "text": ["要去拜访一下我的朋友们吗？"]
   }, {
-    "selector": ".search",
+    "selector": "a[href^='/search/']",
     "text": ["在找什么东西呢，需要帮忙吗？"]
   }, {
     "selector": ".dark-mode-toggle",
@@ -48,7 +48,7 @@
     "selector": ".menu a",
     "text": ["快看看这里都有什么呢？"]
   }, {
-    "selector": ".site-author",
+    "selector": ".site-avatar",
     "text": ["我家主人好看吗？", "这是我家主人(*´∇｀*)"]
   }, {
     "selector": ".site-state",
@@ -79,10 +79,10 @@
     "text": ["邮件我会及时回复的！", "点击就可以发送邮件啦～"]
   }, {
     "selector": "a[href^='/tags/']",
-    "text": ["要去看看 <span>{text}</span> 标签么？", "点它可以查看此标签下的所有文章哟！"]
+    "text": ["要去看看 <span>{text}</span> 标签么？"]
   }, {
     "selector": "a[href^='/categories/']",
-    "text": ["要去看看 <span>{text}</span> 分类么？", "点它可以查看此分类下的所有文章哟！"]
+    "text": ["要去看看 <span>{text}</span> 分类么？"]
   }, {
     "selector": ".article-title",
     "text": ["要看看 <span>{text}</span> 这篇文章吗？"]
