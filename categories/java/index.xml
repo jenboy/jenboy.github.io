@@ -8,12 +8,12 @@
         <language>en-us</language>
         <copyright>Xao</copyright>
         <lastBuildDate>Mon, 12 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jenboy.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Day 01笔记--入门</title>
+        <title>Day 01 入门</title>
         <link>https://jenboy.github.io/p/1524/</link>
         <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/1524/</guid>
-        <description>&lt;img src="https://jenboy.github.io/p/1524/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png" alt="Featured image of post Day 01笔记--入门" /&gt;&lt;h1 id=&#34;day-01笔记入门&#34;&gt;Day 01笔记&amp;ndash;入门
+        <description>&lt;img src="https://jenboy.github.io/p/1524/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png" alt="Featured image of post Day 01 入门" /&gt;&lt;h1 id=&#34;day-01笔记入门&#34;&gt;Day 01笔记&amp;ndash;入门
 &lt;/h1&gt;&lt;h2 id=&#34;计算机诞生和发展了解&#34;&gt;计算机诞生和发展【了解】
 &lt;/h2&gt;&lt;h3 id=&#34;诞生&#34;&gt;诞生
 &lt;/h3&gt;&lt;ul&gt;
@@ -101,7 +101,7 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;计算机之父&#34;&gt;计算机之父
 &lt;/h3&gt;&lt;h3 id=&#34;人工智能之父&#34;&gt;人工智能之父
-&lt;/h3&gt;&lt;h2 id=&#34;二计算机组成熟悉&#34;&gt;二、计算机组成【熟悉】
+&lt;/h3&gt;&lt;h2 id=&#34;计算机组成熟悉&#34;&gt;计算机组成【熟悉】
 &lt;/h2&gt;&lt;h3 id=&#34;硬件&#34;&gt;硬件
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -256,7 +256,7 @@ rd 目录名&lt;/p&gt;
 netstop 服务名&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;三jdk重点掌握&#34;&gt;三、JDK【重点】【掌握】
+&lt;h2 id=&#34;jdk重点掌握&#34;&gt;JDK【重点】【掌握】
 &lt;/h2&gt;&lt;h3 id=&#34;概述-1&#34;&gt;概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -346,7 +346,7 @@ netstop 服务名&lt;/p&gt;
 		data-flex-basis=&#34;379px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;四我的第一个案例helloworld重点掌握&#34;&gt;四、我的第一个案例HelloWorld【重点】【掌握】
+&lt;h2 id=&#34;我的第一个案例helloworld重点掌握&#34;&gt;我的第一个案例HelloWorld【重点】【掌握】
 &lt;/h2&gt;&lt;h3 id=&#34;创建java文件&#34;&gt;创建Java文件
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
