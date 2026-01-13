@@ -21,17 +21,14 @@
     "selector": "#waifu-tool-quit",
     "text": ["到了要说再见的时候了吗？", "呜呜 QAQ 后会有期……", "不要抛弃我呀……", "我们，还能再见面吗……", "哼，你会后悔的！"]
   }, {
+    "selector": "#dark-mode-toggle",
+    "text": ["切换到深色模式"]
+  }, {
     "selector": ".menu a[href='/']",
     "text": ["点击前往首页，想回到上一页可以使用浏览器的后退功能哦。"]
   }, {
     "selector": ".menu a[href='/%E5%85%B3%E4%BA%8E-about/']",
     "text": ["你想知道我家主人是谁吗？"]
-  }, {
-    "selector": ".menu-item-tags a",
-    "text": ["点击就可以看文章的标签啦！", "点击来查看所有标签哦。"]
-  }, {
-    "selector": ".menu-item-categories a",
-    "text": ["文章都分类好啦～", "点击来查看文章分类哦。"]
   }, {
     "selector": ".menu a[href='/archives/']",
     "text": ["翻页比较麻烦吗，那就来看看文章归档吧。", "文章目录都整理在这里啦！"]
@@ -84,14 +81,8 @@
     "selector": ".article-title-wrapper",
     "text": ["要看看 <span>{text}</span> 这篇文章吗？"]
   }, {
-    "selector": "a[rel='contents']",
-    "text": ["点击来阅读全文哦。"]
-  }, {
     "selector": "a[itemprop='discussionUrl']",
     "text": ["要去看看评论吗？"]
-  }, {
-    "selector": ".beian a",
-    "text": ["我也是有户口的人哦。", "我的主人可是遵纪守法的好主人。"]
   }, {
     "selector": ".container a[href^='http'], .nav-link .nav-text",
     "text": ["要去看看 <span>{text}</span> 么？", "去 <span>{text}</span> 逛逛吧。", "到 <span>{text}</span> 看看吧。"]
@@ -107,9 +98,6 @@
   }, {
     "selector": "#alipay",
     "text": ["这是我的支付宝哦！"]
-  }, {
-    "selector": "#bitcoin",
-    "text": ["这是我的比特币账号！"]
   }, {
     "selector": "#needsharebutton-postbottom .btn",
     "text": ["好东西要让更多人知道才行哦。", "觉得文章有帮助的话，可以分享给更多需要的朋友呢。"]
