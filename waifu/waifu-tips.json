@@ -37,10 +37,10 @@
     "text": ["翻页比较麻烦吗，那就来看看文章归档吧。", "文章目录都整理在这里啦！"]
   }, {
     "selector": ".menu a[href='/%E5%8F%8B%E9%93%BE-links/']",
-    "text": ["这是我的朋友们哦ヾ(◍°∇°◍)ﾉﾞ", "要去大佬们的家看看吗？", "要去拜访一下我的朋友们吗？"]
+    "text": ["要去拜访一下我的朋友们吗？"]
   }, {
     "selector": ".menu a[href='/search/']",
-    "text": ["找不到想看的内容？搜索看看吧！", "在找什么东西呢，需要帮忙吗？"]
+    "text": ["在找什么东西呢，需要帮忙吗？"]
   }, {
     "selector": ".menu-item a",
     "text": ["快看看这里都有什么呢？"]
@@ -63,7 +63,7 @@
     "selector": ".followme",
     "text": ["手机扫一下就能继续看，很方便呢～", "扫一扫，打开新世界的大门！"]
   }, {
-    "selector": ".article-image",
+    "selector": ".gallery-image",
     "text": ["点击图片可以放大呢！"]
   }, {
     "selector": ".copyCodeButton",
@@ -82,7 +82,7 @@
     "text": ["要去看看 <span>{text}</span> 分类么？"]
   }, {
     "selector": ".article-title-wrapper",
-    "text": ["要看看 <span>{article-title}</span> 这篇文章吗？"]
+    "text": ["要看看 <span>{text}</span> 这篇文章吗？"]
   }, {
     "selector": "a[rel='contents']",
     "text": ["点击来阅读全文哦。"]
