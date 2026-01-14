@@ -1220,6 +1220,7 @@ netstop 服务名</p>
 </script>
 
 <style>
+    
     #TableOfContents > ul, ol {
         ul, ol {
             display: none;
@@ -1228,7 +1229,7 @@ netstop 服务名</p>
             display: block;
         }
     }
-
+    
     #backTopBtn {
         display: none;
         position: fixed;
@@ -1240,6 +1241,7 @@ netstop 服务名</p>
         background-image: url(https://jenboy.github.io/icons/backTop.svg);
     }
 
+    
     .highlight {
         max-height: 400px;
         overflow: hidden;
@@ -1248,7 +1250,7 @@ netstop 服务名</p>
     .code-show {
         max-height: none !important;
     }
-
+    
     .code-more-box {
         width: 100%;
         padding-top: 78px;
@@ -1259,6 +1261,7 @@ netstop 服务名</p>
         z-index: 1;
     }
 
+    
     .code-more-btn {
         display: block;
         margin: auto;
@@ -1271,6 +1274,7 @@ netstop 服务名</p>
         cursor: pointer;
     }
 
+    
     .code-more-img {
         cursor: pointer;
         display: block;
@@ -1279,18 +1283,37 @@ netstop 服务名</p>
         height: 16px;
     }
 
+    
     @font-face {
         font-family: 'harmonyOSFont';
         src: url(https://jenboy.github.io/font/HarmonyOS_Sans_Naskh_Arabic_Regular.ttf) format('truetype');
-  }
+        }
 
+    
     :root {
         --base-font-family: 'harmonyOSFont';
         --code-font-family: 'harmonyOSFont';
-  }
+        }
+    
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
 </style>
 
+// 背景粒子配置
+<div id="particles-js"></div>
+<script src=https://jenboy.github.io/background/particles.min.js></script>
+<script>
+  particlesJS.load('particles-js', "https://jenboy.github.io/background/particlesjs-config.json", function() {
+    console.log('particles.js loaded - callback');
+  });
+</script>
 
+// 看板娘
 <script>
     
     
@@ -1385,7 +1408,10 @@ netstop 服务名</p>
     
     
     
+</script>
 
+// 文章目录隐藏
+<script>
     function initTocHide() {
         
         let toc = document.querySelector(".widget--toc");
@@ -1419,7 +1445,10 @@ netstop 服务名</p>
         });
     }
     initTocHide()
+</script>
 
+// 滚动回顶部
+<script>
     
 
     function initScrollTop() {
@@ -1450,7 +1479,10 @@ netstop 服务名</p>
     }
 
     initScrollTop();
+</script>
 
+// 代码块更多按钮
+<script>
     function initCodeMoreBox() {
     let codeBlocks = document.querySelectorAll(".highlight");
     if (!codeBlocks) {
