@@ -369,7 +369,7 @@
     }
     
     #backTopBtn {
-        display: none;
+        display: none; 
         position: fixed;
         bottom: 30px;
         z-index: 99;
@@ -442,17 +442,19 @@
     }
 </style>
 
-// 背景粒子配置
+    
 <div id="particles-js"></div>
 <script src=https://jenboy.github.io/background/particles.min.js></script>
 <script>
+    
   particlesJS.load('particles-js', "https://jenboy.github.io/background/particlesjs-config.json", function() {
     console.log('particles.js loaded - callback');
   });
 </script>
 
-// 看板娘
+
 <script>
+    
     
     
     
@@ -548,8 +550,9 @@
     
 </script>
 
-// 文章目录隐藏
+
 <script>
+    
     function initTocHide() {
         
         let toc = document.querySelector(".widget--toc");
@@ -585,8 +588,9 @@
     initTocHide()
 </script>
 
-// 滚动回顶部
+
 <script>
+    
     
 
     function initScrollTop() {
@@ -619,8 +623,9 @@
     initScrollTop();
 </script>
 
-// 代码块更多按钮
+
 <script>
+    
     function initCodeMoreBox() {
     let codeBlocks = document.querySelectorAll(".highlight");
     if (!codeBlocks) {
