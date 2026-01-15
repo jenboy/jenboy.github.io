@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Categories on Xaoの小屋</title>
+        <title>Categories on Xao的碎碎念</title>
         <link>https://jenboy.github.io/categories/</link>
-        <description>Recent content in Categories on Xaoの小屋</description>
+        <description>Recent content in Categories on Xao的碎碎念</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Xao</copyright>
-        <lastBuildDate>Tue, 13 Jan 2026 18:07:18 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Java</title>
-        <link>https://jenboy.github.io/categories/java/</link>
-        <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+        <lastBuildDate>Thu, 15 Jan 2026 11:46:15 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>技术学习</title>
+        <link>https://jenboy.github.io/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://jenboy.github.io/categories/java/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>计算机</title>
-        <link>https://jenboy.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
-        <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://jenboy.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
-        <description></description>
+        <guid>https://jenboy.github.io/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/</guid>
+        <description>&lt;img src="https://jenboy.github.io/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E5%AD%A6%E4%B9%A0.jpg" alt="Featured image of post 技术学习" /&gt;</description>
         </item>
         
     </channel>

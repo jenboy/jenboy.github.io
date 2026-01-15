@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Xaoの小屋</title>
+        <title>Xao的碎碎念</title>
         <link>https://jenboy.github.io/</link>
-        <description>Recent content on Xaoの小屋</description>
+        <description>Recent content on Xao的碎碎念</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Xao</copyright><atom:link href="https://jenboy.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
@@ -1769,6 +1769,14 @@ netstop 服务名&lt;/p&gt;
 &lt;/div&gt;</description>
         </item>
         <item>
+        <title>标签 | Tags</title>
+        <link>https://jenboy.github.io/tag/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://jenboy.github.io/tag/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>归档 | Archives</title>
         <link>https://jenboy.github.io/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
@@ -1777,7 +1785,7 @@ netstop 服务名&lt;/p&gt;
         <description></description>
         </item>
         <item>
-        <title>关于 | about</title>
+        <title>关于 | About</title>
         <link>https://jenboy.github.io/%E5%85%B3%E4%BA%8E-about/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
@@ -1805,6 +1813,12 @@ netstop 服务名&lt;/p&gt;
         
         <guid>https://jenboy.github.io/%E5%8F%8B%E9%93%BE-links/</guid>
         <description>&lt;p&gt;使用这个模板申请&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;名称：Xaoの小屋&lt;/p&gt;
+&lt;p&gt;简介：情绪垃圾桶&lt;/p&gt;
+&lt;p&gt;地址：https://jenboy.github.io/&lt;/p&gt;
+&lt;p&gt;头像：https://https://jenboy.github.io/favicon.webp&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         </item>
         
