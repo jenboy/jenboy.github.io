@@ -8,6 +8,43 @@
         <language>en-us</language>
         <copyright>Xao</copyright>
         <lastBuildDate>Thu, 15 Jan 2026 11:46:15 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>关于 | About</title>
+        <link>https://jenboy.github.io/%E5%85%B3%E4%BA%8E-about/</link>
+        <pubDate>Thu, 15 Jan 2026 06:39:04 +0000</pubDate>
+        
+        <guid>https://jenboy.github.io/%E5%85%B3%E4%BA%8E-about/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;记录生活&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;记录自己&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>搜索 | Search</title>
+        <link>https://jenboy.github.io/search/</link>
+        <pubDate>Thu, 15 Jan 2026 06:39:04 +0000</pubDate>
+        
+        <guid>https://jenboy.github.io/search/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>友链 | Links</title>
+        <link>https://jenboy.github.io/%E5%8F%8B%E9%93%BE-links/</link>
+        <pubDate>Thu, 15 Jan 2026 06:39:04 +0000</pubDate>
+        
+        <guid>https://jenboy.github.io/%E5%8F%8B%E9%93%BE-links/</guid>
+        <description>&lt;p&gt;使用这个模板申请&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;名称：Xaoの小屋&lt;/p&gt;
+&lt;p&gt;简介：情绪垃圾桶&lt;/p&gt;
+&lt;p&gt;地址：https://jenboy.github.io/&lt;/p&gt;
+&lt;p&gt;头像：https://https://jenboy.github.io/favicon.webp&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
         <title>标签 | Tags</title>
         <link>https://jenboy.github.io/tag/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
@@ -22,43 +59,6 @@
         
         <guid>https://jenboy.github.io/archives/</guid>
         <description></description>
-        </item>
-        <item>
-        <title>关于 | About</title>
-        <link>https://jenboy.github.io/%E5%85%B3%E4%BA%8E-about/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://jenboy.github.io/%E5%85%B3%E4%BA%8E-about/</guid>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;记录生活&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;记录自己&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        </item>
-        <item>
-        <title>搜索 | Search</title>
-        <link>https://jenboy.github.io/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://jenboy.github.io/search/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>友链 | Links</title>
-        <link>https://jenboy.github.io/%E5%8F%8B%E9%93%BE-links/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://jenboy.github.io/%E5%8F%8B%E9%93%BE-links/</guid>
-        <description>&lt;p&gt;使用这个模板申请&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;名称：Xaoの小屋&lt;/p&gt;
-&lt;p&gt;简介：情绪垃圾桶&lt;/p&gt;
-&lt;p&gt;地址：https://jenboy.github.io/&lt;/p&gt;
-&lt;p&gt;头像：https://https://jenboy.github.io/favicon.webp&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
         </item>
         
     </channel>
