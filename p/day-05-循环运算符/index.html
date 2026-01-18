@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="计算机基础">
-<title>Day 04 基础运算符</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="描述">
+<title>Day 05 循环运算符</title>
 
-<link rel='canonical' href='https://jenboy.github.io/p/1634/'>
+<link rel='canonical' href='https://jenboy.github.io/p/day-05-%E5%BE%AA%E7%8E%AF%E8%BF%90%E7%AE%97%E7%AC%A6/'>
 
-<link rel="stylesheet" href="/scss/style.min.c1320c0dc6b5e64a3f9d340dc1795c7165dc91421c13a8b372a987f35b5d1fec.css"><meta property='og:title' content="Day 04 基础运算符">
-<meta property='og:description' content="计算机基础">
-<meta property='og:url' content='https://jenboy.github.io/p/1634/'>
+<link rel="stylesheet" href="/scss/style.min.c1320c0dc6b5e64a3f9d340dc1795c7165dc91421c13a8b372a987f35b5d1fec.css"><meta property='og:title' content="Day 05 循环运算符">
+<meta property='og:description' content="描述">
+<meta property='og:url' content='https://jenboy.github.io/p/day-05-%E5%BE%AA%E7%8E%AF%E8%BF%90%E7%AE%97%E7%AC%A6/'>
 <meta property='og:site_name' content='Xao的碎碎念'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='计算机基础' /><meta property='article:published_time' content='2026-01-18T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-01-18T16:50:46&#43;08:00'/>
-<meta name="twitter:title" content="Day 04 基础运算符">
-<meta name="twitter:description" content="计算机基础">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='计算机基础' /><meta property='article:published_time' content='2026-01-18T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-01-18T16:54:18&#43;08:00'/>
+<meta name="twitter:title" content="Day 05 循环运算符">
+<meta name="twitter:description" content="描述">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -304,7 +304,7 @@
   <ol>
     <li><a href="#if重点掌握">if【重点】【掌握】</a>
       <ol>
-        <li><a href="#if">if</a>
+        <li><a href="#if-一般范围用if">if 【一般范围用if】</a>
           <ol>
             <li><a href="#语法">语法</a></li>
             <li><a href="#案例01">案例01</a></li>
@@ -342,9 +342,9 @@
         <li><a href="#案例04">案例04</a></li>
       </ol>
     </li>
-    <li><a href="#循环-while掌握">循环-while【掌握】</a>
+    <li><a href="#循环-while">循环-while</a>
       <ol>
-        <li><a href="#语法-4">语法</a></li>
+        <li><a href="#31-语法">3.1 语法</a></li>
         <li><a href="#while循环案例01">while循环案例01</a></li>
         <li><a href="#while循环特殊情况">while循环特殊情况</a></li>
         <li><a href="#while循环案例02">while循环案例02</a></li>
@@ -377,12 +377,12 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/1634/">Day 04 基础运算符</a>
+            <a href="/p/day-05-%E5%BE%AA%E7%8E%AF%E8%BF%90%E7%AE%97%E7%AC%A6/">Day 05 循环运算符</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            计算机基础
+            描述
         </h3>
         
     </div>
@@ -418,7 +418,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 13 分钟
+                    阅读时长: 12 分钟
                 </time>
             </div>
         
@@ -434,7 +434,7 @@
     
     
     <h2 id="if重点掌握">if【重点】【掌握】
-</h2><h3 id="if">if
+</h2><h3 id="if-一般范围用if">if 【一般范围用if】
 </h3><h4 id="语法">语法
 </h4><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -452,19 +452,19 @@
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">代码块00
-</span></span><span class="line"><span class="cl">if(条件){
-</span></span><span class="line"><span class="cl">	代码块01
-</span></span><span class="line"><span class="cl">}
-</span></span><span class="line"><span class="cl">代码块02
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">执行流程：
-</span></span><span class="line"><span class="cl">	1、执行代码块00
-</span></span><span class="line"><span class="cl">	2、执行条件判断
-</span></span><span class="line"><span class="cl">		如果条件是true，执行代码块01
-</span></span><span class="line"><span class="cl">		如果条件是false，不执行代码块01
-</span></span><span class="line"><span class="cl">	3、执行代码块02
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">代码块00</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nf">if</span><span class="p">(</span><span class="n">条件</span><span class="p">){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">代码块01</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="n">代码块02</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="n">执行流程</span><span class="err">：</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">1</span><span class="err">、</span><span class="n">执行代码块00</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">2</span><span class="err">、</span><span class="n">执行条件判断</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">如果条件是true</span><span class="err">，</span><span class="n">执行代码块01</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">如果条件是false</span><span class="err">，</span><span class="n">不执行代码块01</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">3</span><span class="err">、</span><span class="n">执行代码块02</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="案例01">案例01
 </h4><div class="highlight"><div class="chroma">
@@ -493,13 +493,9 @@
 </span><span class="lnt">22
 </span><span class="lnt">23
 </span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.if0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo03</span><span class="w"> </span><span class="p">{</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo03</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">		 *	去网吧
@@ -545,13 +541,9 @@
 </span><span class="lnt">15
 </span><span class="lnt">16
 </span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.if0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo04</span><span class="w"> </span><span class="p">{</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo04</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">		 *	携带菜刀过安检
@@ -590,21 +582,21 @@
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">代码块00
-</span></span><span class="line"><span class="cl">if(条件){
-</span></span><span class="line"><span class="cl">	代码块01
-</span></span><span class="line"><span class="cl">} else{
-</span></span><span class="line"><span class="cl">	代码块02
-</span></span><span class="line"><span class="cl">}
-</span></span><span class="line"><span class="cl">代码块03
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">执行流程：
-</span></span><span class="line"><span class="cl">	1、执行代码块00
-</span></span><span class="line"><span class="cl">	2、执行条件判断
-</span></span><span class="line"><span class="cl">		如果条件是true，执行代码块01
-</span></span><span class="line"><span class="cl">		如果条件是false，执行代码块02
-</span></span><span class="line"><span class="cl">	3、执行代码块03
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">代码块00</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nf">if</span><span class="p">(</span><span class="n">条件</span><span class="p">){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">代码块01</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">代码块02</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="n">代码块03</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="n">执行流程</span><span class="err">：</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">1</span><span class="err">、</span><span class="n">执行代码块00</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">2</span><span class="err">、</span><span class="n">执行条件判断</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">如果条件是true</span><span class="err">，</span><span class="n">执行代码块01</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">如果条件是false</span><span class="err">，</span><span class="n">执行代码块02</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">3</span><span class="err">、</span><span class="n">执行代码块03</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="案例01-1">案例01
 </h4><div class="highlight"><div class="chroma">
@@ -627,13 +619,9 @@
 </span><span class="lnt">16
 </span><span class="lnt">17
 </span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.if0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo05</span><span class="w"> </span><span class="p">{</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo05</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">		 *	判断考试成绩是否合格
@@ -681,13 +669,9 @@
 </span><span class="lnt">23
 </span><span class="lnt">24
 </span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.if0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo06</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -748,26 +732,26 @@
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">代码块00
-</span></span><span class="line"><span class="cl">if(条件01){
-</span></span><span class="line"><span class="cl">	代码块01
-</span></span><span class="line"><span class="cl">} else if(条件02){
-</span></span><span class="line"><span class="cl">	代码块02
-</span></span><span class="line"><span class="cl">} else if(条件03){
-</span></span><span class="line"><span class="cl">	代码块03
-</span></span><span class="line"><span class="cl">} else {
-</span></span><span class="line"><span class="cl">	代码块04
-</span></span><span class="line"><span class="cl">}
-</span></span><span class="line"><span class="cl">代码块N
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">执行流程:
-</span></span><span class="line"><span class="cl">	1、代码块00
-</span></span><span class="line"><span class="cl">	2、执行条件01，如果条件01是true，执行代码块01，if语法结束
-</span></span><span class="line"><span class="cl">		如果条件01是false，执行条件02，如果条件02是true，执行代码块02，if结束
-</span></span><span class="line"><span class="cl">			如果条件01和02都是false，执行条件03，如果条件03是true，执行代码块03，if结束
-</span></span><span class="line"><span class="cl">				如果上面的条件全部是false，执行代码块04
-</span></span><span class="line"><span class="cl">	3、执行代码块N
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="n">代码块00</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nf">if</span><span class="p">(</span><span class="n">条件01</span><span class="p">){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">代码块01</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="n">条件02</span><span class="p">){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">代码块02</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="n">条件03</span><span class="p">){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">代码块03</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">代码块04</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="n">代码块N</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nl">执行流程</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">1</span><span class="err">、</span><span class="n">代码块00</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">2</span><span class="err">、</span><span class="n">执行条件01</span><span class="err">，</span><span class="n">如果条件01是true</span><span class="err">，</span><span class="n">执行代码块01</span><span class="err">，</span><span class="n">if语法结束</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">如果条件01是false</span><span class="err">，</span><span class="n">执行条件02</span><span class="err">，</span><span class="n">如果条件02是true</span><span class="err">，</span><span class="n">执行代码块02</span><span class="err">，</span><span class="n">if结束</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="n">如果条件01和02都是false</span><span class="err">，</span><span class="n">执行条件03</span><span class="err">，</span><span class="n">如果条件03是true</span><span class="err">，</span><span class="n">执行代码块03</span><span class="err">，</span><span class="n">if结束</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">				</span><span class="n">如果上面的条件全部是false</span><span class="err">，</span><span class="n">执行代码块04</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">3</span><span class="err">、</span><span class="n">执行代码块N</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -803,13 +787,9 @@
 </span><span class="lnt">30
 </span><span class="lnt">31
 </span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.if01</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo02</span><span class="w"> </span><span class="p">{</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo02</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">		 * 2、使用选择结构语句实现判断学生成绩的等级
@@ -886,13 +866,9 @@
 </span><span class="lnt">38
 </span><span class="lnt">39
 </span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.if01</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo03</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -936,7 +912,7 @@
 </div>
 </div><h3 id="if嵌套">if嵌套
 </h3><ul>
-<li>if语法又包含另一个完整的if语法</li>
+<li>if语法又包含另一个完整的if语句</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -963,28 +939,28 @@
 </span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">代码块00
-</span></span><span class="line"><span class="cl">if(条件01){
-</span></span><span class="line"><span class="cl">	代码块01
-</span></span><span class="line"><span class="cl">	if(条件02){
-</span></span><span class="line"><span class="cl">		代码块03
-</span></span><span class="line"><span class="cl">	} else {
-</span></span><span class="line"><span class="cl">		代码块04
-</span></span><span class="line"><span class="cl">	}
-</span></span><span class="line"><span class="cl">	
-</span></span><span class="line"><span class="cl">} else {
-</span></span><span class="line"><span class="cl">	代码块02
-</span></span><span class="line"><span class="cl">}
-</span></span><span class="line"><span class="cl">代码块05
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">执行流程：
-</span></span><span class="line"><span class="cl">	1、执行代码块00
-</span></span><span class="line"><span class="cl">	2、执行条件01
-</span></span><span class="line"><span class="cl">		如果条件01是true，执行代码块01，再执行条件02
-</span></span><span class="line"><span class="cl">			如果条件02是true，执行代码块03
-</span></span><span class="line"><span class="cl">			如果条件02是false，执行代码块04
-</span></span><span class="line"><span class="cl">		如果条件01是false，执行代码块01，if结束
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">代码块00</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nf">if</span><span class="p">(</span><span class="n">条件01</span><span class="p">){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">代码块01</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nf">if</span><span class="w"> </span><span class="p">(</span><span class="n">条件02</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">代码块03</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">代码块04</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">代码块02</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="n">代码块05</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="n">执行流程</span><span class="err">：</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">1</span><span class="err">、</span><span class="w"> </span><span class="n">执行代码块00</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">2</span><span class="err">、</span><span class="w"> </span><span class="n">执行条件01</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">如果条件01是true</span><span class="err">，</span><span class="n">执行代码块01</span><span class="err">，</span><span class="n">再执行条件02</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="n">如果条件02是true</span><span class="p">,</span><span class="n">执行代码块03</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="n">如果条件是fales</span><span class="err">，</span><span class="n">执行代码块04</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">如果条件01是false</span><span class="p">,</span><span class="n">执行代码块02</span><span class="err">，</span><span class="n">最后执行代码块05</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="案例01-2">案例01
 </h4><div class="highlight"><div class="chroma">
@@ -1024,13 +1000,9 @@
 </span><span class="lnt">33
 </span><span class="lnt">34
 </span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.if01</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo04</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1102,13 +1074,9 @@
 </span><span class="lnt">30
 </span><span class="lnt">31
 </span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.demos</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo03</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1178,42 +1146,36 @@
 </span><span class="lnt">25
 </span><span class="lnt">26
 </span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">代码块00
-</span></span><span class="line"><span class="cl">变量 key
-</span></span><span class="line"><span class="cl">switch(key){
-</span></span><span class="line"><span class="cl">	case value01:
-</span></span><span class="line"><span class="cl">		代码块01
-</span></span><span class="line"><span class="cl">		break;
-</span></span><span class="line"><span class="cl">	
-</span></span><span class="line"><span class="cl">	case value02:
-</span></span><span class="line"><span class="cl">		代码块02
-</span></span><span class="line"><span class="cl">		break;
-</span></span><span class="line"><span class="cl">	
-</span></span><span class="line"><span class="cl">	case value03:
-</span></span><span class="line"><span class="cl">		代码块03
-</span></span><span class="line"><span class="cl">		break;
-</span></span><span class="line"><span class="cl">		
-</span></span><span class="line"><span class="cl">	... ...
-</span></span><span class="line"><span class="cl">	default:
-</span></span><span class="line"><span class="cl">		代码块N
-</span></span><span class="line"><span class="cl">		break;
-</span></span><span class="line"><span class="cl">}
-</span></span><span class="line"><span class="cl">代码块N+1
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">执行流程:
-</span></span><span class="line"><span class="cl">	1、执行代码块00
-</span></span><span class="line"><span class="cl">	2、执行case value01，如果key==value01，执行代码块01，执行break，结束switch
-</span></span><span class="line"><span class="cl">		如果key!=value01，但是key==value02，执行代码块02，执行break，结束switch
-</span></span><span class="line"><span class="cl">			如果key!=value02，key==value03，执行代码块03，执行break，结束switch
-</span></span><span class="line"><span class="cl">				... ...
-</span></span><span class="line"><span class="cl">				如果key和任何value都不相等，执行default，执行代码块N，执行break，结束switch
-</span></span><span class="line"><span class="cl">	3、执行代码块N+1
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">代码块00</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="n">变量</span><span class="w"> </span><span class="n">key</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nf">switch</span><span class="w"> </span><span class="p">(</span><span class="n">key</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">case</span><span class="w"> </span><span class="n">value01</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">代码块01</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">break</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">case</span><span class="w"> </span><span class="n">value02</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">代码块02</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">break</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">case</span><span class="w"> </span><span class="n">value03</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">代码块03</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">break</span><span class="p">;</span><span class="w">	
+</span></span></span><span class="line"><span class="cl"><span class="w">		
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">...</span><span class="w">	</span><span class="p">...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">default</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">代码块N</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">break</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="n">执行流程</span><span class="err">：</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">1</span><span class="err">、</span><span class="w"> </span><span class="n">执行代码块00</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">2</span><span class="err">、</span><span class="w"> </span><span class="n">执行case</span><span class="w"> </span><span class="n">value01</span><span class="err">，</span><span class="n">如果key</span><span class="o">==</span><span class="n">value01</span><span class="err">，</span><span class="n">执行代码块01</span><span class="err">，</span><span class="n">再执行break</span><span class="err">，</span><span class="n">结束switch</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">如果key</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">value01</span><span class="err">，</span><span class="n">如果key</span><span class="o">==</span><span class="n">value02</span><span class="err">，</span><span class="n">执行代码块02</span><span class="err">，</span><span class="n">再执行break</span><span class="err">，</span><span class="n">结束switch</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="p">...</span><span class="w"> </span><span class="p">...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">				</span><span class="n">如果key和任何value都不相同执行default</span><span class="err">，</span><span class="n">执行代码块N</span><span class="err">，</span><span class="n">在执行break</span><span class="err">，</span><span class="n">结束switch</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="案例01-3">案例01
 </h3><div class="highlight"><div class="chroma">
@@ -1253,13 +1215,9 @@
 </span><span class="lnt">33
 </span><span class="lnt">34
 </span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.switch0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo01</span><span class="w"> </span><span class="p">{</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo01</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">		 *	风扇档位和转速
@@ -1342,13 +1300,9 @@
 </span><span class="lnt">41
 </span><span class="lnt">42
 </span><span class="lnt">43
-</span><span class="lnt">44
-</span><span class="lnt">45
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.switch0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo02</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1444,13 +1398,9 @@
 </span><span class="lnt">43
 </span><span class="lnt">44
 </span><span class="lnt">45
-</span><span class="lnt">46
-</span><span class="lnt">47
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.switch0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo03</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1499,27 +1449,7 @@
 </div>
 </div><h3 id="案例04">案例04
 </h3><ul>
-<li>
-<p>键盘录入考试成绩（0~100），输出成绩的级别</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">使用选择结构语句实现判断学生成绩的等级
-</span></span><span class="line"><span class="cl">0--60	不及格
-</span></span><span class="line"><span class="cl">60--69	及格
-</span></span><span class="line"><span class="cl">70--79	中等
-</span></span><span class="line"><span class="cl">80--89	良好
-</span></span><span class="line"><span class="cl">90--100	优秀
-</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
+<li>键盘录入考试成绩 (0~100),输出成绩的级别</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1572,13 +1502,9 @@
 </span><span class="lnt">47
 </span><span class="lnt">48
 </span><span class="lnt">49
-</span><span class="lnt">50
-</span><span class="lnt">51
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.switch0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo04</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1629,8 +1555,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="循环-while掌握">循环-while【掌握】
-</h2><h3 id="语法-4">语法
+</div><h2 id="循环-while">循环-while
+</h2><h3 id="31-语法">3.1 语法
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1654,26 +1580,26 @@
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">int i = 0;	// 1、初始化
-</span></span><span class="line"><span class="cl">while(i &lt; 5){	// 2、循环条件
-</span></span><span class="line"><span class="cl">	System.out.println(i);	// 3、循环体
-</span></span><span class="line"><span class="cl">	i++;		// 4、控制循环条件发生变化
-</span></span><span class="line"><span class="cl">}
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">执行流程：
-</span></span><span class="line"><span class="cl">	第一轮：
-</span></span><span class="line"><span class="cl">		int i = 0;i&lt;5==&gt;true;输出i=0; i++
-</span></span><span class="line"><span class="cl">	第二轮:
-</span></span><span class="line"><span class="cl">		i=1; i&lt;5==&gt;true;输出i=1; i++
-</span></span><span class="line"><span class="cl">	第三轮：
-</span></span><span class="line"><span class="cl">		i=2; i&lt;5==&gt;true;输出i=2; i++
-</span></span><span class="line"><span class="cl">	第四轮:
-</span></span><span class="line"><span class="cl">		i=3; i&lt;5==&gt;true;输出i=3; i++
-</span></span><span class="line"><span class="cl">	第五轮:
-</span></span><span class="line"><span class="cl">		i=4; i&lt;5==&gt;true;输出i=4; i++
-</span></span><span class="line"><span class="cl">	第六轮（没有执行）:
-</span></span><span class="line"><span class="cl">		i=5; i&lt;5==&gt;false;	循环结束
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w">	</span><span class="c1">// 1.初始化</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">		</span><span class="c1">// 2、循环条件</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span><span class="w">	</span><span class="c1">// 3. 循环体</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">i</span><span class="o">++</span><span class="p">;</span><span class="w">			</span><span class="c1">// 4. 控制循环条件发生变化</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="n">执行流程</span><span class="err">：</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">第一轮</span><span class="err">：</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">5</span><span class="w"> </span><span class="o">==&gt;</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span><span class="n">输出i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">第二轮</span><span class="err">：</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">5</span><span class="w"> </span><span class="o">==&gt;</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span><span class="n">输出i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">第三轮</span><span class="err">：</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">2</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">5</span><span class="w"> </span><span class="o">==&gt;</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span><span class="n">输出i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">2</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">第四轮</span><span class="err">：</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">5</span><span class="w"> </span><span class="o">==&gt;</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span><span class="n">输出i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">3</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">第五轮</span><span class="err">：</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">4</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">5</span><span class="w"> </span><span class="o">==&gt;</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span><span class="n">输出i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">4</span><span class="err">，</span><span class="n">i</span><span class="o">++</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">第六轮</span><span class="err">：</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">5</span><span class="w"> </span><span class="o">==&gt;</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"> </span><span class="n">结束</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1691,13 +1617,9 @@
 </span><span class="lnt">12
 </span><span class="lnt">13
 </span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.while0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo01</span><span class="w"> </span><span class="p">{</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo01</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">		 * 	循环-while
@@ -1759,13 +1681,9 @@
 </span><span class="lnt">41
 </span><span class="lnt">42
 </span><span class="lnt">43
-</span><span class="lnt">44
-</span><span class="lnt">45
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.while0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo02</span><span class="w"> </span><span class="p">{</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo02</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">		 *	输出练习
@@ -1831,13 +1749,9 @@
 </span><span class="lnt">13
 </span><span class="lnt">14
 </span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.while0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo03</span><span class="w"> </span><span class="p">{</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo03</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">		 * 	一次都不执行
@@ -1874,13 +1788,9 @@
 </span><span class="lnt">13
 </span><span class="lnt">14
 </span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.while0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo04</span><span class="w"> </span><span class="p">{</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo04</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">		 *	根本停不下来
@@ -1931,13 +1841,9 @@
 </span><span class="lnt">29
 </span><span class="lnt">30
 </span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.shine.while0</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo05</span><span class="w"> </span><span class="p">{</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Demo05</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="cm">/**
 </span></span></span><span class="line"><span class="cl"><span class="cm">		 *	计算
@@ -2005,7 +1911,7 @@
 
 
         <span>
-            最后更新于 2026-01-18 16:50
+            最后更新于 2026-01-18 16:54
         </span>
     </section></footer>
 
@@ -2056,7 +1962,7 @@
             
                 
 <article class="">
-    <a href="/p/1610/">
+    <a href="/p/day-03-%E8%BF%90%E7%AE%97%E7%AC%A6/">
         
         
 
@@ -2069,12 +1975,12 @@
             
                 
 <article class="">
-    <a href="/p/1638/">
+    <a href="/p/day-04-%E5%9F%BA%E7%A1%80%E8%BF%90%E7%AE%97%E7%AC%A6/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Day 05 循环运算符</h2>
+            <h2 class="article-title">Day 04 基础运算符</h2>
         </div>
     </a>
 </article>
@@ -2082,7 +1988,7 @@
             
                 
 <article class="">
-    <a href="/p/1107/">
+    <a href="/p/day-02-%E5%9F%BA%E7%A1%80/">
         
         
 
@@ -2095,16 +2001,16 @@
             
                 
 <article class="has-image">
-    <a href="/p/1524/">
+    <a href="/p/day-01-%E5%85%A5%E9%97%A8/">
         
         
             <div class="article-image">
-                <img src="/p/1524/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.78148ac212243f80e87c62af36e2697e_hu_9d625c874af154d5.png" 
+                <img src="/p/day-01-%E5%85%A5%E9%97%A8/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.78148ac212243f80e87c62af36e2697e_hu_9d625c874af154d5.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
                         alt="Featured image of post Day 01 入门"
-                        data-key="15:24" 
+                        
                         data-hash="md5-eBSKwhIkP4DofGKvNuJpfg==">
                 
             </div>
