@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>技术学习 on Xao的碎碎念</title>
-        <link>https://jenboy.github.io/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/</link>
-        <description>Recent content in 技术学习 on Xao的碎碎念</description>
+        <title>计算机基础 on Xao的碎碎念</title>
+        <link>https://jenboy.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</link>
+        <description>Recent content in 计算机基础 on Xao的碎碎念</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Xao</copyright>
-        <lastBuildDate>Sun, 18 Jan 2026 16:19:11 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 18 Jan 2026 16:19:11 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Day 03 运算符</title>
         <link>https://jenboy.github.io/p/1610/</link>
         <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
