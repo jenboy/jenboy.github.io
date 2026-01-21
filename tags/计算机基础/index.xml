@@ -7,13 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Xao</copyright>
-        <lastBuildDate>Wed, 21 Jan 2026 09:54:24 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 21 Jan 2026 10:03:24 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Day 06 数组</title>
         <link>https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/</link>
         <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/</guid>
-        <description>&lt;img src="https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%92%8C%E6%95%B0%E7%BB%84%E5%86%85%E5%AD%98%E5%9B%BE.png" alt="Featured image of post Day 06 数组" /&gt;&lt;h3 id=&#34;概念&#34;&gt;概念
+        <description>&lt;img src="https://jenboy.github.io/%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%92%8C%E6%95%B0%E7%BB%84%E5%86%85%E5%AD%98%E5%9B%BE.png" alt="Featured image of post Day 06 数组" /&gt;&lt;h3 id=&#34;概念&#34;&gt;概念
 &lt;/h3&gt;&lt;h4 id=&#34;变量&#34;&gt;变量
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;在内存中开辟的一片空间，用来存储对应类型的数据&lt;/li&gt;
@@ -23,12 +23,16 @@
 &lt;li&gt;数组是在内存中开辟的一组连续的空间，用来存储相同类型的数据&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/%e5%9f%ba%e6%9c%ac%e7%b1%bb%e5%9e%8b%e5%92%8c%e6%95%b0%e7%bb%84%e5%86%85%e5%ad%98%e5%9b%be.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E6%95%B0%E7%BB%84%E5%86%85%E5%AD%98%E5%9B%BE.png&#34;
+	width=&#34;1645&#34;
+	height=&#34;845&#34;
+	srcset=&#34;https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E6%95%B0%E7%BB%84%E5%86%85%E5%AD%98%E5%9B%BE_hu_81d7f35db0e3e8da.png 480w, https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E6%95%B0%E7%BB%84%E5%86%85%E5%AD%98%E5%9B%BE_hu_2eeade53573ce25d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;194&#34;
+		data-flex-basis=&#34;467px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;创建数组掌握&#34;&gt;创建数组【掌握】
@@ -604,12 +608,16 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/%e6%95%b0%e7%bb%84%e6%89%a9%e5%ae%b9.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/%E6%95%B0%E7%BB%84%E6%89%A9%E5%AE%B9.png&#34;
+	width=&#34;1645&#34;
+	height=&#34;845&#34;
+	srcset=&#34;https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/%E6%95%B0%E7%BB%84%E6%89%A9%E5%AE%B9_hu_1abc2759b4c1537b.png 480w, https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/%E6%95%B0%E7%BB%84%E6%89%A9%E5%AE%B9_hu_5d982707343ab6d7.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;194&#34;
+		data-flex-basis=&#34;467px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;手动扩容&#34;&gt;手动扩容
@@ -917,12 +925,16 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;	&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/%e5%9f%ba%e6%9c%ac%e7%b1%bb%e5%9e%8b%e6%95%b0%e6%8d%ae%e4%bc%a0%e9%80%92.png&#34;
-	
-	
-	
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92.png&#34;
+	width=&#34;1609&#34;
+	height=&#34;646&#34;
+	srcset=&#34;https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92_hu_27b65d8f2c22b6a.png 480w, https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92_hu_30f3d957ca22bfd7.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;249&#34;
+		data-flex-basis=&#34;597px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;引用类型数据传递&#34;&gt;引用类型数据传递
@@ -960,12 +972,16 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/%e5%bc%95%e7%94%a8%e7%b1%bb%e5%9e%8b%e6%95%b0%e6%8d%ae%e4%bc%a0%e9%80%92.png&#34;
-	
-	
-	
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92.png&#34;
+	width=&#34;1629&#34;
+	height=&#34;699&#34;
+	srcset=&#34;https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92_hu_40a2a21ddd2922e1.png 480w, https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92_hu_8b3327816e1d3b00.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;233&#34;
+		data-flex-basis=&#34;559px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;冒泡排序&#34;&gt;冒泡排序
