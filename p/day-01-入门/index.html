@@ -10,10 +10,10 @@
 <meta property='og:description' content="计算机的诞生">
 <meta property='og:url' content='https://jenboy.github.io/p/day-01-%E5%85%A5%E9%97%A8/'>
 <meta property='og:site_name' content='Xao的碎碎念'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='计算机基础' /><meta property='article:published_time' content='2026-01-12T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-01-18T16:54:18&#43;08:00'/><meta property='og:image' content='https://jenboy.github.io/p/day-01-%E5%85%A5%E9%97%A8/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='计算机基础' /><meta property='article:published_time' content='2026-01-12T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-01-21T10:14:09&#43;08:00'/><meta property='og:image' content='https://jenboy.github.io/p/day-01-%E5%85%A5%E9%97%A8/pics/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png' />
 <meta name="twitter:title" content="Day 01 入门">
 <meta name="twitter:description" content="计算机的诞生"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://jenboy.github.io/p/day-01-%E5%85%A5%E9%97%A8/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png' />
+    <meta name="twitter:image" content='https://jenboy.github.io/p/day-01-%E5%85%A5%E9%97%A8/pics/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -358,13 +358,7 @@
             <li><a href="#java-跨平台运行原理">Java 跨平台运行原理</a></li>
           </ol>
         </li>
-        <li><a href="#名词解释自行补全">名词解释（自行补全）</a>
-          <ol>
-            <li><a href="#jdk-用于-开发java-应用程序它包含编译器javac可将java源代码编译为class字节码也包含运行程序所需的-jre">JDK 用于 <strong>开发</strong> Java 应用程序。它包含编译器（<code>javac</code>）可将 <code>.java</code> 源代码编译为 <code>.class</code> 字节码，也包含运行程序所需的 JRE。</a></li>
-            <li><a href="#jre-提供运行-java-应用程序所需的-最小环境如果你只需要-运行-别人开发好的-java-程序比如启动一个jar文件安装-jre-就够了">JRE 提供运行 Java 应用程序所需的 <strong>最小环境</strong>。如果你只需要 <strong>运行</strong> 别人开发好的 Java 程序（比如启动一个 <code>.jar</code> 文件），安装 JRE 就够了。</a></li>
-            <li><a href="#jvm-是运行-java-字节码class文件的-运行时环境它负责将编译后的-java-字节码解释或编译成当前操作系统的机器指令并执行">JVM 是运行 Java 字节码（<code>.class</code> 文件）的 <strong>运行时环境</strong>。它负责将编译后的 Java 字节码解释或编译成当前操作系统的机器指令并执行。</a></li>
-          </ol>
-        </li>
+        <li><a href="#名词解释自行补全">名词解释（自行补全）</a></li>
         <li><a href="#helloworld-案例细节">HelloWorld 案例细节</a>
           <ol>
             <li><a href="#类名和文件名字">类名和文件名字</a></li>
@@ -407,8 +401,8 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/p/day-01-%E5%85%A5%E9%97%A8/">
-                <img src="/p/day-01-%E5%85%A5%E9%97%A8/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_eb18a5453b9c5a52.png"
-                        srcset="/p/day-01-%E5%85%A5%E9%97%A8/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_eb18a5453b9c5a52.png 800w, /p/day-01-%E5%85%A5%E9%97%A8/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_ae4a6a5601e0fc5.png 1600w"
+                <img src="/p/day-01-%E5%85%A5%E9%97%A8/pics/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_eb18a5453b9c5a52.png"
+                        srcset="/p/day-01-%E5%85%A5%E9%97%A8/pics/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_eb18a5453b9c5a52.png 800w, /p/day-01-%E5%85%A5%E9%97%A8/pics/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_ae4a6a5601e0fc5.png 1600w"
                         width="800" 
                         height="440" 
                         loading="lazy"
@@ -783,10 +777,10 @@ netstop 服务名</p>
 </h3><ul>
 <li>把 JDK 中 bin 目录配置到系统 Path</li>
 </ul>
-<p><img src="/p/day-01-%E5%85%A5%E9%97%A8/%E6%89%93%E5%BC%80%E5%B1%9E%E6%80%A7.png"
+<p><img src="/p/day-01-%E5%85%A5%E9%97%A8/pics/%E6%89%93%E5%BC%80%E5%B1%9E%E6%80%A7.png"
 	width="532"
 	height="336"
-	srcset="/p/day-01-%E5%85%A5%E9%97%A8/%E6%89%93%E5%BC%80%E5%B1%9E%E6%80%A7_hu_4b8ea683b706f7a5.png 480w, /p/day-01-%E5%85%A5%E9%97%A8/%E6%89%93%E5%BC%80%E5%B1%9E%E6%80%A7_hu_64b23e9e883a2737.png 1024w"
+	srcset="/p/day-01-%E5%85%A5%E9%97%A8/pics/%E6%89%93%E5%BC%80%E5%B1%9E%E6%80%A7_hu_4b8ea683b706f7a5.png 480w, /p/day-01-%E5%85%A5%E9%97%A8/pics/%E6%89%93%E5%BC%80%E5%B1%9E%E6%80%A7_hu_64b23e9e883a2737.png 1024w"
 	loading="lazy"
 	
 	
@@ -795,10 +789,10 @@ netstop 服务名</p>
 		data-flex-basis="380px"
 	
 ></p>
-<p><img src="/p/day-01-%E5%85%A5%E9%97%A8/JAVA_HOME.png"
+<p><img src="/p/day-01-%E5%85%A5%E9%97%A8/pics/JAVA_HOME.png"
 	width="1611"
 	height="854"
-	srcset="/p/day-01-%E5%85%A5%E9%97%A8/JAVA_HOME_hu_1f295722bdce595c.png 480w, /p/day-01-%E5%85%A5%E9%97%A8/JAVA_HOME_hu_4bf648d01511821a.png 1024w"
+	srcset="/p/day-01-%E5%85%A5%E9%97%A8/pics/JAVA_HOME_hu_1f295722bdce595c.png 480w, /p/day-01-%E5%85%A5%E9%97%A8/pics/JAVA_HOME_hu_4bf648d01511821a.png 1024w"
 	loading="lazy"
 	
 	
@@ -807,10 +801,10 @@ netstop 服务名</p>
 		data-flex-basis="452px"
 	
 ></p>
-<p><img src="/p/day-01-%E5%85%A5%E9%97%A8/%E9%85%8D%E7%BD%AEpath.png"
+<p><img src="/p/day-01-%E5%85%A5%E9%97%A8/pics/%E9%85%8D%E7%BD%AEpath.png"
 	width="1693"
 	height="1070"
-	srcset="/p/day-01-%E5%85%A5%E9%97%A8/%E9%85%8D%E7%BD%AEpath_hu_2a020f58438637f.png 480w, /p/day-01-%E5%85%A5%E9%97%A8/%E9%85%8D%E7%BD%AEpath_hu_58bdb0055a58545f.png 1024w"
+	srcset="/p/day-01-%E5%85%A5%E9%97%A8/pics/%E9%85%8D%E7%BD%AEpath_hu_2a020f58438637f.png 480w, /p/day-01-%E5%85%A5%E9%97%A8/pics/%E9%85%8D%E7%BD%AEpath_hu_58bdb0055a58545f.png 1024w"
 	loading="lazy"
 	
 	
@@ -831,13 +825,13 @@ netstop 服务名</p>
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">.txt 结尾的是文本文件  
-</span></span><span class="line"><span class="cl">.mp3 结尾是音频文件  
-</span></span><span class="line"><span class="cl">.doc 结尾的是 word 文档  
-</span></span><span class="line"><span class="cl">... ...  
-</span></span><span class="line"><span class="cl">.java 结尾的是 java 文件  
-</span></span><span class="line"><span class="cl">创建任意文件, 修改文件的后缀名即可
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="p">.</span><span class="na">txt</span><span class="w"> </span><span class="n">结尾的是文本文件</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="p">.</span><span class="na">mp3</span><span class="w"> </span><span class="n">结尾是音频文件</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="p">.</span><span class="na">doc</span><span class="w"> </span><span class="n">结尾的是</span><span class="w"> </span><span class="n">word</span><span class="w"> </span><span class="n">文档</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="p">...</span><span class="w"> </span><span class="p">...</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="p">.</span><span class="na">java</span><span class="w"> </span><span class="n">结尾的是</span><span class="w"> </span><span class="n">java</span><span class="w"> </span><span class="n">文件</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="n">创建任意文件</span><span class="p">,</span><span class="w"> </span><span class="n">修改文件的后缀名即可</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="编写-helloworld-代码">编写 HelloWorld 代码
 </h3><ul>
@@ -873,10 +867,10 @@ netstop 服务名</p>
 </h4><blockquote>
 <p>java 字节码文件名字(不要.class)</p>
 </blockquote>
-<p><img src="/p/day-01-%E5%85%A5%E9%97%A8/%E7%BC%96%E8%AF%91%E5%92%8C%E8%BF%90%E8%A1%8C.png"
+<p><img src="/p/day-01-%E5%85%A5%E9%97%A8/pics/%E7%BC%96%E8%AF%91%E5%92%8C%E8%BF%90%E8%A1%8C.png"
 	width="878"
 	height="348"
-	srcset="/p/day-01-%E5%85%A5%E9%97%A8/%E7%BC%96%E8%AF%91%E5%92%8C%E8%BF%90%E8%A1%8C_hu_67b091cdc43bb9d7.png 480w, /p/day-01-%E5%85%A5%E9%97%A8/%E7%BC%96%E8%AF%91%E5%92%8C%E8%BF%90%E8%A1%8C_hu_995b311f8dc31da2.png 1024w"
+	srcset="/p/day-01-%E5%85%A5%E9%97%A8/pics/%E7%BC%96%E8%AF%91%E5%92%8C%E8%BF%90%E8%A1%8C_hu_67b091cdc43bb9d7.png 480w, /p/day-01-%E5%85%A5%E9%97%A8/pics/%E7%BC%96%E8%AF%91%E5%92%8C%E8%BF%90%E8%A1%8C_hu_995b311f8dc31da2.png 1024w"
 	loading="lazy"
 	
 	
@@ -921,10 +915,10 @@ netstop 服务名</p>
 <p>不管是什么操作系统，只要安装了 java 虚拟机就能运行 java 程序</p>
 </li>
 </ul>
-<p><img src="/p/day-01-%E5%85%A5%E9%97%A8/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png"
+<p><img src="/p/day-01-%E5%85%A5%E9%97%A8/pics/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png"
 	width="1763"
 	height="970"
-	srcset="/p/day-01-%E5%85%A5%E9%97%A8/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_2f5e69c1072c9296.png 480w, /p/day-01-%E5%85%A5%E9%97%A8/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_50bc6c47ab900ecd.png 1024w"
+	srcset="/p/day-01-%E5%85%A5%E9%97%A8/pics/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_2f5e69c1072c9296.png 480w, /p/day-01-%E5%85%A5%E9%97%A8/pics/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_50bc6c47ab900ecd.png 1024w"
 	loading="lazy"
 	
 	
@@ -934,10 +928,18 @@ netstop 服务名</p>
 	
 ></p>
 <h3 id="名词解释自行补全">名词解释（自行补全）
-</h3><h4 id="jdk-用于-开发java-应用程序它包含编译器javac可将java源代码编译为class字节码也包含运行程序所需的-jre">JDK 用于 <strong>开发</strong> Java 应用程序。它包含编译器（<code>javac</code>）可将 <code>.java</code> 源代码编译为 <code>.class</code> 字节码，也包含运行程序所需的 JRE。
-</h4><h4 id="jre-提供运行-java-应用程序所需的-最小环境如果你只需要-运行-别人开发好的-java-程序比如启动一个jar文件安装-jre-就够了">JRE 提供运行 Java 应用程序所需的 <strong>最小环境</strong>。如果你只需要 <strong>运行</strong> 别人开发好的 Java 程序（比如启动一个 <code>.jar</code> 文件），安装 JRE 就够了。
-</h4><h4 id="jvm-是运行-java-字节码class文件的-运行时环境它负责将编译后的-java-字节码解释或编译成当前操作系统的机器指令并执行">JVM 是运行 Java 字节码（<code>.class</code> 文件）的 <strong>运行时环境</strong>。它负责将编译后的 Java 字节码解释或编译成当前操作系统的机器指令并执行。
-</h4><h3 id="helloworld-案例细节">HelloWorld 案例细节
+</h3><ul>
+<li>
+<p>JDK 用于 <strong>开发</strong> Java 应用程序。它包含编译器（<code>javac</code>）可将 <code>.java</code> 源代码编译为 <code>.class</code> 字节码，也包含运行程序所需的 JRE。</p>
+</li>
+<li>
+<p>JRE 提供运行 Java 应用程序所需的 <strong>最小环境</strong>。如果你只需要 <strong>运行</strong> 别人开发好的 Java 程序（比如启动一个 <code>.jar</code> 文件），安装 JRE 就够了。</p>
+</li>
+<li>
+<p>JVM 是运行 Java 字节码（<code>.class</code> 文件）的 <strong>运行时环境</strong>。它负责将编译后的 Java 字节码解释或编译成当前操作系统的机器指令并执行。</p>
+</li>
+</ul>
+<h3 id="helloworld-案例细节">HelloWorld 案例细节
 </h3><h4 id="类名和文件名字">类名和文件名字
 </h4><ul>
 <li>
@@ -1079,7 +1081,7 @@ netstop 服务名</p>
 
 
         <span>
-            最后更新于 2026-01-18 16:54
+            最后更新于 2026-01-21 10:14
         </span>
     </section></footer>
 
@@ -1134,8 +1136,13 @@ netstop 服务名</p>
         
         
             <div class="article-image">
-                
-                    <img src="/%e5%9f%ba%e6%9c%ac%e7%b1%bb%e5%9e%8b%e5%92%8c%e6%95%b0%e7%bb%84%e5%86%85%e5%ad%98%e5%9b%be.png" loading="lazy" data-key="" data-hash="/基本类型和数组内存图.png"/>
+                <img src="/p/day-06-%E6%95%B0%E7%BB%84/pics/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E6%95%B0%E7%BB%84%E5%86%85%E5%AD%98%E5%9B%BE.519e4c83c552ee69eb2d005e58e424d1_hu_32d7f14d72f1f907.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Day 06 数组"
+                        
+                        data-hash="md5-UZ5Mg8VS7mnrLQBeWOQk0Q==">
                 
             </div>
         
@@ -1153,7 +1160,7 @@ netstop 服务名</p>
         
         
             <div class="article-image">
-                <img src="/p/day-05-%E5%87%BD%E6%95%B0/%E6%96%B9%E6%B3%95%E5%A4%9A%E7%BA%A7%E8%B0%83%E7%94%A8.a49889bf1b5706c9fb2bcff2ced76fc7_hu_a3c7ce767bc1827e.png" 
+                <img src="/p/day-05-%E5%87%BD%E6%95%B0/pics/%E6%96%B9%E6%B3%95%E5%A4%9A%E7%BA%A7%E8%B0%83%E7%94%A8.a49889bf1b5706c9fb2bcff2ced76fc7_hu_a3c7ce767bc1827e.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
