@@ -695,6 +695,57 @@
         width: 100%;
         z-index: -1;
     }
+
+             
+    :root {
+     
+    --link-text: #0969da;               
+    --link-bg-hover: #ddf4ff;           
+    --link-decoration: transparent;     
+    --bg-body: #ffffff;
+    --text-body: #24292f;
+    }
+
+     
+    [data-theme="dark"] {
+     
+    --link-text: #58a6ff;               
+    --link-bg-hover: rgba(56, 139, 253, 0.15);  
+    --link-decoration: transparent;
+    --bg-body: #0d1117;
+    --text-body: #c9d1d9;
+    }
+
+     
+     
+    .highlight-link {
+    color: var(--link-text);
+    text-decoration: none;            
+    
+     
+    padding: 2px 6px;                
+    margin: 0 -4px;                   
+    
+    border-radius: 6px;               
+    transition: all 0.2s ease-in-out;  
+    font-weight: 500;                 
+    cursor: pointer;
+    position: relative;
+    }
+
+     
+    .highlight-link:hover {
+    background-color: var(--link-bg-hover);
+    text-decoration: none;
+    }
+
+     
+    .highlight-link:focus-visible {
+    outline: 2px solid var(--link-text);
+    outline-offset: 2px;
+    border-radius: 6px;
+    }
+
 </style>
 
 
