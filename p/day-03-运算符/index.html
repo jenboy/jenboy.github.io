@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://jenboy.github.io/p/day-03-%E8%BF%90%E7%AE%97%E7%AC%A6/'>
 
-<link rel="stylesheet" href="/scss/style.min.c1320c0dc6b5e64a3f9d340dc1795c7165dc91421c13a8b372a987f35b5d1fec.css"><meta property='og:title' content="Day 03 运算符">
+<link rel="stylesheet" href="/scss/style.min.6998e4e648ca13c26692fd732a596048e487a90378e5ec1f10b8a5899f478b60.css"><meta property='og:title' content="Day 03 运算符">
 <meta property='og:description' content="运算符">
 <meta property='og:url' content='https://jenboy.github.io/p/day-03-%E8%BF%90%E7%AE%97%E7%AC%A6/'>
 <meta property='og:site_name' content='Xao的碎碎念'>
@@ -1720,6 +1720,26 @@
         z-index: -1;
     }
 </style>
+
+
+<script defer src="https://cn.vercount.one/js"></script>
+<script>
+    function showHideView() {
+        
+        let viewCounts = document.querySelectorAll("#viewCount");
+        if (viewCounts) {
+            
+            let article =  document.querySelector(".article-page");
+            if (!article) {
+                viewCounts.forEach(ele => {
+                    ele.style.display = 'none';
+                });
+            }
+        }
+    }
+    
+    showHideView();
+</script>
 
 <script>
     
