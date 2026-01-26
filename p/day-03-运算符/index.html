@@ -10,7 +10,7 @@
 <meta property='og:description' content="运算符">
 <meta property='og:url' content='https://jenboy.github.io/p/day-03-%E8%BF%90%E7%AE%97%E7%AC%A6/'>
 <meta property='og:site_name' content='Xao的碎碎念'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='计算机基础' /><meta property='article:published_time' content='2026-01-17T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-01-21T09:54:24&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='计算机基础' /><meta property='article:published_time' content='2026-01-17T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-01-26T10:49:39&#43;08:00'/>
 <meta name="twitter:title" content="Day 03 运算符">
 <meta name="twitter:description" content="运算符">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -309,7 +309,7 @@
         <li><a href="#安装">安装</a></li>
       </ol>
     </li>
-    <li><a href="#类型转换熟悉">类型转换【熟悉】</a>
+    <li><a href="#类型转换">类型转换</a>
       <ol>
         <li><a href="#概述-1">概述</a></li>
         <li><a href="#向上转型">向上转型</a></li>
@@ -317,7 +317,7 @@
         <li><a href="#转换原则">转换原则</a></li>
       </ol>
     </li>
-    <li><a href="#运算符重点">运算符【重点】</a>
+    <li><a href="#运算符">运算符</a>
       <ol>
         <li><a href="#概述-2">概述</a></li>
         <li><a href="#算术运算符">算术运算符</a></li>
@@ -441,7 +441,7 @@
 </h3><ul>
 <li>我们下载的软件包&ndash;解压缩之后可以直接运行&ndash;绿色版</li>
 </ul>
-<h2 id="类型转换熟悉">类型转换【熟悉】
+<h2 id="类型转换">类型转换
 </h2><h3 id="概述-1">概述
 </h3><ul>
 <li>不同类型的数据，在兼容的情况下是可以互相转换的</li>
@@ -646,7 +646,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="n">boolean的取值为true</span><span class="o">/</span><span class="kc">false</span><span class="err">，</span><span class="n">不可与其他类型转换</span><span class="err">。</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="运算符重点">运算符【重点】
+</div><h2 id="运算符">运算符
 </h2><h3 id="概述-2">概述
 </h3><ul>
 <li>在运算中使用的符号，这些符号被赋予了特殊含义</li>
@@ -677,14 +677,14 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">+
-</span></span><span class="line"><span class="cl">-
-</span></span><span class="line"><span class="cl">*
-</span></span><span class="line"><span class="cl">/
-</span></span><span class="line"><span class="cl">%
-</span></span><span class="line"><span class="cl">++
-</span></span><span class="line"><span class="cl">--
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="o">+</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="o">-</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="o">/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="o">%</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="o">++</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="o">--</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1093,15 +1093,15 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">=
-</span></span><span class="line"><span class="cl">+=
-</span></span><span class="line"><span class="cl">	a += b
-</span></span><span class="line"><span class="cl">	a = a+b
-</span></span><span class="line"><span class="cl">-=
-</span></span><span class="line"><span class="cl">*=
-</span></span><span class="line"><span class="cl">/=
-</span></span><span class="line"><span class="cl">%=
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="o">=</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="o">+=</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">a</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">b</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="o">-=</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="o">*=</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="o">/=</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="o">%=</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="键盘录入人机交互">键盘录入（人机交互）
 </h2><h3 id="概述-3">概述
@@ -1309,7 +1309,7 @@
 
 
         <span>
-            最后更新于 2026-01-21 09:54
+            最后更新于 2026-01-26 10:49
         </span>
     </section></footer>
 
