@@ -10,7 +10,7 @@
 <meta property='og:description' content="情绪垃圾桶">
 <meta property='og:url' content='https://jenboy.github.io/categories/%E6%B5%8B%E8%AF%95/'>
 <meta property='og:site_name' content='Xaoの小屋'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2026-01-08T00:00:00&#43;00:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2026-01-12T00:00:00&#43;00:00 '/>
 <meta name="twitter:title" content="Category: 测试 - Xaoの小屋">
 <meta name="twitter:description" content="情绪垃圾桶"><link rel="alternate" type="application/rss&#43;xml" href="https://jenboy.github.io/categories/%E6%B5%8B%E8%AF%95/index.xml">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -76,7 +76,7 @@
             
                 <li>
                     <a 
-                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        href='https://github.com/jenboy'
                         target="_blank"
                         title="GitHub"
                         rel="me"
@@ -287,7 +287,7 @@
                     <a href="/archives/#2026">
                         
                             <span class="year">2026</span>
-                            <span class="count">1</span>
+                            <span class="count">2</span>
                         
                     </a> 
                 </div>
@@ -322,6 +322,10 @@
 
     <div class="tagCloud-tags">
         
+            <a href="/categories/java/" class="font_size_1">
+                Java
+            </a>
+        
             <a href="/categories/test/" class="font_size_1">
                 Test
             </a>
@@ -336,6 +340,10 @@
         
             <a href="/categories/%E6%B5%8B%E8%AF%95/" class="font_size_1">
                 测试
+            </a>
+        
+            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="font_size_1">
+                计算机
             </a>
         
     </div>
@@ -416,6 +424,51 @@
 
         document.head.appendChild(customFont);
     }());
+</script>
+
+<script>
+    
+    const cssPath = "https://jenboy.github.io/waifu/waifu.css"
+    const tipsJsonPath = "https://jenboy.github.io/waifu/waifu-tips.json"
+    
+    const live2d_path = "https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/";
+
+    
+    function loadExternalResource(url, type) {
+        return new Promise((resolve, reject) => {
+            let tag;
+            if (type === "css") {
+                tag = document.createElement("link");
+                tag.rel = "stylesheet";
+                tag.href = url;
+            }
+            else if (type === "js") {
+                tag = document.createElement("script");
+                tag.src = url;
+            }
+            if (tag) {
+                tag.onload = () => resolve(url);
+                tag.onerror = () => reject(url);
+                document.head.appendChild(tag);
+            }
+        });
+    }
+
+    
+    if (screen.width >= 768) {
+        Promise.all([
+            loadExternalResource(cssPath, "css"),
+            loadExternalResource(live2d_path + "live2d.min.js", "js"),
+            loadExternalResource(live2d_path + "waifu-tips.js", "js")
+        ]).then(() => {
+            
+            initWidget({
+                waifuPath: tipsJsonPath,
+                cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
+                tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
+            });
+        });
+    }
 </script>
 
     </body>

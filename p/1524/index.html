@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="计算机的诞生">
+<title>Day 01 入门</title>
+
+<link rel='canonical' href='http://localhost:1313/p/1524/'>
+
+<link rel="stylesheet" href="/scss/style.min.c1320c0dc6b5e64a3f9d340dc1795c7165dc91421c13a8b372a987f35b5d1fec.css"><meta property='og:title' content="Day 01 入门">
+<meta property='og:description' content="计算机的诞生">
+<meta property='og:url' content='http://localhost:1313/p/1524/'>
+<meta property='og:site_name' content='Xao的碎碎念'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='计算机' /><meta property='article:published_time' content='2026-01-12T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-01-15T11:46:15&#43;08:00'/><meta property='og:image' content='http://localhost:1313/p/1524/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png' />
+<meta name="twitter:title" content="Day 01 入门">
+<meta name="twitter:description" content="计算机的诞生"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/p/1524/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_8e904100b37f7870.png" width="300"
+                            height="304" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">💭</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Xao的碎碎念</a></h1>
+            <h2 class="site-description">情绪垃圾桶</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/jenboy'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:hulatang@linux.do'
+                        target="_blank"
+                        title="Email"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页 | Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档 | Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/tags/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+                
+                <span>标签 | Tags</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E9%93%BE-links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链 | Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索 | Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E-about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于 | About</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#计算机诞生和发展了解">计算机诞生和发展【了解】</a>
+      <ol>
+        <li><a href="#诞生">诞生</a></li>
+        <li><a href="#计算机发展史重要的人">计算机发展史重要的人</a></li>
+        <li><a href="#计算机发展阶段">计算机发展阶段</a></li>
+        <li><a href="#中国的超算">中国的超算</a></li>
+        <li><a href="#计算机发展方向">计算机发展方向</a></li>
+        <li><a href="#计算机的组成">计算机的组成</a></li>
+        <li><a href="#计算机之父">计算机之父</a></li>
+        <li><a href="#人工智能之父">人工智能之父</a></li>
+      </ol>
+    </li>
+    <li><a href="#计算机组成熟悉">计算机组成【熟悉】</a>
+      <ol>
+        <li><a href="#硬件">硬件</a></li>
+        <li><a href="#软件">软件</a>
+          <ol>
+            <li><a href="#系统软件">系统软件</a></li>
+            <li><a href="#移动端">移动端</a></li>
+            <li><a href="#应用软件">应用软件</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#dos命令掌握">DOS命令【掌握】</a>
+      <ol>
+        <li><a href="#概述">概述</a></li>
+        <li><a href="#常用命令">常用命令</a></li>
+      </ol>
+    </li>
+    <li><a href="#jdk重点掌握">JDK【重点】【掌握】</a>
+      <ol>
+        <li><a href="#概述-1">概述</a></li>
+        <li><a href="#下载">下载</a></li>
+        <li><a href="#卸载">卸载</a></li>
+        <li><a href="#安装">安装</a></li>
+        <li><a href="#配置">配置</a></li>
+      </ol>
+    </li>
+    <li><a href="#我的第一个案例helloworld重点掌握">我的第一个案例HelloWorld【重点】【掌握】</a>
+      <ol>
+        <li><a href="#创建java文件">创建Java文件</a></li>
+        <li><a href="#编写helloworld代码">编写HelloWorld代码</a></li>
+        <li><a href="#运行java代码">运行Java代码</a>
+          <ol>
+            <li><a href="#编译">编译</a></li>
+            <li><a href="#运行">运行</a></li>
+          </ol>
+        </li>
+        <li><a href="#java代码运行原理">Java代码运行原理</a>
+          <ol>
+            <li><a href="#java运行原理">Java运行原理</a></li>
+            <li><a href="#java跨平台运行原理">Java跨平台运行原理</a></li>
+          </ol>
+        </li>
+        <li><a href="#名词解释自行补全">名词解释（自行补全）</a>
+          <ol>
+            <li><a href="#jdk-用于开发java-应用程序它包含编译器javac可将java源代码编译为class字节码也包含运行程序所需的-jre">JDK 用于<strong>开发</strong> Java 应用程序。它包含编译器（<code>javac</code>）可将 <code>.java</code> 源代码编译为 <code>.class</code> 字节码，也包含运行程序所需的 JRE。</a></li>
+            <li><a href="#jre-提供运行-java-应用程序所需的最小环境如果你只需要运行别人开发好的-java-程序比如启动一个jar文件安装-jre-就够了">JRE 提供运行 Java 应用程序所需的<strong>最小环境</strong>。如果你只需要<strong>运行</strong>别人开发好的 Java 程序（比如启动一个 <code>.jar</code> 文件），安装 JRE 就够了。</a></li>
+            <li><a href="#jvm-是运行-java-字节码class文件的运行时环境它负责将编译后的-java-字节码解释或编译成当前操作系统的机器指令并执行">JVM 是运行 Java 字节码（<code>.class</code> 文件）的<strong>运行时环境</strong>。它负责将编译后的 Java 字节码解释或编译成当前操作系统的机器指令并执行。</a></li>
+          </ol>
+        </li>
+        <li><a href="#helloworld案例细节">HelloWorld案例细节</a>
+          <ol>
+            <li><a href="#类名和文件名字">类名和文件名字</a></li>
+            <li><a href="#main方法">main方法</a></li>
+            <li><a href="#java语言严格区分大小写">Java语言严格区分大小写</a></li>
+            <li><a href="#一个java文件中可以书写多个class">一个Java文件中可以书写多个class</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#代码规范掌握严格执行">代码规范【掌握】【严格执行】</a>
+      <ol>
+        <li><a href="#缩进和换行">缩进和换行</a>
+          <ol>
+            <li><a href="#缩进">缩进</a></li>
+            <li><a href="#换行">换行</a></li>
+          </ol>
+        </li>
+        <li><a href="#注释">注释</a>
+          <ol>
+            <li><a href="#单行注释">单行注释</a></li>
+            <li><a href="#多行注释">多行注释</a></li>
+            <li><a href="#文档注释">文档注释</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/1524/">
+                <img src="/p/1524/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_eb18a5453b9c5a52.png"
+                        srcset="/p/1524/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_eb18a5453b9c5a52.png 800w, /p/1524/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_ae4a6a5601e0fc5.png 1600w"
+                        width="800" 
+                        height="440" 
+                        loading="lazy"
+                        alt="Featured image of post Day 01 入门" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/" >
+                技术学习
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/1524/">Day 01 入门</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            计算机的诞生
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-01-12T00:00:00Z'>2026-01-12</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 4 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="day-01笔记入门">Day 01笔记&ndash;入门
+</h1><h2 id="计算机诞生和发展了解">计算机诞生和发展【了解】
+</h2><h3 id="诞生">诞生
+</h3><ul>
+<li>
+<p>时间</p>
+<ul>
+<li>1946年2月14日</li>
+</ul>
+</li>
+<li>
+<p>地点</p>
+<ul>
+<li>美国</li>
+</ul>
+</li>
+<li>
+<p>目的</p>
+<ul>
+<li>战争</li>
+</ul>
+</li>
+</ul>
+<h3 id="计算机发展史重要的人">计算机发展史重要的人
+</h3><ul>
+<li>
+<p>艾伦*图灵</p>
+</li>
+<li>
+<p>冯*诺依曼</p>
+</li>
+</ul>
+<h3 id="计算机发展阶段">计算机发展阶段
+</h3><ul>
+<li>
+<p>电子管计算机</p>
+</li>
+<li>
+<p>晶体管计算机</p>
+</li>
+<li>
+<p>集成电路计算机</p>
+</li>
+<li>
+<p>大规模和超大规模集成电路计算机</p>
+</li>
+</ul>
+<h3 id="中国的超算">中国的超算
+</h3><ul>
+<li>
+<p>天河二号</p>
+</li>
+<li>
+<p>神威*太湖之光</p>
+</li>
+</ul>
+<h3 id="计算机发展方向">计算机发展方向
+</h3><ul>
+<li>
+<p>速度更快</p>
+</li>
+<li>
+<p>体积更小</p>
+</li>
+<li>
+<p>性能更强</p>
+</li>
+</ul>
+<h3 id="计算机的组成">计算机的组成
+</h3><ul>
+<li>
+<p>输入设备</p>
+</li>
+<li>
+<p>输出设备</p>
+</li>
+<li>
+<p>存储设备</p>
+</li>
+<li>
+<p>计算器</p>
+</li>
+<li>
+<p>控制器</p>
+</li>
+</ul>
+<h3 id="计算机之父">计算机之父
+</h3><h3 id="人工智能之父">人工智能之父
+</h3><h2 id="计算机组成熟悉">计算机组成【熟悉】
+</h2><h3 id="硬件">硬件
+</h3><ul>
+<li>
+<p>物理设备</p>
+<ul>
+<li>
+<p>CPU</p>
+</li>
+<li>
+<p>硬盘</p>
+</li>
+<li>
+<p>内存</p>
+</li>
+<li>
+<p>键盘</p>
+</li>
+<li>
+<p>音响</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="软件">软件
+</h3><ul>
+<li>软件是一系列按照特定顺序组织的<a class="link" href="https://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA/140338?fromModule=lemma_inlink"  target="_blank" rel="noopener"
+    >计算机</a>数据和<a class="link" href="https://baike.baidu.com/item/%E6%8C%87%E4%BB%A4/3225201?fromModule=lemma_inlink"  target="_blank" rel="noopener"
+    >指令</a>的集合。</li>
+</ul>
+<h4 id="系统软件">系统软件
+</h4><ul>
+<li>
+<p>系统软件是指控制和协调计算机及<a class="link" href="https://baike.baidu.com/item/%E5%A4%96%E9%83%A8%E8%AE%BE%E5%A4%87?fromModule=lemma_inlink"  target="_blank" rel="noopener"
+    >外部设备</a>,支持<a class="link" href="https://baike.baidu.com/item/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91?fromModule=lemma_inlink"  target="_blank" rel="noopener"
+    >应用软件开发</a>和运行的系统，是无需用户干预的各种程序的集合，主要功能是调度，监控和维护<a class="link" href="https://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/7210959?fromModule=lemma_inlink"  target="_blank" rel="noopener"
+    >计算机系统</a>；</p>
+</li>
+<li>
+<p>负责管理计算机系统中各种独立的硬件，使得它们可以协调工作。</p>
+</li>
+</ul>
+<h5 id="pc端">PC端
+</h5><ul>
+<li>
+<p>Windows</p>
+</li>
+<li>
+<p>MacOS</p>
+</li>
+<li>
+<p>Linux</p>
+</li>
+<li>
+<p>深度OS</p>
+</li>
+<li>
+<p>鸿蒙OS</p>
+</li>
+</ul>
+<h4 id="移动端">移动端
+</h4><ul>
+<li>
+<p>Android</p>
+</li>
+<li>
+<p>IOS</p>
+</li>
+<li>
+<p>鸿蒙</p>
+</li>
+<li>
+<p>黑莓</p>
+</li>
+<li>
+<p>塞班</p>
+</li>
+<li>
+<p>WPhone</p>
+</li>
+<li>
+<p>阿里云</p>
+</li>
+</ul>
+<h4 id="应用软件">应用软件
+</h4><h2 id="dos命令掌握">DOS命令【掌握】
+</h2><h3 id="概述">概述
+</h3><ul>
+<li>
+<p>DOS操作系统中使用的一些命令</p>
+</li>
+<li>
+<p>命令类型</p>
+<ul>
+<li>
+<p>目录操作类命令</p>
+</li>
+<li>
+<p>磁盘操作类命令</p>
+</li>
+<li>
+<p>文件操作类命令</p>
+</li>
+<li>
+<p>其它命令</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="常用命令">常用命令
+</h3><ul>
+<li>
+<p>查看IP</p>
+<p>ipconfig</p>
+</li>
+<li>
+<p>测试IP是否连通</p>
+<p>ping 域名/IP</p>
+</li>
+<li>
+<p>切换盘符</p>
+<p>盘符:</p>
+</li>
+<li>
+<p>切换目录</p>
+<p>cd 目录名字</p>
+</li>
+<li>
+<p>创建目录</p>
+<p>mkdir  目录名<br>
+md  目录名</p>
+</li>
+<li>
+<p>删除目录</p>
+<p>rmdir 目录名<br>
+rd 目录名</p>
+</li>
+<li>
+<p>查看所有目录和文件</p>
+<p>dir</p>
+</li>
+<li>
+<p>清屏</p>
+<p>cls</p>
+</li>
+<li>
+<p>退出</p>
+<p>exit</p>
+</li>
+<li>
+<p>服务启动/停止</p>
+<p>netstart 服务名<br>
+netstop 服务名</p>
+</li>
+</ul>
+<h2 id="jdk重点掌握">JDK【重点】【掌握】
+</h2><h3 id="概述-1">概述
+</h3><ul>
+<li>
+<p>Java开发工具包</p>
+</li>
+<li>
+<p>Java Development Kit</p>
+</li>
+<li>
+<p>学习Java必须安装的一个软件</p>
+<ul>
+<li>
+<p>包含java运行环境</p>
+</li>
+<li>
+<p>Java工具</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="下载">下载
+</h3><ul>
+<li>下载地址</li>
+</ul>
+<blockquote>
+<p><a class="link" href="https://www.oracle.com/java/technologies/downloads/#java8-windows"  target="_blank" rel="noopener"
+    >https://www.oracle.com/java/technologies/downloads/#java8-windows</a></p>
+</blockquote>
+<h3 id="卸载">卸载
+</h3><ul>
+<li>
+<p>清除配置信息</p>
+</li>
+<li>
+<p>卸载软件</p>
+</li>
+</ul>
+<h3 id="安装">安装
+</h3><ul>
+<li>
+<p>双击软件执行安装</p>
+</li>
+<li>
+<p>选择合适的位置</p>
+</li>
+<li>
+<p>不需要安装JRE</p>
+</li>
+</ul>
+<h3 id="配置">配置
+</h3><ul>
+<li>把JDK中bin目录配置到系统Path</li>
+</ul>
+<p><img src="/p/1524/%E6%89%93%E5%BC%80%E5%B1%9E%E6%80%A7.png"
+	width="532"
+	height="336"
+	srcset="/p/1524/%E6%89%93%E5%BC%80%E5%B1%9E%E6%80%A7_hu_4b8ea683b706f7a5.png 480w, /p/1524/%E6%89%93%E5%BC%80%E5%B1%9E%E6%80%A7_hu_64b23e9e883a2737.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="158"
+		data-flex-basis="380px"
+	
+></p>
+<p><img src="/p/1524/JAVA_HOME.png"
+	width="1611"
+	height="854"
+	srcset="/p/1524/JAVA_HOME_hu_1f295722bdce595c.png 480w, /p/1524/JAVA_HOME_hu_4bf648d01511821a.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="188"
+		data-flex-basis="452px"
+	
+></p>
+<p><img src="/p/1524/%E9%85%8D%E7%BD%AEpath.png"
+	width="1693"
+	height="1070"
+	srcset="/p/1524/%E9%85%8D%E7%BD%AEpath_hu_2a020f58438637f.png 480w, /p/1524/%E9%85%8D%E7%BD%AEpath_hu_58bdb0055a58545f.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="158"
+		data-flex-basis="379px"
+	
+></p>
+<h2 id="我的第一个案例helloworld重点掌握">我的第一个案例HelloWorld【重点】【掌握】
+</h2><h3 id="创建java文件">创建Java文件
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">.txt结尾的是文本文件  
+</span></span><span class="line"><span class="cl">.mp3结尾是音频文件  
+</span></span><span class="line"><span class="cl">.doc结尾的是word文档  
+</span></span><span class="line"><span class="cl">... ...  
+</span></span><span class="line"><span class="cl">.java结尾的是java文件  
+</span></span><span class="line"><span class="cl">创建任意文件,修改文件的后缀名即可
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="编写helloworld代码">编写HelloWorld代码
+</h3><ul>
+<li>
+<p>固定的写法</p>
+<ul>
+<li>目前不要修改，照着抄写</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HelloWorld</span><span class="p">{</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">){</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;HelloWorld!!!&#34;</span><span class="p">);</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="运行java代码">运行Java代码
+</h3><h4 id="编译">编译
+</h4><blockquote>
+<p>javac 文件的全名称(HelloWorld.java)</p>
+</blockquote>
+<h4 id="运行">运行
+</h4><blockquote>
+<p>java 字节码文件名字(不要.class)</p>
+</blockquote>
+<p><img src="/p/1524/%E7%BC%96%E8%AF%91%E5%92%8C%E8%BF%90%E8%A1%8C.png"
+	width="878"
+	height="348"
+	srcset="/p/1524/%E7%BC%96%E8%AF%91%E5%92%8C%E8%BF%90%E8%A1%8C_hu_67b091cdc43bb9d7.png 480w, /p/1524/%E7%BC%96%E8%AF%91%E5%92%8C%E8%BF%90%E8%A1%8C_hu_995b311f8dc31da2.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="252"
+		data-flex-basis="605px"
+	
+></p>
+<h3 id="java代码运行原理">Java代码运行原理
+</h3><h4 id="java运行原理">Java运行原理
+</h4><ul>
+<li>
+<p>先编译</p>
+<ul>
+<li>
+<p>把我们书写的代码编译成计算机能识别的内容&ndash;字节码文件</p>
+</li>
+<li>
+<p>我们能认识英文、字符等，计算机只认识二进制的内容</p>
+</li>
+</ul>
+</li>
+<li>
+<p>再解释执行</p>
+<ul>
+<li>java的虚拟机可以解释执行源文件编译产生的字节码文件</li>
+</ul>
+</li>
+</ul>
+<h4 id="java跨平台运行原理">Java跨平台运行原理
+</h4><ul>
+<li>
+<p>跨平台==跨系统</p>
+</li>
+<li>
+<p>因为java的代码最终是运行在java虚拟机中的</p>
+</li>
+<li>
+<p>只要当前的这台机器安装了虚拟机，就能运行java程序，和操作系统无关</p>
+</li>
+<li>
+<p>不管是什么操作系统，只要安装了java虚拟机就能运行java程序</p>
+</li>
+</ul>
+<p><img src="/p/1524/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png"
+	width="1763"
+	height="970"
+	srcset="/p/1524/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_2f5e69c1072c9296.png 480w, /p/1524/Java%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86_hu_50bc6c47ab900ecd.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="181"
+		data-flex-basis="436px"
+	
+></p>
+<h3 id="名词解释自行补全">名词解释（自行补全）
+</h3><h4 id="jdk-用于开发java-应用程序它包含编译器javac可将java源代码编译为class字节码也包含运行程序所需的-jre">JDK 用于<strong>开发</strong> Java 应用程序。它包含编译器（<code>javac</code>）可将 <code>.java</code> 源代码编译为 <code>.class</code> 字节码，也包含运行程序所需的 JRE。
+</h4><h4 id="jre-提供运行-java-应用程序所需的最小环境如果你只需要运行别人开发好的-java-程序比如启动一个jar文件安装-jre-就够了">JRE 提供运行 Java 应用程序所需的<strong>最小环境</strong>。如果你只需要<strong>运行</strong>别人开发好的 Java 程序（比如启动一个 <code>.jar</code> 文件），安装 JRE 就够了。
+</h4><h4 id="jvm-是运行-java-字节码class文件的运行时环境它负责将编译后的-java-字节码解释或编译成当前操作系统的机器指令并执行">JVM 是运行 Java 字节码（<code>.class</code> 文件）的<strong>运行时环境</strong>。它负责将编译后的 Java 字节码解释或编译成当前操作系统的机器指令并执行。
+</h4><h3 id="helloworld案例细节">HelloWorld案例细节
+</h3><h4 id="类名和文件名字">类名和文件名字
+</h4><ul>
+<li>
+<p>最好类名和文件名保持一致</p>
+</li>
+<li>
+<p>源文件编译之后会产生一个和类名相同的字节码文件</p>
+</li>
+</ul>
+<h4 id="main方法">main方法
+</h4><ul>
+<li>
+<p>main方法也称为主方法</p>
+</li>
+<li>
+<p>程序的入口，一个类中最多只能存在一个</p>
+</li>
+<li>
+<p>不能写错</p>
+</li>
+</ul>
+<h4 id="java语言严格区分大小写">Java语言严格区分大小写
+</h4><ul>
+<li>
+<p>String != string</p>
+</li>
+<li>
+<p>System != system</p>
+</li>
+</ul>
+<h4 id="一个java文件中可以书写多个class">一个Java文件中可以书写多个class
+</h4><ul>
+<li>
+<p>一个文件中可以定义多个class</p>
+</li>
+<li>
+<p>只有一个能使用public修饰</p>
+</li>
+</ul>
+<h2 id="代码规范掌握严格执行">代码规范【掌握】【严格执行】
+</h2><h3 id="缩进和换行">缩进和换行
+</h3><h4 id="缩进">缩进
+</h4><ul>
+<li>
+<p>代码层级之间需要有缩进</p>
+</li>
+<li>
+<p>保持代码的整洁</p>
+</li>
+</ul>
+<h4 id="换行">换行
+</h4><ul>
+<li>
+<p>一行只书写一句代码</p>
+</li>
+<li>
+<p>}也需要占用一行代码</p>
+</li>
+</ul>
+<h3 id="注释">注释
+</h3><ul>
+<li>标注、解释、暂时使得代码失效</li>
+</ul>
+<h4 id="单行注释">单行注释
+</h4><h4 id="多行注释">多行注释
+</h4><h4 id="文档注释">文档注释
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="cm">/**  
+</span></span></span><span class="line"><span class="cl"><span class="cm">	文档注释  
+</span></span></span><span class="line"><span class="cl"><span class="cm">		能注释多行代码  
+</span></span></span><span class="line"><span class="cl"><span class="cm">		能生成文档  
+</span></span></span><span class="line"><span class="cl"><span class="cm">*/</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Demo01</span><span class="w"> </span><span class="p">{</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// 单行注释,可以进行简单的描述  </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Hello World!&#34;</span><span class="p">);</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="cm">/*  
+</span></span></span><span class="line"><span class="cl"><span class="cm">			多行注释  
+</span></span></span><span class="line"><span class="cl"><span class="cm">			能注释多行代码  
+</span></span></span><span class="line"><span class="cl"><span class="cm">			单行不能搞定的时候或者不想生成文档的时候  
+</span></span></span><span class="line"><span class="cl"><span class="cm">		*/</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 2026-01-15 11:46
+        </span>
+    </section></footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/1107/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Day 02 基础</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="jenboy/jenboy.github.io"
+    data-repo-id="R_kgDOQ4Hp4A"
+    data-category="General"
+    data-category-id="DIC_kwDOQ4Hp4M4C07fG"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Xao
+    </section>
+    
+    <section class="powerby">
+        
+            碎碎念 <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.fb560bf8e69124a84f6e61b994d712c75fc3c1f2b40c3acf5bd6af08ba78cd0a.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(http://localhost:1313/icons/chevrons-up.svg);
+        background-size: contain;
+    
+    }
+    
+    
+    #TableOfContents > ul, ol {
+        ul, ol {
+            display: none;
+        }
+        .open {
+            display: block;
+        }
+    }
+
+    
+    .highlight {
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .code-show {
+        max-height: none !important;
+    }
+    
+    .code-more-box {
+        width: 100%;
+        padding-top: 78px;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #f0f0f5;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    
+    .code-more-img {
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+    }
+
+    
+    @font-face {
+
+        font-family: 'harmonyOSFont';
+        src: url(http://localhost:1313/font/HarmonyOS_Sans_Black.ttf) format('truetype');
+    }
+
+    
+    :root {
+        --base-font-family: 'harmonyOSFont';
+        --code-font-family: 'harmonyOSFont';
+    }
+
+    
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+<div id="particles-js"></div>
+<script src=http://localhost:1313/background/particles.min.js></script>
+<script>
+    
+  particlesJS.load('particles-js', 'http:\/\/localhost:1313\/background\/particlesjs-config.json', function() {
+    
+  });
+</script>
+
+<script>
+    
+    function initTocHide() {
+        
+        let toc = document.querySelector(".widget--toc");
+        if (!toc) {
+            return;
+        }
+        
+        window.addEventListener('scroll', function() {
+            
+            let openUl = document.querySelectorAll(".open");
+            if (openUl.length > 0) {
+              openUl.forEach((ul) => {
+                ul.classList.remove("open")
+              })
+            }
+            
+            let currentLi = document.querySelector(".active-class");
+            if (!currentLi) {
+                return
+            }
+            
+            if (currentLi.children.length > 1) {
+                currentLi.children[1].classList.add("open")
+            }
+            
+            let ul = currentLi.parentElement;
+            do {
+                ul.classList.add("open");
+                ul = ul.parentElement.parentElement
+            } while (ul !== undefined && (ul.localName === 'ul' || ul.localName === 'ol'))
+        });
+    }
+    initTocHide()
+</script>
+
+<script>
+    
+    function initCodeMoreBox() {
+    let codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks) {
+      return;
+    }
+    codeBlocks.forEach(codeBlock => {
+      
+      if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+        return;
+      }
+      
+      
+      let codeMoreBox = document.createElement('div');
+      codeMoreBox.classList.add('code-more-box');
+      
+      let codeMoreBtn = document.createElement('span');
+      codeMoreBtn.classList.add('code-more-btn');
+      codeMoreBtn.addEventListener('click', () => {
+        codeBlock.classList.add('code-show');
+        codeMoreBox.style.display = 'none';
+        
+        window.dispatchEvent(new Event('resize'))
+      })
+      
+      let img = document.createElement('img');
+      img.classList.add('code-more-img');
+      img.src = "http://localhost:1313/icons/arrow-down.svg"
+      
+      codeMoreBtn.appendChild(img);
+      codeMoreBox.appendChild(codeMoreBtn);
+      codeBlock.appendChild(codeMoreBox)
+    })
+  }
+  
+  initCodeMoreBox();
+</script>
+
+    </body>
+</html>

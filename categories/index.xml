@@ -1,43 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Categories on Xaoの小屋</title>
-        <link>https://jenboy.github.io/categories/</link>
-        <description>Recent content in Categories on Xaoの小屋</description>
+        <title>Categories on Xao的碎碎念</title>
+        <link>http://localhost:1313/categories/</link>
+        <description>Recent content in Categories on Xao的碎碎念</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Xao</copyright>
-        <lastBuildDate>Thu, 08 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://jenboy.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>标签1</title>
-        <link>https://jenboy.github.io/categories/%E6%A0%87%E7%AD%BE1/</link>
-        <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+        <lastBuildDate>Thu, 15 Jan 2026 11:36:25 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>技术学习</title>
+        <link>http://localhost:1313/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/</link>
+        <pubDate>Thu, 15 Jan 2026 11:36:25 +0800</pubDate>
         
-        <guid>https://jenboy.github.io/categories/%E6%A0%87%E7%AD%BE1/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>标签2</title>
-        <link>https://jenboy.github.io/categories/%E6%A0%87%E7%AD%BE2/</link>
-        <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://jenboy.github.io/categories/%E6%A0%87%E7%AD%BE2/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Test</title>
-        <link>https://jenboy.github.io/categories/test/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://jenboy.github.io/categories/test/</guid>
-        <description>&lt;img src="https://jenboy.github.io/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
-        </item>
-        <item>
-        <title>测试</title>
-        <link>https://jenboy.github.io/categories/%E6%B5%8B%E8%AF%95/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://jenboy.github.io/categories/%E6%B5%8B%E8%AF%95/</guid>
-        <description></description>
+        <guid>http://localhost:1313/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/</guid>
+        <description>&lt;img src="http://localhost:1313/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E5%AD%A6%E4%B9%A0.jpg" alt="Featured image of post 技术学习" /&gt;</description>
         </item>
         
     </channel>
