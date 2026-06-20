@@ -7,10 +7,10 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Xao</copyright>
-        <lastBuildDate>Sat, 20 Jun 2026 14:26:57 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 20 Jun 2026 14:44:58 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>CF Worker部署DDNS主控</title>
         <link>https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/</link>
-        <pubDate>Sat, 20 Jun 2026 06:27:13 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 06:45:24 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/</guid>
         <description>&lt;h1 id=&#34;cf-worker白嫖部署极简的ddns主控&#34;&gt;CF Worker白嫖部署极简的DDNS主控
@@ -50,7 +50,7 @@
 &lt;p&gt;兼容性强，没有多余的包/多余的环境，只要能跑shell脚本，就能用~（哪怕你只剩下了&lt;strong&gt;1MB&lt;/strong&gt;的空间）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[Linux.do/教程/pics/617539/1779175153827-0.png]]&lt;/p&gt;
+&lt;p&gt;![[1779175153827-0.png]]&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;内置TG通知（&lt;del&gt;因为API调用简单&lt;/del&gt;）&lt;/li&gt;
 &lt;/ul&gt;
@@ -71,14 +71,14 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;打开CF主界面&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/617539/1779175154916-1.png]]&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/617539/1779175155820-3.png]]&lt;/p&gt;
+&lt;p&gt;![[1779175154916-1.png]]&lt;/p&gt;
+&lt;p&gt;![[1779175155820-3.png]]&lt;/p&gt;
 &lt;p&gt;点击复制 &lt;code&gt;CF Global Key&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;创建完成后复制自己的Token&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;打开CF-Worker，点击创建&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[Linux.do/教程/pics/617539/1779175156236-4.png]]&lt;/p&gt;
+&lt;p&gt;![[1779175156236-4.png]]&lt;/p&gt;
 &lt;p&gt;随便命名后进行&lt;strong&gt;部署&lt;/strong&gt;，然后点击编辑代码&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -88,7 +88,7 @@
 &lt;p&gt;返回Worker的&lt;strong&gt;设置&lt;/strong&gt;界面&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[Linux.do/教程/pics/617539/1779175157235-6.png]]&lt;/p&gt;
+&lt;p&gt;![[1779175157235-6.png]]&lt;/p&gt;
 &lt;p&gt;类型选择：Secert（密钥）&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;CF_API_KEY：刚刚申请的密钥&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;CF_API_EMAIL：你的账号邮箱&lt;/strong&gt;&lt;/p&gt;

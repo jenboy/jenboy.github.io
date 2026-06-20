@@ -7,10 +7,10 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Xao</copyright>
-        <lastBuildDate>Sat, 20 Jun 2026 14:26:57 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/tags/linuxdo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 20 Jun 2026 14:44:58 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/tags/linuxdo/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【工具】帖子收藏神器</title>
         <link>https://jenboy.github.io/p/%E5%B7%A5%E5%85%B7%E5%B8%96%E5%AD%90%E6%94%B6%E8%97%8F%E7%A5%9E%E5%99%A8/</link>
-        <pubDate>Sat, 20 Jun 2026 06:27:13 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 06:45:24 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E5%B7%A5%E5%85%B7%E5%B8%96%E5%AD%90%E6%94%B6%E8%97%8F%E7%A5%9E%E5%99%A8/</guid>
         <description>&lt;h1 id=&#34;1-工具帖子收藏神器&#34;&gt;1 【工具】帖子收藏神器
@@ -74,7 +74,7 @@
 &lt;p&gt;&lt;strong&gt;支持大部分 Discourse&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096481569-0.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096481569-0.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2、功能亮点&lt;/strong&gt;&lt;/p&gt;
 &lt;table&gt;
 	&lt;thead&gt;
@@ -206,7 +206,7 @@
 &lt;/ul&gt;
 &lt;p&gt;第四步：手机查看&lt;/p&gt;
 &lt;p&gt;打开手机 Obsidian，同步笔记，图片完美显示。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096482062-1.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096482062-1.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注意事项：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -402,7 +402,7 @@
 &lt;/ul&gt;
 &lt;p&gt;飞书多维表格配置（共8步，约10分钟）
 飞书多维表格可作为帖子的索引库，方便检索和管理。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096483221-3.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096483221-3.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;第一步：创建飞书应用&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -422,7 +422,7 @@
 &lt;p&gt;创建完成后，进入应用详情页&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096483903-5.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096483903-5.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;第二步：获取凭证&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;在应用详情页的「&lt;strong&gt;凭证与基础信息&lt;/strong&gt;」中找到：&lt;/p&gt;
 &lt;table&gt;
@@ -444,7 +444,7 @@
 	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;复制并保存这两个值。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096484651-7.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096484651-7.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;第三步：配置权限&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -478,7 +478,7 @@
 &lt;ul&gt;
 &lt;li&gt;点击「&lt;strong&gt;批量开通&lt;/strong&gt;」&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096485310-9.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096485310-9.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;第四步：创建多维表格&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -534,7 +534,7 @@
 			&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096485943-11.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096485943-11.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;第五步：获取表格参数&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;从多维表格的URL中提取 &lt;code&gt;app_token&lt;/code&gt; 和 &lt;code&gt;table_id&lt;/code&gt;：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -549,7 +549,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                            app_token                        table_id
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096486603-13.jpeg]]&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;![[1777096486603-13.jpeg]]&lt;/p&gt;
 &lt;table&gt;
 	&lt;thead&gt;
 			&lt;tr&gt;
@@ -586,7 +586,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;搜索不到应用？可能是缓存问题，等几分钟后重试。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096487306-15.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096487306-15.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;第七步：发布应用&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -599,7 +599,7 @@
 &lt;p&gt;创建版本并发布&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096487953-17.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096487953-17.png]]&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;注意：企业自建应用需要发布后才能正常使用API&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -641,7 +641,7 @@
 			&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096488600-19.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096488600-19.png]]&lt;/p&gt;
 &lt;p&gt;点击「&lt;strong&gt;测试连接&lt;/strong&gt;」按钮，显示「连接成功」即配置完成！&lt;/p&gt;
 &lt;p&gt;Notion 配置（共5步）
 &lt;strong&gt;第一步：创建 Notion Integration&lt;/strong&gt;&lt;/p&gt;
@@ -678,9 +678,9 @@
 &lt;p&gt;两种格式都有效&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096489217-21.png]]&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096489858-23.png]]&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096490496-25.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096489217-21.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096489858-23.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096490496-25.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;第二步：创建 Notion Database&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -693,8 +693,8 @@
 &lt;p&gt;添加以下属性：&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096490795-26.png]]&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096491109-27.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096490795-26.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096491109-27.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;第三步：获取 Database ID&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -736,7 +736,7 @@
 &lt;p&gt;点击「&lt;strong&gt;Confirm&lt;/strong&gt;」确认连接&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096491783-29.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096491783-29.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;第五步：在插件中填写配置&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -761,7 +761,7 @@
 &lt;p&gt;保存配置&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1737485/1777096492406-31.png]]&lt;/p&gt;
+&lt;p&gt;![[1777096492406-31.png]]&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：访问 Notion API 需要科学上网。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1139,7 +1139,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会&lt;strong&gt;更�
         <item>
         <title>【教程】2026版 小白也能看懂的自建Cloudflare临时邮箱教程（域名邮箱）</title>
         <link>https://jenboy.github.io/p/%E6%95%99%E7%A8%8B2026%E7%89%88-%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82%E7%9A%84%E8%87%AA%E5%BB%BAcloudflare%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E6%95%99%E7%A8%8B%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/</link>
-        <pubDate>Sat, 20 Jun 2026 06:27:13 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 06:45:24 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E6%95%99%E7%A8%8B2026%E7%89%88-%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82%E7%9A%84%E8%87%AA%E5%BB%BAcloudflare%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E6%95%99%E7%A8%8B%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/</guid>
         <description>&lt;h1 id=&#34;1-教程2026版-小白也能看懂的自建cloudflare临时邮箱教程域名邮箱&#34;&gt;1 【教程】2026版 小白也能看懂的自建Cloudflare临时邮箱教程（域名邮箱）
@@ -1858,7 +1858,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>【手机搭建服务器】· 第 二 期</title>
         <link>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/</link>
-        <pubDate>Sat, 20 Jun 2026 06:27:13 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 06:45:24 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/</guid>
         <description>&lt;h1 id=&#34;1-超详细保姆级教程手机搭建服务器--第-二-期&#34;&gt;1 【超详细｜保姆级教程】手机搭建服务器 · 第 二 期
@@ -2026,7 +2026,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;&lt;strong&gt;项目地址：&amp;lt;https://github.com/VR-25/acc&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1. 打开ACC的github项目地址，找到releases&lt;/strong&gt;（&lt;a class=&#34;link&#34; href=&#34;https://github.com/VR-25/acc/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;点此直达&lt;/a&gt;）&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2177558/1779074002941-0.jpeg]]&lt;/p&gt;
+&lt;p&gt;![[1779074002941-0.jpeg]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2. 版本我建议选择 &lt;a class=&#34;link&#34; href=&#34;https://github.com/VR-25/acc/releases/tag/v2023.10.16&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;v2023.10.16&lt;/a&gt;&lt;/strong&gt;，原因是：&lt;/p&gt;
 &lt;p&gt;· 2025的版本处于dev阶段，而且很久没有发布正式版了，2023的版本更稳定；&lt;/p&gt;
@@ -2035,7 +2035,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://linux.do/uploads/short-url/4BIbddrQm5tiUt8FPkGUqpPJ7lI.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;acc_v2023.10.16_202310160.zip&lt;/a&gt; (201.9 KB)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;3. 在magisk中安装模块：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2177558/1779074006421-2.jpeg]]&lt;/p&gt;
+&lt;p&gt;![[1779074006421-2.jpeg]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;补充一点：&lt;/strong&gt; 由于我个人比较青睐面具，所以如果是其他的root管理方案，比如APatch、KernelSU等等，可以自行去寻求AI帮助，看看如何安装，我就不去测试了。安装方式其实很简单，如果你自己都会安装Magisk、APatch、KernelSU，那管理器对应的模块如何安装肯定不在话下的。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;4. 重启手机让模块生效&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-info&#34;&gt;
@@ -2060,18 +2060,18 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
     &gt;Advanced Charging Controller (ACCA)&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;安装完成后，建议重启一次手机。因为这类底层模块，重启后状态会更稳定。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; 重启手机之后，打开软件，如果是未启动，就点击启动&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2177558/1779074009249-4.jpeg]]&lt;/p&gt;
+&lt;p&gt;![[1779074009249-4.jpeg]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; 如果已经是启动状态，那就点击配置列表。&lt;/p&gt;
 &lt;p&gt;由于我之前配置过，所以我的配置列表只有一个配置，其余的配置被我删除了。你们第一次打开的话，会有很多个配置；&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2177558/1779074010658-6.jpeg]]&lt;/p&gt;
+&lt;p&gt;![[1779074010658-6.jpeg]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;说一下配置的基础操作：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;添加：&lt;/strong&gt; 在配置列表页面右下角有一个蓝色按钮，点击就可以添加配置；&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2177558/1779074012670-8.png]]&lt;/p&gt;
+&lt;p&gt;![[1779074012670-8.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;删除：&lt;/strong&gt; 点击“配置卡片”的右上角菜单，点击删除即可&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2177558/1779074013543-10.png]]&lt;/p&gt;
+&lt;p&gt;![[1779074013543-10.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;重命名：&lt;/strong&gt; 参考上图，点击“配置卡片”的右上角菜单，点击重命名即可；&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;配置详情页：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2177558/1779074014472-12.png]]&lt;/p&gt;
+&lt;p&gt;![[1779074014472-12.png]]&lt;/p&gt;
 &lt;p&gt;在这个配置详情页中，可以配置的充电相关的设置非常多，但是我们只关心两个问题就可以了：一个是电池停充的&lt;strong&gt;电量区间&lt;/strong&gt;，一个是电池停充的&lt;strong&gt;温度区间&lt;/strong&gt;。&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-warning&#34;&gt;
     &lt;p&gt;&lt;strong&gt;1.我建议给一个保守的值，像我一样，电量低于75%就开始充电，电量高于85%就停止充电；&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
@@ -2088,7 +2088,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;&lt;strong&gt;在这里给ACC点一波赞👍&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;配置应用：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;保存好配置之后，点击哪个配置卡片，就表示哪个配置生效。生效的配置前面会有蓝色的边框。比如下面这就是Default配置在生效。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2177558/1779074016515-14.jpeg]]&lt;/p&gt;
+&lt;p&gt;![[1779074016515-14.jpeg]]&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-tip&#34;&gt;
     &lt;p&gt;&lt;strong&gt;配置文件切换的时候，AccA会有短暂的卡顿，蓝色条不会立马切换显示。因为你选择配置之后，后台要做的事情非常多，所以界面上会有短暂的卡顿感，切换配置的时候，大家多点耐心，等他切换成功，不要疯狂各种点击。&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
@@ -2096,7 +2096,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
     &lt;p&gt;充电停止会有两种情况，拿85%停止充电举例：
 如果电量到了85%，你的电池图标显示正在充电，但是软件中显示没有充电，这个时候，就是最接近旁路供电的，看下图:backhand_index_pointing_down:
-![[Linux.do/教程/pics/2177558/1779074017603-16.jpeg]]&lt;/p&gt;&lt;/blockquote&gt;
+![[1779074017603-16.jpeg]]&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;如果电量到了85%，你的电池图标没有显示正在充电，软件中也没有显示正在充电，这个时候，说明AccA并不支持做到旁路供电。&lt;/p&gt;
 &lt;p&gt;这个时候你的手机只能用到75%才会又开始充电。&lt;/p&gt;
 &lt;p&gt;相当于，AccA只能做到让你的手机什么时候开始充电，什么时候停止充电，但是做不到充好电的时候，数据线给你供电。由于之前的乐视手机出掉了，没法给大家看截图了。&lt;/p&gt;
@@ -2126,32 +2126,32 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;&lt;strong&gt;配置：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; 安装MT管理器或者RE管理器，然后打开路径&lt;code&gt;/data/adb/modules/QuantitativeStopCharging_switch&lt;/code&gt;；&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; 找到config.conf文件，根据文件内的提醒，配置电量区间和温度区间；&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2177558/1779074018779-18.jpeg]]
+&lt;p&gt;![[1779074018779-18.jpeg]]
                
-![[Linux.do/教程/pics/2177558/1779074019815-20.jpeg]]&lt;/p&gt;
+![[1779074019815-20.jpeg]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;启动QSC：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;由于现在MT管理器没有权限直接执行sh脚本了，给大家提供一个最适合的启动方式，这个方式还可以把开关添加到状态栏的下拉控制中心中（大部分手机都支持）&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; &lt;strong&gt;安装&lt;a class=&#34;link&#34; href=&#34;https://github.com/zhaobozhen/Anywhere-&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Anywhere-&lt;/a&gt;软件，这里不过多介绍这个软件了，我个人认为是我用过最好用的快捷方式管理软件。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.打开Anywhere-，点击右上角的设置图标，把工作模式改成root模式&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2177558/1779074021265-22.jpeg]]&lt;/p&gt;
+&lt;p&gt;![[1779074021265-22.jpeg]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;3.返回Anywhere-首页，点击首页右下角的:plus:号，然后点击添加卡片：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2177558/1779074022142-24.jpeg]]&lt;/p&gt;
+&lt;p&gt;![[1779074022142-24.jpeg]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;4.在卡片中选择Shell开关&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2177558/1779074023409-26.jpeg]]&lt;/p&gt;
+&lt;p&gt;![[1779074023409-26.jpeg]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;5.按照下面的内容填写后保存，名称那里可以自定义&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2177558/1779074024182-28.jpeg]]&lt;/p&gt;
+&lt;p&gt;![[1779074024182-28.jpeg]]&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-note&#34;&gt;
     &lt;p&gt;sh /data/adb/modules/QuantitativeStopCharging_switch/打开定量停充.sh&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote class=&#34;alert alert-note&#34;&gt;
     &lt;p&gt;sh /data/adb/modules/QuantitativeStopCharging_switch/关闭定量停充.sh&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;6.点击卡片，会在开与关两个状态之间切换：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2177558/1779074026859-30.png]]
+&lt;p&gt;![[1779074026859-30.png]]
                
-![[Linux.do/教程/pics/2177558/1779074028733-32.png]]&lt;/p&gt;
+![[1779074028733-32.png]]&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
     &lt;p&gt;判断逻辑参考ACC部分，逻辑都是通用的。另外，QSC还可以在magisk中看到充电状态展示。但是我没使用QSC，所以就简单截图吧。
-![[Linux.do/教程/pics/2177558/1779074030117-34.jpeg]]&lt;/p&gt;&lt;/blockquote&gt;
+![[1779074030117-34.jpeg]]&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
     &lt;p&gt;直接在magisk中删除后，重启即可。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;常见问题&lt;/strong&gt;&lt;/p&gt;
@@ -2167,7 +2167,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
     &lt;p&gt;绝对不行，AccA可以不装，只是配置起来麻烦，ACC是核心模块，你只安装AccA，根本不可能工作的。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
     &lt;/blockquote&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2177558/1779074031464-36.jpeg]]
+&lt;p&gt;![[1779074031464-36.jpeg]]
 这个表示配置正在读取或者加载中，这个时候尽量别动，等加载好就行了&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-success&#34;&gt;
     &lt;p&gt;&lt;strong&gt;写这个教程真的非常耗费时间，几乎占用了我白天一大半的时间才搞定。所以我在想，要不后面的教程我写的简单一些，不这么详细了。但是不会说写的云里雾里，肯定能保证大家直接跟上手的。不然按照这个程度更新下去，感觉进度很慢不说，我真担心我会放弃掉，后面还有很多事情要做，比如如何解决wifi网络稳定问题，如何保证ipv6的有效性，如何做DDNS等等&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
@@ -2176,7 +2176,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>【手机搭建服务器】· 第 三 期</title>
         <link>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/</link>
-        <pubDate>Sat, 20 Jun 2026 06:27:13 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 06:45:24 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/</guid>
         <description>&lt;h1 id=&#34;1-超详细手机搭建服务器--第-三-期&#34;&gt;1 【超详细】手机搭建服务器 · 第 三 期
@@ -2269,9 +2269,9 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;strong&gt;1.3给脚本设置权限&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2192656/1779075005464-0.png]]&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2192656/1779075006497-2.jpeg]]&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2192656/1779075007041-4.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075005464-0.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075006497-2.jpeg]]&lt;/p&gt;
+&lt;p&gt;![[1779075007041-4.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.新建wifi核心脚本&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.1 打开MT管理器，进入&lt;code&gt;/data/local/&lt;/code&gt;文件夹，新建&lt;code&gt;phone-server&lt;/code&gt;文件夹，然后进入&lt;code&gt;phone-server&lt;/code&gt;文件夹再新建&lt;code&gt;wifi-keeper&lt;/code&gt;文件夹；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.2 在&lt;code&gt;/data/local/phone-server/wifi-keeper/&lt;/code&gt;文件夹下面新建&lt;code&gt;wifi-keeper.sh&lt;/code&gt;文件，并且输入下面的代码进行保存：&lt;/strong&gt;&lt;/p&gt;
@@ -4073,7 +4073,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>【手机搭建服务器】· 第 一 期</title>
         <link>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%80-%E6%9C%9F/</link>
-        <pubDate>Sat, 20 Jun 2026 06:27:13 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 06:45:24 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%80-%E6%9C%9F/</guid>
         <description>&lt;h1 id=&#34;1-手机搭建服务器保姆级系列教程--第-一-期&#34;&gt;1 【手机搭建服务器】保姆级系列教程 · 第 一 期
@@ -4105,13 +4105,13 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;&lt;strong&gt;问题一：如何判断宽带或者手机卡具备ipv6？&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;单独进行验证，比如只连接wifi或者只打开流量的情况下，浏览器访问&amp;lt;https://testipv6.cn/网站进行测试。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;如果结果如下图所示，那么恭喜你，你的设备和网络是支持ipv6公网访问的。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2157272/1779073725505-0.png]]&lt;/p&gt;
+&lt;p&gt;![[1779073725505-0.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;如果你出现的是下面这几种结果，也不要担心&lt;/strong&gt;:backhand_index_pointing_down:：&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2157272/1779073727127-2.png]]
+&lt;p&gt;![[1779073727127-2.png]]
               
-![[Linux.do/教程/pics/2157272/1779073728152-4.png]]&lt;/p&gt;
+![[1779073728152-4.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;出现这个结果不一定代表你没有ipv6&lt;/strong&gt;，可能是你开启了代理，或者其他原因导致的，这个时候，还有一个更可靠的检测办法：打开手机，在设置中查看手机状态信息，每个品牌的手机查看的路径可能不一样，但是基本是在【&lt;strong&gt;系统设置 - 关于手机 - 状态信息&lt;/strong&gt;】中。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/2157272/1779073729066-6.png|172]]&lt;/p&gt;
+&lt;p&gt;![[1779073729066-6.png|172]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;情况说明：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;如果在状态信息的IP地址这一栏，显示出24开头的地址，就说明你的手机和网络是支持ipv6的；&lt;/p&gt;
 &lt;p&gt;如果只显示fe80开头的地址，说明你的设备支持ipv6，但是你的Wi-Fi或者手机卡没有ipv6；&lt;/p&gt;
@@ -4182,7 +4182,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>【鸭老师】AI动态漫画banana制作全流程！既然要白嫖就贯彻到底咯，完全免费流程！</title>
         <link>https://jenboy.github.io/p/%E9%B8%AD%E8%80%81%E5%B8%88ai%E5%8A%A8%E6%80%81%E6%BC%AB%E7%94%BBbanana%E5%88%B6%E4%BD%9C%E5%85%A8%E6%B5%81%E7%A8%8B%E6%97%A2%E7%84%B6%E8%A6%81%E7%99%BD%E5%AB%96%E5%B0%B1%E8%B4%AF%E5%BD%BB%E5%88%B0%E5%BA%95%E5%92%AF%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E6%B5%81%E7%A8%8B/</link>
-        <pubDate>Sat, 20 Jun 2026 06:27:13 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 06:45:24 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E9%B8%AD%E8%80%81%E5%B8%88ai%E5%8A%A8%E6%80%81%E6%BC%AB%E7%94%BBbanana%E5%88%B6%E4%BD%9C%E5%85%A8%E6%B5%81%E7%A8%8B%E6%97%A2%E7%84%B6%E8%A6%81%E7%99%BD%E5%AB%96%E5%B0%B1%E8%B4%AF%E5%BD%BB%E5%88%B0%E5%BA%95%E5%92%AF%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E6%B5%81%E7%A8%8B/</guid>
         <description>&lt;h1 id=&#34;1-鸭老师ai动态漫画banana制作全流程既然要白嫖就贯彻到底咯完全免费流程&#34;&gt;1 【鸭老师】AI动态漫画banana制作全流程！既然要白嫖就贯彻到底咯，完全免费流程！
@@ -4249,7 +4249,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>2026 甲骨文一条龙服务经验分享和教程推荐</title>
         <link>https://jenboy.github.io/p/2026-%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%80%E6%9D%A1%E9%BE%99%E6%9C%8D%E5%8A%A1%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/</link>
-        <pubDate>Sat, 20 Jun 2026 06:27:13 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 06:45:24 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/2026-%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%80%E6%9D%A1%E9%BE%99%E6%9C%8D%E5%8A%A1%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/</guid>
         <description>&lt;h1 id=&#34;1-甲骨文注册申请实例配置系统和救砖的一条龙服务经验分享和教程推荐&#34;&gt;1 甲骨文注册，申请实例，配置系统和救砖的一条龙服务经验分享和教程推荐
@@ -4293,53 +4293,53 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;看完零度解说的视频，此时你获得了一个4C24G的机子和一个属于你的IPv4预留IP，还有一组公钥和私钥，但是你的云防火墙和IPV6还没配置好。跟着我下面操作。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.1 分配IPv6地址和配置路由&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;在甲骨文云的主页，点击左上角的三条杠（之前创建实例的地方）&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075665008-0.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075665008-0.png]]&lt;/p&gt;
 &lt;p&gt;选择网络，然后点开虚拟云网络&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075666046-2.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075666046-2.png]]&lt;/p&gt;
 &lt;p&gt;然后你会看到自己在创建的实例的时候顺便创建的虚拟云网络，点击名称打开它&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075667023-4.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075667023-4.png]]&lt;/p&gt;
 &lt;p&gt;然后在里面点开IP管理，选择下面的CIDR块/IPv6前缀，在里面把&lt;strong&gt;分配 Oracle 分配的 IPv6 /56 前缀&lt;/strong&gt;勾上，然后点击&lt;strong&gt;添加CIDR块&lt;/strong&gt;，这样就为自己的整个云网络VCN分配了一个IPv6的地址段，接下来要为自己的实例子网也进行IPv6地址段分配。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075667953-6.png]]&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075669122-8.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075667953-6.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075669122-8.png]]&lt;/p&gt;
 &lt;p&gt;添加完之后还是这个页面，不过这次选择IP管理旁边的子网。这个子网也是在创建实例的时候创建的。点开它，同样是IP管理，往下拉找到IPv6前缀，选择添加IPV6前缀。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075670540-10.png]]&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075671616-12.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075670540-10.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075671616-12.png]]&lt;/p&gt;
 &lt;p&gt;与给整个VCN分配IPV6地址段一样，子网的分配也是一样的，不过多了一个&lt;strong&gt;IPv6 CIDR 块&lt;/strong&gt; 字段的填写，我点开之后是下面这个样子。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075672643-14.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075672643-14.png]]&lt;/p&gt;
 &lt;p&gt;啥也干不了，应该是之前分配过了造成的？纯小白人看傻了😵‍💫。我记得是可以勾选那个&lt;strong&gt;分配 Oracle 分配的 IPv6 /64 前缀&lt;/strong&gt;，然后再在&lt;strong&gt;IPv6 CIDR 块&lt;/strong&gt; 字段输入两个十六进制的字符，aa或者bb之类的都可以。再选择右下角的&lt;strong&gt;添加 IPv6 前缀&lt;/strong&gt;即可。&lt;/p&gt;
 &lt;p&gt;完成了上面的虚拟云网VCN及其下的子网IPv6前缀的添加，终于可以给实例分配具体的IPv6地址了。点开实例，还是从主页的三条杠进入。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075673932-16.png]]&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075675257-18.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075673932-16.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075675257-18.png]]&lt;/p&gt;
 &lt;p&gt;点击里面的网络，然后往下划找到附加的VNIC，选择下面的那个玩意名称，点进去。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075676337-20.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075676337-20.png]]&lt;/p&gt;
 &lt;p&gt;然后选择IP管理，找到IPv6地址，选择分配IPv6地址。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075677295-22.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075677295-22.png]]&lt;/p&gt;
 &lt;p&gt;子网IPV6前缀是之前已经分配好的，然后前缀长度选择128（有什么说法吗？不晓得），再勾选下面的自动分配IP地址，点击右下角的分配即可。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075678653-24.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075678653-24.png]]&lt;/p&gt;
 &lt;p&gt;此时实例的IPV6的地址就分配好了，然后来到分配好的IPv4或者IPv6的路由表下，都是同一个路由表，点开它。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075679409-26.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075679409-26.png]]&lt;/p&gt;
 &lt;p&gt;选择路由规则，然后添加路由规则，跟我的路由规则一样即可，::/0是IPv6，0.0.0.0/0是IPv4，目标类型都是internet网关，目标就是你自己的虚拟云网，只有一个，选择即可，然后是静态的。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075680067-28.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075680067-28.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.2 开放甲骨文云后台防火墙&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;因为我后续的活动都想直接在WindTerm上操作配置了，不想再回到甲骨文云后台折腾，因此就把甲骨文云上的防火墙都关了吧，免得要同时配置两个地方，系统的防火墙就够了。&lt;/p&gt;
 &lt;p&gt;说是甲骨文云防火墙，但其实就是虚拟云网的安全列表。回到虚拟云网vcn（三条杠的网络进入，上面有介绍），这次不去IP管理，不去子网，选择安全。点开安全列表里面的那个名称。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075680968-30.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075680968-30.png]]&lt;/p&gt;
 &lt;p&gt;在入站规则下配置成下面这个玩意，就是允许所有协议通过，::/0是IPv6的，0.0.0.0/0是IPv4的，允许所有端口的所有流量通过。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075681872-32.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075681872-32.png]]&lt;/p&gt;
 &lt;p&gt;出站规则默认就是这个样子，看不清图片的话直接把出站规则的抄上来就行。&lt;/p&gt;
 &lt;p&gt;完成上面的操作，云平台就算配置好了，以后除了封号都不用登录了。然后可以配置实例操作系统了。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.3 配置实例终端操作系统&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;我是用零度解说推荐的SSH客户端–WindTerm，够轻量，其他的客户端我也不了解。直接去GitHub上搜索下载，或者用零度解说推荐的下载地址也可以（不过有次我用火绒杀毒扫出来WindTerm带了木马，那个WindTerm好像就是从零度解说那里下载的😅）。&lt;/p&gt;
 &lt;p&gt;要是看了零度解说的那个视频，他里面也讲了如何配置SSH客户端，我这里稍微演示一下。先配置成中文和亮主题。重启生效。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075683012-34.png]]&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075683681-36.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075683012-34.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075683681-36.png]]&lt;/p&gt;
 &lt;p&gt;然后配置选中复制，右键粘贴。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075684363-37.png]]&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075684900-38.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075684363-37.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075684900-38.png]]&lt;/p&gt;
 &lt;p&gt;然后可以添加会话了。还是左上角的会话，点击新建会话，在SSH的标签下，填入主机IP，就是之前申请实例的时候分配的预留IP，是IPv4（IPv6也行，因为之前配置好了）。端口是默认的22 ，选择下面的验证。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075685281-39.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075685281-39.png]]&lt;/p&gt;
 &lt;p&gt;点击那三个点，把之前创建实例保存的私钥导进去。（要是没保存那就完犊子了）&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075685653-40.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075685653-40.png]]&lt;/p&gt;
 &lt;p&gt;然后点击右下角的连接，此时WindTerm应该会让你设置一个密码，建议留空，那不过是在本地电脑上加的软件锁，防止对象窃取自己云端电脑中的三体人机密，但我觉得没必要，因为你没对象。当电脑锁屏之后会弹出输入密码，指的就是这个密码，没设置的话回车就行了。&lt;/p&gt;
 &lt;p&gt;然后你就进入系统了，作为一个小白，此时你云端的防火墙已经关了，系统还有一个自带的防火墙，所以其实安全问题不大。然后我们就打开科技Lion的那个视频了，跟着他进行一条龙脚本服务，非常攒劲🤩。跟着他输入相应的数字即可，重装了系统，换成干净的系统，然后装了一个监视端口被暴力破解的安全软件，还有一些其他的玩意，对于纯小白来说，那就是360一件套，我觉得还是非常有必要的，以后跟别人吹嘘，你就说自己曾经被一条龙服务过。&lt;/p&gt;
 &lt;p&gt;如果你打算用这个脚本的话推荐跟着他的那个视频操作，脚本安装命令是bash &amp;lt;(curl -sL kejilion.sh)，输入回车即可，退出脚本之后，按k回车能重新打开。&lt;/p&gt;
@@ -4420,7 +4420,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ufw&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;status&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;verbose&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075686023-41.png]]&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;![[1779075686023-41.png]]&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;sudo systemctl restart sshd&lt;/code&gt; 重启 SSH 服务让配置生效。&lt;/p&gt;
 &lt;p&gt;然后就能新建会话验证配置成功了没，填入IP和新改的端口，直接点击右下角的连接，会弹出输入用户名root，点确认之后是会让输入密码。若是不行，一般不会不行，就两个步骤，好好检查一下，有什么问题随时拷打DeepSeek。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.4.3 配置Fail2ban监视真正的登录端口&lt;/strong&gt;&lt;/p&gt;
@@ -4491,9 +4491,9 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;&lt;strong&gt;2.4.5 Cloud Shell和控制台串行连接–解决被锁门外和锁坏了的情况。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;若是改端口改错了，忘记放行防火墙，然后还把之前打开的老对话都关闭了，就可以用这个功能。&lt;/p&gt;
 &lt;p&gt;在实例的详情页，选择操作系统管理标签页，往下划，找到控制台连接，这里有Cloud Shell和本地连接。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075686400-42.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075686400-42.png]]&lt;/p&gt;
 &lt;p&gt;你若是有设置密码的话，可以直接使用Cloud Shell进行登录，即使你通过我上面介绍的配置，关闭了密码登录的功能，也能成功登录，因为上面关闭的密码登录不过是针对SSH登录而已，这里是控制台连接，是完全绕过的，只要你有设置一个非空的密码就行。点开之后，会在底下加载一个窗口出来，等它加载好，回车一下，输入账号名称，回车，然后输入密码，再回车，即可进入系统。下面介绍没设置密码，或者密码不记得了的情况。点开Cloud Shell旁边的创建本地连接，然后它会让你选择填入自己的密钥还是重新创建一份，根据自己的情况选择，我是将之前创建实例时就已经保存的那份公钥内容导入进来，然后点击创建。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1891358/1779075687282-44.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075687282-44.png]]&lt;/p&gt;
 &lt;p&gt;创建完成后，点开旁边的三个点，选择复制Linux/Mac 的串行控制台连接，如果你的密钥已经在GitBash的.ssh文件中配置好了，那就不用指定地址，但我相信用Windows的，ssh一般都放在自己的用户目录下，所以要改造一下刚才复制的串行控制台连接命令。否则会遇到&lt;code&gt;Permission denied (publickey)&lt;/code&gt; 错误。要在两处ssh后面各添加一个 &lt;code&gt;-i /私钥地址&lt;/code&gt; 。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -4534,7 +4534,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>CF Worker部署DDNS主控</title>
         <link>https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/</link>
-        <pubDate>Sat, 20 Jun 2026 06:27:13 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 06:45:24 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/</guid>
         <description>&lt;h1 id=&#34;cf-worker白嫖部署极简的ddns主控&#34;&gt;CF Worker白嫖部署极简的DDNS主控
@@ -4574,7 +4574,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;兼容性强，没有多余的包/多余的环境，只要能跑shell脚本，就能用~（哪怕你只剩下了&lt;strong&gt;1MB&lt;/strong&gt;的空间）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[Linux.do/教程/pics/617539/1779175153827-0.png]]&lt;/p&gt;
+&lt;p&gt;![[1779175153827-0.png]]&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;内置TG通知（&lt;del&gt;因为API调用简单&lt;/del&gt;）&lt;/li&gt;
 &lt;/ul&gt;
@@ -4595,14 +4595,14 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;打开CF主界面&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/617539/1779175154916-1.png]]&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/617539/1779175155820-3.png]]&lt;/p&gt;
+&lt;p&gt;![[1779175154916-1.png]]&lt;/p&gt;
+&lt;p&gt;![[1779175155820-3.png]]&lt;/p&gt;
 &lt;p&gt;点击复制 &lt;code&gt;CF Global Key&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;创建完成后复制自己的Token&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;打开CF-Worker，点击创建&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[Linux.do/教程/pics/617539/1779175156236-4.png]]&lt;/p&gt;
+&lt;p&gt;![[1779175156236-4.png]]&lt;/p&gt;
 &lt;p&gt;随便命名后进行&lt;strong&gt;部署&lt;/strong&gt;，然后点击编辑代码&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -4612,7 +4612,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;返回Worker的&lt;strong&gt;设置&lt;/strong&gt;界面&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![[Linux.do/教程/pics/617539/1779175157235-6.png]]&lt;/p&gt;
+&lt;p&gt;![[1779175157235-6.png]]&lt;/p&gt;
 &lt;p&gt;类型选择：Secert（密钥）&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;CF_API_KEY：刚刚申请的密钥&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;CF_API_EMAIL：你的账号邮箱&lt;/strong&gt;&lt;/p&gt;
@@ -4636,7 +4636,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>使用Oracle免费服务器部署CLIProxyAPI并配置域名，小白也能看懂</title>
         <link>https://jenboy.github.io/p/%E4%BD%BF%E7%94%A8oracle%E5%85%8D%E8%B4%B9%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2cliproxyapi%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82/</link>
-        <pubDate>Sat, 20 Jun 2026 06:27:13 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 06:45:24 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E4%BD%BF%E7%94%A8oracle%E5%85%8D%E8%B4%B9%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2cliproxyapi%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82/</guid>
         <description>&lt;h1 id=&#34;1-使用oracle免费服务器部署cliproxyapi并配置域名小白也能看懂&#34;&gt;1 使用Oracle免费服务器部署CLIProxyAPI并配置域名，小白也能看懂
@@ -4692,7 +4692,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;如果ChatGPT显示解锁，即可继续操作，否则需要更换服务器或配置代理。检测结果示例如下：&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1663220/1779075592489-0.svg]]&lt;/p&gt;
+&lt;p&gt;![[1779075592489-0.svg]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;开始部署&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;然后根据下面的教程，在服务器上部署CLIProxyAPI。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://help.router-for.me/cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -4817,10 +4817,10 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/div&gt;&lt;p&gt;&lt;strong&gt;公网IP访问&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;如果你没有域名，可直接使用公网ip访问，但不建议。首先要放开需要的端口，配置文件中默认是&lt;code&gt;8317&lt;/code&gt; 。在&lt;a class=&#34;link&#34; href=&#34;https://cloud.oracle.com/networking/vcns&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;虚拟云网络&lt;/a&gt;页面，选择你的网络，在安全选项卡下，点击默认创建的安全列表，我这里是&lt;code&gt;Default Security List for vcn0&lt;/code&gt; 。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1663220/1779075593154-1.jpeg]]&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1663220/1779075595735-3.jpeg]]&lt;/p&gt;
+&lt;p&gt;![[1779075593154-1.jpeg]]&lt;/p&gt;
+&lt;p&gt;![[1779075595735-3.jpeg]]&lt;/p&gt;
 &lt;p&gt;点击添加入站规则，源填写&lt;code&gt;0.0.0.0/0&lt;/code&gt; ,协议选择&lt;code&gt;TCP&lt;/code&gt;，源端口范围留空，目的地端口范围选择你要放行的端口，比如&lt;code&gt;8317&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;![[Linux.do/教程/pics/1663220/1779075597613-5.png]]&lt;/p&gt;
+&lt;p&gt;![[1779075597613-5.png]]&lt;/p&gt;
 &lt;p&gt;在Oracle配置完成后，我们还需要在服务器上放行端口。使用&lt;code&gt;iptables&lt;/code&gt; 命令操作。使用下面命令放行&lt;code&gt;8317&lt;/code&gt; 端口。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

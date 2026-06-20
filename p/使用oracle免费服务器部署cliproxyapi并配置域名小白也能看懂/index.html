@@ -10,7 +10,7 @@
 <meta property='og:description' content="1 使用Oracle免费服务器部署CLIProxyAPI并配置域名，小白也能看懂 原始链接: https://linux.do/t/topic/1663220 主题 ID: 1663220 楼主: @1cheng 分类: 开发调优 标签: 纯水, linuxdo 导出时间: 2026/5/18 11:39:58 楼层数: 1 最近刷到Codex号池，于是乎利用之前注册的Oracle自己搭建一个。\n">
 <meta property='og:url' content='https://jenboy.github.io/p/%E4%BD%BF%E7%94%A8oracle%E5%85%8D%E8%B4%B9%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2cliproxyapi%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82/'>
 <meta property='og:site_name' content='Xao的碎碎念'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='LinuxDo' /><meta property='article:published_time' content='2026-06-20T06:27:13&#43;00:00'/><meta property='article:modified_time' content='2026-06-20T14:26:57&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='LinuxDo' /><meta property='article:published_time' content='2026-06-20T06:45:24&#43;00:00'/><meta property='article:modified_time' content='2026-06-20T14:44:58&#43;08:00'/>
 <meta name="twitter:title" content="使用Oracle免费服务器部署CLIProxyAPI并配置域名，小白也能看懂">
 <meta name="twitter:description" content="1 使用Oracle免费服务器部署CLIProxyAPI并配置域名，小白也能看懂 原始链接: https://linux.do/t/topic/1663220 主题 ID: 1663220 楼主: @1cheng 分类: 开发调优 标签: 纯水, linuxdo 导出时间: 2026/5/18 11:39:58 楼层数: 1 最近刷到Codex号池，于是乎利用之前注册的Oracle自己搭建一个。\n">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -313,7 +313,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published" datetime='2026-06-20T06:27:13Z'>2026-06-20</time>
+                <time class="article-time--published" datetime='2026-06-20T06:45:24Z'>2026-06-20</time>
             </div>
         
 
@@ -396,7 +396,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果ChatGPT显示解锁，即可继续操作，否则需要更换服务器或配置代理。检测结果示例如下：</p>
-<p>![[Linux.do/教程/pics/1663220/1779075592489-0.svg]]</p>
+<p>![[1779075592489-0.svg]]</p>
 <p><strong>开始部署</strong></p>
 <p>然后根据下面的教程，在服务器上部署CLIProxyAPI。</p>
 <p><a class="link" href="https://help.router-for.me/cn/"  target="_blank" rel="noopener"
@@ -521,10 +521,10 @@
 </div><p><strong>公网IP访问</strong></p>
 <p>如果你没有域名，可直接使用公网ip访问，但不建议。首先要放开需要的端口，配置文件中默认是<code>8317</code> 。在<a class="link" href="https://cloud.oracle.com/networking/vcns"  target="_blank" rel="noopener"
     >虚拟云网络</a>页面，选择你的网络，在安全选项卡下，点击默认创建的安全列表，我这里是<code>Default Security List for vcn0</code> 。</p>
-<p>![[Linux.do/教程/pics/1663220/1779075593154-1.jpeg]]</p>
-<p>![[Linux.do/教程/pics/1663220/1779075595735-3.jpeg]]</p>
+<p>![[1779075593154-1.jpeg]]</p>
+<p>![[1779075595735-3.jpeg]]</p>
 <p>点击添加入站规则，源填写<code>0.0.0.0/0</code> ,协议选择<code>TCP</code>，源端口范围留空，目的地端口范围选择你要放行的端口，比如<code>8317</code>。</p>
-<p>![[Linux.do/教程/pics/1663220/1779075597613-5.png]]</p>
+<p>![[1779075597613-5.png]]</p>
 <p>在Oracle配置完成后，我们还需要在服务器上放行端口。使用<code>iptables</code> 命令操作。使用下面命令放行<code>8317</code> 端口。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1057,7 +1057,7 @@
 
 
         <span>
-            最后更新于 2026-06-20 14:26
+            最后更新于 2026-06-20 14:44
         </span>
     </section></footer>
 
