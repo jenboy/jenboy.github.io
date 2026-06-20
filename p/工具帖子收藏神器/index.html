@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="1 【工具】帖子收藏神器 原始链接: https://linux.do/t/topic/1737485 主题 ID: 1737485 楼主: @Linux.acheng 分类: 开发调优 标签: 快问快答, 软件开发, 开源推广, 插件, Chrome, obsidian, Edge, 学习工具, linuxdo 导出时间: 2026/4/25 13:54:52 楼层数: 1 一键保存帖子到Obsidian/飞书/notion/HTML/思源笔记/语雀六种方式的谷歌/Edge浏览器插件和手机端友好的油猴脚本，无需登录也能保存！支持大部分 Discourse。\n">
+<title>【工具】帖子收藏神器</title>
+
+<link rel='canonical' href='https://jenboy.github.io/p/%E5%B7%A5%E5%85%B7%E5%B8%96%E5%AD%90%E6%94%B6%E8%97%8F%E7%A5%9E%E5%99%A8/'>
+
+<link rel="stylesheet" href="/scss/style.min.6998e4e648ca13c26692fd732a596048e487a90378e5ec1f10b8a5899f478b60.css"><meta property='og:title' content="【工具】帖子收藏神器">
+<meta property='og:description' content="1 【工具】帖子收藏神器 原始链接: https://linux.do/t/topic/1737485 主题 ID: 1737485 楼主: @Linux.acheng 分类: 开发调优 标签: 快问快答, 软件开发, 开源推广, 插件, Chrome, obsidian, Edge, 学习工具, linuxdo 导出时间: 2026/4/25 13:54:52 楼层数: 1 一键保存帖子到Obsidian/飞书/notion/HTML/思源笔记/语雀六种方式的谷歌/Edge浏览器插件和手机端友好的油猴脚本，无需登录也能保存！支持大部分 Discourse。\n">
+<meta property='og:url' content='https://jenboy.github.io/p/%E5%B7%A5%E5%85%B7%E5%B8%96%E5%AD%90%E6%94%B6%E8%97%8F%E7%A5%9E%E5%99%A8/'>
+<meta property='og:site_name' content='Xao的碎碎念'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='LinuxDo' /><meta property='article:published_time' content='2026-06-20T06:23:47&#43;00:00'/><meta property='article:modified_time' content='2026-06-20T14:23:28&#43;08:00'/>
+<meta name="twitter:title" content="【工具】帖子收藏神器">
+<meta name="twitter:description" content="1 【工具】帖子收藏神器 原始链接: https://linux.do/t/topic/1737485 主题 ID: 1737485 楼主: @Linux.acheng 分类: 开发调优 标签: 快问快答, 软件开发, 开源推广, 插件, Chrome, obsidian, Edge, 学习工具, linuxdo 导出时间: 2026/4/25 13:54:52 楼层数: 1 一键保存帖子到Obsidian/飞书/notion/HTML/思源笔记/语雀六种方式的谷歌/Edge浏览器插件和手机端友好的油猴脚本，无需登录也能保存！支持大部分 Discourse。\n">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_8e904100b37f7870.png" width="300"
+                            height="304" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">💭</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Xao的碎碎念</a></h1>
+            <h2 class="site-description">情绪垃圾桶</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/jenboy'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:hulatang@linux.do'
+                        target="_blank"
+                        title="Email"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页 | Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档 | Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/tags/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+                
+                <span>标签 | Tags</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E9%93%BE-links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链 | Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索 | Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E-about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于 | About</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E5%B7%A5%E5%85%B7%E5%B8%96%E5%AD%90%E6%94%B6%E8%97%8F%E7%A5%9E%E5%99%A8/">【工具】帖子收藏神器</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-06-20T06:23:47Z'>2026-06-20</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 13 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="1-工具帖子收藏神器">1 【工具】帖子收藏神器
+</h1><blockquote class="alert alert-info">
+    <ul>
+<li><strong>原始链接</strong>: <a class="link" href="https://linux.do/t/topic/1737485"  target="_blank" rel="noopener"
+    >https://linux.do/t/topic/1737485</a></li>
+<li><strong>主题 ID</strong>: 1737485</li>
+<li><strong>楼主</strong>: @Linux.acheng</li>
+<li><strong>分类</strong>: 开发调优</li>
+<li><strong>标签</strong>: 快问快答, 软件开发, 开源推广, 插件, Chrome, obsidian, Edge, 学习工具, linuxdo</li>
+<li><strong>导出时间</strong>: 2026/4/25 13:54:52</li>
+<li><strong>楼层数</strong>: 1</li>
+</ul></blockquote>
+<p><strong>一键保存帖子到Obsidian/飞书/notion/HTML/思源笔记/语雀六种方式的谷歌/Edge浏览器插件和手机端友好的<a class="link" href="https://acheng-byte.github.io/discourse-saver/install.html"  target="_blank" rel="noopener"
+    >油猴脚本</a>，无需登录也能保存！支持大部分 Discourse。</strong></p>
+<p><strong>本帖使用社区开源推广，符合推广要求。我申明并遵循社区要求的以下内容：</strong></p>
+<ul>
+<li>
+<p><strong>我的帖子已经打上 <a class="link" href="https://linux.do/tag/%E5%BC%80%E6%BA%90%E6%8E%A8%E5%B9%BF"  target="_blank" rel="noopener"
+    >开源推广</a> 标签：</strong> 是</p>
+</li>
+<li>
+<p><strong>我的开源项目完整开源，无未开源部分：</strong> 是</p>
+</li>
+<li>
+<p><strong>我的开源项目已链接认可 LINUX DO 社区：</strong> 是</p>
+</li>
+<li>
+<p><strong>我帖子内的项目介绍，AI生成、润色内容部分已截图发出：</strong> 是</p>
+</li>
+<li>
+<p><strong>以上选择我承诺是永久有效的，接受社区和佬友监督：</strong> 是</p>
+</li>
+</ul>
+<p><em>以下为项目介绍正文内容，AI生成、润色内容已使用截图方式发出</em></p>
+<p><strong>0、链接奉上</strong></p>
+<p>GitHub：<a class="link" href="https://github.com/acheng-byte/discourse-saver"  target="_blank" rel="noopener"
+    >GitHub - acheng-byte/discourse-saver: 通用 Discourse 论坛内容保存工具 - 支持全球数百个 Discourse 站点，一键保存到 Obsidian/飞书/Notion/语雀/思源笔记 · GitHub</a></p>
+<p>油猴脚本：<a class="link" href="https://acheng-byte.github.io/discourse-saver/install.html"  target="_blank" rel="noopener"
+    >Discourse Saver - 油猴脚本一键安装</a></p>
+<p><strong>1、前言</strong></p>
+<p>展开前言
+作为一个重度Linux Do用户和知识管理爱好者，无编程经验的我用 vibe coding 手搓了这个插件。</p>
+<p>论坛上的精华帖子，手动复制粘贴格式就乱了，图片也保存不了，非常麻烦。于是开发了这个Chrome/Edge插件 <strong>discourse-saver</strong>，支持大部分 Discourse 论坛。</p>
+<p>它可以：</p>
+<ul>
+<li>
+<p><strong>悬浮保存按钮</strong>：单击就保存到Obsidian/飞书/Notion/HTML</p>
+</li>
+<li>
+<p><strong>保留完整格式</strong>：颜色、代码高亮、表格样式全部保留</p>
+</li>
+<li>
+<p><strong>同步飞书多维表格</strong>：建立可检索的帖子索引库</p>
+</li>
+<li>
+<p><strong>支持保存评论</strong>：保存主帖+该条评论</p>
+</li>
+<li>
+<p><strong>支持大部分 Discourse</strong></p>
+</li>
+</ul>
+<p>![[Linux.do/教程/pics/1737485/1777096481569-0.png]]</p>
+<p><strong>2、功能亮点</strong></p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>功能</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>悬浮保存按钮</strong></td>
+					<td><strong>单击</strong>保存到Obsidian/飞书/Notion/HTML</td>
+			</tr>
+			<tr>
+					<td><strong>支持保存评论</strong></td>
+					<td><strong>长按</strong>保存按钮保存主帖+多条评论</td>
+			</tr>
+			<tr>
+					<td>飞书多维表格</td>
+					<td>同步保存到飞书，支持MD文件附件上传</td>
+			</tr>
+			<tr>
+					<td>飞书双版本</td>
+					<td>支持国内版(<a class="link" href="http://feishu.cn"  target="_blank" rel="noopener"
+    >feishu.cn</a>)和国际版(<a class="link" href="http://larksuite.com"  target="_blank" rel="noopener"
+    >larksuite.com</a>)</td>
+			</tr>
+			<tr>
+					<td>完整保留格式</td>
+					<td>文字颜色、代码高亮、表格样式完整保留</td>
+			</tr>
+			<tr>
+					<td>评论折叠</td>
+					<td>使用 <code>&lt;details&gt;</code> 标签，展开查看评论</td>
+			</tr>
+			<tr>
+					<td>快捷键支持</td>
+					<td><code>Ctrl+Shift+S</code> (Mac: <code>Cmd+Shift+S</code>)</td>
+			</tr>
+			<tr>
+					<td>插件开关</td>
+					<td>可随时禁用，恢复链接原功能</td>
+			</tr>
+	</tbody>
+</table></div>
+<p><strong>3、安装方法</strong></p>
+<p>方法一：直接下载安装（推荐，Chrome / Edge）
+适用于桌面端 Chrome / Edge / Brave 等 Chromium 内核浏览器。</p>
+<ul>
+<li>
+<p>访问 GitHub 仓库：<a class="link" href="https://github.com/acheng-byte/discourse-saver"  target="_blank" rel="noopener"
+    >GitHub - acheng-byte/discourse-saver: 通用 Discourse 论坛内容保存工具 - 支持全球数百个 Discourse 站点，一键保存到 Obsidian/飞书/Notion/语雀/思源笔记 · GitHub</a></p>
+</li>
+<li>
+<p>点击绿色的 <strong>Code</strong> 按钮 → <strong>Download ZIP</strong></p>
+</li>
+<li>
+<p>解压到本地文件夹</p>
+</li>
+<li>
+<p>打开浏览器，访问 <code>chrome://extensions/</code>（Edge 为 <code>edge://extensions/</code>）</p>
+</li>
+<li>
+<p>开启右上角的「<strong>开发者模式</strong>」</p>
+</li>
+<li>
+<p>点击「<strong>加载已解压的扩展程序</strong>」</p>
+</li>
+<li>
+<p>选择刚才解压的 <code>discourse-saver</code> 文件夹</p>
+</li>
+</ul>
+<p>也可以用 Git 克隆：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/acheng-byte/discourse-saver.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后按上面步骤4-7加载。</p>
+<p>方法二：油猴脚本（支持手机端 / Firefox）
+支持 Chrome / Edge / Firefox / Safari / Opera，手机端同样可用（Firefox Android + Violentmonkey）。</p>
+<p><strong>前置条件：</strong></p>
+<ul>
+<li>
+<p>安装油猴插件 Tampermonkey 或 Violentmonkey</p>
+</li>
+<li>
+<p>Obsidian 需安装 Advanced URI 插件（推荐）</p>
+</li>
+<li>
+<p>手机同步服务：iCloud / Obsidian Sync / 其他（用于手机同步）</p>
+</li>
+</ul>
+<p><strong>安装步骤：</strong></p>
+<p>第一步：更新/安装脚本</p>
+<p>访问一键安装页面：<a class="link" href="https://acheng-byte.github.io/discourse-saver/install.html"  target="_blank" rel="noopener"
+    >Discourse Saver - 油猴脚本一键安装</a></p>
+<p>点击「安装脚本」，油猴插件弹出确认页后点击「安装」。</p>
+<p>第二步：开启图片嵌入（手机端推荐）</p>
+<ul>
+<li>
+<p>打开任意 Discourse 论坛帖子</p>
+</li>
+<li>
+<p>点击右下角保存按钮旁的<strong>齿轮图标</strong></p>
+</li>
+<li>
+<p>勾选「嵌入图片 (Base64)」</p>
+</li>
+<li>
+<p>点击保存设置</p>
+</li>
+</ul>
+<p>第三步：正常保存帖子</p>
+<p>点击保存按钮，脚本会：</p>
+<ul>
+<li>
+<p>抓取帖子内容</p>
+</li>
+<li>
+<p>自动下载所有图片并转码（会显示进度）</p>
+</li>
+<li>
+<p>发送到 Obsidian</p>
+</li>
+</ul>
+<p>第四步：手机查看</p>
+<p>打开手机 Obsidian，同步笔记，图片完美显示。</p>
+<p>![[Linux.do/教程/pics/1737485/1777096482062-1.png]]</p>
+<p><strong>注意事项：</strong></p>
+<ul>
+<li>
+<p>文件体积会变大 — 图片越多，文件越大，这是正常的</p>
+</li>
+<li>
+<p>首次保存稍慢 — 需要下载所有图片，图片多时请耐心等待</p>
+</li>
+<li>
+<p>按需开启 — 如果只在电脑端查看，可以不开启此功能</p>
+</li>
+</ul>
+<p><strong>4、插件配置</strong></p>
+<p>安装完成后，点击插件图标 → 进入配置页面。</p>
+<p>配置项说明
+<strong>1. 插件状态</strong></p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>选项</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>启用插件</td>
+					<td>关闭后链接按钮恢复原功能（需刷新页面）</td>
+			</tr>
+	</tbody>
+</table></div>
+<p><strong>2. 保存目标</strong></p>
+<p>可同时勾选多个，实现多平台同步保存：</p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>选项</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>保存到 Obsidian</td>
+					<td>启用Obsidian保存</td>
+			</tr>
+			<tr>
+					<td>保存到飞书多维表格</td>
+					<td>启用飞书同步</td>
+			</tr>
+			<tr>
+					<td>保存到 Notion</td>
+					<td>启用Notion同步</td>
+			</tr>
+			<tr>
+					<td>导出 HTML</td>
+					<td>保存为本地HTML文件</td>
+			</tr>
+	</tbody>
+</table></div>
+<blockquote>
+<p>可以同时勾选多个，实现多平台同步保存！</p>
+</blockquote>
+<p><strong>3. Obsidian设置</strong></p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>选项</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Vault 名称</td>
+					<td>留空使用当前打开的vault（推荐）</td>
+			</tr>
+			<tr>
+					<td>保存文件夹</td>
+					<td>保存到vault中的哪个文件夹，如 <code>LinuxDo收集箱</code></td>
+			</tr>
+			<tr>
+					<td>使用 Advanced URI</td>
+					<td>支持大内容保存（强烈推荐开启）</td>
+			</tr>
+	</tbody>
+</table></div>
+<blockquote>
+<p><strong>注意</strong>：如果勾选了「使用 Advanced URI」，需要先在Obsidian中安装 <a class="link" href="https://github.com/Vinzent03/obsidian-advanced-uri"  target="_blank" rel="noopener"
+    >Advanced URI</a> 插件。</p>
+</blockquote>
+<p><strong>4. 内容设置</strong></p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>选项</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>添加元数据</td>
+					<td>是否添加中文frontmatter（推荐开启）</td>
+			</tr>
+			<tr>
+					<td>保留图片链接</td>
+					<td>是否保留帖子中的图片</td>
+			</tr>
+	</tbody>
+</table></div>
+<p><strong>5. 评论设置</strong></p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>选项</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>保存评论区</td>
+					<td>是否保存评论（默认关闭）</td>
+			</tr>
+			<tr>
+					<td>评论数量</td>
+					<td>1-10000条，默认100</td>
+			</tr>
+			<tr>
+					<td>折叠评论</td>
+					<td>使用 <code>&lt;details&gt;</code> 标签折叠显示</td>
+			</tr>
+	</tbody>
+</table></div>
+<p><strong>5、各平台配置</strong></p>
+<p>Obsidian 配置
+<strong>前置：本地已安装并运行 Obsidian。</strong></p>
+<p><strong>第一步：安装 Advanced URI 插件（强烈推荐）</strong></p>
+<ul>
+<li>
+<p>打开 Obsidian → 设置 → 社区插件</p>
+</li>
+<li>
+<p>搜索 <code>Advanced URI</code> 并安装启用</p>
+</li>
+<li>
+<p>该插件支持大内容保存，避免 URL 长度限制</p>
+</li>
+</ul>
+<p><strong>第二步：填写插件配置</strong></p>
+<p>在插件选项页找到「Obsidian 设置」：</p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>配置项</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Vault 名称</td>
+					<td>留空使用当前打开的vault（推荐）</td>
+			</tr>
+			<tr>
+					<td>保存文件夹</td>
+					<td>如 <code>LinuxDo收集箱</code></td>
+			</tr>
+			<tr>
+					<td>使用 Advanced URI</td>
+					<td>强烈推荐开启</td>
+			</tr>
+	</tbody>
+</table></div>
+<p><strong>第三步：测试</strong></p>
+<ul>
+<li>
+<p>打开任意 Discourse 论坛帖子</p>
+</li>
+<li>
+<p>单击帖子的「链接」按钮</p>
+</li>
+<li>
+<p>浏览器弹出「是否允许打开 obsidian://」，点击「允许」</p>
+</li>
+<li>
+<p>切换到 Obsidian，确认笔记已保存到指定文件夹</p>
+</li>
+</ul>
+<p><strong>多设备同步</strong></p>
+<ul>
+<li>
+<p>Chrome：登录同一 Google 账号，开启 Chrome 同步（设置 → 同步），配置会自动同步</p>
+</li>
+<li>
+<p>Edge：登录同一 Microsoft 账号，同理</p>
+</li>
+</ul>
+<p>飞书多维表格配置（共8步，约10分钟）
+飞书多维表格可作为帖子的索引库，方便检索和管理。</p>
+<p>![[Linux.do/教程/pics/1737485/1777096483221-3.png]]</p>
+<p><strong>第一步：创建飞书应用</strong></p>
+<ul>
+<li>
+<p>访问 <a class="link" href="https://open.feishu.cn/"  target="_blank" rel="noopener"
+    >飞书开放平台</a></p>
+</li>
+<li>
+<p>登录你的飞书账号</p>
+</li>
+<li>
+<p>点击「<strong>创建应用</strong>」→ 选择「<strong>企业自建应用</strong>」</p>
+</li>
+<li>
+<p>填写应用名称（如：LinuxDo收藏器）和描述</p>
+</li>
+<li>
+<p>创建完成后，进入应用详情页</p>
+</li>
+</ul>
+<p>![[Linux.do/教程/pics/1737485/1777096483903-5.png]]</p>
+<p><strong>第二步：获取凭证</strong></p>
+<p>在应用详情页的「<strong>凭证与基础信息</strong>」中找到：</p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>字段</th>
+					<th>位置</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>App ID</td>
+					<td>应用凭证区域</td>
+			</tr>
+			<tr>
+					<td>App Secret</td>
+					<td>点击「显示」查看</td>
+			</tr>
+	</tbody>
+</table></div>
+<p>复制并保存这两个值。</p>
+<p>![[Linux.do/教程/pics/1737485/1777096484651-7.png]]</p>
+<p><strong>第三步：配置权限</strong></p>
+<ul>
+<li>
+<p>在左侧菜单中选择「<strong>权限管理</strong>」</p>
+</li>
+<li>
+<p>搜索并添加以下权限（都是免审权限）：</p>
+</li>
+</ul>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>权限标识</th>
+					<th>权限名称</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>bitable:app</code></td>
+					<td>多维表格</td>
+					<td>读写多维表格（必须）</td>
+			</tr>
+			<tr>
+					<td><code>drive:file:upload</code></td>
+					<td>上传文件</td>
+					<td>上传MD HTML附件时需要</td>
+			</tr>
+	</tbody>
+</table></div>
+<ul>
+<li>点击「<strong>批量开通</strong>」</li>
+</ul>
+<p>![[Linux.do/教程/pics/1737485/1777096485310-9.png]]</p>
+<p><strong>第四步：创建多维表格</strong></p>
+<ul>
+<li>
+<p>在飞书文档中创建一个「<strong>多维表格</strong>」</p>
+</li>
+<li>
+<p>添加以下字段（<strong>字段类型必须对应，否则保存失败</strong>）：</p>
+</li>
+</ul>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>字段名</th>
+					<th>字段类型</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>标题</td>
+					<td>文本</td>
+					<td>帖子标题</td>
+			</tr>
+			<tr>
+					<td>链接</td>
+					<td><strong>超链接</strong></td>
+					<td>原帖URL，注意不是「文本」</td>
+			</tr>
+			<tr>
+					<td>作者</td>
+					<td>文本</td>
+					<td>发帖人</td>
+			</tr>
+			<tr>
+					<td>保存时间</td>
+					<td><strong>日期</strong></td>
+					<td>自动记录保存时间</td>
+			</tr>
+			<tr>
+					<td>评论数</td>
+					<td><strong>数字</strong></td>
+					<td>评论条数</td>
+			</tr>
+			<tr>
+					<td>附件</td>
+					<td><strong>附件</strong></td>
+					<td>MD文件（勾选上传附件时使用）</td>
+			</tr>
+			<tr>
+					<td>正文</td>
+					<td>文本</td>
+					<td>内容摘要（不上传附件时使用）</td>
+			</tr>
+	</tbody>
+</table></div>
+<p>![[Linux.do/教程/pics/1737485/1777096485943-11.png]]</p>
+<p><strong>第五步：获取表格参数</strong></p>
+<p>从多维表格的URL中提取 <code>app_token</code> 和 <code>table_id</code>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://feishu.cn/base/CVchbNPTraNcq1s3RqPcTJFJnDU?table=tblUP8jpxkIGiSWU&amp;view=...
+</span></span><span class="line"><span class="cl">                    └─────────────────────────────┘      └───────────────┘
+</span></span><span class="line"><span class="cl">                            app_token                        table_id
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[Linux.do/教程/pics/1737485/1777096486603-13.jpeg]]</p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>参数</th>
+					<th>说明</th>
+					<th>示例</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>app_token</td>
+					<td><code>/base/</code> 后面的字符串</td>
+					<td><code>CVchbNPTraNcq1s3RqPxxxx</code></td>
+			</tr>
+			<tr>
+					<td>table_id</td>
+					<td><code>?table=</code> 后面的字符串</td>
+					<td><code>tblUP8jpxkIGixxxx</code></td>
+			</tr>
+	</tbody>
+</table></div>
+<p><strong>第六步：添加应用为协作者（重要，很多人漏掉这步！）</strong></p>
+<ul>
+<li>
+<p>在多维表格右上角点击「<strong>…</strong>」→「<strong>更多</strong>」→「<strong>添加文档应用</strong>」</p>
+</li>
+<li>
+<p>搜索你刚创建的应用名称</p>
+</li>
+<li>
+<p>添加为「<strong>可编辑</strong>」协作者</p>
+</li>
+</ul>
+<blockquote>
+<p>搜索不到应用？可能是缓存问题，等几分钟后重试。</p>
+</blockquote>
+<p>![[Linux.do/教程/pics/1737485/1777096487306-15.png]]</p>
+<p><strong>第七步：发布应用</strong></p>
+<ul>
+<li>
+<p>回到飞书开放平台的应用详情页</p>
+</li>
+<li>
+<p>点击「<strong>版本管理与发布</strong>」</p>
+</li>
+<li>
+<p>创建版本并发布</p>
+</li>
+</ul>
+<p>![[Linux.do/教程/pics/1737485/1777096487953-17.png]]</p>
+<blockquote>
+<p>注意：企业自建应用需要发布后才能正常使用API</p>
+</blockquote>
+<p><strong>第八步：填写插件配置</strong></p>
+<p>在插件配置页面的「飞书设置」中填入：</p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>配置项</th>
+					<th>填入内容</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>API 版本</td>
+					<td>国内版选「飞书(<a class="link" href="http://feishu.cn"  target="_blank" rel="noopener"
+    >feishu.cn</a>)」，海外版选「Lark(<a class="link" href="http://larksuite.com"  target="_blank" rel="noopener"
+    >larksuite.com</a>)」</td>
+			</tr>
+			<tr>
+					<td>App ID</td>
+					<td>第二步获取的 App ID</td>
+			</tr>
+			<tr>
+					<td>App Secret</td>
+					<td>第二步获取的 App Secret</td>
+			</tr>
+			<tr>
+					<td>app_token</td>
+					<td>第五步获取的 app_token</td>
+			</tr>
+			<tr>
+					<td>table_id</td>
+					<td>第五步获取的 table_id</td>
+			</tr>
+			<tr>
+					<td>上传MD附件</td>
+					<td>根据需要勾选</td>
+			</tr>
+	</tbody>
+</table></div>
+<p>![[Linux.do/教程/pics/1737485/1777096488600-19.png]]</p>
+<p>点击「<strong>测试连接</strong>」按钮，显示「连接成功」即配置完成！</p>
+<p>Notion 配置（共5步）
+<strong>第一步：创建 Notion Integration</strong></p>
+<ul>
+<li>
+<p>打开 <a class="link" href="https://www.notion.so/my-integrations"  target="_blank" rel="noopener"
+    >Notion</a></p>
+</li>
+<li>
+<p>点击「<strong>+ New integration</strong>」</p>
+</li>
+<li>
+<p>填写 Integration 名称（如 <code>Discourse Saver</code>）</p>
+</li>
+<li>
+<p>选择关联的 Workspace</p>
+</li>
+<li>
+<p>点击「<strong>Submit</strong>」创建</p>
+</li>
+<li>
+<p>创建成功后，复制 <strong>Internal Integration Secret</strong></p>
+</li>
+</ul>
+<p>Token 格式说明：</p>
+<ul>
+<li>
+<p>2024年9月后创建：以 <code>ntn_</code> 开头</p>
+</li>
+<li>
+<p>2024年9月前创建：以 <code>secret_</code> 开头</p>
+</li>
+<li>
+<p>两种格式都有效</p>
+</li>
+</ul>
+<p>![[Linux.do/教程/pics/1737485/1777096489217-21.png]]</p>
+<p>![[Linux.do/教程/pics/1737485/1777096489858-23.png]]</p>
+<p>![[Linux.do/教程/pics/1737485/1777096490496-25.png]]</p>
+<p><strong>第二步：创建 Notion Database</strong></p>
+<ul>
+<li>
+<p>在 Notion 中创建新页面</p>
+</li>
+<li>
+<p>输入 <code>/database</code> 选择「<strong>Database - Full page</strong>」</p>
+</li>
+<li>
+<p>添加以下属性：</p>
+</li>
+</ul>
+<p>![[Linux.do/教程/pics/1737485/1777096490795-26.png]]</p>
+<p>![[Linux.do/教程/pics/1737485/1777096491109-27.png]]</p>
+<p><strong>第三步：获取 Database ID</strong></p>
+<ul>
+<li>
+<p>打开你的 Database 页面</p>
+</li>
+<li>
+<p>复制浏览器地址栏中的 URL</p>
+</li>
+<li>
+<p>从 URL 中提取 Database ID：</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://www.notion.so/a1b2c3d4e5f67890a1b2c3d400017890?v=xxxxxxxxxxxx
+</span></span><span class="line"><span class="cl">                      └──────── Database ID ────────────┘
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意：Database ID 是 <code>?v=</code> 之前的 32 位十六进制字符串。</p>
+<p><strong>第四步：连接 Integration 到 Database（必须，否则插件无法访问）</strong></p>
+<ul>
+<li>
+<p>打开你的 Database 页面</p>
+</li>
+<li>
+<p>点击右上角「<strong>…</strong>」菜单</p>
+</li>
+<li>
+<p>选择「<strong>+ Add connections</strong>」</p>
+</li>
+<li>
+<p>找到并选择你创建的 Integration（如 <code>Discourse Saver</code>）</p>
+</li>
+<li>
+<p>点击「<strong>Confirm</strong>」确认连接</p>
+</li>
+</ul>
+<p>![[Linux.do/教程/pics/1737485/1777096491783-29.png]]</p>
+<p><strong>第五步：在插件中填写配置</strong></p>
+<ul>
+<li>
+<p>打开插件配置页面，选择「<strong>Notion</strong>」标签</p>
+</li>
+<li>
+<p>填写配置信息：</p>
+</li>
+<li>
+<p>Integration Token：粘贴第一步获取的 Token</p>
+</li>
+<li>
+<p>Database ID：粘贴第三步获取的 ID</p>
+</li>
+<li>
+<p>属性映射：根据你的 Database 属性名填写</p>
+</li>
+<li>
+<p>点击「<strong>测试连接</strong>」验证配置</p>
+</li>
+<li>
+<p>保存配置</p>
+</li>
+</ul>
+<p>![[Linux.do/教程/pics/1737485/1777096492406-31.png]]</p>
+<blockquote>
+<p><strong>注意</strong>：访问 Notion API 需要科学上网。</p>
+</blockquote>
+<p>思源笔记配置
+思源笔记通过本地 API 接收保存请求，需先开启 API 服务。</p>
+<p><strong>第一步：获取 API Token</strong></p>
+<ul>
+<li>
+<p>打开思源笔记</p>
+</li>
+<li>
+<p>进入「<strong>设置</strong>」→「<strong>关于</strong>」</p>
+</li>
+<li>
+<p>找到「<strong>API token</strong>」，点击生成并复制</p>
+</li>
+</ul>
+<p><strong>第二步：确认 API 服务地址</strong></p>
+<p>思源笔记运行时会自动在本地启动 API 服务，默认地址：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">http://127.0.0.1:6806
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>第三步：在插件中填写配置</strong></p>
+<p>进入插件选项页，找到「思源笔记设置」，填入：</p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>配置项</th>
+					<th>填入内容</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>API 地址</td>
+					<td><code>http://127.0.0.1:6806</code>（默认）</td>
+			</tr>
+			<tr>
+					<td>API Token</td>
+					<td>第一步获取的 Token</td>
+			</tr>
+			<tr>
+					<td>保存笔记本</td>
+					<td>目标笔记本 ID（在思源笔记本设置中查看）</td>
+			</tr>
+			<tr>
+					<td>保存路径</td>
+					<td>可选，如 <code>/LinuxDo/</code></td>
+			</tr>
+	</tbody>
+</table></div>
+<p><strong>第四步：测试连接</strong></p>
+<p>点击「<strong>测试连接</strong>」，确认保存功能正常。</p>
+<p>语雀配置
+<strong>第一步：获取语雀 API Token</strong></p>
+<ul>
+<li>
+<p>登录语雀：<a class="link" href="https://www.yuque.com"  target="_blank" rel="noopener"
+    >https://www.yuque.com</a></p>
+</li>
+<li>
+<p>右上角头像 →「<strong>账户设置</strong>」→「<strong>Token</strong>」</p>
+</li>
+<li>
+<p>点击「<strong>新建 Token</strong>」，勾选知识库读写权限，复制 Token</p>
+</li>
+</ul>
+<p><strong>第二步：获取知识库信息</strong></p>
+<p>从语雀知识库 URL 中获取用户名和知识库路径：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://www.yuque.com/用户名/知识库路径/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>第三步：在插件中填写配置</strong></p>
+<p>进入插件选项页，找到「语雀设置」，填入：</p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>配置项</th>
+					<th>填入内容</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>API Token</td>
+					<td>第一步获取的 Token</td>
+			</tr>
+			<tr>
+					<td>用户名（Login）</td>
+					<td>你的语雀用户名</td>
+			</tr>
+			<tr>
+					<td>知识库路径（Repo）</td>
+					<td>目标知识库的路径 slug</td>
+			</tr>
+	</tbody>
+</table></div>
+<p><strong>第四步：测试连接</strong></p>
+<p>点击「<strong>测试连接</strong>」，确认配置正确。</p>
+<p>HTML 本地导出
+无需额外配置，开启即用。</p>
+<ul>
+<li>
+<p>打开插件选项页</p>
+</li>
+<li>
+<p>在「保存目标」中勾选「<strong>导出 HTML</strong>」</p>
+</li>
+<li>
+<p>保存配置</p>
+</li>
+</ul>
+<p>单击帖子链接按钮后，浏览器会自动下载 <code>.html</code> 文件到默认下载目录。HTML 文件完整保留帖子格式，可用任意浏览器离线查看。</p>
+<p><strong>6、使用方法</strong></p>
+<p><strong>基本操作</strong></p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>操作</th>
+					<th>效果</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>悬浮保存按钮</strong></td>
+					<td><strong>单击</strong>保存到Obsidian/飞书/Notion/HTML</td>
+			</tr>
+			<tr>
+					<td><strong>支持保存评论</strong></td>
+					<td><strong>长按</strong>保存按钮保存主帖+多条评论</td>
+			</tr>
+			<tr>
+					<td><code>Ctrl+Shift+S</code>（Mac: <code>⌘+Shift+S</code>）</td>
+					<td>快捷键保存主帖</td>
+			</tr>
+	</tbody>
+</table></div>
+<p><strong>使用流程</strong></p>
+<ul>
+<li>
+<p>访问任意 Discourse 论坛帖子</p>
+</li>
+<li>
+<p>找到评论区上方右侧的「<strong>三个点</strong>」菜单</p>
+</li>
+<li>
+<p><strong>单击</strong>悬浮保存按钮 → 保存到已启用的平台</p>
+</li>
+</ul>
+<p><strong>7、保存的笔记格式</strong></p>
+<p>查看笔记格式示例</p>
+<p><strong>文件命名</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">帖子标题.md
+</span></span><span class="line"><span class="cl">帖子标题-2楼.md  # 评论链接保存时
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>笔记结构</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">来源: https://linux.do/t/topic/847468
+</span></span><span class="line"><span class="cl">标题: 秘密花园园丁邀请函
+</span></span><span class="line"><span class="cl">作者: Neo
+</span></span><span class="line"><span class="cl">保存时间: 2026-03-11T05:00:00Z
+</span></span><span class="line"><span class="cl">标签: [linuxdo]
+</span></span><span class="line"><span class="cl">评论数: 100
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gh"># 2 秘密花园园丁邀请函
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[帖子正文内容...]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;span style=&#34;color: red;&#34;&gt;颜色会保留&lt;/span&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">## 2.1 评论区（共100条）
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">### 2.1.1 1楼 - Alice
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">感谢分享！
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">### 2.1.2 2楼 - Bob
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;span style=&#34;color: blue;&#34;&gt;颜色也会保留&lt;/span&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>8、常见问题</strong></p>
+<p>Q1：点击链接后没反应？
+请检查：</p>
+<ul>
+<li>
+<p>Obsidian是否已运行</p>
+</li>
+<li>
+<p>浏览器是否允许 <code>obsidian://</code> 协议（首次使用会弹窗询问）</p>
+</li>
+<li>
+<p>按 F12 查看控制台是否有错误</p>
+</li>
+<li>
+<p>刷新插件和页面，清除缓存</p>
+</li>
+</ul>
+<p>Q2：内容过长保存失败？
+在设置中启用「使用 Advanced URI 插件」，并在 Obsidian 中安装 <a class="link" href="https://github.com/Vinzent03/obsidian-advanced-uri"  target="_blank" rel="noopener"
+    >Advanced URI</a> 插件。</p>
+<p>Q3：飞书保存失败？
+按以下顺序排查：</p>
+<ul>
+<li>
+<p>App ID 和 App Secret 是否填写正确</p>
+</li>
+<li>
+<p>是否已添加 <code>bitable:app</code> 权限</p>
+</li>
+<li>
+<p>应用是否已发布（经常被忽略）</p>
+</li>
+<li>
+<p>多维表格是否已添加应用为协作者（<strong>最常见原因</strong>）</p>
+</li>
+<li>
+<p>字段类型是否正确：链接必须是「超链接」，评论数必须是「数字」，保存时间必须是「日期」</p>
+</li>
+</ul>
+<p>Q4：评论没有全部保存？
+插件只能提取当前页面已加载的评论。帖子评论多时，需先<strong>滚动到底部</strong>加载完所有评论，再点击保存。</p>
+<p>Q5：Notion 保存失败？</p>
+<ul>
+<li>
+<p>检查网络（访问 Notion API 需要科学上网）</p>
+</li>
+<li>
+<p>确认 Integration Token 有效</p>
+</li>
+<li>
+<p>确认 Database ID 正确</p>
+</li>
+<li>
+<p>确认已将 Integration 连接到 Database（第四步）</p>
+</li>
+</ul>
+<p>Q6：如何恢复链接原功能？
+在设置中关闭「启用插件」开关，然后刷新页面。</p>
+<p>Q7：Typora 中折叠功能不生效？
+Typora 默认不渲染原生 HTML 标签。开启方法：</p>
+<ul>
+<li>
+<p>打开 Typora → <strong>偏好设置</strong></p>
+</li>
+<li>
+<p>找到 <strong>Markdown</strong> 选项卡</p>
+</li>
+<li>
+<p>勾选「<strong>内联 HTML</strong>」或「<strong>Render HTML</strong>」</p>
+</li>
+<li>
+<p>重启 Typora</p>
+</li>
+</ul>
+<p>Q8：双击触发了两次保存？
+V3.5.4 已修复此问题。请确保双击的是<strong>同一个</strong>链接按钮。快速点击<strong>不同的</strong>链接按钮不会触发双击。</p>
+<p>Q9：重复保存同一帖子会创建多条记录？
+V3.5.5 已修复此问题。现在重复保存同一帖子会<strong>更新</strong>原记录，而不是创建新记录。</p>
+<p><strong>9、技术细节</strong></p>
+<p>文件结构与权限说明</p>
+<p><strong>文件结构</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">discourse-saver/
+</span></span><span class="line"><span class="cl">├── manifest.json           # 插件配置（Manifest V3）
+</span></span><span class="line"><span class="cl">├── content.js              # 内容脚本（劫持链接+保存逻辑）
+</span></span><span class="line"><span class="cl">├── background.js           # 飞书API处理（解决CORS问题）
+</span></span><span class="line"><span class="cl">├── options.html            # 配置页面
+</span></span><span class="line"><span class="cl">├── options.js              # 配置逻辑
+</span></span><span class="line"><span class="cl">├── lib/
+</span></span><span class="line"><span class="cl">│   └── turndown.min.js     # HTML→Markdown转换
+</span></span><span class="line"><span class="cl">├── icons/
+</span></span><span class="line"><span class="cl">│   ├── icon16.png
+</span></span><span class="line"><span class="cl">│   ├── icon48.png
+</span></span><span class="line"><span class="cl">│   └── icon128.png
+</span></span><span class="line"><span class="cl">└── README.md
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>权限说明</strong></p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>权限</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>storage</td>
+					<td>保存用户配置</td>
+			</tr>
+			<tr>
+					<td>activeTab</td>
+					<td>访问当前链接页</td>
+			</tr>
+			<tr>
+					<td>host_permissions</td>
+					<td>访问飞书/Notion API</td>
+			</tr>
+	</tbody>
+</table></div>
+<p><strong>10、开源地址</strong></p>
+<p>GitHub：<a class="link" href="https://github.com/acheng-byte/discourse-saver"  target="_blank" rel="noopener"
+    >GitHub - acheng-byte/discourse-saver: 通用 Discourse 论坛内容保存工具 - 支持全球数百个 Discourse 站点，一键保存到 Obsidian/飞书/Notion/语雀/思源笔记 · GitHub</a></p>
+<p>油猴脚本：<a class="link" href="https://acheng-byte.github.io/discourse-saver/install.html"  target="_blank" rel="noopener"
+    >Discourse Saver - 油猴脚本一键安装</a></p>
+<p><strong>点击我的头像→认可→开发调优</strong></p>
+<p>你的认可对我来说是一种鼓励，谢谢各位。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
+        
+            <a href="/tags/linuxdo/">Linuxdo</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 2026-06-20 14:23
+        </span>
+    </section></footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/2026-%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%80%E6%9D%A1%E9%BE%99%E6%9C%8D%E5%8A%A1%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">2026 甲骨文一条龙服务经验分享和教程推荐</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【手机搭建服务器】· 第 三 期</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【手机搭建服务器】· 第 二 期</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E6%95%99%E7%A8%8B2026%E7%89%88-%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82%E7%9A%84%E8%87%AA%E5%BB%BAcloudflare%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E6%95%99%E7%A8%8B%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【教程】2026版 小白也能看懂的自建Cloudflare临时邮箱教程（域名邮箱）</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E9%B8%AD%E8%80%81%E5%B8%88ai%E5%8A%A8%E6%80%81%E6%BC%AB%E7%94%BBbanana%E5%88%B6%E4%BD%9C%E5%85%A8%E6%B5%81%E7%A8%8B%E6%97%A2%E7%84%B6%E8%A6%81%E7%99%BD%E5%AB%96%E5%B0%B1%E8%B4%AF%E5%BD%BB%E5%88%B0%E5%BA%95%E5%92%AF%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E6%B5%81%E7%A8%8B/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【鸭老师】AI动态漫画banana制作全流程！既然要白嫖就贯彻到底咯，完全免费流程！</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="jenboy/jenboy.github.io"
+    data-repo-id="R_kgDOQ4Hp4A"
+    data-category="General"
+    data-category-id="DIC_kwDOQ4Hp4M4C07fG"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Xao
+    </section>
+    
+    <section class="powerby">
+        
+            碎碎念 <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://jenboy.github.io/icons/chevrons-up.svg);
+        background-size: contain;
+    
+    }
+    
+    
+    #TableOfContents > ul, ol {
+        ul, ol {
+            display: none;
+        }
+        .open {
+            display: block;
+        }
+    }
+
+    
+    .highlight {
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .code-show {
+        max-height: none !important;
+    }
+    
+    .code-more-box {
+        width: 100%;
+        padding-top: 78px;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #f0f0f5;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    
+    .code-more-img {
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+    }
+
+    
+    @font-face {
+
+        font-family: 'harmonyOSFont';
+          
+        src: url(https://jenboy.github.io/font/HarmonyOS_Sans_Bold.ttf) format('truetype');
+    }
+
+    
+    :root {
+        --base-font-family: 'harmonyOSFont';
+        --code-font-family: 'harmonyOSFont';
+    }
+
+    
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+             
+    :root {
+     
+    --link-text: #0969da;               
+    --link-bg-hover: #ddf4ff;           
+    --link-decoration: transparent;     
+    --bg-body: #ffffff;
+    --text-body: #24292f;
+    }
+
+     
+    [data-theme="dark"] {
+     
+    --link-text: #58a6ff;               
+    --link-bg-hover: rgba(56, 139, 253, 0.15);  
+    --link-decoration: transparent;
+    --bg-body: #0d1117;
+    --text-body: #c9d1d9;
+    }
+
+     
+     
+    .highlight-link {
+    color: var(--link-text);
+    text-decoration: none;            
+    
+     
+    padding: 2px 6px;                
+    margin: 0 -4px;                   
+    
+    border-radius: 6px;               
+    transition: all 0.2s ease-in-out;  
+    font-weight: 500;                 
+    cursor: pointer;
+    position: relative;
+    }
+
+     
+    .highlight-link:hover {
+    background-color: var(--link-bg-hover);
+    text-decoration: none;
+    }
+
+     
+    .highlight-link:focus-visible {
+    outline: 2px solid var(--link-text);
+    outline-offset: 2px;
+    border-radius: 6px;
+    }
+
+</style>
+
+
+<script defer src="https://cn.vercount.one/js"></script>
+<script>
+    function showHideView() {
+        
+        let viewCounts = document.querySelectorAll("#viewCount");
+        if (viewCounts) {
+            
+            let article =  document.querySelector(".article-page");
+            if (!article) {
+                viewCounts.forEach(ele => {
+                    ele.style.display = 'none';
+                });
+            }
+        }
+    }
+    
+    showHideView();
+</script>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+<div id="particles-js"></div>
+<script src=https://jenboy.github.io/background/particles.min.js></script>
+<script>
+    
+  particlesJS.load('particles-js', 'https:\/\/jenboy.github.io\/background\/particlesjs-config.json', function() {
+    
+  });
+</script>
+
+<script>
+    
+    function initTocHide() {
+        
+        let toc = document.querySelector(".widget--toc");
+        if (!toc) {
+            return;
+        }
+        
+        window.addEventListener('scroll', function() {
+            
+            let openUl = document.querySelectorAll(".open");
+            if (openUl.length > 0) {
+              openUl.forEach((ul) => {
+                ul.classList.remove("open")
+              })
+            }
+            
+            let currentLi = document.querySelector(".active-class");
+            if (!currentLi) {
+                return
+            }
+            
+            if (currentLi.children.length > 1) {
+                currentLi.children[1].classList.add("open")
+            }
+            
+            let ul = currentLi.parentElement;
+            do {
+                ul.classList.add("open");
+                ul = ul.parentElement.parentElement
+            } while (ul !== undefined && (ul.localName === 'ul' || ul.localName === 'ol'))
+        });
+    }
+    initTocHide()
+</script>
+
+<script>
+    
+    function initCodeMoreBox() {
+    let codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks) {
+      return;
+    }
+    codeBlocks.forEach(codeBlock => {
+      
+      if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+        return;
+      }
+      
+      
+      let codeMoreBox = document.createElement('div');
+      codeMoreBox.classList.add('code-more-box');
+      
+      let codeMoreBtn = document.createElement('span');
+      codeMoreBtn.classList.add('code-more-btn');
+      codeMoreBtn.addEventListener('click', () => {
+        codeBlock.classList.add('code-show');
+        codeMoreBox.style.display = 'none';
+        
+        window.dispatchEvent(new Event('resize'))
+      })
+      
+      let img = document.createElement('img');
+      img.classList.add('code-more-img');
+      img.src = "https://jenboy.github.io/icons/arrow-down.svg"
+      
+      codeMoreBtn.appendChild(img);
+      codeMoreBox.appendChild(codeMoreBtn);
+      codeBlock.appendChild(codeMoreBox)
+    })
+  }
+  
+  initCodeMoreBox();
+</script>
+
+    </body>
+</html>

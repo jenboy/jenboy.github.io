@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="1 【手机搭建服务器】保姆级系列教程 · 第 一 期 原始链接: https://linux.do/t/topic/2157272 主题 ID: 2157272 楼主: @Semmering 分类: 开发调优 标签: 软件开发, VPS, linuxdo 导出时间: 2026/5/18 11:08:50 楼层数: 1 本期主题：项目开始前的必备条件\n">
+<title>【手机搭建服务器】· 第 一 期</title>
+
+<link rel='canonical' href='https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%80-%E6%9C%9F/'>
+
+<link rel="stylesheet" href="/scss/style.min.6998e4e648ca13c26692fd732a596048e487a90378e5ec1f10b8a5899f478b60.css"><meta property='og:title' content="【手机搭建服务器】· 第 一 期">
+<meta property='og:description' content="1 【手机搭建服务器】保姆级系列教程 · 第 一 期 原始链接: https://linux.do/t/topic/2157272 主题 ID: 2157272 楼主: @Semmering 分类: 开发调优 标签: 软件开发, VPS, linuxdo 导出时间: 2026/5/18 11:08:50 楼层数: 1 本期主题：项目开始前的必备条件\n">
+<meta property='og:url' content='https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%80-%E6%9C%9F/'>
+<meta property='og:site_name' content='Xao的碎碎念'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='linuxdo' /><meta property='article:published_time' content='2026-06-20T06:23:47&#43;00:00'/><meta property='article:modified_time' content='2026-06-20T14:23:28&#43;08:00'/>
+<meta name="twitter:title" content="【手机搭建服务器】· 第 一 期">
+<meta name="twitter:description" content="1 【手机搭建服务器】保姆级系列教程 · 第 一 期 原始链接: https://linux.do/t/topic/2157272 主题 ID: 2157272 楼主: @Semmering 分类: 开发调优 标签: 软件开发, VPS, linuxdo 导出时间: 2026/5/18 11:08:50 楼层数: 1 本期主题：项目开始前的必备条件\n">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_8e904100b37f7870.png" width="300"
+                            height="304" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">💭</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Xao的碎碎念</a></h1>
+            <h2 class="site-description">情绪垃圾桶</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/jenboy'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:hulatang@linux.do'
+                        target="_blank"
+                        title="Email"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页 | Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档 | Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/tags/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+                
+                <span>标签 | Tags</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E9%93%BE-links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链 | Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索 | Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E-about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于 | About</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%80-%E6%9C%9F/">【手机搭建服务器】· 第 一 期</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-06-20T06:23:47Z'>2026-06-20</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 7 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="1-手机搭建服务器保姆级系列教程--第-一-期">1 【手机搭建服务器】保姆级系列教程 · 第 一 期
+</h1><blockquote class="alert alert-info">
+    <ul>
+<li><strong>原始链接</strong>: <a class="link" href="https://linux.do/t/topic/2157272"  target="_blank" rel="noopener"
+    >https://linux.do/t/topic/2157272</a></li>
+<li><strong>主题 ID</strong>: 2157272</li>
+<li><strong>楼主</strong>: @Semmering</li>
+<li><strong>分类</strong>: 开发调优</li>
+<li><strong>标签</strong>: 软件开发, VPS, linuxdo</li>
+<li><strong>导出时间</strong>: 2026/5/18 11:08:50</li>
+<li><strong>楼层数</strong>: 1</li>
+</ul></blockquote>
+<p><strong>本期主题：项目开始前的必备条件</strong></p>
+<p><strong>条件一：具备可访问的公网</strong></p>
+<p><strong>关于公网这一块，从ipv6和ipv4两个方面来说</strong></p>
+<p><strong>先说ipv4：</strong>
+由于目前家庭宽带很少有ipv4的公网，包括我本人也没有，所以这一个系列的教程主要是围绕ipv6进行，如果你手里有ipv4的公网，那毫无疑问是最好的，动态ip和静态ip都无所谓，如果是静态ip，那就更无敌了，只是这样的资源比较少</p>
+<p><strong>再说ipv6：</strong>
+有关ipv6的相关知识在这里不做展开，互联网上对这一块的科普非常到位，感兴趣的可以去自行了解。</p>
+<p>目前国内的现状是，家庭宽带基本都有ipv6，甚至我们日常使用的手机卡，都有ipv6，而且两者都是公网可以访问到的。这也是手机搭建服务器可行的很重要的一个原因。</p>
+<p>这一次我们主要讨论的是宽带的ipv6，而不是手机流量的ipv6，主要有几点原因：</p>
+<p>1.选择手机作为服务器后期可能会消耗大量的流量，用手机卡作为流量来源，要面临流量总量和流量限速等问题。如果你手里有双不限的手机卡，才可以考虑用手机卡做流量基底。</p>
+<p>2.手机卡的上传速率一般比较低，只有一些较高消费的套餐才会有更好的上传速度，而且手机卡的流量波动较大，还会受到基站等因素的影响。</p>
+<p>在看一下宽带的优点：</p>
+<p>1.首先宽带流量是没有限制的，这一点的好处远远超过手机卡。</p>
+<p>2.宽带只要是不跑P的情况下，运营商是不会给你恶意限速的，一般来说，家庭宽带的上传速度在50-200Mbps之间，而且波动也很稳定</p>
+<p><strong>问题一：如何判断宽带或者手机卡具备ipv6？</strong></p>
+<p>单独进行验证，比如只连接wifi或者只打开流量的情况下，浏览器访问&lt;https://testipv6.cn/网站进行测试。</p>
+<p><strong>如果结果如下图所示，那么恭喜你，你的设备和网络是支持ipv6公网访问的。</strong></p>
+<p>![[Linux.do/教程/pics/2157272/1779073725505-0.png]]</p>
+<p><strong>如果你出现的是下面这几种结果，也不要担心</strong>:backhand_index_pointing_down:：</p>
+<p>![[Linux.do/教程/pics/2157272/1779073727127-2.png]]
+              
+![[Linux.do/教程/pics/2157272/1779073728152-4.png]]</p>
+<p><strong>出现这个结果不一定代表你没有ipv6</strong>，可能是你开启了代理，或者其他原因导致的，这个时候，还有一个更可靠的检测办法：打开手机，在设置中查看手机状态信息，每个品牌的手机查看的路径可能不一样，但是基本是在【<strong>系统设置 - 关于手机 - 状态信息</strong>】中。</p>
+<p>![[Linux.do/教程/pics/2157272/1779073729066-6.png|172]]</p>
+<p><strong>情况说明：</strong></p>
+<p>如果在状态信息的IP地址这一栏，显示出24开头的地址，就说明你的手机和网络是支持ipv6的；</p>
+<p>如果只显示fe80开头的地址，说明你的设备支持ipv6，但是你的Wi-Fi或者手机卡没有ipv6；</p>
+<p>如果连fe80开头的地址都没有，只有ipv4的内网地址，说明你的设备太老了，不支持ipv6。比如我有一台乐视手机，就不支持ipv6，所以必须换设备。</p>
+<p><strong>✅如果你的宽带自带ipv4公网，那上诉这个情况你可以完全忽略</strong></p>
+<p><strong>条件二：具备可root的手机</strong></p>
+<p>很多人看到这里，就觉得不想搞了，或者说觉得不需要root也行。先继续往下看。</p>
+<p><strong>问题一：为什么需要root？不root到底行不行？</strong></p>
+<p>先说结论：不root可以，但是及其不推荐，如果你只是简单的捣鼓一下，不打算将手机用做长久的服务器。那么可以试试，如果你想要的是一台长期稳定运行，不管出现任何突发情况能如期运行的服务器的话，必须root。</p>
+<p><strong>原因一：手机用做服务器需要解决旁路供电问题</strong></p>
+<p>手机当服务器之后，大概率是要长期插着电运行的。但是手机长期插电会遇到一个很现实的问题：</p>
+<p>电池可能会一直处于充满、发热、再充电的状态，对电池并不友好。如果只是偶尔玩玩，问题不大。但如果你准备让它连续运行几个月，甚至一年以上，那供电问题就必须认真考虑。</p>
+<p><strong>比较理想的状态是：</strong> 手机插着充电器，但是电池不一直反复充电，最好能进入类似“旁路供电”的状态。也就是说，手机主要使用充电器供电，而不是一直让电池在 80%、90%、100% 附近反复充放电。这时候 root 的作用就很明显了。有了 root 之后，我们才更方便使用类似 <strong>Acc +AccA</strong>或者<strong>QSC定量停充</strong>这样的方案去控制充电行为，比如：</p>
+<p><strong>·到了指定电量就停止充电；</strong></p>
+<p><strong>·低于指定电量再恢复充电；</strong></p>
+<p><strong>·尽量让电池保持在一个比较舒服的区间；</strong></p>
+<p><strong>·减少长期满电带来的发热和损耗；</strong></p>
+<p><strong>·真正做到“旁路供电”的效果。</strong></p>
+<p>这样手机就不会长期顶在 100% 满电状态。当然，不同手机的硬件支持情况不一样。有些手机停止充电后，可以比较接近旁路供电；有些手机停止充电后，仍然会继续消耗电池，然后掉到设定值再重新充电。但不管怎样，<strong>有 root，至少我们有机会去控制它、优化它。</strong></p>
+<p>如果没有 root，这类底层充电控制基本就很难做了。</p>
+<p>所以，手机长期当服务器，第一个绕不开的问题就是： <strong>怎么让它长期插电运行，同时尽量不伤电池。</strong> <strong>这也是我建议 root 的第一个重要原因。</strong></p>
+<p><strong>✅有一个非常好的消息是：</strong> 目前Acc+AccA的方案能够很好的解决供电问题，实现旁路供电，而且支持很多CPU，我手里的小米8SE一样完美支持。</p>
+<p><strong>原因二：解决手机重启后可能面临的各种意外情况</strong></p>
+<p>手机作为服务器，最怕的不是你手动启动一次服务。最怕的是手机重启了，然后服务没有自动起来。<strong>比如这些情况都可能发生：</strong></p>
+<p><strong>· 手机没电后重新开机；</strong></p>
+<p><strong>· 系统更新后自动重启；</strong></p>
+<p><strong>· 突然断电又恢复供电；</strong></p>
+<p><strong>· 手机因为异常发热自动重启；</strong></p>
+<p><strong>· 你人在外面，手机在家却自己重启了；</strong></p>
+<p><strong>· 光猫、Wi-Fi、IPv6 出问题后，需要自动恢复网络；</strong></p>
+<p><strong>· Debian 没启动；</strong></p>
+<p><strong>· SSH 没启动；</strong></p>
+<p><strong>· Web 服务没启动；</strong></p>
+<p><strong>· DDNS 没更新；</strong></p>
+<p><strong>· 外网突然访问不了。</strong></p>
+<p>如果每次都要你手动打开手机、打开 Termux、输入命令、启动 Debian、启动 SSH、启动服务，那这就不叫服务器了。服务器最重要的能力之一就是： <strong>出问题后，能尽量自己恢复。</strong></p>
+<p>但是有了 root 之后，我们可以通过 Magisk 的开机脚本实现很多自动化操作，比如：</p>
+<p><strong>· 自动启动 Debian；</strong></p>
+<p><strong>· 自动启动 SSH；</strong></p>
+<p><strong>· 自动启动 Nginx、Node.js、Python 等服务；</strong></p>
+<p><strong>· 自动执行 IPv6 检查脚本；</strong></p>
+<p><strong>· 自动执行 DDNS 更新脚本；</strong></p>
+<p><strong>· 自动记录启动日志；</strong></p>
+<p><strong>· 自动判断服务是否正常；</strong></p>
+<p><strong>· 等等一大堆你可能想到的自动化操作</strong></p>
+<p>这样手机重启以后，不需要你手动干预，它可以自己把服务器环境拉起来。这对长期运行非常重要。因为你不可能一直盯着手机。尤其是手机放在家里，你人在外面的时候，如果它重启后服务没起来，那你连 SSH 都连不上，这不仅仅是尴尬的问题，而是你根本没有任何办法去解决这个问题，除非你自己就在家里，手机就在身边。</p>
+<p><strong>原因三：方便做网络恢复，尤其是 IPv6 异常恢复</strong></p>
+<p>手机当服务器，如果你打算通过 IPv6 从外网访问，那网络稳定性就很重要。但手机长期连接 Wi-Fi 后，可能会遇到一些奇怪的问题，比如：</p>
+<p><strong>· IPv6 地址突然没了；</strong></p>
+<p><strong>· 只剩下 <code>fe80:</code> 这种本地地址；</strong></p>
+<p><strong>· 公网 IPv6 变了，但 DDNS 没来得及更新；</strong></p>
+<p><strong>· Wi-Fi 显示连接着，但外网访问不通；</strong></p>
+<p><strong>· 路由器重新拨号后，手机没有及时拿到新地址。</strong></p>
+<p>这些问题在普通手机使用场景里可能无所谓。你刷视频、聊天，最多就是断一下再连上。</p>
+<p>但是手机作为服务器就不一样。IPv6 只要一丢，外网可能就访问不到你的服务了。更别说什么远程adb解决问题，不太能。但是有 root 之后，就可以更方便的写脚本去做这些事情：</p>
+<p><strong>· 定时检查手机是否还有公网 IPv6；</strong></p>
+<p><strong>· 发现 IPv6 丢失后，自动重连 Wi-Fi；</strong></p>
+<p><strong>· 获取新的 IPv6 地址；</strong></p>
+<p><strong>· 自动更新域名解析；</strong></p>
+<p><strong>· 把异常情况写入日志；</strong></p>
+<p><strong>· 必要时重启网络相关服务。</strong></p>
+<p>所以这些操作你不root会非常受限。所以我才一开始就说，你如果只是玩玩，那不root没关系。</p>
+<p>很多底层网络操作，没有root权限真的很难很难稳定执行。</p>
+<p><strong>其实还有很多很多原因，但是都说完篇幅会非常长，而且打字真的很累。所以我就捡着重要的说。</strong></p>
+<p><strong>我建议 root，并不是为了炫技，而是让大家看到这背后的真相到底是啥样的，也不是说不 root 就完全不能玩。</strong></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
+        
+            <a href="/tags/linuxdo/">Linuxdo</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 2026-06-20 14:23
+        </span>
+    </section></footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="jenboy/jenboy.github.io"
+    data-repo-id="R_kgDOQ4Hp4A"
+    data-category="General"
+    data-category-id="DIC_kwDOQ4Hp4M4C07fG"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Xao
+    </section>
+    
+    <section class="powerby">
+        
+            碎碎念 <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://jenboy.github.io/icons/chevrons-up.svg);
+        background-size: contain;
+    
+    }
+    
+    
+    #TableOfContents > ul, ol {
+        ul, ol {
+            display: none;
+        }
+        .open {
+            display: block;
+        }
+    }
+
+    
+    .highlight {
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .code-show {
+        max-height: none !important;
+    }
+    
+    .code-more-box {
+        width: 100%;
+        padding-top: 78px;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #f0f0f5;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    
+    .code-more-img {
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+    }
+
+    
+    @font-face {
+
+        font-family: 'harmonyOSFont';
+          
+        src: url(https://jenboy.github.io/font/HarmonyOS_Sans_Bold.ttf) format('truetype');
+    }
+
+    
+    :root {
+        --base-font-family: 'harmonyOSFont';
+        --code-font-family: 'harmonyOSFont';
+    }
+
+    
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+             
+    :root {
+     
+    --link-text: #0969da;               
+    --link-bg-hover: #ddf4ff;           
+    --link-decoration: transparent;     
+    --bg-body: #ffffff;
+    --text-body: #24292f;
+    }
+
+     
+    [data-theme="dark"] {
+     
+    --link-text: #58a6ff;               
+    --link-bg-hover: rgba(56, 139, 253, 0.15);  
+    --link-decoration: transparent;
+    --bg-body: #0d1117;
+    --text-body: #c9d1d9;
+    }
+
+     
+     
+    .highlight-link {
+    color: var(--link-text);
+    text-decoration: none;            
+    
+     
+    padding: 2px 6px;                
+    margin: 0 -4px;                   
+    
+    border-radius: 6px;               
+    transition: all 0.2s ease-in-out;  
+    font-weight: 500;                 
+    cursor: pointer;
+    position: relative;
+    }
+
+     
+    .highlight-link:hover {
+    background-color: var(--link-bg-hover);
+    text-decoration: none;
+    }
+
+     
+    .highlight-link:focus-visible {
+    outline: 2px solid var(--link-text);
+    outline-offset: 2px;
+    border-radius: 6px;
+    }
+
+</style>
+
+
+<script defer src="https://cn.vercount.one/js"></script>
+<script>
+    function showHideView() {
+        
+        let viewCounts = document.querySelectorAll("#viewCount");
+        if (viewCounts) {
+            
+            let article =  document.querySelector(".article-page");
+            if (!article) {
+                viewCounts.forEach(ele => {
+                    ele.style.display = 'none';
+                });
+            }
+        }
+    }
+    
+    showHideView();
+</script>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+<div id="particles-js"></div>
+<script src=https://jenboy.github.io/background/particles.min.js></script>
+<script>
+    
+  particlesJS.load('particles-js', 'https:\/\/jenboy.github.io\/background\/particlesjs-config.json', function() {
+    
+  });
+</script>
+
+<script>
+    
+    function initTocHide() {
+        
+        let toc = document.querySelector(".widget--toc");
+        if (!toc) {
+            return;
+        }
+        
+        window.addEventListener('scroll', function() {
+            
+            let openUl = document.querySelectorAll(".open");
+            if (openUl.length > 0) {
+              openUl.forEach((ul) => {
+                ul.classList.remove("open")
+              })
+            }
+            
+            let currentLi = document.querySelector(".active-class");
+            if (!currentLi) {
+                return
+            }
+            
+            if (currentLi.children.length > 1) {
+                currentLi.children[1].classList.add("open")
+            }
+            
+            let ul = currentLi.parentElement;
+            do {
+                ul.classList.add("open");
+                ul = ul.parentElement.parentElement
+            } while (ul !== undefined && (ul.localName === 'ul' || ul.localName === 'ol'))
+        });
+    }
+    initTocHide()
+</script>
+
+<script>
+    
+    function initCodeMoreBox() {
+    let codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks) {
+      return;
+    }
+    codeBlocks.forEach(codeBlock => {
+      
+      if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+        return;
+      }
+      
+      
+      let codeMoreBox = document.createElement('div');
+      codeMoreBox.classList.add('code-more-box');
+      
+      let codeMoreBtn = document.createElement('span');
+      codeMoreBtn.classList.add('code-more-btn');
+      codeMoreBtn.addEventListener('click', () => {
+        codeBlock.classList.add('code-show');
+        codeMoreBox.style.display = 'none';
+        
+        window.dispatchEvent(new Event('resize'))
+      })
+      
+      let img = document.createElement('img');
+      img.classList.add('code-more-img');
+      img.src = "https://jenboy.github.io/icons/arrow-down.svg"
+      
+      codeMoreBtn.appendChild(img);
+      codeMoreBox.appendChild(codeMoreBtn);
+      codeBlock.appendChild(codeMoreBox)
+    })
+  }
+  
+  initCodeMoreBox();
+</script>
+
+    </body>
+</html>

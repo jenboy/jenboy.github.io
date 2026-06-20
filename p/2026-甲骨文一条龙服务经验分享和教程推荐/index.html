@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="1 甲骨文注册，申请实例，配置系统和救砖的一条龙服务经验分享和教程推荐 原始链接: https://linux.do/t/topic/1891358 主题 ID: 1891358 楼主: @xiaojuju93 分类: 开发调优 标签: VPS, 配置优化, linuxdo 导出时间: 2026/5/18 11:41:27 楼层数: 1 目录：\n">
+<title>2026 甲骨文一条龙服务经验分享和教程推荐</title>
+
+<link rel='canonical' href='https://jenboy.github.io/p/2026-%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%80%E6%9D%A1%E9%BE%99%E6%9C%8D%E5%8A%A1%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/'>
+
+<link rel="stylesheet" href="/scss/style.min.6998e4e648ca13c26692fd732a596048e487a90378e5ec1f10b8a5899f478b60.css"><meta property='og:title' content="2026 甲骨文一条龙服务经验分享和教程推荐">
+<meta property='og:description' content="1 甲骨文注册，申请实例，配置系统和救砖的一条龙服务经验分享和教程推荐 原始链接: https://linux.do/t/topic/1891358 主题 ID: 1891358 楼主: @xiaojuju93 分类: 开发调优 标签: VPS, 配置优化, linuxdo 导出时间: 2026/5/18 11:41:27 楼层数: 1 目录：\n">
+<meta property='og:url' content='https://jenboy.github.io/p/2026-%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%80%E6%9D%A1%E9%BE%99%E6%9C%8D%E5%8A%A1%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/'>
+<meta property='og:site_name' content='Xao的碎碎念'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='LinuxDo' /><meta property='article:published_time' content='2026-06-20T06:23:47&#43;00:00'/><meta property='article:modified_time' content='2026-06-20T14:23:28&#43;08:00'/>
+<meta name="twitter:title" content="2026 甲骨文一条龙服务经验分享和教程推荐">
+<meta name="twitter:description" content="1 甲骨文注册，申请实例，配置系统和救砖的一条龙服务经验分享和教程推荐 原始链接: https://linux.do/t/topic/1891358 主题 ID: 1891358 楼主: @xiaojuju93 分类: 开发调优 标签: VPS, 配置优化, linuxdo 导出时间: 2026/5/18 11:41:27 楼层数: 1 目录：\n">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_8e904100b37f7870.png" width="300"
+                            height="304" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">💭</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Xao的碎碎念</a></h1>
+            <h2 class="site-description">情绪垃圾桶</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/jenboy'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:hulatang@linux.do'
+                        target="_blank"
+                        title="Email"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页 | Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档 | Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/tags/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+                
+                <span>标签 | Tags</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E9%93%BE-links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链 | Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索 | Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E-about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于 | About</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/2026-%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%80%E6%9D%A1%E9%BE%99%E6%9C%8D%E5%8A%A1%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/">2026 甲骨文一条龙服务经验分享和教程推荐</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-06-20T06:23:47Z'>2026-06-20</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 23 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="1-甲骨文注册申请实例配置系统和救砖的一条龙服务经验分享和教程推荐">1 甲骨文注册，申请实例，配置系统和救砖的一条龙服务经验分享和教程推荐
+</h1><blockquote class="alert alert-info">
+    <ul>
+<li><strong>原始链接</strong>: <a class="link" href="https://linux.do/t/topic/1891358"  target="_blank" rel="noopener"
+    >https://linux.do/t/topic/1891358</a></li>
+<li><strong>主题 ID</strong>: 1891358</li>
+<li><strong>楼主</strong>: @xiaojuju93</li>
+<li><strong>分类</strong>: 开发调优</li>
+<li><strong>标签</strong>: VPS, 配置优化, linuxdo</li>
+<li><strong>导出时间</strong>: 2026/5/18 11:41:27</li>
+<li><strong>楼层数</strong>: 1</li>
+</ul></blockquote>
+<p><strong>目录：</strong></p>
+<p><strong>一 注册成功经验</strong></p>
+<p>作为一个前野生的佬友，看着L站中别人分享的成功经历也是心里痒痒，终于今天（并非今天）莫名奇妙把甲骨文云的账号注册成功了，我也算是跟着喝了一口汤，把自己的过程分享一下，说不定能造福后来者😄。</p>
+<p>首先是在电脑的Google浏览器中开启无痕模式，然后注册甲骨文-中国，用的邮件是网易的163 ，因为之前就用这个邮箱注册的时候不是秒出ABC，我就觉得这邮箱的概率似乎大一些，并且163的邮箱号和手机号是一致的，一致的信息，我觉得给人的感觉就真实一些，当然了，这纯玄学，在此之前我已经失败过无数次了，包括前几天就试了很多次了，今天下午偶然间结束了小插件的开发，就试一次，没想到成了。</p>
+<p>邮件是发到了Edge浏览器上，在按钮上右键复制链接（不要点开），然后在Google无痕浏览器中打开，之前注册的页面还在，保持环境的一致性。名字我填的是真实的中文，名在前，姓在后，然后手机号用和163一致的，地址我用的都是拼音，在<a class="link" href="https://www.lddgo.net/convert/pinyin"  target="_blank" rel="noopener"
+    >专门的网站</a>上转换，就不要自己瞎拼了。地址1,2,3 ，我都是填一样的，从什么区开始，然后是街道，三个地址一模一样，然后我用的是当前的真实地址，不是信用卡的地址，因为我信用卡地址在东北，我现在在广东，隔得也太远了。然后选区我选的是新加坡，想弄个新加坡的节点来着，我看别人推荐的区好像是圣何塞好一些，这个看自己。<a class="link" href="https://linux.do/t/topic/210542"  target="_blank" rel="noopener"
+    >甲骨文怎么选区域？甲骨文三网延迟， 附上甲骨文全区测速节点地址！！！ - 文档共建 - LINUX DO</a></p>
+<p>然后就是信用卡了，我用的是工行的星座卡，用多少冲多少，没有额度（穷鬼专用😭），以前也是用这张，被拒绝过无数次了，因为我只有这一张。点击完thanks，按照传统的玄学办法，等1min左右再点确认提交（又有说法是在thanks界面等1min左右，让网站反应一下，当然了，这是玄学），我在50s的附近点的确认，然后开始转圈圈，我感觉好像有戏，转了一会就出现跑道了（我也算是看见一次跑道了😭）。然后就是等15min，创建账号成功了会发邮件通知，一定要让跑道跑完，没跑完可能就白瞎了（小心驶得万年船）。</p>
+<p>首次登录建议直接升级账号，这样存活率会高很多，而且能够继续使用免费的套餐（两个AMD，一个ARM），若是首次不升级的话，后续想升级都无法升级了，建议第一次登录就进行升级。信用卡中要保证有140新加坡币，扣款验证需要138.19 ，秒扣秒退回。作为验资的作用。据说是要等几个小时之后才会发邮件通知结果。</p>
+<p>然后就是后续的开机器了，大概率需要用脚本抢，我打算在升级成功之后再操作，这个有没有说法我也不知道（小心驶得万年船），我打算参考这篇<a class="link" href="https://zeaurx.com/archives/oracle-guide"  target="_blank" rel="noopener"
+    >博客</a>。刚开始先开一个AMD，然后把我的<a class="link" href="https://linux.do/t/topic/1663220"  target="_blank" rel="noopener"
+    >CPA搭上去</a>。养号一段时间，看能不能活一个月，若是能的话，就再抢个ARM搭一个节点。据说消费一笔账单，能够让存活的概率增大很多，后续我研究一下它的最低消费是多少。登录甲骨文云账户，我全程没开代理，据说开了会导致升级失败，而且有封号的风险（甲骨文三大玄学之一）。</p>
+<p><strong>二 申请实例和配置系统</strong></p>
+<p><strong>1.推荐教程</strong></p>
+<p>甲骨文云申请实例和开机过程。之前推荐的那些个教程都过期了，纯看的时候看不出来，只有对照着操作的时候，发现好多对不上。这次申请实例到开机，主要参考了两个视频加一个知乎文章然后配合DeepSeek，都是参考着来的，因为它们都不是很全。</p>
+<p><a class="link" href="https://zhuanlan.zhihu.com/p/2001579089060983225"  target="_blank" rel="noopener"
+    >天王盖不了地虎-某乎</a>，<a class="link" href="https://www.bilibili.com/video/BV18NzvB5EZu/?spm_id_from=333.337.search-card.all.click&amp;vd_source=8e9ffa2f92bc7fc1dc67c84193240404"  target="_blank" rel="noopener"
+    >零度解说-福站</a>，<a class="link" href="https://www.bilibili.com/video/BV1fyUABfE9r/?spm_id_from=333.1387.top_right_bar_window_history.content.click&amp;vd_source=8e9ffa2f92bc7fc1dc67c84193240404"  target="_blank" rel="noopener"
+    >科技狮子-福站</a>。</p>
+<p>上面最好的申请实例教程，我觉得是天王盖地虎的，2026年最新申请的账号进行的操作，其中先添加vnic&amp;子网再申请实例是其他教程没讲的，缺点可能就是没有在SSH客户端上操作系统，都是在甲骨文云后台上操作的。第二是零度解说的视频，也是2026年刚注册的账号，并且是一边录屏一边操作，非常直观，缺点就是造假，他明明没有申请成功4C24G，却放了一个其他账号的切片😑。好在他又演示了一遍申请1核的AMD，这次是真的了没有造假（还算有点良心），然后他是在申请实例的过程中创建vnic&amp;子网的，这样的子网是只有IPV4，创建成功后要自己把IPV6补上。科技狮子好像是一个佬友，他是专门做甲骨文云系列视频出道的，在B站和油管好像都是有5w粉丝，他的视频很多，很全，可以在以后进行系统学习，缺点是都是上古版本，而且他今年没有注册新的账号操作，而是在老的账号上操作，这就导致很多地方他是配置好的，但作为一个啥也不懂，又是全新账号的小白来说，很多地方是看不懂的，所以申请实例的时候不建议跟着他。</p>
+<p>然后是开机操作系统的教程，与上面的推荐顺序相反了。因为后续管理系统肯定都是在SSH客户端上操作，不可能经常性的去打开甲骨文云后台配置，这玩意也不能保持登录状态，每次登录又要注意网络环境，这就很麻烦。所以在SSH客户端上操作系统，对于小白来说也是非常重要的。我最终实现的配置是关闭甲骨文云上的防火墙，允许所有协议通过，然后在系统上统一用ufw管理防火墙，根据自己想要实现的功能直接问DeepSeek，然后通过命令行去打开相应的端口，当前我就只打开了自己的登录端口，非常的安全。</p>
+<p>天王盖地虎的教程直接没讲操作系统，也不知道他是不是发在其他帖子上了，然后零度解说的视频是进行了操作系统的管理的，并且提供了SSH客户端的推荐–WindTerm，我当前也是用的这个，之前学校做实验用的多的好像Xshell，不过总是要升级，就被我抛弃了，现在先用着WindTerm吧，反正也够轻量级，感觉不好用到时候再换。不过零度解说的配置理念与我相反，他是在WindTerm上把系统的防火墙全关了，然后所有的出入站规则都在甲骨文云后台上操作，以后想添加什么端口，都要重新登录一遍后台，然后操作，太麻烦了，我还是喜欢直接在WindTerm上操作命令行。然后最推荐的是科技狮子，不愧是甲骨文界的老资历，提供了一套龙的安装调优系统脚本，只要认识汉字就能实现绝大多数的功能，对于小白来说，不亚于是给新买的电脑安装了360套装，非常省事，输入数字回车就能无脑化执行操作。当然了，脚本嘛，还是没有自己手动配置的有掌控感，科技狮子在油管和B站都有5w的粉丝，说多不多也说少不少了，安全应该没问题。我本来也是想直接手动配置系统，可惜能力不济😭，分不清东南西北，最后还是选择了科技狮子的脚本来进行重装Debian系统，然后进行了一套龙的优化（没办法，自动化操作真的太香了🤩）。不过我还是让DeepSeek帮我改成其他的登录端口，我的考虑是这些教学主播人红是非多，受众又是我这样的一群小白群体，也一直有这样一群坏人去扫别人的端口破解，怕被有心的人盯上针对，毕竟是升级账号，我觉得多小心一些是没问题的。我让DeepSeek改了登录端口，然后用ufw管理所有的开发端口，目前只开发了一个登录端口，后续添加功能，再让AI帮我添加（AI真的太好用了！），然后DeepSeek说fail2ban（科技lion脚本安装的安全监视端口软件）监视的是默认登录端口，也就是22 ，不是科技lion后面改的5522 ，我不知道AI是不是瞎说的，后续我是让他帮我改成监视真正的登录端口，下面会介绍。</p>
+<p>推荐纯小白用户创建实例的教程可以跟着上面的天王盖地虎，然后操作系统配置跟着科技Lion。最后能实现的效果就是甲骨文云后台开放所有协议流量，后续所有的操作就都只在WindTerm这个客户端上进行就可以了，不用登录后台了，然后通过科技lion的脚本搭建的这个大框架，随着自己对于Linux的熟练，就能自己往上添加东西了，我相信很多人第一次使用电脑的时候肯定都用过360或者其他什么电脑管家，当自己逐渐学会使用电脑之后就都全部卸载了。</p>
+<p>我最终实现的效果就是，云后台开放防火墙所有协议，预留了一个自己的独立IP，开通了IPV4和IPV6，然后在WindTerm上用科技Lion的脚本重装了一个稳定的Debian系统（不会封号，甲骨文云官方也推荐自己重装），好处就是去除了甲骨文云的监视组建，其他的一些附带东西，然后启用了ufw来管理我的系统防火墙，以后开放端口就用他操作了。我禁止了账号密码登录（科技lion的脚本重装一条龙优化之后是账号和密码登录，并且开放了防火墙，我觉得不安全），改用密钥登录（要上传自己的公钥到实例系统，下面会介绍），然后我再把本地电脑的私钥进行了加密（我真是太小心了😄），改了登录的端口，也是我当前开放的唯一端口（科技Lion脚本运行之后，登录端口变成了5522 ，我根据自己的喜好又改了）。这一顿操作下来，我感觉要安全有安全，要便捷有便捷，太帅了bro。</p>
+<p><strong>2.我的配置过程</strong></p>
+<p>首先我是打开零度解说的视频，跟着他一步步操作，先创建实例，然后在实例中添加vnic&amp;子网，跟着他创建完4C24G实例，你会发现他没创建成功，他会批个图糊弄观众，但你成功了，因为你是升级账号，我也很建议刚升级完账号就赶快创建，之前我还担心配置开太高会不会导致封号，后面看了很多经验贴，发现没有任何规律，只要不太过分，就是随机的，干就完了bro。我申请的配置是4C24G，100GB的磁盘，其他的配置后续都可以改，但是过后有没有4C24G的配置就不好说了，你刚升级完账号，官方怕得罪高贵的付费用户，就有什么给你开什么，过段时间发现你光白嫖不消费，就把你拉入穷鬼黑名单了，有机子也不给你，所以刚升级完直接就最高配置没毛病bro（磁盘别拉太大，免得太招摇）。</p>
+<p>看完零度解说的视频，此时你获得了一个4C24G的机子和一个属于你的IPv4预留IP，还有一组公钥和私钥，但是你的云防火墙和IPV6还没配置好。跟着我下面操作。</p>
+<p><strong>2.1 分配IPv6地址和配置路由</strong></p>
+<p>在甲骨文云的主页，点击左上角的三条杠（之前创建实例的地方）</p>
+<p>![[Linux.do/教程/pics/1891358/1779075665008-0.png]]</p>
+<p>选择网络，然后点开虚拟云网络</p>
+<p>![[Linux.do/教程/pics/1891358/1779075666046-2.png]]</p>
+<p>然后你会看到自己在创建的实例的时候顺便创建的虚拟云网络，点击名称打开它</p>
+<p>![[Linux.do/教程/pics/1891358/1779075667023-4.png]]</p>
+<p>然后在里面点开IP管理，选择下面的CIDR块/IPv6前缀，在里面把<strong>分配 Oracle 分配的 IPv6 /56 前缀</strong>勾上，然后点击<strong>添加CIDR块</strong>，这样就为自己的整个云网络VCN分配了一个IPv6的地址段，接下来要为自己的实例子网也进行IPv6地址段分配。</p>
+<p>![[Linux.do/教程/pics/1891358/1779075667953-6.png]]</p>
+<p>![[Linux.do/教程/pics/1891358/1779075669122-8.png]]</p>
+<p>添加完之后还是这个页面，不过这次选择IP管理旁边的子网。这个子网也是在创建实例的时候创建的。点开它，同样是IP管理，往下拉找到IPv6前缀，选择添加IPV6前缀。</p>
+<p>![[Linux.do/教程/pics/1891358/1779075670540-10.png]]</p>
+<p>![[Linux.do/教程/pics/1891358/1779075671616-12.png]]</p>
+<p>与给整个VCN分配IPV6地址段一样，子网的分配也是一样的，不过多了一个<strong>IPv6 CIDR 块</strong> 字段的填写，我点开之后是下面这个样子。</p>
+<p>![[Linux.do/教程/pics/1891358/1779075672643-14.png]]</p>
+<p>啥也干不了，应该是之前分配过了造成的？纯小白人看傻了😵‍💫。我记得是可以勾选那个<strong>分配 Oracle 分配的 IPv6 /64 前缀</strong>，然后再在<strong>IPv6 CIDR 块</strong> 字段输入两个十六进制的字符，aa或者bb之类的都可以。再选择右下角的<strong>添加 IPv6 前缀</strong>即可。</p>
+<p>完成了上面的虚拟云网VCN及其下的子网IPv6前缀的添加，终于可以给实例分配具体的IPv6地址了。点开实例，还是从主页的三条杠进入。</p>
+<p>![[Linux.do/教程/pics/1891358/1779075673932-16.png]]</p>
+<p>![[Linux.do/教程/pics/1891358/1779075675257-18.png]]</p>
+<p>点击里面的网络，然后往下划找到附加的VNIC，选择下面的那个玩意名称，点进去。</p>
+<p>![[Linux.do/教程/pics/1891358/1779075676337-20.png]]</p>
+<p>然后选择IP管理，找到IPv6地址，选择分配IPv6地址。</p>
+<p>![[Linux.do/教程/pics/1891358/1779075677295-22.png]]</p>
+<p>子网IPV6前缀是之前已经分配好的，然后前缀长度选择128（有什么说法吗？不晓得），再勾选下面的自动分配IP地址，点击右下角的分配即可。</p>
+<p>![[Linux.do/教程/pics/1891358/1779075678653-24.png]]</p>
+<p>此时实例的IPV6的地址就分配好了，然后来到分配好的IPv4或者IPv6的路由表下，都是同一个路由表，点开它。</p>
+<p>![[Linux.do/教程/pics/1891358/1779075679409-26.png]]</p>
+<p>选择路由规则，然后添加路由规则，跟我的路由规则一样即可，::/0是IPv6，0.0.0.0/0是IPv4，目标类型都是internet网关，目标就是你自己的虚拟云网，只有一个，选择即可，然后是静态的。</p>
+<p>![[Linux.do/教程/pics/1891358/1779075680067-28.png]]</p>
+<p><strong>2.2 开放甲骨文云后台防火墙</strong></p>
+<p>因为我后续的活动都想直接在WindTerm上操作配置了，不想再回到甲骨文云后台折腾，因此就把甲骨文云上的防火墙都关了吧，免得要同时配置两个地方，系统的防火墙就够了。</p>
+<p>说是甲骨文云防火墙，但其实就是虚拟云网的安全列表。回到虚拟云网vcn（三条杠的网络进入，上面有介绍），这次不去IP管理，不去子网，选择安全。点开安全列表里面的那个名称。</p>
+<p>![[Linux.do/教程/pics/1891358/1779075680968-30.png]]</p>
+<p>在入站规则下配置成下面这个玩意，就是允许所有协议通过，::/0是IPv6的，0.0.0.0/0是IPv4的，允许所有端口的所有流量通过。</p>
+<p>![[Linux.do/教程/pics/1891358/1779075681872-32.png]]</p>
+<p>出站规则默认就是这个样子，看不清图片的话直接把出站规则的抄上来就行。</p>
+<p>完成上面的操作，云平台就算配置好了，以后除了封号都不用登录了。然后可以配置实例操作系统了。</p>
+<p><strong>2.3 配置实例终端操作系统</strong></p>
+<p>我是用零度解说推荐的SSH客户端–WindTerm，够轻量，其他的客户端我也不了解。直接去GitHub上搜索下载，或者用零度解说推荐的下载地址也可以（不过有次我用火绒杀毒扫出来WindTerm带了木马，那个WindTerm好像就是从零度解说那里下载的😅）。</p>
+<p>要是看了零度解说的那个视频，他里面也讲了如何配置SSH客户端，我这里稍微演示一下。先配置成中文和亮主题。重启生效。</p>
+<p>![[Linux.do/教程/pics/1891358/1779075683012-34.png]]</p>
+<p>![[Linux.do/教程/pics/1891358/1779075683681-36.png]]</p>
+<p>然后配置选中复制，右键粘贴。</p>
+<p>![[Linux.do/教程/pics/1891358/1779075684363-37.png]]</p>
+<p>![[Linux.do/教程/pics/1891358/1779075684900-38.png]]</p>
+<p>然后可以添加会话了。还是左上角的会话，点击新建会话，在SSH的标签下，填入主机IP，就是之前申请实例的时候分配的预留IP，是IPv4（IPv6也行，因为之前配置好了）。端口是默认的22 ，选择下面的验证。</p>
+<p>![[Linux.do/教程/pics/1891358/1779075685281-39.png]]</p>
+<p>点击那三个点，把之前创建实例保存的私钥导进去。（要是没保存那就完犊子了）</p>
+<p>![[Linux.do/教程/pics/1891358/1779075685653-40.png]]</p>
+<p>然后点击右下角的连接，此时WindTerm应该会让你设置一个密码，建议留空，那不过是在本地电脑上加的软件锁，防止对象窃取自己云端电脑中的三体人机密，但我觉得没必要，因为你没对象。当电脑锁屏之后会弹出输入密码，指的就是这个密码，没设置的话回车就行了。</p>
+<p>然后你就进入系统了，作为一个小白，此时你云端的防火墙已经关了，系统还有一个自带的防火墙，所以其实安全问题不大。然后我们就打开科技Lion的那个视频了，跟着他进行一条龙脚本服务，非常攒劲🤩。跟着他输入相应的数字即可，重装了系统，换成干净的系统，然后装了一个监视端口被暴力破解的安全软件，还有一些其他的玩意，对于纯小白来说，那就是360一件套，我觉得还是非常有必要的，以后跟别人吹嘘，你就说自己曾经被一条龙服务过。</p>
+<p>如果你打算用这个脚本的话推荐跟着他的那个视频操作，脚本安装命令是bash &lt;(curl -sL kejilion.sh)，输入回车即可，退出脚本之后，按k回车能重新打开。</p>
+<p>跟着他的视频操作，重装了系统，并且改成了账号和密码登录，此前密钥登录的方式失效了，你需要重新登录。新建会话，还是输入预留IP，此时还没有被一条龙服务过，你的登录端口依旧是22,直接选择连接，弹出的窗口输入账号名称root，然后是你自己设置的密码（重装之前会让你设置）。我记得当时会出现闪退，我怀疑是系统还在重装，关掉软件等一会，然后再执行上面的登录操作。</p>
+<p>重装系统之后你就能跟着科技Lion的视频进行接下来的一条龙服务了。一条龙服务之后登录端口就变成了高位的5522 ，比默认的22还是要安全一些。到这里，基本上就配置结束了，要是你没有其他的安全需求的话，我上面也说了，科技lion的脚本一条龙之后，系统防火墙是关闭的，他这是为了给纯小白进行测试使用的，但现在都是人手一个AI工具，所以没有真正意义上的纯小白😄，需要实现什么测试，直接把问题给AI就行了，这种具体简单的问题，AI解决的非常好。所以我使用DeepSeek帮我做了下面的优化，主要就是安全方面，因为我看到站内有小伙伴因为端口被扫，然后账号一个月走10多t流量封号的，甚至信用卡被刷爆，毕竟是升级用户，还是小心点比较好。</p>
+<p><strong>2.4 个性化安全策略配置</strong></p>
+<p>注意，以下的每一步操作之后，都建议新开一个会话测试一下是不是还能成功登录，不能的话就在老对话中进行修改，已经建立的老对话不会因为改了登录方式，密码，端口这些东西而断开。若是把自己锁在外面了也别慌，下面会介绍解决办法，就算是把锁搞坏了（sshd_config改崩了，SSH连接无法建立）也能解决，就是有亿点点麻烦，所以尽量别把锁搞坏了。</p>
+<p><strong>2.4.1 安装ufw管理防火墙</strong></p>
+<p>我没记错的话，科技lion的脚本是关闭了所有防火墙，并且没有下载这个ufw软件。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 2 安装
+</span></span><span class="line"><span class="cl">apt update &amp;&amp; apt install ufw -y
+</span></span><span class="line"><span class="cl"># 3 设置默认策略（拒绝所有入站，允许所有出站）
+</span></span><span class="line"><span class="cl">ufw default deny incoming
+</span></span><span class="line"><span class="cl">ufw default allow outgoing
+</span></span><span class="line"><span class="cl"># 4 允许自己的登录端口开放，别把自己锁外面了
+</span></span><span class="line"><span class="cl">ufw allow 5522/tcp
+</span></span><span class="line"><span class="cl"># 5 启用ufw
+</span></span><span class="line"><span class="cl">ufw enable
+</span></span><span class="line"><span class="cl"># 6 检查配置状态
+</span></span><span class="line"><span class="cl">ufw status verbose
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>值得注意的是，用ufw来管理防火墙，那就不要安装iptables-persistent，这玩意安装之后会导致ufw被卸载，因为这两个软件都是管理防火墙的，会冲突，结果就是相互卸载，要是ufw被卸载了，自己允许登录端口开放的规则在下次登录就会失效，结果就是把自己锁外面了。</p>
+<p>iptables-persistent的使用原理不太清楚，以后再研究吧，为了保证ufw的安全，我决定给它再上一层保护措施。这样就不会被自动卸载和更新了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 7 锁定ufw
+</span></span><span class="line"><span class="cl">apt-mark hold ufw
+</span></span><span class="line"><span class="cl"># 8 解锁
+</span></span><span class="line"><span class="cl">apt-mark unhold ufw
+</span></span><span class="line"><span class="cl"># 9 更新 ufw
+</span></span><span class="line"><span class="cl">sudo apt update &amp;&amp; sudo apt install ufw
+</span></span><span class="line"><span class="cl"># 10 更新后重新锁定 ufw
+</span></span><span class="line"><span class="cl">sudo apt-mark hold ufw
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>以后想搭建代理，或者其他什么活动，你就直接问DeepSeek使用ufw的什么命令开放什么对应的端口就行。</p>
+<p><strong>2.4.2 修改密码和登录端口</strong></p>
+<p>我先改的登录密码，此时的系统只能通过密码登录，用科技lion脚本重装系统的时候太草率，设置密码太过简单，非常容易被暴力破解，虽然有fail2ban监视登录端口的异常尝试，但还是要自己多加注意，况且DeepSeek说我的fail2ban监视的还是默认端口22 ，并不是一条龙服务之后的5522 ，下面我也会优化这个问题。改密码直接输入passwd，然后系统就会让你输入两次密码，输入的时候没有任何显示，Linux就是这个样子，属于正常现象。确认回车即可。</p>
+<p>修改自己的登录端口，同时要改SSH服务的配置文件sshd_config（就是我上面说的锁）和防火墙规则，前者是确保SSH服务监听这个端口，后者是保证这个端口是允许流量经过的。此时你的登录端口是5522 ，用 <code>sudo nano /etc/ssh/sshd_config</code> 打开这个配置文件，划到最下面，找到Port 5522 ，在其前面加一个 # 号注释掉，然后再在下面添加一行 Port 9393，然后Ctrl+O，回车，Ctrl+X（保存，确认，退出）。</p>
+<p>然后配置防火墙：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">ufw</span> <span class="n">allow</span> <span class="mi">9393</span><span class="o">/</span><span class="n">tcp</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">ufw</span> <span class="n">deny</span> <span class="mi">22</span><span class="o">/</span><span class="n">tcp</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">ufw</span> <span class="n">reload</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">ufw</span> <span class="n">status</span> <span class="n">verbose</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>![[Linux.do/教程/pics/1891358/1779075686023-41.png]]</p>
+<p><code>sudo systemctl restart sshd</code> 重启 SSH 服务让配置生效。</p>
+<p>然后就能新建会话验证配置成功了没，填入IP和新改的端口，直接点击右下角的连接，会弹出输入用户名root，点确认之后是会让输入密码。若是不行，一般不会不行，就两个步骤，好好检查一下，有什么问题随时拷打DeepSeek。</p>
+<p><strong>2.4.3 配置Fail2ban监视真正的登录端口</strong></p>
+<p>编辑或创建 /etc/fail2ban/jail.local，使用 <code>nano /etc/fail2ban/jail.local</code>命令，将以下内容添加进去</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[sshd]
+</span></span><span class="line"><span class="cl">enabled = true
+</span></span><span class="line"><span class="cl">port = 9393           # 改成你现在的 SSH 端口
+</span></span><span class="line"><span class="cl">logpath = %(sshd_log)s
+</span></span><span class="line"><span class="cl">backend = systemd
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Ctrl+O，回车，Ctrl+X。重启 Fail2ban 让配置生效并检查配置是否成功。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">systemctl restart fail2ban
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">fail2ban-client status sshd
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">grep -i port /etc/fail2ban/jail.local /etc/fail2ban/jail.d/* /etc/fail2ban/jail.conf 2&gt;/dev/null
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>会输出一大堆的内容，在其中能够找到Port: 9393就行。</p>
+<p><strong>2.4.4 加密密钥登录和关闭密码登录</strong></p>
+<p>创建实例的时候获取的那一对密钥，先将私钥进行加密，在本地电脑PowerShell中输入 <code>ssh-keygen -p -f /c/Users/你的用户名/.ssh/你的私钥名字.key</code>，一般来说密钥是保存在这个位置，创建实例的时候保存的密钥应该是在下载的默认位置，移动到这里来统一管理。运行完命令，会让你输入两遍密码，同样还是没有任何的现象。</p>
+<p>然后将公钥（是上面加密私钥对应的公钥）导入到云端Linux服务器中，公钥内容就是用VSCode或者记事本打开公钥.pub，将里面的那串符文复制下来。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 11 确保 .ssh 目录存在且权限正确
+</span></span><span class="line"><span class="cl">mkdir -p /root/.ssh
+</span></span><span class="line"><span class="cl">chmod 700 /root/.ssh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 12 将你的公钥追加到 authorized_keys 文件中
+</span></span><span class="line"><span class="cl">echo &#34;你的公钥内容&#34; &gt;&gt; /root/.ssh/authorized_keys
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 13 设置文件权限
+</span></span><span class="line"><span class="cl">chmod 600 /root/.ssh/authorized_keys
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后就能新开会话用私钥在WindTerm上进行新对话验证了（上面介绍了私钥登录过程），这次登录它会弹出个窗口让你输入私钥密码。</p>
+<p>关闭密码登录，防止被暴力破解，但多一种登录方式也有好处，这个看自己。还是修改锁，也就是那个sshd_config文件，用命令 <code>nano /etc/ssh/sshd_config</code>，在里面找到PasswordAuthentication，它是白色的，发着光，还是挺明显的，大概在39行，将它后面的yes改成no。然后Ctrl+O，回车，Ctrl+X。接着还是重启SSH服务 <code>systemctl restart ssh</code>。再开一个新对话，这次用账号和密码登录（上面介绍了登录步骤），你会发现登录报错了。</p>
+<p><strong>2.4.5 Cloud Shell和控制台串行连接–解决被锁门外和锁坏了的情况。</strong></p>
+<p>若是改端口改错了，忘记放行防火墙，然后还把之前打开的老对话都关闭了，就可以用这个功能。</p>
+<p>在实例的详情页，选择操作系统管理标签页，往下划，找到控制台连接，这里有Cloud Shell和本地连接。</p>
+<p>![[Linux.do/教程/pics/1891358/1779075686400-42.png]]</p>
+<p>你若是有设置密码的话，可以直接使用Cloud Shell进行登录，即使你通过我上面介绍的配置，关闭了密码登录的功能，也能成功登录，因为上面关闭的密码登录不过是针对SSH登录而已，这里是控制台连接，是完全绕过的，只要你有设置一个非空的密码就行。点开之后，会在底下加载一个窗口出来，等它加载好，回车一下，输入账号名称，回车，然后输入密码，再回车，即可进入系统。下面介绍没设置密码，或者密码不记得了的情况。点开Cloud Shell旁边的创建本地连接，然后它会让你选择填入自己的密钥还是重新创建一份，根据自己的情况选择，我是将之前创建实例时就已经保存的那份公钥内容导入进来，然后点击创建。</p>
+<p>![[Linux.do/教程/pics/1891358/1779075687282-44.png]]</p>
+<p>创建完成后，点开旁边的三个点，选择复制Linux/Mac 的串行控制台连接，如果你的密钥已经在GitBash的.ssh文件中配置好了，那就不用指定地址，但我相信用Windows的，ssh一般都放在自己的用户目录下，所以要改造一下刚才复制的串行控制台连接命令。否则会遇到<code>Permission denied (publickey)</code> 错误。要在两处ssh后面各添加一个 <code>-i /私钥地址</code> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh -i /c/Users/你的用户名/.ssh/私钥名字.key -o ProxyCommand=&#39;ssh -i /c/Users/你的用户名/.ssh/私钥名字.key -W %h:%p -p 443 xxxxx-----xxxxxx-----xxxxxx
+</span></span><span class="line"><span class="cl">xxxxxx-----xxxxxxx-----xxxxxxx-----xxxxxxx
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>第一个私钥地址对应实例操作系统中添加的公钥，第二个私钥地址对应刚才创建的控制台连接添加的公钥，我都用的同一个，所以一会我要输入两遍密码。</p>
+<p>也不知道是甲骨文云的问题，还是我的这个密钥的问题，用的居然是ssh-rsa 算法，这个密钥就是在创建实例的时候创建的，所以归根结底还是甲骨文的问题。这个算法过时了，在高级的GitBash中是被默认禁用的，所以运行上面添加了地址之后的命令还是会报错 <code>Unable to negotiate with UNKNOWN port 65535: no matching host key type found. Their offer: ssh-rsa</code>，此时还需要改一下命令。需要在两个私钥地址前面都各自加上 <code>-o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedKeyTypes=+ssh-rsa</code> 。也就是在ssh和-i之间添加这两个玩意。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedKeyTypes=+ssh-rsa -i /c/Users/你的用户名/.ssh/私钥名字.key -o ProxyCommand=&#39;ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedKeyTypes=+ssh-rsa -i /c/Users/你的用户名/.ssh/私钥名字.key -W %h:%p -p 443 xxxx---xxxxx---xxxxx---xxxx----xxxxx---xxxxxx
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>改好之后就能在GitBash中执行了，你说没有GitBash？怎么可能，这不是上户口的时候送的嘛，去跟家里长辈问一下，肯定是有的。然后输入两遍私钥密码之后会进入一个空行，再输入一下回车就进入系统了。上面配置好的命令可以保存下来，不用再到使用的时候配一遍了。</p>
+<p>以上两个方法都是被锁门外的解决情况，前提是本来就有钥匙，要么是账号和密码，要么是密钥，不能两个都没有。</p>
+<p><strong>2.4.6 实例炸了</strong></p>
+<p>要是直接就给整崩了，新号最好的办法就是重装系统，通过更换引导卷实现，或者就是小机救老机，原理就是把老机整崩的磁盘拆下来，挂到小机身上去，然后登录小机，在上面修复被自己配炸的文件。需要申请一台AMD，新的账号还是不要申请那么多机器先，养养号，这个就先不测试了，推荐几个相关资料。</p>
+<p><a class="link" href="https://telegra.ph/oracleddindex-04-08"  target="_blank" rel="noopener"
+    >甲骨文实例dd/救砖/vnc/教程 – Telegraph</a></p>
+<p><a class="link" href="https://cnboy.org/2961"  target="_blank" rel="noopener"
+    >更换引导卷重装系统</a></p>
+<p><a class="link" href="https://linux.do/t/topic/489683"  target="_blank" rel="noopener"
+    >小鸡救老鸡</a></p>
+<p><strong>3.写作感悟</strong></p>
+<p>心血来潮，第一次写这么长的教程，给我的感觉是真的好累啊！以前看别人写的万字长文都没什么感觉，除非写的让我觉得特别棒特别有用，我才会点个小小的赞，自从开始写这篇文章以来，只要是我看过的帖子，无论有没有帮上忙，我都先把赞点上，认可对方的劳动成果。写到后面真的有非常想放弃的冲动，但还是觉得既然开始做一件事情了，那就认真做好它，并且还是第一次做呢。</p>
+<p>我这还是建立在别人教程上的延伸，我都觉得非常累了，那些真的是自己一字一句敲出来，一张图一张图截出来的，真的太牛了，顶礼膜拜。而且分享到互联网还要注意保护自己的隐私安全，我也是第一次打码上传自己的图片，也不知道什么需要隐藏，就瞎打一通了，要是泄露了个人信息，还请各位互联网大善人不要给我盒开了😭。</p>
+<p>写这篇面向小白的教程，我也是收获了些写作经验，那就是最好是一边做，一边记录，这样或许比做完之后再从头开始写要轻松一些吧。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
+        
+            <a href="/tags/linuxdo/">Linuxdo</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 2026-06-20 14:23
+        </span>
+    </section></footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/%E5%B7%A5%E5%85%B7%E5%B8%96%E5%AD%90%E6%94%B6%E8%97%8F%E7%A5%9E%E5%99%A8/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【工具】帖子收藏神器</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【手机搭建服务器】· 第 三 期</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【手机搭建服务器】· 第 二 期</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E6%95%99%E7%A8%8B2026%E7%89%88-%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82%E7%9A%84%E8%87%AA%E5%BB%BAcloudflare%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E6%95%99%E7%A8%8B%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【教程】2026版 小白也能看懂的自建Cloudflare临时邮箱教程（域名邮箱）</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E9%B8%AD%E8%80%81%E5%B8%88ai%E5%8A%A8%E6%80%81%E6%BC%AB%E7%94%BBbanana%E5%88%B6%E4%BD%9C%E5%85%A8%E6%B5%81%E7%A8%8B%E6%97%A2%E7%84%B6%E8%A6%81%E7%99%BD%E5%AB%96%E5%B0%B1%E8%B4%AF%E5%BD%BB%E5%88%B0%E5%BA%95%E5%92%AF%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E6%B5%81%E7%A8%8B/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【鸭老师】AI动态漫画banana制作全流程！既然要白嫖就贯彻到底咯，完全免费流程！</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="jenboy/jenboy.github.io"
+    data-repo-id="R_kgDOQ4Hp4A"
+    data-category="General"
+    data-category-id="DIC_kwDOQ4Hp4M4C07fG"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Xao
+    </section>
+    
+    <section class="powerby">
+        
+            碎碎念 <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://jenboy.github.io/icons/chevrons-up.svg);
+        background-size: contain;
+    
+    }
+    
+    
+    #TableOfContents > ul, ol {
+        ul, ol {
+            display: none;
+        }
+        .open {
+            display: block;
+        }
+    }
+
+    
+    .highlight {
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .code-show {
+        max-height: none !important;
+    }
+    
+    .code-more-box {
+        width: 100%;
+        padding-top: 78px;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #f0f0f5;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    
+    .code-more-img {
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+    }
+
+    
+    @font-face {
+
+        font-family: 'harmonyOSFont';
+          
+        src: url(https://jenboy.github.io/font/HarmonyOS_Sans_Bold.ttf) format('truetype');
+    }
+
+    
+    :root {
+        --base-font-family: 'harmonyOSFont';
+        --code-font-family: 'harmonyOSFont';
+    }
+
+    
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+             
+    :root {
+     
+    --link-text: #0969da;               
+    --link-bg-hover: #ddf4ff;           
+    --link-decoration: transparent;     
+    --bg-body: #ffffff;
+    --text-body: #24292f;
+    }
+
+     
+    [data-theme="dark"] {
+     
+    --link-text: #58a6ff;               
+    --link-bg-hover: rgba(56, 139, 253, 0.15);  
+    --link-decoration: transparent;
+    --bg-body: #0d1117;
+    --text-body: #c9d1d9;
+    }
+
+     
+     
+    .highlight-link {
+    color: var(--link-text);
+    text-decoration: none;            
+    
+     
+    padding: 2px 6px;                
+    margin: 0 -4px;                   
+    
+    border-radius: 6px;               
+    transition: all 0.2s ease-in-out;  
+    font-weight: 500;                 
+    cursor: pointer;
+    position: relative;
+    }
+
+     
+    .highlight-link:hover {
+    background-color: var(--link-bg-hover);
+    text-decoration: none;
+    }
+
+     
+    .highlight-link:focus-visible {
+    outline: 2px solid var(--link-text);
+    outline-offset: 2px;
+    border-radius: 6px;
+    }
+
+</style>
+
+
+<script defer src="https://cn.vercount.one/js"></script>
+<script>
+    function showHideView() {
+        
+        let viewCounts = document.querySelectorAll("#viewCount");
+        if (viewCounts) {
+            
+            let article =  document.querySelector(".article-page");
+            if (!article) {
+                viewCounts.forEach(ele => {
+                    ele.style.display = 'none';
+                });
+            }
+        }
+    }
+    
+    showHideView();
+</script>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+<div id="particles-js"></div>
+<script src=https://jenboy.github.io/background/particles.min.js></script>
+<script>
+    
+  particlesJS.load('particles-js', 'https:\/\/jenboy.github.io\/background\/particlesjs-config.json', function() {
+    
+  });
+</script>
+
+<script>
+    
+    function initTocHide() {
+        
+        let toc = document.querySelector(".widget--toc");
+        if (!toc) {
+            return;
+        }
+        
+        window.addEventListener('scroll', function() {
+            
+            let openUl = document.querySelectorAll(".open");
+            if (openUl.length > 0) {
+              openUl.forEach((ul) => {
+                ul.classList.remove("open")
+              })
+            }
+            
+            let currentLi = document.querySelector(".active-class");
+            if (!currentLi) {
+                return
+            }
+            
+            if (currentLi.children.length > 1) {
+                currentLi.children[1].classList.add("open")
+            }
+            
+            let ul = currentLi.parentElement;
+            do {
+                ul.classList.add("open");
+                ul = ul.parentElement.parentElement
+            } while (ul !== undefined && (ul.localName === 'ul' || ul.localName === 'ol'))
+        });
+    }
+    initTocHide()
+</script>
+
+<script>
+    
+    function initCodeMoreBox() {
+    let codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks) {
+      return;
+    }
+    codeBlocks.forEach(codeBlock => {
+      
+      if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+        return;
+      }
+      
+      
+      let codeMoreBox = document.createElement('div');
+      codeMoreBox.classList.add('code-more-box');
+      
+      let codeMoreBtn = document.createElement('span');
+      codeMoreBtn.classList.add('code-more-btn');
+      codeMoreBtn.addEventListener('click', () => {
+        codeBlock.classList.add('code-show');
+        codeMoreBox.style.display = 'none';
+        
+        window.dispatchEvent(new Event('resize'))
+      })
+      
+      let img = document.createElement('img');
+      img.classList.add('code-more-img');
+      img.src = "https://jenboy.github.io/icons/arrow-down.svg"
+      
+      codeMoreBtn.appendChild(img);
+      codeMoreBox.appendChild(codeMoreBtn);
+      codeBlock.appendChild(codeMoreBox)
+    })
+  }
+  
+  initCodeMoreBox();
+</script>
+
+    </body>
+</html>
