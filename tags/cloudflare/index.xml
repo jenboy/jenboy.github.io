@@ -7,13 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Xao</copyright>
-        <lastBuildDate>Sat, 20 Jun 2026 14:53:52 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 20 Jun 2026 15:13:26 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>CF Worker部署DDNS主控</title>
         <link>https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/</link>
-        <pubDate>Sat, 20 Jun 2026 06:54:08 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 07:13:47 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/</guid>
-        <description>&lt;h1 id=&#34;cf-worker白嫖部署极简的ddns主控&#34;&gt;CF Worker白嫖部署极简的DDNS主控
+        <description>&lt;h1 id=&#34;cf-worker-白嫖部署极简的-ddns-主控&#34;&gt;CF Worker 白嫖部署极简的 DDNS 主控
 &lt;/h1&gt;&lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;原始链接&lt;/strong&gt;: &lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/617539&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -26,12 +26,12 @@
 &lt;li&gt;&lt;strong&gt;楼层数&lt;/strong&gt;: 1&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;Hello~&lt;/p&gt;
-&lt;p&gt;CCB带来了一个全新的迷你DDNS工具，帮助佬们快速&lt;del&gt;白嫖&lt;/del&gt;部署DDNS Worker~&lt;/p&gt;
+&lt;p&gt;CCB 带来了一个全新的迷你 DDNS 工具，帮助佬们快速&lt;del&gt;白嫖&lt;/del&gt;部署 DDNS Worker~&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;它在做什么?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;可能有些佬友不知道这是什么工具&lt;/p&gt;
-&lt;p&gt;它是一个ddns-go同款工具，用于解决某些场景下，服务器会定时更新IP的问题。&lt;/p&gt;
-&lt;p&gt;不像传统的服务器，解析DNS后就不需要进行管理，因为IP是静态的。&lt;/p&gt;
-&lt;p&gt;那么针对动态IP，就得使用动态更新的办法~&lt;/p&gt;
+&lt;p&gt;它是一个 ddns-go 同款工具，用于解决某些场景下，服务器会定时更新 IP 的问题。&lt;/p&gt;
+&lt;p&gt;不像传统的服务器，解析 DNS 后就不需要进行管理，因为 IP 是静态的。&lt;/p&gt;
+&lt;p&gt;那么针对动态 IP，就得使用动态更新的办法~&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;它和同款工具的优势?&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -41,42 +41,42 @@
 &lt;p&gt;极简，属于是谁来都能看懂的代码（可快速二次开发自己的个性化版本）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;干净，不会出现多余的奇奇怪怪的功能（就修改个DNS）&lt;/p&gt;
+&lt;p&gt;干净，不会出现多余的奇奇怪怪的功能（就修改个 DNS）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;单点CF，有些工具会额外支持其他服务商（出发点很好，但是对于只用CF的用户来说，使用它们无疑是增大了自己的心智负担和维护精力）&lt;/p&gt;
+&lt;p&gt;单点 CF，有些工具会额外支持其他服务商（出发点很好，但是对于只用 CF 的用户来说，使用它们无疑是增大了自己的心智负担和维护精力）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;兼容性强，没有多余的包/多余的环境，只要能跑shell脚本，就能用~（哪怕你只剩下了&lt;strong&gt;1MB&lt;/strong&gt;的空间）&lt;/p&gt;
+&lt;p&gt;兼容性强，没有多余的包/多余的环境，只要能跑 shell 脚本，就能用~（哪怕你只剩下了&lt;strong&gt;1MB&lt;/strong&gt;的空间）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;![[1779175153827-0.png]]&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;内置TG通知（&lt;del&gt;因为API调用简单&lt;/del&gt;）&lt;/li&gt;
+&lt;li&gt;内置 TG 通知（&lt;del&gt;因为 API 调用简单&lt;/del&gt;）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;工具诞生的起源&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;本来购入了小鸡，因为是动态IP，所以在想办法使用DDNS解决问题。&lt;/p&gt;
-&lt;p&gt;找到了大家常用的 &lt;code&gt;ddns-go&lt;/code&gt;，打开文档 — &lt;strong&gt;头大，眼花，难绷&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;然后其他的ddns的脚本，会塞入自己的 &lt;code&gt;CloudFlare Api Key&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;本来购入了小鸡，因为是动态 IP，所以在想办法使用 DDNS 解决问题。&lt;/p&gt;
+&lt;p&gt;找到了大家常用的 &lt;code&gt;ddns-go&lt;/code&gt;，打开文档—&lt;strong&gt;头大，眼花，难绷&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;然后其他的 ddns 的脚本，会塞入自己的 &lt;code&gt;CloudFlare Api Key&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;这样会让部分有 &lt;code&gt;密钥洁癖&lt;/code&gt; 的佬友感到厌烦 (比如我自己)&lt;/p&gt;
 &lt;p&gt;鉴于复杂性&amp;amp;洁癖的原因，此工具诞生&lt;/p&gt;
-&lt;p&gt;（当然最主要是CCB有点笨，不会用ddns-go之类工具）&lt;/p&gt;
+&lt;p&gt;（当然最主要是 CCB 有点笨，不会用 ddns-go 之类工具）&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;怎么安装?&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;准备工作&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;申请Api Key&lt;/p&gt;
+&lt;p&gt;申请 Api Key&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;打开CF主界面&lt;/p&gt;
+&lt;p&gt;打开 CF 主界面&lt;/p&gt;
 &lt;p&gt;![[1779175154916-1.png]]&lt;/p&gt;
 &lt;p&gt;![[1779175155820-3.png]]&lt;/p&gt;
 &lt;p&gt;点击复制 &lt;code&gt;CF Global Key&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;创建完成后复制自己的Token&lt;/p&gt;
+&lt;p&gt;创建完成后复制自己的 Token&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;打开CF-Worker，点击创建&lt;/li&gt;
+&lt;li&gt;打开 CF-Worker，点击创建&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;![[1779175156236-4.png]]&lt;/p&gt;
 &lt;p&gt;随便命名后进行&lt;strong&gt;部署&lt;/strong&gt;，然后点击编辑代码&lt;/p&gt;
@@ -85,28 +85,28 @@
 &lt;p&gt;复制项目中 &lt;code&gt;worker.js&lt;/code&gt; 的所有代码，粘贴 → 点击部署&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;返回Worker的&lt;strong&gt;设置&lt;/strong&gt;界面&lt;/p&gt;
+&lt;p&gt;返回 Worker 的&lt;strong&gt;设置&lt;/strong&gt;界面&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;![[1779175157235-6.png]]&lt;/p&gt;
 &lt;p&gt;类型选择：Secert（密钥）&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;CF_API_KEY：刚刚申请的密钥&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;CF_API_EMAIL：你的账号邮箱&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;API_SECRET：通信密钥(主控端和节点端通信鉴权使用)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TG-BOT配置(可选):&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;TG_BOT_TOKEN：Bot的Token&lt;/p&gt;
-&lt;p&gt;TG_CHANNEL_ID(这个可以选 &lt;code&gt;文本&lt;/code&gt; 类型)：推送消息的频道ID&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;API_SECRET：通信密钥 (主控端和节点端通信鉴权使用)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TG-BOT 配置 (可选):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;TG_BOT_TOKEN：Bot 的 Token&lt;/p&gt;
+&lt;p&gt;TG_CHANNEL_ID(这个可以选 &lt;code&gt;文本&lt;/code&gt; 类型)：推送消息的频道 ID&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;节点端部署&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;使用 &lt;code&gt;README&lt;/code&gt; 中提供的命令，下载后修改配置内的变量，执行脚本后，即可完成部署！&lt;/p&gt;
 &lt;p&gt;（执行脚本后会自动添加定时任务~）&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;最后&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如果佬友们喜欢的话，可以给CCB点个Star嘛，感谢啦~ 🤪&lt;/p&gt;
+&lt;p&gt;如果佬友们喜欢的话，可以给 CCB 点个 Star 嘛，感谢啦~ 🤪&lt;/p&gt;
 &lt;p&gt;项目地址：&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;p&gt;    &gt;GitHub - chunkburst/ddns-worker: 一个简易的DDNS实现~&lt;/a&gt;
-一个简易的DDNS实现~&lt;/p&gt;&lt;/blockquote&gt;
+一个简易的 DDNS 实现~&lt;/p&gt;&lt;/blockquote&gt;
 </description>
         </item>
         

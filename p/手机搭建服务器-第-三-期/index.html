@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="1 【超详细】手机搭建服务器 · 第 三 期 前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期\n【超详细】手机搭建服务器 · 第 二 期\n前言\n第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="1【超详细】手机搭建服务器 · 第 三 期 前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期\n【超详细】手机搭建服务器 · 第 二 期\n前言\n第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
 <title>【手机搭建服务器】· 第 三 期</title>
 
 <link rel='canonical' href='https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/'>
 
 <link rel="stylesheet" href="/scss/style.min.6998e4e648ca13c26692fd732a596048e487a90378e5ec1f10b8a5899f478b60.css"><meta property='og:title' content="【手机搭建服务器】· 第 三 期">
-<meta property='og:description' content="1 【超详细】手机搭建服务器 · 第 三 期 前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期\n【超详细】手机搭建服务器 · 第 二 期\n前言\n第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
+<meta property='og:description' content="1【超详细】手机搭建服务器 · 第 三 期 前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期\n【超详细】手机搭建服务器 · 第 二 期\n前言\n第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
 <meta property='og:url' content='https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/'>
 <meta property='og:site_name' content='Xao的碎碎念'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='LinuxDo' /><meta property='article:published_time' content='2026-06-20T06:54:08&#43;00:00'/><meta property='article:modified_time' content='2026-06-20T14:53:52&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='LinuxDo' /><meta property='article:published_time' content='2026-06-20T07:13:47&#43;00:00'/><meta property='article:modified_time' content='2026-06-20T15:13:26&#43;08:00'/>
 <meta name="twitter:title" content="【手机搭建服务器】· 第 三 期">
-<meta name="twitter:description" content="1 【超详细】手机搭建服务器 · 第 三 期 前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期\n【超详细】手机搭建服务器 · 第 二 期\n前言\n第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
+<meta name="twitter:description" content="1【超详细】手机搭建服务器 · 第 三 期 前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期\n【超详细】手机搭建服务器 · 第 二 期\n前言\n第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -360,7 +360,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published" datetime='2026-06-20T06:54:08Z'>2026-06-20</time>
+                <time class="article-time--published" datetime='2026-06-20T07:13:47Z'>2026-06-20</time>
             </div>
         
 
@@ -390,7 +390,7 @@
     <section class="article-content">
     
     
-    <h1 id="1-超详细手机搭建服务器--第-三-期">1 【超详细】手机搭建服务器 · 第 三 期
+    <h1 id="1超详细手机搭建服务器--第-三-期">1【超详细】手机搭建服务器 · 第 三 期
 </h1><p><strong>前两期回顾：</strong></p>
 <p><a class="link" href="https://linux.do/t/topic/2157272"  target="_blank" rel="noopener"
     >【超详细】手机搭建服务器 · 第 一 期</a></p>
@@ -398,7 +398,7 @@
     >【超详细】手机搭建服务器 · 第 二 期</a></p>
 <p><strong>前言</strong></p>
 <p>第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；</p>
-<p>本期要实现的是：如何让手机的wifi永不断连：</p>
+<p>本期要实现的是：如何让手机的 wifi 永不断连：</p>
 <ul>
 <li>
 <p>不管是手机意外重启，还是重新开关机；</p>
@@ -407,25 +407,25 @@
 <p>不管是开启了飞行模式；</p>
 </li>
 <li>
-<p>不管是不是主动关闭wifi。</p>
+<p>不管是不是主动关闭 wifi。</p>
 </li>
 </ul>
 <blockquote class="alert alert-warning">
     <p>在开始之前，建议先把手机的这两个开关关闭，不是必须，但是建议，减少干扰：</p></blockquote>
 <ul>
 <li>
-<p>系统设置 - 开发者选项 - WLAN扫描调节 - 关闭</p>
+<p>系统设置 - 开发者选项 - WLAN 扫描调节 - 关闭</p>
 </li>
 <li>
-<p>系统设置 - WLAN - WLAN助理 - 智能选网和网速模式 - 关闭</p>
+<p>系统设置 - WLAN - WLAN 助理 - 智能选网和网速模式 - 关闭</p>
 </li>
 </ul>
 <p><strong>补充说明：</strong></p>
 <p>· 机型不同，打开开发者选项的方式也不同，这个自己百度</p>
-<p>· 不是所有手机都有【WLAN助理】这个选项，我是MIUI 11，所有有，其他手机可能是其他名字，或者没有这个功能，自己看自己系统的功能开关。主要是把能影响WIFI稳定的开关关闭，不管是信号调节还是省电方面的设置。</p>
+<p>· 不是所有手机都有【WLAN 助理】这个选项，我是 MIUI 11，所有有，其他手机可能是其他名字，或者没有这个功能，自己看自己系统的功能开关。主要是把能影响 WIFI 稳定的开关关闭，不管是信号调节还是省电方面的设置。</p>
 <p><strong>教程开始</strong></p>
 <p><strong>1.新建开机自启脚本</strong></p>
-<p><strong>1.1 打开MT管理器，进入<code>/data/adb/service.d/</code>文件夹，新建<code>99-phone-server.sh</code>文件</strong></p>
+<p><strong>1.1 打开 MT 管理器，进入 <code>/data/adb/service.d/</code>文件夹，新建<code>99-phone-server.sh</code> 文件</strong></p>
 <p><strong>1.2 打开文件，在文件中输入以下代码并保存：</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -479,13 +479,13 @@
 </span></span><span class="line"><span class="cl"><span class="k">fi</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><strong>1.3给脚本设置权限</strong></p>
+</div><p><strong>1.3 给脚本设置权限</strong></p>
 <p>![[1779075005464-0.png]]</p>
 <p>![[1779075006497-2.jpeg]]</p>
 <p>![[1779075007041-4.png]]</p>
-<p><strong>2.新建wifi核心脚本</strong></p>
-<p><strong>2.1 打开MT管理器，进入<code>/data/local/</code>文件夹，新建<code>phone-server</code>文件夹，然后进入<code>phone-server</code>文件夹再新建<code>wifi-keeper</code>文件夹；</strong></p>
-<p><strong>2.2 在<code>/data/local/phone-server/wifi-keeper/</code>文件夹下面新建<code>wifi-keeper.sh</code>文件，并且输入下面的代码进行保存：</strong></p>
+<p><strong>2.新建 wifi 核心脚本</strong></p>
+<p><strong>2.1 打开 MT 管理器，进入 <code>/data/local/</code>文件夹，新建<code>phone-server</code>文件夹，然后进入<code>phone-server</code>文件夹再新建<code>wifi-keeper</code> 文件夹；</strong></p>
+<p><strong>2.2 在 <code>/data/local/phone-server/wifi-keeper/</code>文件夹下面新建<code>wifi-keeper.sh</code> 文件，并且输入下面的代码进行保存：</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">  1
@@ -1906,20 +1906,20 @@
 </span></span><span class="line"><span class="cl">main_loop
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><strong>2.3 按照1.3的过程给脚本设置权限。</strong></p>
+</div><p><strong>2.3 按照 1.3 的过程给脚本设置权限。</strong></p>
 <blockquote class="alert alert-question">
     </blockquote>
-<p><strong>1.</strong> 手机先正常连接上你选择Wi-Fi，建议选择一个即可，避免手机因为某些原因在多个wifi之间来回切换，这个对后面的ipv6的解析影响非常大，然后关闭wifi的<strong>自动连接</strong>开关。</p>
-<p><strong>2.</strong> 正常连接上一个wifi以后，关闭wifi开关，把手机重启。</p>
-<p><strong>3.验证手机重启wifi是否能正常连接：</strong> 重启以后，等几秒钟（具体看配置你写的是几秒），然后看看wifi开关是否会自动打开，并且wifi是否会自动连接上。</p>
-<p><strong>4.验证手动断开wifi是否能正常连接：</strong> 如果wifi能自动连接上，可以手动关闭wifi开关，看看wifi是否能过几秒（具体还是要看配置你写的是几秒）后自动打开并且连接上wifi。</p>
-<p><strong>我用的脚本在米8SE上多轮测试没问题，如果你们有问题，记得联系我，我到时候拍查一下</strong></p>
+<p><strong>1.</strong> 手机先正常连接上你选择 Wi-Fi，建议选择一个即可，避免手机因为某些原因在多个 wifi 之间来回切换，这个对后面的 ipv6 的解析影响非常大，然后关闭 wifi 的<strong>自动连接</strong>开关。</p>
+<p><strong>2.</strong> 正常连接上一个 wifi 以后，关闭 wifi 开关，把手机重启。</p>
+<p><strong>3.验证手机重启 wifi 是否能正常连接：</strong> 重启以后，等几秒钟（具体看配置你写的是几秒），然后看看 wifi 开关是否会自动打开，并且 wifi 是否会自动连接上。</p>
+<p><strong>4.验证手动断开 wifi 是否能正常连接：</strong> 如果 wifi 能自动连接上，可以手动关闭 wifi 开关，看看 wifi 是否能过几秒（具体还是要看配置你写的是几秒）后自动打开并且连接上 wifi。</p>
+<p><strong>我用的脚本在米 8SE 上多轮测试没问题，如果你们有问题，记得联系我，我到时候拍查一下</strong></p>
 <blockquote class="alert alert-question">
-    <p><strong>方法一：</strong> 取消/data/adb/service.d/99-phone-server.sh脚本的执行权限
-<strong>方法二：</strong> 删除/data/adb/service.d/99-phone-server.sh脚本</p></blockquote>
+    <p><strong>方法一：</strong> 取消/data/adb/service.d/99-phone-server.sh 脚本的执行权限
+<strong>方法二：</strong> 删除/data/adb/service.d/99-phone-server.sh 脚本</p></blockquote>
 <blockquote class="alert alert-success">
-    <p>不得不说，AI是真的好用。不仅可以优化脚本，还能把注释写的清清楚楚。按照它的逻辑和日志，就算出问题了也能很好的定位和解决，这一次确实是省了不少时间。可惜两天撸的business 2个月翻车了。</p></blockquote>
-<p><strong>另外，给佬友们送上一份可直接食用的prompt：</strong></p>
+    <p>不得不说，AI 是真的好用。不仅可以优化脚本，还能把注释写的清清楚楚。按照它的逻辑和日志，就算出问题了也能很好的定位和解决，这一次确实是省了不少时间。可惜两天撸的 business 2 个月翻车了。</p></blockquote>
+<p><strong>另外，给佬友们送上一份可直接食用的 prompt：</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2289,7 +2289,7 @@
         
             <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
         
-            <a href="/tags/linuxdo/">LinuxDo</a>
+            <a href="/tags/linuxdo/">Linuxdo</a>
         
     </section>
 
@@ -2316,7 +2316,7 @@
 
 
         <span>
-            最后更新于 2026-06-20 14:53
+            最后更新于 2026-06-20 15:13
         </span>
     </section></footer>
 

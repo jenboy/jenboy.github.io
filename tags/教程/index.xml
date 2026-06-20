@@ -7,13 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Xao</copyright>
-        <lastBuildDate>Sat, 20 Jun 2026 14:53:52 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 20 Jun 2026 15:13:26 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【工具】帖子收藏神器</title>
         <link>https://jenboy.github.io/p/%E5%B7%A5%E5%85%B7%E5%B8%96%E5%AD%90%E6%94%B6%E8%97%8F%E7%A5%9E%E5%99%A8/</link>
-        <pubDate>Sat, 20 Jun 2026 06:54:08 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 07:13:47 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E5%B7%A5%E5%85%B7%E5%B8%96%E5%AD%90%E6%94%B6%E8%97%8F%E7%A5%9E%E5%99%A8/</guid>
-        <description>&lt;h1 id=&#34;1-工具帖子收藏神器&#34;&gt;1 【工具】帖子收藏神器
+        <description>&lt;h1 id=&#34;1工具帖子收藏神器&#34;&gt;1【工具】帖子收藏神器
 &lt;/h1&gt;&lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;原始链接&lt;/strong&gt;: &lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/1737485&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -25,7 +25,7 @@
 &lt;li&gt;&lt;strong&gt;导出时间&lt;/strong&gt;: 2026/4/25 13:54:52&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;楼层数&lt;/strong&gt;: 1&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;一键保存帖子到Obsidian/飞书/notion/HTML/思源笔记/语雀六种方式的谷歌/Edge浏览器插件和手机端友好的&lt;a class=&#34;link&#34; href=&#34;https://acheng-byte.github.io/discourse-saver/install.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;&lt;strong&gt;一键保存帖子到 Obsidian/飞书/notion/HTML/思源笔记/语雀六种方式的谷歌/Edge 浏览器插件和手机端友好的 &lt;a class=&#34;link&#34; href=&#34;https://acheng-byte.github.io/discourse-saver/install.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;油猴脚本&lt;/a&gt;，无需登录也能保存！支持大部分 Discourse。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;本帖使用社区开源推广，符合推广要求。我申明并遵循社区要求的以下内容：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -40,13 +40,13 @@
 &lt;p&gt;&lt;strong&gt;我的开源项目已链接认可 LINUX DO 社区：&lt;/strong&gt; 是&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;我帖子内的项目介绍，AI生成、润色内容部分已截图发出：&lt;/strong&gt; 是&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我帖子内的项目介绍，AI 生成、润色内容部分已截图发出：&lt;/strong&gt; 是&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;以上选择我承诺是永久有效的，接受社区和佬友监督：&lt;/strong&gt; 是&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;以下为项目介绍正文内容，AI生成、润色内容已使用截图方式发出&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;以下为项目介绍正文内容，AI 生成、润色内容已使用截图方式发出&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;0、链接奉上&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;GitHub：&lt;a class=&#34;link&#34; href=&#34;https://github.com/acheng-byte/discourse-saver&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub - acheng-byte/discourse-saver: 通用 Discourse 论坛内容保存工具 - 支持全球数百个 Discourse 站点，一键保存到 Obsidian/飞书/Notion/语雀/思源笔记 · GitHub&lt;/a&gt;&lt;/p&gt;
@@ -54,12 +54,12 @@
     &gt;Discourse Saver - 油猴脚本一键安装&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1、前言&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;展开前言
-作为一个重度Linux Do用户和知识管理爱好者，无编程经验的我用 vibe coding 手搓了这个插件。&lt;/p&gt;
-&lt;p&gt;论坛上的精华帖子，手动复制粘贴格式就乱了，图片也保存不了，非常麻烦。于是开发了这个Chrome/Edge插件 &lt;strong&gt;discourse-saver&lt;/strong&gt;，支持大部分 Discourse 论坛。&lt;/p&gt;
+作为一个重度 Linux Do 用户和知识管理爱好者，无编程经验的我用 vibe coding 手搓了这个插件。&lt;/p&gt;
+&lt;p&gt;论坛上的精华帖子，手动复制粘贴格式就乱了，图片也保存不了，非常麻烦。于是开发了这个 Chrome/Edge 插件 &lt;strong&gt;discourse-saver&lt;/strong&gt;，支持大部分 Discourse 论坛。&lt;/p&gt;
 &lt;p&gt;它可以：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;悬浮保存按钮&lt;/strong&gt;：单击就保存到Obsidian/飞书/Notion/HTML&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;悬浮保存按钮&lt;/strong&gt;：单击就保存到 Obsidian/飞书/Notion/HTML&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;保留完整格式&lt;/strong&gt;：颜色、代码高亮、表格样式全部保留&lt;/p&gt;
@@ -68,7 +68,7 @@
 &lt;p&gt;&lt;strong&gt;同步飞书多维表格&lt;/strong&gt;：建立可检索的帖子索引库&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;支持保存评论&lt;/strong&gt;：保存主帖+该条评论&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;支持保存评论&lt;/strong&gt;：保存主帖 + 该条评论&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;支持大部分 Discourse&lt;/strong&gt;&lt;/p&gt;
@@ -86,20 +86,20 @@
 	&lt;tbody&gt;
 			&lt;tr&gt;
 					&lt;td&gt;&lt;strong&gt;悬浮保存按钮&lt;/strong&gt;&lt;/td&gt;
-					&lt;td&gt;&lt;strong&gt;单击&lt;/strong&gt;保存到Obsidian/飞书/Notion/HTML&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;单击&lt;/strong&gt;保存到 Obsidian/飞书/Notion/HTML&lt;/td&gt;
 			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;&lt;strong&gt;支持保存评论&lt;/strong&gt;&lt;/td&gt;
-					&lt;td&gt;&lt;strong&gt;长按&lt;/strong&gt;保存按钮保存主帖+多条评论&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;长按&lt;/strong&gt;保存按钮保存主帖 + 多条评论&lt;/td&gt;
 			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;飞书多维表格&lt;/td&gt;
-					&lt;td&gt;同步保存到飞书，支持MD文件附件上传&lt;/td&gt;
+					&lt;td&gt;同步保存到飞书，支持 MD 文件附件上传&lt;/td&gt;
 			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;飞书双版本&lt;/td&gt;
-					&lt;td&gt;支持国内版(&lt;a class=&#34;link&#34; href=&#34;http://feishu.cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;feishu.cn&lt;/a&gt;)和国际版(&lt;a class=&#34;link&#34; href=&#34;http://larksuite.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+					&lt;td&gt;支持国内版 (&lt;a class=&#34;link&#34; href=&#34;http://feishu.cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;feishu.cn&lt;/a&gt;) 和国际版 (&lt;a class=&#34;link&#34; href=&#34;http://larksuite.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;larksuite.com&lt;/a&gt;)&lt;/td&gt;
 			&lt;/tr&gt;
 			&lt;tr&gt;
@@ -156,7 +156,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/acheng-byte/discourse-saver.git
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;然后按上面步骤4-7加载。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;然后按上面步骤 4-7 加载。&lt;/p&gt;
 &lt;p&gt;方法二：油猴脚本（支持手机端 / Firefox）
 支持 Chrome / Edge / Firefox / Safari / Opera，手机端同样可用（Firefox Android + Violentmonkey）。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;前置条件：&lt;/strong&gt;&lt;/p&gt;
@@ -210,13 +210,13 @@
 &lt;p&gt;&lt;strong&gt;注意事项：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;文件体积会变大 — 图片越多，文件越大，这是正常的&lt;/p&gt;
+&lt;p&gt;文件体积会变大—图片越多，文件越大，这是正常的&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;首次保存稍慢 — 需要下载所有图片，图片多时请耐心等待&lt;/p&gt;
+&lt;p&gt;首次保存稍慢—需要下载所有图片，图片多时请耐心等待&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;按需开启 — 如果只在电脑端查看，可以不开启此功能&lt;/p&gt;
+&lt;p&gt;按需开启—如果只在电脑端查看，可以不开启此功能&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;4、插件配置&lt;/strong&gt;&lt;/p&gt;
@@ -249,7 +249,7 @@
 	&lt;tbody&gt;
 			&lt;tr&gt;
 					&lt;td&gt;保存到 Obsidian&lt;/td&gt;
-					&lt;td&gt;启用Obsidian保存&lt;/td&gt;
+					&lt;td&gt;启用 Obsidian 保存&lt;/td&gt;
 			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;保存到飞书多维表格&lt;/td&gt;
@@ -257,18 +257,18 @@
 			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;保存到 Notion&lt;/td&gt;
-					&lt;td&gt;启用Notion同步&lt;/td&gt;
+					&lt;td&gt;启用 Notion 同步&lt;/td&gt;
 			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;导出 HTML&lt;/td&gt;
-					&lt;td&gt;保存为本地HTML文件&lt;/td&gt;
+					&lt;td&gt;保存为本地 HTML 文件&lt;/td&gt;
 			&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;blockquote&gt;
 &lt;p&gt;可以同时勾选多个，实现多平台同步保存！&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;3. Obsidian设置&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Obsidian 设置&lt;/strong&gt;&lt;/p&gt;
 &lt;table&gt;
 	&lt;thead&gt;
 			&lt;tr&gt;
@@ -279,11 +279,11 @@
 	&lt;tbody&gt;
 			&lt;tr&gt;
 					&lt;td&gt;Vault 名称&lt;/td&gt;
-					&lt;td&gt;留空使用当前打开的vault（推荐）&lt;/td&gt;
+					&lt;td&gt;留空使用当前打开的 vault（推荐）&lt;/td&gt;
 			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;保存文件夹&lt;/td&gt;
-					&lt;td&gt;保存到vault中的哪个文件夹，如 &lt;code&gt;LinuxDo收集箱&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;保存到 vault 中的哪个文件夹，如 &lt;code&gt;LinuxDo收集箱&lt;/code&gt;&lt;/td&gt;
 			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;使用 Advanced URI&lt;/td&gt;
@@ -292,7 +292,7 @@
 	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：如果勾选了「使用 Advanced URI」，需要先在Obsidian中安装 &lt;a class=&#34;link&#34; href=&#34;https://github.com/Vinzent03/obsidian-advanced-uri&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：如果勾选了「使用 Advanced URI」，需要先在 Obsidian 中安装 &lt;a class=&#34;link&#34; href=&#34;https://github.com/Vinzent03/obsidian-advanced-uri&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Advanced URI&lt;/a&gt; 插件。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;4. 内容设置&lt;/strong&gt;&lt;/p&gt;
@@ -306,7 +306,7 @@
 	&lt;tbody&gt;
 			&lt;tr&gt;
 					&lt;td&gt;添加元数据&lt;/td&gt;
-					&lt;td&gt;是否添加中文frontmatter（推荐开启）&lt;/td&gt;
+					&lt;td&gt;是否添加中文 frontmatter（推荐开启）&lt;/td&gt;
 			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;保留图片链接&lt;/td&gt;
@@ -329,7 +329,7 @@
 			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;评论数量&lt;/td&gt;
-					&lt;td&gt;1-10000条，默认100&lt;/td&gt;
+					&lt;td&gt;1-10000 条，默认 100&lt;/td&gt;
 			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;折叠评论&lt;/td&gt;
@@ -364,7 +364,7 @@
 	&lt;tbody&gt;
 			&lt;tr&gt;
 					&lt;td&gt;Vault 名称&lt;/td&gt;
-					&lt;td&gt;留空使用当前打开的vault（推荐）&lt;/td&gt;
+					&lt;td&gt;留空使用当前打开的 vault（推荐）&lt;/td&gt;
 			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;保存文件夹&lt;/td&gt;
@@ -400,7 +400,7 @@
 &lt;p&gt;Edge：登录同一 Microsoft 账号，同理&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;飞书多维表格配置（共8步，约10分钟）
+&lt;p&gt;飞书多维表格配置（共 8 步，约 10 分钟）
 飞书多维表格可作为帖子的索引库，方便检索和管理。&lt;/p&gt;
 &lt;p&gt;![[1777096483221-3.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;第一步：创建飞书应用&lt;/strong&gt;&lt;/p&gt;
@@ -416,7 +416,7 @@
 &lt;p&gt;点击「&lt;strong&gt;创建应用&lt;/strong&gt;」→ 选择「&lt;strong&gt;企业自建应用&lt;/strong&gt;」&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;填写应用名称（如：LinuxDo收藏器）和描述&lt;/p&gt;
+&lt;p&gt;填写应用名称（如：LinuxDo 收藏器）和描述&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;创建完成后，进入应用详情页&lt;/p&gt;
@@ -471,7 +471,7 @@
 			&lt;tr&gt;
 					&lt;td&gt;&lt;code&gt;drive:file:upload&lt;/code&gt;&lt;/td&gt;
 					&lt;td&gt;上传文件&lt;/td&gt;
-					&lt;td&gt;上传MD HTML附件时需要&lt;/td&gt;
+					&lt;td&gt;上传 MD HTML 附件时需要&lt;/td&gt;
 			&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
@@ -505,7 +505,7 @@
 			&lt;tr&gt;
 					&lt;td&gt;链接&lt;/td&gt;
 					&lt;td&gt;&lt;strong&gt;超链接&lt;/strong&gt;&lt;/td&gt;
-					&lt;td&gt;原帖URL，注意不是「文本」&lt;/td&gt;
+					&lt;td&gt;原帖 URL，注意不是「文本」&lt;/td&gt;
 			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;作者&lt;/td&gt;
@@ -525,7 +525,7 @@
 			&lt;tr&gt;
 					&lt;td&gt;附件&lt;/td&gt;
 					&lt;td&gt;&lt;strong&gt;附件&lt;/strong&gt;&lt;/td&gt;
-					&lt;td&gt;MD文件（勾选上传附件时使用）&lt;/td&gt;
+					&lt;td&gt;MD 文件（勾选上传附件时使用）&lt;/td&gt;
 			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;正文&lt;/td&gt;
@@ -536,7 +536,7 @@
 &lt;/table&gt;
 &lt;p&gt;![[1777096485943-11.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;第五步：获取表格参数&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;从多维表格的URL中提取 &lt;code&gt;app_token&lt;/code&gt; 和 &lt;code&gt;table_id&lt;/code&gt;：&lt;/p&gt;
+&lt;p&gt;从多维表格的 URL 中提取 &lt;code&gt;app_token&lt;/code&gt; 和 &lt;code&gt;table_id&lt;/code&gt;：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -601,7 +601,7 @@
 &lt;/ul&gt;
 &lt;p&gt;![[1777096487953-17.png]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;注意：企业自建应用需要发布后才能正常使用API&lt;/p&gt;
+&lt;p&gt;注意：企业自建应用需要发布后才能正常使用 API&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;第八步：填写插件配置&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;在插件配置页面的「飞书设置」中填入：&lt;/p&gt;
@@ -615,7 +615,7 @@
 	&lt;tbody&gt;
 			&lt;tr&gt;
 					&lt;td&gt;API 版本&lt;/td&gt;
-					&lt;td&gt;国内版选「飞书(&lt;a class=&#34;link&#34; href=&#34;http://feishu.cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+					&lt;td&gt;国内版选「飞书 (&lt;a class=&#34;link&#34; href=&#34;http://feishu.cn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;feishu.cn&lt;/a&gt;)」，海外版选「Lark(&lt;a class=&#34;link&#34; href=&#34;http://larksuite.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;larksuite.com&lt;/a&gt;)」&lt;/td&gt;
 			&lt;/tr&gt;
@@ -636,14 +636,14 @@
 					&lt;td&gt;第五步获取的 table_id&lt;/td&gt;
 			&lt;/tr&gt;
 			&lt;tr&gt;
-					&lt;td&gt;上传MD附件&lt;/td&gt;
+					&lt;td&gt;上传 MD 附件&lt;/td&gt;
 					&lt;td&gt;根据需要勾选&lt;/td&gt;
 			&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;![[1777096488600-19.png]]&lt;/p&gt;
 &lt;p&gt;点击「&lt;strong&gt;测试连接&lt;/strong&gt;」按钮，显示「连接成功」即配置完成！&lt;/p&gt;
-&lt;p&gt;Notion 配置（共5步）
+&lt;p&gt;Notion 配置（共 5 步）
 &lt;strong&gt;第一步：创建 Notion Integration&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -669,10 +669,10 @@
 &lt;p&gt;Token 格式说明：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;2024年9月后创建：以 &lt;code&gt;ntn_&lt;/code&gt; 开头&lt;/p&gt;
+&lt;p&gt;2024 年 9 月后创建：以 &lt;code&gt;ntn_&lt;/code&gt; 开头&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;2024年9月前创建：以 &lt;code&gt;secret_&lt;/code&gt; 开头&lt;/p&gt;
+&lt;p&gt;2024 年 9 月前创建：以 &lt;code&gt;secret_&lt;/code&gt; 开头&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;两种格式都有效&lt;/p&gt;
@@ -895,11 +895,11 @@
 	&lt;tbody&gt;
 			&lt;tr&gt;
 					&lt;td&gt;&lt;strong&gt;悬浮保存按钮&lt;/strong&gt;&lt;/td&gt;
-					&lt;td&gt;&lt;strong&gt;单击&lt;/strong&gt;保存到Obsidian/飞书/Notion/HTML&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;单击&lt;/strong&gt;保存到 Obsidian/飞书/Notion/HTML&lt;/td&gt;
 			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;&lt;strong&gt;支持保存评论&lt;/strong&gt;&lt;/td&gt;
-					&lt;td&gt;&lt;strong&gt;长按&lt;/strong&gt;保存按钮保存主帖+多条评论&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;长按&lt;/strong&gt;保存按钮保存主帖 + 多条评论&lt;/td&gt;
 			&lt;/tr&gt;
 			&lt;tr&gt;
 					&lt;td&gt;&lt;code&gt;Ctrl+Shift+S&lt;/code&gt;（Mac: &lt;code&gt;⌘+Shift+S&lt;/code&gt;）&lt;/td&gt;
@@ -996,7 +996,7 @@
 请检查：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Obsidian是否已运行&lt;/p&gt;
+&lt;p&gt;Obsidian 是否已运行&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;浏览器是否允许 &lt;code&gt;obsidian://&lt;/code&gt; 协议（首次使用会弹窗询问）&lt;/p&gt;
@@ -1139,10 +1139,10 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会&lt;strong&gt;更�
         <item>
         <title>【教程】2026版 小白也能看懂的自建Cloudflare临时邮箱教程（域名邮箱）</title>
         <link>https://jenboy.github.io/p/%E6%95%99%E7%A8%8B2026%E7%89%88-%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82%E7%9A%84%E8%87%AA%E5%BB%BAcloudflare%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E6%95%99%E7%A8%8B%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/</link>
-        <pubDate>Sat, 20 Jun 2026 06:54:08 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 07:13:47 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E6%95%99%E7%A8%8B2026%E7%89%88-%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82%E7%9A%84%E8%87%AA%E5%BB%BAcloudflare%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E6%95%99%E7%A8%8B%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/</guid>
-        <description>&lt;h1 id=&#34;1-教程2026版-小白也能看懂的自建cloudflare临时邮箱教程域名邮箱&#34;&gt;1 【教程】2026版 小白也能看懂的自建Cloudflare临时邮箱教程（域名邮箱）
+        <description>&lt;h1 id=&#34;1教程2026-版-小白也能看懂的自建-cloudflare-临时邮箱教程域名邮箱&#34;&gt;1【教程】2026 版 小白也能看懂的自建 Cloudflare 临时邮箱教程（域名邮箱）
 &lt;/h1&gt;&lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;原始链接&lt;/strong&gt;: &lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/1666961&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1161,50 +1161,50 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会&lt;strong&gt;更�
 &lt;p&gt;你可以通过右边的目录快速定位你想查看的模块~&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;文档如果没有需要修改的错误和需要新补充的，还请各位佬友不要随意改标题和内容！&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;总结佬友们补充的教程（2026年3月5日更新）&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;有很多热心的佬友出了别的版本的教程，例如这位佬友写了用Claude Code + CLI的形式去部署，其实项目是支持CLI的，只是说对于新手来说有点门槛~但是这位佬友的思路是交给了Claude Code，写的很详细！感兴趣的佬友可以去学习学习！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;总结佬友们补充的教程（2026 年 3 月 5 日更新）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;有很多热心的佬友出了别的版本的教程，例如这位佬友写了用 Claude Code + CLI 的形式去部署，其实项目是支持 CLI 的，只是说对于新手来说有点门槛~但是这位佬友的思路是交给了 Claude Code，写的很详细！感兴趣的佬友可以去学习学习！&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/1692459&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://linux.do/t/topic/1692459&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;佬友迭代出来的自动部署脚本（2026年3月21日更新）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;佬友迭代出来的自动部署脚本（2026 年 3 月 21 日更新）&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;更新为使用 CF 提供的 API 完成全自动化部署，&lt;del&gt;但目前 macOS 版本可能有点问题&lt;/del&gt;，&lt;del&gt;等周一解决。&lt;/del&gt; &lt;del&gt;无法复现可能出现的 bug，有没有好心人帮忙解决一下。&lt;/del&gt;
 ![[1777087044373-0.png]]&lt;/p&gt;
 &lt;p&gt;修复 mac 版本可能出现的 bug&lt;/p&gt;
 &lt;p&gt;添加新功能，支持配置子域名邮箱。以及可能解决了 macOS 的 bug 问题。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/1783188&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://linux.do/t/topic/1783188&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;佬友迭代出来的Windwows版自动部署脚本（2026年3月23日更新）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;佬友迭代出来的 Windwows 版自动部署脚本（2026 年 3 月 23 日更新）&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/1801403&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://linux.do/t/topic/1801403&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;碎碎念&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;明天就是入站两周年了，之前一直鸽发邮件教程，一直没写，这几天会把教程补全，在明天入站两周年之际，先把这个主要的教程发出来
 ![[1777087044373-0.png]]&lt;/p&gt;
 &lt;p&gt;感谢佬友们的陪伴，两年，学到了很多，无论是技术上的，还是为人方面的，非常感谢 🤗&lt;/p&gt;
-&lt;p&gt;这是一个充满着友善的社区，一个拥有者庞大能量的社区，感谢L站佬友们~&lt;/p&gt;
+&lt;p&gt;这是一个充满着友善的社区，一个拥有者庞大能量的社区，感谢 L 站佬友们~&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;文档共建说明&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://linux.do/c/wiki/42&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;文档共建&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;写在了文档共建话题，意味着各位佬友都可以编辑文档，如果发现错误的地方，佬友们可以直接帮我编辑修复哈当然也可以评论告诉我，我来修！，如果有新增补充的内容，请不要破坏文档结构，可以按文档结构来继续添加，对了，如果做了文档的修改，可以在你修改的部分著名一下，@一下自己，这样就知道是谁修复或者补充的内容啦~&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;写在前面&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我记得写这篇教程的时候是2024年11月或者12月的时候，期间帖子多次编辑后，所以忘了是啥时候了，一晃一年多过去了，当初用来写教程邮箱都过期几个月了
+&lt;p&gt;我记得写这篇教程的时候是 2024 年 11 月或者 12 月的时候，期间帖子多次编辑后，所以忘了是啥时候了，一晃一年多过去了，当初用来写教程邮箱都过期几个月了
 ![[1777087044373-0.png]]
-，很显然上次的教程给很多佬友都带来了帮助，这次我打算翻新一下教程，因为Cloudflare的很多页面更新了，而且临时邮箱项目都迭代好多个版本了！这次打算：&lt;/p&gt;
+，很显然上次的教程给很多佬友都带来了帮助，这次我打算翻新一下教程，因为 Cloudflare 的很多页面更新了，而且临时邮箱项目都迭代好多个版本了！这次打算：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;翻新Cloudflare原本的教程（之后不会再翻新啦，因为都差不多的，这次翻新也是有佬友说找不到UI位置啦）&lt;/p&gt;
+&lt;p&gt;翻新 Cloudflare 原本的教程（之后不会再翻新啦，因为都差不多的，这次翻新也是有佬友说找不到 UI 位置啦）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;写发送邮件的配置教程，走你：&lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/1667361&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;为Cloudflare临时邮箱项目（cloudflare_temp_email）添加发邮件功能使用 Resend&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;写对接TG机器人的教程，走你：&lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/1667519&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;写对接 TG 机器人的教程，走你：&lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/1667519&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;为Cloudflare临时邮箱项目（cloudflare_temp_email）添加Telegram机器人&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;建立问题反馈帖（根据我的空闲待定）（TODO）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;对接LINUX DO 登录&lt;/p&gt;
+&lt;p&gt;对接 LINUX DO 登录&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;&lt;/p&gt;
@@ -1213,22 +1213,22 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会&lt;strong&gt;更�
 &lt;p&gt;目前这篇教程只会分成两部分&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;第一部分，是教你如何把域名托管到Cloudflare并且配置如何用自己的域名接收邮件，转发到自己常用的邮箱&lt;/p&gt;
+&lt;p&gt;第一部分，是教你如何把域名托管到 Cloudflare 并且配置如何用自己的域名接收邮件，转发到自己常用的邮箱&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;第二部分，会教你如何在Cloudflare上部署并配置该项目&lt;a class=&#34;link&#34; href=&#34;https://github.com/dreamhunter2333/cloudflare_temp_email&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;第二部分，会教你如何在 Cloudflare 上部署并配置该项目 &lt;a class=&#34;link&#34; href=&#34;https://github.com/dreamhunter2333/cloudflare_temp_email&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub - dreamhunter2333/cloudflare_temp_email: CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 IMAP SMTP TelegramBot · GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;域名购买&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;域名的购买，你可以在腾讯云、阿里云或者能提供域名注册的云服务商购买，我这里还是用腾讯云，因为我的实名信息在上面已经有了，买起来方便，这次起个域名&lt;code&gt;quickbox.cloud&lt;/code&gt;，&lt;strong&gt;如果你要长期使用该域名，可要看清楚续费价格了哦&lt;/strong&gt;~&lt;/p&gt;
+&lt;p&gt;域名的购买，你可以在腾讯云、阿里云或者能提供域名注册的云服务商购买，我这里还是用腾讯云，因为我的实名信息在上面已经有了，买起来方便，这次起个域名 &lt;code&gt;quickbox.cloud&lt;/code&gt;，&lt;strong&gt;如果你要长期使用该域名，可要看清楚续费价格了哦&lt;/strong&gt;~&lt;/p&gt;
 &lt;p&gt;我这里就挑便宜的，买个年抛域名来写教程，域名购买我可不教了，佬友实在不会就查查吧！
 ![[1777087044373-0.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087044740-1.jpeg]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;开始前的准备&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;域名准备&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;一个域名，我刚买的&lt;code&gt;quickbox.cloud&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Cloudflare账号&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一个域名，我刚买的 &lt;code&gt;quickbox.cloud&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cloudflare 账号&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;如果你没有，就请去赛博大善人这注册一个账号，注册没什么验证的，很方便&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;p&gt;    &gt;Connect, protect, and build everywhere&lt;/a&gt;
@@ -1241,12 +1241,12 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
     &gt;@awsl&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;项目原文档：&lt;a class=&#34;link&#34; href=&#34;https://temp-mail-docs.awsl.uk/zh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;临时邮箱文档&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;请记得给项目点个star！&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;第一部分，将域名托管到Cloudflare&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;第一部分，是教你如何把域名托管到Cloudflare并且配置如何用自己的域名接收邮件，转发到自己常用的邮箱&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;将域名交给Cloudflare托管（教程以腾讯云为例，其它云服务商大同小异）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;请记得给项目点个 star！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第一部分，将域名托管到 Cloudflare&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;第一部分，是教你如何把域名托管到 Cloudflare 并且配置如何用自己的域名接收邮件，转发到自己常用的邮箱&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;将域名交给 Cloudflare 托管（教程以腾讯云为例，其它云服务商大同小异）&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;在这之前，请登录Cloudflare并把你的语言设置成简体中文与教程同步，在右上角&lt;/p&gt;
+&lt;p&gt;在这之前，请登录 Cloudflare 并把你的语言设置成简体中文与教程同步，在右上角&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087046237-6.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087046892-8.png]]&lt;/p&gt;
@@ -1265,11 +1265,11 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;![[1777087052528-22.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087053262-24.png]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;这里就粘贴刚刚Cloudflare给的两个DNS服务器地址&lt;/p&gt;
+&lt;p&gt;这里就粘贴刚刚 Cloudflare 给的两个 DNS 服务器地址&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087054656-26.png]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;回到Cloudflare点击试试，如果没有反应，那就等十分钟左右~&lt;/p&gt;
+&lt;p&gt;回到 Cloudflare 点击试试，如果没有反应，那就等十分钟左右~&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087055283-28.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087056105-30.png]]&lt;/p&gt;
@@ -1278,12 +1278,12 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087057013-32.png]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;大概过了7~8分钟，如果提示这样，就代表OK啦！&lt;/p&gt;
+&lt;p&gt;大概过了 7~8 分钟，如果提示这样，就代表 OK 啦！&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087057752-34.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087058434-36.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;配置电子邮件路由&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在此说明，如果你不想部署临时邮箱项目，你只是想拥有一个自己的临时域名邮箱，自己用，只做接收邮件即可的话，那么按接下来的配置完成后，就不用继续往下了，你就可以用你的邮箱去注册你想注册的平台，它会把&lt;strong&gt;邮件转发至你配置的常用邮箱&lt;/strong&gt;，举个例子，例如我的域名&lt;code&gt;quickbox.cloud&lt;/code&gt;：&lt;/p&gt;
+&lt;p&gt;在此说明，如果你不想部署临时邮箱项目，你只是想拥有一个自己的临时域名邮箱，自己用，只做接收邮件即可的话，那么按接下来的配置完成后，就不用继续往下了，你就可以用你的邮箱去注册你想注册的平台，它会把&lt;strong&gt;邮件转发至你配置的常用邮箱&lt;/strong&gt;，举个例子，例如我的域名 &lt;code&gt;quickbox.cloud&lt;/code&gt;：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:xiaohuang@quickbox.cloud&#34; &gt;xiaohuang@quickbox.cloud&lt;/a&gt;&lt;/p&gt;
@@ -1299,8 +1299,8 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;我的常用邮箱是：xxxx@gmail.com&lt;/p&gt;
-&lt;p&gt;那么&lt;code&gt;xiaohuang@quickbox.cloud、linuxdo@quickbox.cloud、bbb@quickbox.cloud、neo@quickbox.cloud&lt;/code&gt;都会转发到&lt;code&gt;xxxx@gmail.com&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;这就意味着，无论前缀是什么&lt;code&gt;*@quickbox.cloud&lt;/code&gt;&lt;strong&gt;（*号代表所有）&lt;/strong&gt;，都会转发到你的常用邮箱，如果你只是想这样，那么按接下来的配置完即可~&lt;/p&gt;
+&lt;p&gt;那么 &lt;code&gt;xiaohuang@quickbox.cloud、linuxdo@quickbox.cloud、bbb@quickbox.cloud、neo@quickbox.cloud&lt;/code&gt; 都会转发到&lt;code&gt;xxxx@gmail.com&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这就意味着，无论前缀是什么 &lt;code&gt;*@quickbox.cloud&lt;/code&gt;&lt;strong&gt;（* 号代表所有）&lt;/strong&gt;，都会转发到你的常用邮箱，如果你只是想这样，那么按接下来的配置完即可~&lt;/p&gt;
 &lt;p&gt;![[1777087059519-38.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087060569-40.png]]&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1316,38 +1316,38 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;至此就完成了第一部分的所有配置，下面是测试&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087067097-54.png]]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;第二部分，在Cloudflare上部署 &lt;code&gt;cloudflare_temp_email&lt;/code&gt; 项目&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;为什么能收到邮件了，还要部署&lt;code&gt;cloudflare_temp_email&lt;/code&gt;项目呢？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第二部分，在 Cloudflare 上部署 &lt;code&gt;cloudflare_temp_email&lt;/code&gt; 项目&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;为什么能收到邮件了，还要部署 &lt;code&gt;cloudflare_temp_email&lt;/code&gt; 项目呢？&lt;/p&gt;
 &lt;p&gt;![[1777087068781-56.png]]
 三级帖里好东西太多了，妙处可太多了，这是其一，第二就是你可以分享给你的朋友一起使用~&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;创建D1数据库&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;创建 D1 数据库&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;回到首页&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087068998-57.png]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;名称自己随便起个就OK&lt;/p&gt;
+&lt;p&gt;名称自己随便起个就 OK&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087069865-59.png]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;打开项目的 &lt;code&gt;db/schema.sql&lt;/code&gt; 文件复制SQL&lt;/p&gt;
+&lt;p&gt;打开项目的 &lt;code&gt;db/schema.sql&lt;/code&gt; 文件复制 SQL&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;直达：&lt;a class=&#34;link&#34; href=&#34;https://github.com/dreamhunter2333/cloudflare_temp_email/blob/main/db/schema.sql&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;cloudflare_temp_email/db/schema.sql at main · dreamhunter2333/cloudflare_temp_email · GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;![[1777087070740-61.png]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;从Github复制过来后，粘贴到输入框内，点击【执行】&lt;/p&gt;
+&lt;p&gt;从 Github 复制过来后，粘贴到输入框内，点击【执行】&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087071902-63.png]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;这样就代表执行OK了！&lt;/p&gt;
+&lt;p&gt;这样就代表执行 OK 了！&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087073115-65.png]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;回到概述刷新一下，如果表数量是10就代表成功~&lt;/p&gt;
+&lt;p&gt;回到概述刷新一下，如果表数量是 10 就代表成功~&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087075321-67.png]]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;配置KV缓存&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;配置 KV 缓存&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;![[1777087077702-69.png]]&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;名字依旧自己起个名字，也可以跟图片里一样哈&lt;/p&gt;
@@ -1363,7 +1363,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;名字依旧自己随便填哈&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087081580-77.png]]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;绑定DB数据库和KV缓存&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;绑定 DB 数据库和 KV 缓存&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;![[1777087082463-79.jpeg]]&lt;/p&gt;
 &lt;p&gt;![[1777087083147-81.png]]&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1414,7 +1414,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;解释：临时邮箱域名列表，比如我只有一个，我就填一个就行，多个就以JSON数组的方式添多个&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;解释：临时邮箱域名列表，比如我只有一个，我就填一个就行，多个就以 JSON 数组的方式添多个&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;DEFAULT_DOMAINS&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;参数类型：JSON&lt;/p&gt;
 &lt;p&gt;留空示例（未登录用户什么都没得用）&lt;strong&gt;推荐&lt;/strong&gt;&lt;/p&gt;
@@ -1464,7 +1464,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plaintext&#34; data-lang=&#34;plaintext&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;1c3fa6d797b84a01e65e8a37710f2e0fd5acb91ad993a798544e57161a44f944不要用这个不要用这个，自己去生成，不要直接复制这个！
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;解释：JWT签名密钥，用于生成登录凭证和鉴权&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;解释：JWT 签名密钥，用于生成登录凭证和鉴权&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ADMIN_PASSWORDS&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;参数类型：JSON&lt;/p&gt;
 &lt;p&gt;可以多个也可以单个&lt;/p&gt;
@@ -1494,7 +1494,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;解释：Admin管理后台的登录密码，不配置的话无法登录后台管理&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;解释：Admin 管理后台的登录密码，不配置的话无法登录后台管理&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ENABLE_USER_CREATE_EMAIL&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;参数类型：文本&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1505,7 +1505,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plaintext&#34; data-lang=&#34;plaintext&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;true
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;解释：是否允许用户创建邮箱地址，不配置默认不允许，两个值&lt;code&gt;true&lt;/code&gt;、&lt;code&gt;false&lt;/code&gt;填&lt;code&gt;true&lt;/code&gt;就行&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;解释：是否允许用户创建邮箱地址，不配置默认不允许，两个值 &lt;code&gt;true&lt;/code&gt;、&lt;code&gt;false&lt;/code&gt;填&lt;code&gt;true&lt;/code&gt; 就行&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ENABLE_USER_DELETE_EMAIL&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;参数类型：文本&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1516,10 +1516,10 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plaintext&#34; data-lang=&#34;plaintext&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;false
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;解释：是否允许用户删除邮件消息，我一般都是默认false随自己的想法配置哈&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;解释：是否允许用户删除邮件消息，我一般都是默认 false 随自己的想法配置哈&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;USER_ROLES&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;参数类型：JSON&lt;/p&gt;
-&lt;p&gt;举例，例如我想让vip使用&lt;code&gt;xxx.love&lt;/code&gt;，admin使用&lt;code&gt;aaa.love&lt;/code&gt;，这样就可以隔离不同的角色用不同的域名了&lt;/p&gt;
+&lt;p&gt;举例，例如我想让 vip 使用 &lt;code&gt;xxx.love&lt;/code&gt;，admin 使用&lt;code&gt;aaa.love&lt;/code&gt;，这样就可以隔离不同的角色用不同的域名了&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1612,7 +1612,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plaintext&#34; data-lang=&#34;plaintext&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;admin
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;解释：可访问&lt;code&gt;admin&lt;/code&gt;管理后台的角色名，也就是说用户被赋予这个角色名后，登录就有了管理后台的权限&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;解释：可访问 &lt;code&gt;admin&lt;/code&gt; 管理后台的角色名，也就是说用户被赋予这个角色名后，登录就有了管理后台的权限&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ENABLE_AUTO_REPLY&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;参数类型：文本&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1623,13 +1623,13 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plaintext&#34; data-lang=&#34;plaintext&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;false
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;解释：否允许自动回复邮件，这个直接false就行&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;解释：否允许自动回复邮件，这个直接 false 就行&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;请按我上面给的参数配置好！我给出来的请都配好！&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087089881-99.png]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;配置好后一共是10个参数，数数哈&lt;/p&gt;
+&lt;p&gt;配置好后一共是 10 个参数，数数哈&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;部署代码文件&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1651,7 +1651,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;从 Github 的 Releases 中下载最新版本的 Worker.js&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;记得给作者点star！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;记得给作者点 star！&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;项目 Releases 直达：&lt;a class=&#34;link&#34; href=&#34;https://github.com/dreamhunter2333/cloudflare_temp_email/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Releases · dreamhunter2333/cloudflare_temp_email · GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;![[1777087092647-105.png]]&lt;/p&gt;
@@ -1668,7 +1668,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;![[1777087098439-115.jpeg]]&lt;/p&gt;
 &lt;p&gt;![[1777087099358-117.jpeg]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如果刷新后是&lt;code&gt;ok&lt;/code&gt;，恭喜你，后端部署成功，但还没有结束，还需要配置自定义域！&lt;/p&gt;
+&lt;p&gt;如果刷新后是 &lt;code&gt;ok&lt;/code&gt;，恭喜你，后端部署成功，但还没有结束，还需要配置自定义域！&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087100532-119.jpeg]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;配置自定义域&lt;/strong&gt;&lt;/p&gt;
@@ -1686,11 +1686,11 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;![[1777087102013-123.png]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如果访问没有显示&lt;code&gt;ok&lt;/code&gt;，那就晚一点再去试试！&lt;/p&gt;
+&lt;p&gt;如果访问没有显示 &lt;code&gt;ok&lt;/code&gt;，那就晚一点再去试试！&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087102670-125.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;重新配置域名电子路由&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;如果你之前配置了&lt;code&gt;Catch-all&lt;/code&gt;到你的常用邮箱的话，这一步是必定要配置的！否则你的域名邮箱站点是收不到任何邮件的！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果你之前配置了 &lt;code&gt;Catch-all&lt;/code&gt; 到你的常用邮箱的话，这一步是必定要配置的！否则你的域名邮箱站点是收不到任何邮件的！&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;回到首页&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1699,7 +1699,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;![[1777087104634-131.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087105309-133.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;部署前端页面&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我们在上一步不是配置了自定义域吗？这样我们就可以通过自己的域名访问到后端接口了，而不是Cloudflare提供的域名，以我的为例，配置的是&lt;code&gt;apimail.quickbox.cloud&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;我们在上一步不是配置了自定义域吗？这样我们就可以通过自己的域名访问到后端接口了，而不是 Cloudflare 提供的域名，以我的为例，配置的是 &lt;code&gt;apimail.quickbox.cloud&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;那么我们接下来生成前端代码的要填的就是&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1714,7 +1714,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;![[1777087105923-135.jpeg]]&lt;/p&gt;
 &lt;p&gt;![[1777087106664-137.png]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;回到Cloudflare首页&lt;/p&gt;
+&lt;p&gt;回到 Cloudflare 首页&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087107293-139.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087108053-141.png]]&lt;/p&gt;
@@ -1723,7 +1723,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087108673-143.jpeg]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;这里的未找到处理改成&lt;code&gt;single-page-application&lt;/code&gt;，这样刷新就不会出现404了！一定要配！名字记得随便给个~&lt;/p&gt;
+&lt;p&gt;这里的未找到处理改成 &lt;code&gt;single-page-application&lt;/code&gt;，这样刷新就不会出现 404 了！一定要配！名字记得随便给个~&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087109298-145.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087110043-147.png]]&lt;/p&gt;
@@ -1743,7 +1743,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;试了下要单击5次了！ 😂&lt;/p&gt;
+&lt;p&gt;试了下要单击 5 次了！😂&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087113209-157.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087113927-159.png]]&lt;/p&gt;
@@ -1752,7 +1752,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087114327-161.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;基本的使用&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;给你那不成气的兄弟或者姐妹建一个用户给TA用！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;给你那不成气的兄弟或者姐妹建一个用户给 TA 用！&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;![[1777087114956-163.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087115588-165.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087116231-167.png]]&lt;/p&gt;
@@ -1760,7 +1760,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;![[1777087116927-170.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087117337-172.png]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;之后把前端地址发给TA，然后给他登录邮箱和密码登录就可以创建邮箱了&lt;/p&gt;
+&lt;p&gt;之后把前端地址发给 TA，然后给他登录邮箱和密码登录就可以创建邮箱了&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087117969-174.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087118609-176.png]]&lt;/p&gt;
@@ -1771,9 +1771,9 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087120571-182.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087121446-184.png]]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;对接LINUX DO Oauth2登录给可爱的佬友们用！&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;在配置之前，我们需要在后端增加一个新的变量&lt;code&gt;USER_DEFAULT_ROLE&lt;/code&gt;&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;我尝试配置&lt;code&gt;USER_DEFAULT_ROLE&lt;/code&gt;发现没有效果，很奇怪，所以我们还是改&lt;code&gt;DEFAULT_DOMAINS&lt;/code&gt;和&lt;code&gt;DISABLE_ANONYMOUS_USER_CREATE_EMAIL&lt;/code&gt;吧&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;对接 LINUX DO Oauth2 登录给可爱的佬友们用！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;在配置之前，我们需要在后端增加一个新的变量 &lt;code&gt;USER_DEFAULT_ROLE&lt;/code&gt;&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;我尝试配置 &lt;code&gt;USER_DEFAULT_ROLE&lt;/code&gt;发现没有效果，很奇怪，所以我们还是改&lt;code&gt;DEFAULT_DOMAINS&lt;/code&gt;和&lt;code&gt;DISABLE_ANONYMOUS_USER_CREATE_EMAIL&lt;/code&gt; 吧&lt;/p&gt;
 &lt;p&gt;回顾一下参数作用&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;DEFAULT_DOMAINS&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;参数类型：JSON&lt;/p&gt;
@@ -1790,10 +1790,10 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;解释：这里一般是留空的，因为我没打算把自己的域名给未登录的用户使用，这里是对接LINUX DO Outh2登录，所以添加了域名，这样通过LINUX DO登录后就可以使用这个域名创建邮箱了~&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;解释：这里一般是留空的，因为我没打算把自己的域名给未登录的用户使用，这里是对接 LINUX DO Outh2 登录，所以添加了域名，这样通过 LINUX DO 登录后就可以使用这个域名创建邮箱了~&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;DISABLE_ANONYMOUS_USER_CREATE_EMAIL&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;参数类型；文本&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这个还是保持true，如果你之前改的是true那这里就不用调整这个参数了！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这个还是保持 true，如果你之前改的是 true 那这里就不用调整这个参数了！&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1805,26 +1805,26 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/div&gt;&lt;p&gt;解释：设为 &lt;code&gt;true&lt;/code&gt; 后，未登录的匿名用户无法创建邮箱，必须登录才能创建&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;这样效果就达成了，佬友们登录后有域名用，然后未登录的用户还是没有域名用！只不过在后台管理新建的用户没指定角色也有域名用了，所以自己看着配置去就行~&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;我这里不贴怎么配置参数了啊，上面都有！不会了就翻上去看！&lt;strong&gt;注意是后端&lt;/strong&gt;！&lt;/p&gt;
-&lt;p&gt;也就是我们之前所说的&lt;code&gt;mailapi&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;也就是我们之前所说的 &lt;code&gt;mailapi&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;![[1777087122253-186.png]]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;开始配置Oauth2&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;开始配置 Oauth2&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;![[1777087122629-188.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087123461-190.png]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;接下来打开LINUX DO的connect&lt;/p&gt;
+&lt;p&gt;接下来打开 LINUX DO 的 connect&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://connect.linux.do/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://connect.linux.do/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;![[1777087123853-192.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087124606-194.png]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;回调地址看以下操作，我这里等级给了1级，也就是说1级及以上的佬友都可以用&lt;/p&gt;
+&lt;p&gt;回调地址看以下操作，我这里等级给了 1 级，也就是说 1 级及以上的佬友都可以用&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087125294-196.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087125689-198.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087126388-200.png]]&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;回填&lt;code&gt;Client ID&lt;/code&gt;和&lt;code&gt;Client Secret&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;回填 &lt;code&gt;Client ID&lt;/code&gt; 和&lt;code&gt;Client Secret&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087126777-202.png]]&lt;/p&gt;
 &lt;p&gt;![[1777087127407-204.png]]&lt;/p&gt;
@@ -1839,9 +1839,9 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/blockquote&gt;
 &lt;p&gt;![[1777087130248-212.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;教程结束&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;又是从下午13点30开始，写到晚上20点38分，比自己做别的项目开发还费时间
+&lt;p&gt;又是从下午 13 点 30 开始，写到晚上 20 点 38 分，比自己做别的项目开发还费时间
 ![[1777087044373-0.png]]&lt;/p&gt;
-&lt;p&gt;所以佬友们，目前是搭建好了，也接了Outh2登录，你们可以使用这个临时邮箱服务，但请不要拿来注册奇怪的平台！危险的平台！我在后台都能看到！
+&lt;p&gt;所以佬友们，目前是搭建好了，也接了 Outh2 登录，你们可以使用这个临时邮箱服务，但请不要拿来注册奇怪的平台！危险的平台！我在后台都能看到！
 ![[1777087044373-0.png]]&lt;/p&gt;
 &lt;p&gt;其它的教程，最晚是后天补齐，还请佬友们耐心等待，会单独开新帖~&lt;/p&gt;
 &lt;p&gt;地址：&lt;a class=&#34;link&#34; href=&#34;https://mail.quickbox.cloud/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1851,17 +1851,17 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;如果觉得教程不错，可以进行搬运，但请标明教程的出处！否则就是私自搬运！这是可耻的！&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;之前第一个帖子刚发没多久就被搬运到CSDN了…&lt;/li&gt;
+&lt;li&gt;之前第一个帖子刚发没多久就被搬运到 CSDN 了…&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
         <item>
         <title>【手机搭建服务器】· 第 二 期</title>
         <link>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/</link>
-        <pubDate>Sat, 20 Jun 2026 06:54:08 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 07:13:47 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/</guid>
-        <description>&lt;h1 id=&#34;1-超详细保姆级教程手机搭建服务器--第-二-期&#34;&gt;1 【超详细｜保姆级教程】手机搭建服务器 · 第 二 期
+        <description>&lt;h1 id=&#34;1超详细保姆级教程手机搭建服务器--第-二-期&#34;&gt;1【超详细｜保姆级教程】手机搭建服务器 · 第 二 期
 &lt;/h1&gt;&lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;原始链接&lt;/strong&gt;: &lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/2177558&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1878,15 +1878,15 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;&lt;strong&gt;前言&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;第一期文字内容看上去很多，但其实就讲了两个事情：&lt;/p&gt;
 &lt;p&gt;1.判断自己的设备和网络是否具备公网访问的条件。&lt;/p&gt;
-&lt;p&gt;2.设备为什么需要root。&lt;/p&gt;
+&lt;p&gt;2.设备为什么需要 root。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;当你同时具备这两个条件时，你的手机才能更接近一台服务器，才具备更高的可玩性&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;当然，这里还是要提前说明一下：  &lt;strong&gt;不 root 也不是完全不能玩。&lt;/strong&gt;  如果你只是想简单体验一下，比如在 Termux 里跑个小服务、局域网访问一下网页，那不 root 也可以。&lt;/p&gt;
+&lt;p&gt;当然，这里还是要提前说明一下：&lt;strong&gt;不 root 也不是完全不能玩。&lt;/strong&gt; 如果你只是想简单体验一下，比如在 Termux 里跑个小服务、局域网访问一下网页，那不 root 也可以。&lt;/p&gt;
 &lt;p&gt;但如果你的目标是：让手机&lt;strong&gt;长期插电、自动运行、开机自启、网络异常自动恢复&lt;/strong&gt;等等，并且尽量像一台真正的小服务器一样稳定工作，那 root 基本就是绕不开的一步。&lt;/p&gt;
 &lt;p&gt;因为手机毕竟不是服务器。手机原本的设计就是直接拿手里就能用，而不是随时插着电。&lt;/p&gt;
 &lt;p&gt;所以我们要让手机长期当服务器，接下来就必须要先解决一个非常现实的问题：&lt;strong&gt;手机究竟怎样做更好的电源管理&lt;/strong&gt;。也就是本期要讲的核心内容：&lt;strong&gt;旁路供电。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;本期主题：手机如何实现旁路供电&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;如果供电问题不解决，后面即使你把 SSH、Nginx、Node.js、DDNS 全部配置好了，也会有一个很尴尬的问题：手机天天插着电，电池一直处于充电、发热、满电、掉电、再充电的状态。&lt;/p&gt;
-&lt;p&gt;短期玩玩问题肯定不大。  但如果你准备长期运行，甚至 7×24 小时放在家里当服务器，这个问题就必须必须必须重视。&lt;/p&gt;
+&lt;p&gt;短期玩玩问题肯定不大。但如果你准备长期运行，甚至 7×24 小时放在家里当服务器，这个问题就必须必须必须重视。&lt;/p&gt;
 &lt;p&gt;所以本期主要解决下面几个问题：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1. 什么是旁路供电？&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2. 为什么手机当服务器最好实现旁路供电？&lt;/strong&gt;&lt;/p&gt;
@@ -1906,7 +1906,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plaintext&#34; data-lang=&#34;plaintext&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;充电器 - 电池 - 手机正常运行
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;也就是说，充电器给到电池电量，然后手机又从电池那里获取电量。所以哪怕你一直插着充电器，电池也会一直参与充放电过程。千万不要以为插着充电器，假设电量一直是100%，就没有充电过程了，充电过程很可能还在不断进行。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;也就是说，充电器给到电池电量，然后手机又从电池那里获取电量。所以哪怕你一直插着充电器，电池也会一直参与充放电过程。千万不要以为插着充电器，假设电量一直是 100%，就没有充电过程了，充电过程很可能还在不断进行。&lt;/p&gt;
 &lt;p&gt;而我们希望的旁路供电，大概是这样的：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1923,8 +1923,8 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;blockquote class=&#34;alert alert-note&#34;&gt;
     &lt;p&gt;大白话就是，充电器直接给手机提供电源，电池不参与或者极少参与手机供电 🤣&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;不过这里要特别注意一个点：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;安卓上很多所谓的&amp;quot;旁路供电&amp;quot;，并不一定是真正硬件级的旁路供电。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;因为不同手机的硬件、电源管理芯片、内核驱动都不一样。所以同样是&amp;quot;停止充电&amp;quot;，在不同手机上的表现可能完全不同。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;安卓上很多所谓的 &amp;quot; 旁路供电 &amp;ldquo;，并不一定是真正硬件级的旁路供电。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因为不同手机的硬件、电源管理芯片、内核驱动都不一样。所以同样是 &amp;quot; 停止充电 &amp;ldquo;，在不同手机上的表现可能完全不同。&lt;/p&gt;
 &lt;p&gt;大概会有这三种情况：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;情况一：比较理想的真正旁路供电&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;这种是最理想的状态。&lt;/p&gt;
@@ -1933,7 +1933,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;这种情况就比较接近真正的旁路供电。&lt;/p&gt;
 &lt;p&gt;如果你的手机能做到这种状态，那就非常适合长期当服务器。&lt;/p&gt;
 &lt;p&gt;在我的记忆里面，以前的安卓手机系统是没有旁路供电这种设置的，是后来出现了游戏手机，玩游戏的时候，有这种开关。除了游戏手机，现在很多高配置的安卓手机都有这种模式，我亲自接触过的，比如真我，玩游戏的时候就有这个设置，但是我忘记系统设置里面是否有单独的开关了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;情况二：只能做到&amp;quot;停止充电&amp;quot;，但不能真正旁路&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;情况二：只能做到 &amp;quot; 停止充电 &amp;ldquo;，但不能真正旁路&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;这种情况也很常见。&lt;/p&gt;
 &lt;p&gt;比如你设置：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1957,16 +1957,16 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plaintext&#34; data-lang=&#34;plaintext&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;充到 80% - 停止充电 - 电池慢慢掉到 70% - 恢复充电 - 又再充到 80%
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;这种严格来说不是真正的旁路供电，而是&amp;quot;定量停充 + 定量恢复&amp;quot;。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;这种严格来说不是真正的旁路供电，而是 &amp;quot; 定量停充 + 定量恢复 &amp;ldquo;。&lt;/p&gt;
 &lt;p&gt;它的好处是电池不会长期顶在 100%，大大减少了频繁充放电的频率。但是它的缺陷也很明显，就是电池仍然会反复在范围区间充放电。&lt;/p&gt;
-&lt;p&gt;但总比你拿着一根数据线长期让手机100%满电要好太多。&lt;/p&gt;
-&lt;p&gt;这种情况在小米8se上我就遇到，因为之前我是一加9R做服务器的，当时用的方案是QSC（下面会讲），一加上运行是好好，但是到小米8se上，就不行了，充到一定量就停止充电，改用电池。&lt;/p&gt;
+&lt;p&gt;但总比你拿着一根数据线长期让手机 100% 满电要好太多。&lt;/p&gt;
+&lt;p&gt;这种情况在小米 8se 上我就遇到，因为之前我是一加 9R 做服务器的，当时用的方案是 QSC（下面会讲），一加上运行是好好，但是到小米 8se 上，就不行了，充到一定量就停止充电，改用电池。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;情况三：完全不生效&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;这是最后一种情况，就是你的模块设置了，但是手机不听话。&lt;/p&gt;
 &lt;p&gt;比如你设置了 80% 停止充电，但手机还是一路充到 100%。&lt;/p&gt;
 &lt;p&gt;或者设置了停止充电之后，手机状态栏显示没在充电，但实际上电池还是在涨。&lt;/p&gt;
 &lt;p&gt;又或者停止之后无法恢复充电。&lt;/p&gt;
-&lt;p&gt;反正就是模块不生效，一点用都没有。比如我乐视不管是QSC还是Acc都不行。&lt;/p&gt;
+&lt;p&gt;反正就是模块不生效，一点用都没有。比如我乐视不管是 QSC 还是 Acc 都不行。&lt;/p&gt;
 &lt;p&gt;我猜测，要么是手机太老了，要么是脚本根本不支持，需要重写脚本，奈何我不会啊！&lt;/p&gt;
 &lt;p&gt;后面我会专门写如何判断是否真的生效。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;二、细说为什么手机做服务器需要旁路供电？&lt;/strong&gt;&lt;/p&gt;
@@ -1996,9 +1996,9 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;手机一直稳定运行，不要因为电池、温度、供电问题出幺蛾子。&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-warning&#34;&gt;
     &lt;p&gt;你们千万别以为电池会很少或者不会引起什么幺蛾子。因为现在很多手机都有自己的系统优化策略，比如温度一高或者低电量的时候，很多后台服务是不会运行的，或者运行变得比较诡异。
-比如我之前设置的自动化脚本，原计划是10s执行一次，结果变成了20s或者30s执行一次，每次间隔还不一样。真的无语😓
+比如我之前设置的自动化脚本，原计划是 10s 执行一次，结果变成了 20s 或者 30s 执行一次，每次间隔还不一样。真的无语😓
 其他原因比如减少电池发热从而减少手机发热、减少电池反复充放电延长寿命，我就不多说了。大家肯定都懂。所以就说刚才这两个最重要的。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;三、本期推荐2种方案&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;三、本期推荐 2 种方案&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;ACC + AccA&lt;/strong&gt;&lt;/p&gt;
@@ -2008,10 +2008,10 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;我个人更推荐第一种：&lt;strong&gt;ACC + AccA&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;原因很简单：一是因为它比较成熟，git上有2k star；二是它可以搭配AccA软件管理配置，可以不用去改配置文件。&lt;/p&gt;
+&lt;p&gt;原因很简单：一是因为它比较成熟，git 上有 2k star；二是它可以搭配 AccA 软件管理配置，可以不用去改配置文件。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;方案一：ACC + AccA（推荐）&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;先科普一下ACC：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;ACC全写是Advanced Charging Controller，看名字大家就知道啥意思了。我要补充一点的是，ACC它不是普通的省电控制器。它是通过 root 权限去操作手机底层的充电控制文件，从而实现一些普通 App 做不到的事情。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;先科普一下 ACC：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;ACC 全写是 Advanced Charging Controller，看名字大家就知道啥意思了。我要补充一点的是，ACC 它不是普通的省电控制器。它是通过 root 权限去操作手机底层的充电控制文件，从而实现一些普通 App 做不到的事情。&lt;/p&gt;
 &lt;p&gt;比如：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· 限制最高充电电量；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· 设置低于多少电量恢复充电；&lt;/strong&gt;&lt;/p&gt;
@@ -2021,27 +2021,28 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;&lt;strong&gt;· 根据温度恢复充电；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· 查看当前充电状态；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· 测试当前手机支持哪些充电开关；&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;· 很强的记录日志功能，以后出问题可以把日志给AI，让AI来排查问题。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;ACC安装教程：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;项目地址：&amp;lt;https://github.com/VR-25/acc&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1. 打开ACC的github项目地址，找到releases&lt;/strong&gt;（&lt;a class=&#34;link&#34; href=&#34;https://github.com/VR-25/acc/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;&lt;strong&gt;· 很强的记录日志功能，以后出问题可以把日志给 AI，让 AI 来排查问题。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ACC 安装教程：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;**项目地址：&lt;a class=&#34;link&#34; href=&#34;https://github.com/VR-25/acc**&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/VR-25/acc**&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. 打开 ACC 的 github 项目地址，找到 releases&lt;/strong&gt;（&lt;a class=&#34;link&#34; href=&#34;https://github.com/VR-25/acc/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;点此直达&lt;/a&gt;）&lt;/p&gt;
 &lt;p&gt;![[1779074002941-0.jpeg]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2. 版本我建议选择 &lt;a class=&#34;link&#34; href=&#34;https://github.com/VR-25/acc/releases/tag/v2023.10.16&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;v2023.10.16&lt;/a&gt;&lt;/strong&gt;，原因是：&lt;/p&gt;
-&lt;p&gt;· 2025的版本处于dev阶段，而且很久没有发布正式版了，2023的版本更稳定；&lt;/p&gt;
-&lt;p&gt;· 一般大家都是拿旧手机玩这个，2023年之前的手机，ACC的支持度还算是不错的。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;懒得去github的，可以在本站直接下载：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;· 2025 的版本处于 dev 阶段，而且很久没有发布正式版了，2023 的版本更稳定；&lt;/p&gt;
+&lt;p&gt;· 一般大家都是拿旧手机玩这个，2023 年之前的手机，ACC 的支持度还算是不错的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;懒得去 github 的，可以在本站直接下载：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://linux.do/uploads/short-url/4BIbddrQm5tiUt8FPkGUqpPJ7lI.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;acc_v2023.10.16_202310160.zip&lt;/a&gt; (201.9 KB)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3. 在magisk中安装模块：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. 在 magisk 中安装模块：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;![[1779074006421-2.jpeg]]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;补充一点：&lt;/strong&gt; 由于我个人比较青睐面具，所以如果是其他的root管理方案，比如APatch、KernelSU等等，可以自行去寻求AI帮助，看看如何安装，我就不去测试了。安装方式其实很简单，如果你自己都会安装Magisk、APatch、KernelSU，那管理器对应的模块如何安装肯定不在话下的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;补充一点：&lt;/strong&gt; 由于我个人比较青睐面具，所以如果是其他的 root 管理方案，比如 APatch、KernelSU 等等，可以自行去寻求 AI 帮助，看看如何安装，我就不去测试了。安装方式其实很简单，如果你自己都会安装 Magisk、APatch、KernelSU，那管理器对应的模块如何安装肯定不在话下的。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;4. 重启手机让模块生效&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-info&#34;&gt;
-    &lt;p&gt;重新开机后，你会发现没有任何与ACC操作相关的软件，因为改配置需要用到命令行或者用到MT管理器或者RE管理器，然后去&lt;code&gt;/data/adb/modules/acc/&lt;/code&gt;中修改配置文件再执行脚本，所以这个地方对于新手来说配置起来是很麻烦的。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;好在有大佬根据ACC模块，开发出了AccA，突然感觉真的很幸福 😆 🥰&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;什么是AccA​:backhand_index_pointing_down:：&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;重新开机后，你会发现没有任何与 ACC 操作相关的软件，因为改配置需要用到命令行或者用到 MT 管理器或者 RE 管理器，然后去 &lt;code&gt;/data/adb/modules/acc/&lt;/code&gt; 中修改配置文件再执行脚本，所以这个地方对于新手来说配置起来是很麻烦的。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;好在有大佬根据 ACC 模块，开发出了 AccA，突然感觉真的很幸福 😆 🥰&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;什么是 AccA​:backhand_index_pointing_down:：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;AccA 是 ACC 的图形界面 App。&lt;/p&gt;
 &lt;p&gt;ACC 本身更偏向命令行和配置文件。想修改配置，通常要通过命令行或者手动编辑配置文件。&lt;/p&gt;
 &lt;p&gt;而 AccA 的作用就是：&lt;strong&gt;让你可以通过 App 界面管理 ACC。&lt;/strong&gt;&lt;/p&gt;
@@ -2054,8 +2055,9 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;&lt;strong&gt;· 管理配置；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· 查看日志。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;简单说就是：&lt;strong&gt;ACC 负责真正干活、AccA 负责让你更方便地操作 ACC&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;AccA安装和配置教程：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;项目地址：&amp;lt;https://github.com/MatteCarra/AccA&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AccA 安装和配置教程：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;**项目地址：&lt;a class=&#34;link&#34; href=&#34;https://github.com/MatteCarra/AccA**&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/MatteCarra/AccA**&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;F-Droid 页面：&lt;a class=&#34;link&#34; href=&#34;https://f-droid.org/packages/mattecarra.accapp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Advanced Charging Controller (ACCA)&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;安装完成后，建议重启一次手机。因为这类底层模块，重启后状态会更稳定。&lt;/strong&gt;&lt;/p&gt;
@@ -2074,70 +2076,70 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;![[1779074014472-12.png]]&lt;/p&gt;
 &lt;p&gt;在这个配置详情页中，可以配置的充电相关的设置非常多，但是我们只关心两个问题就可以了：一个是电池停充的&lt;strong&gt;电量区间&lt;/strong&gt;，一个是电池停充的&lt;strong&gt;温度区间&lt;/strong&gt;。&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-warning&#34;&gt;
-    &lt;p&gt;&lt;strong&gt;1.我建议给一个保守的值，像我一样，电量低于75%就开始充电，电量高于85%就停止充电；&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;2.不要一上来就设置成：98% - 100%、78%-80%这种区间非常小的值，因为间隔太小，手机可能会频繁切换充电状态，电池会短时间充充停停影，这种对电池的寿命影响其实是比较大的。&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;1.我建议给一个保守的值，像我一样，电量低于 75% 就开始充电，电量高于 85% 就停止充电；&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;2.不要一上来就设置成：98% - 100%、78%-80% 这种区间非常小的值，因为间隔太小，手机可能会频繁切换充电状态，电池会短时间充充停停影，这种对电池的寿命影响其实是比较大的。&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-warning&#34;&gt;
-    &lt;p&gt;&lt;strong&gt;1.这个也不用写得很死，可以像我一样，温度恢复到40%就开始充电，温度高于45%就停止充电；我是保守派，所以最高温度我也写得很小&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;2.大家可以暴瘦一点，宁愿充得慢一点，也不要长期高温，别想着cpu温度高充着电不影响，其实温度对电池的寿命影响比充充停停影响更大&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;1.这个也不用写得很死，可以像我一样，温度恢复到 40% 就开始充电，温度高于 45% 就停止充电；我是保守派，所以最高温度我也写得很小&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;2.大家可以暴瘦一点，宁愿充得慢一点，也不要长期高温，别想着 cpu 温度高充着电不影响，其实温度对电池的寿命影响比充充停停影响更大&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-note&#34;&gt;
     &lt;p&gt;在 ACC 中，电量条件和温度条件可以简单理解为：&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;停止充电时，是“谁先触发，谁就让充电停下来”。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;不管是电量已经到达设定上限，还是手机温度过高，只要其中一个条件满足，ACC 都会暂停充电。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;恢复充电时，更保守些。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;ACC 不会只看一个条件，而是会判断当前状态是否已经适合继续充电。只有当电量和温度都回到相对安全、合适的范围内，才会重新允许充电。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在这里给ACC点一波赞👍&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在这里给 ACC 点一波赞👍&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;配置应用：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;保存好配置之后，点击哪个配置卡片，就表示哪个配置生效。生效的配置前面会有蓝色的边框。比如下面这就是Default配置在生效。&lt;/p&gt;
+&lt;p&gt;保存好配置之后，点击哪个配置卡片，就表示哪个配置生效。生效的配置前面会有蓝色的边框。比如下面这就是 Default 配置在生效。&lt;/p&gt;
 &lt;p&gt;![[1779074016515-14.jpeg]]&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-tip&#34;&gt;
-    &lt;p&gt;&lt;strong&gt;配置文件切换的时候，AccA会有短暂的卡顿，蓝色条不会立马切换显示。因为你选择配置之后，后台要做的事情非常多，所以界面上会有短暂的卡顿感，切换配置的时候，大家多点耐心，等他切换成功，不要疯狂各种点击。&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+    &lt;p&gt;&lt;strong&gt;配置文件切换的时候，AccA 会有短暂的卡顿，蓝色条不会立马切换显示。因为你选择配置之后，后台要做的事情非常多，所以界面上会有短暂的卡顿感，切换配置的时候，大家多点耐心，等他切换成功，不要疯狂各种点击。&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
     &lt;p&gt;这个个我就不细说了吧，你自己插上数据线测试就行，如果电量低于你设定的值，能自动充电，电量高于你设定的值能停止充电，那基本没问题。我要重点说的是下面这个问题。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
-    &lt;p&gt;充电停止会有两种情况，拿85%停止充电举例：
-如果电量到了85%，你的电池图标显示正在充电，但是软件中显示没有充电，这个时候，就是最接近旁路供电的，看下图:backhand_index_pointing_down:
+    &lt;p&gt;充电停止会有两种情况，拿 85% 停止充电举例：
+如果电量到了 85%，你的电池图标显示正在充电，但是软件中显示没有充电，这个时候，就是最接近旁路供电的，看下图:backhand_index_pointing_down:
 ![[1779074017603-16.jpeg]]&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;如果电量到了85%，你的电池图标没有显示正在充电，软件中也没有显示正在充电，这个时候，说明AccA并不支持做到旁路供电。&lt;/p&gt;
-&lt;p&gt;这个时候你的手机只能用到75%才会又开始充电。&lt;/p&gt;
-&lt;p&gt;相当于，AccA只能做到让你的手机什么时候开始充电，什么时候停止充电，但是做不到充好电的时候，数据线给你供电。由于之前的乐视手机出掉了，没法给大家看截图了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;除了看电池图标以外，还有种更直接更准确的方式：&lt;/strong&gt; 就是你在你的手机充电到85%的时候，你继续插上数据线使用手机，看看一段时间后电量是否会往下掉，或者电量下降的速度是不是巨慢，如果是这样，那说明旁路供电是在生效的。&lt;/p&gt;
+&lt;p&gt;如果电量到了 85%，你的电池图标没有显示正在充电，软件中也没有显示正在充电，这个时候，说明 AccA 并不支持做到旁路供电。&lt;/p&gt;
+&lt;p&gt;这个时候你的手机只能用到 75% 才会又开始充电。&lt;/p&gt;
+&lt;p&gt;相当于，AccA 只能做到让你的手机什么时候开始充电，什么时候停止充电，但是做不到充好电的时候，数据线给你供电。由于之前的乐视手机出掉了，没法给大家看截图了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;除了看电池图标以外，还有种更直接更准确的方式：&lt;/strong&gt; 就是你在你的手机充电到 85% 的时候，你继续插上数据线使用手机，看看一段时间后电量是否会往下掉，或者电量下降的速度是不是巨慢，如果是这样，那说明旁路供电是在生效的。&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
-    &lt;p&gt;恢复正常充电，只需要在AccA中停止模块即可&lt;/p&gt;&lt;/blockquote&gt;
+    &lt;p&gt;恢复正常充电，只需要在 AccA 中停止模块即可&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
-    &lt;p&gt;在magisk中正常删除，然后重启手机就行了&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;方案二：QSC定量停充&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;先科普一下QSC：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;QSC全写是Quantitative Stop Charging_switch，是酷安大佬&lt;a class=&#34;link&#34; href=&#34;https://www.coolapk.com/feed/39670721?s=OTAyOTJhZTUyYzkzYjZnNmEwNThiZjJ6a1540&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &lt;p&gt;在 magisk 中正常删除，然后重启手机就行了&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;方案二：QSC 定量停充&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;先科普一下 QSC：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;QSC 全写是 Quantitative Stop Charging_switch，是酷安大佬 &lt;a class=&#34;link&#34; href=&#34;https://www.coolapk.com/feed/39670721?s=OTAyOTJhZTUyYzkzYjZnNmEwNThiZjJ6a1540&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;top大佬&lt;/a&gt;开发的一个模块，&lt;a class=&#34;link&#34; href=&#34;https://github.com/410154425/QuantitativeStopCharging_magisk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;github&lt;/a&gt;很久没更新了，推荐大家看酷安板块，但是在酷安用的人很多，甚至还形成了一个专属话题【QSC定量停充】。&lt;/p&gt;
-&lt;p&gt;目前模块也很久没更新了，最后一个版本是2023年12月4日更新的，估计后续也不维护了。&lt;/p&gt;
-&lt;p&gt;如果你使用ACC没有任何问题，不要折腾这个方案，除非你使用ACC出现了问题，你可以试试QSC。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;QSC安装：&lt;/strong&gt;&lt;/p&gt;
+    &gt;github&lt;/a&gt; 很久没更新了，推荐大家看酷安板块，但是在酷安用的人很多，甚至还形成了一个专属话题【QSC 定量停充】。&lt;/p&gt;
+&lt;p&gt;目前模块也很久没更新了，最后一个版本是 2023 年 12 月 4 日更新的，估计后续也不维护了。&lt;/p&gt;
+&lt;p&gt;如果你使用 ACC 没有任何问题，不要折腾这个方案，除非你使用 ACC 出现了问题，你可以试试 QSC。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;QSC 安装：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;原下载地址：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;蓝奏云：&amp;lt;https://topdalao.lanzoui.com/b02dplxrc&lt;/p&gt;
+&lt;p&gt;蓝奏云：&lt;a class=&#34;link&#34; href=&#34;https://topdalao.lanzoui.com/b02dplxrc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://topdalao.lanzoui.com/b02dplxrc&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;密码：1111&lt;/p&gt;
-&lt;p&gt;@来自原作者&lt;a class=&#34;link&#34; href=&#34;https://www.coolapk.com/feed/39670721?s=OTAyOTJhZTUyYzkzYjZnNmEwNThiZjJ6a1540&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;@来自原作者 &lt;a class=&#34;link&#34; href=&#34;https://www.coolapk.com/feed/39670721?s=OTAyOTJhZTUyYzkzYjZnNmEwNThiZjJ6a1540&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;top大佬&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;本站直链：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://linux.do/uploads/short-url/etMH70ZxDQA2lEbeRC89LTwgPRP.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;QSC定量停充_独立开关版_20231204.zip&lt;/a&gt; (104.7 KB)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;安装：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;安装方式和ACC一样，直接magisk刷入后，重启即可。&lt;/p&gt;
+&lt;p&gt;安装方式和 ACC 一样，直接 magisk 刷入后，重启即可。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;配置：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; 安装MT管理器或者RE管理器，然后打开路径&lt;code&gt;/data/adb/modules/QuantitativeStopCharging_switch&lt;/code&gt;；&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; 找到config.conf文件，根据文件内的提醒，配置电量区间和温度区间；&lt;/p&gt;
-&lt;p&gt;![[1779074018779-18.jpeg]]
-               
-![[1779074019815-20.jpeg]]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;启动QSC：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;由于现在MT管理器没有权限直接执行sh脚本了，给大家提供一个最适合的启动方式，这个方式还可以把开关添加到状态栏的下拉控制中心中（大部分手机都支持）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; &lt;strong&gt;安装&lt;a class=&#34;link&#34; href=&#34;https://github.com/zhaobozhen/Anywhere-&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Anywhere-&lt;/a&gt;软件，这里不过多介绍这个软件了，我个人认为是我用过最好用的快捷方式管理软件。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.打开Anywhere-，点击右上角的设置图标，把工作模式改成root模式&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; 安装 MT 管理器或者 RE 管理器，然后打开路径 &lt;code&gt;/data/adb/modules/QuantitativeStopCharging_switch&lt;/code&gt;；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; 找到 config.conf 文件，根据文件内的提醒，配置电量区间和温度区间；&lt;/p&gt;
+&lt;p&gt;![[1779074018779-18.jpeg]]&lt;/p&gt;
+&lt;p&gt;![[1779074019815-20.jpeg]]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;启动 QSC：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由于现在 MT 管理器没有权限直接执行 sh 脚本了，给大家提供一个最适合的启动方式，这个方式还可以把开关添加到状态栏的下拉控制中心中（大部分手机都支持）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; &lt;strong&gt;安装 &lt;a class=&#34;link&#34; href=&#34;https://github.com/zhaobozhen/Anywhere-&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Anywhere-&lt;/a&gt; 软件，这里不过多介绍这个软件了，我个人认为是我用过最好用的快捷方式管理软件。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.打开 Anywhere-，点击右上角的设置图标，把工作模式改成 root 模式&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;![[1779074021265-22.jpeg]]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3.返回Anywhere-首页，点击首页右下角的:plus:号，然后点击添加卡片：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.返回 Anywhere- 首页，点击首页右下角的:plus: 号，然后点击添加卡片：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;![[1779074022142-24.jpeg]]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;4.在卡片中选择Shell开关&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4.在卡片中选择 Shell 开关&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;![[1779074023409-26.jpeg]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;5.按照下面的内容填写后保存，名称那里可以自定义&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;![[1779074024182-28.jpeg]]&lt;/p&gt;
@@ -2146,40 +2148,39 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;blockquote class=&#34;alert alert-note&#34;&gt;
     &lt;p&gt;sh /data/adb/modules/QuantitativeStopCharging_switch/关闭定量停充.sh&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;6.点击卡片，会在开与关两个状态之间切换：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;![[1779074026859-30.png]]
-               
-![[1779074028733-32.png]]&lt;/p&gt;
+&lt;p&gt;![[1779074026859-30.png]]&lt;/p&gt;
+&lt;p&gt;![[1779074028733-32.png]]&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
-    &lt;p&gt;判断逻辑参考ACC部分，逻辑都是通用的。另外，QSC还可以在magisk中看到充电状态展示。但是我没使用QSC，所以就简单截图吧。
+    &lt;p&gt;判断逻辑参考 ACC 部分，逻辑都是通用的。另外，QSC 还可以在 magisk 中看到充电状态展示。但是我没使用 QSC，所以就简单截图吧。
 ![[1779074030117-34.jpeg]]&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
-    &lt;p&gt;直接在magisk中删除后，重启即可。&lt;/p&gt;&lt;/blockquote&gt;
+    &lt;p&gt;直接在 magisk 中删除后，重启即可。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;常见问题&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
     &lt;p&gt;&lt;strong&gt;不需要，只要你配置好了，启动脚本以后，重新开机脚本都是正常运行的，自己试一次就知道了&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
-    &lt;p&gt;不能百分百保证。这个地方一定要说清楚：ACC 、QSC不是凭空制造旁路供电能力的软件。
-它的原理大概是：ACC 或者QSC 通过 root 权限，去控制系统底层暴露出来的充电开关、电流限制、充电状态等节点。
+    &lt;p&gt;不能百分百保证。这个地方一定要说清楚：ACC、QSC 不是凭空制造旁路供电能力的软件。
+它的原理大概是：ACC 或者 QSC 通过 root 权限，去控制系统底层暴露出来的充电开关、电流限制、充电状态等节点。
 但是不同手机的硬件、电源管理芯片、内核驱动不一样。有的手机确实支持类似“旁路供电 / 电池空闲 / 主板由充电器供电”的模式；有的手机只是能做到“停止给电池充电”，但手机本身仍然从电池取电。所以严谨点说得话就是他们可以尝试调用手机底层的充电控制能力。如果这台手机的硬件和内核支持旁路/电池空闲模式，ACC 就有机会实现比较理想的旁路供电。
 如果手机本身不支持，ACC 也不能强行把它变成真正旁路供电。
-今天刚好看到一个帖子，荣耀手机（忘记型号了）好像新系统提供了“充电分离”开关，在软件上也实现了类似ACC这样的功能。&lt;/p&gt;&lt;/blockquote&gt;
+今天刚好看到一个帖子，荣耀手机（忘记型号了）好像新系统提供了“充电分离”开关，在软件上也实现了类似 ACC 这样的功能。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
-    &lt;p&gt;绝对不行，AccA可以不装，只是配置起来麻烦，ACC是核心模块，你只安装AccA，根本不可能工作的。&lt;/p&gt;&lt;/blockquote&gt;
+    &lt;p&gt;绝对不行，AccA 可以不装，只是配置起来麻烦，ACC 是核心模块，你只安装 AccA，根本不可能工作的。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
     &lt;/blockquote&gt;
 &lt;p&gt;![[1779074031464-36.jpeg]]
 这个表示配置正在读取或者加载中，这个时候尽量别动，等加载好就行了&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-success&#34;&gt;
-    &lt;p&gt;&lt;strong&gt;写这个教程真的非常耗费时间，几乎占用了我白天一大半的时间才搞定。所以我在想，要不后面的教程我写的简单一些，不这么详细了。但是不会说写的云里雾里，肯定能保证大家直接跟上手的。不然按照这个程度更新下去，感觉进度很慢不说，我真担心我会放弃掉，后面还有很多事情要做，比如如何解决wifi网络稳定问题，如何保证ipv6的有效性，如何做DDNS等等&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+    &lt;p&gt;&lt;strong&gt;写这个教程真的非常耗费时间，几乎占用了我白天一大半的时间才搞定。所以我在想，要不后面的教程我写的简单一些，不这么详细了。但是不会说写的云里雾里，肯定能保证大家直接跟上手的。不然按照这个程度更新下去，感觉进度很慢不说，我真担心我会放弃掉，后面还有很多事情要做，比如如何解决 wifi 网络稳定问题，如何保证 ipv6 的有效性，如何做 DDNS 等等&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
 </description>
         </item>
         <item>
         <title>【手机搭建服务器】· 第 三 期</title>
         <link>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/</link>
-        <pubDate>Sat, 20 Jun 2026 06:54:08 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 07:13:47 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/</guid>
-        <description>&lt;h1 id=&#34;1-超详细手机搭建服务器--第-三-期&#34;&gt;1 【超详细】手机搭建服务器 · 第 三 期
+        <description>&lt;h1 id=&#34;1超详细手机搭建服务器--第-三-期&#34;&gt;1【超详细】手机搭建服务器 · 第 三 期
 &lt;/h1&gt;&lt;p&gt;&lt;strong&gt;前两期回顾：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/2157272&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【超详细】手机搭建服务器 · 第 一 期&lt;/a&gt;&lt;/p&gt;
@@ -2187,7 +2188,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
     &gt;【超详细】手机搭建服务器 · 第 二 期&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;前言&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；&lt;/p&gt;
-&lt;p&gt;本期要实现的是：如何让手机的wifi永不断连：&lt;/p&gt;
+&lt;p&gt;本期要实现的是：如何让手机的 wifi 永不断连：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;不管是手机意外重启，还是重新开关机；&lt;/p&gt;
@@ -2196,25 +2197,25 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;不管是开启了飞行模式；&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;不管是不是主动关闭wifi。&lt;/p&gt;
+&lt;p&gt;不管是不是主动关闭 wifi。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote class=&#34;alert alert-warning&#34;&gt;
     &lt;p&gt;在开始之前，建议先把手机的这两个开关关闭，不是必须，但是建议，减少干扰：&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;系统设置 - 开发者选项 - WLAN扫描调节 - 关闭&lt;/p&gt;
+&lt;p&gt;系统设置 - 开发者选项 - WLAN 扫描调节 - 关闭&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;系统设置 - WLAN - WLAN助理 - 智能选网和网速模式 - 关闭&lt;/p&gt;
+&lt;p&gt;系统设置 - WLAN - WLAN 助理 - 智能选网和网速模式 - 关闭&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;补充说明：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;· 机型不同，打开开发者选项的方式也不同，这个自己百度&lt;/p&gt;
-&lt;p&gt;· 不是所有手机都有【WLAN助理】这个选项，我是MIUI 11，所有有，其他手机可能是其他名字，或者没有这个功能，自己看自己系统的功能开关。主要是把能影响WIFI稳定的开关关闭，不管是信号调节还是省电方面的设置。&lt;/p&gt;
+&lt;p&gt;· 不是所有手机都有【WLAN 助理】这个选项，我是 MIUI 11，所有有，其他手机可能是其他名字，或者没有这个功能，自己看自己系统的功能开关。主要是把能影响 WIFI 稳定的开关关闭，不管是信号调节还是省电方面的设置。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;教程开始&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.新建开机自启脚本&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1.1 打开MT管理器，进入&lt;code&gt;/data/adb/service.d/&lt;/code&gt;文件夹，新建&lt;code&gt;99-phone-server.sh&lt;/code&gt;文件&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1.1 打开 MT 管理器，进入 &lt;code&gt;/data/adb/service.d/&lt;/code&gt;文件夹，新建&lt;code&gt;99-phone-server.sh&lt;/code&gt; 文件&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.2 打开文件，在文件中输入以下代码并保存：&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2268,13 +2269,13 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;1.3给脚本设置权限&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;1.3 给脚本设置权限&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;![[1779075005464-0.png]]&lt;/p&gt;
 &lt;p&gt;![[1779075006497-2.jpeg]]&lt;/p&gt;
 &lt;p&gt;![[1779075007041-4.png]]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.新建wifi核心脚本&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.1 打开MT管理器，进入&lt;code&gt;/data/local/&lt;/code&gt;文件夹，新建&lt;code&gt;phone-server&lt;/code&gt;文件夹，然后进入&lt;code&gt;phone-server&lt;/code&gt;文件夹再新建&lt;code&gt;wifi-keeper&lt;/code&gt;文件夹；&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.2 在&lt;code&gt;/data/local/phone-server/wifi-keeper/&lt;/code&gt;文件夹下面新建&lt;code&gt;wifi-keeper.sh&lt;/code&gt;文件，并且输入下面的代码进行保存：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.新建 wifi 核心脚本&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.1 打开 MT 管理器，进入 &lt;code&gt;/data/local/&lt;/code&gt;文件夹，新建&lt;code&gt;phone-server&lt;/code&gt;文件夹，然后进入&lt;code&gt;phone-server&lt;/code&gt;文件夹再新建&lt;code&gt;wifi-keeper&lt;/code&gt; 文件夹；&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.2 在 &lt;code&gt;/data/local/phone-server/wifi-keeper/&lt;/code&gt;文件夹下面新建&lt;code&gt;wifi-keeper.sh&lt;/code&gt; 文件，并且输入下面的代码进行保存：&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;  1
@@ -3695,20 +3696,20 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;main_loop
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;2.3 按照1.3的过程给脚本设置权限。&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;2.3 按照 1.3 的过程给脚本设置权限。&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
     &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; 手机先正常连接上你选择Wi-Fi，建议选择一个即可，避免手机因为某些原因在多个wifi之间来回切换，这个对后面的ipv6的解析影响非常大，然后关闭wifi的&lt;strong&gt;自动连接&lt;/strong&gt;开关。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; 正常连接上一个wifi以后，关闭wifi开关，把手机重启。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3.验证手机重启wifi是否能正常连接：&lt;/strong&gt; 重启以后，等几秒钟（具体看配置你写的是几秒），然后看看wifi开关是否会自动打开，并且wifi是否会自动连接上。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;4.验证手动断开wifi是否能正常连接：&lt;/strong&gt; 如果wifi能自动连接上，可以手动关闭wifi开关，看看wifi是否能过几秒（具体还是要看配置你写的是几秒）后自动打开并且连接上wifi。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;我用的脚本在米8SE上多轮测试没问题，如果你们有问题，记得联系我，我到时候拍查一下&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; 手机先正常连接上你选择 Wi-Fi，建议选择一个即可，避免手机因为某些原因在多个 wifi 之间来回切换，这个对后面的 ipv6 的解析影响非常大，然后关闭 wifi 的&lt;strong&gt;自动连接&lt;/strong&gt;开关。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; 正常连接上一个 wifi 以后，关闭 wifi 开关，把手机重启。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.验证手机重启 wifi 是否能正常连接：&lt;/strong&gt; 重启以后，等几秒钟（具体看配置你写的是几秒），然后看看 wifi 开关是否会自动打开，并且 wifi 是否会自动连接上。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4.验证手动断开 wifi 是否能正常连接：&lt;/strong&gt; 如果 wifi 能自动连接上，可以手动关闭 wifi 开关，看看 wifi 是否能过几秒（具体还是要看配置你写的是几秒）后自动打开并且连接上 wifi。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我用的脚本在米 8SE 上多轮测试没问题，如果你们有问题，记得联系我，我到时候拍查一下&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
-    &lt;p&gt;&lt;strong&gt;方法一：&lt;/strong&gt; 取消/data/adb/service.d/99-phone-server.sh脚本的执行权限
-&lt;strong&gt;方法二：&lt;/strong&gt; 删除/data/adb/service.d/99-phone-server.sh脚本&lt;/p&gt;&lt;/blockquote&gt;
+    &lt;p&gt;&lt;strong&gt;方法一：&lt;/strong&gt; 取消/data/adb/service.d/99-phone-server.sh 脚本的执行权限
+&lt;strong&gt;方法二：&lt;/strong&gt; 删除/data/adb/service.d/99-phone-server.sh 脚本&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote class=&#34;alert alert-success&#34;&gt;
-    &lt;p&gt;不得不说，AI是真的好用。不仅可以优化脚本，还能把注释写的清清楚楚。按照它的逻辑和日志，就算出问题了也能很好的定位和解决，这一次确实是省了不少时间。可惜两天撸的business 2个月翻车了。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;另外，给佬友们送上一份可直接食用的prompt：&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;不得不说，AI 是真的好用。不仅可以优化脚本，还能把注释写的清清楚楚。按照它的逻辑和日志，就算出问题了也能很好的定位和解决，这一次确实是省了不少时间。可惜两天撸的 business 2 个月翻车了。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;另外，给佬友们送上一份可直接食用的 prompt：&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -4073,10 +4074,10 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>【手机搭建服务器】· 第 一 期</title>
         <link>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%80-%E6%9C%9F/</link>
-        <pubDate>Sat, 20 Jun 2026 06:54:08 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 07:13:47 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%80-%E6%9C%9F/</guid>
-        <description>&lt;h1 id=&#34;1-手机搭建服务器保姆级系列教程--第-一-期&#34;&gt;1 【手机搭建服务器】保姆级系列教程 · 第 一 期
+        <description>&lt;h1 id=&#34;1手机搭建服务器保姆级系列教程--第-一-期&#34;&gt;1【手机搭建服务器】保姆级系列教程 · 第 一 期
 &lt;/h1&gt;&lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;原始链接&lt;/strong&gt;: &lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/2157272&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -4090,41 +4091,41 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;本期主题：项目开始前的必备条件&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;条件一：具备可访问的公网&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;关于公网这一块，从ipv6和ipv4两个方面来说&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;先说ipv4：&lt;/strong&gt;
-由于目前家庭宽带很少有ipv4的公网，包括我本人也没有，所以这一个系列的教程主要是围绕ipv6进行，如果你手里有ipv4的公网，那毫无疑问是最好的，动态ip和静态ip都无所谓，如果是静态ip，那就更无敌了，只是这样的资源比较少&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;再说ipv6：&lt;/strong&gt;
-有关ipv6的相关知识在这里不做展开，互联网上对这一块的科普非常到位，感兴趣的可以去自行了解。&lt;/p&gt;
-&lt;p&gt;目前国内的现状是，家庭宽带基本都有ipv6，甚至我们日常使用的手机卡，都有ipv6，而且两者都是公网可以访问到的。这也是手机搭建服务器可行的很重要的一个原因。&lt;/p&gt;
-&lt;p&gt;这一次我们主要讨论的是宽带的ipv6，而不是手机流量的ipv6，主要有几点原因：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关于公网这一块，从 ipv6 和 ipv4 两个方面来说&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;先说 ipv4：&lt;/strong&gt;
+由于目前家庭宽带很少有 ipv4 的公网，包括我本人也没有，所以这一个系列的教程主要是围绕 ipv6 进行，如果你手里有 ipv4 的公网，那毫无疑问是最好的，动态 ip 和静态 ip 都无所谓，如果是静态 ip，那就更无敌了，只是这样的资源比较少&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;再说 ipv6：&lt;/strong&gt;
+有关 ipv6 的相关知识在这里不做展开，互联网上对这一块的科普非常到位，感兴趣的可以去自行了解。&lt;/p&gt;
+&lt;p&gt;目前国内的现状是，家庭宽带基本都有 ipv6，甚至我们日常使用的手机卡，都有 ipv6，而且两者都是公网可以访问到的。这也是手机搭建服务器可行的很重要的一个原因。&lt;/p&gt;
+&lt;p&gt;这一次我们主要讨论的是宽带的 ipv6，而不是手机流量的 ipv6，主要有几点原因：&lt;/p&gt;
 &lt;p&gt;1.选择手机作为服务器后期可能会消耗大量的流量，用手机卡作为流量来源，要面临流量总量和流量限速等问题。如果你手里有双不限的手机卡，才可以考虑用手机卡做流量基底。&lt;/p&gt;
 &lt;p&gt;2.手机卡的上传速率一般比较低，只有一些较高消费的套餐才会有更好的上传速度，而且手机卡的流量波动较大，还会受到基站等因素的影响。&lt;/p&gt;
 &lt;p&gt;在看一下宽带的优点：&lt;/p&gt;
 &lt;p&gt;1.首先宽带流量是没有限制的，这一点的好处远远超过手机卡。&lt;/p&gt;
-&lt;p&gt;2.宽带只要是不跑P的情况下，运营商是不会给你恶意限速的，一般来说，家庭宽带的上传速度在50-200Mbps之间，而且波动也很稳定&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;问题一：如何判断宽带或者手机卡具备ipv6？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;单独进行验证，比如只连接wifi或者只打开流量的情况下，浏览器访问&amp;lt;https://testipv6.cn/网站进行测试。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;如果结果如下图所示，那么恭喜你，你的设备和网络是支持ipv6公网访问的。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2.宽带只要是不跑 P 的情况下，运营商是不会给你恶意限速的，一般来说，家庭宽带的上传速度在 50-200Mbps 之间，而且波动也很稳定&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;问题一：如何判断宽带或者手机卡具备 ipv6？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;单独进行验证，比如只连接 wifi 或者只打开流量的情况下，浏览器访问&lt;a class=&#34;link&#34; href=&#34;https://testipv6.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://testipv6.cn/&lt;/a&gt;网站进行测试。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果结果如下图所示，那么恭喜你，你的设备和网络是支持 ipv6 公网访问的。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;![[1779073725505-0.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;如果你出现的是下面这几种结果，也不要担心&lt;/strong&gt;:backhand_index_pointing_down:：&lt;/p&gt;
-&lt;p&gt;![[1779073727127-2.png]]
-              
-![[1779073728152-4.png]]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;出现这个结果不一定代表你没有ipv6&lt;/strong&gt;，可能是你开启了代理，或者其他原因导致的，这个时候，还有一个更可靠的检测办法：打开手机，在设置中查看手机状态信息，每个品牌的手机查看的路径可能不一样，但是基本是在【&lt;strong&gt;系统设置 - 关于手机 - 状态信息&lt;/strong&gt;】中。&lt;/p&gt;
+&lt;p&gt;![[1779073727127-2.png]]&lt;/p&gt;
+&lt;p&gt;![[1779073728152-4.png]]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;出现这个结果不一定代表你没有 ipv6&lt;/strong&gt;，可能是你开启了代理，或者其他原因导致的，这个时候，还有一个更可靠的检测办法：打开手机，在设置中查看手机状态信息，每个品牌的手机查看的路径可能不一样，但是基本是在【&lt;strong&gt;系统设置 - 关于手机 - 状态信息&lt;/strong&gt;】中。&lt;/p&gt;
 &lt;p&gt;![[1779073729066-6.png|172]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;情况说明：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如果在状态信息的IP地址这一栏，显示出24开头的地址，就说明你的手机和网络是支持ipv6的；&lt;/p&gt;
-&lt;p&gt;如果只显示fe80开头的地址，说明你的设备支持ipv6，但是你的Wi-Fi或者手机卡没有ipv6；&lt;/p&gt;
-&lt;p&gt;如果连fe80开头的地址都没有，只有ipv4的内网地址，说明你的设备太老了，不支持ipv6。比如我有一台乐视手机，就不支持ipv6，所以必须换设备。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;✅如果你的宽带自带ipv4公网，那上诉这个情况你可以完全忽略&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;条件二：具备可root的手机&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;很多人看到这里，就觉得不想搞了，或者说觉得不需要root也行。先继续往下看。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;问题一：为什么需要root？不root到底行不行？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;先说结论：不root可以，但是及其不推荐，如果你只是简单的捣鼓一下，不打算将手机用做长久的服务器。那么可以试试，如果你想要的是一台长期稳定运行，不管出现任何突发情况能如期运行的服务器的话，必须root。&lt;/p&gt;
+&lt;p&gt;如果在状态信息的 IP 地址这一栏，显示出 24 开头的地址，就说明你的手机和网络是支持 ipv6 的；&lt;/p&gt;
+&lt;p&gt;如果只显示 fe80 开头的地址，说明你的设备支持 ipv6，但是你的 Wi-Fi 或者手机卡没有 ipv6；&lt;/p&gt;
+&lt;p&gt;如果连 fe80 开头的地址都没有，只有 ipv4 的内网地址，说明你的设备太老了，不支持 ipv6。比如我有一台乐视手机，就不支持 ipv6，所以必须换设备。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;✅如果你的宽带自带 ipv4 公网，那上诉这个情况你可以完全忽略&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;条件二：具备可 root 的手机&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;很多人看到这里，就觉得不想搞了，或者说觉得不需要 root 也行。先继续往下看。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;问题一：为什么需要 root？不 root 到底行不行？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;先说结论：不 root 可以，但是及其不推荐，如果你只是简单的捣鼓一下，不打算将手机用做长久的服务器。那么可以试试，如果你想要的是一台长期稳定运行，不管出现任何突发情况能如期运行的服务器的话，必须 root。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;原因一：手机用做服务器需要解决旁路供电问题&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;手机当服务器之后，大概率是要长期插着电运行的。但是手机长期插电会遇到一个很现实的问题：&lt;/p&gt;
 &lt;p&gt;电池可能会一直处于充满、发热、再充电的状态，对电池并不友好。如果只是偶尔玩玩，问题不大。但如果你准备让它连续运行几个月，甚至一年以上，那供电问题就必须认真考虑。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;比较理想的状态是：&lt;/strong&gt; 手机插着充电器，但是电池不一直反复充电，最好能进入类似“旁路供电”的状态。也就是说，手机主要使用充电器供电，而不是一直让电池在 80%、90%、100% 附近反复充放电。这时候 root 的作用就很明显了。有了 root 之后，我们才更方便使用类似 &lt;strong&gt;Acc +AccA&lt;/strong&gt;或者&lt;strong&gt;QSC定量停充&lt;/strong&gt;这样的方案去控制充电行为，比如：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;比较理想的状态是：&lt;/strong&gt; 手机插着充电器，但是电池不一直反复充电，最好能进入类似“旁路供电”的状态。也就是说，手机主要使用充电器供电，而不是一直让电池在 80%、90%、100% 附近反复充放电。这时候 root 的作用就很明显了。有了 root 之后，我们才更方便使用类似 &lt;strong&gt;Acc +AccA&lt;/strong&gt;或者&lt;strong&gt;QSC 定量停充&lt;/strong&gt;这样的方案去控制充电行为，比如：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;·到了指定电量就停止充电；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;·低于指定电量再恢复充电；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;·尽量让电池保持在一个比较舒服的区间；&lt;/strong&gt;&lt;/p&gt;
@@ -4132,8 +4133,8 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;&lt;strong&gt;·真正做到“旁路供电”的效果。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;这样手机就不会长期顶在 100% 满电状态。当然，不同手机的硬件支持情况不一样。有些手机停止充电后，可以比较接近旁路供电；有些手机停止充电后，仍然会继续消耗电池，然后掉到设定值再重新充电。但不管怎样，&lt;strong&gt;有 root，至少我们有机会去控制它、优化它。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;如果没有 root，这类底层充电控制基本就很难做了。&lt;/p&gt;
-&lt;p&gt;所以，手机长期当服务器，第一个绕不开的问题就是： &lt;strong&gt;怎么让它长期插电运行，同时尽量不伤电池。&lt;/strong&gt; &lt;strong&gt;这也是我建议 root 的第一个重要原因。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;✅有一个非常好的消息是：&lt;/strong&gt; 目前Acc+AccA的方案能够很好的解决供电问题，实现旁路供电，而且支持很多CPU，我手里的小米8SE一样完美支持。&lt;/p&gt;
+&lt;p&gt;所以，手机长期当服务器，第一个绕不开的问题就是：&lt;strong&gt;怎么让它长期插电运行，同时尽量不伤电池。&lt;/strong&gt; &lt;strong&gt;这也是我建议 root 的第一个重要原因。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;✅有一个非常好的消息是：&lt;/strong&gt; 目前 Acc+AccA 的方案能够很好的解决供电问题，实现旁路供电，而且支持很多 CPU，我手里的小米 8SE 一样完美支持。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;原因二：解决手机重启后可能面临的各种意外情况&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;手机作为服务器，最怕的不是你手动启动一次服务。最怕的是手机重启了，然后服务没有自动起来。&lt;strong&gt;比如这些情况都可能发生：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· 手机没电后重新开机；&lt;/strong&gt;&lt;/p&gt;
@@ -4147,7 +4148,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;&lt;strong&gt;· Web 服务没启动；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· DDNS 没更新；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· 外网突然访问不了。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如果每次都要你手动打开手机、打开 Termux、输入命令、启动 Debian、启动 SSH、启动服务，那这就不叫服务器了。服务器最重要的能力之一就是： &lt;strong&gt;出问题后，能尽量自己恢复。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果每次都要你手动打开手机、打开 Termux、输入命令、启动 Debian、启动 SSH、启动服务，那这就不叫服务器了。服务器最重要的能力之一就是：&lt;strong&gt;出问题后，能尽量自己恢复。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;但是有了 root 之后，我们可以通过 Magisk 的开机脚本实现很多自动化操作，比如：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· 自动启动 Debian；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· 自动启动 SSH；&lt;/strong&gt;&lt;/p&gt;
@@ -4166,15 +4167,15 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;&lt;strong&gt;· Wi-Fi 显示连接着，但外网访问不通；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· 路由器重新拨号后，手机没有及时拿到新地址。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;这些问题在普通手机使用场景里可能无所谓。你刷视频、聊天，最多就是断一下再连上。&lt;/p&gt;
-&lt;p&gt;但是手机作为服务器就不一样。IPv6 只要一丢，外网可能就访问不到你的服务了。更别说什么远程adb解决问题，不太能。但是有 root 之后，就可以更方便的写脚本去做这些事情：&lt;/p&gt;
+&lt;p&gt;但是手机作为服务器就不一样。IPv6 只要一丢，外网可能就访问不到你的服务了。更别说什么远程 adb 解决问题，不太能。但是有 root 之后，就可以更方便的写脚本去做这些事情：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· 定时检查手机是否还有公网 IPv6；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· 发现 IPv6 丢失后，自动重连 Wi-Fi；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· 获取新的 IPv6 地址；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· 自动更新域名解析；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· 把异常情况写入日志；&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;· 必要时重启网络相关服务。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;所以这些操作你不root会非常受限。所以我才一开始就说，你如果只是玩玩，那不root没关系。&lt;/p&gt;
-&lt;p&gt;很多底层网络操作，没有root权限真的很难很难稳定执行。&lt;/p&gt;
+&lt;p&gt;所以这些操作你不 root 会非常受限。所以我才一开始就说，你如果只是玩玩，那不 root 没关系。&lt;/p&gt;
+&lt;p&gt;很多底层网络操作，没有 root 权限真的很难很难稳定执行。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;其实还有很多很多原因，但是都说完篇幅会非常长，而且打字真的很累。所以我就捡着重要的说。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;我建议 root，并不是为了炫技，而是让大家看到这背后的真相到底是啥样的，也不是说不 root 就完全不能玩。&lt;/strong&gt;&lt;/p&gt;
 </description>
@@ -4182,10 +4183,10 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>【鸭老师】AI动态漫画banana制作全流程！既然要白嫖就贯彻到底咯，完全免费流程！</title>
         <link>https://jenboy.github.io/p/%E9%B8%AD%E8%80%81%E5%B8%88ai%E5%8A%A8%E6%80%81%E6%BC%AB%E7%94%BBbanana%E5%88%B6%E4%BD%9C%E5%85%A8%E6%B5%81%E7%A8%8B%E6%97%A2%E7%84%B6%E8%A6%81%E7%99%BD%E5%AB%96%E5%B0%B1%E8%B4%AF%E5%BD%BB%E5%88%B0%E5%BA%95%E5%92%AF%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E6%B5%81%E7%A8%8B/</link>
-        <pubDate>Sat, 20 Jun 2026 06:54:08 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 07:13:47 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E9%B8%AD%E8%80%81%E5%B8%88ai%E5%8A%A8%E6%80%81%E6%BC%AB%E7%94%BBbanana%E5%88%B6%E4%BD%9C%E5%85%A8%E6%B5%81%E7%A8%8B%E6%97%A2%E7%84%B6%E8%A6%81%E7%99%BD%E5%AB%96%E5%B0%B1%E8%B4%AF%E5%BD%BB%E5%88%B0%E5%BA%95%E5%92%AF%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E6%B5%81%E7%A8%8B/</guid>
-        <description>&lt;h1 id=&#34;1-鸭老师ai动态漫画banana制作全流程既然要白嫖就贯彻到底咯完全免费流程&#34;&gt;1 【鸭老师】AI动态漫画banana制作全流程！既然要白嫖就贯彻到底咯，完全免费流程！
+        <description>&lt;h1 id=&#34;1鸭老师ai-动态漫画-banana-制作全流程既然要白嫖就贯彻到底咯完全免费流程&#34;&gt;1【鸭老师】AI 动态漫画 Banana 制作全流程！既然要白嫖就贯彻到底咯，完全免费流程
 &lt;/h1&gt;&lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;原始链接&lt;/strong&gt;: &lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/930106&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -4200,24 +4201,24 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;要讲的内容有很多，我会分开一点点的讲明白,声明：教程禁止搬运！！不要被那些人搞去卖课了，只想给站里佬友玩。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.内容选题的思路：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;有2个方向。&lt;/p&gt;
-&lt;p&gt;1.&lt;strong&gt;借鉴，就是找一个喜欢的up主去拆解他的视频文案和画面，做成每一帧的分镜，首先打开这个网站，在抖音上把他的视频下载下来。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;有 2 个方向。&lt;/p&gt;
+&lt;p&gt;1.&lt;strong&gt;借鉴，就是找一个喜欢的 up 主去拆解他的视频文案和画面，做成每一帧的分镜，首先打开这个网站，在抖音上把他的视频下载下来。&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;p&gt;    &gt;抖音无水印解析工具 - 免费下载高清无水印视频与图片 | V2OB在线工具&lt;/a&gt;
 免费在线抖音无水印视频解析工具，一键下载高清无水印视频与图片。支持视频和图片解析、去水印、保存，操作简单，无需注册，快速获取无水印资源。抖音视频下载神器，完全免费！&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;然后打开这个网站，把他的视频上传，去拆解他的脚本文案优化做成自己的东西，输入以下提示词：&lt;strong&gt;这是我要学些的视频，帮我一帧一帧的分析他的画面构造，剪辑手法，音效和bgm，结构逻辑和文案标题，我需要用同样的方式做一个我的视频，你先帮我完成以上需求，然后告诉我哪里可以优化的地方&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;然后打开这个网站，把他的视频上传，去拆解他的脚本文案优化做成自己的东西，输入以下提示词：&lt;strong&gt;这是我要学些的视频，帮我一帧一帧的分析他的画面构造，剪辑手法，音效和 bgm，结构逻辑和文案标题，我需要用同样的方式做一个我的视频，你先帮我完成以上需求，然后告诉我哪里可以优化的地方&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faistudio.google.com%2Fprompts%2F1anz1SoeTypfVmW6CX07dC1ewRTyE4YHy&amp;amp;followup=https%3A%2F%2Faistudio.google.com%2Fprompts%2F1anz1SoeTypfVmW6CX07dC1ewRTyE4YHy&amp;amp;ifkv=AdBytiP58GVZ12Bq2TvZN_HW3Nb5tv8kIjAk7MTWr8ZZnmGHVnG6CCYJkjrotuNBg2qEj7454T5PaQ&amp;amp;passive=1209600&amp;amp;flowName=GlifWebSignIn&amp;amp;flowEntry=ServiceLogin&amp;amp;dsh=S1613815190%3A1756983102406571&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;登录 - Google 账号&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;![[1777086493058-2.png]]&lt;/p&gt;
-&lt;p&gt;然后让他给你生成适用于AI绘图的提示词去出图，或者把原作者的图给洗了，比如&lt;/p&gt;
+&lt;p&gt;然后让他给你生成适用于 AI 绘图的提示词去出图，或者把原作者的图给洗了，比如&lt;/p&gt;
 &lt;p&gt;![[1777086494064-4.jpeg]]&lt;/p&gt;
-&lt;p&gt;参考图片的画风，保持图中角色的表情身材，生成xxxxxx，然后在通过banana去改这个人物的动作，或者背景，确定好你要的角色后，可以让他生成三视图，或者多个角度的图片，方便溶图。&lt;/p&gt;
+&lt;p&gt;参考图片的画风，保持图中角色的表情身材，生成 xxxxxx，然后在通过 banana 去改这个人物的动作，或者背景，确定好你要的角色后，可以让他生成三视图，或者多个角度的图片，方便溶图。&lt;/p&gt;
 &lt;p&gt;3.溶图教程：&lt;/p&gt;
 &lt;p&gt;把人物融入到任意你指定的位置，并保持角色一致性和图片背景色调一致。&lt;/p&gt;
 &lt;p&gt;![[1777086494791-6.jpeg]]&lt;/p&gt;
 &lt;p&gt;先单独生成你想要的场景图，替换里面的人物，把要替换的人物均匀涂抹，替换的角度和图里面的角色最好相似，要不然效果会很抽象，让大香蕉自己生成，不要把人物参考图放上去，要不然结果很丑的，人物角度和景深都不行。&lt;/p&gt;
 &lt;p&gt;![[1777086495512-8.jpeg]]&lt;/p&gt;
-&lt;p&gt;然后把2张图上传，输入以下提示词：&lt;/p&gt;
+&lt;p&gt;然后把 2 张图上传，输入以下提示词：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Maintain the consistency of the character in Figure 2 and place the character in Figure 2 within the red frame area in Figure 1. Maintain the height of the character in Figure 1 and match the lighting direction and tone with the environment, ensuring a smooth transition and natural blending. The final image should look realistic and have a cinematic quality, with the subject blending seamlessly with the background to achieve a realistic film effect.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;最终效果图&lt;/p&gt;
 &lt;p&gt;![[1777086496219-10.jpeg]]&lt;/p&gt;
@@ -4228,28 +4229,28 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;把你想要的每个视频画面做成首位帧图片，或者单独的一张图去生成视频即可。&lt;/p&gt;
 &lt;p&gt;按这样标记好步骤就不会乱，一个片段一个片段的去生成整个视频的画面，视频画面的节奏根据借鉴视频的节奏来把片段贴上去就完美了。&lt;/p&gt;
 &lt;p&gt;![[1777086497126-12.jpeg]]&lt;/p&gt;
-&lt;p&gt;第二个方向就是原创剧本，我一般用claude写剧本，付费但是好用，你们习惯用什么都行。&lt;/p&gt;
+&lt;p&gt;第二个方向就是原创剧本，我一般用 claude 写剧本，付费但是好用，你们习惯用什么都行。&lt;/p&gt;
 &lt;p&gt;![[1777086498019-14.jpeg]]&lt;/p&gt;
 &lt;p&gt;免费的也可以用豆包找智能体写剧本，&lt;/p&gt;
 &lt;p&gt;![[1777086499015-16.png]]&lt;/p&gt;
 &lt;p&gt;有了剧本后让他生成提示词，然后流程跟上面差不多，或者找到想要参考的风格把图上传上去，输入这段提示词。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;提取图片信息生成ai绘画提示词&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;提取图片信息生成 ai 绘画提示词&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;![[1777086499885-18.png]]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;提取这张图片的元素，适用于midjourney的提示词&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;提取这张图片的元素，适用于 midjourney 的提示词&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;![[1777086500583-20.png]]&lt;/p&gt;
 &lt;p&gt;以上就有了你固定风格的生图提示词，后续生图都要加上风格提示词的后续，出来的图片风格就是一致性的，然后在替换人物也好或者用参考图生图都行。&lt;/p&gt;
 &lt;p&gt;即梦视频生成白嫖玩法：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;开无痕模式&lt;/strong&gt;，用小国家的节点打开这个网站，去用临时邮箱注册账号，我用的是尼日利亚的，有时候用香港的也行，注册好账号后切换成美国的节点，在网页上刷新一下，就可以无限白嫖视频生成了，不是高峰期的时候大概1-2分钟一个视频的样子。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;开无痕模式&lt;/strong&gt;，用小国家的节点打开这个网站，去用临时邮箱注册账号，我用的是尼日利亚的，有时候用香港的也行，注册好账号后切换成美国的节点，在网页上刷新一下，就可以无限白嫖视频生成了，不是高峰期的时候大概 1-2 分钟一个视频的样子。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://dreamina.capcut.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://dreamina.capcut.com/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;或者用豆包也行，或者直接用AE把人物图片动起来，像沙雕动画那样去玩，流量会比用AI做成的视频要好，至少不会限流厉害。&lt;/p&gt;
+&lt;p&gt;或者用豆包也行，或者直接用 AE 把人物图片动起来，像沙雕动画那样去玩，流量会比用 AI 做成的视频要好，至少不会限流厉害。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;以上就是本期教程所有内容了，还有什么不明白的地方可以在帖子里回复或者私信我，有时间我会解答疑难杂症，期待你们成品返图我看看有多炸裂，新时代只要有想法，就没有什么困难能阻碍我们的发展啦！哈哈哈哈哈&lt;/strong&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>2026 甲骨文一条龙服务经验分享和教程推荐</title>
         <link>https://jenboy.github.io/p/2026-%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%80%E6%9D%A1%E9%BE%99%E6%9C%8D%E5%8A%A1%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/</link>
-        <pubDate>Sat, 20 Jun 2026 06:54:08 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 07:13:47 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/2026-%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%80%E6%9D%A1%E9%BE%99%E6%9C%8D%E5%8A%A1%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/</guid>
         <description>&lt;h1 id=&#34;1-甲骨文注册申请实例配置系统和救砖的一条龙服务经验分享和教程推荐&#34;&gt;1 甲骨文注册，申请实例，配置系统和救砖的一条龙服务经验分享和教程推荐
@@ -4266,89 +4267,89 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;目录：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;一 注册成功经验&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;作为一个前野生的佬友，看着L站中别人分享的成功经历也是心里痒痒，终于今天（并非今天）莫名奇妙把甲骨文云的账号注册成功了，我也算是跟着喝了一口汤，把自己的过程分享一下，说不定能造福后来者😄。&lt;/p&gt;
-&lt;p&gt;首先是在电脑的Google浏览器中开启无痕模式，然后注册甲骨文-中国，用的邮件是网易的163 ，因为之前就用这个邮箱注册的时候不是秒出ABC，我就觉得这邮箱的概率似乎大一些，并且163的邮箱号和手机号是一致的，一致的信息，我觉得给人的感觉就真实一些，当然了，这纯玄学，在此之前我已经失败过无数次了，包括前几天就试了很多次了，今天下午偶然间结束了小插件的开发，就试一次，没想到成了。&lt;/p&gt;
-&lt;p&gt;邮件是发到了Edge浏览器上，在按钮上右键复制链接（不要点开），然后在Google无痕浏览器中打开，之前注册的页面还在，保持环境的一致性。名字我填的是真实的中文，名在前，姓在后，然后手机号用和163一致的，地址我用的都是拼音，在&lt;a class=&#34;link&#34; href=&#34;https://www.lddgo.net/convert/pinyin&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;专门的网站&lt;/a&gt;上转换，就不要自己瞎拼了。地址1,2,3 ，我都是填一样的，从什么区开始，然后是街道，三个地址一模一样，然后我用的是当前的真实地址，不是信用卡的地址，因为我信用卡地址在东北，我现在在广东，隔得也太远了。然后选区我选的是新加坡，想弄个新加坡的节点来着，我看别人推荐的区好像是圣何塞好一些，这个看自己。&lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/210542&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;作为一个前野生的佬友，看着 L 站中别人分享的成功经历也是心里痒痒，终于今天（并非今天）莫名奇妙把甲骨文云的账号注册成功了，我也算是跟着喝了一口汤，把自己的过程分享一下，说不定能造福后来者😄。&lt;/p&gt;
+&lt;p&gt;首先是在电脑的 Google 浏览器中开启无痕模式，然后注册甲骨文 - 中国，用的邮件是网易的 163，因为之前就用这个邮箱注册的时候不是秒出 ABC，我就觉得这邮箱的概率似乎大一些，并且 163 的邮箱号和手机号是一致的，一致的信息，我觉得给人的感觉就真实一些，当然了，这纯玄学，在此之前我已经失败过无数次了，包括前几天就试了很多次了，今天下午偶然间结束了小插件的开发，就试一次，没想到成了。&lt;/p&gt;
+&lt;p&gt;邮件是发到了 Edge 浏览器上，在按钮上右键复制链接（不要点开），然后在 Google 无痕浏览器中打开，之前注册的页面还在，保持环境的一致性。名字我填的是真实的中文，名在前，姓在后，然后手机号用和 163 一致的，地址我用的都是拼音，在 &lt;a class=&#34;link&#34; href=&#34;https://www.lddgo.net/convert/pinyin&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;专门的网站&lt;/a&gt; 上转换，就不要自己瞎拼了。地址 1,2,3，我都是填一样的，从什么区开始，然后是街道，三个地址一模一样，然后我用的是当前的真实地址，不是信用卡的地址，因为我信用卡地址在东北，我现在在广东，隔得也太远了。然后选区我选的是新加坡，想弄个新加坡的节点来着，我看别人推荐的区好像是圣何塞好一些，这个看自己。&lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/210542&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;甲骨文怎么选区域？甲骨文三网延迟， 附上甲骨文全区测速节点地址！！！ - 文档共建 - LINUX DO&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;然后就是信用卡了，我用的是工行的星座卡，用多少冲多少，没有额度（穷鬼专用😭），以前也是用这张，被拒绝过无数次了，因为我只有这一张。点击完thanks，按照传统的玄学办法，等1min左右再点确认提交（又有说法是在thanks界面等1min左右，让网站反应一下，当然了，这是玄学），我在50s的附近点的确认，然后开始转圈圈，我感觉好像有戏，转了一会就出现跑道了（我也算是看见一次跑道了😭）。然后就是等15min，创建账号成功了会发邮件通知，一定要让跑道跑完，没跑完可能就白瞎了（小心驶得万年船）。&lt;/p&gt;
-&lt;p&gt;首次登录建议直接升级账号，这样存活率会高很多，而且能够继续使用免费的套餐（两个AMD，一个ARM），若是首次不升级的话，后续想升级都无法升级了，建议第一次登录就进行升级。信用卡中要保证有140新加坡币，扣款验证需要138.19 ，秒扣秒退回。作为验资的作用。据说是要等几个小时之后才会发邮件通知结果。&lt;/p&gt;
-&lt;p&gt;然后就是后续的开机器了，大概率需要用脚本抢，我打算在升级成功之后再操作，这个有没有说法我也不知道（小心驶得万年船），我打算参考这篇&lt;a class=&#34;link&#34; href=&#34;https://zeaurx.com/archives/oracle-guide&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;博客&lt;/a&gt;。刚开始先开一个AMD，然后把我的&lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/1663220&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;CPA搭上去&lt;/a&gt;。养号一段时间，看能不能活一个月，若是能的话，就再抢个ARM搭一个节点。据说消费一笔账单，能够让存活的概率增大很多，后续我研究一下它的最低消费是多少。登录甲骨文云账户，我全程没开代理，据说开了会导致升级失败，而且有封号的风险（甲骨文三大玄学之一）。&lt;/p&gt;
+&lt;p&gt;然后就是信用卡了，我用的是工行的星座卡，用多少冲多少，没有额度（穷鬼专用😭），以前也是用这张，被拒绝过无数次了，因为我只有这一张。点击完 thanks，按照传统的玄学办法，等 1min 左右再点确认提交（又有说法是在 thanks 界面等 1min 左右，让网站反应一下，当然了，这是玄学），我在 50s 的附近点的确认，然后开始转圈圈，我感觉好像有戏，转了一会就出现跑道了（我也算是看见一次跑道了😭）。然后就是等 15min，创建账号成功了会发邮件通知，一定要让跑道跑完，没跑完可能就白瞎了（小心驶得万年船）。&lt;/p&gt;
+&lt;p&gt;首次登录建议直接升级账号，这样存活率会高很多，而且能够继续使用免费的套餐（两个 AMD，一个 ARM），若是首次不升级的话，后续想升级都无法升级了，建议第一次登录就进行升级。信用卡中要保证有 140 新加坡币，扣款验证需要 138.19，秒扣秒退回。作为验资的作用。据说是要等几个小时之后才会发邮件通知结果。&lt;/p&gt;
+&lt;p&gt;然后就是后续的开机器了，大概率需要用脚本抢，我打算在升级成功之后再操作，这个有没有说法我也不知道（小心驶得万年船），我打算参考这篇 &lt;a class=&#34;link&#34; href=&#34;https://zeaurx.com/archives/oracle-guide&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;博客&lt;/a&gt;。刚开始先开一个 AMD，然后把我的&lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/1663220&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CPA搭上去&lt;/a&gt;。养号一段时间，看能不能活一个月，若是能的话，就再抢个 ARM 搭一个节点。据说消费一笔账单，能够让存活的概率增大很多，后续我研究一下它的最低消费是多少。登录甲骨文云账户，我全程没开代理，据说开了会导致升级失败，而且有封号的风险（甲骨文三大玄学之一）。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;二 申请实例和配置系统&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.推荐教程&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;甲骨文云申请实例和开机过程。之前推荐的那些个教程都过期了，纯看的时候看不出来，只有对照着操作的时候，发现好多对不上。这次申请实例到开机，主要参考了两个视频加一个知乎文章然后配合DeepSeek，都是参考着来的，因为它们都不是很全。&lt;/p&gt;
+&lt;p&gt;甲骨文云申请实例和开机过程。之前推荐的那些个教程都过期了，纯看的时候看不出来，只有对照着操作的时候，发现好多对不上。这次申请实例到开机，主要参考了两个视频加一个知乎文章然后配合 DeepSeek，都是参考着来的，因为它们都不是很全。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/2001579089060983225&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;天王盖不了地虎-某乎&lt;/a&gt;，&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV18NzvB5EZu/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=8e9ffa2f92bc7fc1dc67c84193240404&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;零度解说-福站&lt;/a&gt;，&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1fyUABfE9r/?spm_id_from=333.1387.top_right_bar_window_history.content.click&amp;amp;vd_source=8e9ffa2f92bc7fc1dc67c84193240404&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;科技狮子-福站&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;上面最好的申请实例教程，我觉得是天王盖地虎的，2026年最新申请的账号进行的操作，其中先添加vnic&amp;amp;子网再申请实例是其他教程没讲的，缺点可能就是没有在SSH客户端上操作系统，都是在甲骨文云后台上操作的。第二是零度解说的视频，也是2026年刚注册的账号，并且是一边录屏一边操作，非常直观，缺点就是造假，他明明没有申请成功4C24G，却放了一个其他账号的切片😑。好在他又演示了一遍申请1核的AMD，这次是真的了没有造假（还算有点良心），然后他是在申请实例的过程中创建vnic&amp;amp;子网的，这样的子网是只有IPV4，创建成功后要自己把IPV6补上。科技狮子好像是一个佬友，他是专门做甲骨文云系列视频出道的，在B站和油管好像都是有5w粉丝，他的视频很多，很全，可以在以后进行系统学习，缺点是都是上古版本，而且他今年没有注册新的账号操作，而是在老的账号上操作，这就导致很多地方他是配置好的，但作为一个啥也不懂，又是全新账号的小白来说，很多地方是看不懂的，所以申请实例的时候不建议跟着他。&lt;/p&gt;
-&lt;p&gt;然后是开机操作系统的教程，与上面的推荐顺序相反了。因为后续管理系统肯定都是在SSH客户端上操作，不可能经常性的去打开甲骨文云后台配置，这玩意也不能保持登录状态，每次登录又要注意网络环境，这就很麻烦。所以在SSH客户端上操作系统，对于小白来说也是非常重要的。我最终实现的配置是关闭甲骨文云上的防火墙，允许所有协议通过，然后在系统上统一用ufw管理防火墙，根据自己想要实现的功能直接问DeepSeek，然后通过命令行去打开相应的端口，当前我就只打开了自己的登录端口，非常的安全。&lt;/p&gt;
-&lt;p&gt;天王盖地虎的教程直接没讲操作系统，也不知道他是不是发在其他帖子上了，然后零度解说的视频是进行了操作系统的管理的，并且提供了SSH客户端的推荐–WindTerm，我当前也是用的这个，之前学校做实验用的多的好像Xshell，不过总是要升级，就被我抛弃了，现在先用着WindTerm吧，反正也够轻量级，感觉不好用到时候再换。不过零度解说的配置理念与我相反，他是在WindTerm上把系统的防火墙全关了，然后所有的出入站规则都在甲骨文云后台上操作，以后想添加什么端口，都要重新登录一遍后台，然后操作，太麻烦了，我还是喜欢直接在WindTerm上操作命令行。然后最推荐的是科技狮子，不愧是甲骨文界的老资历，提供了一套龙的安装调优系统脚本，只要认识汉字就能实现绝大多数的功能，对于小白来说，不亚于是给新买的电脑安装了360套装，非常省事，输入数字回车就能无脑化执行操作。当然了，脚本嘛，还是没有自己手动配置的有掌控感，科技狮子在油管和B站都有5w的粉丝，说多不多也说少不少了，安全应该没问题。我本来也是想直接手动配置系统，可惜能力不济😭，分不清东南西北，最后还是选择了科技狮子的脚本来进行重装Debian系统，然后进行了一套龙的优化（没办法，自动化操作真的太香了🤩）。不过我还是让DeepSeek帮我改成其他的登录端口，我的考虑是这些教学主播人红是非多，受众又是我这样的一群小白群体，也一直有这样一群坏人去扫别人的端口破解，怕被有心的人盯上针对，毕竟是升级账号，我觉得多小心一些是没问题的。我让DeepSeek改了登录端口，然后用ufw管理所有的开发端口，目前只开发了一个登录端口，后续添加功能，再让AI帮我添加（AI真的太好用了！），然后DeepSeek说fail2ban（科技lion脚本安装的安全监视端口软件）监视的是默认登录端口，也就是22 ，不是科技lion后面改的5522 ，我不知道AI是不是瞎说的，后续我是让他帮我改成监视真正的登录端口，下面会介绍。&lt;/p&gt;
-&lt;p&gt;推荐纯小白用户创建实例的教程可以跟着上面的天王盖地虎，然后操作系统配置跟着科技Lion。最后能实现的效果就是甲骨文云后台开放所有协议流量，后续所有的操作就都只在WindTerm这个客户端上进行就可以了，不用登录后台了，然后通过科技lion的脚本搭建的这个大框架，随着自己对于Linux的熟练，就能自己往上添加东西了，我相信很多人第一次使用电脑的时候肯定都用过360或者其他什么电脑管家，当自己逐渐学会使用电脑之后就都全部卸载了。&lt;/p&gt;
-&lt;p&gt;我最终实现的效果就是，云后台开放防火墙所有协议，预留了一个自己的独立IP，开通了IPV4和IPV6，然后在WindTerm上用科技Lion的脚本重装了一个稳定的Debian系统（不会封号，甲骨文云官方也推荐自己重装），好处就是去除了甲骨文云的监视组建，其他的一些附带东西，然后启用了ufw来管理我的系统防火墙，以后开放端口就用他操作了。我禁止了账号密码登录（科技lion的脚本重装一条龙优化之后是账号和密码登录，并且开放了防火墙，我觉得不安全），改用密钥登录（要上传自己的公钥到实例系统，下面会介绍），然后我再把本地电脑的私钥进行了加密（我真是太小心了😄），改了登录的端口，也是我当前开放的唯一端口（科技Lion脚本运行之后，登录端口变成了5522 ，我根据自己的喜好又改了）。这一顿操作下来，我感觉要安全有安全，要便捷有便捷，太帅了bro。&lt;/p&gt;
+&lt;p&gt;上面最好的申请实例教程，我觉得是天王盖地虎的，2026 年最新申请的账号进行的操作，其中先添加 vnic&amp;amp;子网再申请实例是其他教程没讲的，缺点可能就是没有在 SSH 客户端上操作系统，都是在甲骨文云后台上操作的。第二是零度解说的视频，也是 2026 年刚注册的账号，并且是一边录屏一边操作，非常直观，缺点就是造假，他明明没有申请成功 4C24G，却放了一个其他账号的切片😑。好在他又演示了一遍申请 1 核的 AMD，这次是真的了没有造假（还算有点良心），然后他是在申请实例的过程中创建 vnic&amp;amp;子网的，这样的子网是只有 IPV4，创建成功后要自己把 IPV6 补上。科技狮子好像是一个佬友，他是专门做甲骨文云系列视频出道的，在 B 站和油管好像都是有 5w 粉丝，他的视频很多，很全，可以在以后进行系统学习，缺点是都是上古版本，而且他今年没有注册新的账号操作，而是在老的账号上操作，这就导致很多地方他是配置好的，但作为一个啥也不懂，又是全新账号的小白来说，很多地方是看不懂的，所以申请实例的时候不建议跟着他。&lt;/p&gt;
+&lt;p&gt;然后是开机操作系统的教程，与上面的推荐顺序相反了。因为后续管理系统肯定都是在 SSH 客户端上操作，不可能经常性的去打开甲骨文云后台配置，这玩意也不能保持登录状态，每次登录又要注意网络环境，这就很麻烦。所以在 SSH 客户端上操作系统，对于小白来说也是非常重要的。我最终实现的配置是关闭甲骨文云上的防火墙，允许所有协议通过，然后在系统上统一用 ufw 管理防火墙，根据自己想要实现的功能直接问 DeepSeek，然后通过命令行去打开相应的端口，当前我就只打开了自己的登录端口，非常的安全。&lt;/p&gt;
+&lt;p&gt;天王盖地虎的教程直接没讲操作系统，也不知道他是不是发在其他帖子上了，然后零度解说的视频是进行了操作系统的管理的，并且提供了 SSH 客户端的推荐–WindTerm，我当前也是用的这个，之前学校做实验用的多的好像 Xshell，不过总是要升级，就被我抛弃了，现在先用着 WindTerm 吧，反正也够轻量级，感觉不好用到时候再换。不过零度解说的配置理念与我相反，他是在 WindTerm 上把系统的防火墙全关了，然后所有的出入站规则都在甲骨文云后台上操作，以后想添加什么端口，都要重新登录一遍后台，然后操作，太麻烦了，我还是喜欢直接在 WindTerm 上操作命令行。然后最推荐的是科技狮子，不愧是甲骨文界的老资历，提供了一套龙的安装调优系统脚本，只要认识汉字就能实现绝大多数的功能，对于小白来说，不亚于是给新买的电脑安装了 360 套装，非常省事，输入数字回车就能无脑化执行操作。当然了，脚本嘛，还是没有自己手动配置的有掌控感，科技狮子在油管和 B 站都有 5w 的粉丝，说多不多也说少不少了，安全应该没问题。我本来也是想直接手动配置系统，可惜能力不济😭，分不清东南西北，最后还是选择了科技狮子的脚本来进行重装 Debian 系统，然后进行了一套龙的优化（没办法，自动化操作真的太香了🤩）。不过我还是让 DeepSeek 帮我改成其他的登录端口，我的考虑是这些教学主播人红是非多，受众又是我这样的一群小白群体，也一直有这样一群坏人去扫别人的端口破解，怕被有心的人盯上针对，毕竟是升级账号，我觉得多小心一些是没问题的。我让 DeepSeek 改了登录端口，然后用 ufw 管理所有的开发端口，目前只开发了一个登录端口，后续添加功能，再让 AI 帮我添加（AI 真的太好用了！），然后 DeepSeek 说 fail2ban（科技 lion 脚本安装的安全监视端口软件）监视的是默认登录端口，也就是 22，不是科技 lion 后面改的 5522，我不知道 AI 是不是瞎说的，后续我是让他帮我改成监视真正的登录端口，下面会介绍。&lt;/p&gt;
+&lt;p&gt;推荐纯小白用户创建实例的教程可以跟着上面的天王盖地虎，然后操作系统配置跟着科技 Lion。最后能实现的效果就是甲骨文云后台开放所有协议流量，后续所有的操作就都只在 WindTerm 这个客户端上进行就可以了，不用登录后台了，然后通过科技 lion 的脚本搭建的这个大框架，随着自己对于 Linux 的熟练，就能自己往上添加东西了，我相信很多人第一次使用电脑的时候肯定都用过 360 或者其他什么电脑管家，当自己逐渐学会使用电脑之后就都全部卸载了。&lt;/p&gt;
+&lt;p&gt;我最终实现的效果就是，云后台开放防火墙所有协议，预留了一个自己的独立 IP，开通了 IPV4 和 IPV6，然后在 WindTerm 上用科技 Lion 的脚本重装了一个稳定的 Debian 系统（不会封号，甲骨文云官方也推荐自己重装），好处就是去除了甲骨文云的监视组建，其他的一些附带东西，然后启用了 ufw 来管理我的系统防火墙，以后开放端口就用他操作了。我禁止了账号密码登录（科技 lion 的脚本重装一条龙优化之后是账号和密码登录，并且开放了防火墙，我觉得不安全），改用密钥登录（要上传自己的公钥到实例系统，下面会介绍），然后我再把本地电脑的私钥进行了加密（我真是太小心了😄），改了登录的端口，也是我当前开放的唯一端口（科技 Lion 脚本运行之后，登录端口变成了 5522，我根据自己的喜好又改了）。这一顿操作下来，我感觉要安全有安全，要便捷有便捷，太帅了 bro。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.我的配置过程&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;首先我是打开零度解说的视频，跟着他一步步操作，先创建实例，然后在实例中添加vnic&amp;amp;子网，跟着他创建完4C24G实例，你会发现他没创建成功，他会批个图糊弄观众，但你成功了，因为你是升级账号，我也很建议刚升级完账号就赶快创建，之前我还担心配置开太高会不会导致封号，后面看了很多经验贴，发现没有任何规律，只要不太过分，就是随机的，干就完了bro。我申请的配置是4C24G，100GB的磁盘，其他的配置后续都可以改，但是过后有没有4C24G的配置就不好说了，你刚升级完账号，官方怕得罪高贵的付费用户，就有什么给你开什么，过段时间发现你光白嫖不消费，就把你拉入穷鬼黑名单了，有机子也不给你，所以刚升级完直接就最高配置没毛病bro（磁盘别拉太大，免得太招摇）。&lt;/p&gt;
-&lt;p&gt;看完零度解说的视频，此时你获得了一个4C24G的机子和一个属于你的IPv4预留IP，还有一组公钥和私钥，但是你的云防火墙和IPV6还没配置好。跟着我下面操作。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.1 分配IPv6地址和配置路由&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;首先我是打开零度解说的视频，跟着他一步步操作，先创建实例，然后在实例中添加 vnic&amp;amp;子网，跟着他创建完 4C24G 实例，你会发现他没创建成功，他会批个图糊弄观众，但你成功了，因为你是升级账号，我也很建议刚升级完账号就赶快创建，之前我还担心配置开太高会不会导致封号，后面看了很多经验贴，发现没有任何规律，只要不太过分，就是随机的，干就完了 bro。我申请的配置是 4C24G，100GB 的磁盘，其他的配置后续都可以改，但是过后有没有 4C24G 的配置就不好说了，你刚升级完账号，官方怕得罪高贵的付费用户，就有什么给你开什么，过段时间发现你光白嫖不消费，就把你拉入穷鬼黑名单了，有机子也不给你，所以刚升级完直接就最高配置没毛病 bro（磁盘别拉太大，免得太招摇）。&lt;/p&gt;
+&lt;p&gt;看完零度解说的视频，此时你获得了一个 4C24G 的机子和一个属于你的 IPv4 预留 IP，还有一组公钥和私钥，但是你的云防火墙和 IPV6 还没配置好。跟着我下面操作。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.1 分配 IPv6 地址和配置路由&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;在甲骨文云的主页，点击左上角的三条杠（之前创建实例的地方）&lt;/p&gt;
 &lt;p&gt;![[1779075665008-0.png]]&lt;/p&gt;
 &lt;p&gt;选择网络，然后点开虚拟云网络&lt;/p&gt;
 &lt;p&gt;![[1779075666046-2.png]]&lt;/p&gt;
 &lt;p&gt;然后你会看到自己在创建的实例的时候顺便创建的虚拟云网络，点击名称打开它&lt;/p&gt;
 &lt;p&gt;![[1779075667023-4.png]]&lt;/p&gt;
-&lt;p&gt;然后在里面点开IP管理，选择下面的CIDR块/IPv6前缀，在里面把&lt;strong&gt;分配 Oracle 分配的 IPv6 /56 前缀&lt;/strong&gt;勾上，然后点击&lt;strong&gt;添加CIDR块&lt;/strong&gt;，这样就为自己的整个云网络VCN分配了一个IPv6的地址段，接下来要为自己的实例子网也进行IPv6地址段分配。&lt;/p&gt;
+&lt;p&gt;然后在里面点开 IP 管理，选择下面的 CIDR 块/IPv6 前缀，在里面把&lt;strong&gt;分配 Oracle 分配的 IPv6 /56 前缀&lt;/strong&gt;勾上，然后点击&lt;strong&gt;添加 CIDR 块&lt;/strong&gt;，这样就为自己的整个云网络 VCN 分配了一个 IPv6 的地址段，接下来要为自己的实例子网也进行 IPv6 地址段分配。&lt;/p&gt;
 &lt;p&gt;![[1779075667953-6.png]]&lt;/p&gt;
 &lt;p&gt;![[1779075669122-8.png]]&lt;/p&gt;
-&lt;p&gt;添加完之后还是这个页面，不过这次选择IP管理旁边的子网。这个子网也是在创建实例的时候创建的。点开它，同样是IP管理，往下拉找到IPv6前缀，选择添加IPV6前缀。&lt;/p&gt;
+&lt;p&gt;添加完之后还是这个页面，不过这次选择 IP 管理旁边的子网。这个子网也是在创建实例的时候创建的。点开它，同样是 IP 管理，往下拉找到 IPv6 前缀，选择添加 IPV6 前缀。&lt;/p&gt;
 &lt;p&gt;![[1779075670540-10.png]]&lt;/p&gt;
 &lt;p&gt;![[1779075671616-12.png]]&lt;/p&gt;
-&lt;p&gt;与给整个VCN分配IPV6地址段一样，子网的分配也是一样的，不过多了一个&lt;strong&gt;IPv6 CIDR 块&lt;/strong&gt; 字段的填写，我点开之后是下面这个样子。&lt;/p&gt;
+&lt;p&gt;与给整个 VCN 分配 IPV6 地址段一样，子网的分配也是一样的，不过多了一个&lt;strong&gt;IPv6 CIDR 块&lt;/strong&gt; 字段的填写，我点开之后是下面这个样子。&lt;/p&gt;
 &lt;p&gt;![[1779075672643-14.png]]&lt;/p&gt;
-&lt;p&gt;啥也干不了，应该是之前分配过了造成的？纯小白人看傻了😵‍💫。我记得是可以勾选那个&lt;strong&gt;分配 Oracle 分配的 IPv6 /64 前缀&lt;/strong&gt;，然后再在&lt;strong&gt;IPv6 CIDR 块&lt;/strong&gt; 字段输入两个十六进制的字符，aa或者bb之类的都可以。再选择右下角的&lt;strong&gt;添加 IPv6 前缀&lt;/strong&gt;即可。&lt;/p&gt;
-&lt;p&gt;完成了上面的虚拟云网VCN及其下的子网IPv6前缀的添加，终于可以给实例分配具体的IPv6地址了。点开实例，还是从主页的三条杠进入。&lt;/p&gt;
+&lt;p&gt;啥也干不了，应该是之前分配过了造成的？纯小白人看傻了😵‍💫。我记得是可以勾选那个&lt;strong&gt;分配 Oracle 分配的 IPv6 /64 前缀&lt;/strong&gt;，然后再在&lt;strong&gt;IPv6 CIDR 块&lt;/strong&gt; 字段输入两个十六进制的字符，aa 或者 bb 之类的都可以。再选择右下角的&lt;strong&gt;添加 IPv6 前缀&lt;/strong&gt;即可。&lt;/p&gt;
+&lt;p&gt;完成了上面的虚拟云网 VCN 及其下的子网 IPv6 前缀的添加，终于可以给实例分配具体的 IPv6 地址了。点开实例，还是从主页的三条杠进入。&lt;/p&gt;
 &lt;p&gt;![[1779075673932-16.png]]&lt;/p&gt;
 &lt;p&gt;![[1779075675257-18.png]]&lt;/p&gt;
-&lt;p&gt;点击里面的网络，然后往下划找到附加的VNIC，选择下面的那个玩意名称，点进去。&lt;/p&gt;
+&lt;p&gt;点击里面的网络，然后往下划找到附加的 VNIC，选择下面的那个玩意名称，点进去。&lt;/p&gt;
 &lt;p&gt;![[1779075676337-20.png]]&lt;/p&gt;
-&lt;p&gt;然后选择IP管理，找到IPv6地址，选择分配IPv6地址。&lt;/p&gt;
+&lt;p&gt;然后选择 IP 管理，找到 IPv6 地址，选择分配 IPv6 地址。&lt;/p&gt;
 &lt;p&gt;![[1779075677295-22.png]]&lt;/p&gt;
-&lt;p&gt;子网IPV6前缀是之前已经分配好的，然后前缀长度选择128（有什么说法吗？不晓得），再勾选下面的自动分配IP地址，点击右下角的分配即可。&lt;/p&gt;
+&lt;p&gt;子网 IPV6 前缀是之前已经分配好的，然后前缀长度选择 128（有什么说法吗？不晓得），再勾选下面的自动分配 IP 地址，点击右下角的分配即可。&lt;/p&gt;
 &lt;p&gt;![[1779075678653-24.png]]&lt;/p&gt;
-&lt;p&gt;此时实例的IPV6的地址就分配好了，然后来到分配好的IPv4或者IPv6的路由表下，都是同一个路由表，点开它。&lt;/p&gt;
+&lt;p&gt;此时实例的 IPV6 的地址就分配好了，然后来到分配好的 IPv4 或者 IPv6 的路由表下，都是同一个路由表，点开它。&lt;/p&gt;
 &lt;p&gt;![[1779075679409-26.png]]&lt;/p&gt;
-&lt;p&gt;选择路由规则，然后添加路由规则，跟我的路由规则一样即可，::/0是IPv6，0.0.0.0/0是IPv4，目标类型都是internet网关，目标就是你自己的虚拟云网，只有一个，选择即可，然后是静态的。&lt;/p&gt;
+&lt;p&gt;选择路由规则，然后添加路由规则，跟我的路由规则一样即可，::/0 是 IPv6，0.0.0.0/0 是 IPv4，目标类型都是 internet 网关，目标就是你自己的虚拟云网，只有一个，选择即可，然后是静态的。&lt;/p&gt;
 &lt;p&gt;![[1779075680067-28.png]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.2 开放甲骨文云后台防火墙&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;因为我后续的活动都想直接在WindTerm上操作配置了，不想再回到甲骨文云后台折腾，因此就把甲骨文云上的防火墙都关了吧，免得要同时配置两个地方，系统的防火墙就够了。&lt;/p&gt;
-&lt;p&gt;说是甲骨文云防火墙，但其实就是虚拟云网的安全列表。回到虚拟云网vcn（三条杠的网络进入，上面有介绍），这次不去IP管理，不去子网，选择安全。点开安全列表里面的那个名称。&lt;/p&gt;
+&lt;p&gt;因为我后续的活动都想直接在 WindTerm 上操作配置了，不想再回到甲骨文云后台折腾，因此就把甲骨文云上的防火墙都关了吧，免得要同时配置两个地方，系统的防火墙就够了。&lt;/p&gt;
+&lt;p&gt;说是甲骨文云防火墙，但其实就是虚拟云网的安全列表。回到虚拟云网 vcn（三条杠的网络进入，上面有介绍），这次不去 IP 管理，不去子网，选择安全。点开安全列表里面的那个名称。&lt;/p&gt;
 &lt;p&gt;![[1779075680968-30.png]]&lt;/p&gt;
-&lt;p&gt;在入站规则下配置成下面这个玩意，就是允许所有协议通过，::/0是IPv6的，0.0.0.0/0是IPv4的，允许所有端口的所有流量通过。&lt;/p&gt;
+&lt;p&gt;在入站规则下配置成下面这个玩意，就是允许所有协议通过，::/0 是 IPv6 的，0.0.0.0/0 是 IPv4 的，允许所有端口的所有流量通过。&lt;/p&gt;
 &lt;p&gt;![[1779075681872-32.png]]&lt;/p&gt;
 &lt;p&gt;出站规则默认就是这个样子，看不清图片的话直接把出站规则的抄上来就行。&lt;/p&gt;
 &lt;p&gt;完成上面的操作，云平台就算配置好了，以后除了封号都不用登录了。然后可以配置实例操作系统了。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.3 配置实例终端操作系统&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我是用零度解说推荐的SSH客户端–WindTerm，够轻量，其他的客户端我也不了解。直接去GitHub上搜索下载，或者用零度解说推荐的下载地址也可以（不过有次我用火绒杀毒扫出来WindTerm带了木马，那个WindTerm好像就是从零度解说那里下载的😅）。&lt;/p&gt;
-&lt;p&gt;要是看了零度解说的那个视频，他里面也讲了如何配置SSH客户端，我这里稍微演示一下。先配置成中文和亮主题。重启生效。&lt;/p&gt;
+&lt;p&gt;我是用零度解说推荐的 SSH 客户端–WindTerm，够轻量，其他的客户端我也不了解。直接去 GitHub 上搜索下载，或者用零度解说推荐的下载地址也可以（不过有次我用火绒杀毒扫出来 WindTerm 带了木马，那个 WindTerm 好像就是从零度解说那里下载的😅）。&lt;/p&gt;
+&lt;p&gt;要是看了零度解说的那个视频，他里面也讲了如何配置 SSH 客户端，我这里稍微演示一下。先配置成中文和亮主题。重启生效。&lt;/p&gt;
 &lt;p&gt;![[1779075683012-34.png]]&lt;/p&gt;
 &lt;p&gt;![[1779075683681-36.png]]&lt;/p&gt;
 &lt;p&gt;然后配置选中复制，右键粘贴。&lt;/p&gt;
 &lt;p&gt;![[1779075684363-37.png]]&lt;/p&gt;
 &lt;p&gt;![[1779075684900-38.png]]&lt;/p&gt;
-&lt;p&gt;然后可以添加会话了。还是左上角的会话，点击新建会话，在SSH的标签下，填入主机IP，就是之前申请实例的时候分配的预留IP，是IPv4（IPv6也行，因为之前配置好了）。端口是默认的22 ，选择下面的验证。&lt;/p&gt;
+&lt;p&gt;然后可以添加会话了。还是左上角的会话，点击新建会话，在 SSH 的标签下，填入主机 IP，就是之前申请实例的时候分配的预留 IP，是 IPv4（IPv6 也行，因为之前配置好了）。端口是默认的 22，选择下面的验证。&lt;/p&gt;
 &lt;p&gt;![[1779075685281-39.png]]&lt;/p&gt;
 &lt;p&gt;点击那三个点，把之前创建实例保存的私钥导进去。（要是没保存那就完犊子了）&lt;/p&gt;
 &lt;p&gt;![[1779075685653-40.png]]&lt;/p&gt;
-&lt;p&gt;然后点击右下角的连接，此时WindTerm应该会让你设置一个密码，建议留空，那不过是在本地电脑上加的软件锁，防止对象窃取自己云端电脑中的三体人机密，但我觉得没必要，因为你没对象。当电脑锁屏之后会弹出输入密码，指的就是这个密码，没设置的话回车就行了。&lt;/p&gt;
-&lt;p&gt;然后你就进入系统了，作为一个小白，此时你云端的防火墙已经关了，系统还有一个自带的防火墙，所以其实安全问题不大。然后我们就打开科技Lion的那个视频了，跟着他进行一条龙脚本服务，非常攒劲🤩。跟着他输入相应的数字即可，重装了系统，换成干净的系统，然后装了一个监视端口被暴力破解的安全软件，还有一些其他的玩意，对于纯小白来说，那就是360一件套，我觉得还是非常有必要的，以后跟别人吹嘘，你就说自己曾经被一条龙服务过。&lt;/p&gt;
-&lt;p&gt;如果你打算用这个脚本的话推荐跟着他的那个视频操作，脚本安装命令是bash &amp;lt;(curl -sL kejilion.sh)，输入回车即可，退出脚本之后，按k回车能重新打开。&lt;/p&gt;
-&lt;p&gt;跟着他的视频操作，重装了系统，并且改成了账号和密码登录，此前密钥登录的方式失效了，你需要重新登录。新建会话，还是输入预留IP，此时还没有被一条龙服务过，你的登录端口依旧是22,直接选择连接，弹出的窗口输入账号名称root，然后是你自己设置的密码（重装之前会让你设置）。我记得当时会出现闪退，我怀疑是系统还在重装，关掉软件等一会，然后再执行上面的登录操作。&lt;/p&gt;
-&lt;p&gt;重装系统之后你就能跟着科技Lion的视频进行接下来的一条龙服务了。一条龙服务之后登录端口就变成了高位的5522 ，比默认的22还是要安全一些。到这里，基本上就配置结束了，要是你没有其他的安全需求的话，我上面也说了，科技lion的脚本一条龙之后，系统防火墙是关闭的，他这是为了给纯小白进行测试使用的，但现在都是人手一个AI工具，所以没有真正意义上的纯小白😄，需要实现什么测试，直接把问题给AI就行了，这种具体简单的问题，AI解决的非常好。所以我使用DeepSeek帮我做了下面的优化，主要就是安全方面，因为我看到站内有小伙伴因为端口被扫，然后账号一个月走10多t流量封号的，甚至信用卡被刷爆，毕竟是升级用户，还是小心点比较好。&lt;/p&gt;
+&lt;p&gt;然后点击右下角的连接，此时 WindTerm 应该会让你设置一个密码，建议留空，那不过是在本地电脑上加的软件锁，防止对象窃取自己云端电脑中的三体人机密，但我觉得没必要，因为你没对象。当电脑锁屏之后会弹出输入密码，指的就是这个密码，没设置的话回车就行了。&lt;/p&gt;
+&lt;p&gt;然后你就进入系统了，作为一个小白，此时你云端的防火墙已经关了，系统还有一个自带的防火墙，所以其实安全问题不大。然后我们就打开科技 Lion 的那个视频了，跟着他进行一条龙脚本服务，非常攒劲🤩。跟着他输入相应的数字即可，重装了系统，换成干净的系统，然后装了一个监视端口被暴力破解的安全软件，还有一些其他的玩意，对于纯小白来说，那就是 360 一件套，我觉得还是非常有必要的，以后跟别人吹嘘，你就说自己曾经被一条龙服务过。&lt;/p&gt;
+&lt;p&gt;如果你打算用这个脚本的话推荐跟着他的那个视频操作，脚本安装命令是 bash &amp;lt;(curl -sL kejilion.sh)，输入回车即可，退出脚本之后，按 k 回车能重新打开。&lt;/p&gt;
+&lt;p&gt;跟着他的视频操作，重装了系统，并且改成了账号和密码登录，此前密钥登录的方式失效了，你需要重新登录。新建会话，还是输入预留 IP，此时还没有被一条龙服务过，你的登录端口依旧是 22,直接选择连接，弹出的窗口输入账号名称 root，然后是你自己设置的密码（重装之前会让你设置）。我记得当时会出现闪退，我怀疑是系统还在重装，关掉软件等一会，然后再执行上面的登录操作。&lt;/p&gt;
+&lt;p&gt;重装系统之后你就能跟着科技 Lion 的视频进行接下来的一条龙服务了。一条龙服务之后登录端口就变成了高位的 5522，比默认的 22 还是要安全一些。到这里，基本上就配置结束了，要是你没有其他的安全需求的话，我上面也说了，科技 lion 的脚本一条龙之后，系统防火墙是关闭的，他这是为了给纯小白进行测试使用的，但现在都是人手一个 AI 工具，所以没有真正意义上的纯小白😄，需要实现什么测试，直接把问题给 AI 就行了，这种具体简单的问题，AI 解决的非常好。所以我使用 DeepSeek 帮我做了下面的优化，主要就是安全方面，因为我看到站内有小伙伴因为端口被扫，然后账号一个月走 10 多 t 流量封号的，甚至信用卡被刷爆，毕竟是升级用户，还是小心点比较好。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.4 个性化安全策略配置&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;注意，以下的每一步操作之后，都建议新开一个会话测试一下是不是还能成功登录，不能的话就在老对话中进行修改，已经建立的老对话不会因为改了登录方式，密码，端口这些东西而断开。若是把自己锁在外面了也别慌，下面会介绍解决办法，就算是把锁搞坏了（sshd_config改崩了，SSH连接无法建立）也能解决，就是有亿点点麻烦，所以尽量别把锁搞坏了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.4.1 安装ufw管理防火墙&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我没记错的话，科技lion的脚本是关闭了所有防火墙，并且没有下载这个ufw软件。&lt;/p&gt;
+&lt;p&gt;注意，以下的每一步操作之后，都建议新开一个会话测试一下是不是还能成功登录，不能的话就在老对话中进行修改，已经建立的老对话不会因为改了登录方式，密码，端口这些东西而断开。若是把自己锁在外面了也别慌，下面会介绍解决办法，就算是把锁搞坏了（sshd_config 改崩了，SSH 连接无法建立）也能解决，就是有亿点点麻烦，所以尽量别把锁搞坏了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.4.1 安装 ufw 管理防火墙&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我没记错的话，科技 lion 的脚本是关闭了所有防火墙，并且没有下载这个 ufw 软件。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -4377,8 +4378,8 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ufw status verbose
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;值得注意的是，用ufw来管理防火墙，那就不要安装iptables-persistent，这玩意安装之后会导致ufw被卸载，因为这两个软件都是管理防火墙的，会冲突，结果就是相互卸载，要是ufw被卸载了，自己允许登录端口开放的规则在下次登录就会失效，结果就是把自己锁外面了。&lt;/p&gt;
-&lt;p&gt;iptables-persistent的使用原理不太清楚，以后再研究吧，为了保证ufw的安全，我决定给它再上一层保护措施。这样就不会被自动卸载和更新了。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;值得注意的是，用 ufw 来管理防火墙，那就不要安装 iptables-persistent，这玩意安装之后会导致 ufw 被卸载，因为这两个软件都是管理防火墙的，会冲突，结果就是相互卸载，要是 ufw 被卸载了，自己允许登录端口开放的规则在下次登录就会失效，结果就是把自己锁外面了。&lt;/p&gt;
+&lt;p&gt;iptables-persistent 的使用原理不太清楚，以后再研究吧，为了保证 ufw 的安全，我决定给它再上一层保护措施。这样就不会被自动卸载和更新了。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4401,10 +4402,10 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-mark hold ufw
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;以后想搭建代理，或者其他什么活动，你就直接问DeepSeek使用ufw的什么命令开放什么对应的端口就行。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;以后想搭建代理，或者其他什么活动，你就直接问 DeepSeek 使用 ufw 的什么命令开放什么对应的端口就行。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.4.2 修改密码和登录端口&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我先改的登录密码，此时的系统只能通过密码登录，用科技lion脚本重装系统的时候太草率，设置密码太过简单，非常容易被暴力破解，虽然有fail2ban监视登录端口的异常尝试，但还是要自己多加注意，况且DeepSeek说我的fail2ban监视的还是默认端口22 ，并不是一条龙服务之后的5522 ，下面我也会优化这个问题。改密码直接输入passwd，然后系统就会让你输入两次密码，输入的时候没有任何显示，Linux就是这个样子，属于正常现象。确认回车即可。&lt;/p&gt;
-&lt;p&gt;修改自己的登录端口，同时要改SSH服务的配置文件sshd_config（就是我上面说的锁）和防火墙规则，前者是确保SSH服务监听这个端口，后者是保证这个端口是允许流量经过的。此时你的登录端口是5522 ，用 &lt;code&gt;sudo nano /etc/ssh/sshd_config&lt;/code&gt; 打开这个配置文件，划到最下面，找到Port 5522 ，在其前面加一个 # 号注释掉，然后再在下面添加一行 Port 9393，然后Ctrl+O，回车，Ctrl+X（保存，确认，退出）。&lt;/p&gt;
+&lt;p&gt;我先改的登录密码，此时的系统只能通过密码登录，用科技 lion 脚本重装系统的时候太草率，设置密码太过简单，非常容易被暴力破解，虽然有 fail2ban 监视登录端口的异常尝试，但还是要自己多加注意，况且 DeepSeek 说我的 fail2ban 监视的还是默认端口 22，并不是一条龙服务之后的 5522，下面我也会优化这个问题。改密码直接输入 passwd，然后系统就会让你输入两次密码，输入的时候没有任何显示，Linux 就是这个样子，属于正常现象。确认回车即可。&lt;/p&gt;
+&lt;p&gt;修改自己的登录端口，同时要改 SSH 服务的配置文件 sshd_config（就是我上面说的锁）和防火墙规则，前者是确保 SSH 服务监听这个端口，后者是保证这个端口是允许流量经过的。此时你的登录端口是 5522，用 &lt;code&gt;sudo nano /etc/ssh/sshd_config&lt;/code&gt; 打开这个配置文件，划到最下面，找到 Port 5522，在其前面加一个 # 号注释掉，然后再在下面添加一行 Port 9393，然后 Ctrl+O，回车，Ctrl+X（保存，确认，退出）。&lt;/p&gt;
 &lt;p&gt;然后配置防火墙：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -4422,9 +4423,9 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;![[1779075686023-41.png]]&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;sudo systemctl restart sshd&lt;/code&gt; 重启 SSH 服务让配置生效。&lt;/p&gt;
-&lt;p&gt;然后就能新建会话验证配置成功了没，填入IP和新改的端口，直接点击右下角的连接，会弹出输入用户名root，点确认之后是会让输入密码。若是不行，一般不会不行，就两个步骤，好好检查一下，有什么问题随时拷打DeepSeek。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.4.3 配置Fail2ban监视真正的登录端口&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;编辑或创建 /etc/fail2ban/jail.local，使用 &lt;code&gt;nano /etc/fail2ban/jail.local&lt;/code&gt;命令，将以下内容添加进去&lt;/p&gt;
+&lt;p&gt;然后就能新建会话验证配置成功了没，填入 IP 和新改的端口，直接点击右下角的连接，会弹出输入用户名 root，点确认之后是会让输入密码。若是不行，一般不会不行，就两个步骤，好好检查一下，有什么问题随时拷打 DeepSeek。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.4.3 配置 Fail2ban 监视真正的登录端口&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;编辑或创建 /etc/fail2ban/jail.local，使用 &lt;code&gt;nano /etc/fail2ban/jail.local&lt;/code&gt; 命令，将以下内容添加进去&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4458,10 +4459,10 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;grep -i port /etc/fail2ban/jail.local /etc/fail2ban/jail.d/* /etc/fail2ban/jail.conf 2&amp;gt;/dev/null
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;会输出一大堆的内容，在其中能够找到Port: 9393就行。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;会输出一大堆的内容，在其中能够找到 Port: 9393 就行。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.4.4 加密密钥登录和关闭密码登录&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;创建实例的时候获取的那一对密钥，先将私钥进行加密，在本地电脑PowerShell中输入 &lt;code&gt;ssh-keygen -p -f /c/Users/你的用户名/.ssh/你的私钥名字.key&lt;/code&gt;，一般来说密钥是保存在这个位置，创建实例的时候保存的密钥应该是在下载的默认位置，移动到这里来统一管理。运行完命令，会让你输入两遍密码，同样还是没有任何的现象。&lt;/p&gt;
-&lt;p&gt;然后将公钥（是上面加密私钥对应的公钥）导入到云端Linux服务器中，公钥内容就是用VSCode或者记事本打开公钥.pub，将里面的那串符文复制下来。&lt;/p&gt;
+&lt;p&gt;创建实例的时候获取的那一对密钥，先将私钥进行加密，在本地电脑 PowerShell 中输入 &lt;code&gt;ssh-keygen -p -f /c/Users/你的用户名/.ssh/你的私钥名字.key&lt;/code&gt;，一般来说密钥是保存在这个位置，创建实例的时候保存的密钥应该是在下载的默认位置，移动到这里来统一管理。运行完命令，会让你输入两遍密码，同样还是没有任何的现象。&lt;/p&gt;
+&lt;p&gt;然后将公钥（是上面加密私钥对应的公钥）导入到云端 Linux 服务器中，公钥内容就是用 VSCode 或者记事本打开公钥.pub，将里面的那串符文复制下来。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4486,15 +4487,15 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chmod 600 /root/.ssh/authorized_keys
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;然后就能新开会话用私钥在WindTerm上进行新对话验证了（上面介绍了私钥登录过程），这次登录它会弹出个窗口让你输入私钥密码。&lt;/p&gt;
-&lt;p&gt;关闭密码登录，防止被暴力破解，但多一种登录方式也有好处，这个看自己。还是修改锁，也就是那个sshd_config文件，用命令 &lt;code&gt;nano /etc/ssh/sshd_config&lt;/code&gt;，在里面找到PasswordAuthentication，它是白色的，发着光，还是挺明显的，大概在39行，将它后面的yes改成no。然后Ctrl+O，回车，Ctrl+X。接着还是重启SSH服务 &lt;code&gt;systemctl restart ssh&lt;/code&gt;。再开一个新对话，这次用账号和密码登录（上面介绍了登录步骤），你会发现登录报错了。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.4.5 Cloud Shell和控制台串行连接–解决被锁门外和锁坏了的情况。&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;然后就能新开会话用私钥在 WindTerm 上进行新对话验证了（上面介绍了私钥登录过程），这次登录它会弹出个窗口让你输入私钥密码。&lt;/p&gt;
+&lt;p&gt;关闭密码登录，防止被暴力破解，但多一种登录方式也有好处，这个看自己。还是修改锁，也就是那个 sshd_config 文件，用命令 &lt;code&gt;nano /etc/ssh/sshd_config&lt;/code&gt;，在里面找到 PasswordAuthentication，它是白色的，发着光，还是挺明显的，大概在 39 行，将它后面的 yes 改成 no。然后 Ctrl+O，回车，Ctrl+X。接着还是重启 SSH 服务 &lt;code&gt;systemctl restart ssh&lt;/code&gt;。再开一个新对话，这次用账号和密码登录（上面介绍了登录步骤），你会发现登录报错了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.4.5 Cloud Shell 和控制台串行连接–解决被锁门外和锁坏了的情况。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;若是改端口改错了，忘记放行防火墙，然后还把之前打开的老对话都关闭了，就可以用这个功能。&lt;/p&gt;
-&lt;p&gt;在实例的详情页，选择操作系统管理标签页，往下划，找到控制台连接，这里有Cloud Shell和本地连接。&lt;/p&gt;
+&lt;p&gt;在实例的详情页，选择操作系统管理标签页，往下划，找到控制台连接，这里有 Cloud Shell 和本地连接。&lt;/p&gt;
 &lt;p&gt;![[1779075686400-42.png]]&lt;/p&gt;
-&lt;p&gt;你若是有设置密码的话，可以直接使用Cloud Shell进行登录，即使你通过我上面介绍的配置，关闭了密码登录的功能，也能成功登录，因为上面关闭的密码登录不过是针对SSH登录而已，这里是控制台连接，是完全绕过的，只要你有设置一个非空的密码就行。点开之后，会在底下加载一个窗口出来，等它加载好，回车一下，输入账号名称，回车，然后输入密码，再回车，即可进入系统。下面介绍没设置密码，或者密码不记得了的情况。点开Cloud Shell旁边的创建本地连接，然后它会让你选择填入自己的密钥还是重新创建一份，根据自己的情况选择，我是将之前创建实例时就已经保存的那份公钥内容导入进来，然后点击创建。&lt;/p&gt;
+&lt;p&gt;你若是有设置密码的话，可以直接使用 Cloud Shell 进行登录，即使你通过我上面介绍的配置，关闭了密码登录的功能，也能成功登录，因为上面关闭的密码登录不过是针对 SSH 登录而已，这里是控制台连接，是完全绕过的，只要你有设置一个非空的密码就行。点开之后，会在底下加载一个窗口出来，等它加载好，回车一下，输入账号名称，回车，然后输入密码，再回车，即可进入系统。下面介绍没设置密码，或者密码不记得了的情况。点开 Cloud Shell 旁边的创建本地连接，然后它会让你选择填入自己的密钥还是重新创建一份，根据自己的情况选择，我是将之前创建实例时就已经保存的那份公钥内容导入进来，然后点击创建。&lt;/p&gt;
 &lt;p&gt;![[1779075687282-44.png]]&lt;/p&gt;
-&lt;p&gt;创建完成后，点开旁边的三个点，选择复制Linux/Mac 的串行控制台连接，如果你的密钥已经在GitBash的.ssh文件中配置好了，那就不用指定地址，但我相信用Windows的，ssh一般都放在自己的用户目录下，所以要改造一下刚才复制的串行控制台连接命令。否则会遇到&lt;code&gt;Permission denied (publickey)&lt;/code&gt; 错误。要在两处ssh后面各添加一个 &lt;code&gt;-i /私钥地址&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;创建完成后，点开旁边的三个点，选择复制 Linux/Mac 的串行控制台连接，如果你的密钥已经在 GitBash 的.ssh 文件中配置好了，那就不用指定地址，但我相信用 Windows 的，ssh 一般都放在自己的用户目录下，所以要改造一下刚才复制的串行控制台连接命令。否则会遇到 &lt;code&gt;Permission denied (publickey)&lt;/code&gt; 错误。要在两处 ssh 后面各添加一个 &lt;code&gt;-i /私钥地址&lt;/code&gt;。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4506,7 +4507,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;第一个私钥地址对应实例操作系统中添加的公钥，第二个私钥地址对应刚才创建的控制台连接添加的公钥，我都用的同一个，所以一会我要输入两遍密码。&lt;/p&gt;
-&lt;p&gt;也不知道是甲骨文云的问题，还是我的这个密钥的问题，用的居然是ssh-rsa 算法，这个密钥就是在创建实例的时候创建的，所以归根结底还是甲骨文的问题。这个算法过时了，在高级的GitBash中是被默认禁用的，所以运行上面添加了地址之后的命令还是会报错 &lt;code&gt;Unable to negotiate with UNKNOWN port 65535: no matching host key type found. Their offer: ssh-rsa&lt;/code&gt;，此时还需要改一下命令。需要在两个私钥地址前面都各自加上 &lt;code&gt;-o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedKeyTypes=+ssh-rsa&lt;/code&gt; 。也就是在ssh和-i之间添加这两个玩意。&lt;/p&gt;
+&lt;p&gt;也不知道是甲骨文云的问题，还是我的这个密钥的问题，用的居然是 ssh-rsa 算法，这个密钥就是在创建实例的时候创建的，所以归根结底还是甲骨文的问题。这个算法过时了，在高级的 GitBash 中是被默认禁用的，所以运行上面添加了地址之后的命令还是会报错 &lt;code&gt;Unable to negotiate with UNKNOWN port 65535: no matching host key type found. Their offer: ssh-rsa&lt;/code&gt;，此时还需要改一下命令。需要在两个私钥地址前面都各自加上 &lt;code&gt;-o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedKeyTypes=+ssh-rsa&lt;/code&gt;。也就是在 ssh 和 -i 之间添加这两个玩意。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4515,10 +4516,10 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedKeyTypes=+ssh-rsa -i /c/Users/你的用户名/.ssh/私钥名字.key -o ProxyCommand=&amp;#39;ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedKeyTypes=+ssh-rsa -i /c/Users/你的用户名/.ssh/私钥名字.key -W %h:%p -p 443 xxxx---xxxxx---xxxxx---xxxx----xxxxx---xxxxxx
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;改好之后就能在GitBash中执行了，你说没有GitBash？怎么可能，这不是上户口的时候送的嘛，去跟家里长辈问一下，肯定是有的。然后输入两遍私钥密码之后会进入一个空行，再输入一下回车就进入系统了。上面配置好的命令可以保存下来，不用再到使用的时候配一遍了。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;改好之后就能在 GitBash 中执行了，你说没有 GitBash？怎么可能，这不是上户口的时候送的嘛，去跟家里长辈问一下，肯定是有的。然后输入两遍私钥密码之后会进入一个空行，再输入一下回车就进入系统了。上面配置好的命令可以保存下来，不用再到使用的时候配一遍了。&lt;/p&gt;
 &lt;p&gt;以上两个方法都是被锁门外的解决情况，前提是本来就有钥匙，要么是账号和密码，要么是密钥，不能两个都没有。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.4.6 实例炸了&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;要是直接就给整崩了，新号最好的办法就是重装系统，通过更换引导卷实现，或者就是小机救老机，原理就是把老机整崩的磁盘拆下来，挂到小机身上去，然后登录小机，在上面修复被自己配炸的文件。需要申请一台AMD，新的账号还是不要申请那么多机器先，养养号，这个就先不测试了，推荐几个相关资料。&lt;/p&gt;
+&lt;p&gt;要是直接就给整崩了，新号最好的办法就是重装系统，通过更换引导卷实现，或者就是小机救老机，原理就是把老机整崩的磁盘拆下来，挂到小机身上去，然后登录小机，在上面修复被自己配炸的文件。需要申请一台 AMD，新的账号还是不要申请那么多机器先，养养号，这个就先不测试了，推荐几个相关资料。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://telegra.ph/oracleddindex-04-08&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;甲骨文实例dd/救砖/vnc/教程 – Telegraph&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cnboy.org/2961&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -4534,10 +4535,10 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>使用Oracle免费服务器部署CLIProxyAPI并配置域名，小白也能看懂</title>
         <link>https://jenboy.github.io/p/%E4%BD%BF%E7%94%A8oracle%E5%85%8D%E8%B4%B9%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2cliproxyapi%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82/</link>
-        <pubDate>Sat, 20 Jun 2026 06:54:08 +0000</pubDate>
+        <pubDate>Sat, 20 Jun 2026 07:13:47 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E4%BD%BF%E7%94%A8oracle%E5%85%8D%E8%B4%B9%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2cliproxyapi%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82/</guid>
-        <description>&lt;h1 id=&#34;1-使用oracle免费服务器部署cliproxyapi并配置域名小白也能看懂&#34;&gt;1 使用Oracle免费服务器部署CLIProxyAPI并配置域名，小白也能看懂
+        <description>&lt;h1 id=&#34;1-使用-oracle-免费服务器部署-cliproxyapi-并配置域名小白也能看懂&#34;&gt;1 使用 Oracle 免费服务器部署 CLIProxyAPI 并配置域名，小白也能看懂
 &lt;/h1&gt;&lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;原始链接&lt;/strong&gt;: &lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/1663220&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -4549,33 +4550,33 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;li&gt;&lt;strong&gt;导出时间&lt;/strong&gt;: 2026/5/18 11:39:58&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;楼层数&lt;/strong&gt;: 1&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
-&lt;p&gt;最近刷到Codex号池，于是乎利用之前注册的Oracle自己搭建一个。&lt;/p&gt;
+&lt;p&gt;最近刷到 Codex 号池，于是乎利用之前注册的 Oracle 自己搭建一个。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;写在前面&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;很多问题都是没仔细看帖子导致的，比如iptables和防火墙放开端口问题，帖子都有写，看不明白再去问ai。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;使用Oracle免费服务器部署CLIProxyAPI&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;注册Oracle&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;网络上注册Oracle免费套餐的教程有很多，不再赘述。&lt;/p&gt;
+&lt;p&gt;很多问题都是没仔细看帖子导致的，比如 iptables 和防火墙放开端口问题，帖子都有写，看不明白再去问 ai。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;使用 Oracle 免费服务器部署 CLIProxyAPI&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注册 Oracle&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;网络上注册 Oracle 免费套餐的教程有很多，不再赘述。&lt;/p&gt;
 &lt;p&gt;我之前的帖子：&lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/1554915&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Oracle似乎是注册成功了&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;创建实例&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在创建实例之前，先去创建子网，当然你也可以在创建实例时创建。在&lt;a class=&#34;link&#34; href=&#34;https://cloud.oracle.com/networking/vcns&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;虚拟云网络&lt;/a&gt;页面，选择创建VCN。&lt;/p&gt;
-&lt;p&gt;名称：随便写，假设为vcn0&lt;/p&gt;
+&lt;p&gt;在创建实例之前，先去创建子网，当然你也可以在创建实例时创建。在 &lt;a class=&#34;link&#34; href=&#34;https://cloud.oracle.com/networking/vcns&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;虚拟云网络&lt;/a&gt; 页面，选择创建 VCN。&lt;/p&gt;
+&lt;p&gt;名称：随便写，假设为 vcn0&lt;/p&gt;
 &lt;p&gt;IPv4 CIDR：默认即可，10.0.0.0/16&lt;/p&gt;
 &lt;p&gt;其他均可以自动配置。&lt;/p&gt;
-&lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;https://cloud.oracle.com/compute/instances?region=ap-chuncheon-1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;实例&lt;/a&gt;页面创建实例，因为开不出arm的机器，直接选免费的x86即可，应该是1c1g的配置。&lt;/p&gt;
-&lt;p&gt;镜像选择Ubuntu22.04即可。&lt;/p&gt;
-&lt;p&gt;在网络部分，选择你刚刚创建的子网，我这里是vcn0，同时勾选公网IP。&lt;/p&gt;
-&lt;p&gt;在存储部分，你可以把性能拉满，只要在账户免费的200g总容量内，就不会收钱。你可以保持默认大小，或者自己增加容量。&lt;/p&gt;
-&lt;p&gt;你可以提前创建好ssh的public key，在创建阶段上传，或是选择其他认证方式。&lt;/p&gt;
+&lt;p&gt;在 &lt;a class=&#34;link&#34; href=&#34;https://cloud.oracle.com/compute/instances?region=ap-chuncheon-1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;实例&lt;/a&gt; 页面创建实例，因为开不出 arm 的机器，直接选免费的 x86 即可，应该是 1c1g 的配置。&lt;/p&gt;
+&lt;p&gt;镜像选择 Ubuntu22.04 即可。&lt;/p&gt;
+&lt;p&gt;在网络部分，选择你刚刚创建的子网，我这里是 vcn0，同时勾选公网 IP。&lt;/p&gt;
+&lt;p&gt;在存储部分，你可以把性能拉满，只要在账户免费的 200g 总容量内，就不会收钱。你可以保持默认大小，或者自己增加容量。&lt;/p&gt;
+&lt;p&gt;你可以提前创建好 ssh 的 public key，在创建阶段上传，或是选择其他认证方式。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;连接实例&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;你如果尝试直接ssh oracle服务器，会发现无法连接。首先你要去&lt;a class=&#34;link&#34; href=&#34;https://cloud.oracle.com/networking/vcns&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;虚拟云网络&lt;/a&gt;页面，点击你之前创建的网络，在网关选项卡下，添加一个Internet网关，不然你的服务器是没办法与外网通信的。默认路由表会自动将流量发送到你刚刚创建的网关。&lt;/p&gt;
-&lt;p&gt;Oracle默认放开了22端口，此时可以尝试用你的认证方式进行ssh连接，ubuntu系统的用户名就是ubuntu。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;部署CLIProxyAPI&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;检测IP&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;首先可以用下面的脚本测试一下ChatGPT等平台等解锁情况：&lt;/p&gt;
+&lt;p&gt;你如果尝试直接 ssh oracle 服务器，会发现无法连接。首先你要去 &lt;a class=&#34;link&#34; href=&#34;https://cloud.oracle.com/networking/vcns&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;虚拟云网络&lt;/a&gt; 页面，点击你之前创建的网络，在网关选项卡下，添加一个 Internet 网关，不然你的服务器是没办法与外网通信的。默认路由表会自动将流量发送到你刚刚创建的网关。&lt;/p&gt;
+&lt;p&gt;Oracle 默认放开了 22 端口，此时可以尝试用你的认证方式进行 ssh 连接，ubuntu 系统的用户名就是 ubuntu。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;部署 CLIProxyAPI&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;检测 IP&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;首先可以用下面的脚本测试一下 ChatGPT 等平台等解锁情况：&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/xykt/IPQuality&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/xykt/IPQuality&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;不会用的直接执行下面的命令：&lt;/p&gt;
@@ -4589,10 +4590,10 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bash &amp;lt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;curl -Ls https://IP.Check.Place&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; -f
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;如果ChatGPT显示解锁，即可继续操作，否则需要更换服务器或配置代理。检测结果示例如下：&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;如果 ChatGPT 显示解锁，即可继续操作，否则需要更换服务器或配置代理。检测结果示例如下：&lt;/p&gt;
 &lt;p&gt;![[1779075592489-0.svg]]&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;开始部署&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;然后根据下面的教程，在服务器上部署CLIProxyAPI。&lt;/p&gt;
+&lt;p&gt;然后根据下面的教程，在服务器上部署 CLIProxyAPI。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://help.router-for.me/cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;CLIProxyAPI&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;你可以直接使用安装脚本：&lt;/p&gt;
@@ -4613,7 +4614,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./cli-proxy-api --config /path/to/your/config.yaml
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;我们需要修改配置文件的&lt;code&gt;remote-management.allow-remote&lt;/code&gt;来允许远程访问，如果你在自己的电脑上部署就不需要这一步。同时，设置管理密钥，写明文即可，会自动转换成哈希。比如我这里写123456。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;我们需要修改配置文件的 &lt;code&gt;remote-management.allow-remote&lt;/code&gt; 来允许远程访问，如果你在自己的电脑上部署就不需要这一步。同时，设置管理密钥，写明文即可，会自动转换成哈希。比如我这里写 123456。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -4670,7 +4671,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nn&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;把service文件安装到systemd&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;把 service 文件安装到 systemd&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4683,7 +4684,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo systemctl daemon-reload
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;检查它是否被systemd识别：&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;检查它是否被 systemd 识别：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4692,7 +4693,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl status cliproxyapi.service--no-pager
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;启动+开机自启&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;启动 + 开机自启&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4712,14 +4713,14 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo journalctl -u cliproxyapi.service -e --no-pager
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;公网IP访问&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如果你没有域名，可直接使用公网ip访问，但不建议。首先要放开需要的端口，配置文件中默认是&lt;code&gt;8317&lt;/code&gt; 。在&lt;a class=&#34;link&#34; href=&#34;https://cloud.oracle.com/networking/vcns&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;虚拟云网络&lt;/a&gt;页面，选择你的网络，在安全选项卡下，点击默认创建的安全列表，我这里是&lt;code&gt;Default Security List for vcn0&lt;/code&gt; 。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;公网 IP 访问&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果你没有域名，可直接使用公网 ip 访问，但不建议。首先要放开需要的端口，配置文件中默认是 &lt;code&gt;8317&lt;/code&gt;。在&lt;a class=&#34;link&#34; href=&#34;https://cloud.oracle.com/networking/vcns&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;虚拟云网络&lt;/a&gt; 页面，选择你的网络，在安全选项卡下，点击默认创建的安全列表，我这里是&lt;code&gt;Default Security List for vcn0&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;![[1779075593154-1.jpeg]]&lt;/p&gt;
 &lt;p&gt;![[1779075595735-3.jpeg]]&lt;/p&gt;
-&lt;p&gt;点击添加入站规则，源填写&lt;code&gt;0.0.0.0/0&lt;/code&gt; ,协议选择&lt;code&gt;TCP&lt;/code&gt;，源端口范围留空，目的地端口范围选择你要放行的端口，比如&lt;code&gt;8317&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;点击添加入站规则，源填写 &lt;code&gt;0.0.0.0/0&lt;/code&gt;,协议选择&lt;code&gt;TCP&lt;/code&gt;，源端口范围留空，目的地端口范围选择你要放行的端口，比如&lt;code&gt;8317&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;![[1779075597613-5.png]]&lt;/p&gt;
-&lt;p&gt;在Oracle配置完成后，我们还需要在服务器上放行端口。使用&lt;code&gt;iptables&lt;/code&gt; 命令操作。使用下面命令放行&lt;code&gt;8317&lt;/code&gt; 端口。&lt;/p&gt;
+&lt;p&gt;在 Oracle 配置完成后，我们还需要在服务器上放行端口。使用 &lt;code&gt;iptables&lt;/code&gt; 命令操作。使用下面命令放行&lt;code&gt;8317&lt;/code&gt; 端口。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4728,7 +4729,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo iptables -A INPUT -p tcp --dport &lt;span class=&#34;m&#34;&gt;8317&lt;/span&gt; -j ACCEPT
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;如果不生效，可以用下面命令来查看完整的&lt;code&gt;iptable&lt;/code&gt; 。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;如果不生效，可以用下面命令来查看完整的 &lt;code&gt;iptable&lt;/code&gt;。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4770,7 +4771,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;p&gt;&lt;code&gt;p&lt;/code&gt;：显示进程&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;配合&lt;code&gt;grep&lt;/code&gt; 来筛选端口，比如查&lt;code&gt;8317&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;配合 &lt;code&gt;grep&lt;/code&gt; 来筛选端口，比如查&lt;code&gt;8317&lt;/code&gt;。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4780,7 +4781,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;strong&gt;nft/ufw&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如果还是不能访问，就要检查nft/ufw问题。可以用下面的代码来查看规则集。&lt;/p&gt;
+&lt;p&gt;如果还是不能访问，就要检查 nft/ufw 问题。可以用下面的代码来查看规则集。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4789,7 +4790,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo nft list ruleset
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;INPUT链顺序是按规则写入顺序匹配的。如果有下面这样的规则：&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;INPUT 链顺序是按规则写入顺序匹配的。如果有下面这样的规则：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4811,7 +4812,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;如果我们的放行规则在这样的规则后面，就不会生效，没走到我们的规则，数据包已经被reject了。我们可以删掉旧reject。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;如果我们的放行规则在这样的规则后面，就不会生效，没走到我们的规则，数据包已经被 reject 了。我们可以删掉旧 reject。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4820,7 +4821,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo nft delete rule ip filter INPUT handle9
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;然后在最后插入一条新的reject。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;然后在最后插入一条新的 reject。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -4831,8 +4832,8 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;这样顺序就正确了。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;域名访问&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我使用Cloudflare大善人的托管服务，配合Let’s Encrypt实现SSL证书自动续期。假设你的域名为&lt;code&gt;bbb.aaa.com&lt;/code&gt; 。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;0）安装nginx&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我使用 Cloudflare 大善人的托管服务，配合 Let’s Encrypt 实现 SSL 证书自动续期。假设你的域名为 &lt;code&gt;bbb.aaa.com&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;0）安装 nginx&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -5076,12 +5077,12 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;看到成功即可。&lt;/p&gt;
-&lt;p&gt;最后，在Cloudflare中选择&lt;strong&gt;Full (strict)&lt;strong&gt;模式&lt;/strong&gt;，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;/strong&gt;（即使源站没开80也没关系，CF边缘重定向）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在服务器安全组/iptables需要放行：443/tcp，参考前文公网IP配置部分。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在服务器安全组/iptables需要放行：443/tcp，参考前文公网IP配置部分。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在服务器安全组/iptables需要放行：443/tcp，参考前文公网IP配置部分。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;7）为CLIProxyApi启用TLS&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;可以在webui中配置，证书文件路径和私钥文件路径都是我们之前生成的。比如：&lt;/p&gt;
+&lt;p&gt;最后，在 Cloudflare 中选择&lt;strong&gt;Full (strict)&lt;strong&gt;模式&lt;/strong&gt;，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;/strong&gt;o810}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;wct4}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;/strong&gt;i9jk}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;79mfeuzjkp0}Always Use HTTPS&lt;/strong&gt;8pak}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;m61c9yjsw58}Always Use HTTPS&lt;/strong&gt;jrao}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;66qpxu59c50}Always Use HTTPS&lt;/strong&gt;（即使源站没开 80 也没关系，CF 边缘重定向）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在服务器安全组/iptables 需要放行：443/tcp，参考前文公网 IP 配置部分。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在服务器安全组/iptables 需要放行：443/tcp，参考前文公网 IP 配置部分。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在服务器安全组/iptables 需要放行：443/tcp，参考前文公网 IP 配置部分。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;7）为 CLIProxyApi 启用 TLS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;可以在 webui 中配置，证书文件路径和私钥文件路径都是我们之前生成的。比如：&lt;/p&gt;
 &lt;p&gt;证书文件路径：&lt;code&gt;/etc/letsencrypt/live/bbb.aaa.com/fullchain.pem&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;私钥文件路径：&lt;code&gt;/etc/letsencrypt/live/bbb.aaa.comprivkey.pem&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;或在配置文件中直接修改：&lt;/p&gt;
@@ -5136,12 +5137,12 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;strong&gt;添加账户&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;可以使用WebUI添加账户，或者使用接口添加，见：&lt;/p&gt;
+&lt;p&gt;可以使用 WebUI 添加账户，或者使用接口添加，见：&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://help.router-for.me/cn/management/webui.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Web UI | CLIProxyAPI&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;使用&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在Codex中使用&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;启动CLIProxyAPI服务器, 修改 &lt;code&gt;~/.codex/config.toml&lt;/code&gt; 和 &lt;code&gt;~/.codex/auth.json&lt;/code&gt; 文件。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在 Codex 中使用&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;启动 CLIProxyAPI 服务器, 修改 &lt;code&gt;~/.codex/config.toml&lt;/code&gt; 和 &lt;code&gt;~/.codex/auth.json&lt;/code&gt; 文件。&lt;/p&gt;
 &lt;p&gt;config.toml:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5210,8 +5211,8 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;strong&gt;在Cherry Studio中使用&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;见官方文档，可以在CLIProxyApi的管理界面查看支持的模型。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;在 Cherry Studio 中使用&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;见官方文档，可以在 CLIProxyApi 的管理界面查看支持的模型。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.cherry-ai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;项目简介 | Cherry Studio&lt;/a&gt;&lt;/p&gt;
 </description>
