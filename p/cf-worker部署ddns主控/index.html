@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="1 CF Worker 白嫖部署极简的 DDNS 主控 原始链接: https://linux.do/t/topic/617539 主题 ID: 617539 楼主: @chunkBurst 分类: 开发调优 标签: VPS, 计算机网络, Cloudflare, DNS, linuxdo 导出时间: 2026/5/19 15:19:18 楼层数: 1 Hello~\nCCB 带来了一个全新的迷你 DDNS 工具，帮助佬们快速白嫖部署 DDNS Worker~\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" 原始链接: https://linux.do/t/topic/617539 主题 ID: 617539 楼主: @chunkBurst 分类: 开发调优 标签: VPS, 计算机网络, Cloudflare, DNS, linuxdo 导出时间: 2026/5/19 15:19:18 楼层数: 1 Hello~\nCCB 带来了一个全新的迷你 DDNS 工具，帮助佬们快速白嫖部署 DDNS Worker~\n">
 <title>CF Worker部署DDNS主控</title>
 
 <link rel='canonical' href='https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/'>
 
 <link rel="stylesheet" href="/scss/style.min.6998e4e648ca13c26692fd732a596048e487a90378e5ec1f10b8a5899f478b60.css"><meta property='og:title' content="CF Worker部署DDNS主控">
-<meta property='og:description' content="1 CF Worker 白嫖部署极简的 DDNS 主控 原始链接: https://linux.do/t/topic/617539 主题 ID: 617539 楼主: @chunkBurst 分类: 开发调优 标签: VPS, 计算机网络, Cloudflare, DNS, linuxdo 导出时间: 2026/5/19 15:19:18 楼层数: 1 Hello~\nCCB 带来了一个全新的迷你 DDNS 工具，帮助佬们快速白嫖部署 DDNS Worker~\n">
+<meta property='og:description' content=" 原始链接: https://linux.do/t/topic/617539 主题 ID: 617539 楼主: @chunkBurst 分类: 开发调优 标签: VPS, 计算机网络, Cloudflare, DNS, linuxdo 导出时间: 2026/5/19 15:19:18 楼层数: 1 Hello~\nCCB 带来了一个全新的迷你 DDNS 工具，帮助佬们快速白嫖部署 DDNS Worker~\n">
 <meta property='og:url' content='https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/'>
 <meta property='og:site_name' content='Xao的碎碎念'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Cloudflare' /><meta property='article:tag' content='LinuxDo' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='搬运' /><meta property='article:published_time' content='2026-06-20T09:27:23&#43;00:00'/><meta property='article:modified_time' content='2026-06-20T17:27:04&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Cloudflare' /><meta property='article:tag' content='LinuxDo' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='搬运' /><meta property='article:published_time' content='2026-06-21T01:32:35&#43;00:00'/><meta property='article:modified_time' content='2026-06-21T09:32:17&#43;08:00'/>
 <meta name="twitter:title" content="CF Worker部署DDNS主控">
-<meta name="twitter:description" content="1 CF Worker 白嫖部署极简的 DDNS 主控 原始链接: https://linux.do/t/topic/617539 主题 ID: 617539 楼主: @chunkBurst 分类: 开发调优 标签: VPS, 计算机网络, Cloudflare, DNS, linuxdo 导出时间: 2026/5/19 15:19:18 楼层数: 1 Hello~\nCCB 带来了一个全新的迷你 DDNS 工具，帮助佬们快速白嫖部署 DDNS Worker~\n">
+<meta name="twitter:description" content=" 原始链接: https://linux.do/t/topic/617539 主题 ID: 617539 楼主: @chunkBurst 分类: 开发调优 标签: VPS, 计算机网络, Cloudflare, DNS, linuxdo 导出时间: 2026/5/19 15:19:18 楼层数: 1 Hello~\nCCB 带来了一个全新的迷你 DDNS 工具，帮助佬们快速白嫖部署 DDNS Worker~\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -313,7 +313,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published" datetime='2026-06-20T09:27:23Z'>2026-06-20</time>
+                <time class="article-time--published" datetime='2026-06-21T01:32:35Z'>2026-06-21</time>
             </div>
         
 
@@ -343,8 +343,7 @@
     <section class="article-content">
     
     
-    <h1 id="1-cf-worker-白嫖部署极简的-ddns-主控">1 CF Worker 白嫖部署极简的 DDNS 主控
-</h1><blockquote class="alert alert-info">
+    <blockquote class="alert alert-info">
     <ul>
 <li><strong>原始链接</strong>: <a class="link" href="https://linux.do/t/topic/617539"  target="_blank" rel="noopener"
     >https://linux.do/t/topic/617539</a></li>
@@ -380,12 +379,16 @@
 <p>兼容性强，没有多余的包/多余的环境，只要能跑 shell 脚本，就能用~（哪怕你只剩下了<strong>1MB</strong>的空间）</p>
 </li>
 </ul>
-<p><img src="/pics/CF%20Worker%e9%83%a8%e7%bd%b2DDNS%e4%b8%bb%e6%8e%a7/file-20260620165608685.png"
-	
-	
-	
+<p><img src="/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749674.png"
+	width="296"
+	height="141"
+	srcset="/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749674_hu_ed0cdb0529ca7a97.png 480w, /p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749674_hu_bb2d7f37ee44a167.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="209"
+		data-flex-basis="503px"
 	
 ></p>
 <ul>
@@ -408,20 +411,28 @@
 </li>
 </ul>
 <p>打开 CF 主界面</p>
-<p><img src="/pics/CF%20Worker%e9%83%a8%e7%bd%b2DDNS%e4%b8%bb%e6%8e%a7/file-20260620165608698.png"
-	
-	
-	
+<p><img src="/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749675.png"
+	width="517"
+	height="314"
+	srcset="/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749675_hu_6dec5414505f07ec.png 480w, /p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749675_hu_55e51e06dfe9763d.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="164"
+		data-flex-basis="395px"
 	
 ></p>
-<p><img src="/pics/CF%20Worker%e9%83%a8%e7%bd%b2DDNS%e4%b8%bb%e6%8e%a7/file-20260620165608700.png"
-	
-	
-	
+<p><img src="/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749676.png"
+	width="447"
+	height="360"
+	srcset="/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749676_hu_90369c28c0d80bda.png 480w, /p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749676_hu_3e764709fed63a68.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="124"
+		data-flex-basis="298px"
 	
 ></p>
 <p>点击复制 <code>CF Global Key</code></p>
@@ -429,12 +440,16 @@
 <ul>
 <li>打开 CF-Worker，点击创建</li>
 </ul>
-<p><img src="/pics/CF%20Worker%e9%83%a8%e7%bd%b2DDNS%e4%b8%bb%e6%8e%a7/file-20260620165608702.png"
-	
-	
-	
+<p><img src="/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749677.png"
+	width="690"
+	height="493"
+	srcset="/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749677_hu_8b0cf066577fd2fc.png 480w, /p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749677_hu_f6ad1b4553adcf7c.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="139"
+		data-flex-basis="335px"
 	
 ></p>
 <p>随便命名后进行<strong>部署</strong>，然后点击编辑代码</p>
@@ -446,12 +461,16 @@
 <p>返回 Worker 的<strong>设置</strong>界面</p>
 </li>
 </ul>
-<p><img src="/pics/CF%20Worker%e9%83%a8%e7%bd%b2DDNS%e4%b8%bb%e6%8e%a7/file-20260620165608703.png"
-	
-	
-	
+<p><img src="/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749678.png"
+	width="690"
+	height="121"
+	srcset="/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749678_hu_c2e9e42400d25bfa.png 480w, /p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749678_hu_cb4effa5f44d72cd.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="570"
+		data-flex-basis="1368px"
 	
 ></p>
 <p>类型选择：Secert（密钥）</p>
@@ -513,7 +532,7 @@
 
 
         <span>
-            最后更新于 2026-06-20 17:27
+            最后更新于 2026-06-21 09:32
         </span>
     </section></footer>
 

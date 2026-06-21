@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="1 1【超详细】手机搭建服务器 · 第 三 期 前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期\n【超详细】手机搭建服务器 · 第 二 期\n前言\n第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期\n【超详细】手机搭建服务器 · 第 二 期\n前言\n第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
 <title>【手机搭建服务器】· 第 三 期</title>
 
 <link rel='canonical' href='https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/'>
 
 <link rel="stylesheet" href="/scss/style.min.6998e4e648ca13c26692fd732a596048e487a90378e5ec1f10b8a5899f478b60.css"><meta property='og:title' content="【手机搭建服务器】· 第 三 期">
-<meta property='og:description' content="1 1【超详细】手机搭建服务器 · 第 三 期 前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期\n【超详细】手机搭建服务器 · 第 二 期\n前言\n第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
+<meta property='og:description' content="前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期\n【超详细】手机搭建服务器 · 第 二 期\n前言\n第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
 <meta property='og:url' content='https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/'>
 <meta property='og:site_name' content='Xao的碎碎念'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='LinuxDo' /><meta property='article:tag' content='搬运' /><meta property='article:published_time' content='2026-06-20T09:27:23&#43;00:00'/><meta property='article:modified_time' content='2026-06-20T17:27:04&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='LinuxDo' /><meta property='article:tag' content='搬运' /><meta property='article:published_time' content='2026-06-21T01:32:35&#43;00:00'/><meta property='article:modified_time' content='2026-06-21T09:32:17&#43;08:00'/>
 <meta name="twitter:title" content="【手机搭建服务器】· 第 三 期">
-<meta name="twitter:description" content="1 1【超详细】手机搭建服务器 · 第 三 期 前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期\n【超详细】手机搭建服务器 · 第 二 期\n前言\n第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
+<meta name="twitter:description" content="前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期\n【超详细】手机搭建服务器 · 第 二 期\n前言\n第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -302,23 +302,11 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#11-2-自动打开-wi-fi">1.1 2. 自动打开 Wi-Fi</a></li>
-    <li><a href="#12-3-wi-fi-列表和优先级">1.2 3. Wi-Fi 列表和优先级</a></li>
-    <li><a href="#13-4-已保存-wi-fi-和新-wi-fi-的处理">1.3 4. 已保存 Wi-Fi 和新 Wi-Fi 的处理</a></li>
-    <li><a href="#14-5-不要频繁扫描和切换">1.4 5. 不要频繁扫描和切换</a></li>
-    <li><a href="#15-6-wi-fi-是否连接成功的判断">1.5 6. Wi-Fi 是否连接成功的判断</a></li>
-    <li><a href="#16-7-日志要求">1.6 7. 日志要求</a></li>
-    <li><a href="#17-8-日志中的-wi-fi-名称和隐私">1.7 8. 日志中的 Wi-Fi 名称和隐私</a></li>
-    <li><a href="#18-9-防止重复运行">1.8 9. 防止重复运行</a></li>
-    <li><a href="#19-10-守护循环">1.9 10. 守护循环</a></li>
-  </ol>
-
-  <ol>
-    <li><a href="#31-第一部分设计说明">3.1 第一部分：设计说明</a></li>
-    <li><a href="#32-第二部分目录结构">3.2 第二部分：目录结构</a></li>
-    <li><a href="#33-第三部分magisk-启动器脚本">3.3 第三部分：Magisk 启动器脚本</a></li>
-    <li><a href="#34-第四部分wi-fi-守护脚本">3.4 第四部分：Wi-Fi 守护脚本</a></li>
-    <li><a href="#35-第五部分安装和测试命令">3.5 第五部分：安装和测试命令</a></li>
+    <li><a href="#111-第一部分设计说明">11.1 第一部分：设计说明</a></li>
+    <li><a href="#112-第二部分目录结构">11.2 第二部分：目录结构</a></li>
+    <li><a href="#113-第三部分magisk-启动器脚本">11.3 第三部分：Magisk 启动器脚本</a></li>
+    <li><a href="#114-第四部分wi-fi-守护脚本">11.4 第四部分：Wi-Fi 守护脚本</a></li>
+    <li><a href="#115-第五部分安装和测试命令">11.5 第五部分：安装和测试命令</a></li>
   </ol>
 </nav>
         </div>
@@ -360,7 +348,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published" datetime='2026-06-20T09:27:23Z'>2026-06-20</time>
+                <time class="article-time--published" datetime='2026-06-21T01:32:35Z'>2026-06-21</time>
             </div>
         
 
@@ -390,8 +378,7 @@
     <section class="article-content">
     
     
-    <h1 id="1-1超详细手机搭建服务器--第-三-期">1 1【超详细】手机搭建服务器 · 第 三 期
-</h1><p><strong>前两期回顾：</strong></p>
+    <p><strong>前两期回顾：</strong></p>
 <p><a class="link" href="https://linux.do/t/topic/2157272"  target="_blank" rel="noopener"
     >【超详细】手机搭建服务器 · 第 一 期</a></p>
 <p><a class="link" href="https://linux.do/t/topic/2177558"  target="_blank" rel="noopener"
@@ -480,28 +467,40 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>1.3 给脚本设置权限</strong></p>
-<p><img src="/pics/%e3%80%90%e6%89%8b%e6%9c%ba%e6%90%ad%e5%bb%ba%e6%9c%8d%e5%8a%a1%e5%99%a8%e3%80%91%20%c2%b7%20%e7%ac%ac%20%e4%b8%89%20%e6%9c%9f/1779075005464-0.png"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907355.png"
+	width="184"
+	height="250"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907355_hu_e195fff08c05495f.png 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907355_hu_7cec2c8703fba6df.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="73"
+		data-flex-basis="176px"
 	
 ></p>
-<p><img src="/pics/%e3%80%90%e6%89%8b%e6%9c%ba%e6%90%ad%e5%bb%ba%e6%9c%8d%e5%8a%a1%e5%99%a8%e3%80%91%20%c2%b7%20%e7%ac%ac%20%e4%b8%89%20%e6%9c%9f/1779075006497-2.jpeg"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907357.jpeg"
+	width="155"
+	height="250"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907357_hu_22d91a62080d7d6b.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907357_hu_2571bdd2ca12d1b4.jpeg 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="62"
+		data-flex-basis="148px"
 	
 ></p>
-<p><img src="/pics/%e3%80%90%e6%89%8b%e6%9c%ba%e6%90%ad%e5%bb%ba%e6%9c%8d%e5%8a%a1%e5%99%a8%e3%80%91%20%c2%b7%20%e7%ac%ac%20%e4%b8%89%20%e6%9c%9f/1779075007041-4.png"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907368.png"
+	width="143"
+	height="250"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907368_hu_ab3e7a3406591d77.png 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907368_hu_10f0bb9632a8c9d6.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="57"
+		data-flex-basis="137px"
 	
 ></p>
 <p><strong>2.新建 wifi 核心脚本</strong></p>
@@ -2027,8 +2026,8 @@
 </div>
 </div><p>或者你认为更合理的目录也可以，但请你说明为什么这样设计。</p>
 <hr>
-<h2 id="11-2-自动打开-wi-fi">1.1 2. 自动打开 Wi-Fi
-</h2><p>脚本启动后，需要检查 Wi-Fi 开关状态。</p>
+<h1 id="1-2-自动打开-wi-fi">1 2. 自动打开 Wi-Fi
+</h1><p>脚本启动后，需要检查 Wi-Fi 开关状态。</p>
 <p>如果 Wi-Fi 是关闭状态，就自动打开 Wi-Fi。</p>
 <p>如果 Wi-Fi 已经打开，就不要重复操作。</p>
 <p>注意：
@@ -2046,8 +2045,8 @@
 <p>然后根据兼容性和稳定性，选择更适合 Magisk Root 环境的实现方式。</p>
 <p>如果某些命令在部分系统上可能不可用，请在脚本里做好兼容、兜底和日志记录，而不是让脚本直接崩溃。</p>
 <hr>
-<h2 id="12-3-wi-fi-列表和优先级">1.2 3. Wi-Fi 列表和优先级
-</h2><p>我希望脚本支持提前配置一个 Wi-Fi 列表。</p>
+<h1 id="2-3-wi-fi-列表和优先级">2 3. Wi-Fi 列表和优先级
+</h1><p>我希望脚本支持提前配置一个 Wi-Fi 列表。</p>
 <p>比如：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2066,8 +2065,8 @@
 <p>如果当前 Wi-Fi 可用，就不要频繁切换，避免影响 SSH、网页服务、IPv6、DDNS 等后续服务。</p>
 <p>只有当当前 Wi-Fi 不可用、断开、没有拿到 IP，或者长时间无法恢复时，才尝试切换到下一个可用 Wi-Fi。</p>
 <hr>
-<h2 id="13-4-已保存-wi-fi-和新-wi-fi-的处理">1.3 4. 已保存 Wi-Fi 和新 Wi-Fi 的处理
-</h2><p>请你根据 Android 实际情况，设计合理逻辑：</p>
+<h1 id="3-4-已保存-wi-fi-和新-wi-fi-的处理">3 4. 已保存 Wi-Fi 和新 Wi-Fi 的处理
+</h1><p>请你根据 Android 实际情况，设计合理逻辑：</p>
 <ul>
 <li>如果 Wi-Fi 已经在系统中保存过，优先让系统自动连接；</li>
 <li>如果系统自动连接失败，再尝试根据 Wi-Fi 名称选择已保存网络；</li>
@@ -2077,8 +2076,8 @@
 <p>我不希望脚本为了追求“看起来功能完整”，强行使用不可靠的命令。</p>
 <p>请你优先保证稳定性。</p>
 <hr>
-<h2 id="14-5-不要频繁扫描和切换">1.4 5. 不要频繁扫描和切换
-</h2><p>手机是作为服务器使用的，所以稳定性比“永远连接最高优先级 Wi-Fi”更重要。</p>
+<h1 id="4-5-不要频繁扫描和切换">4 5. 不要频繁扫描和切换
+</h1><p>手机是作为服务器使用的，所以稳定性比“永远连接最高优先级 Wi-Fi”更重要。</p>
 <p>请你设计逻辑时注意：</p>
 <ul>
 <li>如果当前 Wi-Fi 已经连接成功，并且已经拿到 IP，就不要乱动；</li>
@@ -2089,8 +2088,8 @@
 <li>避免脚本疯狂循环导致耗电、发热、刷屏日志。</li>
 </ul>
 <hr>
-<h2 id="15-6-wi-fi-是否连接成功的判断">1.5 6. Wi-Fi 是否连接成功的判断
-</h2><p>我希望脚本不要只看 Wi-Fi 开关是否打开。</p>
+<h1 id="5-6-wi-fi-是否连接成功的判断">5 6. Wi-Fi 是否连接成功的判断
+</h1><p>我希望脚本不要只看 Wi-Fi 开关是否打开。</p>
 <p>真正有意义的是：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2110,8 +2109,8 @@
 <p>暂时不需要做外网连通性检测，比如 ping 某个公网 IP。
 因为公网 ping 可能受 DNS、运营商、防火墙、网络环境影响，不适合作为 Wi-Fi 是否连接成功的唯一依据。</p>
 <hr>
-<h2 id="16-7-日志要求">1.6 7. 日志要求
-</h2><p>脚本必须输出清晰日志，方便我排查问题。</p>
+<h1 id="6-7-日志要求">6 7. 日志要求
+</h1><p>脚本必须输出清晰日志，方便我排查问题。</p>
 <p>日志中需要包含：</p>
 <ul>
 <li>
@@ -2160,8 +2159,8 @@
 </div><p>日志文件也要限制大小，避免长期运行后日志无限变大。
 请你在脚本里设计日志轮转，例如超过 1MB 后只保留最后若干行，并且在注释中写清楚单位。</p>
 <hr>
-<h2 id="17-8-日志中的-wi-fi-名称和隐私">1.7 8. 日志中的 Wi-Fi 名称和隐私
-</h2><p>如果能解析当前 Wi-Fi 名称，日志中应该显示 Wi-Fi 名称，而不是 MAC 地址。</p>
+<h1 id="7-8-日志中的-wi-fi-名称和隐私">7 8. 日志中的 Wi-Fi 名称和隐私
+</h1><p>如果能解析当前 Wi-Fi 名称，日志中应该显示 Wi-Fi 名称，而不是 MAC 地址。</p>
 <p>如果某些系统状态中出现 BSSID / MAC 地址，请隐藏或过滤掉。</p>
 <p>例如不要输出：</p>
 <div class="highlight"><div class="chroma">
@@ -2185,8 +2184,8 @@
 </div>
 </div><p>或者如果配置列表里只有一个目标 Wi-Fi，也可以说明是根据配置推断的名称。</p>
 <hr>
-<h2 id="18-9-防止重复运行">1.8 9. 防止重复运行
-</h2><p>这个脚本是常驻守护脚本，不是一次性脚本。</p>
+<h1 id="8-9-防止重复运行">8 9. 防止重复运行
+</h1><p>这个脚本是常驻守护脚本，不是一次性脚本。</p>
 <p>所以请你加入 lock 机制，防止多个相同脚本同时运行。</p>
 <p>我希望你使用适合 Android / Magisk 环境的方式，比如：</p>
 <ul>
@@ -2198,8 +2197,8 @@
 </ul>
 <p>请你解释一下 lock 的作用和为什么这样设计。</p>
 <hr>
-<h2 id="19-10-守护循环">1.9 10. 守护循环
-</h2><p>脚本不应该只在开机时执行一次。</p>
+<h1 id="9-10-守护循环">9 10. 守护循环
+</h1><p>脚本不应该只在开机时执行一次。</p>
 <p>它应该是常驻守护脚本。</p>
 <p>大概逻辑应该是：</p>
 <div class="highlight"><div class="chroma">
@@ -2243,7 +2242,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
-<h1 id="2-请你特别注意">2 请你特别注意
+<h1 id="10-请你特别注意">10 请你特别注意
 </h1><p>我上面的想法可能并不成熟，所以请你不要只是机械照着我的描述写。</p>
 <p>请你先站在专业 Android 开发人员和 Linux 运维人员的角度，帮我完善整体逻辑。</p>
 <p>在正式给代码之前，请你先做一次简短但准确的设计分析，包括：</p>
@@ -2258,17 +2257,17 @@
 </ol>
 <p>然后再给我完整代码。</p>
 <hr>
-<h1 id="3-输出要求">3 输出要求
+<h1 id="11-输出要求">11 输出要求
 </h1><p>请输出：</p>
-<h2 id="31-第一部分设计说明">3.1 第一部分：设计说明
+<h2 id="111-第一部分设计说明">11.1 第一部分：设计说明
 </h2><p>用通俗易懂的话解释整体方案。</p>
-<h2 id="32-第二部分目录结构">3.2 第二部分：目录结构
+<h2 id="112-第二部分目录结构">11.2 第二部分：目录结构
 </h2><p>给出推荐目录结构，并说明每个文件的作用。</p>
-<h2 id="33-第三部分magisk-启动器脚本">3.3 第三部分：Magisk 启动器脚本
+<h2 id="113-第三部分magisk-启动器脚本">11.3 第三部分：Magisk 启动器脚本
 </h2><p>给出完整代码，可以直接复制使用。</p>
-<h2 id="34-第四部分wi-fi-守护脚本">3.4 第四部分：Wi-Fi 守护脚本
+<h2 id="114-第四部分wi-fi-守护脚本">11.4 第四部分：Wi-Fi 守护脚本
 </h2><p>给出完整代码，可以直接复制使用。</p>
-<h2 id="35-第五部分安装和测试命令">3.5 第五部分：安装和测试命令
+<h2 id="115-第五部分安装和测试命令">11.5 第五部分：安装和测试命令
 </h2><p>包括：</p>
 <ul>
 <li>创建目录；</li>
@@ -2281,7 +2280,7 @@
 <li>如何确认脚本是否正在运行。</li>
 </ul>
 <hr>
-<h1 id="4-我的最终目标">4 我的最终目标
+<h1 id="12-我的最终目标">12 我的最终目标
 </h1><p>我希望得到的是一套适合 Android Root + Magisk + 手机服务器场景的 Wi-Fi 稳定连接方案。</p>
 <p>重点是：</p>
 <ul>
@@ -2339,7 +2338,7 @@
 
 
         <span>
-            最后更新于 2026-06-20 17:27
+            最后更新于 2026-06-21 09:32
         </span>
     </section></footer>
 
