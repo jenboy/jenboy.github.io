@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>LinuxDo on Xao的碎碎念</title>
+        <title>Linuxdo on Xao的碎碎念</title>
         <link>https://jenboy.github.io/tags/linuxdo/</link>
-        <description>Recent content in LinuxDo on Xao的碎碎念</description>
+        <description>Recent content in Linuxdo on Xao的碎碎念</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Xao</copyright>
-        <lastBuildDate>Sun, 21 Jun 2026 17:23:00 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/tags/linuxdo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 21 Jun 2026 17:43:05 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/tags/linuxdo/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【工具】帖子收藏神器</title>
         <link>https://jenboy.github.io/p/%E5%B7%A5%E5%85%B7%E5%B8%96%E5%AD%90%E6%94%B6%E8%97%8F%E7%A5%9E%E5%99%A8/</link>
-        <pubDate>Sun, 21 Jun 2026 09:23:18 +0000</pubDate>
+        <pubDate>Sun, 21 Jun 2026 09:44:20 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E5%B7%A5%E5%85%B7%E5%B8%96%E5%AD%90%E6%94%B6%E8%97%8F%E7%A5%9E%E5%99%A8/</guid>
         <description>&lt;blockquote class=&#34;alert alert-info&#34;&gt;
@@ -19,33 +19,9 @@
     &gt;https://linux.do/t/topic/1737485&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;主题 ID&lt;/strong&gt;: 1737485&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;楼主&lt;/strong&gt;: @Linux.acheng&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;分类&lt;/strong&gt;: 开发调优&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;标签&lt;/strong&gt;: 快问快答, 软件开发, 开源推广, 插件, Chrome, obsidian, Edge, 学习工具, linuxdo&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;导出时间&lt;/strong&gt;: 2026/4/25 13:54:52&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;楼层数&lt;/strong&gt;: 1&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;一键保存帖子到 Obsidian/飞书/notion/HTML/思源笔记/语雀六种方式的谷歌/Edge 浏览器插件和手机端友好的 &lt;a class=&#34;link&#34; href=&#34;https://acheng-byte.github.io/discourse-saver/install.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;油猴脚本&lt;/a&gt;，无需登录也能保存！支持大部分 Discourse。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;本帖使用社区开源推广，符合推广要求。我申明并遵循社区要求的以下内容：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;我的帖子已经打上 &lt;a class=&#34;link&#34; href=&#34;https://linux.do/tag/%E5%BC%80%E6%BA%90%E6%8E%A8%E5%B9%BF&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;开源推广&lt;/a&gt; 标签：&lt;/strong&gt; 是&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;我的开源项目完整开源，无未开源部分：&lt;/strong&gt; 是&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;我的开源项目已链接认可 LINUX DO 社区：&lt;/strong&gt; 是&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;我帖子内的项目介绍，AI 生成、润色内容部分已截图发出：&lt;/strong&gt; 是&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;以上选择我承诺是永久有效的，接受社区和佬友监督：&lt;/strong&gt; 是&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;以下为项目介绍正文内容，AI 生成、润色内容已使用截图方式发出&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;0、链接奉上&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;GitHub：&lt;a class=&#34;link&#34; href=&#34;https://github.com/acheng-byte/discourse-saver&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub - acheng-byte/discourse-saver: 通用 Discourse 论坛内容保存工具 - 支持全球数百个 Discourse 站点，一键保存到 Obsidian/飞书/Notion/语雀/思源笔记 · GitHub&lt;/a&gt;&lt;/p&gt;
@@ -1328,7 +1304,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会&lt;strong&gt;更�
         <item>
         <title>【教程】2026版 小白也能看懂的自建Cloudflare临时邮箱教程（域名邮箱）</title>
         <link>https://jenboy.github.io/p/%E6%95%99%E7%A8%8B2026%E7%89%88-%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82%E7%9A%84%E8%87%AA%E5%BB%BAcloudflare%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E6%95%99%E7%A8%8B%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/</link>
-        <pubDate>Sun, 21 Jun 2026 09:23:18 +0000</pubDate>
+        <pubDate>Sun, 21 Jun 2026 09:44:20 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E6%95%99%E7%A8%8B2026%E7%89%88-%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82%E7%9A%84%E8%87%AA%E5%BB%BAcloudflare%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E6%95%99%E7%A8%8B%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/</guid>
         <description>&lt;blockquote class=&#34;alert alert-info&#34;&gt;
@@ -1337,11 +1313,6 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会&lt;strong&gt;更�
     &gt;https://linux.do/t/topic/1666961&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;主题 ID&lt;/strong&gt;: 1666961&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;楼主&lt;/strong&gt;: @XiaoHuang&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;分类&lt;/strong&gt;: 文档共建&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;标签&lt;/strong&gt;: 教程, linuxdo&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;导出时间&lt;/strong&gt;: 2026/4/25 11:18:59&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;楼层数&lt;/strong&gt;: 108&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;筛选条件&lt;/strong&gt;: 首帖=强制保留；范围=全部；只楼主=@XiaoHuang&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;从 &lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/316819&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【教程】小白也能看懂的自建Cloudflare临时邮箱教程（域名邮箱）&lt;/a&gt; 继续&lt;/p&gt;
@@ -2830,7 +2801,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>【手机搭建服务器】· 第 二 期</title>
         <link>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/</link>
-        <pubDate>Sun, 21 Jun 2026 09:23:18 +0000</pubDate>
+        <pubDate>Sun, 21 Jun 2026 09:44:20 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/</guid>
         <description>&lt;blockquote class=&#34;alert alert-info&#34;&gt;
@@ -2839,10 +2810,6 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
     &gt;https://linux.do/t/topic/2177558&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;主题 ID&lt;/strong&gt;: 2177558&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;楼主&lt;/strong&gt;: @Semmering&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;分类&lt;/strong&gt;: 开发调优&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;标签&lt;/strong&gt;: VPS, 原创, 技术方案, linuxdo&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;导出时间&lt;/strong&gt;: 2026/5/18 11:13:52&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;楼层数&lt;/strong&gt;: 1&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;上期回顾：&lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/2157272/65&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【超详细｜保姆级教程】手机搭建服务器 · 第 一 期&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -3357,7 +3324,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>【手机搭建服务器】· 第 三 期</title>
         <link>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/</link>
-        <pubDate>Sun, 21 Jun 2026 09:23:18 +0000</pubDate>
+        <pubDate>Sun, 21 Jun 2026 09:44:20 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/</guid>
         <description>&lt;p&gt;&lt;strong&gt;前两期回顾：&lt;/strong&gt;&lt;/p&gt;
@@ -5286,7 +5253,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>【手机搭建服务器】· 第 一 期</title>
         <link>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%80-%E6%9C%9F/</link>
-        <pubDate>Sun, 21 Jun 2026 09:23:18 +0000</pubDate>
+        <pubDate>Sun, 21 Jun 2026 09:44:20 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%80-%E6%9C%9F/</guid>
         <description>&lt;blockquote class=&#34;alert alert-info&#34;&gt;
@@ -5295,10 +5262,6 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
     &gt;https://linux.do/t/topic/2157272&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;主题 ID&lt;/strong&gt;: 2157272&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;楼主&lt;/strong&gt;: @Semmering&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;分类&lt;/strong&gt;: 开发调优&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;标签&lt;/strong&gt;: 软件开发, VPS, linuxdo&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;导出时间&lt;/strong&gt;: 2026/5/18 11:08:50&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;楼层数&lt;/strong&gt;: 1&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;本期主题：项目开始前的必备条件&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;条件一：具备可访问的公网&lt;/strong&gt;&lt;/p&gt;
@@ -5440,7 +5403,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>【鸭老师】AI动态漫画banana制作全流程！既然要白嫖就贯彻到底咯，完全免费流程！</title>
         <link>https://jenboy.github.io/p/%E9%B8%AD%E8%80%81%E5%B8%88ai%E5%8A%A8%E6%80%81%E6%BC%AB%E7%94%BBbanana%E5%88%B6%E4%BD%9C%E5%85%A8%E6%B5%81%E7%A8%8B%E6%97%A2%E7%84%B6%E8%A6%81%E7%99%BD%E5%AB%96%E5%B0%B1%E8%B4%AF%E5%BD%BB%E5%88%B0%E5%BA%95%E5%92%AF%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E6%B5%81%E7%A8%8B/</link>
-        <pubDate>Sun, 21 Jun 2026 09:23:18 +0000</pubDate>
+        <pubDate>Sun, 21 Jun 2026 09:44:20 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E9%B8%AD%E8%80%81%E5%B8%88ai%E5%8A%A8%E6%80%81%E6%BC%AB%E7%94%BBbanana%E5%88%B6%E4%BD%9C%E5%85%A8%E6%B5%81%E7%A8%8B%E6%97%A2%E7%84%B6%E8%A6%81%E7%99%BD%E5%AB%96%E5%B0%B1%E8%B4%AF%E5%BD%BB%E5%88%B0%E5%BA%95%E5%92%AF%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E6%B5%81%E7%A8%8B/</guid>
         <description>&lt;blockquote class=&#34;alert alert-info&#34;&gt;
@@ -5449,11 +5412,6 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
     &gt;https://linux.do/t/topic/930106&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;主题 ID&lt;/strong&gt;: 930106&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;楼主&lt;/strong&gt;: @yalaoshi&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;分类&lt;/strong&gt;: 资源荟萃&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;标签&lt;/strong&gt;: 纯水, 人工智能, 树洞, Gemini, 教程, linuxdo&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;导出时间&lt;/strong&gt;: 2026/4/25 11:08:21&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;楼层数&lt;/strong&gt;: 1&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;筛选条件&lt;/strong&gt;: 首帖=强制保留；范围=全部；只楼主=@yalaoshi&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;要讲的内容有很多，我会分开一点点的讲明白,声明：教程禁止搬运！！不要被那些人搞去卖课了，只想给站里佬友玩。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.内容选题的思路：&lt;/strong&gt;&lt;/p&gt;
@@ -5616,7 +5574,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>2026 甲骨文一条龙服务经验分享和教程推荐</title>
         <link>https://jenboy.github.io/p/2026-%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%80%E6%9D%A1%E9%BE%99%E6%9C%8D%E5%8A%A1%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/</link>
-        <pubDate>Sun, 21 Jun 2026 09:23:18 +0000</pubDate>
+        <pubDate>Sun, 21 Jun 2026 09:44:20 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/2026-%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%80%E6%9D%A1%E9%BE%99%E6%9C%8D%E5%8A%A1%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/</guid>
         <description>&lt;blockquote class=&#34;alert alert-info&#34;&gt;
@@ -5625,10 +5583,6 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
     &gt;https://linux.do/t/topic/1891358&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;主题 ID&lt;/strong&gt;: 1891358&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;楼主&lt;/strong&gt;: @xiaojuju93&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;分类&lt;/strong&gt;: 开发调优&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;标签&lt;/strong&gt;: VPS, 配置优化, linuxdo&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;导出时间&lt;/strong&gt;: 2026/5/18 11:41:27&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;楼层数&lt;/strong&gt;: 1&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;目录：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;一 注册成功经验&lt;/strong&gt;&lt;/p&gt;
@@ -6174,7 +6128,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>CF Worker部署DDNS主控</title>
         <link>https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/</link>
-        <pubDate>Sun, 21 Jun 2026 09:23:18 +0000</pubDate>
+        <pubDate>Sun, 21 Jun 2026 09:44:20 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/</guid>
         <description>&lt;blockquote class=&#34;alert alert-info&#34;&gt;
@@ -6183,10 +6137,6 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
     &gt;https://linux.do/t/topic/617539&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;主题 ID&lt;/strong&gt;: 617539&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;楼主&lt;/strong&gt;: @chunkBurst&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;分类&lt;/strong&gt;: 开发调优&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;标签&lt;/strong&gt;: VPS, 计算机网络, Cloudflare, DNS, linuxdo&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;导出时间&lt;/strong&gt;: 2026/5/19 15:19:18&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;楼层数&lt;/strong&gt;: 1&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;Hello~&lt;/p&gt;
 &lt;p&gt;CCB 带来了一个全新的迷你 DDNS 工具，帮助佬们快速&lt;del&gt;白嫖&lt;/del&gt;部署 DDNS Worker~&lt;/p&gt;
@@ -6330,7 +6280,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
         <item>
         <title>使用Oracle免费服务器部署CLIProxyAPI并配置域名，小白也能看懂</title>
         <link>https://jenboy.github.io/p/%E4%BD%BF%E7%94%A8oracle%E5%85%8D%E8%B4%B9%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2cliproxyapi%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82/</link>
-        <pubDate>Sun, 21 Jun 2026 09:23:18 +0000</pubDate>
+        <pubDate>Sun, 21 Jun 2026 09:44:20 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E4%BD%BF%E7%94%A8oracle%E5%85%8D%E8%B4%B9%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2cliproxyapi%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82/</guid>
         <description>&lt;blockquote class=&#34;alert alert-info&#34;&gt;
@@ -6339,10 +6289,6 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
     &gt;https://linux.do/t/topic/1663220&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;主题 ID&lt;/strong&gt;: 1663220&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;楼主&lt;/strong&gt;: @1cheng&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;分类&lt;/strong&gt;: 开发调优&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;标签&lt;/strong&gt;: 纯水, linuxdo&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;导出时间&lt;/strong&gt;: 2026/5/18 11:39:58&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;楼层数&lt;/strong&gt;: 1&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;最近刷到 Codex 号池，于是乎利用之前注册的 Oracle 自己搭建一个。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;写在前面&lt;/strong&gt;&lt;/p&gt;
@@ -6913,7 +6859,7 @@ CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 I
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;看到成功即可。&lt;/p&gt;
-&lt;p&gt;最后，在 Cloudflare 中选择&lt;strong&gt;Full (strict)&lt;strong&gt;模式&lt;/strong&gt;，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;/strong&gt;axwg}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;cfha}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;/strong&gt;spnn}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;cv9arg0hz7x}Always Use HTTPS&lt;/strong&gt;sdsm}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;91p9aptv8tw}Always Use HTTPS&lt;/strong&gt;lx5k}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;o97fovsidyp}Always Use HTTPS&lt;/strong&gt;5m8o}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;vvtmbafpqyp}Always Use HTTPS&lt;/strong&gt;pssy}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;vdvozihga65}Always Use HTTPS&lt;/strong&gt;2y19}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;eadbb2wsyzv}Always Use HTTPS&lt;/strong&gt;z4y3}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;mof15c154wr}Always Use HTTPS&lt;/strong&gt;d3ej}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;4x3ykscopwk}Always Use HTTPS&lt;/strong&gt;1hb2}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;214dukjn68v}Always Use HTTPS&lt;/strong&gt;zizp}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;plya9afwbi5}Always Use HTTPS&lt;/strong&gt;fm3m}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;ghchizah5wl}Always Use HTTPS&lt;/strong&gt;hb58}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;l29nytnt9c4}Always Use HTTPS&lt;/strong&gt;0a4c}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;kjpbe8bpqy2}Always Use HTTPS&lt;/strong&gt;o810}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;nq6xdfdmq6u}Always Use HTTPS&lt;/strong&gt;wct4}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;za5em91b4p4}Always Use HTTPS&lt;/strong&gt;i9jk}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;79mfeuzjkp0}Always Use HTTPS&lt;/strong&gt;8pak}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;m61c9yjsw58}Always Use HTTPS&lt;/strong&gt;jrao}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;66qpxu59c50}Always Use HTTPS&lt;/strong&gt;（即使源站没开 80 也没关系，CF 边缘重定向）。&lt;/p&gt;
+&lt;p&gt;最后，在 Cloudflare 中选择&lt;strong&gt;Full (strict)&lt;strong&gt;模式&lt;/strong&gt;，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;/strong&gt;x4df}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;kbey}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;/strong&gt;axwg}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;604ebkgwg70}Always Use HTTPS&lt;/strong&gt;cfha}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;lp4mxap1h7q}Always Use HTTPS&lt;/strong&gt;spnn}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;cv9arg0hz7x}Always Use HTTPS&lt;/strong&gt;sdsm}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;91p9aptv8tw}Always Use HTTPS&lt;/strong&gt;lx5k}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;o97fovsidyp}Always Use HTTPS&lt;/strong&gt;5m8o}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;vvtmbafpqyp}Always Use HTTPS&lt;/strong&gt;pssy}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;vdvozihga65}Always Use HTTPS&lt;/strong&gt;2y19}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;eadbb2wsyzv}Always Use HTTPS&lt;/strong&gt;z4y3}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;mof15c154wr}Always Use HTTPS&lt;/strong&gt;d3ej}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;4x3ykscopwk}Always Use HTTPS&lt;/strong&gt;1hb2}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;214dukjn68v}Always Use HTTPS&lt;/strong&gt;zizp}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;plya9afwbi5}Always Use HTTPS&lt;/strong&gt;fm3m}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;ghchizah5wl}Always Use HTTPS&lt;/strong&gt;hb58}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;l29nytnt9c4}Always Use HTTPS&lt;/strong&gt;0a4c}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;kjpbe8bpqy2}Always Use HTTPS&lt;/strong&gt;o810}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;nq6xdfdmq6u}Always Use HTTPS&lt;/strong&gt;wct4}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;za5em91b4p4}Always Use HTTPS&lt;/strong&gt;i9jk}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;79mfeuzjkp0}Always Use HTTPS&lt;/strong&gt;8pak}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;m61c9yjsw58}Always Use HTTPS&lt;/strong&gt;jrao}，&lt;strong&gt;开启&lt;/strong&gt;Always Use HTTPS&lt;strong&gt;66qpxu59c50}Always Use HTTPS&lt;/strong&gt;（即使源站没开 80 也没关系，CF 边缘重定向）。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;在服务器安全组/iptables 需要放行：443/tcp，参考前文公网 IP 配置部分。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;在服务器安全组/iptables 需要放行：443/tcp，参考前文公网 IP 配置部分。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;在服务器安全组/iptables 需要放行：443/tcp，参考前文公网 IP 配置部分。&lt;/strong&gt;&lt;/p&gt;

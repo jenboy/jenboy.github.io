@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" 原始链接: https://linux.do/t/topic/2157272 主题 ID: 2157272 楼主: @Semmering 分类: 开发调优 标签: 软件开发, VPS, linuxdo 导出时间: 2026/5/18 11:08:50 楼层数: 1 本期主题：项目开始前的必备条件\n条件一：具备可访问的公网\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" 原始链接: https://linux.do/t/topic/2157272 主题 ID: 2157272 楼主: @Semmering 本期主题：项目开始前的必备条件\n条件一：具备可访问的公网\n关于公网这一块，从 ipv6 和 ipv4 两个方面来说\n先说 ipv4： 由于目前家庭宽带很少有 ipv4 的公网，包括我本人也没有，所以这一个系列的教程主要是围绕 ipv6 进行，如果你手里有 ipv4 的公网，那毫无疑问是最好的，动态 ip 和静态 ip 都无所谓，如果是静态 ip，那就更无敌了，只是这样的资源比较少\n">
 <title>【手机搭建服务器】· 第 一 期</title>
 
 <link rel='canonical' href='https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%80-%E6%9C%9F/'>
 
 <link rel="stylesheet" href="/scss/style.min.6998e4e648ca13c26692fd732a596048e487a90378e5ec1f10b8a5899f478b60.css"><meta property='og:title' content="【手机搭建服务器】· 第 一 期">
-<meta property='og:description' content=" 原始链接: https://linux.do/t/topic/2157272 主题 ID: 2157272 楼主: @Semmering 分类: 开发调优 标签: 软件开发, VPS, linuxdo 导出时间: 2026/5/18 11:08:50 楼层数: 1 本期主题：项目开始前的必备条件\n条件一：具备可访问的公网\n">
+<meta property='og:description' content=" 原始链接: https://linux.do/t/topic/2157272 主题 ID: 2157272 楼主: @Semmering 本期主题：项目开始前的必备条件\n条件一：具备可访问的公网\n关于公网这一块，从 ipv6 和 ipv4 两个方面来说\n先说 ipv4： 由于目前家庭宽带很少有 ipv4 的公网，包括我本人也没有，所以这一个系列的教程主要是围绕 ipv6 进行，如果你手里有 ipv4 的公网，那毫无疑问是最好的，动态 ip 和静态 ip 都无所谓，如果是静态 ip，那就更无敌了，只是这样的资源比较少\n">
 <meta property='og:url' content='https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%80-%E6%9C%9F/'>
 <meta property='og:site_name' content='Xao的碎碎念'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='linuxdo' /><meta property='article:tag' content='搬运' /><meta property='article:published_time' content='2026-06-21T09:23:18&#43;00:00'/><meta property='article:modified_time' content='2026-06-21T17:23:00&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='linuxdo' /><meta property='article:tag' content='搬运' /><meta property='article:published_time' content='2026-06-21T09:44:20&#43;00:00'/><meta property='article:modified_time' content='2026-06-21T17:43:05&#43;08:00'/>
 <meta name="twitter:title" content="【手机搭建服务器】· 第 一 期">
-<meta name="twitter:description" content=" 原始链接: https://linux.do/t/topic/2157272 主题 ID: 2157272 楼主: @Semmering 分类: 开发调优 标签: 软件开发, VPS, linuxdo 导出时间: 2026/5/18 11:08:50 楼层数: 1 本期主题：项目开始前的必备条件\n条件一：具备可访问的公网\n">
+<meta name="twitter:description" content=" 原始链接: https://linux.do/t/topic/2157272 主题 ID: 2157272 楼主: @Semmering 本期主题：项目开始前的必备条件\n条件一：具备可访问的公网\n关于公网这一块，从 ipv6 和 ipv4 两个方面来说\n先说 ipv4： 由于目前家庭宽带很少有 ipv4 的公网，包括我本人也没有，所以这一个系列的教程主要是围绕 ipv6 进行，如果你手里有 ipv4 的公网，那毫无疑问是最好的，动态 ip 和静态 ip 都无所谓，如果是静态 ip，那就更无敌了，只是这样的资源比较少\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -321,7 +321,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published" datetime='2026-06-21T09:23:18Z'>2026-06-21</time>
+                <time class="article-time--published" datetime='2026-06-21T09:44:20Z'>2026-06-21</time>
             </div>
         
 
@@ -357,10 +357,6 @@
     >https://linux.do/t/topic/2157272</a></li>
 <li><strong>主题 ID</strong>: 2157272</li>
 <li><strong>楼主</strong>: @Semmering</li>
-<li><strong>分类</strong>: 开发调优</li>
-<li><strong>标签</strong>: 软件开发, VPS, linuxdo</li>
-<li><strong>导出时间</strong>: 2026/5/18 11:08:50</li>
-<li><strong>楼层数</strong>: 1</li>
 </ul></blockquote>
 <p><strong>本期主题：项目开始前的必备条件</strong></p>
 <p><strong>条件一：具备可访问的公网</strong></p>
@@ -507,7 +503,7 @@
         
             <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
         
-            <a href="/tags/linuxdo/">LinuxDo</a>
+            <a href="/tags/linuxdo/">Linuxdo</a>
         
             <a href="/tags/%E6%90%AC%E8%BF%90/">搬运</a>
         
@@ -536,7 +532,7 @@
 
 
         <span>
-            最后更新于 2026-06-21 17:23
+            最后更新于 2026-06-21 17:43
         </span>
     </section></footer>
 
