@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期\n【超详细】手机搭建服务器 · 第 二 期\n前言\n第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="已按您的要求为各标题添加连续编号，未生成总目录。以下是重新编号后的完整帖子内容（内部交叉引用已同步调整）：\n原始链接: https://linux.do/t/topic/2198756（假设） 主题 ID: 2198756（假设） 楼主: @Semmering 前两期回顾：\n">
 <title>【手机搭建服务器】· 第 三 期</title>
 
 <link rel='canonical' href='https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/'>
 
 <link rel="stylesheet" href="/scss/style.min.6998e4e648ca13c26692fd732a596048e487a90378e5ec1f10b8a5899f478b60.css"><meta property='og:title' content="【手机搭建服务器】· 第 三 期">
-<meta property='og:description' content="前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期\n【超详细】手机搭建服务器 · 第 二 期\n前言\n第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
+<meta property='og:description' content="已按您的要求为各标题添加连续编号，未生成总目录。以下是重新编号后的完整帖子内容（内部交叉引用已同步调整）：\n原始链接: https://linux.do/t/topic/2198756（假设） 主题 ID: 2198756（假设） 楼主: @Semmering 前两期回顾：\n">
 <meta property='og:url' content='https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/'>
 <meta property='og:site_name' content='Xao的碎碎念'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='LinuxDo' /><meta property='article:tag' content='搬运' /><meta property='article:published_time' content='2026-06-21T09:48:48&#43;00:00'/><meta property='article:modified_time' content='2026-06-21T17:23:00&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='LinuxDo' /><meta property='article:tag' content='搬运' /><meta property='article:published_time' content='2026-06-25T01:33:06&#43;00:00'/><meta property='article:modified_time' content='2026-06-25T09:32:41&#43;08:00'/>
 <meta name="twitter:title" content="【手机搭建服务器】· 第 三 期">
-<meta name="twitter:description" content="前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期\n【超详细】手机搭建服务器 · 第 二 期\n前言\n第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
+<meta name="twitter:description" content="已按您的要求为各标题添加连续编号，未生成总目录。以下是重新编号后的完整帖子内容（内部交叉引用已同步调整）：\n原始链接: https://linux.do/t/topic/2198756（假设） 主题 ID: 2198756（假设） 楼主: @Semmering 前两期回顾：\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -302,11 +302,20 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#111-第一部分设计说明">11.1 第一部分：设计说明</a></li>
-    <li><a href="#112-第二部分目录结构">11.2 第二部分：目录结构</a></li>
-    <li><a href="#113-第三部分magisk-启动器脚本">11.3 第三部分：Magisk 启动器脚本</a></li>
-    <li><a href="#114-第四部分wi-fi-守护脚本">11.4 第四部分：Wi-Fi 守护脚本</a></li>
-    <li><a href="#115-第五部分安装和测试命令">11.5 第五部分：安装和测试命令</a></li>
+    <li><a href="#21-新建开机自启脚本">2.1 新建开机自启脚本</a>
+      <ol>
+        <li><a href="#211-打开-mt-管理器进入-dataadbserviced-文件夹新建-99-phone-serversh-文件">2.1.1 打开 MT 管理器，进入 <code>/data/adb/service.d/</code> 文件夹，新建 <code>99-phone-server.sh</code> 文件</a></li>
+        <li><a href="#212-打开文件在文件中输入以下代码并保存">2.1.2 打开文件，在文件中输入以下代码并保存</a></li>
+        <li><a href="#213-给脚本设置权限">2.1.3 给脚本设置权限</a></li>
+      </ol>
+    </li>
+    <li><a href="#22-新建-wi-fi-核心脚本">2.2 新建 Wi-Fi 核心脚本</a>
+      <ol>
+        <li><a href="#221-打开-mt-管理器进入-datalocal-文件夹新建-phone-server-文件夹然后进入-phone-server-文件夹再新建-wifi-keeper-文件夹">2.2.1 打开 MT 管理器，进入 <code>/data/local/</code> 文件夹，新建 <code>phone-server</code> 文件夹，然后进入 <code>phone-server</code> 文件夹再新建 <code>wifi-keeper</code> 文件夹</a></li>
+        <li><a href="#222-在-datalocalphone-serverwifi-keeper-文件夹下面新建-wifi-keepersh-文件并且输入下面的代码进行保存">2.2.2 在 <code>/data/local/phone-server/wifi-keeper/</code> 文件夹下面新建 <code>wifi-keeper.sh</code> 文件，并且输入下面的代码进行保存</a></li>
+        <li><a href="#223-按照第-3-节的过程给脚本设置权限">2.2.3 按照第 3 节的过程给脚本设置权限</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -356,7 +365,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published" datetime='2026-06-21T09:48:48Z'>2026-06-21</time>
+                <time class="article-time--published" datetime='2026-06-25T01:33:06Z'>2026-06-25</time>
             </div>
         
 
@@ -371,7 +380,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 19 分钟
+                    阅读时长: 20 分钟
                 </time>
             </div>
         
@@ -386,43 +395,46 @@
     <section class="article-content">
     
     
-    <p><strong>前两期回顾：</strong></p>
-<p><a class="link" href="https://linux.do/t/topic/2157272"  target="_blank" rel="noopener"
-    >【超详细】手机搭建服务器 · 第 一 期</a></p>
-<p><a class="link" href="https://linux.do/t/topic/2177558"  target="_blank" rel="noopener"
-    >【超详细】手机搭建服务器 · 第 二 期</a></p>
-<p><strong>前言</strong></p>
-<p>第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；</p>
-<p>本期要实现的是：如何让手机的 wifi 永不断连：</p>
+    <p>已按您的要求为各标题添加连续编号，未生成总目录。以下是重新编号后的完整帖子内容（内部交叉引用已同步调整）：</p>
+<hr>
+<blockquote class="alert alert-info">
+    <ul>
+<li><strong>原始链接</strong>: <a class="link" href="https://linux.do/t/topic/2198756"  target="_blank" rel="noopener"
+    >https://linux.do/t/topic/2198756</a>（假设）</li>
+<li><strong>主题 ID</strong>: 2198756（假设）</li>
+<li><strong>楼主</strong>: @Semmering</li>
+</ul></blockquote>
+<p><strong>前两期回顾：</strong></p>
 <ul>
-<li>
-<p>不管是手机意外重启，还是重新开关机；</p>
-</li>
-<li>
-<p>不管是开启了飞行模式；</p>
-</li>
-<li>
-<p>不管是不是主动关闭 wifi。</p>
-</li>
+<li><a class="link" href="https://linux.do/t/topic/2157272"  target="_blank" rel="noopener"
+    >【超详细】手机搭建服务器 · 第 一 期</a></li>
+<li><a class="link" href="https://linux.do/t/topic/2177558"  target="_blank" rel="noopener"
+    >【超详细】手机搭建服务器 · 第 二 期</a></li>
+</ul>
+<hr>
+<h1 id="1-前言">1 前言
+</h1><p>第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；</p>
+<p>本期要实现的是：<strong>如何让手机的 Wi-Fi 永不断连</strong>：</p>
+<ul>
+<li>不管是手机意外重启，还是重新开关机；</li>
+<li>不管是开启了飞行模式；</li>
+<li>不管是不是主动关闭 Wi-Fi。</li>
 </ul>
 <blockquote class="alert alert-warning">
-    <p>在开始之前，建议先把手机的这两个开关关闭，不是必须，但是建议，减少干扰：</p></blockquote>
+    <p>在开始之前，建议先把手机的这两个开关关闭，不是必须，但是建议，减少干扰：</p>
 <ul>
-<li>
-<p>系统设置 - 开发者选项 - WLAN 扫描调节 - 关闭</p>
-</li>
-<li>
-<p>系统设置 - WLAN - WLAN 助理 - 智能选网和网速模式 - 关闭</p>
-</li>
+<li>系统设置 - 开发者选项 - WLAN 扫描调节 - 关闭</li>
+<li>系统设置 - WLAN - WLAN 助理 - 智能选网和网速模式 - 关闭</li>
 </ul>
-<p><strong>补充说明：</strong></p>
-<p>· 机型不同，打开开发者选项的方式也不同，这个自己百度</p>
-<p>· 不是所有手机都有【WLAN 助理】这个选项，我是 MIUI 11，所有有，其他手机可能是其他名字，或者没有这个功能，自己看自己系统的功能开关。主要是把能影响 WIFI 稳定的开关关闭，不管是信号调节还是省电方面的设置。</p>
-<p><strong>教程开始</strong></p>
-<p><strong>1.新建开机自启脚本</strong></p>
-<p><strong>1.1 打开 MT 管理器，进入 <code>/data/adb/service.d/</code>文件夹，新建<code>99-phone-server.sh</code> 文件</strong></p>
-<p><strong>1.2 打开文件，在文件中输入以下代码并保存：</strong></p>
-<div class="highlight"><div class="chroma">
+<p><strong>补充说明：</strong>
+· 机型不同，打开开发者选项的方式也不同，这个自己百度。
+· 不是所有手机都有【WLAN 助理】这个选项，我是 MIUI 11，所有有，其他手机可能是其他名字，或者没有这个功能，自己看自己系统的功能开关。主要是把能影响 Wi-Fi 稳定的开关关闭，不管是信号调节还是省电方面的设置。</p></blockquote>
+<hr>
+<h1 id="2-教程开始">2 教程开始
+</h1><h2 id="21-新建开机自启脚本">2.1 新建开机自启脚本
+</h2><h3 id="211-打开-mt-管理器进入-dataadbserviced-文件夹新建-99-phone-serversh-文件">2.1.1 打开 MT 管理器，进入 <code>/data/adb/service.d/</code> 文件夹，新建 <code>99-phone-server.sh</code> 文件
+</h3><h3 id="212-打开文件在文件中输入以下代码并保存">2.1.2 打开文件，在文件中输入以下代码并保存
+</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -451,34 +463,34 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/system/bin/sh
 </span></span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 2 ============================================================</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 3 Server 启动器</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 4 放在 Magisk service.d 中</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 5 注意：</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 6 这个脚本不写其他的复杂业务逻辑，只负责启动真正的脚本。</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 7 以后 IPv6、DDNS、Debian、SSH 等脚本，也会这么做。</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 8 ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Server 启动器</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 放在 Magisk service.d 中</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 这个脚本不写其他的复杂业务逻辑，只负责启动真正的脚本。</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 以后 IPv6、DDNS、Debian、SSH 等脚本，也会这么做。</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nv">WIFI_KEEPER</span><span class="o">=</span><span class="s2">&#34;/data/local/phone-server/wifi-keeper/wifi-keeper.sh&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nv">WIFI_LOG</span><span class="o">=</span><span class="s2">&#34;/data/local/phone-server/wifi-keeper/wifi-keeper.log&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">mkdir -p /data/local/phone-server/wifi-keeper
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;</span><span class="k">$(</span>date <span class="s1">&#39;+%Y-%m-%d %H:%M:%S&#39;</span><span class="k">)</span><span class="s2"> [INFO] [启动器] 99-phone-server.sh 开始执行&#34;</span>  <span class="s2">&#34;</span><span class="nv">$WIFI_LOG</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;</span><span class="k">$(</span>date <span class="s1">&#39;+%Y-%m-%d %H:%M:%S&#39;</span><span class="k">)</span><span class="s2"> [INFO] [启动器] 99-phone-server.sh 开始执行&#34;</span> &gt;&gt; <span class="s2">&#34;</span><span class="nv">$WIFI_LOG</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> -x <span class="s2">&#34;</span><span class="nv">$WIFI_KEEPER</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-</span></span><span class="line"><span class="cl">  nohup <span class="s2">&#34;</span><span class="nv">$WIFI_KEEPER</span><span class="s2">&#34;</span> /dev/null 2<span class="p">&amp;</span><span class="m">1</span> <span class="p">&amp;</span>
-</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;</span><span class="k">$(</span>date <span class="s1">&#39;+%Y-%m-%d %H:%M:%S&#39;</span><span class="k">)</span><span class="s2"> [OK] [启动器] 已后台启动 Wi-Fi Keeper&#34;</span>  <span class="s2">&#34;</span><span class="nv">$WIFI_LOG</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">  nohup <span class="s2">&#34;</span><span class="nv">$WIFI_KEEPER</span><span class="s2">&#34;</span> &gt;&gt; /dev/null 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;</span><span class="k">$(</span>date <span class="s1">&#39;+%Y-%m-%d %H:%M:%S&#39;</span><span class="k">)</span><span class="s2"> [OK] [启动器] 已后台启动 Wi-Fi Keeper&#34;</span> &gt;&gt; <span class="s2">&#34;</span><span class="nv">$WIFI_LOG</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="k">else</span>
-</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;</span><span class="k">$(</span>date <span class="s1">&#39;+%Y-%m-%d %H:%M:%S&#39;</span><span class="k">)</span><span class="s2"> [ERROR] [启动器] Wi-Fi Keeper 不存在或没有执行权限：</span><span class="nv">$WIFI_KEEPER</span><span class="s2">&#34;</span>  <span class="s2">&#34;</span><span class="nv">$WIFI_LOG</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;</span><span class="k">$(</span>date <span class="s1">&#39;+%Y-%m-%d %H:%M:%S&#39;</span><span class="k">)</span><span class="s2"> [ERROR] [启动器] Wi-Fi Keeper 不存在或没有执行权限：</span><span class="nv">$WIFI_KEEPER</span><span class="s2">&#34;</span> &gt;&gt; <span class="s2">&#34;</span><span class="nv">$WIFI_LOG</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="k">fi</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><strong>1.3 给脚本设置权限</strong></p>
-<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907355.png"
+</div><h3 id="213-给脚本设置权限">2.1.3 给脚本设置权限
+</h3><p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260625090317957.png"
 	width="184"
 	height="250"
-	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907355_hu_e195fff08c05495f.png 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907355_hu_7cec2c8703fba6df.png 1024w"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260625090317957_hu_e195fff08c05495f.png 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260625090317957_hu_7cec2c8703fba6df.png 1024w"
 	loading="lazy"
 	
 	
@@ -487,10 +499,10 @@
 		data-flex-basis="176px"
 	
 ></p>
-<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907357.jpeg"
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260625090317959.jpeg"
 	width="155"
 	height="250"
-	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907357_hu_22d91a62080d7d6b.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907357_hu_2571bdd2ca12d1b4.jpeg 1024w"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260625090317959_hu_22d91a62080d7d6b.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260625090317959_hu_2571bdd2ca12d1b4.jpeg 1024w"
 	loading="lazy"
 	
 	
@@ -499,10 +511,10 @@
 		data-flex-basis="148px"
 	
 ></p>
-<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907368.png"
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260625090317960.png"
 	width="143"
 	height="250"
-	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907368_hu_ab3e7a3406591d77.png 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260621092907368_hu_10f0bb9632a8c9d6.png 1024w"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260625090317960_hu_ab3e7a3406591d77.png 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260625090317960_hu_10f0bb9632a8c9d6.png 1024w"
 	loading="lazy"
 	
 	
@@ -511,10 +523,11 @@
 		data-flex-basis="137px"
 	
 ></p>
-<p><strong>2.新建 wifi 核心脚本</strong></p>
-<p><strong>2.1 打开 MT 管理器，进入 <code>/data/local/</code>文件夹，新建<code>phone-server</code>文件夹，然后进入<code>phone-server</code>文件夹再新建<code>wifi-keeper</code> 文件夹；</strong></p>
-<p><strong>2.2 在 <code>/data/local/phone-server/wifi-keeper/</code>文件夹下面新建<code>wifi-keeper.sh</code> 文件，并且输入下面的代码进行保存：</strong></p>
-<div class="highlight"><div class="chroma">
+<hr>
+<h2 id="22-新建-wi-fi-核心脚本">2.2 新建 Wi-Fi 核心脚本
+</h2><h3 id="221-打开-mt-管理器进入-datalocal-文件夹新建-phone-server-文件夹然后进入-phone-server-文件夹再新建-wifi-keeper-文件夹">2.2.1 打开 MT 管理器，进入 <code>/data/local/</code> 文件夹，新建 <code>phone-server</code> 文件夹，然后进入 <code>phone-server</code> 文件夹再新建 <code>wifi-keeper</code> 文件夹
+</h3><h3 id="222-在-datalocalphone-serverwifi-keeper-文件夹下面新建-wifi-keepersh-文件并且输入下面的代码进行保存">2.2.2 在 <code>/data/local/phone-server/wifi-keeper/</code> 文件夹下面新建 <code>wifi-keeper.sh</code> 文件，并且输入下面的代码进行保存
+</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">  1
 </span><span class="lnt">  2
@@ -1222,116 +1235,115 @@
 </span><span class="lnt">704
 </span><span class="lnt">705
 </span><span class="lnt">706
-</span><span class="lnt">707
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/system/bin/sh
 </span></span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 9 ============================================================</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 10 Keeper</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 11 ============================================================</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 12 功能：</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 13 1. 开机后自动检查 wifi 开关</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 14 2. 如果 wifi 关闭，自动打开 wifi</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 15 3. 等待系统自动连接“已保存”的 wifi</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 16 4. 如果系统没有自动连上，则按 WIFI_LIST 优先级选择已保存 wifi</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 17 5. wifi 断开后，自动重新连接</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 18 6. 输出详细日志，方便排查</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Keeper</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 功能：</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 1. 开机后自动检查 wifi 开关</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 2. 如果 wifi 关闭，自动打开 wifi</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 3. 等待系统自动连接“已保存”的 wifi</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 4. 如果系统没有自动连上，则按 WIFI_LIST 优先级选择已保存 wifi</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 5. wifi 断开后，自动重新连接</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 6. 输出详细日志，方便排查</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 19 适用环境：</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 20 Root + Magisk service.d</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 适用环境：</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Root + Magisk service.d</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 21 重要说明：</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 22 1. 需要提前手动连接一次 wifi，让系统保存 wifi。</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 23 2. WIFI_LIST 里只写 Wi-Fi 名称，不用写密码、不用写验证方式。</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 24 3. 如果一个WI-FI没连接成功，系统会连接下一个wifi</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 25 4. 这是常驻守护脚本，不是执行一次就退出的脚本。</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 26 ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 重要说明：</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 1. 需要提前手动连接一次 wifi，让系统保存 wifi。</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 2. WIFI_LIST 里只写 Wi-Fi 名称，不用写密码、不用写验证方式。</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 3. 如果一个WI-FI没连接成功，系统会连接下一个wifi</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 4. 这是常驻守护脚本，不是执行一次就退出的脚本。</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 27 ============================================================</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 28 基础路径配置</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 29 ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 基础路径配置</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nv">BASE_DIR</span><span class="o">=</span><span class="s2">&#34;/data/local/phone-server/wifi-keeper&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nv">LOG_FILE</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$BASE_DIR</span><span class="s2">/wifi-keeper.log&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 30 临时锁目录，放在 /dev，重启后自动消失</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 31 作用：防止同一个 wifi-keeper 被重复启动</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 临时锁目录，放在 /dev，重启后自动消失</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 作用：防止同一个 wifi-keeper 被重复启动</span>
 </span></span><span class="line"><span class="cl"><span class="nv">LOCK_DIR</span><span class="o">=</span><span class="s2">&#34;/dev/phone-server-wifi-keeper.lock&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nv">WIFI_IFACE</span><span class="o">=</span><span class="s2">&#34;wlan0&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 32 ============================================================</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 33 列表配置</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 34 ============================================================</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 35 格式：</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 36 一行一个 Wi-Fi 名称。</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 列表配置</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 格式：</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 一行一个 Wi-Fi 名称。</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 37 顺序就是优先级：</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 38 第一行优先级最高，连接失败才尝试下一行。</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 39 ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 顺序就是优先级：</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 第一行优先级最高，连接失败才尝试下一行。</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nv">WIFI_LIST</span><span class="o">=</span><span class="s2">&#34;
 </span></span></span><span class="line"><span class="cl"><span class="s2">CMCC-Semmering
 </span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 40 ============================================================</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 41 行为参数</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 42 ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 行为参数</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 43 开机后等待系统完全启动，最多等待多少秒，单位：秒</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 开机后等待系统完全启动，最多等待多少秒，单位：秒</span>
 </span></span><span class="line"><span class="cl"><span class="nv">BOOT_WAIT_MAX</span><span class="o">=</span><span class="m">60</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 44 系统启动完成后，额外等待多少秒，单位：秒</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 45 有些 MIUI 设备 sys.boot_completed=1 后，Wi-Fi 服务还没完全准备好。</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 系统启动完成后，额外等待多少秒，单位：秒</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 有些 MIUI 设备 sys.boot_completed=1 后，Wi-Fi 服务还没完全准备好。</span>
 </span></span><span class="line"><span class="cl"><span class="nv">AFTER_BOOT_EXTRA_WAIT</span><span class="o">=</span><span class="m">10</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 46 打开 Wi-Fi 后，最多等待多久确认 Wi-Fi 进入可连接状态，单位：秒</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 打开 Wi-Fi 后，最多等待多久确认 Wi-Fi 进入可连接状态，单位：秒</span>
 </span></span><span class="line"><span class="cl"><span class="nv">ENABLE_WIFI_WAIT</span><span class="o">=</span><span class="m">10</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 47 打开 Wi-Fi 后，等待系统自动连接已保存 Wi-Fi 的时间，单位：秒</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 打开 Wi-Fi 后，等待系统自动连接已保存 Wi-Fi 的时间，单位：秒</span>
 </span></span><span class="line"><span class="cl"><span class="nv">AUTO_CONNECT_WAIT</span><span class="o">=</span><span class="m">10</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 48 使用 wpa_cli 选择已保存 Wi-Fi 后，最多等待多久拿到 IP，单位：秒</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用 wpa_cli 选择已保存 Wi-Fi 后，最多等待多久拿到 IP，单位：秒</span>
 </span></span><span class="line"><span class="cl"><span class="nv">SELECT_WIFI_WAIT</span><span class="o">=</span><span class="m">30</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 49 正常情况下，每隔多少秒检查一次 Wi-Fi，单位：秒</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 正常情况下，每隔多少秒检查一次 Wi-Fi，单位：秒</span>
 </span></span><span class="line"><span class="cl"><span class="nv">CHECK_INTERVAL</span><span class="o">=</span><span class="m">60</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 50 本轮修复失败后，等待多少秒再重试，单位：秒</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 本轮修复失败后，等待多少秒再重试，单位：秒</span>
 </span></span><span class="line"><span class="cl"><span class="nv">FAIL_COOLDOWN</span><span class="o">=</span><span class="m">30</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 51 日志最大大小，单位：字节</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 52 字节 = 1MB</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 53 超过后只保留最后 300 行，避免日志无限增长</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 日志最大大小，单位：字节</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 字节 = 1MB</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 超过后只保留最后 300 行，避免日志无限增长</span>
 </span></span><span class="line"><span class="cl"><span class="nv">MAX_LOG_SIZE</span><span class="o">=</span><span class="m">1048576</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 54 ============================================================</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 55 全局变量</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 56 ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 全局变量</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nv">WPA_CLI_BIN</span><span class="o">=</span><span class="s2">&#34;&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nv">WPA_CTRL_DIR</span><span class="o">=</span><span class="s2">&#34;&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nv">WPA_LAST_OUT</span><span class="o">=</span><span class="s2">&#34;&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 57 ============================================================</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 58 日志函数</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 59 ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 日志函数</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">now<span class="o">()</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">  date <span class="s1">&#39;+%Y-%m-%d %H:%M:%S&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 60 避免日志里输出 MAC 地址 / BSSID</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 避免日志里输出 MAC 地址 / BSSID</span>
 </span></span><span class="line"><span class="cl">mask_mac<span class="o">()</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> <span class="p">|</span> sed -E <span class="s1">&#39;s/([0-9A-Fa-f]{2}:){5}[0-9A-Fa-f]{2}/[MAC已隐藏]/g&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 61 取 WIFI_LIST 中第一个有效 wifi名称，用于“尚未解析到当前 SSID”时的日志提示。</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 62 这样日志不会把 MIUI 的 BSSID / state 状态误当成 Wi-Fi 名称。</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 取 WIFI_LIST 中第一个有效 wifi名称，用于“尚未解析到当前 SSID”时的日志提示。</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 这样日志不会把 MIUI 的 BSSID / state 状态误当成 Wi-Fi 名称。</span>
 </span></span><span class="line"><span class="cl">get_first_wifi_name_from_list<span class="o">()</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nb">printf</span> <span class="s1">&#39;%s\n&#39;</span> <span class="s2">&#34;</span><span class="nv">$WIFI_LIST</span><span class="s2">&#34;</span> <span class="p">|</span> <span class="k">while</span> <span class="nv">IFS</span><span class="o">=</span> <span class="nb">read</span> -r line<span class="p">;</span> <span class="k">do</span>
-</span></span><span class="line"><span class="cl"><span class="o">[</span> -z <span class="s2">&#34;</span><span class="nv">$line</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span> -z <span class="s2">&#34;</span><span class="nv">$line</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">continue</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="s2">&#34;</span><span class="nv">$line</span><span class="s2">&#34;</span> in
 </span></span><span class="line"><span class="cl">      <span class="se">\#</span>*<span class="o">)</span> <span class="k">continue</span> <span class="p">;;</span>
@@ -1342,8 +1354,7 @@
 </span></span><span class="line"><span class="cl">  <span class="k">done</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 63 清洗从 dumpsys / wpa_cli 解析出来的 SSID。</span>
-</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 清洗从 dumpsys / wpa_cli 解析出来的 SSID。</span>
 </span></span><span class="line"><span class="cl">clean_ssid_value<span class="o">()</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nv">raw</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
@@ -1365,14 +1376,14 @@
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">rotate_log_if_needed<span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl"><span class="o">[</span> -f <span class="s2">&#34;</span><span class="nv">$LOG_FILE</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">||</span> <span class="k">return</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl">  <span class="o">[</span> -f <span class="s2">&#34;</span><span class="nv">$LOG_FILE</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">||</span> <span class="k">return</span> <span class="m">0</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="nv">size</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>wc -c &lt; <span class="s2">&#34;</span><span class="nv">$LOG_FILE</span><span class="s2">&#34;</span> 2/dev/null<span class="k">)</span><span class="s2">&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="o">[</span> -n <span class="s2">&#34;</span><span class="nv">$size</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">||</span> <span class="k">return</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">size</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>wc -c &lt; <span class="s2">&#34;</span><span class="nv">$LOG_FILE</span><span class="s2">&#34;</span> 2&gt;/dev/null<span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">[</span> -n <span class="s2">&#34;</span><span class="nv">$size</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">||</span> <span class="k">return</span> <span class="m">0</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$size</span><span class="s2">&#34;</span> -gt <span class="s2">&#34;</span><span class="nv">$MAX_LOG_SIZE</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-</span></span><span class="line"><span class="cl">    tail -n <span class="m">300</span> <span class="s2">&#34;</span><span class="nv">$LOG_FILE</span><span class="s2">&#34;</span>  <span class="s2">&#34;</span><span class="nv">$LOG_FILE</span><span class="s2">.tmp&#34;</span> 2/dev/null
-</span></span><span class="line"><span class="cl">    mv <span class="s2">&#34;</span><span class="nv">$LOG_FILE</span><span class="s2">.tmp&#34;</span> <span class="s2">&#34;</span><span class="nv">$LOG_FILE</span><span class="s2">&#34;</span> 2/dev/null
+</span></span><span class="line"><span class="cl">    tail -n <span class="m">300</span> <span class="s2">&#34;</span><span class="nv">$LOG_FILE</span><span class="s2">&#34;</span> &gt; <span class="s2">&#34;</span><span class="nv">$LOG_FILE</span><span class="s2">.tmp&#34;</span> 2&gt;/dev/null
+</span></span><span class="line"><span class="cl">    mv <span class="s2">&#34;</span><span class="nv">$LOG_FILE</span><span class="s2">.tmp&#34;</span> <span class="s2">&#34;</span><span class="nv">$LOG_FILE</span><span class="s2">&#34;</span> 2&gt;/dev/null
 </span></span><span class="line"><span class="cl">  <span class="k">fi</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
@@ -1384,7 +1395,7 @@
 </span></span><span class="line"><span class="cl">  mkdir -p <span class="s2">&#34;</span><span class="nv">$BASE_DIR</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">  rotate_log_if_needed
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;</span><span class="k">$(</span>now<span class="k">)</span><span class="s2"> [</span><span class="nv">$level</span><span class="s2">] [</span><span class="nv">$action</span><span class="s2">] </span><span class="nv">$msg</span><span class="s2">&#34;</span>  <span class="s2">&#34;</span><span class="nv">$LOG_FILE</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;</span><span class="k">$(</span>now<span class="k">)</span><span class="s2"> [</span><span class="nv">$level</span><span class="s2">] [</span><span class="nv">$action</span><span class="s2">] </span><span class="nv">$msg</span><span class="s2">&#34;</span> &gt;&gt; <span class="s2">&#34;</span><span class="nv">$LOG_FILE</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">log_info<span class="o">()</span> <span class="o">{</span>
@@ -1399,12 +1410,12 @@
 </span></span><span class="line"><span class="cl">  log <span class="s2">&#34;ERROR&#34;</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> <span class="s2">&#34;</span><span class="nv">$2</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 64 ============================================================</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 65 防止重复运行</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 66 ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 防止重复运行</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">acquire_lock<span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">  <span class="k">if</span> mkdir <span class="s2">&#34;</span><span class="nv">$LOCK_DIR</span><span class="s2">&#34;</span> 2/dev/null<span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> mkdir <span class="s2">&#34;</span><span class="nv">$LOCK_DIR</span><span class="s2">&#34;</span> 2&gt;/dev/null<span class="p">;</span> <span class="k">then</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">trap</span> <span class="s1">&#39;rm -rf &#34;$LOCK_DIR&#34;; log_info &#34;退出脚本&#34; &#34;Wi-Fi Keeper 已退出，释放 lock&#34;&#39;</span> EXIT
 </span></span><span class="line"><span class="cl">    log_ok <span class="s2">&#34;启动脚本&#34;</span> <span class="s2">&#34;获取 lock 成功，当前实例开始运行&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="m">0</span>
@@ -1414,19 +1425,19 @@
 </span></span><span class="line"><span class="cl">  <span class="nb">exit</span> <span class="m">0</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 67 ============================================================</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 68 环境检查</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 69 ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 环境检查</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">check_env<span class="o">()</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">  mkdir -p <span class="s2">&#34;</span><span class="nv">$BASE_DIR</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="k">if</span> ! <span class="nb">command</span> -v svc /dev/null 2<span class="p">&amp;</span>1<span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> ! <span class="nb">command</span> -v svc &gt;/dev/null 2&gt;<span class="p">&amp;</span>1<span class="p">;</span> <span class="k">then</span>
 </span></span><span class="line"><span class="cl">    log_error <span class="s2">&#34;检查环境&#34;</span> <span class="s2">&#34;系统不支持 svc 命令，无法打开 Wi-Fi&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">exit</span> <span class="m">1</span>
 </span></span><span class="line"><span class="cl">  <span class="k">fi</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="k">if</span> ! <span class="nb">command</span> -v ip /dev/null 2<span class="p">&amp;</span>1<span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> ! <span class="nb">command</span> -v ip &gt;/dev/null 2&gt;<span class="p">&amp;</span>1<span class="p">;</span> <span class="k">then</span>
 </span></span><span class="line"><span class="cl">    log_error <span class="s2">&#34;检查环境&#34;</span> <span class="s2">&#34;系统不支持 ip 命令，无法检测 wlan0 地址&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">exit</span> <span class="m">1</span>
 </span></span><span class="line"><span class="cl">  <span class="k">fi</span>
@@ -1439,7 +1450,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="nv">i</span><span class="o">=</span><span class="m">0</span>
 </span></span><span class="line"><span class="cl">  <span class="k">while</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$i</span><span class="s2">&#34;</span> -lt <span class="s2">&#34;</span><span class="nv">$BOOT_WAIT_MAX</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">do</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">boot_completed</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>getprop sys.boot_completed 2/dev/null<span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">boot_completed</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>getprop sys.boot_completed 2&gt;/dev/null<span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$boot_completed</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;1&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
 </span></span><span class="line"><span class="cl">      log_ok <span class="s2">&#34;等待系统启动&#34;</span> <span class="s2">&#34;系统启动完成&#34;</span>
@@ -1454,12 +1465,12 @@
 </span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="m">1</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 70 ============================================================</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 71 状态判断</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 72 ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 状态判断</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">wifi_on_value<span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">  settings get global wifi_on 2/dev/null
+</span></span><span class="line"><span class="cl">  settings get global wifi_on 2&gt;/dev/null
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">wifi_on_text<span class="o">()</span> <span class="o">{</span>
@@ -1485,14 +1496,14 @@
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">has_wifi_ip<span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">  ip -4 addr show dev <span class="s2">&#34;</span><span class="nv">$WIFI_IFACE</span><span class="s2">&#34;</span> 2/dev/null <span class="p">|</span> grep -q <span class="s2">&#34;inet &#34;</span> <span class="o">&amp;&amp;</span> <span class="k">return</span> <span class="m">0</span>
-</span></span><span class="line"><span class="cl">  ip -6 addr show dev <span class="s2">&#34;</span><span class="nv">$WIFI_IFACE</span><span class="s2">&#34;</span> scope global 2/dev/null <span class="p">|</span> grep -q <span class="s2">&#34;inet6 &#34;</span> <span class="o">&amp;&amp;</span> <span class="k">return</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl">  ip -4 addr show dev <span class="s2">&#34;</span><span class="nv">$WIFI_IFACE</span><span class="s2">&#34;</span> 2&gt;/dev/null <span class="p">|</span> grep -q <span class="s2">&#34;inet &#34;</span> <span class="o">&amp;&amp;</span> <span class="k">return</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl">  ip -6 addr show dev <span class="s2">&#34;</span><span class="nv">$WIFI_IFACE</span><span class="s2">&#34;</span> scope global 2&gt;/dev/null <span class="p">|</span> grep -q <span class="s2">&#34;inet6 &#34;</span> <span class="o">&amp;&amp;</span> <span class="k">return</span> <span class="m">0</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="m">1</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">wifi_iface_up<span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">  ip link show <span class="s2">&#34;</span><span class="nv">$WIFI_IFACE</span><span class="s2">&#34;</span> 2/dev/null <span class="p">|</span> grep -q <span class="s2">&#34;UP&#34;</span>
+</span></span><span class="line"><span class="cl">  ip link show <span class="s2">&#34;</span><span class="nv">$WIFI_IFACE</span><span class="s2">&#34;</span> 2&gt;/dev/null <span class="p">|</span> grep -q <span class="s2">&#34;UP&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">wifi_ready_for_connect<span class="o">()</span> <span class="o">{</span>
@@ -1500,7 +1511,7 @@
 </span></span><span class="line"><span class="cl">  has_wifi_ip <span class="o">&amp;&amp;</span> <span class="k">return</span> <span class="m">0</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="c1"># settings 显示已开启</span>
-</span></span><span class="line"><span class="cl"><span class="o">[</span> <span class="s2">&#34;</span><span class="k">$(</span>wifi_on_value<span class="k">)</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;1&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">return</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl">  <span class="o">[</span> <span class="s2">&#34;</span><span class="k">$(</span>wifi_on_value<span class="k">)</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;1&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">return</span> <span class="m">0</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="c1"># wlan0 已经 UP，也说明可以等待系统自动连接或尝试选择已保存网络</span>
 </span></span><span class="line"><span class="cl">  wifi_iface_up <span class="o">&amp;&amp;</span> <span class="k">return</span> <span class="m">0</span>
@@ -1508,21 +1519,21 @@
 </span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="m">1</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 73 ============================================================</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 74 当前 Wi-Fi 名称解析</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 75 ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 当前 Wi-Fi 名称解析</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">find_wpa_cli_bin_quiet<span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl"><span class="o">[</span> -n <span class="s2">&#34;</span><span class="nv">$WPA_CLI_BIN</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> -x <span class="s2">&#34;</span><span class="nv">$WPA_CLI_BIN</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">return</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl">  <span class="o">[</span> -n <span class="s2">&#34;</span><span class="nv">$WPA_CLI_BIN</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> -x <span class="s2">&#34;</span><span class="nv">$WPA_CLI_BIN</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">return</span> <span class="m">0</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="k">for</span> b in <span class="se">\
-</span></span></span><span class="line"><span class="cl">    <span class="s2">&#34;</span><span class="k">$(</span><span class="nb">command</span> -v wpa_cli 2/dev/null<span class="k">)</span><span class="s2">&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    <span class="s2">&#34;</span><span class="k">$(</span><span class="nb">command</span> -v wpa_cli 2&gt;/dev/null<span class="k">)</span><span class="s2">&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">    <span class="s2">&#34;/system/bin/wpa_cli&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">    <span class="s2">&#34;/vendor/bin/wpa_cli&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">    <span class="s2">&#34;/system/xbin/wpa_cli&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl">    <span class="s2">&#34;/system_ext/bin/wpa_cli&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="k">do</span>
-</span></span><span class="line"><span class="cl"><span class="o">[</span> -z <span class="s2">&#34;</span><span class="nv">$b</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span> -z <span class="s2">&#34;</span><span class="nv">$b</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">continue</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="o">[</span> -x <span class="s2">&#34;</span><span class="nv">$b</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
 </span></span><span class="line"><span class="cl">      <span class="nv">WPA_CLI_BIN</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$b</span><span class="s2">&#34;</span>
@@ -1535,9 +1546,9 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">wpa_cli_raw<span class="o">()</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="o">[</span> -z <span class="s2">&#34;</span><span class="nv">$WPA_CTRL_DIR</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;</span><span class="nv">$WPA_CLI_BIN</span><span class="s2">&#34;</span> -i <span class="s2">&#34;</span><span class="nv">$WIFI_IFACE</span><span class="s2">&#34;</span> <span class="s2">&#34;</span><span class="nv">$@</span><span class="s2">&#34;</span> 2<span class="p">&amp;</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;</span><span class="nv">$WPA_CLI_BIN</span><span class="s2">&#34;</span> -i <span class="s2">&#34;</span><span class="nv">$WIFI_IFACE</span><span class="s2">&#34;</span> <span class="s2">&#34;</span><span class="nv">$@</span><span class="s2">&#34;</span> 2&gt;<span class="p">&amp;</span><span class="m">1</span>
 </span></span><span class="line"><span class="cl">  <span class="k">else</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;</span><span class="nv">$WPA_CLI_BIN</span><span class="s2">&#34;</span> -p <span class="s2">&#34;</span><span class="nv">$WPA_CTRL_DIR</span><span class="s2">&#34;</span> -i <span class="s2">&#34;</span><span class="nv">$WIFI_IFACE</span><span class="s2">&#34;</span> <span class="s2">&#34;</span><span class="nv">$@</span><span class="s2">&#34;</span> 2<span class="p">&amp;</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;</span><span class="nv">$WPA_CLI_BIN</span><span class="s2">&#34;</span> -p <span class="s2">&#34;</span><span class="nv">$WPA_CTRL_DIR</span><span class="s2">&#34;</span> -i <span class="s2">&#34;</span><span class="nv">$WIFI_IFACE</span><span class="s2">&#34;</span> <span class="s2">&#34;</span><span class="nv">$@</span><span class="s2">&#34;</span> 2&gt;<span class="p">&amp;</span><span class="m">1</span>
 </span></span><span class="line"><span class="cl">  <span class="k">fi</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
@@ -1546,10 +1557,10 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="c1"># 如果已经检测过控制目录，就直接用</span>
 </span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="o">[</span> -n <span class="s2">&#34;</span><span class="nv">$WPA_CTRL_DIR</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">out</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>wpa_cli_raw status 2/dev/null<span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">out</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>wpa_cli_raw status 2&gt;/dev/null<span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="nv">ssid</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span><span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$out</span><span class="s2">&#34;</span> <span class="p">|</span> sed -n <span class="s1">&#39;s/^ssid=//p&#39;</span> <span class="p">|</span> head -n 1<span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="nv">ssid</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>clean_ssid_value <span class="s2">&#34;</span><span class="nv">$ssid</span><span class="s2">&#34;</span><span class="k">)</span><span class="s2">&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="o">[</span> -n <span class="s2">&#34;</span><span class="nv">$ssid</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$ssid</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span> -n <span class="s2">&#34;</span><span class="nv">$ssid</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$ssid</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="m">0</span>
 </span></span><span class="line"><span class="cl">  <span class="k">fi</span>
 </span></span><span class="line"><span class="cl">
@@ -1561,7 +1572,7 @@
 </span></span></span><span class="line"><span class="cl">    <span class="s2">&#34;/dev/socket&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="k">do</span>
 </span></span><span class="line"><span class="cl">    <span class="nv">WPA_CTRL_DIR</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$p</span><span class="s2">&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">out</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>wpa_cli_raw status 2/dev/null<span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">out</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>wpa_cli_raw status 2&gt;/dev/null<span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$out</span><span class="s2">&#34;</span> <span class="p">|</span> grep -q <span class="s2">&#34;wpa_state&#34;</span> <span class="o">||</span> <span class="k">continue</span>
 </span></span><span class="line"><span class="cl">
@@ -1580,9 +1591,9 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">get_current_ssid_from_dumpsys<span class="o">()</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">  <span class="c1"># 只提取 SSID，避免输出 BSSID/MAC。</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">line</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>dumpsys wifi 2/dev/null <span class="p">|</span> grep -m <span class="m">1</span> <span class="s2">&#34;SSID:&#34;</span> 2/dev/null<span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">line</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>dumpsys wifi 2&gt;/dev/null <span class="p">|</span> grep -m <span class="m">1</span> <span class="s2">&#34;SSID:&#34;</span> 2&gt;/dev/null<span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">[</span> -z <span class="s2">&#34;</span><span class="nv">$line</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">return</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl">  <span class="o">[</span> -z <span class="s2">&#34;</span><span class="nv">$line</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">return</span> <span class="m">0</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="nv">ssid</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span><span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$line</span><span class="s2">&#34;</span> <span class="p">|</span> sed -n <span class="s1">&#39;s/.*SSID: *&#34;\([^&#34;]*\)&#34;.*/\1/p&#39;</span><span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
@@ -1592,7 +1603,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="nv">ssid</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>clean_ssid_value <span class="s2">&#34;</span><span class="nv">$ssid</span><span class="s2">&#34;</span><span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">[</span> -n <span class="s2">&#34;</span><span class="nv">$ssid</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$ssid</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">[</span> -n <span class="s2">&#34;</span><span class="nv">$ssid</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$ssid</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">get_current_ssid<span class="o">()</span> <span class="o">{</span>
@@ -1613,11 +1624,11 @@
 </span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 76 获取日志里应该显示的 Wi-Fi 名称。</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 77 说明：</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 78 11 / Android 10 有时不允许从 wpa_cli / dumpsys 稳定解析当前 SSID。</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 79 如果已经拿到 Wi-Fi IP，但解析不到 SSID，并且 WIFI_LIST 里配置了目标 Wi-Fi，</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 80 就在日志中显示“目标 WiFi + 推断说明”，避免反复出现“未解析到当前WiFi名称”。</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 获取日志里应该显示的 Wi-Fi 名称。</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 说明：</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 11 / Android 10 有时不允许从 wpa_cli / dumpsys 稳定解析当前 SSID。</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 如果已经拿到 Wi-Fi IP，但解析不到 SSID，并且 WIFI_LIST 里配置了目标 Wi-Fi，</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 就在日志中显示“目标 WiFi + 推断说明”，避免反复出现“未解析到当前WiFi名称”。</span>
 </span></span><span class="line"><span class="cl">get_display_wifi_name<span class="o">()</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nv">real_ssid</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>get_current_ssid<span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
@@ -1644,9 +1655,9 @@
 </span></span><span class="line"><span class="cl">  <span class="nv">wifi_value</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>wifi_on_value<span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="nv">wifi_text</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>wifi_on_text<span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="nv">ssid</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>get_display_wifi_name<span class="k">)</span><span class="s2">&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">ip_info</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>ip addr show dev <span class="s2">&#34;</span><span class="nv">$WIFI_IFACE</span><span class="s2">&#34;</span> 2/dev/null <span class="p">|</span> grep -E <span class="s1">&#39;inet |inet6 &#39;</span> <span class="p">|</span> tr <span class="s1">&#39;\n&#39;</span> <span class="s1">&#39; &#39;</span><span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">ip_info</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>ip addr show dev <span class="s2">&#34;</span><span class="nv">$WIFI_IFACE</span><span class="s2">&#34;</span> 2&gt;/dev/null <span class="p">|</span> grep -E <span class="s1">&#39;inet |inet6 &#39;</span> <span class="p">|</span> tr <span class="s1">&#39;\n&#39;</span> <span class="s1">&#39; &#39;</span><span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">[</span> -z <span class="s2">&#34;</span><span class="nv">$ip_info</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nv">ip_info</span><span class="o">=</span><span class="s2">&#34;未拿到IP&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">[</span> -z <span class="s2">&#34;</span><span class="nv">$ip_info</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nv">ip_info</span><span class="o">=</span><span class="s2">&#34;未拿到IP&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  log_info <span class="s2">&#34;WiFi状态&#34;</span> <span class="s2">&#34;WiFi开关=</span><span class="nv">$wifi_value</span><span class="s2">(</span><span class="nv">$wifi_text</span><span class="s2">)；当前WiFi=</span><span class="nv">$ssid</span><span class="s2">；IP=</span><span class="nv">$ip_info</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
@@ -1660,7 +1671,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  log_info <span class="s2">&#34;打开WiFi开关&#34;</span> <span class="s2">&#34;检测到 Wi-Fi 关闭，开始打开 Wi-Fi&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="nv">out</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>svc wifi <span class="nb">enable</span> 2<span class="p">&amp;</span>1<span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">out</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>svc wifi <span class="nb">enable</span> 2&gt;<span class="p">&amp;</span>1<span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="nv">rc</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$?</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$rc</span><span class="s2">&#34;</span> -ne <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
@@ -1740,10 +1751,10 @@
 </span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="m">1</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 81 ============================================================</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 82 使用 wpa_cli 选择已保存 wifi</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 83 注意：这里只选择已保存网络，不写入密码，不创建新网络</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 84 ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用 wpa_cli 选择已保存 wifi</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：这里只选择已保存网络，不写入密码，不创建新网络</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">find_wpa_cli_bin<span class="o">()</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">if</span> find_wpa_cli_bin_quiet<span class="p">;</span> <span class="k">then</span>
@@ -1782,7 +1793,7 @@
 </span></span><span class="line"><span class="cl">  <span class="k">do</span>
 </span></span><span class="line"><span class="cl">    <span class="nv">WPA_CTRL_DIR</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$p</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="nv">out</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>wpa_cli_raw status 2<span class="p">&amp;</span>1<span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">out</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>wpa_cli_raw status 2&gt;<span class="p">&amp;</span>1<span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="nv">rc</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$?</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="nv">safe_out</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>mask_mac <span class="s2">&#34;</span><span class="nv">$out</span><span class="s2">&#34;</span><span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
@@ -1806,7 +1817,7 @@
 </span></span><span class="line"><span class="cl">  wpa_exec <span class="s2">&#34;查找已保存WIFI&#34;</span> list_networks
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="nv">network_id</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span><span class="nb">printf</span> <span class="s1">&#39;%s\n&#39;</span> <span class="s2">&#34;</span><span class="nv">$WPA_LAST_OUT</span><span class="s2">&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl">    <span class="p">|</span> awk -F <span class="s1">&#39;\t&#39;</span> -v <span class="nv">target</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$target_ssid</span><span class="s2">&#34;</span> <span class="s1">&#39;NR  1 &amp;&amp; $2 == target {print $1; exit}&#39;</span><span class="k">)</span><span class="s2">&#34;</span>
+</span></span></span><span class="line"><span class="cl">    <span class="p">|</span> awk -F <span class="s1">&#39;\t&#39;</span> -v <span class="nv">target</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$target_ssid</span><span class="s2">&#34;</span> <span class="s1">&#39;NR&gt;1 &amp;&amp; $2 == target {print $1; exit}&#39;</span><span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="o">[</span> -z <span class="s2">&#34;</span><span class="nv">$network_id</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
 </span></span><span class="line"><span class="cl">    log_error <span class="s2">&#34;查找已保存WIFI&#34;</span> <span class="s2">&#34;没有找到已保存的 Wi-Fi：</span><span class="nv">$target_ssid</span><span class="s2">。请先手动连接一次并保存&#34;</span>
@@ -1853,10 +1864,10 @@
 </span></span><span class="line"><span class="cl">  log_info <span class="s2">&#34;连接WIFI&#34;</span> <span class="s2">&#34;开始按 WIFI_LIST 顺序选择已保存 Wi-Fi&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="nv">tmp_list</span><span class="o">=</span><span class="s2">&#34;/dev/phone-server-wifi-list.tmp&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nb">printf</span> <span class="s1">&#39;%s\n&#39;</span> <span class="s2">&#34;</span><span class="nv">$WIFI_LIST</span><span class="s2">&#34;</span>  <span class="s2">&#34;</span><span class="nv">$tmp_list</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">printf</span> <span class="s1">&#39;%s\n&#39;</span> <span class="s2">&#34;</span><span class="nv">$WIFI_LIST</span><span class="s2">&#34;</span> &gt; <span class="s2">&#34;</span><span class="nv">$tmp_list</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="k">while</span> <span class="nv">IFS</span><span class="o">=</span> <span class="nb">read</span> -r ssid<span class="p">;</span> <span class="k">do</span>
-</span></span><span class="line"><span class="cl"><span class="o">[</span> -z <span class="s2">&#34;</span><span class="nv">$ssid</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span> -z <span class="s2">&#34;</span><span class="nv">$ssid</span><span class="s2">&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">continue</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="s2">&#34;</span><span class="nv">$ssid</span><span class="s2">&#34;</span> in
 </span></span><span class="line"><span class="cl">      <span class="se">\#</span>*<span class="o">)</span> <span class="k">continue</span> <span class="p">;;</span>
@@ -1865,22 +1876,22 @@
 </span></span><span class="line"><span class="cl">    log_info <span class="s2">&#34;连接WIFI&#34;</span> <span class="s2">&#34;按优先级尝试选择 Wi-Fi：</span><span class="nv">$ssid</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> select_saved_wifi_by_ssid <span class="s2">&#34;</span><span class="nv">$ssid</span><span class="s2">&#34;</span><span class="p">;</span> <span class="k">then</span>
-</span></span><span class="line"><span class="cl">      rm -f <span class="s2">&#34;</span><span class="nv">$tmp_list</span><span class="s2">&#34;</span> 2/dev/null
+</span></span><span class="line"><span class="cl">      rm -f <span class="s2">&#34;</span><span class="nv">$tmp_list</span><span class="s2">&#34;</span> 2&gt;/dev/null
 </span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="m">0</span>
 </span></span><span class="line"><span class="cl">    <span class="k">fi</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    log_error <span class="s2">&#34;连接WIFI&#34;</span> <span class="s2">&#34;Wi-Fi=</span><span class="nv">$ssid</span><span class="s2"> 连接失败，继续尝试下一个&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="k">done</span> &lt; <span class="s2">&#34;</span><span class="nv">$tmp_list</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  rm -f <span class="s2">&#34;</span><span class="nv">$tmp_list</span><span class="s2">&#34;</span> 2/dev/null
+</span></span><span class="line"><span class="cl">  rm -f <span class="s2">&#34;</span><span class="nv">$tmp_list</span><span class="s2">&#34;</span> 2&gt;/dev/null
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  log_error <span class="s2">&#34;连接WIFI&#34;</span> <span class="s2">&#34;WIFI_LIST 中的已保存 Wi-Fi 都没有连接成功&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="m">1</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 85 ============================================================</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 86 主循环</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 87 ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 主循环</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">main_loop<span class="o">()</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">  log_info <span class="s2">&#34;启动脚本&#34;</span> <span class="s2">&#34;Wi-Fi Keeper 启动&#34;</span>
@@ -1925,65 +1936,349 @@
 </span></span><span class="line"><span class="cl">  <span class="k">done</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 88 ============================================================</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 89 程序入口</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 90 ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 程序入口</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ============================================================</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">acquire_lock
 </span></span><span class="line"><span class="cl">check_env
 </span></span><span class="line"><span class="cl">main_loop
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><strong>2.3 按照 1.3 的过程给脚本设置权限。</strong></p>
-<blockquote class="alert alert-question">
-    </blockquote>
-<p><strong>1.</strong> 手机先正常连接上你选择 Wi-Fi，建议选择一个即可，避免手机因为某些原因在多个 wifi 之间来回切换，这个对后面的 ipv6 的解析影响非常大，然后关闭 wifi 的<strong>自动连接</strong>开关。</p>
-<p><strong>2.</strong> 正常连接上一个 wifi 以后，关闭 wifi 开关，把手机重启。</p>
-<p><strong>3.验证手机重启 wifi 是否能正常连接：</strong> 重启以后，等几秒钟（具体看配置你写的是几秒），然后看看 wifi 开关是否会自动打开，并且 wifi 是否会自动连接上。</p>
-<p><strong>4.验证手动断开 wifi 是否能正常连接：</strong> 如果 wifi 能自动连接上，可以手动关闭 wifi 开关，看看 wifi 是否能过几秒（具体还是要看配置你写的是几秒）后自动打开并且连接上 wifi。</p>
-<p><strong>我用的脚本在米 8SE 上多轮测试没问题，如果你们有问题，记得联系我，我到时候拍查一下</strong></p>
-<blockquote class="alert alert-question">
-    <p><strong>方法一：</strong> 取消/data/adb/service.d/99-phone-server.sh 脚本的执行权限
-<strong>方法二：</strong> 删除/data/adb/service.d/99-phone-server.sh 脚本</p></blockquote>
-<blockquote class="alert alert-success">
-    <p>不得不说，AI 是真的好用。不仅可以优化脚本，还能把注释写的清清楚楚。按照它的逻辑和日志，就算出问题了也能很好的定位和解决，这一次确实是省了不少时间。可惜两天撸的 business 2 个月翻车了。</p></blockquote>
-<p><strong>另外，给佬友们送上一份可直接食用的 prompt：</strong></p>
+</div><h3 id="223-按照第-3-节的过程给脚本设置权限">2.2.3 按照第 3 节的过程给脚本设置权限
+</h3><hr>
+<h1 id="3-如何验证脚本是否成功">3 如何验证脚本是否成功
+</h1><ol>
+<li>
+<p>手机先正常连接上你选择 Wi-Fi，建议选择一个即可，避免手机因为某些原因在多个 Wi-Fi 之间来回切换，这个对后面的 IPv6 的解析影响非常大，然后关闭 Wi-Fi 的<strong>自动连接</strong>开关。</p>
+</li>
+<li>
+<p>正常连接上一个 Wi-Fi 以后，关闭 Wi-Fi 开关，把手机重启。</p>
+</li>
+<li>
+<p><strong>验证手机重启 Wi-Fi 是否能正常连接：</strong> 重启以后，等几秒钟（具体看配置你写的是几秒），然后看看 Wi-Fi 开关是否会自动打开，并且 Wi-Fi 是否会自动连接上。</p>
+</li>
+<li>
+<p><strong>验证手动断开 Wi-Fi 是否能正常连接：</strong> 如果 Wi-Fi 能自动连接上，可以手动关闭 Wi-Fi 开关，看看 Wi-Fi 是否能过几秒（具体还是要看配置你写的是几秒）后自动打开并且连接上 Wi-Fi。</p>
+</li>
+</ol>
+<p>我用的脚本在米 8SE 上多轮测试没问题，如果你们有问题，记得联系我，我到时候排查一下。</p>
+<hr>
+<h1 id="4-如何关闭脚本">4 如何关闭脚本
+</h1><p><strong>方法一：</strong> 取消 <code>/data/adb/service.d/99-phone-server.sh</code> 脚本的执行权限
+<strong>方法二：</strong> 删除 <code>/data/adb/service.d/99-phone-server.sh</code> 脚本</p>
+<hr>
+<h1 id="5-结束语">5 结束语
+</h1><p>不得不说，AI 是真的好用。不仅可以优化脚本，还能把注释写的清清楚楚。按照它的逻辑和日志，就算出问题了也能很好的定位和解决，这一次确实是省了不少时间。可惜两天撸的 business 2 个月翻车了。</p>
+<hr>
+<h1 id="6-附录wi-fi-守护脚本设计-prompt可直接食用">6 附录：Wi-Fi 守护脚本设计 Prompt（可直接食用）
+</h1><p>以下是我用来生成上述脚本的完整 Prompt，如果你也想根据自己的需求定制，可以直接复制使用。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span><span class="lnt">146
+</span><span class="lnt">147
+</span><span class="lnt">148
+</span><span class="lnt">149
+</span><span class="lnt">150
+</span><span class="lnt">151
+</span><span class="lnt">152
+</span><span class="lnt">153
+</span><span class="lnt">154
+</span><span class="lnt">155
+</span><span class="lnt">156
+</span><span class="lnt">157
+</span><span class="lnt">158
+</span><span class="lnt">159
+</span><span class="lnt">160
+</span><span class="lnt">161
+</span><span class="lnt">162
+</span><span class="lnt">163
+</span><span class="lnt">164
+</span><span class="lnt">165
+</span><span class="lnt">166
+</span><span class="lnt">167
+</span><span class="lnt">168
+</span><span class="lnt">169
+</span><span class="lnt">170
+</span><span class="lnt">171
+</span><span class="lnt">172
+</span><span class="lnt">173
+</span><span class="lnt">174
+</span><span class="lnt">175
+</span><span class="lnt">176
+</span><span class="lnt">177
+</span><span class="lnt">178
+</span><span class="lnt">179
+</span><span class="lnt">180
+</span><span class="lnt">181
+</span><span class="lnt">182
+</span><span class="lnt">183
+</span><span class="lnt">184
+</span><span class="lnt">185
+</span><span class="lnt">186
+</span><span class="lnt">187
+</span><span class="lnt">188
+</span><span class="lnt">189
+</span><span class="lnt">190
+</span><span class="lnt">191
+</span><span class="lnt">192
+</span><span class="lnt">193
+</span><span class="lnt">194
+</span><span class="lnt">195
+</span><span class="lnt">196
+</span><span class="lnt">197
+</span><span class="lnt">198
+</span><span class="lnt">199
+</span><span class="lnt">200
+</span><span class="lnt">201
+</span><span class="lnt">202
+</span><span class="lnt">203
+</span><span class="lnt">204
+</span><span class="lnt">205
+</span><span class="lnt">206
+</span><span class="lnt">207
+</span><span class="lnt">208
+</span><span class="lnt">209
+</span><span class="lnt">210
+</span><span class="lnt">211
+</span><span class="lnt">212
+</span><span class="lnt">213
+</span><span class="lnt">214
+</span><span class="lnt">215
+</span><span class="lnt">216
+</span><span class="lnt">217
+</span><span class="lnt">218
+</span><span class="lnt">219
+</span><span class="lnt">220
+</span><span class="lnt">221
+</span><span class="lnt">222
+</span><span class="lnt">223
+</span><span class="lnt">224
+</span><span class="lnt">225
+</span><span class="lnt">226
+</span><span class="lnt">227
+</span><span class="lnt">228
+</span><span class="lnt">229
+</span><span class="lnt">230
+</span><span class="lnt">231
+</span><span class="lnt">232
+</span><span class="lnt">233
+</span><span class="lnt">234
+</span><span class="lnt">235
+</span><span class="lnt">236
+</span><span class="lnt">237
+</span><span class="lnt">238
+</span><span class="lnt">239
+</span><span class="lnt">240
+</span><span class="lnt">241
+</span><span class="lnt">242
+</span><span class="lnt">243
+</span><span class="lnt">244
+</span><span class="lnt">245
+</span><span class="lnt">246
+</span><span class="lnt">247
+</span><span class="lnt">248
+</span><span class="lnt">249
+</span><span class="lnt">250
+</span><span class="lnt">251
+</span><span class="lnt">252
+</span><span class="lnt">253
+</span><span class="lnt">254
+</span><span class="lnt">255
+</span><span class="lnt">256
+</span><span class="lnt">257
+</span><span class="lnt">258
+</span><span class="lnt">259
+</span><span class="lnt">260
+</span><span class="lnt">261
+</span><span class="lnt">262
+</span><span class="lnt">263
+</span><span class="lnt">264
+</span><span class="lnt">265
+</span><span class="lnt">266
+</span><span class="lnt">267
+</span><span class="lnt">268
+</span><span class="lnt">269
+</span><span class="lnt">270
+</span><span class="lnt">271
+</span><span class="lnt">272
+</span><span class="lnt">273
+</span><span class="lnt">274
+</span><span class="lnt">275
+</span><span class="lnt">276
+</span><span class="lnt">277
+</span><span class="lnt">278
+</span><span class="lnt">279
+</span><span class="lnt">280
+</span><span class="lnt">281
+</span><span class="lnt">282
+</span><span class="lnt">283
+</span><span class="lnt">284
+</span><span class="lnt">285
+</span><span class="lnt">286
+</span><span class="lnt">287
+</span><span class="lnt">288
+</span><span class="lnt">289
+</span><span class="lnt">290
+</span><span class="lnt">291
+</span><span class="lnt">292
+</span><span class="lnt">293
+</span><span class="lnt">294
+</span><span class="lnt">295
+</span><span class="lnt">296
+</span><span class="lnt">297
+</span><span class="lnt">298
+</span><span class="lnt">299
+</span><span class="lnt">300
+</span><span class="lnt">301
+</span><span class="lnt">302
+</span><span class="lnt">303
+</span><span class="lnt">304
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">我现在正在把一台 Android 手机改造成 7×24 小时运行的家庭小服务器。
@@ -2004,13 +2299,13 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">---
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="gh"># 91 我希望你帮我实现的事情
+</span></span><span class="line"><span class="cl"><span class="gh"># 我希望你帮我实现的事情
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">请你作为一名专业的 Android / Linux / Shell 脚本开发人员，帮我设计并编写一套 Wi-Fi 连接守护方案。
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">我希望它能实现这些能力：
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="gu">## 91.1 1. 开机自动执行
+</span></span><span class="line"><span class="cl"><span class="gu">## 1. 开机自动执行
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">手机开机后，Magisk 自动执行启动脚本。
 </span></span><span class="line"><span class="cl">
@@ -2018,219 +2313,189 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">我希望 <span class="sb">`/data/adb/service.d/`</span> 里只放一个“启动器脚本”，比如：
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">```text
 </span></span><span class="line"><span class="cl">/data/adb/service.d/99-phone-server.sh
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>这个启动器只负责启动真正的 Wi-Fi 守护脚本。</p>
-<p>真正的 Wi-Fi 守护脚本和日志文件，请你帮我设计一个合理的目录，比如放在：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">/data/local/phone-server/wifi-keeper/
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>或者你认为更合理的目录也可以，但请你说明为什么这样设计。</p>
-<hr>
-<h1 id="1-2-自动打开-wi-fi">1 2. 自动打开 Wi-Fi
-</h1><p>脚本启动后，需要检查 Wi-Fi 开关状态。</p>
-<p>如果 Wi-Fi 是关闭状态，就自动打开 Wi-Fi。</p>
-<p>如果 Wi-Fi 已经打开，就不要重复操作。</p>
-<p>注意：
-不同 Android 版本、不同 ROM 对 Wi-Fi 命令支持可能不一样，所以请你不要想当然地只使用某一种命令。
-请你先分析有哪些可能的实现方式，比如：</p>
-<ul>
-<li><code>svc wifi enable</code></li>
-<li><code>settings get global wifi_on</code></li>
-<li><code>ip link show wlan0</code></li>
-<li><code>ip addr show wlan0</code></li>
-<li><code>wpa_cli</code></li>
-<li><code>cmd wifi</code></li>
-<li><code>dumpsys wifi</code></li>
-</ul>
-<p>然后根据兼容性和稳定性，选择更适合 Magisk Root 环境的实现方式。</p>
-<p>如果某些命令在部分系统上可能不可用，请在脚本里做好兼容、兜底和日志记录，而不是让脚本直接崩溃。</p>
-<hr>
-<h1 id="2-3-wi-fi-列表和优先级">2 3. Wi-Fi 列表和优先级
-</h1><p>我希望脚本支持提前配置一个 Wi-Fi 列表。</p>
-<p>比如：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">主 Wi-Fi
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">这个启动器只负责启动真正的 Wi-Fi 守护脚本。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">真正的 Wi-Fi 守护脚本和日志文件，请你帮我设计一个合理的目录，比如放在：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">/data/local/phone-server/wifi-keeper/
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">或者你认为更合理的目录也可以，但请你说明为什么这样设计。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl"><span class="gu">## 2 自动打开 Wi-Fi
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">脚本启动后，需要检查 Wi-Fi 开关状态。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">如果 Wi-Fi 是关闭状态，就自动打开 Wi-Fi。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">如果 Wi-Fi 已经打开，就不要重复操作。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">注意：
+</span></span><span class="line"><span class="cl">不同 Android 版本、不同 ROM 对 Wi-Fi 命令支持可能不一样，所以请你不要想当然地只使用某一种命令。
+</span></span><span class="line"><span class="cl">请你先分析有哪些可能的实现方式，比如：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">-</span> <span class="sb">`svc wifi enable`</span>
+</span></span><span class="line"><span class="cl"><span class="k">-</span> <span class="sb">`settings get global wifi_on`</span>
+</span></span><span class="line"><span class="cl"><span class="k">-</span> <span class="sb">`ip link show wlan0`</span>
+</span></span><span class="line"><span class="cl"><span class="k">-</span> <span class="sb">`ip addr show wlan0`</span>
+</span></span><span class="line"><span class="cl"><span class="k">-</span> <span class="sb">`wpa_cli`</span>
+</span></span><span class="line"><span class="cl"><span class="k">-</span> <span class="sb">`cmd wifi`</span>
+</span></span><span class="line"><span class="cl"><span class="k">-</span> <span class="sb">`dumpsys wifi`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">然后根据兼容性和稳定性，选择更适合 Magisk Root 环境的实现方式。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">如果某些命令在部分系统上可能不可用，请在脚本里做好兼容、兜底和日志记录，而不是让脚本直接崩溃。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">## 3 Wi-Fi 列表和优先级
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">我希望脚本支持提前配置一个 Wi-Fi 列表。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">比如：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">主 Wi-Fi
 </span></span><span class="line"><span class="cl">备用 Wi-Fi
 </span></span><span class="line"><span class="cl">手机热点
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>列表顺序就是优先级。</p>
-<p>脚本应该优先连接列表中靠前的 Wi-Fi。</p>
-<p>如果当前 Wi-Fi 可用，就不要频繁切换，避免影响 SSH、网页服务、IPv6、DDNS 等后续服务。</p>
-<p>只有当当前 Wi-Fi 不可用、断开、没有拿到 IP，或者长时间无法恢复时，才尝试切换到下一个可用 Wi-Fi。</p>
-<hr>
-<h1 id="3-4-已保存-wi-fi-和新-wi-fi-的处理">3 4. 已保存 Wi-Fi 和新 Wi-Fi 的处理
-</h1><p>请你根据 Android 实际情况，设计合理逻辑：</p>
-<ul>
-<li>如果 Wi-Fi 已经在系统中保存过，优先让系统自动连接；</li>
-<li>如果系统自动连接失败，再尝试根据 Wi-Fi 名称选择已保存网络；</li>
-<li>如果脚本能够可靠地支持“通过密码添加新 Wi-Fi”，可以设计为可选能力；</li>
-<li>如果某些 Android 版本或 ROM 不适合脚本直接写入 Wi-Fi 密码，也请你明确说明原因，并给出更稳定的替代方案。</li>
-</ul>
-<p>我不希望脚本为了追求“看起来功能完整”，强行使用不可靠的命令。</p>
-<p>请你优先保证稳定性。</p>
-<hr>
-<h1 id="4-5-不要频繁扫描和切换">4 5. 不要频繁扫描和切换
-</h1><p>手机是作为服务器使用的，所以稳定性比“永远连接最高优先级 Wi-Fi”更重要。</p>
-<p>请你设计逻辑时注意：</p>
-<ul>
-<li>如果当前 Wi-Fi 已经连接成功，并且已经拿到 IP，就不要乱动；</li>
-<li>不要频繁扫描 Wi-Fi；</li>
-<li>不要频繁断开当前 Wi-Fi 再切换；</li>
-<li>不要在信号短暂波动时马上切换；</li>
-<li>需要有合理的重试间隔和冷却时间；</li>
-<li>避免脚本疯狂循环导致耗电、发热、刷屏日志。</li>
-</ul>
-<hr>
-<h1 id="5-6-wi-fi-是否连接成功的判断">5 6. Wi-Fi 是否连接成功的判断
-</h1><p>我希望脚本不要只看 Wi-Fi 开关是否打开。</p>
-<p>真正有意义的是：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">手机是否已经通过 wlan0 拿到了 IP 地址
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>请你设计连接成功判断逻辑。</p>
-<p>比如：</p>
-<ul>
-<li>wlan0 拿到 IPv4；</li>
-<li>或者 wlan0 拿到全局 IPv6；</li>
-<li>或者两者都可以。</li>
-</ul>
-<p>暂时不需要做外网连通性检测，比如 ping 某个公网 IP。
-因为公网 ping 可能受 DNS、运营商、防火墙、网络环境影响，不适合作为 Wi-Fi 是否连接成功的唯一依据。</p>
-<hr>
-<h1 id="6-7-日志要求">6 7. 日志要求
-</h1><p>脚本必须输出清晰日志，方便我排查问题。</p>
-<p>日志中需要包含：</p>
-<ul>
-<li>
-<p>时间，格式为 <code>YYYY-MM-DD HH:mm:ss</code>；</p>
-</li>
-<li>
-<p>日志级别，比如 <code>INFO</code>、<code>OK</code>、<code>ERROR</code>；</p>
-</li>
-<li>
-<p>当前操作名称，比如：</p>
-<ul>
-<li>启动脚本</li>
-<li>等待系统启动</li>
-<li>打开 Wi-Fi 开关</li>
-<li>检查 Wi-Fi 状态</li>
-<li>等待系统自动连接</li>
-<li>选择已保存 Wi-Fi</li>
-<li>重连 Wi-Fi</li>
-<li>进入守护循环</li>
-</ul>
-</li>
-<li>
-<p>错误原因；</p>
-</li>
-<li>
-<p>关键命令的返回值和输出，方便排查。</p>
-</li>
-</ul>
-<p>日志示例可以类似：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">2026-05-15 22:01:23 [OK] [启动脚本] 获取 lock 成功，当前实例开始运行
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">列表顺序就是优先级。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">脚本应该优先连接列表中靠前的 Wi-Fi。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">如果当前 Wi-Fi 可用，就不要频繁切换，避免影响 SSH、网页服务、IPv6、DDNS 等后续服务。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">只有当当前 Wi-Fi 不可用、断开、没有拿到 IP，或者长时间无法恢复时，才尝试切换到下一个可用 Wi-Fi。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">## 4 已保存 Wi-Fi 和新 Wi-Fi 的处理
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">请你根据 Android 实际情况，设计合理逻辑：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 如果 Wi-Fi 已经在系统中保存过，优先让系统自动连接；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 如果系统自动连接失败，再尝试根据 Wi-Fi 名称选择已保存网络；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 如果脚本能够可靠地支持“通过密码添加新 Wi-Fi”，可以设计为可选能力；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 如果某些 Android 版本或 ROM 不适合脚本直接写入 Wi-Fi 密码，也请你明确说明原因，并给出更稳定的替代方案。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">我不希望脚本为了追求“看起来功能完整”，强行使用不可靠的命令。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">请你优先保证稳定性。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl"><span class="gu">## 5 不要频繁扫描和切换
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">手机是作为服务器使用的，所以稳定性比“永远连接最高优先级 Wi-Fi”更重要。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">请你设计逻辑时注意：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 如果当前 Wi-Fi 已经连接成功，并且已经拿到 IP，就不要乱动；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 不要频繁扫描 Wi-Fi；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 不要频繁断开当前 Wi-Fi 再切换；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 不要在信号短暂波动时马上切换；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 需要有合理的重试间隔和冷却时间；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 避免脚本疯狂循环导致耗电、发热、刷屏日志。
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl"><span class="gu">## 6 Wi-Fi 是否连接成功的判断
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">我希望脚本不要只看 Wi-Fi 开关是否打开。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">真正有意义的是：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">手机是否已经通过 wlan0 拿到了 IP 地址
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">请你设计连接成功判断逻辑。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">比如：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">-</span> wlan0 拿到 IPv4；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 或者 wlan0 拿到全局 IPv6；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 或者两者都可以。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">暂时不需要做外网连通性检测，比如 ping 某个公网 IP。
+</span></span><span class="line"><span class="cl">因为公网 ping 可能受 DNS、运营商、防火墙、网络环境影响，不适合作为 Wi-Fi 是否连接成功的唯一依据。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl"><span class="gu">## 7 日志要求
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">脚本必须输出清晰日志，方便我排查问题。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">日志中需要包含：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 时间，格式为 <span class="sb">`YYYY-MM-DD HH:mm:ss`</span>；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 日志级别，比如 <span class="sb">`INFO`</span>、<span class="sb">`OK`</span>、<span class="sb">`ERROR`</span>；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 当前操作名称，比如：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">-</span> 启动脚本
+</span></span><span class="line"><span class="cl">  <span class="k">-</span> 等待系统启动
+</span></span><span class="line"><span class="cl">  <span class="k">-</span> 打开 Wi-Fi 开关
+</span></span><span class="line"><span class="cl">  <span class="k">-</span> 检查 Wi-Fi 状态
+</span></span><span class="line"><span class="cl">  <span class="k">-</span> 等待系统自动连接
+</span></span><span class="line"><span class="cl">  <span class="k">-</span> 选择已保存 Wi-Fi
+</span></span><span class="line"><span class="cl">  <span class="k">-</span> 重连 Wi-Fi
+</span></span><span class="line"><span class="cl">  <span class="k">-</span> 进入守护循环
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 错误原因；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 关键命令的返回值和输出，方便排查。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">日志示例可以类似：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">2026-05-15 22:01:23 [OK] [启动脚本] 获取 lock 成功，当前实例开始运行
 </span></span><span class="line"><span class="cl">2026-05-15 22:01:40 [OK] [等待系统启动] 系统启动完成
 </span></span><span class="line"><span class="cl">2026-05-15 22:01:52 [INFO] [打开WiFi开关] 检测到 Wi-Fi 关闭，开始打开 Wi-Fi
 </span></span><span class="line"><span class="cl">2026-05-15 22:01:55 [OK] [打开WiFi开关] Wi-Fi 已进入可连接状态
 </span></span><span class="line"><span class="cl">2026-05-15 22:02:36 [OK] [检查WiFi状态] Wi-Fi 已连接，当前WiFi=xxx，已拿到 IP
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>日志文件也要限制大小，避免长期运行后日志无限变大。
-请你在脚本里设计日志轮转，例如超过 1MB 后只保留最后若干行，并且在注释中写清楚单位。</p>
-<hr>
-<h1 id="7-8-日志中的-wi-fi-名称和隐私">7 8. 日志中的 Wi-Fi 名称和隐私
-</h1><p>如果能解析当前 Wi-Fi 名称，日志中应该显示 Wi-Fi 名称，而不是 MAC 地址。</p>
-<p>如果某些系统状态中出现 BSSID / MAC 地址，请隐藏或过滤掉。</p>
-<p>例如不要输出：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">00:00:00:00:00:00 nid: 0 state: ASSOCIATING
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>这不是 Wi-Fi 名称，而是系统连接状态。</p>
-<p>如果暂时解析不到当前 Wi-Fi 名称，但已经拿到 wlan0 的 IP，请不要误判为失败。
-这种情况下可以写：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Wi-Fi 已连接，已拿到 IP，但当前 Wi-Fi 名称暂时无法解析
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>或者如果配置列表里只有一个目标 Wi-Fi，也可以说明是根据配置推断的名称。</p>
-<hr>
-<h1 id="8-9-防止重复运行">8 9. 防止重复运行
-</h1><p>这个脚本是常驻守护脚本，不是一次性脚本。</p>
-<p>所以请你加入 lock 机制，防止多个相同脚本同时运行。</p>
-<p>我希望你使用适合 Android / Magisk 环境的方式，比如：</p>
-<ul>
-<li>使用目录锁；</li>
-<li>lock 放在 <code>/dev</code> 这种重启后会自动清理的临时目录；</li>
-<li>不要用容易残留的持久 PID 文件；</li>
-<li>如果脚本正常退出，要自动释放 lock；</li>
-<li>如果检测到已有实例运行，当前脚本应该退出，并写入日志。</li>
-</ul>
-<p>请你解释一下 lock 的作用和为什么这样设计。</p>
-<hr>
-<h1 id="9-10-守护循环">9 10. 守护循环
-</h1><p>脚本不应该只在开机时执行一次。</p>
-<p>它应该是常驻守护脚本。</p>
-<p>大概逻辑应该是：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">等待系统启动完成
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">日志文件也要限制大小，避免长期运行后日志无限变大。
+</span></span><span class="line"><span class="cl">请你在脚本里设计日志轮转，例如超过 1MB 后只保留最后若干行，并且在注释中写清楚单位。
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl"><span class="gu">## 8 日志中的 Wi-Fi 名称和隐私
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">如果能解析当前 Wi-Fi 名称，日志中应该显示 Wi-Fi 名称，而不是 MAC 地址。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">如果某些系统状态中出现 BSSID / MAC 地址，请隐藏或过滤掉。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">例如不要输出：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">00:00:00:00:00:00 nid: 0 state: ASSOCIATING
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">这不是 Wi-Fi 名称，而是系统连接状态。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">如果暂时解析不到当前 Wi-Fi 名称，但已经拿到 wlan0 的 IP，请不要误判为失败。
+</span></span><span class="line"><span class="cl">这种情况下可以写：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Wi-Fi 已连接，已拿到 IP，但当前 Wi-Fi 名称暂时无法解析
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">或者如果配置列表里只有一个目标 Wi-Fi，也可以说明是根据配置推断的名称。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl"><span class="gu">## 9 防止重复运行
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">这个脚本是常驻守护脚本，不是一次性脚本。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">所以请你加入 lock 机制，防止多个相同脚本同时运行。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">我希望你使用适合 Android / Magisk 环境的方式，比如：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 使用目录锁；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> lock 放在 <span class="sb">`/dev`</span> 这种重启后会自动清理的临时目录；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 不要用容易残留的持久 PID 文件；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 如果脚本正常退出，要自动释放 lock；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 如果检测到已有实例运行，当前脚本应该退出，并写入日志。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">请你解释一下 lock 的作用和为什么这样设计。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">## 10 守护循环
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">脚本不应该只在开机时执行一次。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">它应该是常驻守护脚本。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">大概逻辑应该是：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">等待系统启动完成
 </span></span><span class="line"><span class="cl">        ↓
 </span></span><span class="line"><span class="cl">打开 Wi-Fi
 </span></span><span class="line"><span class="cl">        ↓
@@ -2247,65 +2512,80 @@
 </span></span><span class="line"><span class="cl">重新打开 Wi-Fi / 等待自动连接 / 必要时选择已保存 Wi-Fi
 </span></span><span class="line"><span class="cl">        ↓
 </span></span><span class="line"><span class="cl">失败则等待冷却时间后重试
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">## 11 请你特别注意
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">我上面的想法可能并不成熟，所以请你不要只是机械照着我的描述写。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">请你先站在专业 Android 开发人员和 Linux 运维人员的角度，帮我完善整体逻辑。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">在正式给代码之前，请你先做一次简短但准确的设计分析，包括：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">1.</span> 推荐目录结构；
+</span></span><span class="line"><span class="cl"><span class="k">2.</span> 为什么 service.d 里只放启动器；
+</span></span><span class="line"><span class="cl"><span class="k">3.</span> Wi-Fi 守护脚本应该承担哪些职责；
+</span></span><span class="line"><span class="cl"><span class="k">4.</span> 哪些事情不应该放在 Wi-Fi 守护脚本里，比如 IPv6 检测、DDNS 同步；
+</span></span><span class="line"><span class="cl"><span class="k">5.</span> 如何判断 Wi-Fi 是否真的可用；
+</span></span><span class="line"><span class="cl"><span class="k">6.</span> 如何避免重复运行；
+</span></span><span class="line"><span class="cl"><span class="k">7.</span> 哪些命令在 Android 上可能存在兼容性问题，脚本应该如何处理。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">然后再给我完整代码。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gh"># 2 输出要求
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">请输出：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">## 2.1 第一部分：设计说明
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">用通俗易懂的话解释整体方案。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">## 2.2 第二部分：目录结构
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">给出推荐目录结构，并说明每个文件的作用。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">## 2.3 第三部分：Magisk 启动器脚本
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">给出完整代码，可以直接复制使用。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">## 2.4 第四部分：Wi-Fi 守护脚本
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">给出完整代码，可以直接复制使用。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">## 2.5 第五部分：安装和测试命令
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">包括：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 创建目录；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 写入脚本；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 添加执行权限；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 手动启动测试；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 查看日志；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 停止脚本；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 清理 lock；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 如何确认脚本是否正在运行。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gh"># 3 我的最终目标
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">我希望得到的是一套适合 Android Root + Magisk + 手机服务器场景的 Wi-Fi 稳定连接方案。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">重点是：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 稳定；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 易排查；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 日志清晰；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 不重复运行；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 不乱切 Wi-Fi；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 不把所有功能写成一个超级大脚本；
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 后续方便扩展 IPv6 检测、DDNS 更新、Debian / SSH 守护等功能。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">请你根据这些目标，帮我设计并实现一个更专业、更稳定、更容易维护的版本。
 </span></span></code></pre></td></tr></table>
-</div>
-</div><hr>
-<h1 id="10-请你特别注意">10 请你特别注意
-</h1><p>我上面的想法可能并不成熟，所以请你不要只是机械照着我的描述写。</p>
-<p>请你先站在专业 Android 开发人员和 Linux 运维人员的角度，帮我完善整体逻辑。</p>
-<p>在正式给代码之前，请你先做一次简短但准确的设计分析，包括：</p>
-<ol>
-<li>推荐目录结构；</li>
-<li>为什么 service.d 里只放启动器；</li>
-<li>Wi-Fi 守护脚本应该承担哪些职责；</li>
-<li>哪些事情不应该放在 Wi-Fi 守护脚本里，比如 IPv6 检测、DDNS 同步；</li>
-<li>如何判断 Wi-Fi 是否真的可用；</li>
-<li>如何避免重复运行；</li>
-<li>哪些命令在 Android 上可能存在兼容性问题，脚本应该如何处理。</li>
-</ol>
-<p>然后再给我完整代码。</p>
-<hr>
-<h1 id="11-输出要求">11 输出要求
-</h1><p>请输出：</p>
-<h2 id="111-第一部分设计说明">11.1 第一部分：设计说明
-</h2><p>用通俗易懂的话解释整体方案。</p>
-<h2 id="112-第二部分目录结构">11.2 第二部分：目录结构
-</h2><p>给出推荐目录结构，并说明每个文件的作用。</p>
-<h2 id="113-第三部分magisk-启动器脚本">11.3 第三部分：Magisk 启动器脚本
-</h2><p>给出完整代码，可以直接复制使用。</p>
-<h2 id="114-第四部分wi-fi-守护脚本">11.4 第四部分：Wi-Fi 守护脚本
-</h2><p>给出完整代码，可以直接复制使用。</p>
-<h2 id="115-第五部分安装和测试命令">11.5 第五部分：安装和测试命令
-</h2><p>包括：</p>
-<ul>
-<li>创建目录；</li>
-<li>写入脚本；</li>
-<li>添加执行权限；</li>
-<li>手动启动测试；</li>
-<li>查看日志；</li>
-<li>停止脚本；</li>
-<li>清理 lock；</li>
-<li>如何确认脚本是否正在运行。</li>
-</ul>
-<hr>
-<h1 id="12-我的最终目标">12 我的最终目标
-</h1><p>我希望得到的是一套适合 Android Root + Magisk + 手机服务器场景的 Wi-Fi 稳定连接方案。</p>
-<p>重点是：</p>
-<ul>
-<li>稳定；</li>
-<li>易排查；</li>
-<li>日志清晰；</li>
-<li>不重复运行；</li>
-<li>不乱切 Wi-Fi；</li>
-<li>不把所有功能写成一个超级大脚本；</li>
-<li>后续方便扩展 IPv6 检测、DDNS 更新、Debian / SSH 守护等功能。</li>
-</ul>
-<p>请你根据这些目标，帮我设计并实现一个更专业、更稳定、更容易维护的版本。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"></code></pre></td></tr></table>
 </div>
 </div>
 </section>
@@ -2317,7 +2597,7 @@
         
             <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
         
-            <a href="/tags/linuxdo/">Linuxdo</a>
+            <a href="/tags/linuxdo/">LinuxDo</a>
         
             <a href="/tags/%E6%90%AC%E8%BF%90/">搬运</a>
         
@@ -2346,7 +2626,7 @@
 
 
         <span>
-            最后更新于 2026-06-21 17:23
+            最后更新于 2026-06-25 09:32
         </span>
     </section></footer>
 
@@ -2449,12 +2729,12 @@
             
                 
 <article class="">
-    <a href="/p/%E6%95%99%E7%A8%8B2026%E7%89%88-%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82%E7%9A%84%E8%87%AA%E5%BB%BAcloudflare%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E6%95%99%E7%A8%8B%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/">
+    <a href="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%80-%E6%9C%9F/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">【教程】2026版 小白也能看懂的自建Cloudflare临时邮箱教程（域名邮箱）</h2>
+            <h2 class="article-title">【手机搭建服务器】· 第 一 期</h2>
         </div>
     </a>
 </article>

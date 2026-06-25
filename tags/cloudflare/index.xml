@@ -7,28 +7,29 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Xao</copyright>
-        <lastBuildDate>Sun, 21 Jun 2026 17:43:05 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 25 Jun 2026 09:32:41 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>CF Worker部署DDNS主控</title>
         <link>https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/</link>
-        <pubDate>Sun, 21 Jun 2026 09:48:48 +0000</pubDate>
+        <pubDate>Thu, 25 Jun 2026 01:33:06 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/</guid>
-        <description>&lt;blockquote class=&#34;alert alert-info&#34;&gt;
+        <description>&lt;h1 id=&#34;1-ddns-worker轻量级-cloudflare-ddns-工具部署指南&#34;&gt;1 DDNS-Worker：轻量级 CloudFlare DDNS 工具部署指南
+&lt;/h1&gt;&lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;原始链接&lt;/strong&gt;: &lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/617539&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://linux.do/t/topic/617539&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;主题 ID&lt;/strong&gt;: 617539&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;楼主&lt;/strong&gt;: @chunkBurst&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
-&lt;p&gt;Hello~&lt;/p&gt;
-&lt;p&gt;CCB 带来了一个全新的迷你 DDNS 工具，帮助佬们快速&lt;del&gt;白嫖&lt;/del&gt;部署 DDNS Worker~&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;它在做什么?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;可能有些佬友不知道这是什么工具&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;11-一-工具概述&#34;&gt;1.1 一 工具概述
+&lt;/h2&gt;&lt;h3 id=&#34;111-它在做什么&#34;&gt;1.1.1 它在做什么?
+&lt;/h3&gt;&lt;p&gt;可能有些佬友不知道这是什么工具&lt;/p&gt;
 &lt;p&gt;它是一个 ddns-go 同款工具，用于解决某些场景下，服务器会定时更新 IP 的问题。&lt;/p&gt;
 &lt;p&gt;不像传统的服务器，解析 DNS 后就不需要进行管理，因为 IP 是静态的。&lt;/p&gt;
 &lt;p&gt;那么针对动态 IP，就得使用动态更新的办法~&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;它和同款工具的优势?&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;112-它和同款工具的优势&#34;&gt;1.1.2 它和同款工具的优势?
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;个人感觉&lt;/strong&gt;较为安全（下文细说）&lt;/p&gt;
 &lt;/li&gt;
@@ -45,10 +46,10 @@
 &lt;p&gt;兼容性强，没有多余的包/多余的环境，只要能跑 shell 脚本，就能用~（哪怕你只剩下了&lt;strong&gt;1MB&lt;/strong&gt;的空间）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749674.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260625084945109.png&#34;
 	width=&#34;296&#34;
 	height=&#34;141&#34;
-	srcset=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749674_hu_ed0cdb0529ca7a97.png 480w, https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749674_hu_bb2d7f37ee44a167.png 1024w&#34;
+	srcset=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260625084945109_hu_ed0cdb0529ca7a97.png 480w, https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260625084945109_hu_bb2d7f37ee44a167.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -60,27 +61,21 @@
 &lt;ul&gt;
 &lt;li&gt;内置 TG 通知（&lt;del&gt;因为 API 调用简单&lt;/del&gt;）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;工具诞生的起源&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;本来购入了小鸡，因为是动态 IP，所以在想办法使用 DDNS 解决问题。&lt;/p&gt;
+&lt;h3 id=&#34;113-工具诞生的起源&#34;&gt;1.1.3 工具诞生的起源
+&lt;/h3&gt;&lt;p&gt;本来购入了小鸡，因为是动态 IP，所以在想办法使用 DDNS 解决问题。&lt;/p&gt;
 &lt;p&gt;找到了大家常用的 &lt;code&gt;ddns-go&lt;/code&gt;，打开文档—&lt;strong&gt;头大，眼花，难绷&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;然后其他的 ddns 的脚本，会塞入自己的 &lt;code&gt;CloudFlare Api Key&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;这样会让部分有 &lt;code&gt;密钥洁癖&lt;/code&gt; 的佬友感到厌烦 (比如我自己)&lt;/p&gt;
 &lt;p&gt;鉴于复杂性&amp;amp;洁癖的原因，此工具诞生&lt;/p&gt;
 &lt;p&gt;（当然最主要是 CCB 有点笨，不会用 ddns-go 之类工具）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;怎么安装?&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;准备工作&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;申请 Api Key&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;打开 CF 主界面&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749675.png&#34;
+&lt;hr&gt;
+&lt;h2 id=&#34;12-二-安装步骤&#34;&gt;1.2 二 安装步骤
+&lt;/h2&gt;&lt;h3 id=&#34;121-准备工作申请-api-key&#34;&gt;1.2.1 准备工作（申请 API Key）
+&lt;/h3&gt;&lt;p&gt;打开 CF 主界面&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260625084945113.png&#34;
 	width=&#34;517&#34;
 	height=&#34;314&#34;
-	srcset=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749675_hu_6dec5414505f07ec.png 480w, https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749675_hu_55e51e06dfe9763d.png 1024w&#34;
+	srcset=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260625084945113_hu_6dec5414505f07ec.png 480w, https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260625084945113_hu_55e51e06dfe9763d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -89,10 +84,10 @@
 		data-flex-basis=&#34;395px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749676.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260625084945115.png&#34;
 	width=&#34;447&#34;
 	height=&#34;360&#34;
-	srcset=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749676_hu_90369c28c0d80bda.png 480w, https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749676_hu_3e764709fed63a68.png 1024w&#34;
+	srcset=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260625084945115_hu_90369c28c0d80bda.png 480w, https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260625084945115_hu_3e764709fed63a68.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -103,13 +98,14 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;点击复制 &lt;code&gt;CF Global Key&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;创建完成后复制自己的 Token&lt;/p&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;122-worker-端部署&#34;&gt;1.2.2 Worker 端部署
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;打开 CF-Worker，点击创建&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749677.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260625084945117.png&#34;
 	width=&#34;690&#34;
 	height=&#34;493&#34;
-	srcset=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749677_hu_8b0cf066577fd2fc.png 480w, https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749677_hu_f6ad1b4553adcf7c.png 1024w&#34;
+	srcset=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260625084945117_hu_8b0cf066577fd2fc.png 480w, https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260625084945117_hu_f6ad1b4553adcf7c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -127,10 +123,10 @@
 &lt;p&gt;返回 Worker 的&lt;strong&gt;设置&lt;/strong&gt;界面&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749678.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260625084945118.png&#34;
 	width=&#34;690&#34;
 	height=&#34;121&#34;
-	srcset=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749678_hu_c2e9e42400d25bfa.png 480w, https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260621092749678_hu_cb4effa5f44d72cd.png 1024w&#34;
+	srcset=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260625084945118_hu_c2e9e42400d25bfa.png 480w, https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260625084945118_hu_cb4effa5f44d72cd.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -146,13 +142,12 @@
 &lt;p&gt;&lt;strong&gt;TG-BOT 配置 (可选):&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;TG_BOT_TOKEN：Bot 的 Token&lt;/p&gt;
 &lt;p&gt;TG_CHANNEL_ID(这个可以选 &lt;code&gt;文本&lt;/code&gt; 类型)：推送消息的频道 ID&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;节点端部署&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;使用 &lt;code&gt;README&lt;/code&gt; 中提供的命令，下载后修改配置内的变量，执行脚本后，即可完成部署！&lt;/p&gt;
+&lt;h3 id=&#34;123-节点端部署&#34;&gt;1.2.3 节点端部署
+&lt;/h3&gt;&lt;p&gt;使用 &lt;code&gt;README&lt;/code&gt; 中提供的命令，下载后修改配置内的变量，执行脚本后，即可完成部署！&lt;/p&gt;
 &lt;p&gt;（执行脚本后会自动添加定时任务~）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;最后&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如果佬友们喜欢的话，可以给 CCB 点个 Star 嘛，感谢啦~ 🤪&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;13-三-最后求-star&#34;&gt;1.3 三 最后（求 Star）
+&lt;/h2&gt;&lt;p&gt;如果佬友们喜欢的话，可以给 CCB 点个 Star 嘛，感谢啦~ 🤪&lt;/p&gt;
 &lt;p&gt;项目地址：&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;p&gt;    &gt;GitHub - chunkburst/ddns-worker: 一个简易的DDNS实现~&lt;/a&gt;
