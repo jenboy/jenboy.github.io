@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="1 手机搭建服务器：项目开始前的必备条件 原始链接: https://linux.do/t/topic/2157272 主题 ID: 2157272 楼主: @Semmering 本期主题：项目开始前的必备条件\n1.1 条件一：具备可访问的公网 关于公网这一块，从 ipv6 和 ipv4 两个方面来说。\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="手机搭建服务器：项目开始前的必备条件 原始链接: https://linux.do/t/topic/2157272 主题 ID: 2157272 楼主: @Semmering 本期主题：项目开始前的必备条件\n条件一：具备可访问的公网 关于公网这一块，从 ipv6 和 ipv4 两个方面来说。\n先说 Ipv4 由于目前家庭宽带很少有 ipv4 的公网，包括我本人也没有，所以这一个系列的教程主要是围绕 ipv6 进行，如果你手里有 ipv4 的公网，那毫无疑问是最好的，动态 ip 和静态 ip 都无所谓，如果是静态 ip，那就更无敌了，只是这样的资源比较少。\n">
 <title>【手机搭建服务器】· 第 一 期</title>
 
 <link rel='canonical' href='https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%80-%E6%9C%9F/'>
 
 <link rel="stylesheet" href="/scss/style.min.6998e4e648ca13c26692fd732a596048e487a90378e5ec1f10b8a5899f478b60.css"><meta property='og:title' content="【手机搭建服务器】· 第 一 期">
-<meta property='og:description' content="1 手机搭建服务器：项目开始前的必备条件 原始链接: https://linux.do/t/topic/2157272 主题 ID: 2157272 楼主: @Semmering 本期主题：项目开始前的必备条件\n1.1 条件一：具备可访问的公网 关于公网这一块，从 ipv6 和 ipv4 两个方面来说。\n">
+<meta property='og:description' content="手机搭建服务器：项目开始前的必备条件 原始链接: https://linux.do/t/topic/2157272 主题 ID: 2157272 楼主: @Semmering 本期主题：项目开始前的必备条件\n条件一：具备可访问的公网 关于公网这一块，从 ipv6 和 ipv4 两个方面来说。\n先说 Ipv4 由于目前家庭宽带很少有 ipv4 的公网，包括我本人也没有，所以这一个系列的教程主要是围绕 ipv6 进行，如果你手里有 ipv4 的公网，那毫无疑问是最好的，动态 ip 和静态 ip 都无所谓，如果是静态 ip，那就更无敌了，只是这样的资源比较少。\n">
 <meta property='og:url' content='https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%80-%E6%9C%9F/'>
 <meta property='og:site_name' content='Xao的碎碎念'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='linuxdo' /><meta property='article:tag' content='搬运' /><meta property='article:published_time' content='2026-06-25T01:33:06&#43;00:00'/><meta property='article:modified_time' content='2026-06-25T09:32:41&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='linuxdo' /><meta property='article:tag' content='搬运' /><meta property='article:published_time' content='2026-06-25T01:53:48&#43;00:00'/><meta property='article:modified_time' content='2026-06-25T09:53:31&#43;08:00'/>
 <meta name="twitter:title" content="【手机搭建服务器】· 第 一 期">
-<meta name="twitter:description" content="1 手机搭建服务器：项目开始前的必备条件 原始链接: https://linux.do/t/topic/2157272 主题 ID: 2157272 楼主: @Semmering 本期主题：项目开始前的必备条件\n1.1 条件一：具备可访问的公网 关于公网这一块，从 ipv6 和 ipv4 两个方面来说。\n">
+<meta name="twitter:description" content="手机搭建服务器：项目开始前的必备条件 原始链接: https://linux.do/t/topic/2157272 主题 ID: 2157272 楼主: @Semmering 本期主题：项目开始前的必备条件\n条件一：具备可访问的公网 关于公网这一块，从 ipv6 和 ipv4 两个方面来说。\n先说 Ipv4 由于目前家庭宽带很少有 ipv4 的公网，包括我本人也没有，所以这一个系列的教程主要是围绕 ipv6 进行，如果你手里有 ipv4 的公网，那毫无疑问是最好的，动态 ip 和静态 ip 都无所谓，如果是静态 ip，那就更无敌了，只是这样的资源比较少。\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -302,20 +302,20 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#11-条件一具备可访问的公网">1.1 条件一：具备可访问的公网</a>
+    <li><a href="#条件一具备可访问的公网">条件一：具备可访问的公网</a>
       <ol>
-        <li><a href="#111-先说-ipv4">1.1.1 先说 Ipv4</a></li>
-        <li><a href="#112-再说-ipv6">1.1.2 再说 Ipv6</a></li>
-        <li><a href="#113-问题一如何判断宽带或者手机卡具备-ipv6">1.1.3 问题一：如何判断宽带或者手机卡具备 ipv6？</a></li>
+        <li><a href="#先说-ipv4">先说 Ipv4</a></li>
+        <li><a href="#再说-ipv6">再说 Ipv6</a></li>
+        <li><a href="#问题一如何判断宽带或者手机卡具备-ipv6">问题一：如何判断宽带或者手机卡具备 ipv6？</a></li>
       </ol>
     </li>
-    <li><a href="#12-条件二具备可-root-的手机">1.2 条件二：具备可 Root 的手机</a>
+    <li><a href="#条件二具备可-root-的手机">条件二：具备可 Root 的手机</a>
       <ol>
-        <li><a href="#121-问题一为什么需要-root不-root-到底行不行">1.2.1 问题一：为什么需要 root？不 Root 到底行不行？</a>
+        <li><a href="#问题一为什么需要-root不-root-到底行不行">问题一：为什么需要 root？不 Root 到底行不行？</a>
           <ol>
-            <li><a href="#1211-原因一手机用做服务器需要解决旁路供电问题">1.2.1.1 原因一：手机用做服务器需要解决旁路供电问题</a></li>
-            <li><a href="#1212-原因二解决手机重启后可能面临的各种意外情况">1.2.1.2 原因二：解决手机重启后可能面临的各种意外情况</a></li>
-            <li><a href="#1213-原因三方便做网络恢复尤其是-ipv6-异常恢复">1.2.1.3 原因三：方便做网络恢复，尤其是 IPv6 异常恢复</a></li>
+            <li><a href="#原因一手机用做服务器需要解决旁路供电问题">原因一：手机用做服务器需要解决旁路供电问题</a></li>
+            <li><a href="#原因二解决手机重启后可能面临的各种意外情况">原因二：解决手机重启后可能面临的各种意外情况</a></li>
+            <li><a href="#原因三方便做网络恢复尤其是-ipv6-异常恢复">原因三：方便做网络恢复，尤其是 IPv6 异常恢复</a></li>
           </ol>
         </li>
       </ol>
@@ -369,7 +369,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published" datetime='2026-06-25T01:33:06Z'>2026-06-25</time>
+                <time class="article-time--published" datetime='2026-06-25T01:53:48Z'>2026-06-25</time>
             </div>
         
 
@@ -399,7 +399,7 @@
     <section class="article-content">
     
     
-    <h1 id="1-手机搭建服务器项目开始前的必备条件">1 手机搭建服务器：项目开始前的必备条件
+    <h1 id="手机搭建服务器项目开始前的必备条件">手机搭建服务器：项目开始前的必备条件
 </h1><blockquote class="alert alert-info">
     <ul>
 <li><strong>原始链接</strong>: <a class="link" href="https://linux.do/t/topic/2157272"  target="_blank" rel="noopener"
@@ -409,11 +409,11 @@
 </ul></blockquote>
 <p><strong>本期主题：项目开始前的必备条件</strong></p>
 <hr>
-<h2 id="11-条件一具备可访问的公网">1.1 条件一：具备可访问的公网
+<h2 id="条件一具备可访问的公网">条件一：具备可访问的公网
 </h2><p>关于公网这一块，从 ipv6 和 ipv4 两个方面来说。</p>
-<h3 id="111-先说-ipv4">1.1.1 先说 Ipv4
+<h3 id="先说-ipv4">先说 Ipv4
 </h3><p>由于目前家庭宽带很少有 ipv4 的公网，包括我本人也没有，所以这一个系列的教程主要是围绕 ipv6 进行，如果你手里有 ipv4 的公网，那毫无疑问是最好的，动态 ip 和静态 ip 都无所谓，如果是静态 ip，那就更无敌了，只是这样的资源比较少。</p>
-<h3 id="112-再说-ipv6">1.1.2 再说 Ipv6
+<h3 id="再说-ipv6">再说 Ipv6
 </h3><p>有关 ipv6 的相关知识在这里不做展开，互联网上对这一块的科普非常到位，感兴趣的可以去自行了解。</p>
 <p>目前国内的现状是，家庭宽带基本都有 ipv6，甚至我们日常使用的手机卡，都有 ipv6，而且两者都是公网可以访问到的。这也是手机搭建服务器可行的很重要的一个原因。</p>
 <p>这一次我们主要讨论的是宽带的 ipv6，而不是手机流量的 ipv6，主要有几点原因：</p>
@@ -434,7 +434,7 @@
 <p>宽带只要是不跑 P 的情况下，运营商是不会给你恶意限速的，一般来说，家庭宽带的上传速度在 50-200Mbps 之间，而且波动也很稳定。</p>
 </li>
 </ol>
-<h3 id="113-问题一如何判断宽带或者手机卡具备-ipv6">1.1.3 问题一：如何判断宽带或者手机卡具备 ipv6？
+<h3 id="问题一如何判断宽带或者手机卡具备-ipv6">问题一：如何判断宽带或者手机卡具备 ipv6？
 </h3><p>单独进行验证，比如只连接 wifi 或者只打开流量的情况下，浏览器访问 <a class="link" href="https://testipv6.cn/"  target="_blank" rel="noopener"
     >https://testipv6.cn/</a> 网站进行测试。</p>
 <p>如果结果如下图所示，那么恭喜你，你的设备和网络是支持 ipv6 公网访问的。</p>
@@ -498,11 +498,11 @@
 </ul>
 <p>✅ <strong>如果你的宽带自带 ipv4 公网，那上述这个情况你可以完全忽略。</strong></p>
 <hr>
-<h2 id="12-条件二具备可-root-的手机">1.2 条件二：具备可 Root 的手机
+<h2 id="条件二具备可-root-的手机">条件二：具备可 Root 的手机
 </h2><p>很多人看到这里，就觉得不想搞了，或者说觉得不需要 root 也行。先继续往下看。</p>
-<h3 id="121-问题一为什么需要-root不-root-到底行不行">1.2.1 问题一：为什么需要 root？不 Root 到底行不行？
+<h3 id="问题一为什么需要-root不-root-到底行不行">问题一：为什么需要 root？不 Root 到底行不行？
 </h3><p>先说结论：不 root 可以，但是及其不推荐，如果你只是简单的捣鼓一下，不打算将手机用做长久的服务器。那么可以试试，如果你想要的是一台长期稳定运行，不管出现任何突发情况能如期运行的服务器的话，必须 root。</p>
-<h4 id="1211-原因一手机用做服务器需要解决旁路供电问题">1.2.1.1 原因一：手机用做服务器需要解决旁路供电问题
+<h4 id="原因一手机用做服务器需要解决旁路供电问题">原因一：手机用做服务器需要解决旁路供电问题
 </h4><p>手机当服务器之后，大概率是要长期插着电运行的。但是手机长期插电会遇到一个很现实的问题：电池可能会一直处于充满、发热、再充电的状态，对电池并不友好。如果只是偶尔玩玩，问题不大。但如果你准备让它连续运行几个月，甚至一年以上，那供电问题就必须认真考虑。</p>
 <p>比较理想的状态是：手机插着充电器，但是电池不一直反复充电，最好能进入类似“旁路供电”的状态。也就是说，手机主要使用充电器供电，而不是一直让电池在 80%、90%、100% 附近反复充放电。这时候 root 的作用就很明显了。有了 root 之后，我们才更方便使用类似 <strong>Acc + AccA</strong> 或者 <strong>QSC 定量停充</strong> 这样的方案去控制充电行为，比如：</p>
 <ul>
@@ -516,7 +516,7 @@
 <p>如果没有 root，这类底层充电控制基本就很难做了。</p>
 <p>所以，手机长期当服务器，第一个绕不开的问题就是：<strong>怎么让它长期插电运行，同时尽量不伤电池。</strong> 这也是我建议 root 的第一个重要原因。</p>
 <p>✅ <strong>有一个非常好的消息是：</strong> 目前 Acc+AccA 的方案能够很好的解决供电问题，实现旁路供电，而且支持很多 CPU，我手里的小米 8SE 一样完美支持。</p>
-<h4 id="1212-原因二解决手机重启后可能面临的各种意外情况">1.2.1.2 原因二：解决手机重启后可能面临的各种意外情况
+<h4 id="原因二解决手机重启后可能面临的各种意外情况">原因二：解决手机重启后可能面临的各种意外情况
 </h4><p>手机作为服务器，最怕的不是你手动启动一次服务。最怕的是手机重启了，然后服务没有自动起来。比如这些情况都可能发生：</p>
 <ul>
 <li>手机没电后重新开机；</li>
@@ -544,7 +544,7 @@
 <li>等等一大堆你可能想到的自动化操作。</li>
 </ul>
 <p>这样手机重启以后，不需要你手动干预，它可以自己把服务器环境拉起来。这对长期运行非常重要。因为你不可能一直盯着手机。尤其是手机放在家里，你人在外面的时候，如果它重启后服务没起来，那你连 SSH 都连不上，这不仅仅是尴尬的问题，而是你根本没有任何办法去解决这个问题，除非你自己就在家里，手机就在身边。</p>
-<h4 id="1213-原因三方便做网络恢复尤其是-ipv6-异常恢复">1.2.1.3 原因三：方便做网络恢复，尤其是 IPv6 异常恢复
+<h4 id="原因三方便做网络恢复尤其是-ipv6-异常恢复">原因三：方便做网络恢复，尤其是 IPv6 异常恢复
 </h4><p>手机当服务器，如果你打算通过 IPv6 从外网访问，那网络稳定性就很重要。但手机长期连接 Wi-Fi 后，可能会遇到一些奇怪的问题，比如：</p>
 <ul>
 <li>IPv6 地址突然没了；</li>
@@ -577,7 +577,7 @@
         
             <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
         
-            <a href="/tags/linuxdo/">LinuxDo</a>
+            <a href="/tags/linuxdo/">Linuxdo</a>
         
             <a href="/tags/%E6%90%AC%E8%BF%90/">搬运</a>
         
@@ -606,7 +606,7 @@
 
 
         <span>
-            最后更新于 2026-06-25 09:32
+            最后更新于 2026-06-25 09:53
         </span>
     </section></footer>
 

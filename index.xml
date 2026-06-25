@@ -7,10 +7,10 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Xao</copyright>
-        <lastBuildDate>Thu, 25 Jun 2026 09:32:41 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 25 Jun 2026 09:53:31 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【工具】帖子收藏神器</title>
         <link>https://jenboy.github.io/p/%E5%B7%A5%E5%85%B7%E5%B8%96%E5%AD%90%E6%94%B6%E8%97%8F%E7%A5%9E%E5%99%A8/</link>
-        <pubDate>Thu, 25 Jun 2026 01:33:06 +0000</pubDate>
+        <pubDate>Thu, 25 Jun 2026 01:53:48 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E5%B7%A5%E5%85%B7%E5%B8%96%E5%AD%90%E6%94%B6%E8%97%8F%E7%A5%9E%E5%99%A8/</guid>
         <description>&lt;h1 id=&#34;1-discourse-saver一键保存帖子到-obsidian飞书notion-等六种方式的浏览器插件&#34;&gt;1 Discourse Saver：一键保存帖子到 Obsidian/飞书/Notion 等六种方式的浏览器插件
@@ -1317,10 +1317,10 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
         <item>
         <title>【手机搭建服务器】· 第 二 期</title>
         <link>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/</link>
-        <pubDate>Thu, 25 Jun 2026 01:33:06 +0000</pubDate>
+        <pubDate>Thu, 25 Jun 2026 01:53:48 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/</guid>
-        <description>&lt;h1 id=&#34;1-手机搭建服务器--第二期手机如何实现旁路供电&#34;&gt;1 手机搭建服务器 · 第二期：手机如何实现旁路供电
+        <description>&lt;h1 id=&#34;手机搭建服务器--第二期手机如何实现旁路供电&#34;&gt;手机搭建服务器 · 第二期：手机如何实现旁路供电
 &lt;/h1&gt;&lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;原始链接&lt;/strong&gt;: &lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/2177558&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1331,7 +1331,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;p&gt;&lt;strong&gt;上期回顾：&lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/2157272/65&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;【超详细｜保姆级教程】手机搭建服务器 · 第 一 期&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;11-前言&#34;&gt;1.1 前言
+&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;第一期文字内容看上去很多，但其实就讲了两个事情：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;判断自己的设备和网络是否具备公网访问的条件。&lt;/li&gt;
@@ -1343,7 +1343,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;p&gt;因为手机毕竟不是服务器。手机原本的设计就是直接拿手里就能用，而不是随时插着电。&lt;/p&gt;
 &lt;p&gt;所以我们要让手机长期当服务器，接下来就必须要先解决一个非常现实的问题：&lt;strong&gt;手机究竟怎样做更好的电源管理&lt;/strong&gt;。也就是本期要讲的核心内容：&lt;strong&gt;旁路供电。&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;12-本期主题手机如何实现旁路供电&#34;&gt;1.2 本期主题：手机如何实现旁路供电
+&lt;h2 id=&#34;本期主题手机如何实现旁路供电&#34;&gt;本期主题：手机如何实现旁路供电
 &lt;/h2&gt;&lt;p&gt;如果供电问题不解决，后面即使你把 SSH、Nginx、Node.js、DDNS 全部配置好了，也会有一个很尴尬的问题：手机天天插着电，电池一直处于充电、发热、满电、掉电、再充电的状态。&lt;/p&gt;
 &lt;p&gt;短期玩玩问题肯定不大。但如果你准备长期运行，甚至 7×24 小时放在家里当服务器，这个问题就必须必须必须重视。&lt;/p&gt;
 &lt;p&gt;所以本期主要解决下面几个问题：&lt;/p&gt;
@@ -1357,7 +1357,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;li&gt;如果没有真正旁路供电，应该怎么设置才比较安全？&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;13-一什么是旁路供电&#34;&gt;1.3 一、什么是旁路供电？
+&lt;h2 id=&#34;什么是旁路供电&#34;&gt;什么是旁路供电？
 &lt;/h2&gt;&lt;p&gt;先用最通俗的话解释吧。&lt;/p&gt;
 &lt;p&gt;正常情况下，手机插着充电器时，大概是这样的：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1388,14 +1388,14 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;p&gt;安卓上很多所谓的 &amp;quot; 旁路供电 &amp;ldquo;，并不一定是真正硬件级的旁路供电。&lt;/p&gt;
 &lt;p&gt;因为不同手机的硬件、电源管理芯片、内核驱动都不一样。所以同样是 &amp;quot; 停止充电 &amp;ldquo;，在不同手机上的表现可能完全不同。&lt;/p&gt;
 &lt;p&gt;大概会有这三种情况：&lt;/p&gt;
-&lt;h3 id=&#34;131-情况一比较理想的真正旁路供电&#34;&gt;1.3.1 情况一：比较理想的真正旁路供电
+&lt;h3 id=&#34;情况一比较理想的真正旁路供电&#34;&gt;情况一：比较理想的真正旁路供电
 &lt;/h3&gt;&lt;p&gt;这种是最理想的状态。&lt;/p&gt;
 &lt;p&gt;当电量达到设定值，比如 80% 时，模块停止给电池充电。&lt;/p&gt;
 &lt;p&gt;但是手机仍然插着充电器，并且手机运行主要消耗充电器的电，而不是继续消耗电池。&lt;/p&gt;
 &lt;p&gt;这种情况就比较接近真正的旁路供电。&lt;/p&gt;
 &lt;p&gt;如果你的手机能做到这种状态，那就非常适合长期当服务器。&lt;/p&gt;
 &lt;p&gt;在我的记忆里面，以前的安卓手机系统是没有旁路供电这种设置的，是后来出现了游戏手机，玩游戏的时候，有这种开关。除了游戏手机，现在很多高配置的安卓手机都有这种模式，我亲自接触过的，比如真我，玩游戏的时候就有这个设置，但是我忘记系统设置里面是否有单独的开关了。&lt;/p&gt;
-&lt;h3 id=&#34;132-情况二只能做到--停止充电-但不能真正旁路&#34;&gt;1.3.2 情况二：只能做到 &amp;quot; 停止充电 &amp;ldquo;，但不能真正旁路
+&lt;h3 id=&#34;情况二只能做到--停止充电-但不能真正旁路&#34;&gt;情况二：只能做到 &amp;quot; 停止充电 &amp;ldquo;，但不能真正旁路
 &lt;/h3&gt;&lt;p&gt;这种情况也很常见。&lt;/p&gt;
 &lt;p&gt;比如你设置：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1423,7 +1423,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;p&gt;它的好处是电池不会长期顶在 100%，大大减少了频繁充放电的频率。但是它的缺陷也很明显，就是电池仍然会反复在范围区间充放电。&lt;/p&gt;
 &lt;p&gt;但总比你拿着一根数据线长期让手机 100% 满电要好太多。&lt;/p&gt;
 &lt;p&gt;这种情况在小米 8se 上我就遇到，因为之前我是一加 9R 做服务器的，当时用的方案是 QSC（下面会讲），一加上运行是好好的，但是到小米 8se 上，就不行了，充到一定量就停止充电，改用电池。&lt;/p&gt;
-&lt;h3 id=&#34;133-情况三完全不生效&#34;&gt;1.3.3 情况三：完全不生效
+&lt;h3 id=&#34;情况三完全不生效&#34;&gt;情况三：完全不生效
 &lt;/h3&gt;&lt;p&gt;这是最后一种情况，就是你的模块设置了，但是手机不听话。&lt;/p&gt;
 &lt;p&gt;比如你设置了 80% 停止充电，但手机还是一路充到 100%。&lt;/p&gt;
 &lt;p&gt;或者设置了停止充电之后，手机状态栏显示没在充电，但实际上电池还是在涨。&lt;/p&gt;
@@ -1432,9 +1432,9 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;p&gt;我猜测，要么是手机太老了，要么是脚本根本不支持，需要重写脚本，奈何我不会啊！&lt;/p&gt;
 &lt;p&gt;后面我会专门写如何判断是否真的生效。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;14-二细说为什么手机做服务器需要旁路供电&#34;&gt;1.4 二、细说为什么手机做服务器需要旁路供电？
+&lt;h2 id=&#34;细说为什么手机做服务器需要旁路供电&#34;&gt;细说为什么手机做服务器需要旁路供电？
 &lt;/h2&gt;&lt;p&gt;其实我觉得我上面已经说的够多了，但是还是细说一下，因为我发现第一期就有人反复问这个问题。&lt;/p&gt;
-&lt;h3 id=&#34;141-原因一长期满电对电池不友好&#34;&gt;1.4.1 原因一：长期满电对电池不友好
+&lt;h3 id=&#34;原因一长期满电对电池不友好&#34;&gt;原因一：长期满电对电池不友好
 &lt;/h3&gt;&lt;p&gt;手机正常使用时，大家可能一天一充，或者两天一充。&lt;/p&gt;
 &lt;p&gt;但手机当服务器之后，情况完全不一样。&lt;/p&gt;
 &lt;p&gt;它可能是这样的：每天 24 小时插着充电器、每周 7 天不关机、连续运行几个月甚至更久。&lt;/p&gt;
@@ -1446,7 +1446,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;li&gt;电池老化加快；&lt;/li&gt;
 &lt;li&gt;电池鼓包风险增加。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;142-原因二手机需要长期稳定运行&#34;&gt;1.4.2 原因二：手机需要长期稳定运行
+&lt;h3 id=&#34;原因二手机需要长期稳定运行&#34;&gt;原因二：手机需要长期稳定运行
 &lt;/h3&gt;&lt;p&gt;如果只是普通手机，电池衰减一点可能也没那么明显。&lt;/p&gt;
 &lt;p&gt;但手机当服务器后，稳定性真的超级重要。&lt;/p&gt;
 &lt;p&gt;比如你在手机上跑了：&lt;/p&gt;
@@ -1465,7 +1465,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 比如我之前设置的自动化脚本，原计划是 10s 执行一次，结果变成了 20s 或者 30s 执行一次，每次间隔还不一样。真的无语 😓&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;其他原因比如减少电池发热从而减少手机发热、减少电池反复充放电延长寿命，我就不多说了。大家肯定都懂。所以就说刚才这两个最重要的。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;15-三本期推荐-2-种方案&#34;&gt;1.5 三、本期推荐 2 种方案
+&lt;h2 id=&#34;本期推荐-2-种方案&#34;&gt;本期推荐 2 种方案
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;ACC + AccA&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;QSC 定量停充模块&lt;/strong&gt;&lt;/li&gt;
@@ -1473,8 +1473,8 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;p&gt;我个人更推荐第一种：&lt;strong&gt;ACC + AccA&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;原因很简单：一是因为它比较成熟，git 上有 2k star；二是它可以搭配 AccA 软件管理配置，可以不用去改配置文件。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;151-方案一acc--acca推荐&#34;&gt;1.5.1 方案一：ACC + AccA（推荐）
-&lt;/h3&gt;&lt;h4 id=&#34;1511-先科普一下-acc&#34;&gt;1.5.1.1 先科普一下 ACC
+&lt;h3 id=&#34;方案一acc--acca推荐&#34;&gt;方案一：ACC + AccA（推荐）
+&lt;/h3&gt;&lt;h4 id=&#34;先科普一下-acc&#34;&gt;先科普一下 ACC
 &lt;/h4&gt;&lt;p&gt;ACC 全写是 Advanced Charging Controller，看名字大家就知道啥意思了。我要补充一点的是，ACC 它不是普通的省电控制器。它是通过 root 权限去操作手机底层的充电控制文件，从而实现一些普通 App 做不到的事情。&lt;/p&gt;
 &lt;p&gt;比如：&lt;/p&gt;
 &lt;ul&gt;
@@ -1488,17 +1488,21 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;li&gt;测试当前手机支持哪些充电开关；&lt;/li&gt;
 &lt;li&gt;很强的记录日志功能，以后出问题可以把日志给 AI，让 AI 来排查问题。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;1512-acc-安装教程&#34;&gt;1.5.1.2 ACC 安装教程
+&lt;h4 id=&#34;acc-安装教程&#34;&gt;ACC 安装教程
 &lt;/h4&gt;&lt;p&gt;&lt;strong&gt;项目地址：&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;https://github.com/VR-25/acc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/VR-25/acc&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1. 打开 ACC 的 github 项目地址，找到 releases&lt;/strong&gt;（&lt;a class=&#34;link&#34; href=&#34;https://github.com/VR-25/acc/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;点此直达&lt;/a&gt;）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851473.jpeg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906966.jpeg&#34;
+	width=&#34;690&#34;
+	height=&#34;340&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906966_hu_2e3a2d8a35c5f79e.jpeg 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906966_hu_c6d4f1e9db815920.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;202&#34;
+		data-flex-basis=&#34;487px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2. 版本我建议选择 &lt;a class=&#34;link&#34; href=&#34;https://github.com/VR-25/acc/releases/tag/v2023.10.16&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1511,12 +1515,16 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://linux.do/uploads/short-url/4BIbddrQm5tiUt8FPkGUqpPJ7lI.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;acc_v2023.10.16_202310160.zip&lt;/a&gt; (201.9 KB)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;3. 在 magisk 中安装模块：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851484.jpeg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906968.jpeg&#34;
+	width=&#34;174&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906968_hu_bcef6d82e9d7e503.jpeg 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906968_hu_66abf72645420f45.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;46&#34;
+		data-flex-basis=&#34;111px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;补充一点：&lt;/strong&gt; 由于我个人比较青睐面具，所以如果是其他的 root 管理方案，比如 APatch、KernelSU 等等，可以自行去寻求 AI 帮助，看看如何安装，我就不去测试了。安装方式其实很简单，如果你自己都会安装 Magisk、APatch、KernelSU，那管理器对应的模块如何安装肯定不在话下的。&lt;/p&gt;
@@ -1525,7 +1533,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
     &lt;p&gt;重新开机后，你会发现没有任何与 ACC 操作相关的软件，因为改配置需要用到命令行或者用到 MT 管理器或者 RE 管理器，然后去 &lt;code&gt;/data/adb/modules/acc/&lt;/code&gt; 中修改配置文件再执行脚本，所以这个地方对于新手来说配置起来是很麻烦的。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;好在有大佬根据 ACC 模块，开发出了 AccA，突然感觉真的很幸福 😆 🥰&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h4 id=&#34;1513-什么是-acca-&#34;&gt;1.5.1.3 什么是 AccA 👇
+&lt;h4 id=&#34;什么是-acca-&#34;&gt;什么是 AccA 👇
 &lt;/h4&gt;&lt;p&gt;AccA 是 ACC 的图形界面 App。&lt;/p&gt;
 &lt;p&gt;ACC 本身更偏向命令行和配置文件。想修改配置，通常要通过命令行或者手动编辑配置文件。&lt;/p&gt;
 &lt;p&gt;而 AccA 的作用就是：&lt;strong&gt;让你可以通过 App 界面管理 ACC。&lt;/strong&gt;&lt;/p&gt;
@@ -1541,58 +1549,78 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/ul&gt;
 &lt;p&gt;简单说就是：&lt;strong&gt;ACC 负责真正干活，AccA 负责让你更方便地操作 ACC。&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h4 id=&#34;1514-acca-安装和配置教程&#34;&gt;1.5.1.4 AccA 安装和配置教程
+&lt;h4 id=&#34;acca-安装和配置教程&#34;&gt;AccA 安装和配置教程
 &lt;/h4&gt;&lt;p&gt;&lt;strong&gt;项目地址：&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;https://github.com/MatteCarra/AccA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/MatteCarra/AccA&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;F-Droid 页面：&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;https://f-droid.org/packages/mattecarra.accapp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Advanced Charging Controller (ACCA)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;安装完成后，建议重启一次手机。因为这类底层模块，重启后状态会更稳定。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; 重启手机之后，打开软件，如果是未启动，就点击启动。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851485.jpeg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906970.jpeg&#34;
+	width=&#34;180&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906970_hu_13595482a5bf6290.jpeg 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906970_hu_1eded2292b2a5cfd.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;48&#34;
+		data-flex-basis=&#34;115px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; 如果已经是启动状态，那就点击配置列表。&lt;/p&gt;
 &lt;p&gt;由于我之前配置过，所以我的配置列表只有一个配置，其余的配置被我删除了。你们第一次打开的话，会有很多个配置。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851486.jpeg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906974.jpeg&#34;
+	width=&#34;180&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906974_hu_4c7e22928f12e255.jpeg 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906974_hu_fd62a2f934e3d3d8.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;48&#34;
+		data-flex-basis=&#34;115px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;说一下配置的基础操作：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;添加：&lt;/strong&gt; 在配置列表页面右下角有一个蓝色按钮，点击就可以添加配置。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851487.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906978.png&#34;
+	width=&#34;144&#34;
+	height=&#34;250&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906978_hu_6144cab9e0ff7a2a.png 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906978_hu_7a2c0927850c0045.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;57&#34;
+		data-flex-basis=&#34;138px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;删除：&lt;/strong&gt; 点击 &amp;quot; 配置卡片 &amp;quot; 的右上角菜单，点击删除即可。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851489.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906983.png&#34;
+	width=&#34;121&#34;
+	height=&#34;250&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906983_hu_330961c127548c7f.png 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906983_hu_71d5b886b76aefff.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;48&#34;
+		data-flex-basis=&#34;116px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;重命名：&lt;/strong&gt; 参考上图，点击 &amp;quot; 配置卡片 &amp;quot; 的右上角菜单，点击重命名即可。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;配置详情页：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851490.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906986.png&#34;
+	width=&#34;66&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906986_hu_7d5af27fda4fbe65.png 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906986_hu_273c93d6deb8c934.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;17&#34;
+		data-flex-basis=&#34;42px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在这个配置详情页中，可以配置的充电相关的设置非常多，但是我们只关心两个问题就可以了：一个是电池停充的&lt;strong&gt;电量区间&lt;/strong&gt;，一个是电池停充的&lt;strong&gt;温度区间&lt;/strong&gt;。&lt;/p&gt;
@@ -1613,12 +1641,16 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 在这里给 ACC 点一波赞 👍&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;配置应用：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;保存好配置之后，点击哪个配置卡片，就表示哪个配置生效。生效的配置前面会有蓝色的边框。比如下面这就是 Default 配置在生效。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851519.jpeg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906989.jpeg&#34;
+	width=&#34;180&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906989_hu_8e981cdb7e2d6052.jpeg 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906989_hu_793f2fa6d5605ba.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;48&#34;
+		data-flex-basis=&#34;115px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-tip&#34;&gt;
@@ -1628,12 +1660,16 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
     &lt;p&gt;充电停止会有两种情况，拿 85% 停止充电举例：
 如果电量到了 85%，你的电池图标显示正在充电，但是软件中显示没有充电，这个时候，就是最接近旁路供电的，看下图 👇&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851520.jpeg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906993.jpeg&#34;
+	width=&#34;214&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906993_hu_5b56b58358d419b9.jpeg 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906993_hu_8e0e7973797eea0a.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;57&#34;
+		data-flex-basis=&#34;136px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;如果电量到了 85%，你的电池图标没有显示正在充电，软件中也没有显示正在充电，这个时候，说明 AccA 并不支持做到旁路供电。&lt;/p&gt;
@@ -1645,14 +1681,14 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
     &lt;p&gt;在 magisk 中正常删除，然后重启手机就行了。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;152-方案二qsc-定量停充&#34;&gt;1.5.2 方案二：QSC 定量停充
-&lt;/h3&gt;&lt;h4 id=&#34;1521-先科普一下-qsc&#34;&gt;1.5.2.1 先科普一下 QSC
+&lt;h3 id=&#34;方案二qsc-定量停充&#34;&gt;方案二：QSC 定量停充
+&lt;/h3&gt;&lt;h4 id=&#34;先科普一下-qsc&#34;&gt;先科普一下 QSC
 &lt;/h4&gt;&lt;p&gt;QSC 全写是 Quantitative Stop Charging_switch，是酷安大佬 &lt;a class=&#34;link&#34; href=&#34;https://www.coolapk.com/feed/39670721?s=OTAyOTJhZTUyYzkzYjZnNmEwNThiZjJ6a1540&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;top大佬&lt;/a&gt; 开发的一个模块，&lt;a class=&#34;link&#34; href=&#34;https://github.com/410154425/QuantitativeStopCharging_magisk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;github&lt;/a&gt; 很久没更新了，推荐大家看酷安板块，但是在酷安用的人很多，甚至还形成了一个专属话题【QSC 定量停充】。&lt;/p&gt;
 &lt;p&gt;目前模块也很久没更新了，最后一个版本是 2023 年 12 月 4 日更新的，估计后续也不维护了。&lt;/p&gt;
 &lt;p&gt;如果你使用 ACC 没有任何问题，不要折腾这个方案，除非你使用 ACC 出现了问题，你可以试试 QSC。&lt;/p&gt;
-&lt;h4 id=&#34;1522-qsc-安装&#34;&gt;1.5.2.2 QSC 安装
+&lt;h4 id=&#34;qsc-安装&#34;&gt;QSC 安装
 &lt;/h4&gt;&lt;p&gt;&lt;strong&gt;原下载地址：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;蓝奏云：&lt;a class=&#34;link&#34; href=&#34;https://topdalao.lanzoui.com/b02dplxrc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://topdalao.lanzoui.com/b02dplxrc&lt;/a&gt;
@@ -1664,63 +1700,87 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
     &gt;QSC定量停充_独立开关版_20231204.zip&lt;/a&gt; (104.7 KB)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;安装：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;安装方式和 ACC 一样，直接 magisk 刷入后，重启即可。&lt;/p&gt;
-&lt;h4 id=&#34;1523-配置&#34;&gt;1.5.2.3 配置
+&lt;h4 id=&#34;配置&#34;&gt;配置
 &lt;/h4&gt;&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; 安装 MT 管理器或者 RE 管理器，然后打开路径 &lt;code&gt;/data/adb/modules/QuantitativeStopCharging_switch&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; 找到 config.conf 文件，根据文件内的提醒，配置电量区间和温度区间。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851521.jpeg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906998.jpeg&#34;
+	width=&#34;182&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906998_hu_3b8d61c992164086.jpeg 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906998_hu_71c348e987e4e102.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;48&#34;
+		data-flex-basis=&#34;116px&#34;
+	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851523.jpeg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907000.jpeg&#34;
+	width=&#34;182&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907000_hu_db32dcacbb300f84.jpeg 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907000_hu_6476bc69485d8bf5.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;48&#34;
+		data-flex-basis=&#34;116px&#34;
+	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;1524-启动-qsc&#34;&gt;1.5.2.4 启动 QSC
+&lt;h4 id=&#34;启动-qsc&#34;&gt;启动 QSC
 &lt;/h4&gt;&lt;p&gt;由于现在 MT 管理器没有权限直接执行 sh 脚本了，给大家提供一个最适合的启动方式，这个方式还可以把开关添加到状态栏的下拉控制中心中（大部分手机都支持）。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; 安装 &lt;a class=&#34;link&#34; href=&#34;https://github.com/zhaobozhen/Anywhere-&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Anywhere-&lt;/a&gt; 软件，这里不过多介绍这个软件了，我个人认为是我用过最好用的快捷方式管理软件。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2. 打开 Anywhere-，点击右上角的设置图标，把工作模式改成 root 模式。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851533.jpeg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907003.jpeg&#34;
+	width=&#34;179&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907003_hu_969a2e9da553e899.jpeg 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907003_hu_f49d15b38c49bf7c.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;47&#34;
+		data-flex-basis=&#34;114px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;3. 返回 Anywhere- 首页，点击首页右下角的 ➕ 号，然后点击添加卡片：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851535.jpeg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907005.jpeg&#34;
+	width=&#34;182&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907005_hu_ba1767a2b6c27a01.jpeg 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907005_hu_52ccb5302d06d54f.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;48&#34;
+		data-flex-basis=&#34;116px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;4. 在卡片中选择 Shell 开关：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851537.jpeg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907006.jpeg&#34;
+	width=&#34;174&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907006_hu_4223a5f3288eb8f9.jpeg 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907006_hu_e5ace8048ce999c8.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;46&#34;
+		data-flex-basis=&#34;111px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;5. 按照下面的内容填写后保存，名称那里可以自定义：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851538.jpeg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907008.jpeg&#34;
+	width=&#34;190&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907008_hu_cb9b013f4c0d380d.jpeg 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907008_hu_a3395c88002a3b8.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;50&#34;
+		data-flex-basis=&#34;121px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-note&#34;&gt;
@@ -1728,36 +1788,48 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;blockquote class=&#34;alert alert-note&#34;&gt;
     &lt;p&gt;&lt;code&gt;sh /data/adb/modules/QuantitativeStopCharging_switch/关闭定量停充.sh&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;6. 点击卡片，会在开与关两个状态之间切换：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851540.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907010.png&#34;
+	width=&#34;180&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907010_hu_14e92a88f9bc1eaa.png 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907010_hu_fed1ed908d42f07e.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;48&#34;
+		data-flex-basis=&#34;115px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851541.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907011.png&#34;
+	width=&#34;182&#34;
+	height=&#34;374&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907011_hu_e7f2b89477276489.png 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907011_hu_bcac71284c915683.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;48&#34;
+		data-flex-basis=&#34;116px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
     &lt;p&gt;判断逻辑参考 ACC 部分，逻辑都是通用的。另外，QSC 还可以在 magisk 中看到充电状态展示。但是我没使用 QSC，所以就简单截图吧。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851548.jpeg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907013.jpeg&#34;
+	width=&#34;185&#34;
+	height=&#34;375&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907013_hu_76e76000b89920b.jpeg 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907013_hu_7259f3cb40effe5f.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;49&#34;
+		data-flex-basis=&#34;118px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
     &lt;p&gt;直接在 magisk 中删除后，重启即可。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;16-常见问题&#34;&gt;1.6 常见问题
+&lt;h2 id=&#34;常见问题&#34;&gt;常见问题
 &lt;/h2&gt;&lt;blockquote class=&#34;alert alert-question&#34;&gt;
     &lt;p&gt;不需要，只要你配置好了，启动脚本以后，重新开机脚本都是正常运行的，自己试一次就知道了。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
@@ -1769,12 +1841,16 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
     &lt;p&gt;绝对不行。AccA 可以不装，只是配置起来麻烦；ACC 是核心模块，你只安装 AccA，根本不可能工作的。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote class=&#34;alert alert-question&#34;&gt;
-    &lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/pics/file-20260621092851550.jpeg&#34;
-	
-	
-	
+    &lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907014.jpeg&#34;
+	width=&#34;119&#34;
+	height=&#34;250&#34;
+	srcset=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907014_hu_61756ed8618600b1.jpeg 480w, https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907014_hu_a727e0ed3450d2f.jpeg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;47&#34;
+		data-flex-basis=&#34;114px&#34;
 	
 &gt;
 这个表示配置正在读取或者加载中，这个时候尽量别动，等加载好就行了。&lt;/p&gt;&lt;/blockquote&gt;
@@ -1786,12 +1862,10 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
         <item>
         <title>【手机搭建服务器】· 第 三 期</title>
         <link>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/</link>
-        <pubDate>Thu, 25 Jun 2026 01:33:06 +0000</pubDate>
+        <pubDate>Thu, 25 Jun 2026 01:53:48 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/</guid>
-        <description>&lt;p&gt;已按您的要求为各标题添加连续编号，未生成总目录。以下是重新编号后的完整帖子内容（内部交叉引用已同步调整）：&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote class=&#34;alert alert-info&#34;&gt;
+        <description>&lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;原始链接&lt;/strong&gt;: &lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/2198756&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://linux.do/t/topic/2198756&lt;/a&gt;（假设）&lt;/li&gt;
@@ -1806,7 +1880,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
     &gt;【超详细】手机搭建服务器 · 第 二 期&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;1-前言&#34;&gt;1 前言
+&lt;h1 id=&#34;前言&#34;&gt;前言
 &lt;/h1&gt;&lt;p&gt;第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；&lt;/p&gt;
 &lt;p&gt;本期要实现的是：&lt;strong&gt;如何让手机的 Wi-Fi 永不断连&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
@@ -1824,10 +1898,10 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 · 机型不同，打开开发者选项的方式也不同，这个自己百度。
 · 不是所有手机都有【WLAN 助理】这个选项，我是 MIUI 11，所有有，其他手机可能是其他名字，或者没有这个功能，自己看自己系统的功能开关。主要是把能影响 Wi-Fi 稳定的开关关闭，不管是信号调节还是省电方面的设置。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;2-教程开始&#34;&gt;2 教程开始
-&lt;/h1&gt;&lt;h2 id=&#34;21-新建开机自启脚本&#34;&gt;2.1 新建开机自启脚本
-&lt;/h2&gt;&lt;h3 id=&#34;211-打开-mt-管理器进入-dataadbserviced-文件夹新建-99-phone-serversh-文件&#34;&gt;2.1.1 打开 MT 管理器，进入 &lt;code&gt;/data/adb/service.d/&lt;/code&gt; 文件夹，新建 &lt;code&gt;99-phone-server.sh&lt;/code&gt; 文件
-&lt;/h3&gt;&lt;h3 id=&#34;212-打开文件在文件中输入以下代码并保存&#34;&gt;2.1.2 打开文件，在文件中输入以下代码并保存
+&lt;h1 id=&#34;教程开始&#34;&gt;教程开始
+&lt;/h1&gt;&lt;h2 id=&#34;新建开机自启脚本&#34;&gt;新建开机自启脚本
+&lt;/h2&gt;&lt;h3 id=&#34;打开-mt-管理器进入-dataadbserviced-文件夹新建-99-phone-serversh-文件&#34;&gt;打开 MT 管理器，进入 &lt;code&gt;/data/adb/service.d/&lt;/code&gt; 文件夹，新建 &lt;code&gt;99-phone-server.sh&lt;/code&gt; 文件
+&lt;/h3&gt;&lt;h3 id=&#34;打开文件在文件中输入以下代码并保存&#34;&gt;打开文件，在文件中输入以下代码并保存
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1880,7 +1954,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;213-给脚本设置权限&#34;&gt;2.1.3 给脚本设置权限
+&lt;/div&gt;&lt;h3 id=&#34;给脚本设置权限&#34;&gt;给脚本设置权限
 &lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260625090317957.png&#34;
 	width=&#34;184&#34;
 	height=&#34;250&#34;
@@ -1918,9 +1992,9 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 	
 &gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;22-新建-wi-fi-核心脚本&#34;&gt;2.2 新建 Wi-Fi 核心脚本
-&lt;/h2&gt;&lt;h3 id=&#34;221-打开-mt-管理器进入-datalocal-文件夹新建-phone-server-文件夹然后进入-phone-server-文件夹再新建-wifi-keeper-文件夹&#34;&gt;2.2.1 打开 MT 管理器，进入 &lt;code&gt;/data/local/&lt;/code&gt; 文件夹，新建 &lt;code&gt;phone-server&lt;/code&gt; 文件夹，然后进入 &lt;code&gt;phone-server&lt;/code&gt; 文件夹再新建 &lt;code&gt;wifi-keeper&lt;/code&gt; 文件夹
-&lt;/h3&gt;&lt;h3 id=&#34;222-在-datalocalphone-serverwifi-keeper-文件夹下面新建-wifi-keepersh-文件并且输入下面的代码进行保存&#34;&gt;2.2.2 在 &lt;code&gt;/data/local/phone-server/wifi-keeper/&lt;/code&gt; 文件夹下面新建 &lt;code&gt;wifi-keeper.sh&lt;/code&gt; 文件，并且输入下面的代码进行保存
+&lt;h2 id=&#34;新建-wi-fi-核心脚本&#34;&gt;新建 Wi-Fi 核心脚本
+&lt;/h2&gt;&lt;h3 id=&#34;打开-mt-管理器进入-datalocal-文件夹新建-phone-server-文件夹然后进入-phone-server-文件夹再新建-wifi-keeper-文件夹&#34;&gt;打开 MT 管理器，进入 &lt;code&gt;/data/local/&lt;/code&gt; 文件夹，新建 &lt;code&gt;phone-server&lt;/code&gt; 文件夹，然后进入 &lt;code&gt;phone-server&lt;/code&gt; 文件夹再新建 &lt;code&gt;wifi-keeper&lt;/code&gt; 文件夹
+&lt;/h3&gt;&lt;h3 id=&#34;在-datalocalphone-serverwifi-keeper-文件夹下面新建-wifi-keepersh-文件并且输入下面的代码进行保存&#34;&gt;在 &lt;code&gt;/data/local/phone-server/wifi-keeper/&lt;/code&gt; 文件夹下面新建 &lt;code&gt;wifi-keeper.sh&lt;/code&gt; 文件，并且输入下面的代码进行保存
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;  1
@@ -3339,9 +3413,9 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;main_loop
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;223-按照第-3-节的过程给脚本设置权限&#34;&gt;2.2.3 按照第 3 节的过程给脚本设置权限
+&lt;/div&gt;&lt;h3 id=&#34;按照第-3-节的过程给脚本设置权限&#34;&gt;按照第 3 节的过程给脚本设置权限
 &lt;/h3&gt;&lt;hr&gt;
-&lt;h1 id=&#34;3-如何验证脚本是否成功&#34;&gt;3 如何验证脚本是否成功
+&lt;h1 id=&#34;如何验证脚本是否成功&#34;&gt;如何验证脚本是否成功
 &lt;/h1&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;手机先正常连接上你选择 Wi-Fi，建议选择一个即可，避免手机因为某些原因在多个 Wi-Fi 之间来回切换，这个对后面的 IPv6 的解析影响非常大，然后关闭 Wi-Fi 的&lt;strong&gt;自动连接&lt;/strong&gt;开关。&lt;/p&gt;
@@ -3358,14 +3432,14 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/ol&gt;
 &lt;p&gt;我用的脚本在米 8SE 上多轮测试没问题，如果你们有问题，记得联系我，我到时候排查一下。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;4-如何关闭脚本&#34;&gt;4 如何关闭脚本
+&lt;h1 id=&#34;如何关闭脚本&#34;&gt;如何关闭脚本
 &lt;/h1&gt;&lt;p&gt;&lt;strong&gt;方法一：&lt;/strong&gt; 取消 &lt;code&gt;/data/adb/service.d/99-phone-server.sh&lt;/code&gt; 脚本的执行权限
 &lt;strong&gt;方法二：&lt;/strong&gt; 删除 &lt;code&gt;/data/adb/service.d/99-phone-server.sh&lt;/code&gt; 脚本&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;5-结束语&#34;&gt;5 结束语
+&lt;h1 id=&#34;结束语&#34;&gt;结束语
 &lt;/h1&gt;&lt;p&gt;不得不说，AI 是真的好用。不仅可以优化脚本，还能把注释写的清清楚楚。按照它的逻辑和日志，就算出问题了也能很好的定位和解决，这一次确实是省了不少时间。可惜两天撸的 business 2 个月翻车了。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;6-附录wi-fi-守护脚本设计-prompt可直接食用&#34;&gt;6 附录：Wi-Fi 守护脚本设计 Prompt（可直接食用）
+&lt;h1 id=&#34;附录wi-fi-守护脚本设计-prompt可直接食用&#34;&gt;附录：Wi-Fi 守护脚本设计 Prompt（可直接食用）
 &lt;/h1&gt;&lt;p&gt;以下是我用来生成上述脚本的完整 Prompt，如果你也想根据自己的需求定制，可以直接复制使用。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -3986,10 +4060,10 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
         <item>
         <title>【手机搭建服务器】· 第 一 期</title>
         <link>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%80-%E6%9C%9F/</link>
-        <pubDate>Thu, 25 Jun 2026 01:33:06 +0000</pubDate>
+        <pubDate>Thu, 25 Jun 2026 01:53:48 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%80-%E6%9C%9F/</guid>
-        <description>&lt;h1 id=&#34;1-手机搭建服务器项目开始前的必备条件&#34;&gt;1 手机搭建服务器：项目开始前的必备条件
+        <description>&lt;h1 id=&#34;手机搭建服务器项目开始前的必备条件&#34;&gt;手机搭建服务器：项目开始前的必备条件
 &lt;/h1&gt;&lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;原始链接&lt;/strong&gt;: &lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/2157272&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -3999,11 +4073,11 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;本期主题：项目开始前的必备条件&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;11-条件一具备可访问的公网&#34;&gt;1.1 条件一：具备可访问的公网
+&lt;h2 id=&#34;条件一具备可访问的公网&#34;&gt;条件一：具备可访问的公网
 &lt;/h2&gt;&lt;p&gt;关于公网这一块，从 ipv6 和 ipv4 两个方面来说。&lt;/p&gt;
-&lt;h3 id=&#34;111-先说-ipv4&#34;&gt;1.1.1 先说 Ipv4
+&lt;h3 id=&#34;先说-ipv4&#34;&gt;先说 Ipv4
 &lt;/h3&gt;&lt;p&gt;由于目前家庭宽带很少有 ipv4 的公网，包括我本人也没有，所以这一个系列的教程主要是围绕 ipv6 进行，如果你手里有 ipv4 的公网，那毫无疑问是最好的，动态 ip 和静态 ip 都无所谓，如果是静态 ip，那就更无敌了，只是这样的资源比较少。&lt;/p&gt;
-&lt;h3 id=&#34;112-再说-ipv6&#34;&gt;1.1.2 再说 Ipv6
+&lt;h3 id=&#34;再说-ipv6&#34;&gt;再说 Ipv6
 &lt;/h3&gt;&lt;p&gt;有关 ipv6 的相关知识在这里不做展开，互联网上对这一块的科普非常到位，感兴趣的可以去自行了解。&lt;/p&gt;
 &lt;p&gt;目前国内的现状是，家庭宽带基本都有 ipv6，甚至我们日常使用的手机卡，都有 ipv6，而且两者都是公网可以访问到的。这也是手机搭建服务器可行的很重要的一个原因。&lt;/p&gt;
 &lt;p&gt;这一次我们主要讨论的是宽带的 ipv6，而不是手机流量的 ipv6，主要有几点原因：&lt;/p&gt;
@@ -4024,7 +4098,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;p&gt;宽带只要是不跑 P 的情况下，运营商是不会给你恶意限速的，一般来说，家庭宽带的上传速度在 50-200Mbps 之间，而且波动也很稳定。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;113-问题一如何判断宽带或者手机卡具备-ipv6&#34;&gt;1.1.3 问题一：如何判断宽带或者手机卡具备 ipv6？
+&lt;h3 id=&#34;问题一如何判断宽带或者手机卡具备-ipv6&#34;&gt;问题一：如何判断宽带或者手机卡具备 ipv6？
 &lt;/h3&gt;&lt;p&gt;单独进行验证，比如只连接 wifi 或者只打开流量的情况下，浏览器访问 &lt;a class=&#34;link&#34; href=&#34;https://testipv6.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://testipv6.cn/&lt;/a&gt; 网站进行测试。&lt;/p&gt;
 &lt;p&gt;如果结果如下图所示，那么恭喜你，你的设备和网络是支持 ipv6 公网访问的。&lt;/p&gt;
@@ -4088,11 +4162,11 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/ul&gt;
 &lt;p&gt;✅ &lt;strong&gt;如果你的宽带自带 ipv4 公网，那上述这个情况你可以完全忽略。&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;12-条件二具备可-root-的手机&#34;&gt;1.2 条件二：具备可 Root 的手机
+&lt;h2 id=&#34;条件二具备可-root-的手机&#34;&gt;条件二：具备可 Root 的手机
 &lt;/h2&gt;&lt;p&gt;很多人看到这里，就觉得不想搞了，或者说觉得不需要 root 也行。先继续往下看。&lt;/p&gt;
-&lt;h3 id=&#34;121-问题一为什么需要-root不-root-到底行不行&#34;&gt;1.2.1 问题一：为什么需要 root？不 Root 到底行不行？
+&lt;h3 id=&#34;问题一为什么需要-root不-root-到底行不行&#34;&gt;问题一：为什么需要 root？不 Root 到底行不行？
 &lt;/h3&gt;&lt;p&gt;先说结论：不 root 可以，但是及其不推荐，如果你只是简单的捣鼓一下，不打算将手机用做长久的服务器。那么可以试试，如果你想要的是一台长期稳定运行，不管出现任何突发情况能如期运行的服务器的话，必须 root。&lt;/p&gt;
-&lt;h4 id=&#34;1211-原因一手机用做服务器需要解决旁路供电问题&#34;&gt;1.2.1.1 原因一：手机用做服务器需要解决旁路供电问题
+&lt;h4 id=&#34;原因一手机用做服务器需要解决旁路供电问题&#34;&gt;原因一：手机用做服务器需要解决旁路供电问题
 &lt;/h4&gt;&lt;p&gt;手机当服务器之后，大概率是要长期插着电运行的。但是手机长期插电会遇到一个很现实的问题：电池可能会一直处于充满、发热、再充电的状态，对电池并不友好。如果只是偶尔玩玩，问题不大。但如果你准备让它连续运行几个月，甚至一年以上，那供电问题就必须认真考虑。&lt;/p&gt;
 &lt;p&gt;比较理想的状态是：手机插着充电器，但是电池不一直反复充电，最好能进入类似“旁路供电”的状态。也就是说，手机主要使用充电器供电，而不是一直让电池在 80%、90%、100% 附近反复充放电。这时候 root 的作用就很明显了。有了 root 之后，我们才更方便使用类似 &lt;strong&gt;Acc + AccA&lt;/strong&gt; 或者 &lt;strong&gt;QSC 定量停充&lt;/strong&gt; 这样的方案去控制充电行为，比如：&lt;/p&gt;
 &lt;ul&gt;
@@ -4106,7 +4180,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;p&gt;如果没有 root，这类底层充电控制基本就很难做了。&lt;/p&gt;
 &lt;p&gt;所以，手机长期当服务器，第一个绕不开的问题就是：&lt;strong&gt;怎么让它长期插电运行，同时尽量不伤电池。&lt;/strong&gt; 这也是我建议 root 的第一个重要原因。&lt;/p&gt;
 &lt;p&gt;✅ &lt;strong&gt;有一个非常好的消息是：&lt;/strong&gt; 目前 Acc+AccA 的方案能够很好的解决供电问题，实现旁路供电，而且支持很多 CPU，我手里的小米 8SE 一样完美支持。&lt;/p&gt;
-&lt;h4 id=&#34;1212-原因二解决手机重启后可能面临的各种意外情况&#34;&gt;1.2.1.2 原因二：解决手机重启后可能面临的各种意外情况
+&lt;h4 id=&#34;原因二解决手机重启后可能面临的各种意外情况&#34;&gt;原因二：解决手机重启后可能面临的各种意外情况
 &lt;/h4&gt;&lt;p&gt;手机作为服务器，最怕的不是你手动启动一次服务。最怕的是手机重启了，然后服务没有自动起来。比如这些情况都可能发生：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;手机没电后重新开机；&lt;/li&gt;
@@ -4134,7 +4208,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;li&gt;等等一大堆你可能想到的自动化操作。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;这样手机重启以后，不需要你手动干预，它可以自己把服务器环境拉起来。这对长期运行非常重要。因为你不可能一直盯着手机。尤其是手机放在家里，你人在外面的时候，如果它重启后服务没起来，那你连 SSH 都连不上，这不仅仅是尴尬的问题，而是你根本没有任何办法去解决这个问题，除非你自己就在家里，手机就在身边。&lt;/p&gt;
-&lt;h4 id=&#34;1213-原因三方便做网络恢复尤其是-ipv6-异常恢复&#34;&gt;1.2.1.3 原因三：方便做网络恢复，尤其是 IPv6 异常恢复
+&lt;h4 id=&#34;原因三方便做网络恢复尤其是-ipv6-异常恢复&#34;&gt;原因三：方便做网络恢复，尤其是 IPv6 异常恢复
 &lt;/h4&gt;&lt;p&gt;手机当服务器，如果你打算通过 IPv6 从外网访问，那网络稳定性就很重要。但手机长期连接 Wi-Fi 后，可能会遇到一些奇怪的问题，比如：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;IPv6 地址突然没了；&lt;/li&gt;
@@ -4162,7 +4236,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
         <item>
         <title>2026 甲骨文一条龙服务经验分享和教程推荐</title>
         <link>https://jenboy.github.io/p/2026-%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%80%E6%9D%A1%E9%BE%99%E6%9C%8D%E5%8A%A1%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/</link>
-        <pubDate>Thu, 25 Jun 2026 01:33:06 +0000</pubDate>
+        <pubDate>Thu, 25 Jun 2026 01:53:48 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/2026-%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%80%E6%9D%A1%E9%BE%99%E6%9C%8D%E5%8A%A1%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/</guid>
         <description>&lt;h1 id=&#34;1-甲骨文云账号注册与实例配置完整教程2026-年-6-月&#34;&gt;1 甲骨文云账号注册与实例配置完整教程（2026 年 6 月）
@@ -4727,10 +4801,10 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
         <item>
         <title>CF Worker部署DDNS主控</title>
         <link>https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/</link>
-        <pubDate>Thu, 25 Jun 2026 01:33:06 +0000</pubDate>
+        <pubDate>Thu, 25 Jun 2026 01:53:48 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/</guid>
-        <description>&lt;h1 id=&#34;1-ddns-worker轻量级-cloudflare-ddns-工具部署指南&#34;&gt;1 DDNS-Worker：轻量级 CloudFlare DDNS 工具部署指南
+        <description>&lt;h1 id=&#34;ddns-worker轻量级-cloudflare-ddns-工具部署指南&#34;&gt;DDNS-Worker：轻量级 CloudFlare DDNS 工具部署指南
 &lt;/h1&gt;&lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;原始链接&lt;/strong&gt;: &lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/617539&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -4739,13 +4813,13 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;li&gt;&lt;strong&gt;楼主&lt;/strong&gt;: @chunkBurst&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;11-一-工具概述&#34;&gt;1.1 一 工具概述
-&lt;/h2&gt;&lt;h3 id=&#34;111-它在做什么&#34;&gt;1.1.1 它在做什么?
+&lt;h2 id=&#34;工具概述&#34;&gt;工具概述
+&lt;/h2&gt;&lt;h3 id=&#34;它在做什么&#34;&gt;它在做什么?
 &lt;/h3&gt;&lt;p&gt;可能有些佬友不知道这是什么工具&lt;/p&gt;
 &lt;p&gt;它是一个 ddns-go 同款工具，用于解决某些场景下，服务器会定时更新 IP 的问题。&lt;/p&gt;
 &lt;p&gt;不像传统的服务器，解析 DNS 后就不需要进行管理，因为 IP 是静态的。&lt;/p&gt;
 &lt;p&gt;那么针对动态 IP，就得使用动态更新的办法~&lt;/p&gt;
-&lt;h3 id=&#34;112-它和同款工具的优势&#34;&gt;1.1.2 它和同款工具的优势?
+&lt;h3 id=&#34;它和同款工具的优势&#34;&gt;它和同款工具的优势?
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;个人感觉&lt;/strong&gt;较为安全（下文细说）&lt;/p&gt;
@@ -4778,7 +4852,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;ul&gt;
 &lt;li&gt;内置 TG 通知（&lt;del&gt;因为 API 调用简单&lt;/del&gt;）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;113-工具诞生的起源&#34;&gt;1.1.3 工具诞生的起源
+&lt;h3 id=&#34;工具诞生的起源&#34;&gt;工具诞生的起源
 &lt;/h3&gt;&lt;p&gt;本来购入了小鸡，因为是动态 IP，所以在想办法使用 DDNS 解决问题。&lt;/p&gt;
 &lt;p&gt;找到了大家常用的 &lt;code&gt;ddns-go&lt;/code&gt;，打开文档—&lt;strong&gt;头大，眼花，难绷&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;然后其他的 ddns 的脚本，会塞入自己的 &lt;code&gt;CloudFlare Api Key&lt;/code&gt;&lt;/p&gt;
@@ -4786,8 +4860,8 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;p&gt;鉴于复杂性&amp;amp;洁癖的原因，此工具诞生&lt;/p&gt;
 &lt;p&gt;（当然最主要是 CCB 有点笨，不会用 ddns-go 之类工具）&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;12-二-安装步骤&#34;&gt;1.2 二 安装步骤
-&lt;/h2&gt;&lt;h3 id=&#34;121-准备工作申请-api-key&#34;&gt;1.2.1 准备工作（申请 API Key）
+&lt;h2 id=&#34;安装步骤&#34;&gt;安装步骤
+&lt;/h2&gt;&lt;h3 id=&#34;准备工作申请-api-key&#34;&gt;准备工作（申请 API Key）
 &lt;/h3&gt;&lt;p&gt;打开 CF 主界面&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/pics/file-20260625084945113.png&#34;
 	width=&#34;517&#34;
@@ -4815,7 +4889,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &gt;&lt;/p&gt;
 &lt;p&gt;点击复制 &lt;code&gt;CF Global Key&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;创建完成后复制自己的 Token&lt;/p&gt;
-&lt;h3 id=&#34;122-worker-端部署&#34;&gt;1.2.2 Worker 端部署
+&lt;h3 id=&#34;worker-端部署&#34;&gt;Worker 端部署
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;打开 CF-Worker，点击创建&lt;/li&gt;
 &lt;/ul&gt;
@@ -4859,11 +4933,11 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;p&gt;&lt;strong&gt;TG-BOT 配置 (可选):&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;TG_BOT_TOKEN：Bot 的 Token&lt;/p&gt;
 &lt;p&gt;TG_CHANNEL_ID(这个可以选 &lt;code&gt;文本&lt;/code&gt; 类型)：推送消息的频道 ID&lt;/p&gt;
-&lt;h3 id=&#34;123-节点端部署&#34;&gt;1.2.3 节点端部署
+&lt;h3 id=&#34;节点端部署&#34;&gt;节点端部署
 &lt;/h3&gt;&lt;p&gt;使用 &lt;code&gt;README&lt;/code&gt; 中提供的命令，下载后修改配置内的变量，执行脚本后，即可完成部署！&lt;/p&gt;
 &lt;p&gt;（执行脚本后会自动添加定时任务~）&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;13-三-最后求-star&#34;&gt;1.3 三 最后（求 Star）
+&lt;h2 id=&#34;最后求-star&#34;&gt;最后（求 Star）
 &lt;/h2&gt;&lt;p&gt;如果佬友们喜欢的话，可以给 CCB 点个 Star 嘛，感谢啦~ 🤪&lt;/p&gt;
 &lt;p&gt;项目地址：&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-info&#34;&gt;
@@ -4874,7 +4948,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
         <item>
         <title>关于 | About</title>
         <link>https://jenboy.github.io/%E5%85%B3%E4%BA%8E-about/</link>
-        <pubDate>Thu, 25 Jun 2026 01:33:06 +0000</pubDate>
+        <pubDate>Thu, 25 Jun 2026 01:53:48 +0000</pubDate>
         
         <guid>https://jenboy.github.io/%E5%85%B3%E4%BA%8E-about/</guid>
         <description>&lt;blockquote&gt;
@@ -4888,10 +4962,10 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
         <item>
         <title>使用Oracle免费服务器部署CLIProxyAPI并配置域名，小白也能看懂</title>
         <link>https://jenboy.github.io/p/%E4%BD%BF%E7%94%A8oracle%E5%85%8D%E8%B4%B9%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2cliproxyapi%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82/</link>
-        <pubDate>Thu, 25 Jun 2026 01:33:06 +0000</pubDate>
+        <pubDate>Thu, 25 Jun 2026 01:53:48 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E4%BD%BF%E7%94%A8oracle%E5%85%8D%E8%B4%B9%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2cliproxyapi%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82/</guid>
-        <description>&lt;h1 id=&#34;1-oracle-免费服务器部署-cliproxyapi-全教程含域名-ssl-配置&#34;&gt;1 Oracle 免费服务器部署 CLIProxyAPI 全教程（含域名 SSL 配置）
+        <description>&lt;h1 id=&#34;oracle-免费服务器部署-cliproxyapi-全教程含域名-ssl-配置&#34;&gt;Oracle 免费服务器部署 CLIProxyAPI 全教程（含域名 SSL 配置）
 &lt;/h1&gt;&lt;blockquote class=&#34;alert alert-info&#34;&gt;
     &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;原始链接&lt;/strong&gt;: &lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/1663220&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -4901,15 +4975,15 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;p&gt;最近刷到 Codex 号池，于是乎利用之前注册的 Oracle 自己搭建一个。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;11-写在前面&#34;&gt;1.1 写在前面
+&lt;h2 id=&#34;写在前面&#34;&gt;写在前面
 &lt;/h2&gt;&lt;p&gt;很多问题都是没仔细看帖子导致的，比如 iptables 和防火墙放开端口问题，帖子都有写，看不明白再去问 ai。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;12-一使用-oracle-免费服务器部署-cliproxyapi&#34;&gt;1.2 一、使用 Oracle 免费服务器部署 CLIProxyAPI
-&lt;/h2&gt;&lt;h3 id=&#34;121-注册-oracle&#34;&gt;1.2.1 注册 Oracle
+&lt;h2 id=&#34;使用-oracle-免费服务器部署-cliproxyapi&#34;&gt;使用 Oracle 免费服务器部署 CLIProxyAPI
+&lt;/h2&gt;&lt;h3 id=&#34;注册-oracle&#34;&gt;注册 Oracle
 &lt;/h3&gt;&lt;p&gt;网络上注册 Oracle 免费套餐的教程有很多，不再赘述。
 我之前的帖子：&lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/1554915&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Oracle似乎是注册成功了&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;122-创建实例&#34;&gt;1.2.2 创建实例
+&lt;h3 id=&#34;创建实例&#34;&gt;创建实例
 &lt;/h3&gt;&lt;p&gt;在创建实例之前，先去创建子网，当然你也可以在创建实例时创建。在 &lt;a class=&#34;link&#34; href=&#34;https://cloud.oracle.com/networking/vcns&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;虚拟云网络&lt;/a&gt; 页面，选择创建 VCN。&lt;/p&gt;
 &lt;ul&gt;
@@ -4925,13 +4999,13 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;li&gt;在存储部分，你可以把性能拉满，只要在账户免费的 200g 总容量内，就不会收钱。你可以保持默认大小，或者自己增加容量。&lt;/li&gt;
 &lt;li&gt;你可以提前创建好 ssh 的 public key，在创建阶段上传，或是选择其他认证方式。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;123-连接实例&#34;&gt;1.2.3 连接实例
+&lt;h3 id=&#34;连接实例&#34;&gt;连接实例
 &lt;/h3&gt;&lt;p&gt;你如果尝试直接 ssh oracle 服务器，会发现无法连接。首先你要去 &lt;a class=&#34;link&#34; href=&#34;https://cloud.oracle.com/networking/vcns&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;虚拟云网络&lt;/a&gt; 页面，点击你之前创建的网络，在网关选项卡下，添加一个 Internet 网关，不然你的服务器是没办法与外网通信的。默认路由表会自动将流量发送到你刚刚创建的网关。&lt;/p&gt;
 &lt;p&gt;Oracle 默认放开了 22 端口，此时可以尝试用你的认证方式进行 ssh 连接，ubuntu 系统的用户名就是 &lt;code&gt;ubuntu&lt;/code&gt;。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;13-二部署-cliproxyapi&#34;&gt;1.3 二、部署 CLIProxyAPI
-&lt;/h2&gt;&lt;h3 id=&#34;131-检测-ip&#34;&gt;1.3.1 检测 IP
+&lt;h2 id=&#34;部署-cliproxyapi&#34;&gt;部署 CLIProxyAPI
+&lt;/h2&gt;&lt;h3 id=&#34;检测-ip&#34;&gt;检测 IP
 &lt;/h3&gt;&lt;p&gt;首先可以用下面的脚本测试一下 ChatGPT 等平台等解锁情况：
 &lt;a class=&#34;link&#34; href=&#34;https://github.com/xykt/IPQuality&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/xykt/IPQuality&lt;/a&gt;&lt;/p&gt;
@@ -4957,7 +5031,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 	
 	
 &gt;&lt;/p&gt;
-&lt;h3 id=&#34;132-开始部署&#34;&gt;1.3.2 开始部署
+&lt;h3 id=&#34;开始部署&#34;&gt;开始部署
 &lt;/h3&gt;&lt;p&gt;然后根据下面的教程，在服务器上部署 CLIProxyAPI。
 &lt;a class=&#34;link&#34; href=&#34;https://help.router-for.me/cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;CLIProxyAPI&lt;/a&gt;&lt;/p&gt;
@@ -5036,7 +5110,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nn&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;133-把-service-文件安装到-systemd&#34;&gt;1.3.3 把 Service 文件安装到 Systemd
+&lt;/div&gt;&lt;h3 id=&#34;把-service-文件安装到-systemd&#34;&gt;把 Service 文件安装到 Systemd
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -5058,7 +5132,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl status cliproxyapi.service --no-pager
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;134-启动--开机自启&#34;&gt;1.3.4 启动 + 开机自启
+&lt;/div&gt;&lt;h3 id=&#34;启动--开机自启&#34;&gt;启动 + 开机自启
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -5079,7 +5153,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;14-三公网-ip-访问&#34;&gt;1.4 三、公网 IP 访问
+&lt;h2 id=&#34;公网-ip-访问&#34;&gt;公网 IP 访问
 &lt;/h2&gt;&lt;p&gt;如果你没有域名，可直接使用公网 ip 访问，但不建议。首先要放开需要的端口，配置文件中默认是 &lt;code&gt;8317&lt;/code&gt;。在 &lt;a class=&#34;link&#34; href=&#34;https://cloud.oracle.com/networking/vcns&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;虚拟云网络&lt;/a&gt; 页面，选择你的网络，在安全选项卡下，点击默认创建的安全列表，我这里是 &lt;code&gt;Default Security List for vcn0&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/%E4%BD%BF%E7%94%A8oracle%E5%85%8D%E8%B4%B9%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2cliproxyapi%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82/pics/file-20260625085607754.jpeg&#34;
@@ -5171,7 +5245,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ss -lntp &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep &lt;span class=&#34;m&#34;&gt;8317&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;141-nftufw&#34;&gt;1.4.1 nft/ufw
+&lt;/div&gt;&lt;h3 id=&#34;nftufw&#34;&gt;nft/ufw
 &lt;/h3&gt;&lt;p&gt;如果还是不能访问，就要检查 nft/ufw 问题。可以用下面的代码来查看规则集。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5223,9 +5297,9 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;这样顺序就正确了。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;15-四域名访问&#34;&gt;1.5 四、域名访问
+&lt;h2 id=&#34;域名访问&#34;&gt;域名访问
 &lt;/h2&gt;&lt;p&gt;我使用 Cloudflare 大善人的托管服务，配合 Let’s Encrypt 实现 SSL 证书自动续期。假设你的域名为 &lt;code&gt;bbb.aaa.com&lt;/code&gt;。&lt;/p&gt;
-&lt;h3 id=&#34;151-0安装-nginx&#34;&gt;1.5.1 0）安装 Nginx
+&lt;h3 id=&#34;安装-nginx&#34;&gt;安装 Nginx
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -5254,7 +5328,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl status nginx
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;152-1cloudflare-侧准备创建-api-token只给-dns-权限&#34;&gt;1.5.2 1）Cloudflare 侧准备：创建 API Token（只给 DNS 权限）
+&lt;/div&gt;&lt;h3 id=&#34;cloudflare-侧准备创建-api-token只给-dns-权限&#34;&gt;Cloudflare 侧准备：创建 API Token（只给 DNS 权限）
 &lt;/h3&gt;&lt;p&gt;Cloudflare → &lt;strong&gt;My Profile → API Tokens → Create Token&lt;/strong&gt;
 选模板：&lt;strong&gt;Edit zone DNS&lt;/strong&gt;（或自定义）&lt;/p&gt;
 &lt;p&gt;权限最小化建议：&lt;/p&gt;
@@ -5263,7 +5337,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;li&gt;Zone Resources: 仅选择 &lt;code&gt;aaa.com&lt;/code&gt; 这个 zone&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;创建后复制 Token（只会显示一次）&lt;/p&gt;
-&lt;h3 id=&#34;153-2服务器安装-certbot--cloudflare-插件&#34;&gt;1.5.3 2）服务器安装 Certbot + Cloudflare 插件
+&lt;h3 id=&#34;服务器安装-certbot--cloudflare-插件&#34;&gt;服务器安装 Certbot + Cloudflare 插件
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -5274,7 +5348,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install -y certbot python3-certbot-dns-cloudflare
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;154-3在服务器保存-cloudflare-token给-certbot-用&#34;&gt;1.5.4 3）在服务器保存 Cloudflare Token（给 Certbot 用）
+&lt;/div&gt;&lt;h3 id=&#34;在服务器保存-cloudflare-token给-certbot-用&#34;&gt;在服务器保存 Cloudflare Token（给 Certbot 用）
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -5303,7 +5377,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo chmod &lt;span class=&#34;m&#34;&gt;600&lt;/span&gt; /root/.secrets/certbot/cloudflare.ini
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;155-4签发证书dns-验证&#34;&gt;1.5.5 4）签发证书（DNS 验证）
+&lt;/div&gt;&lt;h3 id=&#34;签发证书dns-验证&#34;&gt;签发证书（DNS 验证）
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -5325,7 +5399,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;li&gt;&lt;code&gt;/etc/letsencrypt/live/bbb.aaa.com/fullchain.pem&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;/etc/letsencrypt/live/bbb.aaa.com/privkey.pem&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;156-5nginx-配置只监听-443--反代-8317&#34;&gt;1.5.6 5）nginx 配置只监听 443 + 反代 8317
+&lt;h3 id=&#34;nginx-配置只监听-443--反代-8317&#34;&gt;Nginx 配置只监听 443 + 反代 8317
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -5408,7 +5482,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo systemctl reload nginx
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;157-6自动续期默认就有并确保续期后自动-reload-nginx&#34;&gt;1.5.7 6）自动续期（默认就有），并确保续期后自动 Reload Nginx
+&lt;/div&gt;&lt;h3 id=&#34;自动续期默认就有并确保续期后自动-reload-nginx&#34;&gt;自动续期（默认就有），并确保续期后自动 Reload Nginx
 &lt;/h3&gt;&lt;p&gt;检查系统是否已有定时任务：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5461,7 +5535,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/div&gt;&lt;p&gt;看到成功即可。&lt;/p&gt;
 &lt;p&gt;最后，在 Cloudflare 中选择 &lt;strong&gt;Full (strict)&lt;/strong&gt; 模式，&lt;strong&gt;开启&lt;/strong&gt; Always Use HTTPS（即使源站没开 80 也没关系，CF 边缘重定向）。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;在服务器安全组/iptables 需要放行：443/tcp&lt;/strong&gt;，参考前文公网 IP 配置部分。&lt;/p&gt;
-&lt;h3 id=&#34;158-7为-cliproxyapi-启用-tls&#34;&gt;1.5.8 7）为 CLIProxyApi 启用 TLS
+&lt;h3 id=&#34;为-cliproxyapi-启用-tls&#34;&gt;为 CLIProxyApi 启用 TLS
 &lt;/h3&gt;&lt;p&gt;可以在 webui 中配置，证书文件路径和私钥文件路径都是我们之前生成的。比如：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;证书文件路径：&lt;code&gt;/etc/letsencrypt/live/bbb.aaa.com/fullchain.pem&lt;/code&gt;&lt;/li&gt;
@@ -5515,13 +5589,13 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;16-五添加账户&#34;&gt;1.6 五、添加账户
+&lt;h2 id=&#34;添加账户&#34;&gt;添加账户
 &lt;/h2&gt;&lt;p&gt;可以使用 WebUI 添加账户，或者使用接口添加，见：
 &lt;a class=&#34;link&#34; href=&#34;https://help.router-for.me/cn/management/webui.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Web UI | CLIProxyAPI&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;17-六使用&#34;&gt;1.7 六、使用
-&lt;/h2&gt;&lt;h3 id=&#34;171-在-codex-中使用&#34;&gt;1.7.1 在 Codex 中使用
+&lt;h2 id=&#34;使用&#34;&gt;使用
+&lt;/h2&gt;&lt;h3 id=&#34;在-codex-中使用&#34;&gt;在 Codex 中使用
 &lt;/h3&gt;&lt;p&gt;启动 CLIProxyAPI 服务器，修改 &lt;code&gt;~/.codex/config.toml&lt;/code&gt; 和 &lt;code&gt;~/.codex/auth.json&lt;/code&gt; 文件。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;config.toml:&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -5591,7 +5665,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;172-在-cherry-studio-中使用&#34;&gt;1.7.2 在 Cherry Studio 中使用
+&lt;/div&gt;&lt;h3 id=&#34;在-cherry-studio-中使用&#34;&gt;在 Cherry Studio 中使用
 &lt;/h3&gt;&lt;p&gt;见官方文档，可以在 CLIProxyApi 的管理界面查看支持的模型。
 &lt;a class=&#34;link&#34; href=&#34;https://docs.cherry-ai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;项目简介 | Cherry Studio&lt;/a&gt;&lt;/p&gt;
@@ -5600,7 +5674,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
         <item>
         <title>搜索 | Search</title>
         <link>https://jenboy.github.io/search/</link>
-        <pubDate>Thu, 25 Jun 2026 01:33:06 +0000</pubDate>
+        <pubDate>Thu, 25 Jun 2026 01:53:48 +0000</pubDate>
         
         <guid>https://jenboy.github.io/search/</guid>
         <description></description>
@@ -5608,7 +5682,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
         <item>
         <title>友链 | Links</title>
         <link>https://jenboy.github.io/%E5%8F%8B%E9%93%BE-links/</link>
-        <pubDate>Thu, 25 Jun 2026 01:33:06 +0000</pubDate>
+        <pubDate>Thu, 25 Jun 2026 01:53:48 +0000</pubDate>
         
         <guid>https://jenboy.github.io/%E5%8F%8B%E9%93%BE-links/</guid>
         <description>&lt;p&gt;使用这个模板申请&lt;/p&gt;

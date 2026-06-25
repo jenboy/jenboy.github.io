@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="1 手机搭建服务器 · 第二期：手机如何实现旁路供电 原始链接: https://linux.do/t/topic/2177558 主题 ID: 2177558 楼主: @Semmering 上期回顾：【超详细｜保姆级教程】手机搭建服务器 · 第 一 期\n1.1 前言 第一期文字内容看上去很多，但其实就讲了两个事情：\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="手机搭建服务器 · 第二期：手机如何实现旁路供电 原始链接: https://linux.do/t/topic/2177558 主题 ID: 2177558 楼主: @Semmering 上期回顾：【超详细｜保姆级教程】手机搭建服务器 · 第 一 期\n前言 第一期文字内容看上去很多，但其实就讲了两个事情：\n">
 <title>【手机搭建服务器】· 第 二 期</title>
 
 <link rel='canonical' href='https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/'>
 
 <link rel="stylesheet" href="/scss/style.min.6998e4e648ca13c26692fd732a596048e487a90378e5ec1f10b8a5899f478b60.css"><meta property='og:title' content="【手机搭建服务器】· 第 二 期">
-<meta property='og:description' content="1 手机搭建服务器 · 第二期：手机如何实现旁路供电 原始链接: https://linux.do/t/topic/2177558 主题 ID: 2177558 楼主: @Semmering 上期回顾：【超详细｜保姆级教程】手机搭建服务器 · 第 一 期\n1.1 前言 第一期文字内容看上去很多，但其实就讲了两个事情：\n">
+<meta property='og:description' content="手机搭建服务器 · 第二期：手机如何实现旁路供电 原始链接: https://linux.do/t/topic/2177558 主题 ID: 2177558 楼主: @Semmering 上期回顾：【超详细｜保姆级教程】手机搭建服务器 · 第 一 期\n前言 第一期文字内容看上去很多，但其实就讲了两个事情：\n">
 <meta property='og:url' content='https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/'>
 <meta property='og:site_name' content='Xao的碎碎念'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='LinuxDo' /><meta property='article:tag' content='搬运' /><meta property='article:published_time' content='2026-06-25T01:33:06&#43;00:00'/><meta property='article:modified_time' content='2026-06-25T09:32:41&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='LinuxDo' /><meta property='article:tag' content='搬运' /><meta property='article:published_time' content='2026-06-25T01:53:48&#43;00:00'/><meta property='article:modified_time' content='2026-06-25T09:53:31&#43;08:00'/>
 <meta name="twitter:title" content="【手机搭建服务器】· 第 二 期">
-<meta name="twitter:description" content="1 手机搭建服务器 · 第二期：手机如何实现旁路供电 原始链接: https://linux.do/t/topic/2177558 主题 ID: 2177558 楼主: @Semmering 上期回顾：【超详细｜保姆级教程】手机搭建服务器 · 第 一 期\n1.1 前言 第一期文字内容看上去很多，但其实就讲了两个事情：\n">
+<meta name="twitter:description" content="手机搭建服务器 · 第二期：手机如何实现旁路供电 原始链接: https://linux.do/t/topic/2177558 主题 ID: 2177558 楼主: @Semmering 上期回顾：【超详细｜保姆级教程】手机搭建服务器 · 第 一 期\n前言 第一期文字内容看上去很多，但其实就讲了两个事情：\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -302,42 +302,42 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#11-前言">1.1 前言</a></li>
-    <li><a href="#12-本期主题手机如何实现旁路供电">1.2 本期主题：手机如何实现旁路供电</a></li>
-    <li><a href="#13-一什么是旁路供电">1.3 一、什么是旁路供电？</a>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#本期主题手机如何实现旁路供电">本期主题：手机如何实现旁路供电</a></li>
+    <li><a href="#什么是旁路供电">什么是旁路供电？</a>
       <ol>
-        <li><a href="#131-情况一比较理想的真正旁路供电">1.3.1 情况一：比较理想的真正旁路供电</a></li>
-        <li><a href="#132-情况二只能做到--停止充电-但不能真正旁路">1.3.2 情况二：只能做到 &quot; 停止充电 &ldquo;，但不能真正旁路</a></li>
-        <li><a href="#133-情况三完全不生效">1.3.3 情况三：完全不生效</a></li>
+        <li><a href="#情况一比较理想的真正旁路供电">情况一：比较理想的真正旁路供电</a></li>
+        <li><a href="#情况二只能做到--停止充电-但不能真正旁路">情况二：只能做到 &quot; 停止充电 &ldquo;，但不能真正旁路</a></li>
+        <li><a href="#情况三完全不生效">情况三：完全不生效</a></li>
       </ol>
     </li>
-    <li><a href="#14-二细说为什么手机做服务器需要旁路供电">1.4 二、细说为什么手机做服务器需要旁路供电？</a>
+    <li><a href="#细说为什么手机做服务器需要旁路供电">细说为什么手机做服务器需要旁路供电？</a>
       <ol>
-        <li><a href="#141-原因一长期满电对电池不友好">1.4.1 原因一：长期满电对电池不友好</a></li>
-        <li><a href="#142-原因二手机需要长期稳定运行">1.4.2 原因二：手机需要长期稳定运行</a></li>
+        <li><a href="#原因一长期满电对电池不友好">原因一：长期满电对电池不友好</a></li>
+        <li><a href="#原因二手机需要长期稳定运行">原因二：手机需要长期稳定运行</a></li>
       </ol>
     </li>
-    <li><a href="#15-三本期推荐-2-种方案">1.5 三、本期推荐 2 种方案</a>
+    <li><a href="#本期推荐-2-种方案">本期推荐 2 种方案</a>
       <ol>
-        <li><a href="#151-方案一acc--acca推荐">1.5.1 方案一：ACC + AccA（推荐）</a>
+        <li><a href="#方案一acc--acca推荐">方案一：ACC + AccA（推荐）</a>
           <ol>
-            <li><a href="#1511-先科普一下-acc">1.5.1.1 先科普一下 ACC</a></li>
-            <li><a href="#1512-acc-安装教程">1.5.1.2 ACC 安装教程</a></li>
-            <li><a href="#1513-什么是-acca-">1.5.1.3 什么是 AccA 👇</a></li>
-            <li><a href="#1514-acca-安装和配置教程">1.5.1.4 AccA 安装和配置教程</a></li>
+            <li><a href="#先科普一下-acc">先科普一下 ACC</a></li>
+            <li><a href="#acc-安装教程">ACC 安装教程</a></li>
+            <li><a href="#什么是-acca-">什么是 AccA 👇</a></li>
+            <li><a href="#acca-安装和配置教程">AccA 安装和配置教程</a></li>
           </ol>
         </li>
-        <li><a href="#152-方案二qsc-定量停充">1.5.2 方案二：QSC 定量停充</a>
+        <li><a href="#方案二qsc-定量停充">方案二：QSC 定量停充</a>
           <ol>
-            <li><a href="#1521-先科普一下-qsc">1.5.2.1 先科普一下 QSC</a></li>
-            <li><a href="#1522-qsc-安装">1.5.2.2 QSC 安装</a></li>
-            <li><a href="#1523-配置">1.5.2.3 配置</a></li>
-            <li><a href="#1524-启动-qsc">1.5.2.4 启动 QSC</a></li>
+            <li><a href="#先科普一下-qsc">先科普一下 QSC</a></li>
+            <li><a href="#qsc-安装">QSC 安装</a></li>
+            <li><a href="#配置">配置</a></li>
+            <li><a href="#启动-qsc">启动 QSC</a></li>
           </ol>
         </li>
       </ol>
     </li>
-    <li><a href="#16-常见问题">1.6 常见问题</a></li>
+    <li><a href="#常见问题">常见问题</a></li>
   </ol>
 </nav>
         </div>
@@ -387,7 +387,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published" datetime='2026-06-25T01:33:06Z'>2026-06-25</time>
+                <time class="article-time--published" datetime='2026-06-25T01:53:48Z'>2026-06-25</time>
             </div>
         
 
@@ -417,7 +417,7 @@
     <section class="article-content">
     
     
-    <h1 id="1-手机搭建服务器--第二期手机如何实现旁路供电">1 手机搭建服务器 · 第二期：手机如何实现旁路供电
+    <h1 id="手机搭建服务器--第二期手机如何实现旁路供电">手机搭建服务器 · 第二期：手机如何实现旁路供电
 </h1><blockquote class="alert alert-info">
     <ul>
 <li><strong>原始链接</strong>: <a class="link" href="https://linux.do/t/topic/2177558"  target="_blank" rel="noopener"
@@ -428,7 +428,7 @@
 <p><strong>上期回顾：<a class="link" href="https://linux.do/t/topic/2157272/65"  target="_blank" rel="noopener"
     >【超详细｜保姆级教程】手机搭建服务器 · 第 一 期</a></strong></p>
 <hr>
-<h2 id="11-前言">1.1 前言
+<h2 id="前言">前言
 </h2><p>第一期文字内容看上去很多，但其实就讲了两个事情：</p>
 <ol>
 <li>判断自己的设备和网络是否具备公网访问的条件。</li>
@@ -440,7 +440,7 @@
 <p>因为手机毕竟不是服务器。手机原本的设计就是直接拿手里就能用，而不是随时插着电。</p>
 <p>所以我们要让手机长期当服务器，接下来就必须要先解决一个非常现实的问题：<strong>手机究竟怎样做更好的电源管理</strong>。也就是本期要讲的核心内容：<strong>旁路供电。</strong></p>
 <hr>
-<h2 id="12-本期主题手机如何实现旁路供电">1.2 本期主题：手机如何实现旁路供电
+<h2 id="本期主题手机如何实现旁路供电">本期主题：手机如何实现旁路供电
 </h2><p>如果供电问题不解决，后面即使你把 SSH、Nginx、Node.js、DDNS 全部配置好了，也会有一个很尴尬的问题：手机天天插着电，电池一直处于充电、发热、满电、掉电、再充电的状态。</p>
 <p>短期玩玩问题肯定不大。但如果你准备长期运行，甚至 7×24 小时放在家里当服务器，这个问题就必须必须必须重视。</p>
 <p>所以本期主要解决下面几个问题：</p>
@@ -454,7 +454,7 @@
 <li>如果没有真正旁路供电，应该怎么设置才比较安全？</li>
 </ol>
 <hr>
-<h2 id="13-一什么是旁路供电">1.3 一、什么是旁路供电？
+<h2 id="什么是旁路供电">什么是旁路供电？
 </h2><p>先用最通俗的话解释吧。</p>
 <p>正常情况下，手机插着充电器时，大概是这样的：</p>
 <div class="highlight"><div class="chroma">
@@ -485,14 +485,14 @@
 <p>安卓上很多所谓的 &quot; 旁路供电 &ldquo;，并不一定是真正硬件级的旁路供电。</p>
 <p>因为不同手机的硬件、电源管理芯片、内核驱动都不一样。所以同样是 &quot; 停止充电 &ldquo;，在不同手机上的表现可能完全不同。</p>
 <p>大概会有这三种情况：</p>
-<h3 id="131-情况一比较理想的真正旁路供电">1.3.1 情况一：比较理想的真正旁路供电
+<h3 id="情况一比较理想的真正旁路供电">情况一：比较理想的真正旁路供电
 </h3><p>这种是最理想的状态。</p>
 <p>当电量达到设定值，比如 80% 时，模块停止给电池充电。</p>
 <p>但是手机仍然插着充电器，并且手机运行主要消耗充电器的电，而不是继续消耗电池。</p>
 <p>这种情况就比较接近真正的旁路供电。</p>
 <p>如果你的手机能做到这种状态，那就非常适合长期当服务器。</p>
 <p>在我的记忆里面，以前的安卓手机系统是没有旁路供电这种设置的，是后来出现了游戏手机，玩游戏的时候，有这种开关。除了游戏手机，现在很多高配置的安卓手机都有这种模式，我亲自接触过的，比如真我，玩游戏的时候就有这个设置，但是我忘记系统设置里面是否有单独的开关了。</p>
-<h3 id="132-情况二只能做到--停止充电-但不能真正旁路">1.3.2 情况二：只能做到 &quot; 停止充电 &ldquo;，但不能真正旁路
+<h3 id="情况二只能做到--停止充电-但不能真正旁路">情况二：只能做到 &quot; 停止充电 &ldquo;，但不能真正旁路
 </h3><p>这种情况也很常见。</p>
 <p>比如你设置：</p>
 <div class="highlight"><div class="chroma">
@@ -520,7 +520,7 @@
 <p>它的好处是电池不会长期顶在 100%，大大减少了频繁充放电的频率。但是它的缺陷也很明显，就是电池仍然会反复在范围区间充放电。</p>
 <p>但总比你拿着一根数据线长期让手机 100% 满电要好太多。</p>
 <p>这种情况在小米 8se 上我就遇到，因为之前我是一加 9R 做服务器的，当时用的方案是 QSC（下面会讲），一加上运行是好好的，但是到小米 8se 上，就不行了，充到一定量就停止充电，改用电池。</p>
-<h3 id="133-情况三完全不生效">1.3.3 情况三：完全不生效
+<h3 id="情况三完全不生效">情况三：完全不生效
 </h3><p>这是最后一种情况，就是你的模块设置了，但是手机不听话。</p>
 <p>比如你设置了 80% 停止充电，但手机还是一路充到 100%。</p>
 <p>或者设置了停止充电之后，手机状态栏显示没在充电，但实际上电池还是在涨。</p>
@@ -529,9 +529,9 @@
 <p>我猜测，要么是手机太老了，要么是脚本根本不支持，需要重写脚本，奈何我不会啊！</p>
 <p>后面我会专门写如何判断是否真的生效。</p>
 <hr>
-<h2 id="14-二细说为什么手机做服务器需要旁路供电">1.4 二、细说为什么手机做服务器需要旁路供电？
+<h2 id="细说为什么手机做服务器需要旁路供电">细说为什么手机做服务器需要旁路供电？
 </h2><p>其实我觉得我上面已经说的够多了，但是还是细说一下，因为我发现第一期就有人反复问这个问题。</p>
-<h3 id="141-原因一长期满电对电池不友好">1.4.1 原因一：长期满电对电池不友好
+<h3 id="原因一长期满电对电池不友好">原因一：长期满电对电池不友好
 </h3><p>手机正常使用时，大家可能一天一充，或者两天一充。</p>
 <p>但手机当服务器之后，情况完全不一样。</p>
 <p>它可能是这样的：每天 24 小时插着充电器、每周 7 天不关机、连续运行几个月甚至更久。</p>
@@ -543,7 +543,7 @@
 <li>电池老化加快；</li>
 <li>电池鼓包风险增加。</li>
 </ul>
-<h3 id="142-原因二手机需要长期稳定运行">1.4.2 原因二：手机需要长期稳定运行
+<h3 id="原因二手机需要长期稳定运行">原因二：手机需要长期稳定运行
 </h3><p>如果只是普通手机，电池衰减一点可能也没那么明显。</p>
 <p>但手机当服务器后，稳定性真的超级重要。</p>
 <p>比如你在手机上跑了：</p>
@@ -562,7 +562,7 @@
 比如我之前设置的自动化脚本，原计划是 10s 执行一次，结果变成了 20s 或者 30s 执行一次，每次间隔还不一样。真的无语 😓</p></blockquote>
 <p>其他原因比如减少电池发热从而减少手机发热、减少电池反复充放电延长寿命，我就不多说了。大家肯定都懂。所以就说刚才这两个最重要的。</p>
 <hr>
-<h2 id="15-三本期推荐-2-种方案">1.5 三、本期推荐 2 种方案
+<h2 id="本期推荐-2-种方案">本期推荐 2 种方案
 </h2><ul>
 <li><strong>ACC + AccA</strong></li>
 <li><strong>QSC 定量停充模块</strong></li>
@@ -570,8 +570,8 @@
 <p>我个人更推荐第一种：<strong>ACC + AccA</strong></p>
 <p>原因很简单：一是因为它比较成熟，git 上有 2k star；二是它可以搭配 AccA 软件管理配置，可以不用去改配置文件。</p>
 <hr>
-<h3 id="151-方案一acc--acca推荐">1.5.1 方案一：ACC + AccA（推荐）
-</h3><h4 id="1511-先科普一下-acc">1.5.1.1 先科普一下 ACC
+<h3 id="方案一acc--acca推荐">方案一：ACC + AccA（推荐）
+</h3><h4 id="先科普一下-acc">先科普一下 ACC
 </h4><p>ACC 全写是 Advanced Charging Controller，看名字大家就知道啥意思了。我要补充一点的是，ACC 它不是普通的省电控制器。它是通过 root 权限去操作手机底层的充电控制文件，从而实现一些普通 App 做不到的事情。</p>
 <p>比如：</p>
 <ul>
@@ -585,17 +585,21 @@
 <li>测试当前手机支持哪些充电开关；</li>
 <li>很强的记录日志功能，以后出问题可以把日志给 AI，让 AI 来排查问题。</li>
 </ul>
-<h4 id="1512-acc-安装教程">1.5.1.2 ACC 安装教程
+<h4 id="acc-安装教程">ACC 安装教程
 </h4><p><strong>项目地址：</strong> <a class="link" href="https://github.com/VR-25/acc"  target="_blank" rel="noopener"
     >https://github.com/VR-25/acc</a></p>
 <p><strong>1. 打开 ACC 的 github 项目地址，找到 releases</strong>（<a class="link" href="https://github.com/VR-25/acc/releases"  target="_blank" rel="noopener"
     >点此直达</a>）</p>
-<p><img src="/pics/file-20260621092851473.jpeg"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906966.jpeg"
+	width="690"
+	height="340"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906966_hu_2e3a2d8a35c5f79e.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906966_hu_c6d4f1e9db815920.jpeg 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="202"
+		data-flex-basis="487px"
 	
 ></p>
 <p><strong>2. 版本我建议选择 <a class="link" href="https://github.com/VR-25/acc/releases/tag/v2023.10.16"  target="_blank" rel="noopener"
@@ -608,12 +612,16 @@
 <p><a class="link" href="https://linux.do/uploads/short-url/4BIbddrQm5tiUt8FPkGUqpPJ7lI.zip"  target="_blank" rel="noopener"
     >acc_v2023.10.16_202310160.zip</a> (201.9 KB)</p>
 <p><strong>3. 在 magisk 中安装模块：</strong></p>
-<p><img src="/pics/file-20260621092851484.jpeg"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906968.jpeg"
+	width="174"
+	height="375"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906968_hu_bcef6d82e9d7e503.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906968_hu_66abf72645420f45.jpeg 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="46"
+		data-flex-basis="111px"
 	
 ></p>
 <p><strong>补充一点：</strong> 由于我个人比较青睐面具，所以如果是其他的 root 管理方案，比如 APatch、KernelSU 等等，可以自行去寻求 AI 帮助，看看如何安装，我就不去测试了。安装方式其实很简单，如果你自己都会安装 Magisk、APatch、KernelSU，那管理器对应的模块如何安装肯定不在话下的。</p>
@@ -622,7 +630,7 @@
     <p>重新开机后，你会发现没有任何与 ACC 操作相关的软件，因为改配置需要用到命令行或者用到 MT 管理器或者 RE 管理器，然后去 <code>/data/adb/modules/acc/</code> 中修改配置文件再执行脚本，所以这个地方对于新手来说配置起来是很麻烦的。</p></blockquote>
 <p><strong>好在有大佬根据 ACC 模块，开发出了 AccA，突然感觉真的很幸福 😆 🥰</strong></p>
 <hr>
-<h4 id="1513-什么是-acca-">1.5.1.3 什么是 AccA 👇
+<h4 id="什么是-acca-">什么是 AccA 👇
 </h4><p>AccA 是 ACC 的图形界面 App。</p>
 <p>ACC 本身更偏向命令行和配置文件。想修改配置，通常要通过命令行或者手动编辑配置文件。</p>
 <p>而 AccA 的作用就是：<strong>让你可以通过 App 界面管理 ACC。</strong></p>
@@ -638,58 +646,78 @@
 </ul>
 <p>简单说就是：<strong>ACC 负责真正干活，AccA 负责让你更方便地操作 ACC。</strong></p>
 <hr>
-<h4 id="1514-acca-安装和配置教程">1.5.1.4 AccA 安装和配置教程
+<h4 id="acca-安装和配置教程">AccA 安装和配置教程
 </h4><p><strong>项目地址：</strong> <a class="link" href="https://github.com/MatteCarra/AccA"  target="_blank" rel="noopener"
     >https://github.com/MatteCarra/AccA</a></p>
 <p><strong>F-Droid 页面：</strong> <a class="link" href="https://f-droid.org/packages/mattecarra.accapp/"  target="_blank" rel="noopener"
     >Advanced Charging Controller (ACCA)</a></p>
 <p>安装完成后，建议重启一次手机。因为这类底层模块，重启后状态会更稳定。</p>
 <p><strong>1.</strong> 重启手机之后，打开软件，如果是未启动，就点击启动。</p>
-<p><img src="/pics/file-20260621092851485.jpeg"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906970.jpeg"
+	width="180"
+	height="375"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906970_hu_13595482a5bf6290.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906970_hu_1eded2292b2a5cfd.jpeg 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="48"
+		data-flex-basis="115px"
 	
 ></p>
 <p><strong>2.</strong> 如果已经是启动状态，那就点击配置列表。</p>
 <p>由于我之前配置过，所以我的配置列表只有一个配置，其余的配置被我删除了。你们第一次打开的话，会有很多个配置。</p>
-<p><img src="/pics/file-20260621092851486.jpeg"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906974.jpeg"
+	width="180"
+	height="375"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906974_hu_4c7e22928f12e255.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906974_hu_fd62a2f934e3d3d8.jpeg 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="48"
+		data-flex-basis="115px"
 	
 ></p>
 <p><strong>说一下配置的基础操作：</strong></p>
 <p><strong>添加：</strong> 在配置列表页面右下角有一个蓝色按钮，点击就可以添加配置。</p>
-<p><img src="/pics/file-20260621092851487.png"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906978.png"
+	width="144"
+	height="250"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906978_hu_6144cab9e0ff7a2a.png 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906978_hu_7a2c0927850c0045.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="57"
+		data-flex-basis="138px"
 	
 ></p>
 <p><strong>删除：</strong> 点击 &quot; 配置卡片 &quot; 的右上角菜单，点击删除即可。</p>
-<p><img src="/pics/file-20260621092851489.png"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906983.png"
+	width="121"
+	height="250"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906983_hu_330961c127548c7f.png 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906983_hu_71d5b886b76aefff.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="48"
+		data-flex-basis="116px"
 	
 ></p>
 <p><strong>重命名：</strong> 参考上图，点击 &quot; 配置卡片 &quot; 的右上角菜单，点击重命名即可。</p>
 <p><strong>配置详情页：</strong></p>
-<p><img src="/pics/file-20260621092851490.png"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906986.png"
+	width="66"
+	height="375"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906986_hu_7d5af27fda4fbe65.png 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906986_hu_273c93d6deb8c934.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="17"
+		data-flex-basis="42px"
 	
 ></p>
 <p>在这个配置详情页中，可以配置的充电相关的设置非常多，但是我们只关心两个问题就可以了：一个是电池停充的<strong>电量区间</strong>，一个是电池停充的<strong>温度区间</strong>。</p>
@@ -710,12 +738,16 @@
 在这里给 ACC 点一波赞 👍</p></blockquote>
 <p><strong>配置应用：</strong></p>
 <p>保存好配置之后，点击哪个配置卡片，就表示哪个配置生效。生效的配置前面会有蓝色的边框。比如下面这就是 Default 配置在生效。</p>
-<p><img src="/pics/file-20260621092851519.jpeg"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906989.jpeg"
+	width="180"
+	height="375"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906989_hu_8e981cdb7e2d6052.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906989_hu_793f2fa6d5605ba.jpeg 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="48"
+		data-flex-basis="115px"
 	
 ></p>
 <blockquote class="alert alert-tip">
@@ -725,12 +757,16 @@
 <blockquote class="alert alert-question">
     <p>充电停止会有两种情况，拿 85% 停止充电举例：
 如果电量到了 85%，你的电池图标显示正在充电，但是软件中显示没有充电，这个时候，就是最接近旁路供电的，看下图 👇</p></blockquote>
-<p><img src="/pics/file-20260621092851520.jpeg"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906993.jpeg"
+	width="214"
+	height="375"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906993_hu_5b56b58358d419b9.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906993_hu_8e0e7973797eea0a.jpeg 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="57"
+		data-flex-basis="136px"
 	
 ></p>
 <p>如果电量到了 85%，你的电池图标没有显示正在充电，软件中也没有显示正在充电，这个时候，说明 AccA 并不支持做到旁路供电。</p>
@@ -742,14 +778,14 @@
 <blockquote class="alert alert-question">
     <p>在 magisk 中正常删除，然后重启手机就行了。</p></blockquote>
 <hr>
-<h3 id="152-方案二qsc-定量停充">1.5.2 方案二：QSC 定量停充
-</h3><h4 id="1521-先科普一下-qsc">1.5.2.1 先科普一下 QSC
+<h3 id="方案二qsc-定量停充">方案二：QSC 定量停充
+</h3><h4 id="先科普一下-qsc">先科普一下 QSC
 </h4><p>QSC 全写是 Quantitative Stop Charging_switch，是酷安大佬 <a class="link" href="https://www.coolapk.com/feed/39670721?s=OTAyOTJhZTUyYzkzYjZnNmEwNThiZjJ6a1540"  target="_blank" rel="noopener"
     >top大佬</a> 开发的一个模块，<a class="link" href="https://github.com/410154425/QuantitativeStopCharging_magisk"  target="_blank" rel="noopener"
     >github</a> 很久没更新了，推荐大家看酷安板块，但是在酷安用的人很多，甚至还形成了一个专属话题【QSC 定量停充】。</p>
 <p>目前模块也很久没更新了，最后一个版本是 2023 年 12 月 4 日更新的，估计后续也不维护了。</p>
 <p>如果你使用 ACC 没有任何问题，不要折腾这个方案，除非你使用 ACC 出现了问题，你可以试试 QSC。</p>
-<h4 id="1522-qsc-安装">1.5.2.2 QSC 安装
+<h4 id="qsc-安装">QSC 安装
 </h4><p><strong>原下载地址：</strong></p>
 <p>蓝奏云：<a class="link" href="https://topdalao.lanzoui.com/b02dplxrc"  target="_blank" rel="noopener"
     >https://topdalao.lanzoui.com/b02dplxrc</a>
@@ -761,63 +797,87 @@
     >QSC定量停充_独立开关版_20231204.zip</a> (104.7 KB)</p>
 <p><strong>安装：</strong></p>
 <p>安装方式和 ACC 一样，直接 magisk 刷入后，重启即可。</p>
-<h4 id="1523-配置">1.5.2.3 配置
+<h4 id="配置">配置
 </h4><p><strong>1.</strong> 安装 MT 管理器或者 RE 管理器，然后打开路径 <code>/data/adb/modules/QuantitativeStopCharging_switch</code>。</p>
 <p><strong>2.</strong> 找到 config.conf 文件，根据文件内的提醒，配置电量区间和温度区间。</p>
-<p><img src="/pics/file-20260621092851521.jpeg"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906998.jpeg"
+	width="182"
+	height="375"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906998_hu_3b8d61c992164086.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085906998_hu_71c348e987e4e102.jpeg 1024w"
 	loading="lazy"
 	
 	
+		class="gallery-image" 
+		data-flex-grow="48"
+		data-flex-basis="116px"
+	
 ></p>
-<p><img src="/pics/file-20260621092851523.jpeg"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907000.jpeg"
+	width="182"
+	height="375"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907000_hu_db32dcacbb300f84.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907000_hu_6476bc69485d8bf5.jpeg 1024w"
 	loading="lazy"
 	
 	
+		class="gallery-image" 
+		data-flex-grow="48"
+		data-flex-basis="116px"
+	
 ></p>
-<h4 id="1524-启动-qsc">1.5.2.4 启动 QSC
+<h4 id="启动-qsc">启动 QSC
 </h4><p>由于现在 MT 管理器没有权限直接执行 sh 脚本了，给大家提供一个最适合的启动方式，这个方式还可以把开关添加到状态栏的下拉控制中心中（大部分手机都支持）。</p>
 <p><strong>1.</strong> 安装 <a class="link" href="https://github.com/zhaobozhen/Anywhere-"  target="_blank" rel="noopener"
     >Anywhere-</a> 软件，这里不过多介绍这个软件了，我个人认为是我用过最好用的快捷方式管理软件。</p>
 <p><strong>2. 打开 Anywhere-，点击右上角的设置图标，把工作模式改成 root 模式。</strong></p>
-<p><img src="/pics/file-20260621092851533.jpeg"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907003.jpeg"
+	width="179"
+	height="375"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907003_hu_969a2e9da553e899.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907003_hu_f49d15b38c49bf7c.jpeg 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="47"
+		data-flex-basis="114px"
 	
 ></p>
 <p><strong>3. 返回 Anywhere- 首页，点击首页右下角的 ➕ 号，然后点击添加卡片：</strong></p>
-<p><img src="/pics/file-20260621092851535.jpeg"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907005.jpeg"
+	width="182"
+	height="375"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907005_hu_ba1767a2b6c27a01.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907005_hu_52ccb5302d06d54f.jpeg 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="48"
+		data-flex-basis="116px"
 	
 ></p>
 <p><strong>4. 在卡片中选择 Shell 开关：</strong></p>
-<p><img src="/pics/file-20260621092851537.jpeg"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907006.jpeg"
+	width="174"
+	height="375"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907006_hu_4223a5f3288eb8f9.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907006_hu_e5ace8048ce999c8.jpeg 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="46"
+		data-flex-basis="111px"
 	
 ></p>
 <p><strong>5. 按照下面的内容填写后保存，名称那里可以自定义：</strong></p>
-<p><img src="/pics/file-20260621092851538.jpeg"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907008.jpeg"
+	width="190"
+	height="375"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907008_hu_cb9b013f4c0d380d.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907008_hu_a3395c88002a3b8.jpeg 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="50"
+		data-flex-basis="121px"
 	
 ></p>
 <blockquote class="alert alert-note">
@@ -825,36 +885,48 @@
 <blockquote class="alert alert-note">
     <p><code>sh /data/adb/modules/QuantitativeStopCharging_switch/关闭定量停充.sh</code></p></blockquote>
 <p><strong>6. 点击卡片，会在开与关两个状态之间切换：</strong></p>
-<p><img src="/pics/file-20260621092851540.png"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907010.png"
+	width="180"
+	height="375"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907010_hu_14e92a88f9bc1eaa.png 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907010_hu_fed1ed908d42f07e.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="48"
+		data-flex-basis="115px"
 	
 ></p>
-<p><img src="/pics/file-20260621092851541.png"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907011.png"
+	width="182"
+	height="374"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907011_hu_e7f2b89477276489.png 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907011_hu_bcac71284c915683.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="48"
+		data-flex-basis="116px"
 	
 ></p>
 <blockquote class="alert alert-question">
     <p>判断逻辑参考 ACC 部分，逻辑都是通用的。另外，QSC 还可以在 magisk 中看到充电状态展示。但是我没使用 QSC，所以就简单截图吧。</p></blockquote>
-<p><img src="/pics/file-20260621092851548.jpeg"
-	
-	
-	
+<p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907013.jpeg"
+	width="185"
+	height="375"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907013_hu_76e76000b89920b.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907013_hu_7259f3cb40effe5f.jpeg 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="49"
+		data-flex-basis="118px"
 	
 ></p>
 <blockquote class="alert alert-question">
     <p>直接在 magisk 中删除后，重启即可。</p></blockquote>
 <hr>
-<h2 id="16-常见问题">1.6 常见问题
+<h2 id="常见问题">常见问题
 </h2><blockquote class="alert alert-question">
     <p>不需要，只要你配置好了，启动脚本以后，重新开机脚本都是正常运行的，自己试一次就知道了。</p></blockquote>
 <blockquote class="alert alert-question">
@@ -866,12 +938,16 @@
 <blockquote class="alert alert-question">
     <p>绝对不行。AccA 可以不装，只是配置起来麻烦；ACC 是核心模块，你只安装 AccA，根本不可能工作的。</p></blockquote>
 <blockquote class="alert alert-question">
-    <p><img src="/pics/file-20260621092851550.jpeg"
-	
-	
-	
+    <p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907014.jpeg"
+	width="119"
+	height="250"
+	srcset="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907014_hu_61756ed8618600b1.jpeg 480w, /p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%BA%8C-%E6%9C%9F/pics/file-20260625085907014_hu_a727e0ed3450d2f.jpeg 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="47"
+		data-flex-basis="114px"
 	
 >
 这个表示配置正在读取或者加载中，这个时候尽量别动，等加载好就行了。</p></blockquote>
@@ -888,7 +964,7 @@
         
             <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
         
-            <a href="/tags/linuxdo/">LinuxDo</a>
+            <a href="/tags/linuxdo/">Linuxdo</a>
         
             <a href="/tags/%E6%90%AC%E8%BF%90/">搬运</a>
         
@@ -917,7 +993,7 @@
 
 
         <span>
-            最后更新于 2026-06-25 09:32
+            最后更新于 2026-06-25 09:53
         </span>
     </section></footer>
 

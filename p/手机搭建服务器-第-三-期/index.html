@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="已按您的要求为各标题添加连续编号，未生成总目录。以下是重新编号后的完整帖子内容（内部交叉引用已同步调整）：\n原始链接: https://linux.do/t/topic/2198756（假设） 主题 ID: 2198756（假设） 楼主: @Semmering 前两期回顾：\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" 原始链接: https://linux.do/t/topic/2198756（假设） 主题 ID: 2198756（假设） 楼主: @Semmering 前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期 【超详细】手机搭建服务器 · 第 二 期 前言 第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
 <title>【手机搭建服务器】· 第 三 期</title>
 
 <link rel='canonical' href='https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/'>
 
 <link rel="stylesheet" href="/scss/style.min.6998e4e648ca13c26692fd732a596048e487a90378e5ec1f10b8a5899f478b60.css"><meta property='og:title' content="【手机搭建服务器】· 第 三 期">
-<meta property='og:description' content="已按您的要求为各标题添加连续编号，未生成总目录。以下是重新编号后的完整帖子内容（内部交叉引用已同步调整）：\n原始链接: https://linux.do/t/topic/2198756（假设） 主题 ID: 2198756（假设） 楼主: @Semmering 前两期回顾：\n">
+<meta property='og:description' content=" 原始链接: https://linux.do/t/topic/2198756（假设） 主题 ID: 2198756（假设） 楼主: @Semmering 前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期 【超详细】手机搭建服务器 · 第 二 期 前言 第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
 <meta property='og:url' content='https://jenboy.github.io/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/'>
 <meta property='og:site_name' content='Xao的碎碎念'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='LinuxDo' /><meta property='article:tag' content='搬运' /><meta property='article:published_time' content='2026-06-25T01:33:06&#43;00:00'/><meta property='article:modified_time' content='2026-06-25T09:32:41&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='教程' /><meta property='article:tag' content='LinuxDo' /><meta property='article:tag' content='搬运' /><meta property='article:published_time' content='2026-06-25T01:53:48&#43;00:00'/><meta property='article:modified_time' content='2026-06-25T09:53:31&#43;08:00'/>
 <meta name="twitter:title" content="【手机搭建服务器】· 第 三 期">
-<meta name="twitter:description" content="已按您的要求为各标题添加连续编号，未生成总目录。以下是重新编号后的完整帖子内容（内部交叉引用已同步调整）：\n原始链接: https://linux.do/t/topic/2198756（假设） 主题 ID: 2198756（假设） 楼主: @Semmering 前两期回顾：\n">
+<meta name="twitter:description" content=" 原始链接: https://linux.do/t/topic/2198756（假设） 主题 ID: 2198756（假设） 楼主: @Semmering 前两期回顾：\n【超详细】手机搭建服务器 · 第 一 期 【超详细】手机搭建服务器 · 第 二 期 前言 第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -302,18 +302,18 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#21-新建开机自启脚本">2.1 新建开机自启脚本</a>
+    <li><a href="#新建开机自启脚本">新建开机自启脚本</a>
       <ol>
-        <li><a href="#211-打开-mt-管理器进入-dataadbserviced-文件夹新建-99-phone-serversh-文件">2.1.1 打开 MT 管理器，进入 <code>/data/adb/service.d/</code> 文件夹，新建 <code>99-phone-server.sh</code> 文件</a></li>
-        <li><a href="#212-打开文件在文件中输入以下代码并保存">2.1.2 打开文件，在文件中输入以下代码并保存</a></li>
-        <li><a href="#213-给脚本设置权限">2.1.3 给脚本设置权限</a></li>
+        <li><a href="#打开-mt-管理器进入-dataadbserviced-文件夹新建-99-phone-serversh-文件">打开 MT 管理器，进入 <code>/data/adb/service.d/</code> 文件夹，新建 <code>99-phone-server.sh</code> 文件</a></li>
+        <li><a href="#打开文件在文件中输入以下代码并保存">打开文件，在文件中输入以下代码并保存</a></li>
+        <li><a href="#给脚本设置权限">给脚本设置权限</a></li>
       </ol>
     </li>
-    <li><a href="#22-新建-wi-fi-核心脚本">2.2 新建 Wi-Fi 核心脚本</a>
+    <li><a href="#新建-wi-fi-核心脚本">新建 Wi-Fi 核心脚本</a>
       <ol>
-        <li><a href="#221-打开-mt-管理器进入-datalocal-文件夹新建-phone-server-文件夹然后进入-phone-server-文件夹再新建-wifi-keeper-文件夹">2.2.1 打开 MT 管理器，进入 <code>/data/local/</code> 文件夹，新建 <code>phone-server</code> 文件夹，然后进入 <code>phone-server</code> 文件夹再新建 <code>wifi-keeper</code> 文件夹</a></li>
-        <li><a href="#222-在-datalocalphone-serverwifi-keeper-文件夹下面新建-wifi-keepersh-文件并且输入下面的代码进行保存">2.2.2 在 <code>/data/local/phone-server/wifi-keeper/</code> 文件夹下面新建 <code>wifi-keeper.sh</code> 文件，并且输入下面的代码进行保存</a></li>
-        <li><a href="#223-按照第-3-节的过程给脚本设置权限">2.2.3 按照第 3 节的过程给脚本设置权限</a></li>
+        <li><a href="#打开-mt-管理器进入-datalocal-文件夹新建-phone-server-文件夹然后进入-phone-server-文件夹再新建-wifi-keeper-文件夹">打开 MT 管理器，进入 <code>/data/local/</code> 文件夹，新建 <code>phone-server</code> 文件夹，然后进入 <code>phone-server</code> 文件夹再新建 <code>wifi-keeper</code> 文件夹</a></li>
+        <li><a href="#在-datalocalphone-serverwifi-keeper-文件夹下面新建-wifi-keepersh-文件并且输入下面的代码进行保存">在 <code>/data/local/phone-server/wifi-keeper/</code> 文件夹下面新建 <code>wifi-keeper.sh</code> 文件，并且输入下面的代码进行保存</a></li>
+        <li><a href="#按照第-3-节的过程给脚本设置权限">按照第 3 节的过程给脚本设置权限</a></li>
       </ol>
     </li>
   </ol>
@@ -365,7 +365,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published" datetime='2026-06-25T01:33:06Z'>2026-06-25</time>
+                <time class="article-time--published" datetime='2026-06-25T01:53:48Z'>2026-06-25</time>
             </div>
         
 
@@ -380,7 +380,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 20 分钟
+                    阅读时长: 19 分钟
                 </time>
             </div>
         
@@ -395,9 +395,7 @@
     <section class="article-content">
     
     
-    <p>已按您的要求为各标题添加连续编号，未生成总目录。以下是重新编号后的完整帖子内容（内部交叉引用已同步调整）：</p>
-<hr>
-<blockquote class="alert alert-info">
+    <blockquote class="alert alert-info">
     <ul>
 <li><strong>原始链接</strong>: <a class="link" href="https://linux.do/t/topic/2198756"  target="_blank" rel="noopener"
     >https://linux.do/t/topic/2198756</a>（假设）</li>
@@ -412,7 +410,7 @@
     >【超详细】手机搭建服务器 · 第 二 期</a></li>
 </ul>
 <hr>
-<h1 id="1-前言">1 前言
+<h1 id="前言">前言
 </h1><p>第一期讲了必备条件；第二期讲了如何实现旁路供电，解决供电问题；</p>
 <p>本期要实现的是：<strong>如何让手机的 Wi-Fi 永不断连</strong>：</p>
 <ul>
@@ -430,10 +428,10 @@
 · 机型不同，打开开发者选项的方式也不同，这个自己百度。
 · 不是所有手机都有【WLAN 助理】这个选项，我是 MIUI 11，所有有，其他手机可能是其他名字，或者没有这个功能，自己看自己系统的功能开关。主要是把能影响 Wi-Fi 稳定的开关关闭，不管是信号调节还是省电方面的设置。</p></blockquote>
 <hr>
-<h1 id="2-教程开始">2 教程开始
-</h1><h2 id="21-新建开机自启脚本">2.1 新建开机自启脚本
-</h2><h3 id="211-打开-mt-管理器进入-dataadbserviced-文件夹新建-99-phone-serversh-文件">2.1.1 打开 MT 管理器，进入 <code>/data/adb/service.d/</code> 文件夹，新建 <code>99-phone-server.sh</code> 文件
-</h3><h3 id="212-打开文件在文件中输入以下代码并保存">2.1.2 打开文件，在文件中输入以下代码并保存
+<h1 id="教程开始">教程开始
+</h1><h2 id="新建开机自启脚本">新建开机自启脚本
+</h2><h3 id="打开-mt-管理器进入-dataadbserviced-文件夹新建-99-phone-serversh-文件">打开 MT 管理器，进入 <code>/data/adb/service.d/</code> 文件夹，新建 <code>99-phone-server.sh</code> 文件
+</h3><h3 id="打开文件在文件中输入以下代码并保存">打开文件，在文件中输入以下代码并保存
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -486,7 +484,7 @@
 </span></span><span class="line"><span class="cl"><span class="k">fi</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="213-给脚本设置权限">2.1.3 给脚本设置权限
+</div><h3 id="给脚本设置权限">给脚本设置权限
 </h3><p><img src="/p/%E6%89%8B%E6%9C%BA%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%AC%AC-%E4%B8%89-%E6%9C%9F/pics/file-20260625090317957.png"
 	width="184"
 	height="250"
@@ -524,9 +522,9 @@
 	
 ></p>
 <hr>
-<h2 id="22-新建-wi-fi-核心脚本">2.2 新建 Wi-Fi 核心脚本
-</h2><h3 id="221-打开-mt-管理器进入-datalocal-文件夹新建-phone-server-文件夹然后进入-phone-server-文件夹再新建-wifi-keeper-文件夹">2.2.1 打开 MT 管理器，进入 <code>/data/local/</code> 文件夹，新建 <code>phone-server</code> 文件夹，然后进入 <code>phone-server</code> 文件夹再新建 <code>wifi-keeper</code> 文件夹
-</h3><h3 id="222-在-datalocalphone-serverwifi-keeper-文件夹下面新建-wifi-keepersh-文件并且输入下面的代码进行保存">2.2.2 在 <code>/data/local/phone-server/wifi-keeper/</code> 文件夹下面新建 <code>wifi-keeper.sh</code> 文件，并且输入下面的代码进行保存
+<h2 id="新建-wi-fi-核心脚本">新建 Wi-Fi 核心脚本
+</h2><h3 id="打开-mt-管理器进入-datalocal-文件夹新建-phone-server-文件夹然后进入-phone-server-文件夹再新建-wifi-keeper-文件夹">打开 MT 管理器，进入 <code>/data/local/</code> 文件夹，新建 <code>phone-server</code> 文件夹，然后进入 <code>phone-server</code> 文件夹再新建 <code>wifi-keeper</code> 文件夹
+</h3><h3 id="在-datalocalphone-serverwifi-keeper-文件夹下面新建-wifi-keepersh-文件并且输入下面的代码进行保存">在 <code>/data/local/phone-server/wifi-keeper/</code> 文件夹下面新建 <code>wifi-keeper.sh</code> 文件，并且输入下面的代码进行保存
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">  1
@@ -1945,9 +1943,9 @@
 </span></span><span class="line"><span class="cl">main_loop
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="223-按照第-3-节的过程给脚本设置权限">2.2.3 按照第 3 节的过程给脚本设置权限
+</div><h3 id="按照第-3-节的过程给脚本设置权限">按照第 3 节的过程给脚本设置权限
 </h3><hr>
-<h1 id="3-如何验证脚本是否成功">3 如何验证脚本是否成功
+<h1 id="如何验证脚本是否成功">如何验证脚本是否成功
 </h1><ol>
 <li>
 <p>手机先正常连接上你选择 Wi-Fi，建议选择一个即可，避免手机因为某些原因在多个 Wi-Fi 之间来回切换，这个对后面的 IPv6 的解析影响非常大，然后关闭 Wi-Fi 的<strong>自动连接</strong>开关。</p>
@@ -1964,14 +1962,14 @@
 </ol>
 <p>我用的脚本在米 8SE 上多轮测试没问题，如果你们有问题，记得联系我，我到时候排查一下。</p>
 <hr>
-<h1 id="4-如何关闭脚本">4 如何关闭脚本
+<h1 id="如何关闭脚本">如何关闭脚本
 </h1><p><strong>方法一：</strong> 取消 <code>/data/adb/service.d/99-phone-server.sh</code> 脚本的执行权限
 <strong>方法二：</strong> 删除 <code>/data/adb/service.d/99-phone-server.sh</code> 脚本</p>
 <hr>
-<h1 id="5-结束语">5 结束语
+<h1 id="结束语">结束语
 </h1><p>不得不说，AI 是真的好用。不仅可以优化脚本，还能把注释写的清清楚楚。按照它的逻辑和日志，就算出问题了也能很好的定位和解决，这一次确实是省了不少时间。可惜两天撸的 business 2 个月翻车了。</p>
 <hr>
-<h1 id="6-附录wi-fi-守护脚本设计-prompt可直接食用">6 附录：Wi-Fi 守护脚本设计 Prompt（可直接食用）
+<h1 id="附录wi-fi-守护脚本设计-prompt可直接食用">附录：Wi-Fi 守护脚本设计 Prompt（可直接食用）
 </h1><p>以下是我用来生成上述脚本的完整 Prompt，如果你也想根据自己的需求定制，可以直接复制使用。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2597,7 +2595,7 @@
         
             <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
         
-            <a href="/tags/linuxdo/">LinuxDo</a>
+            <a href="/tags/linuxdo/">Linuxdo</a>
         
             <a href="/tags/%E6%90%AC%E8%BF%90/">搬运</a>
         
@@ -2626,7 +2624,7 @@
 
 
         <span>
-            最后更新于 2026-06-25 09:32
+            最后更新于 2026-06-25 09:53
         </span>
     </section></footer>
 
