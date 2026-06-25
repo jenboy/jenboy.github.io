@@ -10,7 +10,7 @@
 <meta property='og:description' content="对象的三大特征">
 <meta property='og:url' content='https://jenboy.github.io/p/day-08-%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E5%BE%81/'>
 <meta property='og:site_name' content='Xao的碎碎念'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Java' /><meta property='article:published_time' content='2026-01-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-06-21T09:32:17&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Java' /><meta property='article:published_time' content='2026-01-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-06-25T10:08:51&#43;08:00'/>
 <meta name="twitter:title" content="Day 08 对象的三大特征">
 <meta name="twitter:description" content="对象的三大特征">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -302,104 +302,104 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#11-概述">1.1 概述</a></li>
-    <li><a href="#12-封装流程">1.2 封装流程</a></li>
+    <li><a href="#概述">概述</a></li>
+    <li><a href="#封装流程">封装流程</a></li>
   </ol>
 
   <ol>
-    <li><a href="#21-people-案例">2.1 People 案例</a></li>
-    <li><a href="#22-student-案例">2.2 Student 案例</a></li>
+    <li><a href="#people-案例">People 案例</a></li>
+    <li><a href="#student-案例">Student 案例</a></li>
   </ol>
 
   <ol>
-    <li><a href="#31-概述">3.1 概述</a>
+    <li><a href="#概述-1">概述</a>
       <ol>
-        <li><a href="#311-生活中的继承">3.1.1 生活中的继承</a></li>
-        <li><a href="#312-程序中的继承">3.1.2 程序中的继承</a></li>
+        <li><a href="#生活中的继承">生活中的继承</a></li>
+        <li><a href="#程序中的继承">程序中的继承</a></li>
       </ol>
     </li>
-    <li><a href="#32-继承的意义">3.2 继承的意义</a>
+    <li><a href="#继承的意义">继承的意义</a>
       <ol>
-        <li><a href="#321-继承案例-01">3.2.1 继承案例 01</a>
+        <li><a href="#继承案例-01">继承案例 01</a>
           <ol>
-            <li><a href="#3211-长颈鹿类">3.2.1.1 长颈鹿类</a></li>
-            <li><a href="#3212-狮子类">3.2.1.2 狮子类</a></li>
-            <li><a href="#3213-鱼类">3.2.1.3 鱼类</a></li>
+            <li><a href="#长颈鹿类">长颈鹿类</a></li>
+            <li><a href="#狮子类">狮子类</a></li>
+            <li><a href="#鱼类">鱼类</a></li>
           </ol>
         </li>
-        <li><a href="#322-发现的问题">3.2.2 发现的问题</a>
+        <li><a href="#发现的问题">发现的问题</a>
           <ol>
-            <li><a href="#3221-动物类">3.2.2.1 动物类</a></li>
-            <li><a href="#3222-鬣狗类">3.2.2.2 鬣狗类</a></li>
-          </ol>
-        </li>
-      </ol>
-    </li>
-    <li><a href="#33-java-继承的特点">3.3 Java 继承的特点</a>
-      <ol>
-        <li><a href="#331-类-auto">3.3.1 类 Auto</a></li>
-        <li><a href="#332-子类-car">3.3.2 子类 Car</a></li>
-        <li><a href="#333-孙子类">3.3.3 孙子类</a></li>
-      </ol>
-    </li>
-    <li><a href="#34-不可继承">3.4 不可继承</a>
-      <ol>
-        <li><a href="#341-验证私有和构造不可继承">3.4.1 验证私有和构造不可继承</a></li>
-        <li><a href="#342-父类-emperor">3.4.2 父类 Emperor</a>
-          <ol>
-            <li><a href="#3421-子类-crownprince">3.4.2.1 子类 CrownPrince</a></li>
-            <li><a href="#3422-测试">3.4.2.2 测试</a></li>
+            <li><a href="#动物类">动物类</a></li>
+            <li><a href="#鬣狗类">鬣狗类</a></li>
           </ol>
         </li>
       </ol>
     </li>
-  </ol>
-
-  <ol>
-    <li><a href="#41-概述">4.1 概述</a></li>
-    <li><a href="#42-重写案例">4.2 重写案例</a>
+    <li><a href="#java-继承的特点">Java 继承的特点</a>
       <ol>
-        <li><a href="#421-worker">4.2.1 Worker</a></li>
-        <li><a href="#422-programmer">4.2.2 Programmer</a></li>
-        <li><a href="#423-cook">4.2.3 Cook</a></li>
-        <li><a href="#424-测试">4.2.4 测试</a></li>
+        <li><a href="#类-auto">类 Auto</a></li>
+        <li><a href="#子类-car">子类 Car</a></li>
+        <li><a href="#孙子类">孙子类</a></li>
+      </ol>
+    </li>
+    <li><a href="#不可继承">不可继承</a>
+      <ol>
+        <li><a href="#验证私有和构造不可继承">验证私有和构造不可继承</a></li>
+        <li><a href="#父类-emperor">父类 Emperor</a>
+          <ol>
+            <li><a href="#子类-crownprince">子类 CrownPrince</a></li>
+            <li><a href="#测试">测试</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
   </ol>
 
   <ol>
-    <li><a href="#51-概述">5.1 概述</a>
+    <li><a href="#概述-2">概述</a></li>
+    <li><a href="#重写案例">重写案例</a>
       <ol>
-        <li><a href="#511-生活中的多态">5.1.1 生活中的多态</a></li>
-        <li><a href="#512-程序中的多态">5.1.2 程序中的多态</a></li>
-        <li><a href="#513-多态案例">5.1.3 多态案例</a>
+        <li><a href="#worker">Worker</a></li>
+        <li><a href="#programmer">Programmer</a></li>
+        <li><a href="#cook">Cook</a></li>
+        <li><a href="#测试-1">测试</a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#概述-3">概述</a>
+      <ol>
+        <li><a href="#生活中的多态">生活中的多态</a></li>
+        <li><a href="#程序中的多态">程序中的多态</a></li>
+        <li><a href="#多态案例">多态案例</a>
           <ol>
-            <li><a href="#5131-animal-类">5.1.3.1 Animal 类</a></li>
-            <li><a href="#5132-dog-类">5.1.3.2 Dog 类</a></li>
-            <li><a href="#5133-cat-类">5.1.3.3 Cat 类</a></li>
-            <li><a href="#5134-testanimal">5.1.3.4 TestAnimal</a></li>
+            <li><a href="#animal-类">Animal 类</a></li>
+            <li><a href="#dog-类">Dog 类</a></li>
+            <li><a href="#cat-类">Cat 类</a></li>
+            <li><a href="#testanimal">TestAnimal</a></li>
           </ol>
         </li>
       </ol>
     </li>
-    <li><a href="#52-多态的使用场景">5.2 多态的使用场景</a>
+    <li><a href="#多态的使用场景">多态的使用场景</a>
       <ol>
-        <li><a href="#521-父类声明为方法的形参">5.2.1 父类声明为方法的形参</a></li>
-        <li><a href="#522-父类-people">5.2.2 父类 People</a>
+        <li><a href="#父类声明为方法的形参">父类声明为方法的形参</a></li>
+        <li><a href="#父类-people">父类 People</a>
           <ol>
-            <li><a href="#5221-子类-man">5.2.2.1 子类 Man</a></li>
-            <li><a href="#5222-子类-woman">5.2.2.2 子类 Woman</a></li>
-            <li><a href="#5223-测试类-testpeople">5.2.2.3 测试类 TestPeople</a></li>
-            <li><a href="#5224-testpeople02">5.2.2.4 TestPeople02</a></li>
+            <li><a href="#子类-man">子类 Man</a></li>
+            <li><a href="#子类-woman">子类 Woman</a></li>
+            <li><a href="#测试类-testpeople">测试类 TestPeople</a></li>
+            <li><a href="#testpeople02">TestPeople02</a></li>
           </ol>
         </li>
-        <li><a href="#523-父类声明为方法的返回值类型">5.2.3 父类声明为方法的返回值类型</a></li>
-        <li><a href="#524-food">5.2.4 Food</a>
+        <li><a href="#父类声明为方法的返回值类型">父类声明为方法的返回值类型</a></li>
+        <li><a href="#food">Food</a>
           <ol>
-            <li><a href="#5241-lamiannoodles">5.2.4.1 LamianNoodles</a></li>
-            <li><a href="#5242-dongpopork">5.2.4.2 DongpoPork</a></li>
-            <li><a href="#5243-foodfactory">5.2.4.3 FoodFactory</a></li>
-            <li><a href="#5244-testfood">5.2.4.4 TestFood</a></li>
+            <li><a href="#lamiannoodles">LamianNoodles</a></li>
+            <li><a href="#dongpopork">DongpoPork</a></li>
+            <li><a href="#foodfactory">FoodFactory</a></li>
+            <li><a href="#testfood">TestFood</a></li>
           </ol>
         </li>
       </ol>
@@ -487,8 +487,8 @@
     <section class="article-content">
     
     
-    <h1 id="1-封装">1 封装
-</h1><h2 id="11-概述">1.1 概述
+    <h1 id="封装">封装
+</h1><h2 id="概述">概述
 </h2><ul>
 <li>为什么需要封装？
 <ul>
@@ -503,7 +503,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="12-封装流程">1.2 封装流程
+<h2 id="封装流程">封装流程
 </h2><ul>
 <li>1、私有化属性</li>
 <li>2、提供公开的方法
@@ -514,8 +514,8 @@
 </li>
 <li>3、在方法中添加访问属性的具体规则</li>
 </ul>
-<h1 id="2-案例">2 案例
-</h1><h2 id="21-people-案例">2.1 People 案例
+<h1 id="案例">案例
+</h1><h2 id="people-案例">People 案例
 </h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -622,7 +622,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="22-student-案例">2.2 Student 案例
+</div><h2 id="student-案例">Student 案例
 </h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -807,13 +807,13 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="3-继承">3 继承
-</h1><h2 id="31-概述">3.1 概述
-</h2><h3 id="311-生活中的继承">3.1.1 生活中的继承
+</div><h1 id="继承">继承
+</h1><h2 id="概述-1">概述
+</h2><h3 id="生活中的继承">生活中的继承
 </h3><ul>
 <li>从亲属那里获得财、物</li>
 </ul>
-<h3 id="312-程序中的继承">3.1.2 程序中的继承
+<h3 id="程序中的继承">程序中的继承
 </h3><ul>
 <li>
 <p>class A extends B</p>
@@ -826,13 +826,13 @@
 <p>子类从父类获取属性和方法</p>
 </li>
 </ul>
-<h2 id="32-继承的意义">3.2 继承的意义
+<h2 id="继承的意义">继承的意义
 </h2><ul>
 <li>子类可以使用父类中的属性和方法，提高了代码的复用性</li>
 <li>子类中可以定义独有的属性和方法，提高了代码的扩展性</li>
 </ul>
-<h3 id="321-继承案例-01">3.2.1 继承案例 01
-</h3><h4 id="3211-长颈鹿类">3.2.1.1 长颈鹿类
+<h3 id="继承案例-01">继承案例 01
+</h3><h4 id="长颈鹿类">长颈鹿类
 </h4><ul>
 <li>正常编写的类</li>
 </ul>
@@ -886,7 +886,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="3212-狮子类">3.2.1.2 狮子类
+</div><h4 id="狮子类">狮子类
 </h4><ul>
 <li>正常编写的类</li>
 </ul>
@@ -938,7 +938,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="3213-鱼类">3.2.1.3 鱼类
+</div><h4 id="鱼类">鱼类
 </h4><ul>
 <li>正常编写的类</li>
 </ul>
@@ -982,7 +982,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="322-发现的问题">3.2.2 发现的问题
+</div><h3 id="发现的问题">发现的问题
 </h3><ul>
 <li>三个类中出现了大量重复的属性和方法</li>
 <li>为了简化代码的编写，抽取出共性的内容，形成一个父类 Animal</li>
@@ -995,7 +995,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="3221-动物类">3.2.2.1 动物类
+<h4 id="动物类">动物类
 </h4><ul>
 <li>包含了动物的所有共性的属性和方法</li>
 <li>概括性较强</li>
@@ -1044,7 +1044,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="3222-鬣狗类">3.2.2.2 鬣狗类
+</div><h4 id="鬣狗类">鬣狗类
 </h4><ul>
 <li>继承 Animal
 <ul>
@@ -1085,7 +1085,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="33-java-继承的特点">3.3 Java 继承的特点
+</div><h2 id="java-继承的特点">Java 继承的特点
 </h2><ul>
 <li>
 <p>单继承</p>
@@ -1108,7 +1108,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="331-类-auto">3.3.1 类 Auto
+<h3 id="类-auto">类 Auto
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1147,7 +1147,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="332-子类-car">3.3.2 子类 Car
+</div><h3 id="子类-car">子类 Car
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1160,7 +1160,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="333-孙子类">3.3.3 孙子类
+</div><h3 id="孙子类">孙子类
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1187,14 +1187,14 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="34-不可继承">3.4 不可继承
+</div><h2 id="不可继承">不可继承
 </h2><ul>
 <li>私有的属性和方法</li>
 <li>父类中的构造方法</li>
 <li>使用 default 修饰的内容在其他包</li>
 </ul>
-<h3 id="341-验证私有和构造不可继承">3.4.1 验证私有和构造不可继承
-</h3><h3 id="342-父类-emperor">3.4.2 父类 Emperor
+<h3 id="验证私有和构造不可继承">验证私有和构造不可继承
+</h3><h3 id="父类-emperor">父类 Emperor
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1265,7 +1265,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="3421-子类-crownprince">3.4.2.1 子类 CrownPrince
+</div><h4 id="子类-crownprince">子类 CrownPrince
 </h4><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1284,7 +1284,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="3422-测试">3.4.2.2 测试
+</div><h4 id="测试">测试
 </h4><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1333,8 +1333,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="4-重写">4 重写
-</h1><h2 id="41-概述">4.1 概述
+</div><h1 id="重写">重写
+</h1><h2 id="概述-2">概述
 </h2><ul>
 <li>
 <p>重写是指在子类中出现了和父类中名字相同的方法</p>
@@ -1363,8 +1363,8 @@
 </ul>
 </li>
 </ul>
-<h2 id="42-重写案例">4.2 重写案例
-</h2><h3 id="421-worker">4.2.1 Worker
+<h2 id="重写案例">重写案例
+</h2><h3 id="worker">Worker
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1389,7 +1389,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="422-programmer">4.2.2 Programmer
+</div><h3 id="programmer">Programmer
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1410,7 +1410,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="423-cook">4.2.3 Cook
+</div><h3 id="cook">Cook
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1423,7 +1423,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="424-测试">4.2.4 测试
+</div><h3 id="测试-1">测试
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1448,9 +1448,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="5-多态">5 多态
-</h1><h2 id="51-概述">5.1 概述
-</h2><h3 id="511-生活中的多态">5.1.1 生活中的多态
+</div><h1 id="多态">多态
+</h1><h2 id="概述-3">概述
+</h2><h3 id="生活中的多态">生活中的多态
 </h3><ul>
 <li>事物的在不同场合中的不同状态
 <ul>
@@ -1465,7 +1465,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="512-程序中的多态">5.1.2 程序中的多态
+<h3 id="程序中的多态">程序中的多态
 </h3><ul>
 <li>父类引用指向子类对象
 <ul>
@@ -1474,8 +1474,8 @@
 </ul>
 </li>
 </ul>
-<h3 id="513-多态案例">5.1.3 多态案例
-</h3><h4 id="5131-animal-类">5.1.3.1 Animal 类
+<h3 id="多态案例">多态案例
+</h3><h4 id="animal-类">Animal 类
 </h4><ul>
 <li>动物类的父类</li>
 </ul>
@@ -1501,7 +1501,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="5132-dog-类">5.1.3.2 Dog 类
+</div><h4 id="dog-类">Dog 类
 </h4><ul>
 <li>Animal 的子类
 <ul>
@@ -1544,7 +1544,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="5133-cat-类">5.1.3.3 Cat 类
+</div><h4 id="cat-类">Cat 类
 </h4><ul>
 <li>Animal 的子类</li>
 <li>继承得到了属性和方法</li>
@@ -1565,7 +1565,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="5134-testanimal">5.1.3.4 TestAnimal
+</div><h4 id="testanimal">TestAnimal
 </h4><ul>
 <li>
 <p>测试多态的创建和使用</p>
@@ -1629,9 +1629,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="52-多态的使用场景">5.2 多态的使用场景
-</h2><h3 id="521-父类声明为方法的形参">5.2.1 父类声明为方法的形参
-</h3><h3 id="522-父类-people">5.2.2 父类 People
+</div><h2 id="多态的使用场景">多态的使用场景
+</h2><h3 id="父类声明为方法的形参">父类声明为方法的形参
+</h3><h3 id="父类-people">父类 People
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1648,7 +1648,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="5221-子类-man">5.2.2.1 子类 Man
+</div><h4 id="子类-man">子类 Man
 </h4><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1667,7 +1667,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="5222-子类-woman">5.2.2.2 子类 Woman
+</div><h4 id="子类-woman">子类 Woman
 </h4><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1686,7 +1686,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="5223-测试类-testpeople">5.2.2.3 测试类 TestPeople
+</div><h4 id="测试类-testpeople">测试类 TestPeople
 </h4><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1749,7 +1749,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="5224-testpeople02">5.2.2.4 TestPeople02
+</div><h4 id="testpeople02">TestPeople02
 </h4><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1822,8 +1822,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="523-父类声明为方法的返回值类型">5.2.3 父类声明为方法的返回值类型
-</h3><h3 id="524-food">5.2.4 Food
+</div><h3 id="父类声明为方法的返回值类型">父类声明为方法的返回值类型
+</h3><h3 id="food">Food
 </h3><ul>
 <li>食物的父类</li>
 </ul>
@@ -1853,7 +1853,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="5241-lamiannoodles">5.2.4.1 LamianNoodles
+</div><h4 id="lamiannoodles">LamianNoodles
 </h4><ul>
 <li>事物的子类</li>
 </ul>
@@ -1883,7 +1883,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="5242-dongpopork">5.2.4.2 DongpoPork
+</div><h4 id="dongpopork">DongpoPork
 </h4><ul>
 <li>Food 的子类</li>
 </ul>
@@ -1903,7 +1903,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="5243-foodfactory">5.2.4.3 FoodFactory
+</div><h4 id="foodfactory">FoodFactory
 </h4><ul>
 <li>食物工厂
 <ul>
@@ -1971,7 +1971,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="5244-testfood">5.2.4.4 TestFood
+</div><h4 id="testfood">TestFood
 </h4><ul>
 <li>测试上面的代码</li>
 </ul>
@@ -2038,7 +2038,7 @@
 
 
         <span>
-            最后更新于 2026-06-21 09:32
+            最后更新于 2026-06-25 10:08
         </span>
     </section></footer>
 

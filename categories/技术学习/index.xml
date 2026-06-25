@@ -7,14 +7,14 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Xao</copyright>
-        <lastBuildDate>Sun, 21 Jun 2026 17:23:00 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 25 Jun 2026 10:08:51 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Day 08 对象的三大特征</title>
         <link>https://jenboy.github.io/p/day-08-%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E5%BE%81/</link>
         <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/day-08-%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E5%BE%81/</guid>
-        <description>&lt;h1 id=&#34;1-封装&#34;&gt;1 封装
-&lt;/h1&gt;&lt;h2 id=&#34;11-概述&#34;&gt;1.1 概述
+        <description>&lt;h1 id=&#34;封装&#34;&gt;封装
+&lt;/h1&gt;&lt;h2 id=&#34;概述&#34;&gt;概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;为什么需要封装？
 &lt;ul&gt;
@@ -29,7 +29,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;12-封装流程&#34;&gt;1.2 封装流程
+&lt;h2 id=&#34;封装流程&#34;&gt;封装流程
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;1、私有化属性&lt;/li&gt;
 &lt;li&gt;2、提供公开的方法
@@ -40,8 +40,8 @@
 &lt;/li&gt;
 &lt;li&gt;3、在方法中添加访问属性的具体规则&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;2-案例&#34;&gt;2 案例
-&lt;/h1&gt;&lt;h2 id=&#34;21-people-案例&#34;&gt;2.1 People 案例
+&lt;h1 id=&#34;案例&#34;&gt;案例
+&lt;/h1&gt;&lt;h2 id=&#34;people-案例&#34;&gt;People 案例
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -148,7 +148,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;22-student-案例&#34;&gt;2.2 Student 案例
+&lt;/div&gt;&lt;h2 id=&#34;student-案例&#34;&gt;Student 案例
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -333,13 +333,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;3-继承&#34;&gt;3 继承
-&lt;/h1&gt;&lt;h2 id=&#34;31-概述&#34;&gt;3.1 概述
-&lt;/h2&gt;&lt;h3 id=&#34;311-生活中的继承&#34;&gt;3.1.1 生活中的继承
+&lt;/div&gt;&lt;h1 id=&#34;继承&#34;&gt;继承
+&lt;/h1&gt;&lt;h2 id=&#34;概述-1&#34;&gt;概述
+&lt;/h2&gt;&lt;h3 id=&#34;生活中的继承&#34;&gt;生活中的继承
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;从亲属那里获得财、物&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;312-程序中的继承&#34;&gt;3.1.2 程序中的继承
+&lt;h3 id=&#34;程序中的继承&#34;&gt;程序中的继承
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;class A extends B&lt;/p&gt;
@@ -352,13 +352,13 @@
 &lt;p&gt;子类从父类获取属性和方法&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;32-继承的意义&#34;&gt;3.2 继承的意义
+&lt;h2 id=&#34;继承的意义&#34;&gt;继承的意义
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;子类可以使用父类中的属性和方法，提高了代码的复用性&lt;/li&gt;
 &lt;li&gt;子类中可以定义独有的属性和方法，提高了代码的扩展性&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;321-继承案例-01&#34;&gt;3.2.1 继承案例 01
-&lt;/h3&gt;&lt;h4 id=&#34;3211-长颈鹿类&#34;&gt;3.2.1.1 长颈鹿类
+&lt;h3 id=&#34;继承案例-01&#34;&gt;继承案例 01
+&lt;/h3&gt;&lt;h4 id=&#34;长颈鹿类&#34;&gt;长颈鹿类
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;正常编写的类&lt;/li&gt;
 &lt;/ul&gt;
@@ -412,7 +412,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;3212-狮子类&#34;&gt;3.2.1.2 狮子类
+&lt;/div&gt;&lt;h4 id=&#34;狮子类&#34;&gt;狮子类
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;正常编写的类&lt;/li&gt;
 &lt;/ul&gt;
@@ -464,7 +464,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;3213-鱼类&#34;&gt;3.2.1.3 鱼类
+&lt;/div&gt;&lt;h4 id=&#34;鱼类&#34;&gt;鱼类
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;正常编写的类&lt;/li&gt;
 &lt;/ul&gt;
@@ -508,7 +508,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;322-发现的问题&#34;&gt;3.2.2 发现的问题
+&lt;/div&gt;&lt;h3 id=&#34;发现的问题&#34;&gt;发现的问题
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;三个类中出现了大量重复的属性和方法&lt;/li&gt;
 &lt;li&gt;为了简化代码的编写，抽取出共性的内容，形成一个父类 Animal&lt;/li&gt;
@@ -521,7 +521,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3221-动物类&#34;&gt;3.2.2.1 动物类
+&lt;h4 id=&#34;动物类&#34;&gt;动物类
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;包含了动物的所有共性的属性和方法&lt;/li&gt;
 &lt;li&gt;概括性较强&lt;/li&gt;
@@ -570,7 +570,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;3222-鬣狗类&#34;&gt;3.2.2.2 鬣狗类
+&lt;/div&gt;&lt;h4 id=&#34;鬣狗类&#34;&gt;鬣狗类
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;继承 Animal
 &lt;ul&gt;
@@ -611,7 +611,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;33-java-继承的特点&#34;&gt;3.3 Java 继承的特点
+&lt;/div&gt;&lt;h2 id=&#34;java-继承的特点&#34;&gt;Java 继承的特点
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;单继承&lt;/p&gt;
@@ -634,7 +634,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;331-类-auto&#34;&gt;3.3.1 类 Auto
+&lt;h3 id=&#34;类-auto&#34;&gt;类 Auto
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -673,7 +673,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;332-子类-car&#34;&gt;3.3.2 子类 Car
+&lt;/div&gt;&lt;h3 id=&#34;子类-car&#34;&gt;子类 Car
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -686,7 +686,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;333-孙子类&#34;&gt;3.3.3 孙子类
+&lt;/div&gt;&lt;h3 id=&#34;孙子类&#34;&gt;孙子类
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -713,14 +713,14 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;34-不可继承&#34;&gt;3.4 不可继承
+&lt;/div&gt;&lt;h2 id=&#34;不可继承&#34;&gt;不可继承
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;私有的属性和方法&lt;/li&gt;
 &lt;li&gt;父类中的构造方法&lt;/li&gt;
 &lt;li&gt;使用 default 修饰的内容在其他包&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;341-验证私有和构造不可继承&#34;&gt;3.4.1 验证私有和构造不可继承
-&lt;/h3&gt;&lt;h3 id=&#34;342-父类-emperor&#34;&gt;3.4.2 父类 Emperor
+&lt;h3 id=&#34;验证私有和构造不可继承&#34;&gt;验证私有和构造不可继承
+&lt;/h3&gt;&lt;h3 id=&#34;父类-emperor&#34;&gt;父类 Emperor
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -791,7 +791,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;3421-子类-crownprince&#34;&gt;3.4.2.1 子类 CrownPrince
+&lt;/div&gt;&lt;h4 id=&#34;子类-crownprince&#34;&gt;子类 CrownPrince
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -810,7 +810,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;3422-测试&#34;&gt;3.4.2.2 测试
+&lt;/div&gt;&lt;h4 id=&#34;测试&#34;&gt;测试
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -859,8 +859,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;4-重写&#34;&gt;4 重写
-&lt;/h1&gt;&lt;h2 id=&#34;41-概述&#34;&gt;4.1 概述
+&lt;/div&gt;&lt;h1 id=&#34;重写&#34;&gt;重写
+&lt;/h1&gt;&lt;h2 id=&#34;概述-2&#34;&gt;概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;重写是指在子类中出现了和父类中名字相同的方法&lt;/p&gt;
@@ -889,8 +889,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;42-重写案例&#34;&gt;4.2 重写案例
-&lt;/h2&gt;&lt;h3 id=&#34;421-worker&#34;&gt;4.2.1 Worker
+&lt;h2 id=&#34;重写案例&#34;&gt;重写案例
+&lt;/h2&gt;&lt;h3 id=&#34;worker&#34;&gt;Worker
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -915,7 +915,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;422-programmer&#34;&gt;4.2.2 Programmer
+&lt;/div&gt;&lt;h3 id=&#34;programmer&#34;&gt;Programmer
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -936,7 +936,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;423-cook&#34;&gt;4.2.3 Cook
+&lt;/div&gt;&lt;h3 id=&#34;cook&#34;&gt;Cook
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -949,7 +949,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;424-测试&#34;&gt;4.2.4 测试
+&lt;/div&gt;&lt;h3 id=&#34;测试-1&#34;&gt;测试
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -974,9 +974,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;5-多态&#34;&gt;5 多态
-&lt;/h1&gt;&lt;h2 id=&#34;51-概述&#34;&gt;5.1 概述
-&lt;/h2&gt;&lt;h3 id=&#34;511-生活中的多态&#34;&gt;5.1.1 生活中的多态
+&lt;/div&gt;&lt;h1 id=&#34;多态&#34;&gt;多态
+&lt;/h1&gt;&lt;h2 id=&#34;概述-3&#34;&gt;概述
+&lt;/h2&gt;&lt;h3 id=&#34;生活中的多态&#34;&gt;生活中的多态
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;事物的在不同场合中的不同状态
 &lt;ul&gt;
@@ -991,7 +991,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;512-程序中的多态&#34;&gt;5.1.2 程序中的多态
+&lt;h3 id=&#34;程序中的多态&#34;&gt;程序中的多态
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;父类引用指向子类对象
 &lt;ul&gt;
@@ -1000,8 +1000,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;513-多态案例&#34;&gt;5.1.3 多态案例
-&lt;/h3&gt;&lt;h4 id=&#34;5131-animal-类&#34;&gt;5.1.3.1 Animal 类
+&lt;h3 id=&#34;多态案例&#34;&gt;多态案例
+&lt;/h3&gt;&lt;h4 id=&#34;animal-类&#34;&gt;Animal 类
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;动物类的父类&lt;/li&gt;
 &lt;/ul&gt;
@@ -1027,7 +1027,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;5132-dog-类&#34;&gt;5.1.3.2 Dog 类
+&lt;/div&gt;&lt;h4 id=&#34;dog-类&#34;&gt;Dog 类
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Animal 的子类
 &lt;ul&gt;
@@ -1070,7 +1070,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;5133-cat-类&#34;&gt;5.1.3.3 Cat 类
+&lt;/div&gt;&lt;h4 id=&#34;cat-类&#34;&gt;Cat 类
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Animal 的子类&lt;/li&gt;
 &lt;li&gt;继承得到了属性和方法&lt;/li&gt;
@@ -1091,7 +1091,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;5134-testanimal&#34;&gt;5.1.3.4 TestAnimal
+&lt;/div&gt;&lt;h4 id=&#34;testanimal&#34;&gt;TestAnimal
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;测试多态的创建和使用&lt;/p&gt;
@@ -1155,9 +1155,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;52-多态的使用场景&#34;&gt;5.2 多态的使用场景
-&lt;/h2&gt;&lt;h3 id=&#34;521-父类声明为方法的形参&#34;&gt;5.2.1 父类声明为方法的形参
-&lt;/h3&gt;&lt;h3 id=&#34;522-父类-people&#34;&gt;5.2.2 父类 People
+&lt;/div&gt;&lt;h2 id=&#34;多态的使用场景&#34;&gt;多态的使用场景
+&lt;/h2&gt;&lt;h3 id=&#34;父类声明为方法的形参&#34;&gt;父类声明为方法的形参
+&lt;/h3&gt;&lt;h3 id=&#34;父类-people&#34;&gt;父类 People
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1174,7 +1174,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;5221-子类-man&#34;&gt;5.2.2.1 子类 Man
+&lt;/div&gt;&lt;h4 id=&#34;子类-man&#34;&gt;子类 Man
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1193,7 +1193,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;5222-子类-woman&#34;&gt;5.2.2.2 子类 Woman
+&lt;/div&gt;&lt;h4 id=&#34;子类-woman&#34;&gt;子类 Woman
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1212,7 +1212,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;5223-测试类-testpeople&#34;&gt;5.2.2.3 测试类 TestPeople
+&lt;/div&gt;&lt;h4 id=&#34;测试类-testpeople&#34;&gt;测试类 TestPeople
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1275,7 +1275,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;5224-testpeople02&#34;&gt;5.2.2.4 TestPeople02
+&lt;/div&gt;&lt;h4 id=&#34;testpeople02&#34;&gt;TestPeople02
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1348,8 +1348,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;523-父类声明为方法的返回值类型&#34;&gt;5.2.3 父类声明为方法的返回值类型
-&lt;/h3&gt;&lt;h3 id=&#34;524-food&#34;&gt;5.2.4 Food
+&lt;/div&gt;&lt;h3 id=&#34;父类声明为方法的返回值类型&#34;&gt;父类声明为方法的返回值类型
+&lt;/h3&gt;&lt;h3 id=&#34;food&#34;&gt;Food
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;食物的父类&lt;/li&gt;
 &lt;/ul&gt;
@@ -1379,7 +1379,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;5241-lamiannoodles&#34;&gt;5.2.4.1 LamianNoodles
+&lt;/div&gt;&lt;h4 id=&#34;lamiannoodles&#34;&gt;LamianNoodles
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;事物的子类&lt;/li&gt;
 &lt;/ul&gt;
@@ -1409,7 +1409,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;5242-dongpopork&#34;&gt;5.2.4.2 DongpoPork
+&lt;/div&gt;&lt;h4 id=&#34;dongpopork&#34;&gt;DongpoPork
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Food 的子类&lt;/li&gt;
 &lt;/ul&gt;
@@ -1429,7 +1429,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;5243-foodfactory&#34;&gt;5.2.4.3 FoodFactory
+&lt;/div&gt;&lt;h4 id=&#34;foodfactory&#34;&gt;FoodFactory
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;食物工厂
 &lt;ul&gt;
@@ -1497,7 +1497,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;5244-testfood&#34;&gt;5.2.4.4 TestFood
+&lt;/div&gt;&lt;h4 id=&#34;testfood&#34;&gt;TestFood
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;测试上面的代码&lt;/li&gt;
 &lt;/ul&gt;
@@ -1537,8 +1537,8 @@
         <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/day-07-%E5%AF%B9%E8%B1%A1/</guid>
-        <description>&lt;img src="https://jenboy.github.io/p/day-07-%E5%AF%B9%E8%B1%A1/pics/file-20260621092718061.png" alt="Featured image of post Day 07 对象" /&gt;&lt;h1 id=&#34;1-面向对象入门&#34;&gt;1 面向对象入门
-&lt;/h1&gt;&lt;h2 id=&#34;11-面向对象概述&#34;&gt;1.1 面向对象概述
+        <description>&lt;img src="https://jenboy.github.io/p/day-07-%E5%AF%B9%E8%B1%A1/pics/file-20260621092718061.png" alt="Featured image of post Day 07 对象" /&gt;&lt;h1 id=&#34;面向对象入门&#34;&gt;面向对象入门
+&lt;/h1&gt;&lt;h2 id=&#34;面向对象概述&#34;&gt;面向对象概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;面向过程 分析出解决问题所需要的步骤，然后用函数把这些步骤一步一步实现，使用的时候一个一个依次调用&lt;/li&gt;
 &lt;li&gt;面向对象 是指在计算机程序中，模拟现实世界中的概念，借助对象的描述在计算机程序中用类似的实体模拟现实世界中的实体&lt;/li&gt;
@@ -1549,7 +1549,7 @@
     &gt;面向对象&lt;/a&gt; 的方法。&lt;/li&gt;
 &lt;li&gt;对象&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;12-类&#34;&gt;1.2 类
+&lt;h2 id=&#34;类&#34;&gt;类
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;类是一组具有相同 (相似) 属性和行为事物的统称
 &lt;ul&gt;
@@ -1558,7 +1558,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;13-对象&#34;&gt;1.3 对象
+&lt;h2 id=&#34;对象&#34;&gt;对象
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;对象是具体存在的事物
 &lt;ul&gt;
@@ -1567,13 +1567,13 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;14-类和对象的关系&#34;&gt;1.4 类和对象的关系
+&lt;h2 id=&#34;类和对象的关系&#34;&gt;类和对象的关系
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;类是对象的模板，是对对象的抽象描述&lt;/li&gt;
 &lt;li&gt;对象是类的实例，是类的具体体现&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;15-创建类&#34;&gt;1.5 创建类
-&lt;/h2&gt;&lt;h3 id=&#34;151-类的组成&#34;&gt;1.5.1 类的组成
+&lt;h2 id=&#34;创建类&#34;&gt;创建类
+&lt;/h2&gt;&lt;h3 id=&#34;类的组成&#34;&gt;类的组成
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;类名&lt;/li&gt;
 &lt;li&gt;属性&lt;/li&gt;
@@ -1643,8 +1643,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;2-对象&#34;&gt;2 对象
-&lt;/h1&gt;&lt;h2 id=&#34;21-创建对象语法&#34;&gt;2.1 创建对象语法
+&lt;/div&gt;&lt;h1 id=&#34;对象-1&#34;&gt;对象
+&lt;/h1&gt;&lt;h2 id=&#34;创建对象语法&#34;&gt;创建对象语法
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1653,7 +1653,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;类名&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;对象名&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;类名&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;参数&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;22-创建-dog-对象&#34;&gt;2.2 创建 Dog 对象
+&lt;/div&gt;&lt;h2 id=&#34;创建-dog-对象&#34;&gt;创建 Dog 对象
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1662,7 +1662,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Dog&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dog&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Dog&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;23-创建一个对象内存图&#34;&gt;2.3 创建一个对象内存图
+&lt;/div&gt;&lt;h2 id=&#34;创建一个对象内存图&#34;&gt;创建一个对象内存图
 &lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/day-07-%E5%AF%B9%E8%B1%A1/pics/file-20260621092718061.png&#34;
 	width=&#34;1500&#34;
 	height=&#34;870&#34;
@@ -1675,7 +1675,7 @@
 		data-flex-basis=&#34;413px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;24-创建多个对象内存图&#34;&gt;2.4 创建多个对象内存图
+&lt;h2 id=&#34;创建多个对象内存图&#34;&gt;创建多个对象内存图
 &lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/day-07-%E5%AF%B9%E8%B1%A1/pics/file-20260621092718063.png&#34;
 	width=&#34;1495&#34;
 	height=&#34;850&#34;
@@ -1688,16 +1688,16 @@
 		data-flex-basis=&#34;422px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;25-对象的属性&#34;&gt;2.5 对象的属性
-&lt;/h2&gt;&lt;h3 id=&#34;251-概述&#34;&gt;2.5.1 概述
+&lt;h2 id=&#34;对象的属性&#34;&gt;对象的属性
+&lt;/h2&gt;&lt;h3 id=&#34;概述&#34;&gt;概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;使用类创建出来的对象称为类的实例&lt;/li&gt;
 &lt;li&gt;这样的对象中的属性称为对象的实例变量/成员变量&lt;/li&gt;
 &lt;li&gt;定义的位置在类中方法外&lt;/li&gt;
 &lt;li&gt;一个类可以创建很多个对象，每个对象都拥有自己的属性&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;252-访问属性&#34;&gt;2.5.2 访问属性
-&lt;/h3&gt;&lt;h4 id=&#34;2521-读取属性&#34;&gt;2.5.2.1 读取属性
+&lt;h3 id=&#34;访问属性&#34;&gt;访问属性
+&lt;/h3&gt;&lt;h4 id=&#34;读取属性&#34;&gt;读取属性
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1712,7 +1712,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dog&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;2522-修改属性&#34;&gt;2.5.2.2 修改属性
+&lt;/div&gt;&lt;h4 id=&#34;修改属性&#34;&gt;修改属性
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1727,7 +1727,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dog&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;26-实例变量和局部变量&#34;&gt;2.6 实例变量和局部变量
+&lt;/div&gt;&lt;h2 id=&#34;实例变量和局部变量&#34;&gt;实例变量和局部变量
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;实例变量
 &lt;ul&gt;
@@ -1782,8 +1782,8 @@
 			&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;27-对象的方法&#34;&gt;2.7 对象的方法
-&lt;/h2&gt;&lt;h3 id=&#34;271-概述&#34;&gt;2.7.1 概述
+&lt;h2 id=&#34;对象的方法&#34;&gt;对象的方法
+&lt;/h2&gt;&lt;h3 id=&#34;概述-1&#34;&gt;概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;对象有属性
 &lt;ul&gt;
@@ -1798,17 +1798,17 @@
 &lt;li&gt;实例方法定义在类中方法外&lt;/li&gt;
 &lt;li&gt;实例方法需要使用对象调用&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;272-实例方法的特点&#34;&gt;2.7.2 实例方法的特点
+&lt;h3 id=&#34;实例方法的特点&#34;&gt;实例方法的特点
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;实例方法不再使用 static 修饰&lt;/li&gt;
 &lt;li&gt;实例方法需要使用对象调用&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;3-方法重载&#34;&gt;3 方法重载
-&lt;/h1&gt;&lt;h2 id=&#34;31-概述&#34;&gt;3.1 概述
+&lt;h1 id=&#34;方法重载&#34;&gt;方法重载
+&lt;/h1&gt;&lt;h2 id=&#34;概述-2&#34;&gt;概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;在同一个类中，出现了多个名字相同的方法，但是他们的参数列表不同&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;32-特征&#34;&gt;3.2 特征
+&lt;h2 id=&#34;特征&#34;&gt;特征
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;在同一个类中&lt;/li&gt;
 &lt;li&gt;方法名字相同&lt;/li&gt;
@@ -1821,7 +1821,7 @@
 &lt;/li&gt;
 &lt;li&gt;和修饰符、返回值类型无关&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;33-案例&#34;&gt;3.3 案例
+&lt;h2 id=&#34;案例&#34;&gt;案例
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1888,14 +1888,14 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;4-构造器&#34;&gt;4 构造器
-&lt;/h1&gt;&lt;h2 id=&#34;41-概述&#34;&gt;4.1 概述
+&lt;/div&gt;&lt;h1 id=&#34;构造器&#34;&gt;构造器
+&lt;/h1&gt;&lt;h2 id=&#34;概述-3&#34;&gt;概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;构造方法==构造器&lt;/li&gt;
 &lt;li&gt;在对象创建的过程中完成对象属性的初始化&lt;/li&gt;
 &lt;li&gt;构造器在一个类中可以存在多个，构成方法的重载&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;42-构造器入门案例&#34;&gt;4.2 构造器入门案例
+&lt;h2 id=&#34;构造器入门案例&#34;&gt;构造器入门案例
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -2030,7 +2030,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;421-构造器案例-02&#34;&gt;4.2.1 构造器案例 02
+&lt;/div&gt;&lt;h3 id=&#34;构造器案例-02&#34;&gt;构造器案例 02
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -2201,15 +2201,15 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;43-构造器的特点&#34;&gt;4.3 构造器的特点
+&lt;/div&gt;&lt;h2 id=&#34;构造器的特点&#34;&gt;构造器的特点
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;构造器的名字和类名必须完全一致&lt;/li&gt;
 &lt;li&gt;构造器没有返回值和返回值类型&lt;/li&gt;
 &lt;li&gt;如果自己没有显示定义任何构造器,JVM 赠送一个空参构造器&lt;/li&gt;
 &lt;li&gt;如果自己显示定义了任何一个构造器，Jvm 不再赠送空参构造器&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;5-this&#34;&gt;5 This
-&lt;/h1&gt;&lt;h2 id=&#34;51-概述&#34;&gt;5.1 概述
+&lt;h1 id=&#34;this&#34;&gt;This
+&lt;/h1&gt;&lt;h2 id=&#34;概述-4&#34;&gt;概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Java 关键字 this，表示当前对象
 &lt;ul&gt;
@@ -2217,8 +2217,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;52-this-的作用&#34;&gt;5.2 This 的作用
-&lt;/h2&gt;&lt;h3 id=&#34;521-调用属性常用&#34;&gt;5.2.1 调用属性【常用】
+&lt;h2 id=&#34;this-的作用&#34;&gt;This 的作用
+&lt;/h2&gt;&lt;h3 id=&#34;调用属性常用&#34;&gt;调用属性【常用】
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2227,7 +2227,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;实例属性&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;522-调用方法不常用&#34;&gt;5.2.2 调用方法【不常用】
+&lt;/div&gt;&lt;h3 id=&#34;调用方法不常用&#34;&gt;调用方法【不常用】
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2236,7 +2236,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;实例方法&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;523-调用构造器不常用&#34;&gt;5.2.3 调用构造器【不常用】
+&lt;/div&gt;&lt;h3 id=&#34;调用构造器不常用&#34;&gt;调用构造器【不常用】
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2325,12 +2325,12 @@
         <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/</guid>
-        <description>&lt;img src="https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/pics/file-20260621092706579.png" alt="Featured image of post Day 06 数组" /&gt;&lt;h1 id=&#34;1-概念&#34;&gt;1 概念
-&lt;/h1&gt;&lt;h2 id=&#34;11-变量&#34;&gt;1.1 变量
+        <description>&lt;img src="https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/pics/file-20260621092706579.png" alt="Featured image of post Day 06 数组" /&gt;&lt;h1 id=&#34;概念&#34;&gt;概念
+&lt;/h1&gt;&lt;h2 id=&#34;变量&#34;&gt;变量
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;在内存中开辟的一片空间，用来存储对应类型的数据&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;12-数组&#34;&gt;1.2 数组
+&lt;h2 id=&#34;数组&#34;&gt;数组
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;数组是在内存中开辟的一组连续的空间，用来存储相同类型的数据
 &lt;img src=&#34;https://jenboy.github.io/p/day-06-%E6%95%B0%E7%BB%84/pics/file-20260621092706579.png&#34;
@@ -2346,8 +2346,8 @@
 	
 &gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;13-创建数组&#34;&gt;1.3 创建数组
-&lt;/h2&gt;&lt;h3 id=&#34;131-动态创建数组&#34;&gt;1.3.1 动态创建数组
+&lt;h2 id=&#34;创建数组&#34;&gt;创建数组
+&lt;/h2&gt;&lt;h3 id=&#34;动态创建数组&#34;&gt;动态创建数组
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;指定数组的类型和长度&lt;/li&gt;
 &lt;li&gt;不确定数组中的内容&lt;/li&gt;
@@ -2368,7 +2368,7 @@
 &lt;p&gt;后面的代码可以向这个数组存入数据&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;132-静态创建数组&#34;&gt;1.3.2 静态创建数组
+&lt;h3 id=&#34;静态创建数组&#34;&gt;静态创建数组
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;数组创建之初，数组的长度和数组中的内容都已经确定&lt;/li&gt;
 &lt;/ul&gt;
@@ -2448,7 +2448,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;14-数组的长度&#34;&gt;1.4 数组的长度
+&lt;/div&gt;&lt;h2 id=&#34;数组的长度&#34;&gt;数组的长度
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;数组的长度=数组开辟空间的数量&lt;/p&gt;
@@ -2460,8 +2460,8 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;15-数组元素的访问&#34;&gt;1.5 数组元素的访问
-&lt;/h2&gt;&lt;h3 id=&#34;151-读取数据&#34;&gt;1.5.1 读取数据
+&lt;h2 id=&#34;数组元素的访问&#34;&gt;数组元素的访问
+&lt;/h2&gt;&lt;h3 id=&#34;读取数据&#34;&gt;读取数据
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;直接输出数据，默认无法直接输出内容&lt;/li&gt;
 &lt;li&gt;可以通过数组元素的索引访问数组中的元素&lt;/li&gt;
@@ -2530,7 +2530,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;152-修改数据&#34;&gt;1.5.2 修改数据
+&lt;/div&gt;&lt;h3 id=&#34;修改数据&#34;&gt;修改数据
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2569,7 +2569,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;16-遍历数组&#34;&gt;1.6 遍历数组
+&lt;/div&gt;&lt;h2 id=&#34;遍历数组&#34;&gt;遍历数组
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;可以使用循环中
 &lt;ul&gt;
@@ -2646,7 +2646,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;17-数组中元素的默认值&#34;&gt;1.7 数组中元素的默认值
+&lt;/div&gt;&lt;h2 id=&#34;数组中元素的默认值&#34;&gt;数组中元素的默认值
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -2739,8 +2739,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;2-数组练习&#34;&gt;2 数组练习
-&lt;/h1&gt;&lt;h2 id=&#34;21-输出案例&#34;&gt;2.1 输出案例
+&lt;/div&gt;&lt;h1 id=&#34;数组练习&#34;&gt;数组练习
+&lt;/h1&gt;&lt;h2 id=&#34;输出案例&#34;&gt;输出案例
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -2837,7 +2837,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;22-计算案例&#34;&gt;2.2 计算案例
+&lt;/div&gt;&lt;h2 id=&#34;计算案例&#34;&gt;计算案例
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -2910,8 +2910,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;3-数组扩容&#34;&gt;3 数组扩容
-&lt;/h1&gt;&lt;h2 id=&#34;31-概述&#34;&gt;3.1 概述
+&lt;/div&gt;&lt;h1 id=&#34;数组扩容&#34;&gt;数组扩容
+&lt;/h1&gt;&lt;h2 id=&#34;概述&#34;&gt;概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;数组扩容的原理
 &lt;ul&gt;
@@ -2931,8 +2931,8 @@
 		data-flex-basis=&#34;467px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;32-手动扩容&#34;&gt;3.2 手动扩容
-&lt;/h2&gt;&lt;h3 id=&#34;321-一个一个复制&#34;&gt;3.2.1 一个一个复制
+&lt;h2 id=&#34;手动扩容&#34;&gt;手动扩容
+&lt;/h2&gt;&lt;h3 id=&#34;一个一个复制&#34;&gt;一个一个复制
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -2987,7 +2987,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;322-使用循环复制&#34;&gt;3.2.2 使用循环复制
+&lt;/div&gt;&lt;h3 id=&#34;使用循环复制&#34;&gt;使用循环复制
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -3044,7 +3044,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;323-systemarraycopy&#34;&gt;3.2.3 System.arraycopy
+&lt;/div&gt;&lt;h3 id=&#34;systemarraycopy&#34;&gt;System.arraycopy
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;System 类中提供的一种便捷复制数组的方法&lt;/li&gt;
 &lt;li&gt;可以把原数组中的数据快速复制到目标数组&lt;/li&gt;
@@ -3119,7 +3119,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;324-arrayscopyof&#34;&gt;3.2.4 Arrays.copyOf
+&lt;/div&gt;&lt;h3 id=&#34;arrayscopyof&#34;&gt;Arrays.copyOf
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;创建指定长度的新数组
 &lt;ul&gt;
@@ -3189,13 +3189,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;4-基本和引用类型数据传递&#34;&gt;4 基本和引用类型数据传递
-&lt;/h1&gt;&lt;h2 id=&#34;41-概述&#34;&gt;4.1 概述
+&lt;/div&gt;&lt;h1 id=&#34;基本和引用类型数据传递&#34;&gt;基本和引用类型数据传递
+&lt;/h1&gt;&lt;h2 id=&#34;概述-1&#34;&gt;概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;基本类型的变量和数据存储在栈内存中&lt;/li&gt;
 &lt;li&gt;引用类型的变量名在栈内存，存储的是对象的地址，真实的数据存在于内存的堆内存中&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;42-基本类型数据传递&#34;&gt;4.2 基本类型数据传递
+&lt;h2 id=&#34;基本类型数据传递&#34;&gt;基本类型数据传递
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -3248,7 +3248,7 @@
 		data-flex-basis=&#34;597px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;43-引用类型数据传递&#34;&gt;4.3 引用类型数据传递
+&lt;h2 id=&#34;引用类型数据传递&#34;&gt;引用类型数据传递
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -3295,8 +3295,8 @@
 		data-flex-basis=&#34;559px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;5-冒泡排序&#34;&gt;5 冒泡排序
-&lt;/h1&gt;&lt;h2 id=&#34;51-十大排序算法&#34;&gt;5.1 十大排序算法
+&lt;h1 id=&#34;冒泡排序&#34;&gt;冒泡排序
+&lt;/h1&gt;&lt;h2 id=&#34;十大排序算法&#34;&gt;十大排序算法
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;整理算法的名字
 &lt;table&gt;
@@ -3337,7 +3337,7 @@
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;52-选择排序&#34;&gt;5.2 选择排序
+&lt;h2 id=&#34;选择排序&#34;&gt;选择排序
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -3400,7 +3400,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;53-冒泡排序&#34;&gt;5.3 冒泡排序
+&lt;/div&gt;&lt;h2 id=&#34;冒泡排序-1&#34;&gt;冒泡排序
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -3461,7 +3461,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;54-api-提供的排序方法&#34;&gt;5.4 API 提供的排序方法
+&lt;/div&gt;&lt;h2 id=&#34;api-提供的排序方法&#34;&gt;API 提供的排序方法
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -3500,8 +3500,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;6-数组转换成字符串&#34;&gt;6 数组转换成字符串
-&lt;/h1&gt;&lt;h2 id=&#34;61-官方-api-中的内容&#34;&gt;6.1 官方 Api 中的内容
+&lt;/div&gt;&lt;h1 id=&#34;数组转换成字符串&#34;&gt;数组转换成字符串
+&lt;/h1&gt;&lt;h2 id=&#34;官方-api-中的内容&#34;&gt;官方 Api 中的内容
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -3566,7 +3566,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;62-自定义方法数组转换成为字符串&#34;&gt;6.2 自定义方法数组转换成为字符串
+&lt;/div&gt;&lt;h2 id=&#34;自定义方法数组转换成为字符串&#34;&gt;自定义方法数组转换成为字符串
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -7000,19 +7000,19 @@
         <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/day-02-%E5%9F%BA%E7%A1%80/</guid>
-        <description>&lt;h1 id=&#34;1-标识符&#34;&gt;1 标识符
-&lt;/h1&gt;&lt;h2 id=&#34;11-概述&#34;&gt;1.1 概述
+        <description>&lt;h1 id=&#34;标识符&#34;&gt;标识符
+&lt;/h1&gt;&lt;h2 id=&#34;概述&#34;&gt;概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;编程语言中用来给类、方法、变量、常量、包等取名字的一个字符序列&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;12-组成&#34;&gt;1.2 组成
+&lt;h2 id=&#34;组成&#34;&gt;组成
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;英文字母&lt;/li&gt;
 &lt;li&gt;数字&lt;/li&gt;
 &lt;li&gt;下划线 (_)&lt;/li&gt;
 &lt;li&gt;美元符 ($)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;13-命名规则&#34;&gt;1.3 命名规则
+&lt;h2 id=&#34;命名规则&#34;&gt;命名规则
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -7065,13 +7065,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;	&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;qf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;day01&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;131-类名&#34;&gt;1.3.1 类名
+&lt;/div&gt;&lt;h3 id=&#34;类名&#34;&gt;类名
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;class 关键字后面的名字&lt;/li&gt;
 &lt;li&gt;所有单词首字母大写&lt;/li&gt;
 &lt;li&gt;大驼峰命名法&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;132-变量&#34;&gt;1.3.2 变量
+&lt;h3 id=&#34;变量&#34;&gt;变量
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;一个名词，描述一个属性、数据&lt;/li&gt;
 &lt;li&gt;第一个单词全部小写，后面的单词首字母大写&lt;/li&gt;
@@ -7089,7 +7089,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;	&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;出生地&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;	&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;birthAddress&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;133-方法&#34;&gt;1.3.3 方法
+&lt;/div&gt;&lt;h3 id=&#34;方法&#34;&gt;方法
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;一个动词，描述一个功能&lt;/p&gt;
@@ -7113,7 +7113,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;	&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;打豆豆&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;	&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;beatBeanBean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;134-常量&#34;&gt;1.3.4 常量
+&lt;/div&gt;&lt;h3 id=&#34;常量&#34;&gt;常量
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;一个固定不变的数据&lt;/li&gt;
 &lt;li&gt;所有字母大写，多个单词使用下划线连接&lt;/li&gt;
@@ -7128,7 +7128,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;	&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;祖籍&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;	&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ANCESTRAL_HOME&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;135-包名&#34;&gt;1.3.5 包名
+&lt;/div&gt;&lt;h3 id=&#34;包名&#34;&gt;包名
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;包是管理类的文件夹&lt;/li&gt;
 &lt;li&gt;相同或者相似功能的类放在同一个包中&lt;/li&gt;
@@ -7144,13 +7144,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;	&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;qf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;day01&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;14-标识符注意事项&#34;&gt;1.4 标识符注意事项
+&lt;/div&gt;&lt;h2 id=&#34;标识符注意事项&#34;&gt;标识符注意事项
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;不能使用数字开头&lt;/li&gt;
 &lt;li&gt;命名需要见名知意&lt;/li&gt;
 &lt;li&gt;不要使用关键字&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;15-命名&#34;&gt;1.5 命名
+&lt;h2 id=&#34;命名&#34;&gt;命名
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -7205,14 +7205,14 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;	&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;第一份兼职&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;		&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PART_TIME&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;2-关键字和保留字&#34;&gt;2 关键字和保留字
-&lt;/h1&gt;&lt;h2 id=&#34;21-概述&#34;&gt;2.1 概述
+&lt;/div&gt;&lt;h1 id=&#34;关键字和保留字&#34;&gt;关键字和保留字
+&lt;/h1&gt;&lt;h2 id=&#34;概述-1&#34;&gt;概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;关键字是被 Java 语言赋予了特殊含义的一些标识符&lt;/li&gt;
 &lt;li&gt;开发者不能使用关键字作为自己的命名&lt;/li&gt;
 &lt;li&gt;Java 保留字是以后有可能成为关键字的标识符&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;22-关键字大全&#34;&gt;2.2 关键字大全
+&lt;h2 id=&#34;关键字大全&#34;&gt;关键字大全
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -7321,12 +7321,12 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;while&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;用在循环结构中&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;3-变量&#34;&gt;3 变量
-&lt;/h1&gt;&lt;h2 id=&#34;31-概述&#34;&gt;3.1 概述
+&lt;/div&gt;&lt;h1 id=&#34;变量-1&#34;&gt;变量
+&lt;/h1&gt;&lt;h2 id=&#34;概述-2&#34;&gt;概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Java 中的变量是在内存中开辟的一片空间，用来存储对应类型的数据&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;32-变量的组成&#34;&gt;3.2 变量的组成
+&lt;h2 id=&#34;变量的组成&#34;&gt;变量的组成
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -7413,10 +7413,10 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;33-变量的创建方式&#34;&gt;3.3 变量的创建方式
-&lt;/h2&gt;&lt;h3 id=&#34;331-先声明再赋值&#34;&gt;3.3.1 先声明，再赋值
-&lt;/h3&gt;&lt;h3 id=&#34;332-声明的同时赋值&#34;&gt;3.3.2 声明的同时赋值
-&lt;/h3&gt;&lt;h3 id=&#34;333-一次声明多个变量&#34;&gt;3.3.3 一次声明多个变量
+&lt;h2 id=&#34;变量的创建方式&#34;&gt;变量的创建方式
+&lt;/h2&gt;&lt;h3 id=&#34;先声明再赋值&#34;&gt;先声明，再赋值
+&lt;/h3&gt;&lt;h3 id=&#34;声明的同时赋值&#34;&gt;声明的同时赋值
+&lt;/h3&gt;&lt;h3 id=&#34;一次声明多个变量&#34;&gt;一次声明多个变量
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -7481,7 +7481,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;34-变量的使用&#34;&gt;3.4 变量的使用
+&lt;/div&gt;&lt;h2 id=&#34;变量的使用&#34;&gt;变量的使用
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;通过变量的名字调用变量&lt;/li&gt;
 &lt;li&gt;方法中的变量使用之前需要先赋值&lt;/li&gt;
@@ -7527,13 +7527,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;4-进制&#34;&gt;4 进制
-&lt;/h1&gt;&lt;h2 id=&#34;41-概述&#34;&gt;4.1 概述
+&lt;/div&gt;&lt;h1 id=&#34;进制&#34;&gt;进制
+&lt;/h1&gt;&lt;h2 id=&#34;概述-3&#34;&gt;概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;定义：进制也就是进位技术制，是人为定义的带进位的计算方法&lt;/li&gt;
 &lt;li&gt;逢 N 进一的一种制度&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;42-十进制&#34;&gt;4.2 十进制
+&lt;h2 id=&#34;十进制&#34;&gt;十进制
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;逢十进一&lt;/li&gt;
 &lt;/ul&gt;
@@ -7548,7 +7548,7 @@
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;十进制源自于人有十根手指&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;43-二进制&#34;&gt;4.3 二进制
+&lt;h2 id=&#34;二进制&#34;&gt;二进制
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;逢二进一&lt;/li&gt;
 &lt;/ul&gt;
@@ -7563,7 +7563,7 @@
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;二进制源自于电子管 (开关) 只有二种状态&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;44-八进制&#34;&gt;4.4 八进制
+&lt;h2 id=&#34;八进制&#34;&gt;八进制
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;逢八进一&lt;/li&gt;
 &lt;/ul&gt;
@@ -7578,7 +7578,7 @@
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;八进制是用三个二进制表示一个八进制&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;45-十六进制&#34;&gt;4.5 十六进制
+&lt;h2 id=&#34;十六进制&#34;&gt;十六进制
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;逢十六 (f) 进一&lt;/li&gt;
 &lt;/ul&gt;
@@ -7741,8 +7741,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;5-数据类型&#34;&gt;5 数据类型
-&lt;/h1&gt;&lt;h2 id=&#34;51-概述&#34;&gt;5.1 概述
+&lt;/div&gt;&lt;h1 id=&#34;数据类型&#34;&gt;数据类型
+&lt;/h1&gt;&lt;h2 id=&#34;概述-4&#34;&gt;概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Java 中的每一个数据都有对应的数据类型&lt;/li&gt;
 &lt;li&gt;Java 的数据类型分类
@@ -7760,7 +7760,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;52-整数类型&#34;&gt;5.2 整数类型
+&lt;h2 id=&#34;整数类型&#34;&gt;整数类型
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;默认是 int 类型&lt;/li&gt;
 &lt;/ul&gt;
@@ -7886,7 +7886,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;53-小数类型&#34;&gt;5.3 小数类型
+&lt;/div&gt;&lt;h2 id=&#34;小数类型&#34;&gt;小数类型
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;默认是 double 类型&lt;/p&gt;
@@ -7954,7 +7954,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;54-布尔型&#34;&gt;5.4 布尔型
+&lt;/div&gt;&lt;h2 id=&#34;布尔型&#34;&gt;布尔型
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;boolean&lt;/li&gt;
 &lt;li&gt;逻辑判断
@@ -8020,7 +8020,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;55-字符型&#34;&gt;5.5 字符型
+&lt;/div&gt;&lt;h2 id=&#34;字符型&#34;&gt;字符型
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;char
 &lt;ul&gt;
@@ -8124,7 +8124,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;56-转义字符&#34;&gt;5.6 转义字符
+&lt;/div&gt;&lt;h2 id=&#34;转义字符&#34;&gt;转义字符
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;有些符号被 Java 语言赋予了特殊含义
 &lt;ul&gt;
@@ -8196,8 +8196,8 @@
         <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/day-01-%E5%85%A5%E9%97%A8/</guid>
-        <description>&lt;img src="https://jenboy.github.io/p/day-01-%E5%85%A5%E9%97%A8/pics/file-20260621092446754.png" alt="Featured image of post Day 01 入门" /&gt;&lt;h1 id=&#34;1-计算机诞生和发展&#34;&gt;1 计算机诞生和发展
-&lt;/h1&gt;&lt;h2 id=&#34;11-诞生&#34;&gt;1.1 诞生
+        <description>&lt;img src="https://jenboy.github.io/p/day-01-%E5%85%A5%E9%97%A8/pics/file-20260621092446754.png" alt="Featured image of post Day 01 入门" /&gt;&lt;h1 id=&#34;计算机诞生和发展&#34;&gt;计算机诞生和发展
+&lt;/h1&gt;&lt;h2 id=&#34;诞生&#34;&gt;诞生
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;时间&lt;/p&gt;
@@ -8218,7 +8218,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;12-计算机发展史重要的人&#34;&gt;1.2 计算机发展史重要的人
+&lt;h2 id=&#34;计算机发展史重要的人&#34;&gt;计算机发展史重要的人
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;艾伦 * 图灵&lt;/p&gt;
@@ -8227,7 +8227,7 @@
 &lt;p&gt;冯 * 诺依曼&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;13-计算机发展阶段&#34;&gt;1.3 计算机发展阶段
+&lt;h2 id=&#34;计算机发展阶段&#34;&gt;计算机发展阶段
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;电子管计算机&lt;/p&gt;
@@ -8242,7 +8242,7 @@
 &lt;p&gt;大规模和超大规模集成电路计算机&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;14-中国的超算&#34;&gt;1.4 中国的超算
+&lt;h2 id=&#34;中国的超算&#34;&gt;中国的超算
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;天河二号&lt;/p&gt;
@@ -8251,7 +8251,7 @@
 &lt;p&gt;神威 * 太湖之光&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;15-计算机发展方向&#34;&gt;1.5 计算机发展方向
+&lt;h2 id=&#34;计算机发展方向&#34;&gt;计算机发展方向
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;速度更快&lt;/p&gt;
@@ -8263,7 +8263,7 @@
 &lt;p&gt;性能更强&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;16-计算机的组成&#34;&gt;1.6 计算机的组成
+&lt;h2 id=&#34;计算机的组成&#34;&gt;计算机的组成
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;输入设备&lt;/p&gt;
@@ -8281,10 +8281,10 @@
 &lt;p&gt;控制器&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;17-计算机之父&#34;&gt;1.7 计算机之父
-&lt;/h2&gt;&lt;h2 id=&#34;18-人工智能之父&#34;&gt;1.8 人工智能之父
-&lt;/h2&gt;&lt;h1 id=&#34;2-计算机组成&#34;&gt;2 计算机组成
-&lt;/h1&gt;&lt;h2 id=&#34;21-硬件&#34;&gt;2.1 硬件
+&lt;h2 id=&#34;计算机之父&#34;&gt;计算机之父
+&lt;/h2&gt;&lt;h2 id=&#34;人工智能之父&#34;&gt;人工智能之父
+&lt;/h2&gt;&lt;h1 id=&#34;计算机组成&#34;&gt;计算机组成
+&lt;/h1&gt;&lt;h2 id=&#34;硬件&#34;&gt;硬件
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;物理设备&lt;/p&gt;
@@ -8307,13 +8307,13 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;22-软件&#34;&gt;2.2 软件
+&lt;h2 id=&#34;软件&#34;&gt;软件
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;软件是一系列按照特定顺序组织的 &lt;a class=&#34;link&#34; href=&#34;https://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA/140338?fromModule=lemma_inlink&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;计算机&lt;/a&gt; 数据和 &lt;a class=&#34;link&#34; href=&#34;https://baike.baidu.com/item/%E6%8C%87%E4%BB%A4/3225201?fromModule=lemma_inlink&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;指令&lt;/a&gt; 的集合。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;221-系统软件&#34;&gt;2.2.1 系统软件
+&lt;h3 id=&#34;系统软件&#34;&gt;系统软件
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;系统软件是指控制和协调计算机及 &lt;a class=&#34;link&#34; href=&#34;https://baike.baidu.com/item/%E5%A4%96%E9%83%A8%E8%AE%BE%E5%A4%87?fromModule=lemma_inlink&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -8325,7 +8325,7 @@
 &lt;p&gt;负责管理计算机系统中各种独立的硬件，使得它们可以协调工作。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;2211-pc-端&#34;&gt;2.2.1.1 PC 端
+&lt;h4 id=&#34;pc-端&#34;&gt;PC 端
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Windows&lt;/p&gt;
@@ -8343,7 +8343,7 @@
 &lt;p&gt;鸿蒙 OS&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;222-移动端&#34;&gt;2.2.2 移动端
+&lt;h3 id=&#34;移动端&#34;&gt;移动端
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Android&lt;/p&gt;
@@ -8367,9 +8367,9 @@
 &lt;p&gt;阿里云&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;223-应用软件&#34;&gt;2.2.3 应用软件
-&lt;/h3&gt;&lt;h1 id=&#34;3-dos-命令&#34;&gt;3 DOS 命令
-&lt;/h1&gt;&lt;h2 id=&#34;31-概述&#34;&gt;3.1 概述
+&lt;h3 id=&#34;应用软件&#34;&gt;应用软件
+&lt;/h3&gt;&lt;h1 id=&#34;dos-命令&#34;&gt;DOS 命令
+&lt;/h1&gt;&lt;h2 id=&#34;概述&#34;&gt;概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;DOS 操作系统中使用的一些命令&lt;/p&gt;
@@ -8392,7 +8392,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;32-常用命令&#34;&gt;3.2 常用命令
+&lt;h2 id=&#34;常用命令&#34;&gt;常用命令
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;查看 IP
@@ -8438,8 +8438,8 @@ netstart 服务名
 netstop 服务名&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;4-jdk&#34;&gt;4 JDK
-&lt;/h1&gt;&lt;h2 id=&#34;41-概述&#34;&gt;4.1 概述
+&lt;h1 id=&#34;jdk&#34;&gt;JDK
+&lt;/h1&gt;&lt;h2 id=&#34;概述-1&#34;&gt;概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Java 开发工具包&lt;/p&gt;
@@ -8459,7 +8459,7 @@ netstop 服务名&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;42-下载&#34;&gt;4.2 下载
+&lt;h2 id=&#34;下载&#34;&gt;下载
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;下载地址&lt;/li&gt;
 &lt;/ul&gt;
@@ -8467,7 +8467,7 @@ netstop 服务名&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.oracle.com/java/technologies/downloads/#java8-windows&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.oracle.com/java/technologies/downloads/#java8-windows&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;43-卸载&#34;&gt;4.3 卸载
+&lt;h2 id=&#34;卸载&#34;&gt;卸载
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;清除配置信息&lt;/p&gt;
@@ -8476,7 +8476,7 @@ netstop 服务名&lt;/p&gt;
 &lt;p&gt;卸载软件&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;44-安装&#34;&gt;4.4 安装
+&lt;h2 id=&#34;安装&#34;&gt;安装
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;双击软件执行安装&lt;/p&gt;
@@ -8488,7 +8488,7 @@ netstop 服务名&lt;/p&gt;
 &lt;p&gt;不需要安装 JRE&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;45-配置&#34;&gt;4.5 配置
+&lt;h2 id=&#34;配置&#34;&gt;配置
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;把 JDK 中 bin 目录配置到系统 Path&lt;/li&gt;
 &lt;/ul&gt;
@@ -8528,8 +8528,8 @@ netstop 服务名&lt;/p&gt;
 		data-flex-basis=&#34;379px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;5-我的第一个案例-helloworld&#34;&gt;5 我的第一个案例 HelloWorld
-&lt;/h1&gt;&lt;h2 id=&#34;51-创建-java-文件&#34;&gt;5.1 创建 Java 文件
+&lt;h1 id=&#34;我的第一个案例-helloworld&#34;&gt;我的第一个案例 HelloWorld
+&lt;/h1&gt;&lt;h2 id=&#34;创建-java-文件&#34;&gt;创建 Java 文件
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -8548,7 +8548,7 @@ netstop 服务名&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;创建任意文件&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;修改文件的后缀名即可&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;52-编写-helloworld-代码&#34;&gt;5.2 编写 HelloWorld 代码
+&lt;/div&gt;&lt;h2 id=&#34;编写-helloworld-代码&#34;&gt;编写 HelloWorld 代码
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;固定的写法&lt;/li&gt;
 &lt;/ul&gt;
@@ -8568,12 +8568,12 @@ netstop 服务名&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;53-运行-java-代码&#34;&gt;5.3 运行 Java 代码
-&lt;/h2&gt;&lt;h3 id=&#34;531-编译&#34;&gt;5.3.1 编译
+&lt;/div&gt;&lt;h2 id=&#34;运行-java-代码&#34;&gt;运行 Java 代码
+&lt;/h2&gt;&lt;h3 id=&#34;编译&#34;&gt;编译
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;javac 文件的全名称 (HelloWorld.java)&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;532-运行&#34;&gt;5.3.2 运行
+&lt;h3 id=&#34;运行&#34;&gt;运行
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;java 字节码文件名字 (不要.class)&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -8589,8 +8589,8 @@ netstop 服务名&lt;/p&gt;
 		data-flex-basis=&#34;605px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;54-java-代码运行原理&#34;&gt;5.4 Java 代码运行原理
-&lt;/h2&gt;&lt;h3 id=&#34;541-java-运行原理&#34;&gt;5.4.1 Java 运行原理
+&lt;h2 id=&#34;java-代码运行原理&#34;&gt;Java 代码运行原理
+&lt;/h2&gt;&lt;h3 id=&#34;java-运行原理&#34;&gt;Java 运行原理
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;先编译&lt;/p&gt;
@@ -8610,7 +8610,7 @@ netstop 服务名&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;542-java-跨平台运行原理&#34;&gt;5.4.2 Java 跨平台运行原理
+&lt;h3 id=&#34;java-跨平台运行原理&#34;&gt;Java 跨平台运行原理
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;跨平台 == 跨系统&lt;/p&gt;
@@ -8637,7 +8637,7 @@ netstop 服务名&lt;/p&gt;
 		data-flex-basis=&#34;436px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;55-名词解释&#34;&gt;5.5 名词解释
+&lt;h2 id=&#34;名词解释&#34;&gt;名词解释
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;JDK 用于 &lt;strong&gt;开发&lt;/strong&gt; Java 应用程序。它包含编译器（&lt;code&gt;javac&lt;/code&gt;）可将 &lt;code&gt;.java&lt;/code&gt; 源代码编译为 &lt;code&gt;.class&lt;/code&gt; 字节码，也包含运行程序所需的 JRE。&lt;/p&gt;
@@ -8649,8 +8649,8 @@ netstop 服务名&lt;/p&gt;
 &lt;p&gt;JVM 是运行 Java 字节码（&lt;code&gt;.class&lt;/code&gt; 文件）的 &lt;strong&gt;运行时环境&lt;/strong&gt;。它负责将编译后的 Java 字节码解释或编译成当前操作系统的机器指令并执行。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;56-helloworld-案例细节&#34;&gt;5.6 HelloWorld 案例细节
-&lt;/h2&gt;&lt;h3 id=&#34;561-类名和文件名字&#34;&gt;5.6.1 类名和文件名字
+&lt;h2 id=&#34;helloworld-案例细节&#34;&gt;HelloWorld 案例细节
+&lt;/h2&gt;&lt;h3 id=&#34;类名和文件名字&#34;&gt;类名和文件名字
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;最好类名和文件名保持一致&lt;/p&gt;
@@ -8659,7 +8659,7 @@ netstop 服务名&lt;/p&gt;
 &lt;p&gt;源文件编译之后会产生一个和类名相同的字节码文件&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;562-main-方法&#34;&gt;5.6.2 Main 方法
+&lt;h3 id=&#34;main-方法&#34;&gt;Main 方法
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;main 方法也称为主方法&lt;/p&gt;
@@ -8671,7 +8671,7 @@ netstop 服务名&lt;/p&gt;
 &lt;p&gt;不能写错&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;563-java-语言严格区分大小写&#34;&gt;5.6.3 Java 语言严格区分大小写
+&lt;h3 id=&#34;java-语言严格区分大小写&#34;&gt;Java 语言严格区分大小写
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;String!= string&lt;/p&gt;
@@ -8680,7 +8680,7 @@ netstop 服务名&lt;/p&gt;
 &lt;p&gt;System!= system&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;564-一个-java-文件中可以书写多个-class&#34;&gt;5.6.4 一个 Java 文件中可以书写多个 Class
+&lt;h3 id=&#34;一个-java-文件中可以书写多个-class&#34;&gt;一个 Java 文件中可以书写多个 Class
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;一个文件中可以定义多个 class&lt;/p&gt;
@@ -8689,9 +8689,9 @@ netstop 服务名&lt;/p&gt;
 &lt;p&gt;只有一个能使用 public 修饰&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;6-代码规范&#34;&gt;6 代码规范
-&lt;/h1&gt;&lt;h2 id=&#34;61-缩进和换行&#34;&gt;6.1 缩进和换行
-&lt;/h2&gt;&lt;h3 id=&#34;611-缩进&#34;&gt;6.1.1 缩进
+&lt;h1 id=&#34;代码规范&#34;&gt;代码规范
+&lt;/h1&gt;&lt;h2 id=&#34;缩进和换行&#34;&gt;缩进和换行
+&lt;/h2&gt;&lt;h3 id=&#34;缩进&#34;&gt;缩进
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;代码层级之间需要有缩进&lt;/p&gt;
@@ -8700,7 +8700,7 @@ netstop 服务名&lt;/p&gt;
 &lt;p&gt;保持代码的整洁&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;612-换行&#34;&gt;6.1.2 换行
+&lt;h3 id=&#34;换行&#34;&gt;换行
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;一行只书写一句代码&lt;/p&gt;
@@ -8709,13 +8709,13 @@ netstop 服务名&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;}&lt;/code&gt; 也需要占用一行代码&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;62-注释&#34;&gt;6.2 注释
+&lt;h2 id=&#34;注释&#34;&gt;注释
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;标注、解释、暂时使得代码失效&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;621-单行注释&#34;&gt;6.2.1 单行注释
-&lt;/h3&gt;&lt;h3 id=&#34;622-多行注释&#34;&gt;6.2.2 多行注释
-&lt;/h3&gt;&lt;h3 id=&#34;623-文档注释&#34;&gt;6.2.3 文档注释
+&lt;h3 id=&#34;单行注释&#34;&gt;单行注释
+&lt;/h3&gt;&lt;h3 id=&#34;多行注释&#34;&gt;多行注释
+&lt;/h3&gt;&lt;h3 id=&#34;文档注释&#34;&gt;文档注释
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
