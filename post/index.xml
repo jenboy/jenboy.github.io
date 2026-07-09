@@ -7,10 +7,10 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Xao</copyright>
-        <lastBuildDate>Thu, 25 Jun 2026 10:23:43 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 09 Jul 2026 16:17:34 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【工具】帖子收藏神器</title>
         <link>https://jenboy.github.io/p/%E5%B7%A5%E5%85%B7%E5%B8%96%E5%AD%90%E6%94%B6%E8%97%8F%E7%A5%9E%E5%99%A8/</link>
-        <pubDate>Thu, 25 Jun 2026 02:31:23 +0000</pubDate>
+        <pubDate>Thu, 09 Jul 2026 08:18:06 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E5%B7%A5%E5%85%B7%E5%B8%96%E5%AD%90%E6%94%B6%E8%97%8F%E7%A5%9E%E5%99%A8/</guid>
         <description>&lt;h1 id=&#34;discourse-saver一键保存帖子到-obsidian飞书notion-等六种方式的浏览器插件&#34;&gt;Discourse Saver：一键保存帖子到 Obsidian/飞书/Notion 等六种方式的浏览器插件
@@ -1140,15 +1140,15 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;来源: https://linux.do/t/topic/847468
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;标题: 秘密花园园丁邀请函
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;作者: Neo
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;保存时间: 2026-03-11T05:00:00Z
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;标签: [linuxdo]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;评论数: 100
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;来源&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://linux.do/t/topic/847468&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;标题&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;秘密花园园丁邀请函&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;作者&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Neo&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;保存时间&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;ld&#34;&gt;2026-03-11T05:00:00Z&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;标签&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;l&#34;&gt;linuxdo]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;评论数&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gh&#34;&gt;# 2 秘密花园园丁邀请函
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[帖子正文内容...]
@@ -1317,7 +1317,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
         <item>
         <title>2026 甲骨文一条龙服务经验分享和教程推荐</title>
         <link>https://jenboy.github.io/p/2026-%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%80%E6%9D%A1%E9%BE%99%E6%9C%8D%E5%8A%A1%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/</link>
-        <pubDate>Thu, 25 Jun 2026 02:31:23 +0000</pubDate>
+        <pubDate>Thu, 09 Jul 2026 08:18:06 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/2026-%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%80%E6%9D%A1%E9%BE%99%E6%9C%8D%E5%8A%A1%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/</guid>
         <description>&lt;h1 id=&#34;甲骨文云账号注册与实例配置完整教程2026-年-6-月&#34;&gt;甲骨文云账号注册与实例配置完整教程（2026 年 6 月）
@@ -1882,7 +1882,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
         <item>
         <title>CF Worker部署DDNS主控</title>
         <link>https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/</link>
-        <pubDate>Thu, 25 Jun 2026 02:31:23 +0000</pubDate>
+        <pubDate>Thu, 09 Jul 2026 08:18:06 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/</guid>
         <description>&lt;h1 id=&#34;ddns-worker轻量级-cloudflare-ddns-工具部署指南&#34;&gt;DDNS-Worker：轻量级 CloudFlare DDNS 工具部署指南
@@ -2029,7 +2029,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
         <item>
         <title>使用Oracle免费服务器部署CLIProxyAPI并配置域名，小白也能看懂</title>
         <link>https://jenboy.github.io/p/%E4%BD%BF%E7%94%A8oracle%E5%85%8D%E8%B4%B9%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2cliproxyapi%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82/</link>
-        <pubDate>Thu, 25 Jun 2026 02:31:23 +0000</pubDate>
+        <pubDate>Thu, 09 Jul 2026 08:18:06 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E4%BD%BF%E7%94%A8oracle%E5%85%8D%E8%B4%B9%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2cliproxyapi%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82/</guid>
         <description>&lt;h1 id=&#34;oracle-免费服务器部署-cliproxyapi-全教程含域名-ssl-配置&#34;&gt;Oracle 免费服务器部署 CLIProxyAPI 全教程（含域名 SSL 配置）
@@ -2736,6 +2736,299 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/h3&gt;&lt;p&gt;见官方文档，可以在 CLIProxyApi 的管理界面查看支持的模型。
 &lt;a class=&#34;link&#34; href=&#34;https://docs.cherry-ai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;项目简介 | Cherry Studio&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>2026-07-09</title>
+        <link>https://jenboy.github.io/p/2026-07-09/</link>
+        <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://jenboy.github.io/p/2026-07-09/</guid>
+        <description>&lt;img src="https://jenboy.github.io/p/2026-07-09/pics/PQ%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97.png" alt="Featured image of post 2026-07-09" /&gt;&lt;h1 id=&#34;告别-vlookup-地狱用-power-querysumifs-轻松搞定多品牌每日数据汇总&#34;&gt;告别 VLOOKUP 地狱：用 Power Query+SUMIFS 轻松搞定多品牌每日数据汇总
+&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;从 30+ 个外部文件自动取数，一个公式拖到底，数据自动刷新&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;一个让人头大的场景&#34;&gt;一个让人头大的场景
+&lt;/h2&gt;&lt;p&gt;想象一下这个画面：&lt;/p&gt;
+&lt;p&gt;你每天早上打开电脑，面对的是这样一个文件夹结构：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;D:\Data\Reports\Month\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── 1\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── File01.xls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── File02.xls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── File03.xls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── …
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── 2\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── File01.xls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── File02.xls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── …
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└── 31\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ├── File01.xls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    └── …
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;多个品牌 × 31 天 = 几百个 Excel 文件。每个文件里都有一张数据工作表，里面有成百上千行商品数据。&lt;/p&gt;
+&lt;p&gt;而你的任务，是把所有这些数据汇总到一张表里——&lt;strong&gt;多个品牌各占一组列，31 天横向排列，每天 3 个指标&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;如果用传统方法——手动打开每个文件，复制粘贴，或者写一个长长的 VLOOKUP 链——光是想想就让人头皮发麻。&lt;/p&gt;
+&lt;p&gt;今天，我分享一个经过实战检验的方案，用 &lt;strong&gt;Power Query + SUMIFS&lt;/strong&gt; 的组合拳，一次性解决这个问题。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;整体思路&#34;&gt;整体思路
+&lt;/h2&gt;&lt;p&gt;我们的方案分为两大步：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;用 Power Query 把所有外部文件“吞”进来&lt;/strong&gt;，合并成一张本地数据表&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;用 SUMIFS 公式从本地表中取数&lt;/strong&gt;，自动匹配品牌、日期、商品编号和指标&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这样做的好处是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;一次配置，永久使用&lt;/strong&gt;：以后每天新增数据，只需点击“刷新”&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;公式简洁&lt;/strong&gt;：每个单元格一个公式，向右拖、向下拖，自动填充&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;告别跨文件链接&lt;/strong&gt;：不再有打开文件时的卡顿和弹窗&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;第一步准备路径表&#34;&gt;第一步：准备路径表
+&lt;/h2&gt;&lt;p&gt;因为你的文件是“一天一个文件夹”的结构，Power Query 无法直接遍历多级子文件夹。所以我们需要先做一个&lt;strong&gt;路径表&lt;/strong&gt;，告诉 PQ 每个日期对应的文件夹在哪。&lt;/p&gt;
+&lt;p&gt;新建一个工作表，命名为 &lt;code&gt;路径表&lt;/code&gt;：&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;日期&lt;/th&gt;
+					&lt;th style=&#34;text-align: left&#34;&gt;文件路径&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;D:\Data\Reports\Month\1\&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;2&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;D:\Data\Reports\Month\2\&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;…&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;…&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;31&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;D:\Data\Reports\Month\31\&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;偷懒技巧&lt;/strong&gt;：在 B2 输入公式，然后双击填充柄自动生成全部 31 行：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;=&amp;#34;D:\Data\Reports\Month\&amp;#34;&amp;amp;A2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;第二步power-query-合并数据&#34;&gt;第二步：Power Query 合并数据
+&lt;/h2&gt;&lt;h3 id=&#34;加载路径表到-pq&#34;&gt;加载路径表到 PQ
+&lt;/h3&gt;&lt;p&gt;选中 &lt;code&gt;路径表&lt;/code&gt; 的数据区域 → 点击 &lt;strong&gt;数据&lt;/strong&gt; → &lt;strong&gt;来自表格/区域&lt;/strong&gt;，进入 PQ 编辑器。&lt;/p&gt;
+&lt;h3 id=&#34;读取每个文件夹里的所有文件&#34;&gt;读取每个文件夹里的所有文件
+&lt;/h3&gt;&lt;p&gt;添加自定义列，公式为：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;=Folder.Files([文件路径])
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;然后展开这个新列，只保留 &lt;code&gt;Content&lt;/code&gt;（文件内容）和&lt;code&gt;Name&lt;/code&gt;（文件名）。&lt;/p&gt;
+&lt;h3 id=&#34;读取-excel-文件内容&#34;&gt;读取 Excel 文件内容
+&lt;/h3&gt;&lt;p&gt;再添加一个自定义列，读取每个文件的二进制内容：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;=Excel.Workbook([Content], true, true)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;展开后，筛选需要的工作表，再展开数据。&lt;/p&gt;
+&lt;h3 id=&#34;提取品牌和日期&#34;&gt;提取品牌和日期
+&lt;/h3&gt;&lt;p&gt;从文件名中提取信息：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;品牌&lt;/strong&gt;：取文件名的字母部分&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;日期&lt;/strong&gt;：取文件名的两位数字部分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;关键公式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;品牌提取：&lt;code&gt;=Text.Start([Name], Text.Length([Name]) - 2)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;日期提取：&lt;code&gt;=Number.FromText(Text.End([Name], 2))&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;保留需要的列&#34;&gt;保留需要的列
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;⚠️ &lt;strong&gt;注意&lt;/strong&gt;：因为源文件是 &lt;code&gt;.xls&lt;/code&gt; 格式，PQ 里列名可能显示为&lt;code&gt;Column1&lt;/code&gt;、&lt;code&gt;Column2&lt;/code&gt;……你需要根据数据内容手动识别对应的列。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;逆透视把三列变成行&#34;&gt;逆透视（把三列变成行）
+&lt;/h3&gt;&lt;p&gt;选中“指标 1”、“指标 2”、“指标 3”三列，点击 &lt;strong&gt;逆透视其他列&lt;/strong&gt;。这样三个指标列就变成了“指标”和“值”两列。&lt;/p&gt;
+&lt;p&gt;然后把“指标”列里的名称替换成中文名称。&lt;/p&gt;
+&lt;h3 id=&#34;加载到工作表&#34;&gt;加载到工作表
+&lt;/h3&gt;&lt;p&gt;点击 &lt;strong&gt;关闭并上载&lt;/strong&gt;，将数据加载到新工作表，命名为 &lt;code&gt;数据源&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;现在你有了一个结构清晰的本地数据表：&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;品牌&lt;/th&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;日期&lt;/th&gt;
+					&lt;th style=&#34;text-align: left&#34;&gt;商品编码&lt;/th&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;指标&lt;/th&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;值&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;A&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;ITEM001&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;指标 1&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;5&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;A&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;ITEM001&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;指标 2&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;20&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;A&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;ITEM001&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;指标 3&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;150&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;A&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;2&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;ITEM001&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;指标 1&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;3&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;…&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;…&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;…&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;…&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;…&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;第三步sumifs-公式取数&#34;&gt;第三步：SUMIFS 公式取数
+&lt;/h2&gt;&lt;h3 id=&#34;3-列一组&#34;&gt;3 列一组
+&lt;/h3&gt;&lt;p&gt;如果你的分店工作表是&lt;strong&gt;3 列一组&lt;/strong&gt;（指标 1、指标 2、指标 3），数据从 F 列开始：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;=IF(SUMIFS(数据源!$E:$E, 数据源!$A:$A,&amp;#34;品牌A&amp;#34;, 数据源!$B:$B,INT((COLUMN()-6)/3)+1, 数据源!$C:$C,$A4, 数据源!$D:$D,CHOOSE(MOD(COLUMN()-6,3)+1,&amp;#34;指标1&amp;#34;,&amp;#34;指标2&amp;#34;,&amp;#34;指标3&amp;#34;))=0,&amp;#34;&amp;#34;,SUMIFS(数据源!$E:$E, 数据源!$A:$A,&amp;#34;品牌A&amp;#34;, 数据源!$B:$B,INT((COLUMN()-6)/3)+1, 数据源!$C:$C,$A4, 数据源!$D:$D,CHOOSE(MOD(COLUMN()-6,3)+1,&amp;#34;指标1&amp;#34;,&amp;#34;指标2&amp;#34;,&amp;#34;指标3&amp;#34;)))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;4-列一组&#34;&gt;4 列一组
+&lt;/h3&gt;&lt;p&gt;如果你的分店工作表是&lt;strong&gt;4 列一组&lt;/strong&gt;（指标 1、指标 2、指标 3、指标 4）：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;=IF(SUMIFS(数据源!$E:$E, 数据源!$A:$A,&amp;#34;品牌A&amp;#34;, 数据源!$B:$B,INT((COLUMN()-6)/4)+1, 数据源!$C:$C,$A4, 数据源!$D:$D,CHOOSE(MOD(COLUMN()-6,4)+1,&amp;#34;指标1&amp;#34;,&amp;#34;指标2&amp;#34;,&amp;#34;指标3&amp;#34;,&amp;#34;指标4&amp;#34;))=0,&amp;#34;&amp;#34;,SUMIFS(数据源!$E:$E, 数据源!$A:$A,&amp;#34;品牌A&amp;#34;, 数据源!$B:$B,INT((COLUMN()-6)/4)+1, 数据源!$C:$C,$A4, 数据源!$D:$D,CHOOSE(MOD(COLUMN()-6,4)+1,&amp;#34;指标1&amp;#34;,&amp;#34;指标2&amp;#34;,&amp;#34;指标3&amp;#34;,&amp;#34;指标4&amp;#34;)))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;公式解析&#34;&gt;公式解析
+&lt;/h3&gt;&lt;p&gt;这个公式的核心逻辑：&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th style=&#34;text-align: left&#34;&gt;部分&lt;/th&gt;
+					&lt;th style=&#34;text-align: left&#34;&gt;作用&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;数据源!$E:$E&lt;/code&gt;&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;取“值”列&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;数据源!$A:$A,&amp;quot;品牌A&amp;quot;&lt;/code&gt;&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;品牌匹配&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;数据源!$B:$B,INT((COLUMN()-6)/3)+1&lt;/code&gt;&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;自动计算日期&lt;/strong&gt;：F 列→1 号，I 列→2 号……&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;数据源!$C:$C,$A4&lt;/code&gt;&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;商品编码匹配&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;数据源!$D:$D,CHOOSE(…)&lt;/code&gt;&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;自动匹配指标&lt;/strong&gt;：第 1 列→指标 1，第 2 列→指标 2……&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;IF(…=0,&amp;quot;&amp;quot;,…)&lt;/code&gt;&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;没数据时显示为空，而不是 0&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;品牌对照&#34;&gt;品牌对照
+&lt;/h3&gt;&lt;p&gt;根据你的实际品牌列表，在公式中替换 &lt;code&gt;&amp;quot;品牌A&amp;quot;&lt;/code&gt; 为对应的品牌标识即可。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;常见问题排查&#34;&gt;常见问题排查
+&lt;/h2&gt;&lt;h3 id=&#34;q1公式返回-0但数据明明存在&#34;&gt;Q1：公式返回 0，但数据明明存在
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;原因&lt;/strong&gt;：公式中的指标名称与数据源中的名称不一致。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决&lt;/strong&gt;：检查数据源的“指标”列实际显示的文字是什么，然后在公式中完全照抄。&lt;/p&gt;
+&lt;h3 id=&#34;q2公式返回-0用-countif-测试却是0&#34;&gt;Q2：公式返回 0，用 COUNTIF 测试却是&amp;gt;0
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;原因&lt;/strong&gt;：多个条件同时满足的记录不存在（比如该商品在品牌 A 下，但 1 号没有数据）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决&lt;/strong&gt;：先用 COUNTIFS 测试组合条件，确认该商品在该品牌该日期是否有数据。&lt;/p&gt;
+&lt;h3 id=&#34;q3日期算错了&#34;&gt;Q3：日期算错了
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;原因&lt;/strong&gt;：数据起始列不是 F 列，或者偏移量 &lt;code&gt;-6&lt;/code&gt; 没改对。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决&lt;/strong&gt;：数据从哪列开始，&lt;code&gt;-6&lt;/code&gt; 就改成对应的列号（B=2，F=6，H=8……）。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;维护与扩展&#34;&gt;维护与扩展
+&lt;/h2&gt;&lt;h3 id=&#34;每天新增数据&#34;&gt;每天新增数据
+&lt;/h3&gt;&lt;p&gt;把新文件放入对应的日期文件夹 → 在 Excel 中点击 &lt;strong&gt;数据&lt;/strong&gt; → &lt;strong&gt;全部刷新&lt;/strong&gt; → 所有分店数据自动更新。&lt;/p&gt;
+&lt;h3 id=&#34;下个月&#34;&gt;下个月
+&lt;/h3&gt;&lt;p&gt;复制 &lt;code&gt;路径表&lt;/code&gt;，把公式中的月份文件夹名改成下个月 → 刷新 PQ → 所有数据自动更新。&lt;/p&gt;
+&lt;h3 id=&#34;新增品牌&#34;&gt;新增品牌
+&lt;/h3&gt;&lt;p&gt;直接在文件夹里放入新品牌的 &lt;code&gt;.xls&lt;/code&gt; 文件 → 刷新 PQ → 品牌列自动出现新品牌。分店工作表中把公式里的品牌名改一下即可。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;写在最后&#34;&gt;写在最后
+&lt;/h2&gt;&lt;p&gt;这套方案的核心理念是：&lt;strong&gt;把“读取外部文件”和“数据展示”分离&lt;/strong&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Power Query 负责“数据搬运”——从几百个文件中读取、清洗、合并数据&lt;/li&gt;
+&lt;li&gt;SUMIFS 公式负责“数据展示”——根据行列位置自动匹配和显示&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这样做的好处是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;逻辑清晰&lt;/strong&gt;：数据层和展示层各司其职&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;维护简单&lt;/strong&gt;：改路径只改路径表，改公式只改分店表&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;性能优秀&lt;/strong&gt;：数据加载一次，公式全部基于本地表计算&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果你也有类似的多文件汇总需求，不妨试试这个方案。配置一次，受益整个月（甚至更久）。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;希望这篇文章对你有帮助。如果有任何问题，欢迎在评论区交流！&lt;/em&gt; 😊&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -7187,8 +7480,8 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
         <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/day-07-%E5%AF%B9%E8%B1%A1/</guid>
-        <description>&lt;img src="https://jenboy.github.io/p/day-07-%E5%AF%B9%E8%B1%A1/pics/file-20260621092718061.png" alt="Featured image of post Day 07 对象" /&gt;&lt;h1 id=&#34;面向对象入门&#34;&gt;面向对象入门
-&lt;/h1&gt;&lt;h2 id=&#34;面向对象概述&#34;&gt;面向对象概述
+        <description>&lt;img src="https://jenboy.github.io/p/day-07-%E5%AF%B9%E8%B1%A1/pics/file-20260621092718061.png" alt="Featured image of post Day 07 对象" /&gt;&lt;h1 id=&#34;1-面向对象入门&#34;&gt;1 面向对象入门
+&lt;/h1&gt;&lt;h2 id=&#34;11-面向对象概述&#34;&gt;1.1 面向对象概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;面向过程 分析出解决问题所需要的步骤，然后用函数把这些步骤一步一步实现，使用的时候一个一个依次调用&lt;/li&gt;
 &lt;li&gt;面向对象 是指在计算机程序中，模拟现实世界中的概念，借助对象的描述在计算机程序中用类似的实体模拟现实世界中的实体&lt;/li&gt;
@@ -7199,7 +7492,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
     &gt;面向对象&lt;/a&gt; 的方法。&lt;/li&gt;
 &lt;li&gt;对象&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;类&#34;&gt;类
+&lt;h2 id=&#34;12-类&#34;&gt;1.2 类
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;类是一组具有相同 (相似) 属性和行为事物的统称
 &lt;ul&gt;
@@ -7208,7 +7501,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;对象&#34;&gt;对象
+&lt;h2 id=&#34;13-对象&#34;&gt;1.3 对象
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;对象是具体存在的事物
 &lt;ul&gt;
@@ -7217,13 +7510,13 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;类和对象的关系&#34;&gt;类和对象的关系
+&lt;h2 id=&#34;14-类和对象的关系&#34;&gt;1.4 类和对象的关系
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;类是对象的模板，是对对象的抽象描述&lt;/li&gt;
 &lt;li&gt;对象是类的实例，是类的具体体现&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;创建类&#34;&gt;创建类
-&lt;/h2&gt;&lt;h3 id=&#34;类的组成&#34;&gt;类的组成
+&lt;h2 id=&#34;15-创建类&#34;&gt;1.5 创建类
+&lt;/h2&gt;&lt;h3 id=&#34;151-类的组成&#34;&gt;1.5.1 类的组成
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;类名&lt;/li&gt;
 &lt;li&gt;属性&lt;/li&gt;
@@ -7293,8 +7586,8 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;对象-1&#34;&gt;对象
-&lt;/h1&gt;&lt;h2 id=&#34;创建对象语法&#34;&gt;创建对象语法
+&lt;/div&gt;&lt;h1 id=&#34;2-对象&#34;&gt;2 对象
+&lt;/h1&gt;&lt;h2 id=&#34;21-创建对象语法&#34;&gt;2.1 创建对象语法
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -7303,7 +7596,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;类名&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;对象名&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;类名&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;参数&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;创建-dog-对象&#34;&gt;创建 Dog 对象
+&lt;/div&gt;&lt;h2 id=&#34;22-创建-dog-对象&#34;&gt;2.2 创建 Dog 对象
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -7312,7 +7605,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Dog&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dog&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Dog&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;创建一个对象内存图&#34;&gt;创建一个对象内存图
+&lt;/div&gt;&lt;h2 id=&#34;23-创建一个对象内存图&#34;&gt;2.3 创建一个对象内存图
 &lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/day-07-%E5%AF%B9%E8%B1%A1/pics/file-20260621092718061.png&#34;
 	width=&#34;1500&#34;
 	height=&#34;870&#34;
@@ -7325,7 +7618,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 		data-flex-basis=&#34;413px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;创建多个对象内存图&#34;&gt;创建多个对象内存图
+&lt;h2 id=&#34;24-创建多个对象内存图&#34;&gt;2.4 创建多个对象内存图
 &lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://jenboy.github.io/p/day-07-%E5%AF%B9%E8%B1%A1/pics/file-20260621092718063.png&#34;
 	width=&#34;1495&#34;
 	height=&#34;850&#34;
@@ -7338,16 +7631,16 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 		data-flex-basis=&#34;422px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;对象的属性&#34;&gt;对象的属性
-&lt;/h2&gt;&lt;h3 id=&#34;概述&#34;&gt;概述
+&lt;h2 id=&#34;25-对象的属性&#34;&gt;2.5 对象的属性
+&lt;/h2&gt;&lt;h3 id=&#34;251-概述&#34;&gt;2.5.1 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;使用类创建出来的对象称为类的实例&lt;/li&gt;
 &lt;li&gt;这样的对象中的属性称为对象的实例变量/成员变量&lt;/li&gt;
 &lt;li&gt;定义的位置在类中方法外&lt;/li&gt;
 &lt;li&gt;一个类可以创建很多个对象，每个对象都拥有自己的属性&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;访问属性&#34;&gt;访问属性
-&lt;/h3&gt;&lt;h4 id=&#34;读取属性&#34;&gt;读取属性
+&lt;h3 id=&#34;252-访问属性&#34;&gt;2.5.2 访问属性
+&lt;/h3&gt;&lt;h4 id=&#34;2521-读取属性&#34;&gt;2.5.2.1 读取属性
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -7362,7 +7655,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dog&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;修改属性&#34;&gt;修改属性
+&lt;/div&gt;&lt;h4 id=&#34;2522-修改属性&#34;&gt;2.5.2.2 修改属性
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -7377,7 +7670,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dog&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;实例变量和局部变量&#34;&gt;实例变量和局部变量
+&lt;/div&gt;&lt;h2 id=&#34;26-实例变量和局部变量&#34;&gt;2.6 实例变量和局部变量
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;实例变量
 &lt;ul&gt;
@@ -7432,8 +7725,8 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 			&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;对象的方法&#34;&gt;对象的方法
-&lt;/h2&gt;&lt;h3 id=&#34;概述-1&#34;&gt;概述
+&lt;h2 id=&#34;27-对象的方法&#34;&gt;2.7 对象的方法
+&lt;/h2&gt;&lt;h3 id=&#34;271-概述&#34;&gt;2.7.1 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;对象有属性
 &lt;ul&gt;
@@ -7448,17 +7741,17 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;li&gt;实例方法定义在类中方法外&lt;/li&gt;
 &lt;li&gt;实例方法需要使用对象调用&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;实例方法的特点&#34;&gt;实例方法的特点
+&lt;h3 id=&#34;272-实例方法的特点&#34;&gt;2.7.2 实例方法的特点
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;实例方法不再使用 static 修饰&lt;/li&gt;
 &lt;li&gt;实例方法需要使用对象调用&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;方法重载&#34;&gt;方法重载
-&lt;/h1&gt;&lt;h2 id=&#34;概述-2&#34;&gt;概述
+&lt;h1 id=&#34;3-方法重载&#34;&gt;3 方法重载
+&lt;/h1&gt;&lt;h2 id=&#34;31-概述&#34;&gt;3.1 概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;在同一个类中，出现了多个名字相同的方法，但是他们的参数列表不同&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;特征&#34;&gt;特征
+&lt;h2 id=&#34;32-特征&#34;&gt;3.2 特征
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;在同一个类中&lt;/li&gt;
 &lt;li&gt;方法名字相同&lt;/li&gt;
@@ -7471,7 +7764,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/li&gt;
 &lt;li&gt;和修饰符、返回值类型无关&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;案例&#34;&gt;案例
+&lt;h2 id=&#34;33-案例&#34;&gt;3.3 案例
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -7538,14 +7831,14 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;构造器&#34;&gt;构造器
-&lt;/h1&gt;&lt;h2 id=&#34;概述-3&#34;&gt;概述
+&lt;/div&gt;&lt;h1 id=&#34;4-构造器&#34;&gt;4 构造器
+&lt;/h1&gt;&lt;h2 id=&#34;41-概述&#34;&gt;4.1 概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;构造方法==构造器&lt;/li&gt;
 &lt;li&gt;在对象创建的过程中完成对象属性的初始化&lt;/li&gt;
 &lt;li&gt;构造器在一个类中可以存在多个，构成方法的重载&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;构造器入门案例&#34;&gt;构造器入门案例
+&lt;h2 id=&#34;42-构造器入门案例&#34;&gt;4.2 构造器入门案例
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -7680,7 +7973,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;构造器案例-02&#34;&gt;构造器案例 02
+&lt;/div&gt;&lt;h3 id=&#34;421-构造器案例-02&#34;&gt;4.2.1 构造器案例 02
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -7851,15 +8144,15 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;构造器的特点&#34;&gt;构造器的特点
+&lt;/div&gt;&lt;h2 id=&#34;43-构造器的特点&#34;&gt;4.3 构造器的特点
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;构造器的名字和类名必须完全一致&lt;/li&gt;
 &lt;li&gt;构造器没有返回值和返回值类型&lt;/li&gt;
 &lt;li&gt;如果自己没有显示定义任何构造器,JVM 赠送一个空参构造器&lt;/li&gt;
 &lt;li&gt;如果自己显示定义了任何一个构造器，Jvm 不再赠送空参构造器&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;this&#34;&gt;This
-&lt;/h1&gt;&lt;h2 id=&#34;概述-4&#34;&gt;概述
+&lt;h1 id=&#34;5-this&#34;&gt;5 This
+&lt;/h1&gt;&lt;h2 id=&#34;51-概述&#34;&gt;5.1 概述
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Java 关键字 this，表示当前对象
 &lt;ul&gt;
@@ -7867,8 +8160,8 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;this-的作用&#34;&gt;This 的作用
-&lt;/h2&gt;&lt;h3 id=&#34;调用属性常用&#34;&gt;调用属性【常用】
+&lt;h2 id=&#34;52-this-的作用&#34;&gt;5.2 This 的作用
+&lt;/h2&gt;&lt;h3 id=&#34;521-调用属性常用&#34;&gt;5.2.1 调用属性【常用】
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -7877,7 +8170,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;实例属性&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;调用方法不常用&#34;&gt;调用方法【不常用】
+&lt;/div&gt;&lt;h3 id=&#34;522-调用方法不常用&#34;&gt;5.2.2 调用方法【不常用】
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -7886,7 +8179,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;实例方法&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;调用构造器不常用&#34;&gt;调用构造器【不常用】
+&lt;/div&gt;&lt;h3 id=&#34;523-调用构造器不常用&#34;&gt;5.2.3 调用构造器【不常用】
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1

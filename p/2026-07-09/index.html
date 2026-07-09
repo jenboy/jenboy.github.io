@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="告别VLOOKUP地狱：用Power Query+SUMIFS轻松搞定多品牌每日数据汇总">
+<title>2026-07-09</title>
+
+<link rel='canonical' href='https://jenboy.github.io/p/2026-07-09/'>
+
+<link rel="stylesheet" href="/scss/style.min.6998e4e648ca13c26692fd732a596048e487a90378e5ec1f10b8a5899f478b60.css"><meta property='og:title' content="2026-07-09">
+<meta property='og:description' content="告别VLOOKUP地狱：用Power Query+SUMIFS轻松搞定多品牌每日数据汇总">
+<meta property='og:url' content='https://jenboy.github.io/p/2026-07-09/'>
+<meta property='og:site_name' content='Xao的碎碎念'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='excel' /><meta property='article:tag' content='wps' /><meta property='article:published_time' content='2026-07-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-07-09T16:17:34&#43;08:00'/><meta property='og:image' content='https://jenboy.github.io/p/2026-07-09/pics/PQ%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97.png' />
+<meta name="twitter:title" content="2026-07-09">
+<meta name="twitter:description" content="告别VLOOKUP地狱：用Power Query+SUMIFS轻松搞定多品牌每日数据汇总"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://jenboy.github.io/p/2026-07-09/pics/PQ%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97.png' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_8e904100b37f7870.png" width="300"
+                            height="304" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">💭</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Xao的碎碎念</a></h1>
+            <h2 class="site-description">情绪垃圾桶</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/jenboy'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:hulatang@linux.do'
+                        target="_blank"
+                        title="Email"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页 | Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档 | Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/tags/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+                
+                <span>标签 | Tags</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E9%93%BE-links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链 | Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索 | Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E-about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于 | About</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#一个让人头大的场景">一个让人头大的场景</a></li>
+    <li><a href="#整体思路">整体思路</a></li>
+    <li><a href="#第一步准备路径表">第一步：准备路径表</a></li>
+    <li><a href="#第二步power-query-合并数据">第二步：Power Query 合并数据</a>
+      <ol>
+        <li><a href="#加载路径表到-pq">加载路径表到 PQ</a></li>
+        <li><a href="#读取每个文件夹里的所有文件">读取每个文件夹里的所有文件</a></li>
+        <li><a href="#读取-excel-文件内容">读取 Excel 文件内容</a></li>
+        <li><a href="#提取品牌和日期">提取品牌和日期</a></li>
+        <li><a href="#保留需要的列">保留需要的列</a></li>
+        <li><a href="#逆透视把三列变成行">逆透视（把三列变成行）</a></li>
+        <li><a href="#加载到工作表">加载到工作表</a></li>
+      </ol>
+    </li>
+    <li><a href="#第三步sumifs-公式取数">第三步：SUMIFS 公式取数</a>
+      <ol>
+        <li><a href="#3-列一组">3 列一组</a></li>
+        <li><a href="#4-列一组">4 列一组</a></li>
+        <li><a href="#公式解析">公式解析</a></li>
+        <li><a href="#品牌对照">品牌对照</a></li>
+      </ol>
+    </li>
+    <li><a href="#常见问题排查">常见问题排查</a>
+      <ol>
+        <li><a href="#q1公式返回-0但数据明明存在">Q1：公式返回 0，但数据明明存在</a></li>
+        <li><a href="#q2公式返回-0用-countif-测试却是0">Q2：公式返回 0，用 COUNTIF 测试却是&gt;0</a></li>
+        <li><a href="#q3日期算错了">Q3：日期算错了</a></li>
+      </ol>
+    </li>
+    <li><a href="#维护与扩展">维护与扩展</a>
+      <ol>
+        <li><a href="#每天新增数据">每天新增数据</a></li>
+        <li><a href="#下个月">下个月</a></li>
+        <li><a href="#新增品牌">新增品牌</a></li>
+      </ol>
+    </li>
+    <li><a href="#写在最后">写在最后</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/2026-07-09/">
+                <img src="/p/2026-07-09/pics/PQ%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97_hu_6e911be9f788482a.png"
+                        srcset="/p/2026-07-09/pics/PQ%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97_hu_6e911be9f788482a.png 800w, /p/2026-07-09/pics/PQ%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97_hu_a78a8f85b600923.png 1600w"
+                        width="800" 
+                        height="450" 
+                        loading="lazy"
+                        alt="Featured image of post 2026-07-09" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/excel/" >
+                Excel
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/2026-07-09/">2026-07-09</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            告别VLOOKUP地狱：用Power Query&#43;SUMIFS轻松搞定多品牌每日数据汇总
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-07-09T00:00:00Z'>2026-07-09</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 6 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="告别-vlookup-地狱用-power-querysumifs-轻松搞定多品牌每日数据汇总">告别 VLOOKUP 地狱：用 Power Query+SUMIFS 轻松搞定多品牌每日数据汇总
+</h1><blockquote>
+<p>从 30+ 个外部文件自动取数，一个公式拖到底，数据自动刷新</p>
+</blockquote>
+<h2 id="一个让人头大的场景">一个让人头大的场景
+</h2><p>想象一下这个画面：</p>
+<p>你每天早上打开电脑，面对的是这样一个文件夹结构：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">D:\Data\Reports\Month\
+</span></span><span class="line"><span class="cl">├── 1\
+</span></span><span class="line"><span class="cl">│   ├── File01.xls
+</span></span><span class="line"><span class="cl">│   ├── File02.xls
+</span></span><span class="line"><span class="cl">│   ├── File03.xls
+</span></span><span class="line"><span class="cl">│   └── …
+</span></span><span class="line"><span class="cl">├── 2\
+</span></span><span class="line"><span class="cl">│   ├── File01.xls
+</span></span><span class="line"><span class="cl">│   ├── File02.xls
+</span></span><span class="line"><span class="cl">│   └── …
+</span></span><span class="line"><span class="cl">└── 31\
+</span></span><span class="line"><span class="cl">    ├── File01.xls
+</span></span><span class="line"><span class="cl">    └── …
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>多个品牌 × 31 天 = 几百个 Excel 文件。每个文件里都有一张数据工作表，里面有成百上千行商品数据。</p>
+<p>而你的任务，是把所有这些数据汇总到一张表里——<strong>多个品牌各占一组列，31 天横向排列，每天 3 个指标</strong>。</p>
+<p>如果用传统方法——手动打开每个文件，复制粘贴，或者写一个长长的 VLOOKUP 链——光是想想就让人头皮发麻。</p>
+<p>今天，我分享一个经过实战检验的方案，用 <strong>Power Query + SUMIFS</strong> 的组合拳，一次性解决这个问题。</p>
+<hr>
+<h2 id="整体思路">整体思路
+</h2><p>我们的方案分为两大步：</p>
+<ol>
+<li><strong>用 Power Query 把所有外部文件“吞”进来</strong>，合并成一张本地数据表</li>
+<li><strong>用 SUMIFS 公式从本地表中取数</strong>，自动匹配品牌、日期、商品编号和指标</li>
+</ol>
+<p>这样做的好处是：</p>
+<ul>
+<li><strong>一次配置，永久使用</strong>：以后每天新增数据，只需点击“刷新”</li>
+<li><strong>公式简洁</strong>：每个单元格一个公式，向右拖、向下拖，自动填充</li>
+<li><strong>告别跨文件链接</strong>：不再有打开文件时的卡顿和弹窗</li>
+</ul>
+<hr>
+<h2 id="第一步准备路径表">第一步：准备路径表
+</h2><p>因为你的文件是“一天一个文件夹”的结构，Power Query 无法直接遍历多级子文件夹。所以我们需要先做一个<strong>路径表</strong>，告诉 PQ 每个日期对应的文件夹在哪。</p>
+<p>新建一个工作表，命名为 <code>路径表</code>：</p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th style="text-align: center">日期</th>
+					<th style="text-align: left">文件路径</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: center">1</td>
+					<td style="text-align: left"><code>D:\Data\Reports\Month\1\</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: center">2</td>
+					<td style="text-align: left"><code>D:\Data\Reports\Month\2\</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: center">…</td>
+					<td style="text-align: left">…</td>
+			</tr>
+			<tr>
+					<td style="text-align: center">31</td>
+					<td style="text-align: left"><code>D:\Data\Reports\Month\31\</code></td>
+			</tr>
+	</tbody>
+</table></div>
+<p><strong>偷懒技巧</strong>：在 B2 输入公式，然后双击填充柄自动生成全部 31 行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">=&#34;D:\Data\Reports\Month\&#34;&amp;A2
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="第二步power-query-合并数据">第二步：Power Query 合并数据
+</h2><h3 id="加载路径表到-pq">加载路径表到 PQ
+</h3><p>选中 <code>路径表</code> 的数据区域 → 点击 <strong>数据</strong> → <strong>来自表格/区域</strong>，进入 PQ 编辑器。</p>
+<h3 id="读取每个文件夹里的所有文件">读取每个文件夹里的所有文件
+</h3><p>添加自定义列，公式为：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">=Folder.Files([文件路径])
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后展开这个新列，只保留 <code>Content</code>（文件内容）和<code>Name</code>（文件名）。</p>
+<h3 id="读取-excel-文件内容">读取 Excel 文件内容
+</h3><p>再添加一个自定义列，读取每个文件的二进制内容：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">=Excel.Workbook([Content], true, true)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>展开后，筛选需要的工作表，再展开数据。</p>
+<h3 id="提取品牌和日期">提取品牌和日期
+</h3><p>从文件名中提取信息：</p>
+<ul>
+<li><strong>品牌</strong>：取文件名的字母部分</li>
+<li><strong>日期</strong>：取文件名的两位数字部分</li>
+</ul>
+<p>关键公式：</p>
+<ul>
+<li>品牌提取：<code>=Text.Start([Name], Text.Length([Name]) - 2)</code></li>
+<li>日期提取：<code>=Number.FromText(Text.End([Name], 2))</code></li>
+</ul>
+<h3 id="保留需要的列">保留需要的列
+</h3><blockquote>
+<p>⚠️ <strong>注意</strong>：因为源文件是 <code>.xls</code> 格式，PQ 里列名可能显示为<code>Column1</code>、<code>Column2</code>……你需要根据数据内容手动识别对应的列。</p>
+</blockquote>
+<h3 id="逆透视把三列变成行">逆透视（把三列变成行）
+</h3><p>选中“指标 1”、“指标 2”、“指标 3”三列，点击 <strong>逆透视其他列</strong>。这样三个指标列就变成了“指标”和“值”两列。</p>
+<p>然后把“指标”列里的名称替换成中文名称。</p>
+<h3 id="加载到工作表">加载到工作表
+</h3><p>点击 <strong>关闭并上载</strong>，将数据加载到新工作表，命名为 <code>数据源</code>。</p>
+<p>现在你有了一个结构清晰的本地数据表：</p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th style="text-align: center">品牌</th>
+					<th style="text-align: center">日期</th>
+					<th style="text-align: left">商品编码</th>
+					<th style="text-align: center">指标</th>
+					<th style="text-align: center">值</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: center">A</td>
+					<td style="text-align: center">1</td>
+					<td style="text-align: left">ITEM001</td>
+					<td style="text-align: center">指标 1</td>
+					<td style="text-align: center">5</td>
+			</tr>
+			<tr>
+					<td style="text-align: center">A</td>
+					<td style="text-align: center">1</td>
+					<td style="text-align: left">ITEM001</td>
+					<td style="text-align: center">指标 2</td>
+					<td style="text-align: center">20</td>
+			</tr>
+			<tr>
+					<td style="text-align: center">A</td>
+					<td style="text-align: center">1</td>
+					<td style="text-align: left">ITEM001</td>
+					<td style="text-align: center">指标 3</td>
+					<td style="text-align: center">150</td>
+			</tr>
+			<tr>
+					<td style="text-align: center">A</td>
+					<td style="text-align: center">2</td>
+					<td style="text-align: left">ITEM001</td>
+					<td style="text-align: center">指标 1</td>
+					<td style="text-align: center">3</td>
+			</tr>
+			<tr>
+					<td style="text-align: center">…</td>
+					<td style="text-align: center">…</td>
+					<td style="text-align: left">…</td>
+					<td style="text-align: center">…</td>
+					<td style="text-align: center">…</td>
+			</tr>
+	</tbody>
+</table></div>
+<hr>
+<h2 id="第三步sumifs-公式取数">第三步：SUMIFS 公式取数
+</h2><h3 id="3-列一组">3 列一组
+</h3><p>如果你的分店工作表是<strong>3 列一组</strong>（指标 1、指标 2、指标 3），数据从 F 列开始：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">=IF(SUMIFS(数据源!$E:$E, 数据源!$A:$A,&#34;品牌A&#34;, 数据源!$B:$B,INT((COLUMN()-6)/3)+1, 数据源!$C:$C,$A4, 数据源!$D:$D,CHOOSE(MOD(COLUMN()-6,3)+1,&#34;指标1&#34;,&#34;指标2&#34;,&#34;指标3&#34;))=0,&#34;&#34;,SUMIFS(数据源!$E:$E, 数据源!$A:$A,&#34;品牌A&#34;, 数据源!$B:$B,INT((COLUMN()-6)/3)+1, 数据源!$C:$C,$A4, 数据源!$D:$D,CHOOSE(MOD(COLUMN()-6,3)+1,&#34;指标1&#34;,&#34;指标2&#34;,&#34;指标3&#34;)))
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="4-列一组">4 列一组
+</h3><p>如果你的分店工作表是<strong>4 列一组</strong>（指标 1、指标 2、指标 3、指标 4）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">=IF(SUMIFS(数据源!$E:$E, 数据源!$A:$A,&#34;品牌A&#34;, 数据源!$B:$B,INT((COLUMN()-6)/4)+1, 数据源!$C:$C,$A4, 数据源!$D:$D,CHOOSE(MOD(COLUMN()-6,4)+1,&#34;指标1&#34;,&#34;指标2&#34;,&#34;指标3&#34;,&#34;指标4&#34;))=0,&#34;&#34;,SUMIFS(数据源!$E:$E, 数据源!$A:$A,&#34;品牌A&#34;, 数据源!$B:$B,INT((COLUMN()-6)/4)+1, 数据源!$C:$C,$A4, 数据源!$D:$D,CHOOSE(MOD(COLUMN()-6,4)+1,&#34;指标1&#34;,&#34;指标2&#34;,&#34;指标3&#34;,&#34;指标4&#34;)))
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="公式解析">公式解析
+</h3><p>这个公式的核心逻辑：</p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th style="text-align: left">部分</th>
+					<th style="text-align: left">作用</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left"><code>数据源!$E:$E</code></td>
+					<td style="text-align: left">取“值”列</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>数据源!$A:$A,&quot;品牌A&quot;</code></td>
+					<td style="text-align: left">品牌匹配</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>数据源!$B:$B,INT((COLUMN()-6)/3)+1</code></td>
+					<td style="text-align: left"><strong>自动计算日期</strong>：F 列→1 号，I 列→2 号……</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>数据源!$C:$C,$A4</code></td>
+					<td style="text-align: left">商品编码匹配</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>数据源!$D:$D,CHOOSE(…)</code></td>
+					<td style="text-align: left"><strong>自动匹配指标</strong>：第 1 列→指标 1，第 2 列→指标 2……</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>IF(…=0,&quot;&quot;,…)</code></td>
+					<td style="text-align: left">没数据时显示为空，而不是 0</td>
+			</tr>
+	</tbody>
+</table></div>
+<h3 id="品牌对照">品牌对照
+</h3><p>根据你的实际品牌列表，在公式中替换 <code>&quot;品牌A&quot;</code> 为对应的品牌标识即可。</p>
+<hr>
+<h2 id="常见问题排查">常见问题排查
+</h2><h3 id="q1公式返回-0但数据明明存在">Q1：公式返回 0，但数据明明存在
+</h3><p><strong>原因</strong>：公式中的指标名称与数据源中的名称不一致。</p>
+<p><strong>解决</strong>：检查数据源的“指标”列实际显示的文字是什么，然后在公式中完全照抄。</p>
+<h3 id="q2公式返回-0用-countif-测试却是0">Q2：公式返回 0，用 COUNTIF 测试却是&gt;0
+</h3><p><strong>原因</strong>：多个条件同时满足的记录不存在（比如该商品在品牌 A 下，但 1 号没有数据）。</p>
+<p><strong>解决</strong>：先用 COUNTIFS 测试组合条件，确认该商品在该品牌该日期是否有数据。</p>
+<h3 id="q3日期算错了">Q3：日期算错了
+</h3><p><strong>原因</strong>：数据起始列不是 F 列，或者偏移量 <code>-6</code> 没改对。</p>
+<p><strong>解决</strong>：数据从哪列开始，<code>-6</code> 就改成对应的列号（B=2，F=6，H=8……）。</p>
+<hr>
+<h2 id="维护与扩展">维护与扩展
+</h2><h3 id="每天新增数据">每天新增数据
+</h3><p>把新文件放入对应的日期文件夹 → 在 Excel 中点击 <strong>数据</strong> → <strong>全部刷新</strong> → 所有分店数据自动更新。</p>
+<h3 id="下个月">下个月
+</h3><p>复制 <code>路径表</code>，把公式中的月份文件夹名改成下个月 → 刷新 PQ → 所有数据自动更新。</p>
+<h3 id="新增品牌">新增品牌
+</h3><p>直接在文件夹里放入新品牌的 <code>.xls</code> 文件 → 刷新 PQ → 品牌列自动出现新品牌。分店工作表中把公式里的品牌名改一下即可。</p>
+<hr>
+<h2 id="写在最后">写在最后
+</h2><p>这套方案的核心理念是：<strong>把“读取外部文件”和“数据展示”分离</strong>。</p>
+<ul>
+<li>Power Query 负责“数据搬运”——从几百个文件中读取、清洗、合并数据</li>
+<li>SUMIFS 公式负责“数据展示”——根据行列位置自动匹配和显示</li>
+</ul>
+<p>这样做的好处是：</p>
+<ol>
+<li><strong>逻辑清晰</strong>：数据层和展示层各司其职</li>
+<li><strong>维护简单</strong>：改路径只改路径表，改公式只改分店表</li>
+<li><strong>性能优秀</strong>：数据加载一次，公式全部基于本地表计算</li>
+</ol>
+<p>如果你也有类似的多文件汇总需求，不妨试试这个方案。配置一次，受益整个月（甚至更久）。</p>
+<hr>
+<p><em>希望这篇文章对你有帮助。如果有任何问题，欢迎在评论区交流！</em> 😊</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/excel/">Excel</a>
+        
+            <a href="/tags/wps/">Wps</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 2026-07-09 16:17
+        </span>
+    </section></footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="jenboy/jenboy.github.io"
+    data-repo-id="R_kgDOQ4Hp4A"
+    data-category="General"
+    data-category-id="DIC_kwDOQ4Hp4M4C07fG"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Xao
+    </section>
+    
+    <section class="powerby">
+        
+            碎碎念 <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://jenboy.github.io/icons/chevrons-up.svg);
+        background-size: contain;
+    
+    }
+    
+    
+    #TableOfContents > ul, ol {
+        ul, ol {
+            display: none;
+        }
+        .open {
+            display: block;
+        }
+    }
+
+    
+    .highlight {
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .code-show {
+        max-height: none !important;
+    }
+    
+    .code-more-box {
+        width: 100%;
+        padding-top: 78px;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    
+    .code-more-btn {
+        display: block;
+        margin: auto;
+        width: 44px;
+        height: 22px;
+        background: #f0f0f5;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+    }
+
+    
+    .code-more-img {
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 16px;
+    }
+
+    
+    @font-face {
+
+        font-family: 'harmonyOSFont';
+          
+        src: url(https://jenboy.github.io/font/HarmonyOS_Sans_Bold.ttf) format('truetype');
+    }
+
+    
+    :root {
+        --base-font-family: 'harmonyOSFont';
+        --code-font-family: 'harmonyOSFont';
+    }
+
+    
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+             
+    :root {
+     
+    --link-text: #0969da;               
+    --link-bg-hover: #ddf4ff;           
+    --link-decoration: transparent;     
+    --bg-body: #ffffff;
+    --text-body: #24292f;
+    }
+
+     
+    [data-theme="dark"] {
+     
+    --link-text: #58a6ff;               
+    --link-bg-hover: rgba(56, 139, 253, 0.15);  
+    --link-decoration: transparent;
+    --bg-body: #0d1117;
+    --text-body: #c9d1d9;
+    }
+
+     
+     
+    .highlight-link {
+    color: var(--link-text);
+    text-decoration: none;            
+    
+     
+    padding: 2px 6px;                
+    margin: 0 -4px;                   
+    
+    border-radius: 6px;               
+    transition: all 0.2s ease-in-out;  
+    font-weight: 500;                 
+    cursor: pointer;
+    position: relative;
+    }
+
+     
+    .highlight-link:hover {
+    background-color: var(--link-bg-hover);
+    text-decoration: none;
+    }
+
+     
+    .highlight-link:focus-visible {
+    outline: 2px solid var(--link-text);
+    outline-offset: 2px;
+    border-radius: 6px;
+    }
+
+</style>
+
+
+<script defer src="https://cn.vercount.one/js"></script>
+<script>
+    function showHideView() {
+        
+        let viewCounts = document.querySelectorAll("#viewCount");
+        if (viewCounts) {
+            
+            let article =  document.querySelector(".article-page");
+            if (!article) {
+                viewCounts.forEach(ele => {
+                    ele.style.display = 'none';
+                });
+            }
+        }
+    }
+    
+    showHideView();
+</script>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+<div id="particles-js"></div>
+<script src=https://jenboy.github.io/background/particles.min.js></script>
+<script>
+    
+  particlesJS.load('particles-js', 'https:\/\/jenboy.github.io\/background\/particlesjs-config.json', function() {
+    
+  });
+</script>
+
+<script>
+    
+    function initTocHide() {
+        
+        let toc = document.querySelector(".widget--toc");
+        if (!toc) {
+            return;
+        }
+        
+        window.addEventListener('scroll', function() {
+            
+            let openUl = document.querySelectorAll(".open");
+            if (openUl.length > 0) {
+              openUl.forEach((ul) => {
+                ul.classList.remove("open")
+              })
+            }
+            
+            let currentLi = document.querySelector(".active-class");
+            if (!currentLi) {
+                return
+            }
+            
+            if (currentLi.children.length > 1) {
+                currentLi.children[1].classList.add("open")
+            }
+            
+            let ul = currentLi.parentElement;
+            do {
+                ul.classList.add("open");
+                ul = ul.parentElement.parentElement
+            } while (ul !== undefined && (ul.localName === 'ul' || ul.localName === 'ol'))
+        });
+    }
+    initTocHide()
+</script>
+
+<script>
+    
+    function initCodeMoreBox() {
+    let codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks) {
+      return;
+    }
+    codeBlocks.forEach(codeBlock => {
+      
+      if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+        return;
+      }
+      
+      
+      let codeMoreBox = document.createElement('div');
+      codeMoreBox.classList.add('code-more-box');
+      
+      let codeMoreBtn = document.createElement('span');
+      codeMoreBtn.classList.add('code-more-btn');
+      codeMoreBtn.addEventListener('click', () => {
+        codeBlock.classList.add('code-show');
+        codeMoreBox.style.display = 'none';
+        
+        window.dispatchEvent(new Event('resize'))
+      })
+      
+      let img = document.createElement('img');
+      img.classList.add('code-more-img');
+      img.src = "https://jenboy.github.io/icons/arrow-down.svg"
+      
+      codeMoreBtn.appendChild(img);
+      codeMoreBox.appendChild(codeMoreBtn);
+      codeBlock.appendChild(codeMoreBox)
+    })
+  }
+  
+  initCodeMoreBox();
+</script>
+
+    </body>
+</html>

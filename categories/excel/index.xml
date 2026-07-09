@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Excel on Xao的碎碎念</title>
+        <link>https://jenboy.github.io/categories/excel/</link>
+        <description>Recent content in Excel on Xao的碎碎念</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Xao</copyright>
+        <lastBuildDate>Thu, 09 Jul 2026 16:17:34 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/categories/excel/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>2026-07-09</title>
+        <link>https://jenboy.github.io/p/2026-07-09/</link>
+        <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://jenboy.github.io/p/2026-07-09/</guid>
+        <description>&lt;img src="https://jenboy.github.io/p/2026-07-09/pics/PQ%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97.png" alt="Featured image of post 2026-07-09" /&gt;&lt;h1 id=&#34;告别-vlookup-地狱用-power-querysumifs-轻松搞定多品牌每日数据汇总&#34;&gt;告别 VLOOKUP 地狱：用 Power Query+SUMIFS 轻松搞定多品牌每日数据汇总
+&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;从 30+ 个外部文件自动取数，一个公式拖到底，数据自动刷新&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;一个让人头大的场景&#34;&gt;一个让人头大的场景
+&lt;/h2&gt;&lt;p&gt;想象一下这个画面：&lt;/p&gt;
+&lt;p&gt;你每天早上打开电脑，面对的是这样一个文件夹结构：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;D:\Data\Reports\Month\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── 1\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── File01.xls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── File02.xls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── File03.xls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── …
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── 2\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── File01.xls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   ├── File02.xls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│   └── …
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└── 31\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ├── File01.xls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    └── …
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;多个品牌 × 31 天 = 几百个 Excel 文件。每个文件里都有一张数据工作表，里面有成百上千行商品数据。&lt;/p&gt;
+&lt;p&gt;而你的任务，是把所有这些数据汇总到一张表里——&lt;strong&gt;多个品牌各占一组列，31 天横向排列，每天 3 个指标&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;如果用传统方法——手动打开每个文件，复制粘贴，或者写一个长长的 VLOOKUP 链——光是想想就让人头皮发麻。&lt;/p&gt;
+&lt;p&gt;今天，我分享一个经过实战检验的方案，用 &lt;strong&gt;Power Query + SUMIFS&lt;/strong&gt; 的组合拳，一次性解决这个问题。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;整体思路&#34;&gt;整体思路
+&lt;/h2&gt;&lt;p&gt;我们的方案分为两大步：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;用 Power Query 把所有外部文件“吞”进来&lt;/strong&gt;，合并成一张本地数据表&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;用 SUMIFS 公式从本地表中取数&lt;/strong&gt;，自动匹配品牌、日期、商品编号和指标&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这样做的好处是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;一次配置，永久使用&lt;/strong&gt;：以后每天新增数据，只需点击“刷新”&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;公式简洁&lt;/strong&gt;：每个单元格一个公式，向右拖、向下拖，自动填充&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;告别跨文件链接&lt;/strong&gt;：不再有打开文件时的卡顿和弹窗&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;第一步准备路径表&#34;&gt;第一步：准备路径表
+&lt;/h2&gt;&lt;p&gt;因为你的文件是“一天一个文件夹”的结构，Power Query 无法直接遍历多级子文件夹。所以我们需要先做一个&lt;strong&gt;路径表&lt;/strong&gt;，告诉 PQ 每个日期对应的文件夹在哪。&lt;/p&gt;
+&lt;p&gt;新建一个工作表，命名为 &lt;code&gt;路径表&lt;/code&gt;：&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;日期&lt;/th&gt;
+					&lt;th style=&#34;text-align: left&#34;&gt;文件路径&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;D:\Data\Reports\Month\1\&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;2&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;D:\Data\Reports\Month\2\&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;…&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;…&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;31&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;D:\Data\Reports\Month\31\&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;偷懒技巧&lt;/strong&gt;：在 B2 输入公式，然后双击填充柄自动生成全部 31 行：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;=&amp;#34;D:\Data\Reports\Month\&amp;#34;&amp;amp;A2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;第二步power-query-合并数据&#34;&gt;第二步：Power Query 合并数据
+&lt;/h2&gt;&lt;h3 id=&#34;加载路径表到-pq&#34;&gt;加载路径表到 PQ
+&lt;/h3&gt;&lt;p&gt;选中 &lt;code&gt;路径表&lt;/code&gt; 的数据区域 → 点击 &lt;strong&gt;数据&lt;/strong&gt; → &lt;strong&gt;来自表格/区域&lt;/strong&gt;，进入 PQ 编辑器。&lt;/p&gt;
+&lt;h3 id=&#34;读取每个文件夹里的所有文件&#34;&gt;读取每个文件夹里的所有文件
+&lt;/h3&gt;&lt;p&gt;添加自定义列，公式为：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;=Folder.Files([文件路径])
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;然后展开这个新列，只保留 &lt;code&gt;Content&lt;/code&gt;（文件内容）和&lt;code&gt;Name&lt;/code&gt;（文件名）。&lt;/p&gt;
+&lt;h3 id=&#34;读取-excel-文件内容&#34;&gt;读取 Excel 文件内容
+&lt;/h3&gt;&lt;p&gt;再添加一个自定义列，读取每个文件的二进制内容：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;=Excel.Workbook([Content], true, true)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;展开后，筛选需要的工作表，再展开数据。&lt;/p&gt;
+&lt;h3 id=&#34;提取品牌和日期&#34;&gt;提取品牌和日期
+&lt;/h3&gt;&lt;p&gt;从文件名中提取信息：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;品牌&lt;/strong&gt;：取文件名的字母部分&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;日期&lt;/strong&gt;：取文件名的两位数字部分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;关键公式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;品牌提取：&lt;code&gt;=Text.Start([Name], Text.Length([Name]) - 2)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;日期提取：&lt;code&gt;=Number.FromText(Text.End([Name], 2))&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;保留需要的列&#34;&gt;保留需要的列
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;⚠️ &lt;strong&gt;注意&lt;/strong&gt;：因为源文件是 &lt;code&gt;.xls&lt;/code&gt; 格式，PQ 里列名可能显示为&lt;code&gt;Column1&lt;/code&gt;、&lt;code&gt;Column2&lt;/code&gt;……你需要根据数据内容手动识别对应的列。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;逆透视把三列变成行&#34;&gt;逆透视（把三列变成行）
+&lt;/h3&gt;&lt;p&gt;选中“指标 1”、“指标 2”、“指标 3”三列，点击 &lt;strong&gt;逆透视其他列&lt;/strong&gt;。这样三个指标列就变成了“指标”和“值”两列。&lt;/p&gt;
+&lt;p&gt;然后把“指标”列里的名称替换成中文名称。&lt;/p&gt;
+&lt;h3 id=&#34;加载到工作表&#34;&gt;加载到工作表
+&lt;/h3&gt;&lt;p&gt;点击 &lt;strong&gt;关闭并上载&lt;/strong&gt;，将数据加载到新工作表，命名为 &lt;code&gt;数据源&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;现在你有了一个结构清晰的本地数据表：&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;品牌&lt;/th&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;日期&lt;/th&gt;
+					&lt;th style=&#34;text-align: left&#34;&gt;商品编码&lt;/th&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;指标&lt;/th&gt;
+					&lt;th style=&#34;text-align: center&#34;&gt;值&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;A&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;ITEM001&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;指标 1&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;5&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;A&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;ITEM001&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;指标 2&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;20&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;A&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;ITEM001&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;指标 3&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;150&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;A&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;2&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;ITEM001&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;指标 1&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;3&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;…&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;…&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;…&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;…&lt;/td&gt;
+					&lt;td style=&#34;text-align: center&#34;&gt;…&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;第三步sumifs-公式取数&#34;&gt;第三步：SUMIFS 公式取数
+&lt;/h2&gt;&lt;h3 id=&#34;3-列一组&#34;&gt;3 列一组
+&lt;/h3&gt;&lt;p&gt;如果你的分店工作表是&lt;strong&gt;3 列一组&lt;/strong&gt;（指标 1、指标 2、指标 3），数据从 F 列开始：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;=IF(SUMIFS(数据源!$E:$E, 数据源!$A:$A,&amp;#34;品牌A&amp;#34;, 数据源!$B:$B,INT((COLUMN()-6)/3)+1, 数据源!$C:$C,$A4, 数据源!$D:$D,CHOOSE(MOD(COLUMN()-6,3)+1,&amp;#34;指标1&amp;#34;,&amp;#34;指标2&amp;#34;,&amp;#34;指标3&amp;#34;))=0,&amp;#34;&amp;#34;,SUMIFS(数据源!$E:$E, 数据源!$A:$A,&amp;#34;品牌A&amp;#34;, 数据源!$B:$B,INT((COLUMN()-6)/3)+1, 数据源!$C:$C,$A4, 数据源!$D:$D,CHOOSE(MOD(COLUMN()-6,3)+1,&amp;#34;指标1&amp;#34;,&amp;#34;指标2&amp;#34;,&amp;#34;指标3&amp;#34;)))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;4-列一组&#34;&gt;4 列一组
+&lt;/h3&gt;&lt;p&gt;如果你的分店工作表是&lt;strong&gt;4 列一组&lt;/strong&gt;（指标 1、指标 2、指标 3、指标 4）：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;=IF(SUMIFS(数据源!$E:$E, 数据源!$A:$A,&amp;#34;品牌A&amp;#34;, 数据源!$B:$B,INT((COLUMN()-6)/4)+1, 数据源!$C:$C,$A4, 数据源!$D:$D,CHOOSE(MOD(COLUMN()-6,4)+1,&amp;#34;指标1&amp;#34;,&amp;#34;指标2&amp;#34;,&amp;#34;指标3&amp;#34;,&amp;#34;指标4&amp;#34;))=0,&amp;#34;&amp;#34;,SUMIFS(数据源!$E:$E, 数据源!$A:$A,&amp;#34;品牌A&amp;#34;, 数据源!$B:$B,INT((COLUMN()-6)/4)+1, 数据源!$C:$C,$A4, 数据源!$D:$D,CHOOSE(MOD(COLUMN()-6,4)+1,&amp;#34;指标1&amp;#34;,&amp;#34;指标2&amp;#34;,&amp;#34;指标3&amp;#34;,&amp;#34;指标4&amp;#34;)))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;公式解析&#34;&gt;公式解析
+&lt;/h3&gt;&lt;p&gt;这个公式的核心逻辑：&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th style=&#34;text-align: left&#34;&gt;部分&lt;/th&gt;
+					&lt;th style=&#34;text-align: left&#34;&gt;作用&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;数据源!$E:$E&lt;/code&gt;&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;取“值”列&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;数据源!$A:$A,&amp;quot;品牌A&amp;quot;&lt;/code&gt;&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;品牌匹配&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;数据源!$B:$B,INT((COLUMN()-6)/3)+1&lt;/code&gt;&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;自动计算日期&lt;/strong&gt;：F 列→1 号，I 列→2 号……&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;数据源!$C:$C,$A4&lt;/code&gt;&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;商品编码匹配&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;数据源!$D:$D,CHOOSE(…)&lt;/code&gt;&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;自动匹配指标&lt;/strong&gt;：第 1 列→指标 1，第 2 列→指标 2……&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;IF(…=0,&amp;quot;&amp;quot;,…)&lt;/code&gt;&lt;/td&gt;
+					&lt;td style=&#34;text-align: left&#34;&gt;没数据时显示为空，而不是 0&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;品牌对照&#34;&gt;品牌对照
+&lt;/h3&gt;&lt;p&gt;根据你的实际品牌列表，在公式中替换 &lt;code&gt;&amp;quot;品牌A&amp;quot;&lt;/code&gt; 为对应的品牌标识即可。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;常见问题排查&#34;&gt;常见问题排查
+&lt;/h2&gt;&lt;h3 id=&#34;q1公式返回-0但数据明明存在&#34;&gt;Q1：公式返回 0，但数据明明存在
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;原因&lt;/strong&gt;：公式中的指标名称与数据源中的名称不一致。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决&lt;/strong&gt;：检查数据源的“指标”列实际显示的文字是什么，然后在公式中完全照抄。&lt;/p&gt;
+&lt;h3 id=&#34;q2公式返回-0用-countif-测试却是0&#34;&gt;Q2：公式返回 0，用 COUNTIF 测试却是&amp;gt;0
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;原因&lt;/strong&gt;：多个条件同时满足的记录不存在（比如该商品在品牌 A 下，但 1 号没有数据）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决&lt;/strong&gt;：先用 COUNTIFS 测试组合条件，确认该商品在该品牌该日期是否有数据。&lt;/p&gt;
+&lt;h3 id=&#34;q3日期算错了&#34;&gt;Q3：日期算错了
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;原因&lt;/strong&gt;：数据起始列不是 F 列，或者偏移量 &lt;code&gt;-6&lt;/code&gt; 没改对。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决&lt;/strong&gt;：数据从哪列开始，&lt;code&gt;-6&lt;/code&gt; 就改成对应的列号（B=2，F=6，H=8……）。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;维护与扩展&#34;&gt;维护与扩展
+&lt;/h2&gt;&lt;h3 id=&#34;每天新增数据&#34;&gt;每天新增数据
+&lt;/h3&gt;&lt;p&gt;把新文件放入对应的日期文件夹 → 在 Excel 中点击 &lt;strong&gt;数据&lt;/strong&gt; → &lt;strong&gt;全部刷新&lt;/strong&gt; → 所有分店数据自动更新。&lt;/p&gt;
+&lt;h3 id=&#34;下个月&#34;&gt;下个月
+&lt;/h3&gt;&lt;p&gt;复制 &lt;code&gt;路径表&lt;/code&gt;，把公式中的月份文件夹名改成下个月 → 刷新 PQ → 所有数据自动更新。&lt;/p&gt;
+&lt;h3 id=&#34;新增品牌&#34;&gt;新增品牌
+&lt;/h3&gt;&lt;p&gt;直接在文件夹里放入新品牌的 &lt;code&gt;.xls&lt;/code&gt; 文件 → 刷新 PQ → 品牌列自动出现新品牌。分店工作表中把公式里的品牌名改一下即可。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;写在最后&#34;&gt;写在最后
+&lt;/h2&gt;&lt;p&gt;这套方案的核心理念是：&lt;strong&gt;把“读取外部文件”和“数据展示”分离&lt;/strong&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Power Query 负责“数据搬运”——从几百个文件中读取、清洗、合并数据&lt;/li&gt;
+&lt;li&gt;SUMIFS 公式负责“数据展示”——根据行列位置自动匹配和显示&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这样做的好处是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;逻辑清晰&lt;/strong&gt;：数据层和展示层各司其职&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;维护简单&lt;/strong&gt;：改路径只改路径表，改公式只改分店表&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;性能优秀&lt;/strong&gt;：数据加载一次，公式全部基于本地表计算&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果你也有类似的多文件汇总需求，不妨试试这个方案。配置一次，受益整个月（甚至更久）。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;希望这篇文章对你有帮助。如果有任何问题，欢迎在评论区交流！&lt;/em&gt; 😊&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
