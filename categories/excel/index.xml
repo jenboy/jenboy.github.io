@@ -7,13 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Xao</copyright>
-        <lastBuildDate>Thu, 09 Jul 2026 17:03:06 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/categories/excel/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>2026-07-09</title>
-        <link>https://jenboy.github.io/p/2026-07-09/</link>
+        <lastBuildDate>Fri, 10 Jul 2026 15:40:02 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/categories/excel/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>告别VLOOKUP地狱</title>
+        <link>https://jenboy.github.io/p/%E5%91%8A%E5%88%ABvlookup%E5%9C%B0%E7%8B%B1/</link>
         <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://jenboy.github.io/p/2026-07-09/</guid>
-        <description>&lt;img src="https://jenboy.github.io/p/2026-07-09/pics/PQ%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97.png" alt="Featured image of post 2026-07-09" /&gt;&lt;h1 id=&#34;告别-vlookup-地狱用-power-querysumifs-轻松搞定多品牌每日数据汇总&#34;&gt;告别 VLOOKUP 地狱：用 Power Query+SUMIFS 轻松搞定多品牌每日数据汇总
+        <guid>https://jenboy.github.io/p/%E5%91%8A%E5%88%ABvlookup%E5%9C%B0%E7%8B%B1/</guid>
+        <description>&lt;img src="https://jenboy.github.io/p/%E5%91%8A%E5%88%ABvlookup%E5%9C%B0%E7%8B%B1/pics/PQ%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97.png" alt="Featured image of post 告别VLOOKUP地狱" /&gt;&lt;h1 id=&#34;告别-vlookup-地狱用-power-querysumifs-轻松搞定多品牌每日数据汇总&#34;&gt;告别 VLOOKUP 地狱：用 Power Query+SUMIFS 轻松搞定多品牌每日数据汇总
 &lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;从 30+ 个外部文件自动取数，一个公式拖到底，数据自动刷新&lt;/p&gt;
 &lt;/blockquote&gt;
