@@ -10,7 +10,7 @@
         <lastBuildDate>Thu, 25 Jun 2026 10:23:43 +0800</lastBuildDate><atom:link href="https://jenboy.github.io/tags/linuxdo/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【工具】帖子收藏神器</title>
         <link>https://jenboy.github.io/p/%E5%B7%A5%E5%85%B7%E5%B8%96%E5%AD%90%E6%94%B6%E8%97%8F%E7%A5%9E%E5%99%A8/</link>
-        <pubDate>Thu, 09 Jul 2026 08:18:06 +0000</pubDate>
+        <pubDate>Fri, 10 Jul 2026 07:35:55 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E5%B7%A5%E5%85%B7%E5%B8%96%E5%AD%90%E6%94%B6%E8%97%8F%E7%A5%9E%E5%99%A8/</guid>
         <description>&lt;h1 id=&#34;discourse-saver一键保存帖子到-obsidian飞书notion-等六种方式的浏览器插件&#34;&gt;Discourse Saver：一键保存帖子到 Obsidian/飞书/Notion 等六种方式的浏览器插件
@@ -1317,7 +1317,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
         <item>
         <title>2026 甲骨文一条龙服务经验分享和教程推荐</title>
         <link>https://jenboy.github.io/p/2026-%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%80%E6%9D%A1%E9%BE%99%E6%9C%8D%E5%8A%A1%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/</link>
-        <pubDate>Thu, 09 Jul 2026 08:18:06 +0000</pubDate>
+        <pubDate>Fri, 10 Jul 2026 07:35:55 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/2026-%E7%94%B2%E9%AA%A8%E6%96%87%E4%B8%80%E6%9D%A1%E9%BE%99%E6%9C%8D%E5%8A%A1%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/</guid>
         <description>&lt;h1 id=&#34;甲骨文云账号注册与实例配置完整教程2026-年-6-月&#34;&gt;甲骨文云账号注册与实例配置完整教程（2026 年 6 月）
@@ -1882,7 +1882,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
         <item>
         <title>CF Worker部署DDNS主控</title>
         <link>https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/</link>
-        <pubDate>Thu, 09 Jul 2026 08:18:06 +0000</pubDate>
+        <pubDate>Fri, 10 Jul 2026 07:35:55 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/cf-worker%E9%83%A8%E7%BD%B2ddns%E4%B8%BB%E6%8E%A7/</guid>
         <description>&lt;h1 id=&#34;ddns-worker轻量级-cloudflare-ddns-工具部署指南&#34;&gt;DDNS-Worker：轻量级 CloudFlare DDNS 工具部署指南
@@ -2029,7 +2029,7 @@ V3.5.5 已修复此问题。现在重复保存同一帖子会更新原记录，�
         <item>
         <title>使用Oracle免费服务器部署CLIProxyAPI并配置域名，小白也能看懂</title>
         <link>https://jenboy.github.io/p/%E4%BD%BF%E7%94%A8oracle%E5%85%8D%E8%B4%B9%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2cliproxyapi%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82/</link>
-        <pubDate>Thu, 09 Jul 2026 08:18:06 +0000</pubDate>
+        <pubDate>Fri, 10 Jul 2026 07:35:55 +0000</pubDate>
         
         <guid>https://jenboy.github.io/p/%E4%BD%BF%E7%94%A8oracle%E5%85%8D%E8%B4%B9%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2cliproxyapi%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82/</guid>
         <description>&lt;h1 id=&#34;oracle-免费服务器部署-cliproxyapi-全教程含域名-ssl-配置&#34;&gt;Oracle 免费服务器部署 CLIProxyAPI 全教程（含域名 SSL 配置）
